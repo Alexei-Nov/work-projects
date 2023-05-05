@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll('[type="tel"]').forEach((e=>{IMask(e,{mask:"+{7}(000)000-00-00"})}))}));

@@ -1,0 +1,24 @@
+html {
+  font-size: 16px;
+}
+
+.main {
+  font-size: 24px;
+  position: relative;
+}
+
+.btn {
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.875em 1.5625em;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.header {
+  background-color: red;
+}
