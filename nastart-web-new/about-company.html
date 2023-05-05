@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						Мы диджитал-агентство полного цикла
+					</div>
+				</div>
+			</div>
+
+			<section class="section section_container dark-bg mt-0">
+				<div class="about-company " id="about-us">
+					<div class="container">
+						<div class="about-company__wrapper">
+							<div class="about-company__anchor">
+								<div class="about-company__anchor-item filter-btn anchor-container">
+									<a class="anchor" href="#about-us"> О компании</a>
+								</div>
+								<div class="about-company__anchor-item filter-btn anchor-container">
+									<a class="anchor" href="#revards">Награды</a>
+								</div>
+								<div class="about-company__anchor-item filter-btn anchor-container">
+									<a class="anchor" href="#team">Команда</a>
+								</div>
+								<div class="about-company__anchor-item filter-btn anchor-container">
+									<a class="anchor" href="#clients">Клиенты и партнёры</a>
+								</div>
+							</div>
+							<div class=" about-company__wide-img">
+								<img src="./img/about-company-wide.png" alt="">
+							</div>
+							<div class="about-company__text">
+								<div class="about-company__col">
+									<div class="about-company__text-title small-list-text">история компании</div>
+								</div>
+								<div class="about-company__col">
+									<p>
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+									</p>
+									<p>
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от
+										остальных.самый
+										простой в реализации. Этот вариант - самый простой в реализации. Не нужно
+										создавать
+										разные шаблоны для одного сайта только из-за того, что главная страница
+										отличается
+										от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_whithout-btn ">
+					<div class="container">
+						<div class="comment__wrapper">
+							<div class="comment__text comment__text_center"><span> Наши сотрудники </span> постоянно
+								развиваются,
+								посещают
+								различные семинары, курсы, вебинары. <span> Мы </span>никогда не стоим на месте, и
+								постоянно
+								внедряем в свою работу новейшие интернет-технологии
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="about-company " id="about-us">
+					<div class="container">
+						<div class="about-company__wrapper">
+							<div class="about-company__text">
+								<div class="about-company__col">
+									<div class="about-company__text-img">
+										<img src="./img/about-company-text.png" alt="">
+									</div>
+								</div>
+								<div class="about-company__col">
+									<p>
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+										Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+										Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+										одного сайта только из-за того, что главная страница отличается от остальных.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="career ">
+					<div class="container">
+						<div class="career__header">
+							<div class="career__title career__title_right title ">Почему у нас круто</div>
+						</div>
+						<div class="career__slider swiper-container">
+							<div class="career__slider-wrapper swiper-wrapper">
+								<div class="career__slide swiper-slide">
+									<div class="career__slide-img"><img src="./img/career-slide1.png" alt=""></div>
+									<div class="career__slide-text">Подпись к фото</div>
+								</div>
+								<div class="career__slide swiper-slide">
+									<div class="career__slide-img"><img src="./img/career-slide2.png" alt=""></div>
+									<div class="career__slide-text">Подпись к фото</div>
+								</div>
+								<div class="career__slide swiper-slide">
+									<div class="career__slide-img"><img src="./img/career-slide3.png" alt=""></div>
+									<div class="career__slide-text">Подпись к фото</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment ">
+					<div class="container">
+						<div class="comment__wrapper">
+							<div class="comment__text"> Наши сотрудники постоянно развиваются, посещают различные
+								семинары,
+								курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою работу
+								новейшие
+								интернет-технологии
+							</div>
+							<div class="comment__text-desc">
+								<p>
+									Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+									одного
+									сайта только из-за того, что главная страница отличается от остальных.
+									Достаточно просто использовать конструкцию вариант - самый простой в реализации. Не
+									нужно создавать разные шаблоны для одного сайта только из-за того, что главная
+									страница
+									отличается от остальных.
+								</p>
+							</div>
+							<a href="" class="comment__btn round-btn round-btn_light">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="sqr-img ">
+					<div class="container">
+						<div class="sqr-img__wrapper">
+							<img src="./img/sqr-img.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="team " id="team">
+					<div class="container">
+						<div class="team__title title "> <span>Эти</span> ребята <br> знают своё дело</div>
+						<div class="team__wrapper tab">
+							<div class="tab__header">
+								<div class="filter-btn tab__link tab__link-active">НастАртВЕБ</div>
+								<div class="filter-btn tab__link">Отдел продаж</div>
+								<div class="filter-btn tab__link">Дизайн</div>
+								<div class="filter-btn tab__link">Разработка</div>
+								<div class="filter-btn tab__link">Продвижение</div>
+							</div>
+							<div class="tab__body">
+								<div class="  tab__item tab__item-active ">
+									<div class="team__slider swiper-container">
+										<div class="team__slider-wrapper swiper-wrapper">
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-controls slider-controls">
+											<div class="slider-pagination team-pagination"></div>
+											<div class="slider-navigation team-navigation">
+												<div class="slider-prev team-prev">назад</div>
+												<div class="slider-next team-next">а ещё</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" tab__item  ">
+									<div class="team__slider swiper-container">
+										<div class="team__slider-wrapper swiper-wrapper">
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-controls slider-controls">
+											<div class="slider-pagination team-pagination"></div>
+											<div class="slider-navigation team-navigation">
+												<div class="slider-prev team-prev">назад</div>
+												<div class="slider-next team-next">а ещё</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" tab__item ">
+									<div class="team__slider swiper-container">
+										<div class="team__slider-wrapper swiper-wrapper">
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-controls slider-controls">
+											<div class="slider-pagination team-pagination"></div>
+											<div class="slider-navigation team-navigation">
+												<div class="slider-prev team-prev">назад</div>
+												<div class="slider-next team-next">а ещё</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" tab__item ">
+									<div class="team__slider swiper-container">
+										<div class="team__slider-wrapper swiper-wrapper">
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="team-controls slider-controls">
+											<div class="slider-pagination team-pagination"></div>
+											<div class="slider-navigation team-navigation">
+												<div class="slider-prev team-prev">назад</div>
+												<div class="slider-next team-next">а ещё</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=" tab__item ">
+									<div class="team__slider swiper-container">
+										<div class="team__slider-wrapper swiper-wrapper">
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo.png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(1).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(2).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+											<div class="team__slide swiper-slide">
+												<div class="team__img">
+													<img class="img" src="./img/team/photo(3).png" alt="">
+												</div>
+												<div class="team__person">
+													<div class="team__name medium-text">Константин</div>
+													<div class="team__position">руководитель отдела продаж</div>
+													<div class="team__about">Наши сотрудники постоянно развиваются,
+														посещают
+														различные семинары, курсы, вебинары. Мы никогда не стоим на
+														месте, и
+														постоянно внедряем в свою работу новейшие интернет-технологии
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="team-controls slider-controls">
+											<div class="slider-pagination team-pagination"></div>
+											<div class="slider-navigation team-navigation">
+												<div class="slider-prev team-prev">назад</div>
+												<div class="slider-next team-next">а ещё</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment ">
+					<div class="container">
+						<div class="comment__wrapper">
+							<div class="comment__text"> Наши сотрудники постоянно развиваются, посещают различные
+								семинары,
+								курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою работу
+								новейшие
+								интернет-технологии
+							</div>
+							<div class="comment__text-desc">
+								<p>
+									Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+									одного
+									сайта только из-за того, что главная страница отличается от остальных.
+									Достаточно просто использовать конструкцию вариант - самый простой в реализации. Не
+									нужно создавать разные шаблоны для одного сайта только из-за того, что главная
+									страница
+									отличается от остальных.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cert" id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="partners " id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section service more-padding">
+				<div class="container">
+					<div class="service__wrapper">
+						<div class="service__header">
+							<div class="service__col">
+								<h2 class="service__title title">Будем рады сотрудничать с вами</h2>
+							</div>
+							<div class="service__col">
+								<a href="" class="service__btn round-btn round-btn_orange">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-phone.svg)"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

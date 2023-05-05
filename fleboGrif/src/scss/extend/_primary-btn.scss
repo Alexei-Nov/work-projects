@@ -1,0 +1,21 @@
+.primary-btn {
+  padding: 12px 10px;
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include font(16, 20.8, 600);
+  color: $color-light;
+
+  background-color: $color-primary;
+  border-radius: 5px;
+  border: none;
+
+  transition: .4s;
+
+  @extend .pointer;
+  &:hover {
+    background-color: $color-dark-blue;
+  }
+}

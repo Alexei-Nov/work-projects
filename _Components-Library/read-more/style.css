@@ -1,0 +1,35 @@
+.read-more__btn {
+  margin-top: 10px;
+  position: relative;
+  padding-right: 25px;
+  width: fit-content;
+  color: #a7a7a7;
+  cursor: pointer;
+  user-select: none;
+}
+
+.read-more__btn::after {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../img/icon/read-more-arrow.svg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+  transition: all ease 0.3s;
+}
+
+.read-more__text {
+  transition: all ease 0.3s;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.read-more_show .read-more__btn::after {
+  transform: translateY(-50%) rotate(180deg);
+}

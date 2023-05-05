@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						интернет-магазин
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>разработка сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Сайты с изюминкой: эффективные, продающие, быстрые!
+								</div>
+								<div class="detail-entrance__subtitle">
+									Когда бизнес онлайн - выгодно!
+									Быстро, честно, качественно. Просто по-другому мы не умеем!
+								</div>
+								<div class="detail-entrance__label">2 МЕСТО В РЕЙТИНГЕ ВЕБ-РАЗРАБОТЧИКОВ</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer detail-entrance__offer_sticker small-title">
+								1 месяц SEO <br>
+								в подарок
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text black-text tt-uc">
+								Хватит ждать, пора зарабатывать!
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Сегодня все больше потребителей покупают товары и услуги онлайн. Это удобно,
+									доступно, помогает сэкономить время и, зачастую, деньги. А еще это дает огромную
+									свободу выбора - можно просмотреть весь ассортимент, сравнить понравившиеся позиции,
+									почитать отзывы.
+								</p>
+								<p>
+									Благодаря этому, на рынке онлайн-торговли сейчас крутятся миллиарды рублей. Пора и
+									вам это использовать! Закажите интернет-магазин «под ключ» прямо сейчас, и начните
+									зарабатывать, не выходя из офиса!
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section price">
+				<div class="container">
+					<div class="price__title large-text black-text tt-uc">
+						Стоимость разработки сайта- <br> каталога с корзиной
+					</div>
+					<div class="price__wrapper">
+						<div class="price__item">
+							<ul class="price__list">
+								<li class="price__list-item">уникальный дизайн</li>
+								<li class="price__list-item">внедрение под 1С-Битрикс (редакция Старт)</li>
+								<li class="price__list-item">верстка страниц</li>
+								<li class="price__list-item">разработка и внедрение функционала</li>
+								<li class="price__list-item">тестирование сайта</li>
+								<li class="price__list-item">перенос на домен и хостинг заказчика</li>
+							</ul>
+							<div class="price__cost small-list-text orange-text">от 26 400 р</div>
+						</div>
+						<div class="price__item">
+							<ul class="price__list">
+								<li class="price__list-item">уникальный дизайн</li>
+								<li class="price__list-item">внедрение под 1С-Битрикс (редакция Старт)</li>
+								<li class="price__list-item">верстка страниц</li>
+								<li class="price__list-item">разработка и внедрение функционала</li>
+								<li class="price__list-item">тестирование сайта</li>
+								<li class="price__list-item">перенос на домен и хостинг заказчика</li>
+							</ul>
+							<div class="price__cost small-list-text orange-text">от 26 400 р</div>
+						</div>
+						<div class="price__item">
+							<ul class="price__list">
+								<li class="price__list-item">уникальный дизайн</li>
+								<li class="price__list-item">внедрение под 1С-Битрикс (редакция Старт)</li>
+								<li class="price__list-item">верстка страниц</li>
+								<li class="price__list-item">разработка и внедрение функционала</li>
+								<li class="price__list-item">тестирование сайта</li>
+								<li class="price__list-item">перенос на домен и хостинг заказчика</li>
+							</ul>
+							<div class="price__cost small-list-text orange-text">от 26 400 р</div>
+						</div>
+						<div class="price__item">
+							<ul class="price__list">
+								<li class="price__list-item">уникальный дизайн</li>
+								<li class="price__list-item">внедрение под 1С-Битрикс (редакция Старт)</li>
+								<li class="price__list-item">верстка страниц</li>
+								<li class="price__list-item">разработка и внедрение функционала</li>
+								<li class="price__list-item">тестирование сайта</li>
+								<li class="price__list-item">перенос на домен и хостинг заказчика</li>
+							</ul>
+							<div class="price__cost small-list-text orange-text">от 26 400 р</div>
+						</div>
+						<div class="price__item">
+							<div class="price__name small-list-text black-text">Дополнительные услуги</div>
+							<div class="price__table">
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+								<div class="price__row">
+									<div class="price__col">
+										Разработка ТЗ и анализ рынка
+									</div>
+									<div class="price__col orange-text">
+										от 10 000 р
+									</div>
+								</div>
+							</div>
+							<div class="price__btn btn">Оставить заявку</div>
+						</div>
+					</div>
+			</section>
+
+			<section class=" section quiz service dark-bg">
+				<div class="container">
+					<div class="service__wrapper">
+						<div class="quiz__preview service__header">
+							<div class="service__col">
+								<h2 class="service__title xlarge-text">
+									Хотите получить персональное предложение на разработку интернет-магазина?</h2>
+								<div class="service__subtitle">
+									Ответьте на 10 вопросов и получите скидку
+								</div>
+								<div class="quiz__btn btn btn_light btn_fit">пройти опрос</div>
+							</div>
+							<div class="service__col">
+								<div class="service__stickers">
+									<div class="discount-sticker  large-text"> 10% </div>
+									<div class="sticker"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="quiz__slider service__slider swiper-container">
+							<form class="service__slider-wrapper swiper-wrapper">
+								<div class="service__slide swiper-slide">
+									<div class="service__small-title small-title">
+										Направление интернет-магазина
+									</div>
+									<div class="service__slide-option">
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-1">
+											<div class="service__card">
+												<div class="small-title">Медицинские товары</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Автомобильные товары</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Одежда и обувь</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Продукты питания</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Техника и электроника</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Спортивные товары</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Производственные товары</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">продвижение</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Хобби и отдых</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" type="radio" name="q-1">
+											<div class="service__card ">
+												<div class="small-title">Свой вариант</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите адрес сайта">
+											</div>
+										</label>
+
+									</div>
+								</div>
+								<div class="service__slide swiper-slide">
+									<div class="service__small-title small-title">
+										В каком регионе планируются продажи?
+									</div>
+									<div class="service__slide-option">
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Вся Россия</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Санкт-Петербург и ЛО</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Москва и МО</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Новосибирск</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Екатеринбург</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Казань</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Нижний Новгород</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Челябинск</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Самара</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Омск</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Ростов-на-Дону</div>
+											</div>
+										</label>
+										<label class="service__label">
+											<input class="service__input-radio" checked type="radio" name="q-2">
+											<div class="service__card">
+												<div class="small-title">Свой вариант</div>
+												<input class="service__input input" type="text"
+													placeholder="напишите свой вариант">
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="service__slide swiper-slide">
+									<div class="service__header">
+										<div class="service__col">
+											<div class="service__title large-text">
+												Заполните форму, чтобы получить персональное предложение и скидку 10%
+											</div>
+										</div>
+										<div class="service__col">
+											<a href="" class="service__btn round-btn round-btn_orange">
+												<span class="round-btn__circle-text"
+													style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+												<span class="round-btn__center-icon"
+													style="-webkit-mask-image:url(./img/icon/button-phone.svg)"></span>
+											</a>
+										</div>
+									</div>
+									<div class="service__small-title small-title">Остался последний шаг </div>
+									<div class="service__slide-option">
+										<div class="form">
+											<div class="form__input-row">
+												<div class="form__input-col">
+													<input class="input-dark input-dark_error" type="text"
+														placeholder="*Ваше имя">
+													<input class="input-dark " type="tel" placeholder="*Номер телефона">
+													<input class="input-dark" type="email" placeholder="*Email">
+												</div>
+												<div class="form__input-col">
+													<textarea class="input-dark input-dark_textarea"
+														placeholder="Дополнительная информация"></textarea>
+													<label class="form__upload-btn">
+														<div class="form__upload-btn-text">Выберите или перетащите файл,
+															если он у вас есть</div>
+														<input type="file" multiple>
+													</label>
+												</div>
+											</div>
+											<div class="form__personal-data">Отправляя заявку, я соглашаюсь с <a
+													href="">политикой обработки персональных данных</a></div>
+											<button class="form__send-btn btn" type="submit">Отправить заявку</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<div class="service-controls slider-controls">
+								<div class="slider-pagination service-pagination"></div>
+								<div class="slider-navigation service-navigation">
+									<div class="slider-prev service-prev">назад</div>
+									<div class="slider-next service-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text black-text tt-uc">
+								Что такое
+								интернет-магазин </div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Сейчас через интернет можно приобрести все: начиная от продуктов питания и
+									заканчивая дорогостоящим оборудованием. Вся наша жизнь постепенно переходит в режим
+									онлайн, открывая безграничные возможности. Понимая это, компании тоже штурмуют сеть
+									при помощи интернет-магазинов. Такой сайт — это витрина компании, расположенная в
+									интернете и дающая возможность совершать покупки в сети. Данный ресурс содержит
+									каталог товаров с подробным описанием, характеристиками и ценами, а также с
+									возможностью заказа и онлайн-оплаты, доставки по необходимому адресу.
+								</p>
+								<p>
+
+									Главным отличием сетевой площадки от настоящего магазина является то, что она не
+									нуждается в огромном помещении, продавцах, кассирах, вся ее инфраструктура
+									реализована программно. Это помогает снизить затраты в несколько раз. Кроме того,
+									интернет-магазин доступен для покупателей в любое время дня и ночи и из любой точки
+									земного шара! <br>
+									Итак, интернет-магазин - это cайт, который позволяет пользователю смотреть, выбирать
+									и покупать продукцию из каталога, сидя у себя дома. Витрина — это страницы каталога,
+									на которых есть качественное изображение продукта и все его характеристики, а
+									функции продавца выполняют различные инструкции и подсказки. Интерфейс страниц также
+									напоминает обычный супермаркет, ведь покупатель складывает покупки в корзину,
+									оплачивая их в конце своего шоппинга.
+
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						ПРЕИМУЩЕСТВА ИНТЕРНЕТ-МАГАЗИНА </div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Огромный ассортимент
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Доступность 24/7
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Меньше рисков при запуске бизнеса
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Нет ограничений по географии продаж
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Уменьшаются затраты на аренду и наём сотрудников
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Экономия времени на совершение покупок
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg">
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text large-text white-text tt-uc">
+									Кому подходит <br>
+									интернет-магазин </div>
+								<div class="comment__info gray-text">
+									<p>
+										Интернет-магазин может быть как дополнительной, так и основной площадкой для
+										продажи товаров и услуг. Если вы уже являетесь владельцем бизнеса, то разработка
+										такого сайта откроет дополнительные возможности для бизнеса: вы сможете
+										осуществлять продажи онлайн круглосуточно. А если правильно наладить систему
+										доставки, то и за тысячи километров от вашего города!
+									</p>
+									<p>
+										Конечно, коммерческая площадка доступна не только уже имеющимся торговым сетям.
+										Если ваш бизнес пока только на стадии идеи, то можно создать интернет-магазин
+										под ключ с нуля. Это позволит развить бизнес полностью онлайн, экономя на аренде
+										помещений и сотрудниках. Именно поэтому интернет-магазин нужен организациям и
+										частным предпринимателям для продажи собственной и партнёрской продукции. А еще,
+										конечно, самим покупателям, которые всё чаще экономят время на шоппинге, выбирая
+										покупки товаров в сети.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="small-title ff-rm gray-text">
+							Стоит отметить, что разработка хорошего интернет-магазина - процесс небыстрый, дорогой и
+							трудоемкий. И если вы хотите получить действительно качественный продукт, который эффективно
+							поднимет ваши продажи на новый уровень, то заказывать интернет-магазин стоит только у
+							профессиональных веб-студий. Только так весь ваш труд не уйдет в никуда.
+						</div>
+						<a href="" class="btn btn_fit btn_right btn_light">довериться профессионалам</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section achieve">
+				<div class="container">
+					<div class="achieve__wrapper">
+						<h2 class="achieve__title large-text black-text">этапы разработки</h2>
+						<div class="achieve__slider swiper-container">
+							<div class="achieve__slider-wrapper swiper-wrapper">
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">Анализ</div>
+									<div class="achieve__text">
+										рынка и конкурентов. Разработка проекта (прототипа) сайта, в котором будут
+										учтены все пожелания клиента по дизайну, структуре и техническим особенностям
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+							</div>
+							<div class="achieve__controls slider-controls">
+								<div class="slider-pagination achieve-pagination"></div>
+								<div class="slider-navigation achieve-navigation">
+									<div class="slider-prev achieve-prev">назад</div>
+									<div class="slider-next achieve-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm dark-gray-text">
+								<p>
+									Для того, чтобы интернет-магазин стал популярным, он должен обладать большим набором
+									функций, позволяющих клиентам беспрепятственно совершать покупки. Они должны иметь
+									возможность быстро найти необходимый товар, удобно ориентироваться на сайте. Процесс
+									оформления заказа должен быть понятен даже ребенку. Ну и конечно, пользоваться
+									интернет-магазином должно быть удобно с любых устройств.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container dark-bg">
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title large-text white-text tt-uc">
+							Основные возможности
+							современного продающего интернет-магазина</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Поиск товаров на сайте
+								</div>
+								<div class="simple-tile__text">
+									Данная возможность позволит посетителям быстро найти нужную продукцию по
+									наименованию или артикулу
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Фильтры по различным параметрам продукции
+								</div>
+								<div class="simple-tile__text">
+									Эта функция позволит сортировать товары по различным характеристикам. Например,
+									цена, бренд, название, и пр.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Информационная рассылка
+								</div>
+								<div class="simple-tile__text">
+									Расскажет про новые акции и спецпредложения, напомнит постоянным покупателям о
+									компании и простимулирует их к покупке
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Удобная карточка товара
+								</div>
+								<div class="simple-tile__text">
+									Клиент должен знать, какой именно продукт он покупает, поэтому карточка должна быть
+									наглядной и информативной, фотографии — отличного качества, чтобы можно было
+									рассмотреть все нюансы продукции, а описание должно быть полным и точным. Также
+									желательно, чтобы присутствовали отзывы покупателей
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Синхронизация товаров
+								</div>
+								<div class="simple-tile__text">
+									Удобно, когда товары автоматически импортируются из базы поставщиков или со склада.
+									Еще лучше - интеграция напрямую с 1С. Это позволяет быстро обновлять цены и
+									ассортимент и вести учет товаров в наличии
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Обратная связь
+								</div>
+								<div class="simple-tile__text">
+									Один из способов, который позволит завоевать лояльность клиента. У него могут
+									возникнуть дополнительные вопросы, ответы на которые он должен получить очень
+									быстро, чтобы покупка состоялась. Поэтому желательно, чтобы была форма с мгновенными
+									сообщениями и возможность бесплатного звонка сотрудникам
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Акции, спецпредложения и система лояльности
+								</div>
+								<div class="simple-tile__text">
+									Скидки и бонусы позволяют значительно увеличить продажи. Акции помогают привлечь
+									новых покупателей, а программы лояльности - стимулировать к покупкам настоящих
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Адаптивная версия
+								</div>
+								<div class="simple-tile__text">
+									Технически интернет-магазин должен быть сделан так, чтобы им удобно было
+									пользоваться не только на компьютере, но и на планшете и мобильном телефоне. Именно
+									эти устройства сейчас всё более популярны среди пользователей
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Синхронизация с системами онлайн-оплаты и доставки
+								</div>
+								<div class="simple-tile__text">
+									Если ваш интернет-магазин синхронизирован с удобными системами оплаты и доставки -
+									это огромное преимущество для онлайн-торговли
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info small-title ff-rm gray-text">
+									<p>
+										Хороший продающий интернет-магазин должен быть функциональным, удобным, а
+										главное - понятным пользователю. Это касается не только процесса совершения и
+										оформления заказа, но и информационной составляющей сайта. Вы должны постараться
+										максимально развернуто дать покупателям ответы на все интересующие их вопросы.
+										Как проходит процесс оплаты заказа, сколько стоит доставка, можно ли вернуть
+										товар, если он не подойдет по размеру или окажется ненадлежащего качества, - обо
+										всем этом и многом другом покупатель должен быть осведомлен заранее.
+									</p>
+								</div>
+							</div>
+							<a href="" class="comment__btn btn btn_fit btn_right">что еще должен уметь
+								интернет-магазин?</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section tile">
+				<div class="container">
+					<h2 class="tile__title large-text black-text tt-uc">ПРИМЕРЫ РАБОТ</h2>
+					<div class="tile__slider swiper-container">
+						<div class="tile__body tile__body_short swiper-wrapper">
+							<div class="tile__item swiper-slide"
+								style="background-image: url(./img/projects/project1.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project2.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project3.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project5.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="" class="tile__btn small-title">смотреть больше проектов</a>
+				</div>
+			</section>
+
+			<section class="section creation">
+				<div class="container">
+					<div class="creation__wrapper">
+						<div class="creation__body">
+							<div class="creation__title title">
+								Как мы создаём сайты?
+							</div>
+							<div class="creation__subtitle">
+								Ответственно, качественно и профессионально! У нас индивидуальный подход к каждому
+								проекту!
+							</div>
+							<a href="" class="creation__btn btn btn_fit btn_light">хочу сайт</a>
+						</div>
+						<div class="creation__img">
+							<img src="./img/preview.png" alt="">
+							<a href="" data-fancybox="" class="creation__round-btn round-btn round-btn_play ">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+								<span class="round-btn__center-icon"
+									style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners dark-bg m-0" id="clients">
+				<div class="container">
+					<div class="partners__wrapper partners__wrapper_reverse">
+						<div class="partners__header">
+							<h2 class="partners__title title">нам доверяют</h2>
+							<div class="partners__filter">
+								<div class="partners__filter-btn filter-btn">Клиенты</div>
+								<div class="partners__filter-btn filter-btn">Партнёры</div>
+							</div>
+						</div>
+						<div class="partners__slider ">
+							<div class="partners__list swiper-wrapper">
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner6.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner16.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner7.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner8.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner9.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner10.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner11.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner12.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner13.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner14.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner15.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="partners-controls slider-controls">
+							<div class="slider-pagination partners-pagination"></div>
+							<div class="slider-navigation partners-navigation">
+								<div class="slider-prev partners-prev">назад</div>
+								<div class="slider-next partners-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">Сомневаетесь, что вам нужен именно лендинг
+							пейдж?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/BeerSlider.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
+	<link rel="stylesheet" href="./css/style-main.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/BeerSlider.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="popup" id="popup">
+		<div class="main-form">
+			<div class="container">
+				<form class="main-form__wrapper" action="submit">
+					<div class="main-form__body">
+						<div class="main-form__title">Запишитесь на
+							консультацию</div>
+						<div class="main-form__subtitle">Наш администратор свяжется с Вами в течение 20 мин для
+							уточнения
+							даты и времени</div>
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон" id="phone-mask1">
+						<textarea name="comment" placeholder="Комментарии"></textarea>
+						<button class="main-form__btn btn-main">Записаться</button>
+					</div>
+					<div class="main-form__img">
+						<img src="./img/main-form.png" alt="form-img">
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<header>
+		<section class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__location">Санкт-петербург, Парашютная ул. 52 a</div>
+					<div class="header__reglament"> <span>Пн-Сб:</span> 09:00-21:00 <span> Вс:</span> 09:00-18:00</div>
+					<div class="header__phone">8 (812) 627-17-17</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="nav">
+			<div class="container">
+				<div class="nav__wrapper">
+					<div class="nav__logo">
+						<img src="./img/logo.png" alt="logo">
+						<p> Цифровая стоматология “Студия -С”
+						</p>
+					</div>
+					<ul class="nav__links">
+						<li class="nav__item">Об All-On-4</li>
+						<li class="nav__item">До/После</li>
+						<li class="nav__item">Видео</li>
+						<li class="nav__item">Этапы</li>
+						<li class="nav__item">Показания</li>
+						<li class="nav__item">Цены</li>
+						<li class="nav__item">Врачи</li>
+						<li class="nav__item">Контакты</li>
+
+					</ul>
+					<div class="nav__btn btn-main"><a href="#popup" data-fancybox>Записаться</a> </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="nav-mobile">
+			<div class="container">
+				<div class="nav-mobile__wrapper">
+					<div class="nav-mobile__header">
+						<div class="nav-mobile__logo">
+							<img src="./img/logo-mobile.png" alt="logo-mobile">
+						</div>
+						<div class="nav-mobile__btns">
+							<div class="nav-mobile__call">
+								<img src="./img/call.png" alt="call-icon">
+							</div>
+							<div class="nav-mobile__menu">
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="nav-mobile__body">
+						<ul class="nav-mobile__links">
+							<li class="nav-mobile__item">Об All-On-4</li>
+							<li class="nav-mobile__item">До/После</li>
+							<li class="nav-mobile__item">Видео</li>
+							<li class="nav-mobile__item">Этапы</li>
+							<li class="nav-mobile__item">Показания</li>
+							<li class="nav-mobile__item">Цены</li>
+							<li class="nav-mobile__item">Врачи</li>
+							<li class="nav-mobile__item">Контакты</li>
+						</ul>
+						<div class="nav-mobile__contact">
+							<div class="nav-mobile__phone">8 (812) 627-17-17</div>
+							<div class="nav-mobile__telega">
+								<img src="./img/blue-telega.png" alt="telega-icon">
+							</div>
+							<div class="nav-mobile__vk">
+								<img src="./img/blue-vk.png" alt="vk-icon">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<main>
+
+		<section class="main">
+			<div class="container">
+				<div class="main__wrapper">
+					<div class="main__text">
+						<div class="main__title">Центр цифровой имплантации №1 All-on-4</div>
+						<div class="main__description">Протезирование зубов по протоколу «всё на четырёх» All-on-4 с
+							применением
+							хирургического навигационного 3D шаблона</div>
+					</div>
+					<div class="main__subtext">
+						<div class="subtext__item">
+							<div class="subtext__title">10+ лет </div>
+							<div class="subtext__subtitle">опыта работы</div>
+						</div>
+						<div class="subtext__item">
+							<div class="subtext__title">1200+ </div>
+							<div class="subtext__subtitle">счастливых пациентов</div>
+						</div>
+						<div class="subtext__item">
+							<div class="subtext__title">15 </div>
+							<div class="subtext__subtitle">лучших врачей</div>
+						</div>
+					</div>
+					<div class="main__btn btn-main"><a href="#popup" data-fancybox>Записаться</a> </div>
+				</div>
+			</div>
+		</section>
+
+		<section class="form-line">
+			<div class="container">
+				<div class="form-line__wrapper">
+					<div class="form-line__title"> Узнайте, подходит ли Вам имплантация All-on-4</div>
+					<div class="form-line__subtitle">Пройдите диагностику и узнайте, какой вид имплантации подходит в
+						Вашем
+						случае</div>
+					<form class="form-line__form" action="submit">
+						<input class="form__item" type="text" placeholder="Имя">
+						<input class="form__item " type="phone" placeholder="Телефон" id="phone-mask2">
+						<input class="form__item" type="email" placeholder="E-mail">
+						<button class="form-line__btn btn-main">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<div class="about__img"><img src="./img/about.png" alt="about-img"></div>
+					<div class="about__body">
+						<div class="about__title">Об All-on-4 </div>
+						<div class="about__subtitle">Для качественного восстановления утраченных зубов, мы используем
+							методику «всё на четырех» All-on-4, в некоторых случаях «всё на шести» All-on-6. </div>
+						<div class="about__list_title">
+							Кому подходит All-on-4?
+						</div>
+
+						<ul class="about__list">
+							<li class="about__list_item">Людям, у которых нет зубов или осталось очень мало зубов
+							</li>
+							<li class="about__list_item">При пародонтозе (пародонтите) всех зубов
+							</li>
+							<li class="about__list_item">Пациентам, которые хотят избежать костной пластики
+							</li>
+							<li class="about__list_item">Тем, кто хочет получить новые зубы за 1 день</li>
+						</ul>
+						<div class="about__btn btn-main"><a href="#popup" data-fancybox>Записаться</a> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clinica">
+			<div class="container">
+				<div class="clinica__wrapper">
+					<div class="clinica__title title"> <img src="./img/line.png" alt="line" />
+						<div class="title__text">О нас</div>
+					</div>
+					<div class="clinica__body">
+						<div class="clinica__description">
+							<div class="read-more__text">
+								<p>
+									Представляет и задача порядка, особенности направлений эксперимент
+									отношении направлений выполнять роль сфера играет плановых задания способствует
+									также
+									финансовых
+									роль образом высшего позиций, а структура прогрессивного в рост количественный
+									направлений
+									существенных рост идейные образом показывает, образом реализации соображения
+									интересный
+									а
+									организационной новая оценить значение организации место задача рост позиций,
+									направлений в
+									развития.
+								</p>
+								<p>
+									Интересный задача высшего позволяет административных прогрессивного нашей
+									участниками
+									соображения административных количественный образом организационной также равным
+									заданий
+									практика новая количественный соображения сфера важную важные и количественный
+									важные
+									важные
+									проверки новая идейные заданий важную представляет позиций, формировании постоянный
+									отношении
+									модель представляет постоянный постоянный сфера заданий эксперимент анализа рост
+									нашей
+									подготовки активизации. Рост и рамки анализа условий..
+								</p>
+							</div>
+							<div class="clinica__description_more read-more">Читать далее</div>
+						</div>
+						<div class="clinica__slider swiper-container">
+							<div class="clinica__slider_wrapper swiper-wrapper">
+								<img class="clinica__slide swiper-slide" src="./img/clinica-slider/slider1.png"
+									alt="slider-img">
+								<img class="clinica__slide swiper-slide" src="./img/clinica-slider/slider2.png"
+									alt="slider-img">
+								<img class="clinica__slide swiper-slide" src="./img/clinica-slider/slider3.png"
+									alt="slider-img">
+							</div>
+
+							<div class="clinica__slider_btns">
+								<div class="clinica-button-prev swiper-button-prev button-prev"></div>
+								<div class="clinica-button-next swiper-button-next button-next"></div>
+							</div>
+							<div class="clinica-scrollbar swiper-scrollbar scrollbar"></div>
+
+
+						</div>
+					</div>
+					<div class="clinica__device">
+						<div class="clinica__device_video"> <a href="https://www.youtube.com/watch?v=iik25wqIuFo"
+								data-fancybox=""> <img src="./img/video-device.png" alt="video"></a></div>
+						<div class="clinica__device_text">
+							<div class="clinica__device_title">Наркозно-дыхательный аппарат МК-1-2</div>
+							<div class="clinica__device_subtitle">Анестезиологическая система для проведения анестезии
+								взрослым,
+								детям и новорожденным, с возможностью работы по полуоткрытому и полузакрытому контуру и
+								проведения низкопоточной анестезии. Цветной тачскрин дисплей 15 дюймов, электронные
+								флуометры с
+								графическим отображением. Встроенный блок ИВЛ с пневоприводом, режимы: VC,PC, PCV-VG,
+								SIMV-VC,
+								SIMV-PC, PSV-PRO. Спирометрия пациента.
+							</div>
+						</div>
+					</div>
+					<div class="clinica__smile">
+						<div class="smile__body">
+							<div class="smile__title">Здоровая улыбка!</div>
+							<div class="smile__subtitle">“Важную анализа и постоянный организационной показывает,
+								высшего
+								требуют существенных соображения заданий идейные плановых отношении важную отношении
+								порядка, заданий сложившаяся постоянный анализа нашей заданий участниками соображения а
+								плановых структура соображения что высшего подготовки административных дальнейших
+								организации, важную анализа нов”</div>
+							<div class="smile__btn btn-secondary"><a href="#popup" data-fancybox>Записаться</a> </div>
+						</div>
+						<div class="smile__img">
+							<img src="./img/smile.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<img class="clinica__smile_bg" src="./img/dash-line.png" alt="bg-img">
+		</section>
+
+		<section class="before-after">
+			<div class="container">
+				<div class="before-after__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">До/После</div>
+				</div>
+				<div class="before-after__wrapper">
+
+
+					<div class="before-after__slider swiper-container">
+						<div class="before-after__slider_wrapper swiper-wrapper">
+							<div class="before-after__slide swiper-slide">
+								<div class="before-after__img">
+									<div id="slider1" class="beer-slider">
+										<img src="./img/beafore-after-slider/slide2.png" alt="slide1">
+										<div class="beer-reveal">
+											<img src="./img/beafore-after-slider/slide1.png" alt="slide2">
+										</div>
+									</div>
+								</div>
+								<div class="before-after__body">
+									<div class="before-after__body_title">Процедура All-On-4</div>
+									<div class="before-after__body_doctor">Врач: Галеева Аделина Рустамовна</div>
+									<div class="before-after__body_subtitle">
+										<p>
+											Организации, рост нашей участниками порядка, подготовки
+											важную административных показывает, позиций, кадров активности анализа а
+											практика играет
+											порядка, занимаемых роль соответствующий таким соображения нашей нашей роль
+											занимаемых
+											нашей
+											способствует условий. Показывает, кадров и равным постоянный также
+											реализация сфера
+											выполнять
+											развития.
+										</p>
+										<p>
+											Оценить нас обучения оценить особенности оценить и в нашей рост также форм
+											формировании
+											форм
+											также организации, а условий направлений участниками порядка,
+											организационной
+											количественный
+											по
+											порядка, идейные позволяет реализации а повседневная рост представляет
+											обучения таким
+											играет/
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="before-after__slide swiper-slide">
+								<div class="before-after__img">
+									<div id="slider2" class="beer-slider">
+										<img src="./img/beafore-after-slider/slide2.png" alt="slide1">
+										<div class="beer-reveal">
+											<img src="./img/beafore-after-slider/slide1.png" alt="slide2">
+										</div>
+									</div>
+								</div>
+								<div class="before-after__body">
+									<div class="before-after__body_title">Процедура All-On-4</div>
+									<div class="before-after__body_doctor">Врач: Галеева Аделина Рустамовна</div>
+									<div class="before-after__body_subtitle">
+										<p>
+											Организации, рост нашей участниками порядка, подготовки
+											важную административных показывает, позиций, кадров активности анализа а
+											практика играет
+											порядка, занимаемых роль соответствующий таким соображения нашей нашей роль
+											занимаемых
+											нашей
+											способствует условий. Показывает, кадров и равным постоянный также
+											реализация сфера
+											выполнять
+											развития.
+										</p>
+										<p>
+											Оценить нас обучения оценить особенности оценить и в нашей рост также форм
+											формировании
+											форм
+											также организации, а условий направлений участниками порядка,
+											организационной
+											количественный
+											по
+											порядка, идейные позволяет реализации а повседневная рост представляет
+											обучения таким
+											играет/
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="before-after__slide swiper-slide">
+								<div class="before-after__img">
+									<div id="slider3" class="beer-slider">
+										<img src="./img/beafore-after-slider/slide2.png" alt="slide1">
+										<div class="beer-reveal">
+											<img src="./img/beafore-after-slider/slide1.png" alt="slide2">
+										</div>
+									</div>
+								</div>
+								<div class="before-after__body">
+									<div class="before-after__body_title">Процедура All-On-4</div>
+									<div class="before-after__body_doctor">Врач: Галеева Аделина Рустамовна</div>
+									<div class="before-after__body_subtitle">
+										<p>
+											Организации, рост нашей участниками порядка, подготовки
+											важную административных показывает, позиций, кадров активности анализа а
+											практика играет
+											порядка, занимаемых роль соответствующий таким соображения нашей нашей роль
+											занимаемых
+											нашей
+											способствует условий. Показывает, кадров и равным постоянный также
+											реализация сфера
+											выполнять
+											развития.
+										</p>
+										<p>
+											Оценить нас обучения оценить особенности оценить и в нашей рост также форм
+											формировании
+											форм
+											также организации, а условий направлений участниками порядка,
+											организационной
+											количественный
+											по
+											порядка, идейные позволяет реализации а повседневная рост представляет
+											обучения таким
+											играет/
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="before-after__slider_btns">
+							<div class="before-after-button-prev swiper-button-prev button-prev"></div>
+							<div class="before-after-button-next swiper-button-next button-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-clinica">
+			<div class="container">
+				<div class="about-clinica__wrapper">
+					<div class="about-clinica__title title"> <img src="./img/line.png" alt="line" />
+						<div class="title__text">О клинике</div>
+					</div>
+
+					<div class="about-clinica__article">
+						<div class="about-clinica__article_img">
+							<img src="./img/doctor1.png" alt="doctor-img">
+						</div>
+						<div class="about-clinica__article_description">
+							<div class="about-clinica__article_text read-more__text">
+								<p>
+									С развитием новых современных технологий у врачей появилась возможность в
+									осуществлении
+									более качественной диагностики, постановке правильного диагноза и на основе
+									полученных
+									результатов, проводить эффективное лечение.
+									Наша клиника оснащена самым необходимым оборудованием для диагностики и лечения
+									пациентов любого возраста.
+									Стоматология имеет свою СОБСТВЕННУЮ ЦИФРОВУЮ ЗУБОТЕХНИЧЕСКУЮ ЛАБОРАТОРИЮ, благодаря
+									чему, мы имеем возможность проводить лечение за максимально короткое время.
+									Врачи нашей клиники готовы предложить пациентам решение проблем, которые до
+									недавнего
+									времени считались неразрешимыми.
+								</p>
+								<p>
+									Часто для правильной постановки диагноза требуется КТ исследование хорошего
+									качества,
+									которое в нашей клинике проводится на аппарате Gendex CB-500. Он позволяет с
+									точностью
+									воспроизводить анатомическую ситуацию, необходимую для диагностики.
+									Мы не сомневаемся в компетенции наших врачей...
+								</p>
+							</div>
+							<button class="read-more">Читать далее</button>
+						</div>
+
+					</div>
+
+					<div class="hello">
+						<div class="hello__wrapper">
+							<div class="hello__body">
+								<div class="hello__title">Здравствуйте!</div>
+								<div class="hello__subtitle read-more__text gray">
+									<p>Меня зовут Мольдон Мария Вадимовна, я Главный врач стоматологической
+										клиники «Студия-С»</p>
+									<p>Я и мои коллеги благодарны вам за то, что вы доверяете нам самое ценное –
+										свое
+										здоровье.
+										Мы
+										искренне любим свою работу, живем ею и беспрерывно в ней развиваемся. Мы
+										считаем,
+										что
+										стоматология должна быть комфортной по отношению к вам – пациентам, а
+										лечение
+										максимально
+										качественным. Наши кабинеты оснащены всеми необходимыми приборами последнего
+										поколения,
+										высокотехнологичными и максимально безопасными.</p>
+									<p>Команда стоматологической клиники "Студия-С" обязательно поможет Вам, а я
+										всегда
+										готова
+										проконсультировать Вас на всех этапах лечения. Нам важно Ваше мнение! Если у
+										Вас
+										возникнут
+										какие-либо вопросы или пожелания по нашей работе, пожалуйста, напишите..</p>
+
+								</div>
+								<div class="read-more">Читать далее</div>
+
+							</div>
+							<div class="hello__img">
+								<img src="./img/hello.png" alt="hello-img">
+							</div>
+						</div>
+
+						<div class="hello__slider swiper-container">
+							<div class="hello__slider_wrapper swiper-wrapper">
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide1.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide1.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide2.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide2.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide1.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide1.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide2.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide2.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide1.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide1.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide2.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide2.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide1.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide1.png" alt="slide">
+								</a>
+								<a class="hello__slide swiper-slide" href="./img/hello-slider/slide2.png"
+									data-fancybox="">
+									<img src="./img/hello-slider/slide2.png" alt="slide">
+								</a>
+
+							</div>
+							<div class="hello-scrollbar swiper-scrollbar scrollbar"></div>
+
+							<div class="hello__slider_btns">
+								<div class="hello-button-prev swiper-button-prev button-prev"></div>
+								<div class="hello-button-next swiper-button-next button-next"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-tech">
+			<div class="container">
+				<div class="about-tech__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">О технологии All-On-4</div>
+				</div>
+				<div class="about-tech__wrapper">
+					<div class="about-tech__body">
+						<p>В нашей клинике для качественного восстановления зубного ряда используется технология
+							All-on-4 «все на четырех», а также All-on-6 «все на шести». На данный момент эти методики
+							постоянного протезирования являются самыми продвинутыми и эффективными. Не каждому врачу
+							удается выполнить такую работу качественно. Здесь важную роль играет соблюдение следующих
+							параметров:</p>
+						<ul class="about-tech__list">
+							<li>
+								наличие опыта проведения подобных хирургических вмешательств;
+							</li>
+							<li>
+								высокая точность манипуляций, добиться которой можно только с помощью современного
+								цифрового оборудования;
+							</li>
+							<li>
+								наличие навыков, полученных у создателей данного протокола.
+							</li>
+						</ul>
+						<p>Соблюдение данных параметров позволило нашим врачам добиться отличных результатов при
+							применении имплантации All-on-4. На базе клиники «Студия-С» нашими специалистами проводятся
+							консультации и обучение врачей других стоматологических клиник по протезированию, особенно
+							при полном отсутствии зубов на обеих челюстях.</p>
+					</div>
+					<div class="about-tech__img">
+						<img src="./img/tooth.png" alt="tooth-img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantage">
+			<div class="container">
+				<div class="advantage__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Преимущества All-On-4</div>
+				</div>
+				<div class="advantage__wrapper">
+					<div class="advantage__text">
+						<p>Уже более 20 лет технология установки имплантатов по системе All-on-4 демонстрирует отличные
+							результаты приживаемости и надежности. Особенность метода «All-on-4» в том, что для
+							восстановления всего зубного ряда достаточно вживления всего 4-х имплантатов, 2 из них в
+							центральной части устанавливаются перпендикулярно линии зубов, другие 2 – крайние,
+							размещаются под наклоном.
+						</p>
+						<p>Данная схема установки позволяет конструкции служить дольше, так как благодаря такому
+							расположению имплантатов нагрузка распределяется равномерно. Методика All-on-4 подходит для
+							восстановления зубного ряда, как на верхней, так и на нижней челюсти по отдельности, так и
+							одновременно.
+						</p>
+					</div>
+
+					<div class="advantage__body">
+
+						<div class="advantage__body_column">
+							<div class="advantage__item">
+								<div class="advantage__item_title">УСТАНОВКА ЗА ОДИН ДЕНЬ</div>
+								<div class="advantage__item_subtitle">Установка имплантов по системе All-on-4 может быть
+									проведена в течение одного врачебного приема. При необходимости, можно вживить
+									имплантат на место зуба, который подлежит удалению. Длительность операции составляет
+									от двух до трех часов. После этого на импланты фиксируется временный или постоянный
+									протез, выбор которого зависит не только от желания пациента, но и рекомендаций
+									врача стоматолога-хирурга/ортопеда.</div>
+							</div>
+							<div class="advantage__item">
+								<div class="advantage__item_title">ФУНКЦИОНАЛЬНОСТЬ И ЭСТЕТИЧНОСТЬ</div>
+								<div class="advantage__item_subtitle">При имплантации All-on-4 искусственные коронки
+									изготавливаются в индивидуальном порядке для каждого пациента. Они надежно
+									фиксируются на имплантах. Полностью восстанавливается функциональность зубного ряда.
+									Зубы полноценно выполняют функцию пережевывания пищи и выглядят, как настоящие,
+									включая естественный вид десны. </div>
+							</div>
+							<div class="advantage__item">
+								<div class="advantage__item_title">НЕДОРОГО И ДОСТУПНО</div>
+								<div class="advantage__item_subtitle">В отличие от обычной имплантации стоимость
+									восстановления зубного ряда с применением метода All-on-4 обходится в разы дешевле.
+								</div>
+							</div>
+							<div class="advantage__item">
+								<div class="advantage__item_title">НЕТ АТРОФИЧЕСКИМ ИЗМЕНЕНИЯМ</div>
+								<div class="advantage__item_subtitle">Наличие имплантатов оказывает благоприятное
+									влияние на костную ткань и не дает проседать мягким тканям. Симметричное
+									расположение титановых корней способствует равномерному распределению жевательной
+									нагрузки.</div>
+							</div>
+						</div>
+
+						<div class="advantage__body_column">
+							<div class="advantage__item_img">
+								<img src="./img/advantage.png" alt="advantage-img">
+							</div>
+							<div class="advantage__body_row">
+								<div class="advantage__item">
+									<div class="advantage__item_title">ОТСУТСТВИЕ ДИСКОМФОРТА</div>
+									<div class="advantage__item_subtitle">В отличие от других методов протезирования,
+										после
+										имплантации All-on-4 нет ощущения во рту инородного тела. Речь и жевание не
+										затруднены, а становятся нормальными. При ежедневной эксплуатации протеза, он не
+										доставляет каких-либо неудобств. Протез не выпадает изо рта, исключены травмы
+										слизистой полости рта. Поддержание гигиены ротовой полости и уход за
+										искусственными
+										зубами не представляет затруднений.</div>
+								</div>
+								<div class="advantage__item">
+									<div class="advantage__item_title">МОМЕНТАЛЬНОЕ ВОССТАНОВЛЕНИЕ ФУНКЦИИ ЖЕВАНИЯ</div>
+									<div class="advantage__item_subtitle">С момента фиксации временного протеза, питание
+										становится обычным без каких-либо ограничений. Не рекомендуется только
+										употребление
+										очень твердой пищи.</div>
+								</div>
+								<div class="advantage__item">
+									<div class="advantage__item_title">НЕТ НЕОБХОДИМОСТИ В ПОДГОТОВИТЕЛЬНЫХ ОПЕРАЦИЯХ
+									</div>
+									<div class="advantage__item_subtitle">Технология All-on-4 не требует специальной
+										подготовки: проведения синус-лифтинга, наращивания костной ткани при выраженных
+										атрофических изменениях нижней челюсти.</div>
+								</div>
+								<div class="advantage__item">
+									<div class="advantage__item_title">НАДЕЖНОСТЬ И ДОЛГОВЕЧНОСТЬ</div>
+									<div class="advantage__item_subtitle">Особенное расположение имплантатов в кости
+										челюсти
+										обеспечивает отличную фиксацию и максимальную стабильность титановых корней.
+										Равномерность распределения нагрузки на зубы продлевает срок службы протеза
+										All-on-4.</div>
+								</div>
+								<div class="advantage__item">
+									<div class="advantage__item_title">АКТИВАЦИЯ МИМИЧЕСКОЙ И ЖЕВАТЕЛЬНОЙ МУСКУЛАТУРЫ
+									</div>
+									<div class="advantage__item_subtitle">Мышечная система лица приобретает тонус. После
+										имплантации All-on-4 человек выглядит моложе, а процессы старения замедляются.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="advantage__body_btn">Показать еще </div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<div class="container">
+				<div class="video__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Видео</div>
+				</div>
+			</div>
+
+			<div class="video__slider swiper-container">
+				<div class="video__wrapper swiper-wrapper">
+					<div class="video__slide swiper-slide ">
+						<a href="https://www.youtube.com/watch?v=iik25wqIuFo" data-fancybox="">
+							<img class="video__slide swiper-slide" src="./img/video-slider/slide1.png"
+								alt="video-img" />
+						</a>
+					</div>
+					<div class="video__slide swiper-slide ">
+						<a href="https://www.youtube.com/watch?v=iik25wqIuFo" data-fancybox="">
+							<img class="video__slide swiper-slide" src="./img/video-slider/slide1.png"
+								alt="video-img" />
+						</a>
+					</div>
+					<div class="video__slide swiper-slide ">
+						<a href="https://www.youtube.com/watch?v=iik25wqIuFo" data-fancybox="">
+							<img class="video__slide swiper-slide" src="./img/video-slider/slide1.png"
+								alt="video-img" />
+						</a>
+					</div>
+					<div class="video__slide swiper-slide ">
+						<a href="https://www.youtube.com/watch?v=iik25wqIuFo" data-fancybox="">
+							<img class="video__slide swiper-slide" src="./img/video-slider/slide1.png"
+								alt="video-img" />
+						</a>
+					</div>
+					<div class="video__slide swiper-slide ">
+						<a href="https://www.youtube.com/watch?v=iik25wqIuFo" data-fancybox="">
+							<img class="video__slide swiper-slide" src="./img/video-slider/slide1.png"
+								alt="video-img" />
+						</a>
+					</div>
+
+				</div>
+				<div class="video__slider_btns">
+					<div class="video-button-prev swiper-button-prev button-prev"></div>
+					<div class="video-button-next swiper-button-next button-next"></div>
+				</div>
+				<div class="video-scrollbar swiper-scrollbar scrollbar"></div>
+			</div>
+
+		</section>
+
+		<section class="our-adv">
+			<div class="container">
+				<div class="video__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Наши преимущества</div>
+				</div>
+				<div class="our-adv__wrapper">
+					<div class="our-adv__item">
+						<div class="our-adv__count">01</div>
+						<div class="our-adv__line first-line"></div>
+						<div class="our-adv__title">Собственная лаборатория</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">02</div>
+						<div class="our-adv__line"></div>
+						<div class="our-adv__title">Все врачи ЧЛХ</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">03</div>
+						<div class="our-adv__line"> </div>
+						<div class="our-adv__title">Специализированный наркозный кабинет</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">04</div>
+						<div class="our-adv__line"></div>
+						<div class="our-adv__title">Штатная бригада анестезиологов-реаниматологов</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">05</div>
+						<div class="our-adv__line"> </div>
+						<div class="our-adv__title">Полный комплекс реанимационного оборудования</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">06</div>
+						<div class="our-adv__line"></div>
+						<div class="our-adv__title">Современная цифровая стоматология</div>
+					</div>
+					<div class="our-adv__item">
+						<div class="our-adv__count">07</div>
+						<div class="our-adv__line"></div>
+						<div class="our-adv__title">Навигационная хирургия, виртуально планирование</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-adv__surgery">
+			<div class="container">
+				<div class="surgery__wrapper">
+					<div class="surgery__body">
+						<div class="surgery__title">Операция с нагрузкой протезами за 1 день - это реально!</div>
+						<div class="surgery__subtitle">Запишись на консультацию, чтобы узнать подробности у специалиста
+						</div>
+						<div class="surgery__btn btn-main"><a href="#popup" data-fancybox>Записаться</a> </div>
+					</div>
+					<div class="surgery__img">
+						<img src="./img/surgery.png" alt="surgery-img">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stage">
+			<div class="container">
+				<div class="stage__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Этапы</div>
+				</div>
+				<div class="stage__wrapper">
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage1.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Первичная консультация, осмотр</div>
+							<div class="stage__body_subtitle">
+								<p>
+									<span>
+										При первом посещении хирург-имплантолог проводит осмотр ротовой полости пациента
+										для
+										получения информации о состоянии зубов, слизистой и десен. Врач собирает
+										анамнез,
+										выслушивает жалобы, выясняет наличие вредных привычек, и какие медицинские
+										препараты
+										принимает пациент на момент обращения в клинику. При необходимости, специалист
+										дает
+										ответы на вопросы. Далее, врач озвучивает возможные варианты решения
+										стоматологической проблемы и сроки восстановления зубов.
+									</span>
+								</p>
+								<p>
+									<span>
+
+										Если у пациента будут выявлены патологические состояния, которые могут
+										спровоцировать развитие осложнений при проведении хирургического вмешательства и
+										после внедрения в челюсть искусственных корней, потребуется мнение узкого
+										специалиста.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage2.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Проведение диагностики </div>
+							<div class="stage__body_subtitle">
+								<p> <span>
+										Для определения структуры и объема костной ткани и топографических особенностей
+										гайморовых пазух проводится КТ. На снимке доктор может рассмотреть расположение
+										нервно-сосудистого пучка, а также наличие скрытого патологического состояния.
+									</span>
+								</p>
+								<p>
+									<span>
+										Для оценки прикуса требуется проведение кондилографии. Данный метод исследования
+										очень важен и обязательно проводится перед имплантацией, так как позволяет
+										выяснить
+										особенности височно-челюстного сустава.
+									</span>
+								</p>
+								<p><span>
+										Если по результатам исследований не будет выявлено противопоказаний к операции,
+										стоматолог приступит к планированию терапии.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage3.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Моделирование 3D</div>
+							<div class="stage__body_subtitle">
+								<p>
+									<span>
+
+										С целью исключения ошибок во время операции по вживлению титановых корней и
+										успешного получения нужных результатов, врач, который будет проводить
+										имплантацию,
+										загружает в специальную программу на компьютере, диагностические данные пациента
+										и
+										работает над визуальным моделированием процесса вживления титановых корней с
+										последующей фиксацией на них искусственных зубов.
+									</span>
+
+								</p>
+								<p>
+									<span>
+
+										В программе специалист создает трехмерную (3D) модель челюсти пациента и
+										определяет
+										с высокой точностью участки для оптимального внедрения искусственных корней, а
+										также
+										работает над созданием прототипа будущего зубного протеза.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage4.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Проведение санации</div>
+							<div class="stage__body_subtitle">
+								<p>
+									<span>
+
+										Перед вживлением имплантов во рту не должно быть патогенной микрофлоры.
+										Попадание
+										инфекции в рану приведет к развитию воспалительного процесса, который может
+										спровоцировать отторжение титанового корня. Поэтому, перед тем, как врач
+										приступит к
+										операции, необходимо провести санацию ротовой полости, которая включает в себя
+										удаление зубных отложений, лечение стоматологических патологий.
+									</span>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage5.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Хирургия </div>
+							<div class="stage__body_subtitle">
+								<p><span>
+
+										С применением местного обезболивания стоматолог проведет удаление зубов, которые
+										не
+										подлежат терапии. После этого в кость челюсти внедряют 4 имплантата. Технология
+										3D
+										моделирования позволяет хирургу-имплантологу позиционировать каждый титановый
+										корень
+										в кости челюсти с точностью до миллиметра.
+									</span>
+								</p>
+								<p>
+									<span>
+
+										Использование трехмерного моделирования облегчает протекание периода
+										реабилитации:
+										незначительную выраженность болевого синдрома, отсутствие отека и гематом.
+										Длительность оперативного вмешательства составляет около полутора часов.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage6.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Ортопедия </div>
+							<div class="stage__body_subtitle">
+								<p>
+									<span>
+
+										После вживления титановых конструкций, хирург закрепляет на них мульти-юнит
+										абатменты. Чтобы изготовить протез, врач сканирует полость рта специальным
+										внутриротовым сканером.
+									</span>
+								</p>
+								<p>
+									<span>
+
+										Сразу после операции к абатментам фиксируется адаптационный протез. По окончании
+										остеоинтеграции имплантатов (от 3-х месяцев до полугода) временная конструкция
+										заменяется на постоянную. Протезы могут быть изготовлены из металлокерамики или
+										по
+										желанию пациента – из диоксида циркония.
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="stage__item">
+						<div class="stage__img">
+							<img src="./img/stage/stage7.png" alt="stage-img">
+						</div>
+						<div class="stage__body">
+							<div class="stage__body_title">Контрольные осмотры в послеоперационный периоде 3D</div>
+							<div class="stage__body_subtitle">
+								<p>
+									После установки имплантов, пациенту необходимо будет приходить в определенные дни на
+									профосмотры к хирургу, проводившему операцию.
+
+								</p>
+								<p>
+									При осмотре врач обращает внимание на следующие моменты:
+								</p>
+								<ul>
+									<li>
+										В каком состоянии находятся мягкие ткани, окружающие имплант;
+									</li>
+									<li>
+										Состояние полости рта, чтобы исключить воспаление;
+									</li>
+									<li>
+										Наличие развивающихся побочных эффектов и осложнений;
+									</li>
+									<li>
+										Эргономичность протеза и выполнение функций постоянной несъемной конструкцией.
+									</li>
+									<li>
+										При наличии каких-либо несоответствий, делается перебазировка.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="before-after__body_btn">Показать еще </div>
+				</div>
+			</div>
+		</section>
+
+		<div class="main-form">
+			<div class="container">
+				<form class="main-form__wrapper" action="submit">
+					<div class="main-form__body">
+						<div class="main-form__title">Запишитесь на
+							консультацию</div>
+						<div class="main-form__subtitle">Наш администратор свяжется с Вами в течение 20 мин для
+							уточнения
+							даты и времени</div>
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон" id="phone-mask3">
+						<textarea name="comment" placeholder="Комментарии"></textarea>
+						<button class="main-form__btn btn-main">Записаться</button>
+					</div>
+					<div class="main-form__img">
+						<img src="./img/main-form.png" alt="form-img">
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<section class="indication">
+			<div class="container">
+				<div class="indication__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Показания</div>
+				</div>
+				<div class="indication__wrapper">
+					<div class="indication__img">
+						<img src="./img/indication.png" alt="img">
+					</div>
+					<div class="indication__body">
+						<!-- <div class="indication__line"> <img src="./img/vertical-line.png" alt="line-img"></div> -->
+						<p>Применение технологии по системе All-on-4 позволяет решить множество проблем, возникающих при
+							утрате зубов. Показаниями для установки имплантатов являются следующие состояния:</p>
+						<ul class="indication__list">
+							<li class="indication__item">
+								Полная адентия одной или двух челюстей;
+							</li>
+							<li class="indication__item">
+								Убыль мягкой ткани в результате атрофических изменений челюстной кости;
+							</li>
+							<li class="indication__item">
+								Патологии пародонта;
+							</li>
+							<li class="indication__item">
+								Невозможность применения съемных протезов;
+							</li>
+							<li class="indication__item">
+								Отсутствие зубов на протяжении длительного времени;
+							</li>
+							<li class="indication__item">
+								Отсутствие возможности или желания для наращивания костной ткани, чтобы восстановить ее
+								объем.
+							</li>
+						</ul>
+						<p> <span> Проведение имплантации противопоказано, если у пациента выявлены:</span></p>
+						<ul class="indication__list">
+							<li class="indication__item">
+								Патология свертывающей системы крови;
+							</li>
+							<li class="indication__item">
+								Болезни сердечно-сосудистой системы;
+							</li>
+							<li class="indication__item">
+								Иммунодефицитное состояние;
+							</li>
+							<li class="indication__item">
+								Сахарный диабет.
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="type">
+			<div class="container">
+				<div class="type__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Виды</div>
+				</div>
+				<div class="type__wrapper">
+					<div class="type__duration">
+						<div class="type__duration__title">При имплантации «Все на четырех» используются два вида
+							протезов: </div>
+						<div class="type__duration_subblock">
+							<div class="type__duration_btn">Временный</div>
+							<div class="type__duration__subtitle">Это облегченный вариант конструкции, чтобы на
+								прооперированный участок не оказывалось сильное давление. На одной челюсти, обычно, 10
+								коронок. В ходе адаптации их количество может увеличиться до 12.
+							</div>
+						</div>
+						<div class="type__duration_subblock">
+							<div class="type__duration_btn ">Постоянный протез</div>
+							<div class="type__duration__subtitle">Это облегченный вариант конструкции, чтобы на
+								прооперированный участок не оказывалось сильное давление. На одной челюсти, обычно, 10
+								коронок. В ходе адаптации их количество может увеличиться до 12.
+							</div>
+						</div>
+
+					</div>
+
+					<div class="type__item">
+						<div class="type__item_title">Имплант </br>Nobel Biocare</div>
+						<div class="type__list">
+							<div class="type__subtitle">Легко фиксируются в кости</div>
+							<div class="type__subtitle">99,3 % — приживаемость имплантатов Nobel</div>
+							<div class="type__subtitle">Подходят для клинических случаев любой сложности</div>
+						</div>
+						<div class="type__img">
+							<img src="./img/type1.png" alt="type-img">
+						</div>
+					</div>
+					<div class="type__item">
+						<div class="type__item_title">Имплант </br>Any One</div>
+						<div class="type__list">
+							<div class="type__subtitle">Надежность крепления за счет «конуса Морзе»</div>
+							<div class="type__subtitle">Эффективное распределение жевательной нагрузки</div>
+							<div class="type__subtitle">Покрытие с ионами кальция SLA</div>
+						</div>
+						<div class="type__img">
+							<img src="./img/type2.png" alt="type-img">
+						</div>
+					</div>
+					<div class="type__item">
+						<div class="type__item_title">Имплант </br> Any Ridge</div>
+						<div class="type__list">
+							<div class="type__subtitle">Быстрая и комфортная установка</div>
+							<div class="type__subtitle">Реабилитация проходит быстро и почти без боли</div>
+							<div class="type__subtitle">Пожизненный срок службы гарантирован</div>
+						</div>
+						<div class="type__img">
+							<img src="./img/type3.png" alt="type-img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="container">
+				<div class="price__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Цены</div>
+				</div>
+				<div class="price__wrapper">
+					<div class="price__description">
+						<p>
+							Стоимость услуг в нашей клинике зависит от применяемых методик, необходимости использования
+							медицинского оборудования, материала, из которого будут изготавливаться протезы.
+						</p>
+						<p>
+							В стоматологии «Студия-С» существует система скидок, проводятся акции. Узнать о них можно,
+							по
+							телефону у консультантов или на сайте клиники.
+						</p>
+						<p>
+							Обратившись к нам на лечение, вы получите красивую улыбку по выгодной цене!
+						</p>
+					</div>
+
+					<div class="accordion v2">
+						<div class="price__row ">
+							<div class="price__text">
+								<div class="price__row_title">Хирургическая часть</div>
+								<div class="price__row_subtitle">ВСЕ ВКЛЮЧЕНО</div>
+								<span></span>
+							</div>
+							<div class="price__cards ">
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type1.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Nobel Biocare</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">373 240 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type2.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Any One</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">190 000 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type3.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Any Ridge</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">266 000 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="price__credit">
+							<div class="price__credit_item ">
+								<div class="price__credit_title">Рассрочка до 12 месяцев без переплат на все виды
+									имплантации
+								</div>
+								<div class="price__credit_subtitle">0%</div>
+							</div>
+
+							<div class="price__credit_item">
+								<div class="price__credit_title">Пожизненная гарантия от производителя</div>
+								<div class="price__credit_img">
+									<img src="./img/shield.png" alt="shield-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="price__row ">
+							<div class="price__text ">
+								<div class="price__row_title">Ортопедическая часть</div>
+								<div class="price__row_subtitle">Протез, он считается временным, но качество как у
+									постоянного
+								</div>
+								<span></span>
+
+							</div>
+							<div class="price__cards ">
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type1.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Nobel Biocare</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">170 000 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type2.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Any One</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">154 000 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item_img">
+										<img src="./img/type3.png" alt="price-logo">
+									</div>
+									<div class="price__item_title">Имплантация Any Ridge</div>
+									<div class="price__item_subtitle">Консультация
+										Составление плана лечения
+										4 имплантата</div>
+									<div class="price__item_cost">154 000 руб</div>
+									<div class="price__item_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="price__condition">*Стоимость имплантации по системе All-on-4 зависит от состояния
+						ротовой полости, выбора методики, особенностей протеза.</div>
+
+					<div class="price__consult">
+						<div class="price__consult_item consult_item1">
+							<div class="price__consult_body">
+								<div class="price__consult_title">Предварительная онлайн консультация по снимкам КТ
+								</div>
+								<div class="price__consult_subtitle">
+									<p>
+										В нашей клинике проводятся КТ исследования на аппарате
+										Gendex
+										CB-500, который обеспечивает точное воспроизведение анатомической ситуации,
+										необходимое
+										для
+										правильной постановки диагноза. Мы уверены в компетенции своих врачей и
+										выступаем за
+										здоровую конкуренцию, поэтому результаты КТ обязательно выдаем на руки
+										пациентам,
+										чтобы
+										они
+										могли использовать данные для консультации в других стоматологических клиниках.
+									</p>
+									<p> Консилиум наших врачей проведёт исследование и даст обратную связь.
+									</p>
+								</div>
+								<div class="price__consult_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+								</div>
+							</div>
+							<div class="price__consult_img">
+								<img src="./img/consult.png" alt="consult-img">
+							</div>
+						</div>
+						<div class="price__consult_item consult_item2">
+							<div class="price__consult_body">
+								<div class="price__consult_title">Хирургический навигационный шаблон</div>
+								<div class="price__consult_subtitle">
+									<p>
+										Инновационный метод имплантации с применением хирургического шаблона даёт
+										возможность максимально точно и быстро установить имплантат. При этом на
+										практике,
+										пациенты получают ряд значительных преимуществ, которые упрощают процесс
+										лечения.
+
+									</p>
+									<p> Собственная зуботехническая лаборатория и штат опытных зубных техников позволяет
+										сделать индивидуальный хирургический шаблон быстро и качественно.
+									</p>
+								</div>
+								<div class="price__consult_btn btn-main"><a href="#popup" data-fancybox>Записаться</a>
+								</div>
+							</div>
+							<div class="price__consult_img">
+								<img src="./img/consult2.png" alt="consult-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="form-line">
+			<div class="container">
+				<div class="form-line__wrapper">
+					<div class="form-line__title"> Узнайте, подходит ли Вам имплантация All-on-4</div>
+					<div class="form-line__subtitle">Пройдите диагностику и узнайте, какой вид имплантации подходит в
+						Вашем
+						случае</div>
+					<form class="form-line__form" action="submit">
+						<input class="form__item" type="text" placeholder="Имя">
+						<input class="form__item " type="phone" placeholder="Телефон" id="phone-mask4">
+						<input class="form__item" type="email" placeholder="E-mail">
+						<button class="form-line__btn btn-main">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="question">
+			<div class="container">
+				<div class="question__title">Вопрос/ответ</div>
+				<div class="question__wrapper">
+					<div class="question__accordion">
+						<div class="accordion v1">
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+							<div class="a-container">
+								<p class="a-btn">Как часто нужно снимать зубной камень? <span></span></p>
+								<div class="a-panel">
+									<p>Профессиональную чистку зубов следует производить не режеодного раза в шесть
+										месяцев.
+										Эту процедуру проводят передустановкой протезных конструкций.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="doc">
+			<div class="container">
+				<div class="doc__title title"> <img src="./img/line.png" alt="line" />
+					<div class="title__text">Врачи</div>
+				</div>
+				<div class="doc__wrapper">
+					<div class="doc__slider swiper-container">
+						<div class="doc__slider_wrapper swiper-wrapper">
+
+							<div class="doc__slide swiper-slide">
+								<div class="doc__slide_body">
+									<div class="doc__slide_title">Дзебоев Арсен Эльбрусович</div>
+									<div class="doc__slide_doctor">Врач-ортодонт</div>
+									<div class="doc__slide_subtitle">Обучения и выполнять количественный направлений
+										способствует и высшего и реализация проверки реализация структура а обучения
+										образом
+										и сфера от дальнейших нас по активности прогрессивного реализация</div>
+									<div class="doc__slide_exp">Стаж 7 лет</div>
+								</div>
+								<div class="doc__slide_img">
+									<div class="doc__slide_photo">
+										<img src="./img/doc-slider/doc1.png" alt="doctor-img">
+									</div>
+									<div class="doc__subslider swiper-container">
+										<div class="doc__subslider_wrapper swiper-wrapper">
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic1.png" data-fancybox="">
+													<img src="./img/doc-slider/pic1.png" alt="achive-img">
+												</a>
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic2.png" data-fancybox="">
+													<img src="./img/doc-slider/pic2.png" alt="achive-img">
+												</a>
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic3.png" data-fancybox="">
+													<img src="./img/doc-slider/pic3.png" alt="achive-img">
+												</a>
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic1.png" data-fancybox="">
+													<img src="./img/doc-slider/pic1.png" alt="achive-img">
+												</a>
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic2.png" data-fancybox="">
+													<img src="./img/doc-slider/pic2.png" alt="achive-img">
+												</a>
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<a href="./img/doc-slider/pic3.png" data-fancybox="">
+													<img src="./img/doc-slider/pic3.png" alt="achive-img">
+												</a>
+											</div>
+
+										</div>
+										<div class="doc-scrollbar swiper-scrollbar scrollbar"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="doc__slide swiper-slide">
+								<div class="doc__slide_body">
+									<div class="doc__slide_title">Дзебоев Арсен Эльбрусович</div>
+									<div class="doc__slide_doctor">Врач-ортодонт</div>
+									<div class="doc__slide_subtitle">Обучения и выполнять количественный направлений
+										способствует и высшего и реализация проверки реализация структура а обучения
+										образом
+										и сфера от дальнейших нас по активности прогрессивного реализация</div>
+									<div class="doc__slide_exp">Стаж 7 лет</div>
+								</div>
+								<div class="doc__slide_img">
+									<div class="doc__slide_photo">
+										<img src="./img/doc-slider/doc1.png" alt="doctor-img">
+									</div>
+									<div class="doc__subslider swiper-container">
+										<div class="doc__subslider_wrapper swiper-wrapper">
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic1.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic2.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic3.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic1.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic2.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic3.png" alt="achive-img">
+											</div>
+										</div>
+										<div class="doc-scrollbar swiper-scrollbar scrollbar"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="doc__slide swiper-slide">
+								<div class="doc__slide_body">
+									<div class="doc__slide_title">Дзебоев Арсен Эльбрусович</div>
+									<div class="doc__slide_doctor">Врач-ортодонт</div>
+									<div class="doc__slide_subtitle">Обучения и выполнять количественный направлений
+										способствует и высшего и реализация проверки реализация структура а обучения
+										образом
+										и сфера от дальнейших нас по активности прогрессивного реализация</div>
+									<div class="doc__slide_exp">Стаж 7 лет</div>
+								</div>
+								<div class="doc__slide_img">
+									<div class="doc__slide_photo">
+										<img src="./img/doc-slider/doc1.png" alt="doctor-img">
+									</div>
+									<div class="doc__subslider swiper-container">
+										<div class="doc__subslider_wrapper swiper-wrapper">
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic1.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic2.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic3.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic1.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic2.png" alt="achive-img">
+											</div>
+											<div class="doc__subslider-slide swiper-slide">
+												<img src="./img/doc-slider/pic3.png" alt="achive-img">
+											</div>
+										</div>
+										<div class="doc-scrollbar swiper-scrollbar scrollbar"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="doc__slider_btns">
+							<div class="doc-button-prev swiper-button-prev button-prev"></div>
+							<div class="doc-button-next swiper-button-next button-next"></div>
+						</div>
+						<div class="doc-main-scrollbar swiper-scrollbar scrollbar"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="certificate">
+			<div class="container">
+				<div class="certificate__wrapper">
+					<div class="certificate-clinica__title title"> <img src="./img/line.png" alt="line" />
+						<div class="title__text">Сертификаты</div>
+					</div>
+
+					<div class="certificate__body">
+						<div class="certificate__body_title">
+							Врачи нашей клиники постоянно работают над повышением уровня своего профессионализма:
+							принимают участие в конференциях, обучающих мероприятиях, симпозиумах, как в России, так и
+							за ее пределами. Специалисты регулярно изучают передовые технологии и применяют их в своей
+							деятельности, отдавая предпочтение самым надежным, эффективным и безопасным способам
+							лечения.
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="certificate__slider_container">
+				<div class="certificate__slider swiper-container">
+					<div class="certificate__slider_wrapper swiper-wrapper">
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate1.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate1.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate2.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate2.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate1.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate1.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate2.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate2.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate1.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate1.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate2.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate2.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate1.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate1.png" alt="certificate-img">
+							</a>
+						</div>
+						<div class="certificate__slide swiper-slide">
+							<a href="./img/certificate-slider/certificate2.png" data-fancybox="">
+								<img src="./img/certificate-slider/certificate2.png" alt="certificate-img">
+							</a>
+						</div>
+
+					</div>
+					<div class="certificate__slider_btns">
+						<div class="certificate-button-prev swiper-button-prev button-prev"></div>
+						<div class="certificate-button-next swiper-button-next button-next"></div>
+					</div>
+					<div class="certificate-scrollbar swiper-scrollbar scrollbar"></div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="map">
+			<div class="map__wrapper">
+				<div class="map__body">
+					<script type="text/javascript" charset="utf-8" async
+						src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab3ebdee027d27468e4bc887463baff4217e696a08447546ed70f98d17b79642a&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="map__window">
+					<div class="map__title">Цифровая стоматология “Студия -С”</div>
+					<div class="map__phone">8 (812) 627-17-17</div>
+					<div class="map__location">
+						<div class="map__icon">
+							<img src="./img/location.png" alt="location-icon">
+						</div>
+						<p>
+							194356, Россия,
+							Санкт-петербург, Парашютная
+							ул. 52 a
+						</p>
+					</div>
+					<div class="map__mail">
+						<div class="map__icon">
+							<img src="./img/mail.png" alt="mail-icon">
+						</div>
+						<p>
+							6271717@studio-s.spb.ru
+						</p>
+					</div>
+					<div class="map__skype">
+						<div class="map__icon">
+							<img src="./img/skype.png" alt="skype-icon">
+						</div>
+						<p>
+							studio-s.spb
+						</p>
+					</div>
+					<div class="map__btn btn-secondary"><a href="#popup" data-fancybox>Записаться</a> </div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__logo">
+					<img src="./img/footer-logo.png" alt="logo">
+					Цифровая стоматология </br> “Студия -С”
+				</div>
+
+				<div class="footer__body">
+					<div class="footer__phone">8 (812) 627-17-17</div>
+					<div class="footer__social">
+						<img src="./img/telega.png" alt="telega-icon">
+						<img src="./img/vk.png" alt="vk-icon">
+					</div>
+					<div class="footer__reglament">
+						Пн-Сб: 09:00-21:00 </br>
+						Вс: 09:00-18:00
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+
+
+	<main>
+		<div class="breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb__wrapper">
+					<li class="breadcrumb__item breadcrumb__main"><a class="a" href=""> Главная</a></li>
+					<li class="breadcrumb__item "><a class="a" href=""> Галерея</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<article class="gallery">
+			<div class="container">
+				<div class="gallery__wrapper">
+					<div class="gallery__title title">
+						<div class="h1 gallery__nav_btn gallery-opened">Галерея</div>
+					</div>
+					<div class="gallery__nav gallery-opened">
+						<a href="" class="a btn-black-border gallery__nav-active">Smart-стекло</a>
+						<a href="" class="a btn-black-border">Зеркала</a>
+						<a href="" class="a btn-black-border">Состаренные зеркала</a>
+						<a href="" class="a btn-black-border">Стеклянные лестницы</a>
+						<a href="" class="a btn-black-border">Стеклянные двери</a>
+						<a href="" class="a btn-black-border">Стеклянные фартуки</a>
+						<a href="" class="a btn-black-border">Стеклянные крыши</a>
+						<a href="" class="a btn-black-border">Стеклянные перегородки</a>
+						<a href="" class="a btn-black-border">Душевые перегородки</a>
+					</div>
+					<div class="gallery__body title">
+						<div class="h1">Smart-стекло</div>
+						<div class="read-more__text read-more">
+							<div class="p">Smart-стекло — это новейшая разработка в которой были применены
+								нанотехнологии, придающие
+								стеклянным полотнам уникальные оптические свойства. Такое стекло ещё называют
+								«электрохромное стекло», «умное стекло», «стекло с изменяющимися свойствами». От
+								обычного
+								стекла оно отличается тем, что может менять свои светопропускающие свойства в
+								зависимости от
+								потребностей пользователя .Так же смарт стекло обладает проекционными свойствами, что
+								даёт
+								возможность использовать его в рекламных или просветительских целях. Такие свойства
+								«умное
+								стекло» получило благодаря химическим компонентам входящим в структуру стекла и
+								использованию композитных технологий .Изготовление Smart-стекла с термостатными
+								функциями
+								даёт возможность сохранять в помещении комфортную температуру. Умные стекла отлично
+								вписываются в интерьеры домов и с лёгкостью могут заменить шторы или жалюзи. В компании
+								Steklo-burg Вы можете выбрать и заказать smart-стекло любых размеров и форм в любое
+								удобное
+								для вас время .
+							</div>
+							<div class="read-more__btn read-more">Скрыть</div>
+						</div>
+					</div>
+
+					<div class="gallery__slider swiper-container">
+						<div class="gallery__slider_wrapper swiper-wrapper">
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider.png" data-fancybox>
+									<img class="img" src="./img/slider.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/slider2.png" data-fancybox>
+									<img class="img" src="./img/slider2.png" alt="gallery-img">
+								</a>
+							</div>
+						</div>
+						<div class="gallery-scrollbar swiper-scrollbar scrollbar"></div>
+
+						<div class="gallery__slider_controls slider_controls">
+							<div class="gallery-pagination slider-count-pagination"></div>
+							<div class="gallery__slider_btns">
+								<div class="gallery-button-prev swiper-button-prev button-prev">
+									<svg width="62" height="24" viewBox="0 0 62 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z"
+											fill="#404040" />
+									</svg>
+								</div>
+								<div class="gallery-button-next swiper-button-next button-next">
+									<svg width="62" height="24" viewBox="0 0 62 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z"
+											fill="#404040" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="gallery__slider video__slider swiper-container">
+						<div class="gallery__slider_wrapper swiper-wrapper">
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+							<div class="gallery__slide swiper-slide">
+								<a class="a" href="./img/video.png" data-fancybox>
+									<img class="img" src="./img/video.png" alt="gallery-img">
+								</a>
+							</div>
+
+						</div>
+						<div class="gallery-scrollbar swiper-scrollbar scrollbar"></div>
+
+						<div class="gallery__slider_controls slider_controls">
+							<div class="gallery-pagination slider-count-pagination"></div>
+							<div class="gallery__slider_btns">
+								<div class="gallery-button-prev swiper-button-prev button-prev">
+									<svg width="62" height="24" viewBox="0 0 62 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z"
+											fill="#404040" />
+									</svg>
+								</div>
+								<div class="gallery-button-next swiper-button-next button-next">
+									<svg width="62" height="24" viewBox="0 0 62 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z"
+											fill="#404040" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a href="" class="a gallery__link"> Перейти на страницу продукта <svg width="62" height="24"
+							viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z"
+								fill="#258E69" />
+						</svg>
+					</a>
+
+				</div>
+			</div>
+		</article>
+
+	</main>
+
+
+
+</body>
+
+</html>

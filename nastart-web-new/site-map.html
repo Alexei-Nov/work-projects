@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="/" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title page-title_has-img dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper page-title__wrapper_full title">
+						Карта сайта
+						<div class="page-title__item">
+							<div class="page-title__img">
+								<img src="./img/page-title.png" alt="">
+							</div>
+							<div class="page-title__label">
+								Сидим, работаем
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section site-map dark-bg m-0">
+				<div class="container">
+					<div class="site-map__wrapper ">
+						<div class="site-map__tab tab">
+							<div class="tab__header-wrapper">
+								<ul class="tab__header site-map__links-header small-list-text">
+									<li class="tab__link site-map__link ">О нас</li>
+									<li class="tab__link site-map__link tab__link-active ">Услуги</li>
+									<li class="tab__link site-map__link ">Наши проекты</li>
+									<li class="tab__link site-map__link ">Блог</li>
+									<li class="tab__link site-map__link ">Отзывы</li>
+									<li class="tab__link site-map__link ">Карьера</li>
+									<li class="tab__link site-map__link ">Контакты</li>
+								</ul>
+							</div>
+
+							<div class=" tab__body">
+								<div class="accordion_v2 tab__item ">
+									<div class="a-container active">
+										<div class="a-btn">О нас<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item tab__item-active">
+									<div class="a-container active">
+										<div class="a-btn">Услуги<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container active">
+										<div class="a-btn">Наши проекты<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container active">
+										<div class="a-btn">Блог<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container active">
+										<div class="a-btn">Отзывы<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container active">
+										<div class="a-btn">Карьера<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container active">
+										<div class="a-btn">Контакты<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section site-map dark-bg m-0 pt-0">
+				<div class="container">
+					<div class="site-map__wrapper ">
+						<div class="site-map__tab tab">
+							<div class="tab__header-wrapper">
+								<ul class="tab__header site-map__links-header small-list-text">
+									<li class="tab__link site-map__link tab__link-active">Разработка</li>
+									<li class="tab__link site-map__link ">SEO</li>
+									<li class="tab__link site-map__link ">Реклама</li>
+								</ul>
+							</div>
+							<div class=" tab__body">
+								<div class="accordion_v2 tab__item tab__item-active">
+									<div class="a-container ">
+										<div class="a-btn">Разработка<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container">
+										<div class="a-btn">SEO<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<div class="accordion_v2 tab__item">
+									<div class="a-container">
+										<div class="a-btn">Реклама<span></span></div>
+										<div class="a-panel">
+											<nav class="site-map__nav">
+												<ul class="site-map__links-list">
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Разработка сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Landing
+																	page</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-визитка</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Корпоративный сайт</a></li>
+															<li class="site-map__links-list-item"><a href="">Сайт с
+																	каталогом</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Сайт-каталог с корзиной</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Интернет-магазин</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Продвижение сайтов</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-продвижение</a></li>
+															<li class="site-map__links-list-item"><a href="">Контекстная
+																	реклама</a></li>
+															<li class="site-map__links-list-item"><a href="">Комплексное
+																	продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">SMM-продвижение</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Крауд-маркетинг</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Видеореклама</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM
+																	аудит</a></li>
+															<li class="site-map__links-list-item"><a href="">SERM —
+																	репутация в Сети</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Техническая поддержка</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Хостинг</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	сайта</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	SMM</a></li>
+															<li class="site-map__links-list-item"><a href="">Аудит
+																	рекламной кампании</a></li>
+															<li class="site-map__links-list-item"><a
+																	href="">Коллтрекинг</a></li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Маркетплейсы</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Настройка
+																	Google Merchant Center</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Wildberries</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Яндекс Маркете</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Lamoda</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на СберМегаМаркет</a>
+															</li>
+															<li class="site-map__links-list-item"><a href="">Продвижение
+																	на Amazon</a>
+															</li>
+														</ul>
+													</li>
+													<li
+														class="site-map__links-list-item site-map__links-list-item_has-children">
+														<a href="">Что мы предлагаем</a>
+														<ul class="site-map__links-sublist">
+															<li class="site-map__links-list-item"><a href="">Создание
+																	сайтов "под ключ"</a>
+															</li>
+															<li class="site-map__links-list-item"><a
+																	href="">SEO-оптимизация сайта</a>
+
+														</ul>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section service more-padding">
+				<div class="container">
+					<div class="service__wrapper">
+						<div class="service__header">
+							<div class="service__col">
+								<h2 class="service__title title">Будем рады сотрудничать с вами</h2>
+							</div>
+							<div class="service__col">
+								<a href="" class="service__btn round-btn round-btn_orange">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-phone.svg)"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+
+</body>
+
+</html>

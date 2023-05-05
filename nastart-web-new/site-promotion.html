@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						Продвижение сайтов
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<!-- <div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Умные сайты для больших продаж!
+								</div>
+								<div class="detail-entrance__subtitle">
+									Отточим каждую деталь: дизайн, удобство, скорость. Быстро, честно,
+									качественно. Просто по-другому мы не умеем!
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 SEO СТУДИЙ ПЕТЕРБУРГА</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer detail-entrance__offer_sticker small-title">
+								Закажи <br>
+								продвижение сайта <br>
+								и получи подарок
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text tt-uc">
+								В "НастАртВЕБ" создание сайтов -
+								настоящее искусство!
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p class="orange-text">Чем наше предложение по продвижению сайта отличается от
+									остальных?</p>
+								<p>
+									Самое главное – в услуги по поисковому продвижению в «НастАртВЕБ» входит работа
+									непосредственно над сайтом. Мы занимаемся контентом, устраняем технические
+									неполадки, постоянно работаем над юзабилити. Отслеживаем статистику посещений и на
+									основе полученных данных добавляем/убираем что-то с сайта. Работаем над структурой.
+									Анализируем поведенческий фактор и внедряем дополнительный функционал.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section dark-bg calc service">
+				<div class="container">
+					<div class="calc__title title">Стоимость сео</div>
+					<!-- <div class="calc__subtitle gray-text">Сколько примерно стоит ваш сайт, если делать его у нас?</div> -->
+					<!-- <div class="calc__filter">
+						<div class="calc__filter-item filter-btn">landing page</div>
+						<div class="calc__filter-item filter-btn">Сайт-визитка</div>
+						<div class="calc__filter-item filter-btn">корпоративный сайт</div>
+						<div class="calc__filter-item filter-btn">сайт с каталогом</div>
+						<div class="calc__filter-item filter-btn">сайт-каталог с корзиной</div>
+						<div class="calc__filter-item filter-btn">интернет-магазин</div>
+					</div> -->
+					<div class="calc__small-title small-title">Тип сайта</div>
+					<div class="calc__option">
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Landing page</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Сайт-визитка</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Корпопартивный сайт</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Сайт с катологом</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Интернет-магазин</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-1">
+							<div class="service__card">
+								<div class="small-title">Сложный проект</div>
+							</div>
+						</label>
+					</div>
+					<div class="calc__small-title small-title">Конкуренция</div>
+					<div class="calc__option">
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-2">
+							<div class="service__card">
+								<div class="small-title">Нет конкурентов</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-2">
+							<div class="service__card">
+								<div class="small-title">1-20</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-2">
+							<div class="service__card">
+								<div class="small-title">20-100</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-2">
+							<div class="service__card">
+								<div class="small-title">Много</div>
+							</div>
+						</label>
+
+					</div>
+					<div class="calc__small-title small-title">Занимались ли ранее SEO?</div>
+					<div class="calc__option">
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-3">
+							<div class="service__card">
+								<div class="small-title">Да</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-3">
+							<div class="service__card">
+								<div class="small-title">Нет</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-3">
+							<div class="service__card">
+								<div class="small-title">Лучше бы не занимались</div>
+							</div>
+						</label>
+					</div>
+					<div class="calc__small-title small-title">Семантика</div>
+					<div class="calc__option">
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-4">
+							<div class="service__card">
+								<div class="small-title">До 100</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-4">
+							<div class="service__card">
+								<div class="small-title">До 500</div>
+							</div>
+						</label>
+						<label class="calc__label service__label">
+							<input class="service__input-radio" type="radio" name="q-4">
+							<div class="service__card">
+								<div class="small-title">Более 500</div>
+							</div>
+						</label>
+					</div>
+					<div class="calc__sum">
+						<div class="calc__res">Итого: 16 000 р</div>
+						<div class="btn">Оставить заявку</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section tile">
+				<div class="container">
+					<h2 class="tile__title large-text black-text tt-uc">ПРИМЕРЫ РАБОТ</h2>
+					<div class="tile__slider swiper-container">
+						<div class="tile__body tile__body_short swiper-wrapper">
+							<div class="tile__item swiper-slide"
+								style="background-image: url(./img/projects/project1.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project2.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project3.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+							<div class='tile__item swiper-slide'
+								style="background-image: url(./img/projects/project5.png); ">
+								<div class="tile__name-container ">
+									<div class="tile__name small-title">
+										нэк (невские электронные компоненты)
+									</div>
+									<a href="" class="tile__item-btn btn">смотреть кейс</a>
+								</div>
+								<div class="tile__hash-list hash-list">
+									<div class="hash-list__item">#какой-то тег</div>
+									<div class="hash-list__item">#какой-то тег</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="" class="tile__btn small-title">смотреть больше проектов</a>
+				</div>
+			</section>
+
+			<section class="section two-col">
+				<div class="container">
+					<div class="two-col__wrapper">
+						<div class="two-col__row">
+							<div class="two-col__col">
+								<div class="orange-text">
+									Где еще вы можете собрать такую огромную аудиторию потенциальных покупателей в одном
+									месте?
+								</div>
+							</div>
+							<div class="two-col__col">
+								<p>
+									Только представьте себе: каждый день в России поисковыми системами Яндекс пользуется
+									до
+									20 миллионов человек. И еще порядка 15 миллионов выбирают Google. КАЖДЫЙ ДЕНЬ! Не
+									верите? Убедитесь сами!
+								</p>
+								<p>
+									Вообразите: вы – владелец шикарного магазина в самом посещаемом месте города. У вас
+									привлекательная, продуманно оформленная витрина. На ней представлены самые лучшие
+									товары, самые «сладкие» предложения. Так, что просто невозможно пройти мимо. И
+									теперь
+									«вишенка на торте»: удивительным образом мимо вашего магазина проходят только те
+									люди,
+									которые интересуются непосредственно вашим товаром. Просто магазин мечты, правда?
+									Вот
+									примерно так работает ПРАВИЛЬНОЕ продвижение сайта.
+								</p>
+							</div>
+						</div>
+						<div class="two-col__row">
+							<div class="two-col__col">
+								<div class="orange-text">
+									Продвижение вашего сайта в интернете – это привлечение на него целевой аудитории.
+								</div>
+							</div>
+							<div class="two-col__col ">
+								<p>
+									Другими словами, это увеличение его посещаемости. Чем больше потенциальных
+									покупателей
+									посещает ваш ресурс, тем качественнее продвижение.
+								</p>
+								<p>
+									Чем больше мы уходим «в онлайн», тем более востребованной становится реклама в
+									интернете. Уже сейчас существует достаточно много способов и инструментов для
+									продвижения сайта. Какие-то совсем новые, другие уже успели себя зарекомендовать.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section seo-example">
+				<div class="container">
+					<div class="seo-example__title large-text tt-uc black-text">
+						ОНИ УЖЕ В "ТОПЕ", <br>
+						ПОКА ВЫ ЕЩЕ СОМНЕВАЕТЕСЬ!
+					</div>
+					<div class="seo-example__slider swiper-container">
+						<div class="seo-example__slider-wrapper swiper-wrapper">
+							<div class="seo-example__slide swiper-slide">
+								<div class="seo-example__header">
+									<div class="seo-example__info">
+										<div class="seo-example__name small-title white-text">
+											Сайт: Моторный участок
+										</div>
+										<div class="seo-example__desc">
+											Поисковая система: Яндекс
+											Данные актуальны на 20 марта 2020
+										</div>
+									</div>
+									<div class="seo-example__logo">
+										<img src="./img/icon/yandex-logo.svg" alt="">
+									</div>
+								</div>
+								<div class="seo-example__body show-more">
+									<div class="seo-example__table-header">
+										<div class="orange-text">Поисковая фраза</div>
+										<div class="orange-text" style="text-align: right;">Позиция в поиске</div>
+									</div>
+									<div class="seo-example__table show-more__body">
+										<div class="seo-example__row">
+											<div class="seo-example__col">ман тга ремонт</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя man</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">капитальный ремонт грузовых двигателей</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двс ман</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт грузового двигателя</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя грузовиков</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт man</div>
+											<div class="seo-example__col">2</div>
+										</div>
+									</div>
+									<div class="show-more__btn small-title black-text" togle-text="свернуть список">
+										развернуть список</div>
+								</div>
+							</div>
+							<div class="seo-example__slide swiper-slide">
+								<div class="seo-example__header">
+									<div class="seo-example__info">
+										<div class="seo-example__name small-title white-text">
+											Сайт: Моторный участок
+										</div>
+										<div class="seo-example__desc">
+											Поисковая система: Google
+											Данные актуальны на 20 марта 2020
+										</div>
+									</div>
+									<div class="seo-example__logo">
+										<img src="./img/icon/google-logo.svg" alt="">
+									</div>
+								</div>
+								<div class="seo-example__body show-more">
+									<div class="seo-example__table-header">
+										<div class="orange-text">Поисковая фраза</div>
+										<div class="orange-text" style="text-align: right;">Позиция в поиске</div>
+									</div>
+									<div class="seo-example__table show-more__body">
+										<div class="seo-example__row">
+											<div class="seo-example__col">ман тга ремонт</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя man</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">капитальный ремонт грузовых двигателей</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двс ман</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя man</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">капитальный ремонт грузовых двигателей</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двс ман</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт грузового двигателя</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя грузовиков</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт man</div>
+											<div class="seo-example__col">2</div>
+										</div>
+									</div>
+									<div class="show-more__btn small-title black-text" togle-text="свернуть список">
+										развернуть список</div>
+								</div>
+							</div>
+							<div class="seo-example__slide swiper-slide">
+								<div class="seo-example__header">
+									<div class="seo-example__info">
+										<div class="seo-example__name small-title white-text">
+											Сайт: Ариэль
+										</div>
+										<div class="seo-example__desc">
+											Поисковая система: Яндекс
+											Данные актуальны на 20 марта 2020
+										</div>
+									</div>
+									<div class="seo-example__logo">
+										<img src="./img/icon/yandex-logo.svg" alt="">
+									</div>
+								</div>
+								<div class="seo-example__body show-more">
+									<div class="seo-example__table-header">
+										<div class="orange-text">Поисковая фраза</div>
+										<div class="orange-text" style="text-align: right;">Позиция в поиске</div>
+									</div>
+									<div class="seo-example__table show-more__body">
+										<div class="seo-example__row">
+											<div class="seo-example__col">ман тга ремонт</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт грузового двигателя</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт двигателя грузовиков</div>
+											<div class="seo-example__col">1</div>
+										</div>
+										<div class="seo-example__row">
+											<div class="seo-example__col">ремонт man</div>
+											<div class="seo-example__col">2</div>
+										</div>
+									</div>
+									<div class="show-more__btn small-title black-text" togle-text="свернуть список">
+										развернуть список</div>
+								</div>
+							</div>
+						</div>
+						<div class="seo-example__controls slider-controls">
+							<div class="slider-pagination seo-example-pagination"></div>
+							<div class="slider-navigation seo-example-navigation">
+								<div class="slider-prev seo-example-prev">назад</div>
+								<div class="slider-next seo-example-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<h2 class="simple-tile__title large-text black-text tt-uc">Основными каналами для привлечения
+						аудитории считаются</h2>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								Поисковое продвижение (SEO)
+							</div>
+							<div class="simple-tile__text">
+								Оптимизация вашего ресурса с целью попасть в заветные ТОП-10 поисковой выдачи
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								Контекстная реклама
+							</div>
+							<div class="simple-tile__text">
+								Настройка и показ рекламных объявлений только потенциально заинтересованным
+								пользователям
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								Таргетированная реклама
+							</div>
+							<div class="simple-tile__text">
+								Реклама, основанная на точном портрете целевого покупателя: возраст, география, пол и
+								т.д.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								Ретаргетинг
+							</div>
+							<div class="simple-tile__text">
+								Способ повторно показать свое объявление тем, кто уже им интересовался, или напомнить о
+								несостоявшейся покупке
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								Видеореклама
+							</div>
+							<div class="simple-tile__text">
+								Возможность показать свой рекламный видеоролик на различных площадках
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title small-title orange-text">
+								SMM
+							</div>
+							<div class="simple-tile__text">
+								Реклама в социальных сетях. Здесь речь скорее о создании и поддержании доверия к бренду
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-about dark-bg">
+				<div class="container">
+					<div class="text-about__wrapper">
+						<div class="text-about__title large-text tt-uc">Расскажем, чем отличаются каналы продвижения
+							сайта на
+							конкретных примерах</div>
+						<div class="text-about__filter">
+							<div class="filter-btn filter-btn_active">поисковое продвижение</div>
+							<div class="filter-btn">контекстная реклама</div>
+							<div class="filter-btn">таргетированная реклама</div>
+							<div class="filter-btn">ретаргетинг</div>
+							<div class="filter-btn">видеореклама</div>
+							<div class="filter-btn">smm</div>
+						</div>
+						<div class="text-about__body two-col">
+							<div class="two-col__wrapper">
+								<div class="two-col__row">
+									<div class="two-col__col">
+										<div class="light-text small-list-text">
+											Поисковое <br> продвижение
+										</div>
+									</div>
+									<div class="two-col__col gray-text">
+										<p>
+											Когда вы вводите поисковый запрос, перед вами открывается страница с
+											результатами поиска – это поисковая выдача. Основную ее часть составляет
+											органическая выдача. И чем выше в ней находится ваш сайт, тем больше шанс,
+											что пользователь его посетит. Идеально, если он располагается на первой
+											странице – это и есть заветные ТОП-10.
+										</p>
+										<p>
+											Чтобы занять верхние позиции в органической выдаче, нужно упорно работать
+											непосредственно над сайтом. Здесь важно все: скорость загрузки, технические
+											характеристики, юзабилити, уникальный и качественный контент. Это так
+											называемая внутренняя оптимизация сайта.
+										</p>
+										<p>
+											Следующий момент в SEO – это внешняя оптимизация. Это наращивание так
+											называемой ссылочной массы. С точки зрения поискового робота, чем больше
+											авторитетных источников ссылается на ваш сайт, тем больший у него вес. Чем
+											больше вес, тем вероятнее сайт окажется в ТОПе.
+										</p>
+										<img src="./img/text-about.png" alt="">
+									</div>
+								</div>
+								<div class="two-col__row">
+									<div class="two-col__col">
+										<a href="#popup" data-fancybox=""
+											class="comment__btn round-btn round-btn_light">
+											<span class="round-btn__circle-text"
+												style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+										</a>
+									</div>
+									<div class="two-col__col gray-text">
+										<div class="text-about__row">
+											<div class="text-about__col">
+												<div class="orange-text small-title">Плюсы</div>
+												<ul>
+													<li>вы не платите за клики</li>
+													<li>постоянная работа над юзабилити и качеством сайта</li>
+													<li>огромный охват целевой аудитории</li>
+													<li>постоянный рост трафика и позиций</li>
+												</ul>
+											</div>
+											<div class="text-about__col">
+												<div class="orange-text small-title">минусы</div>
+												<ul>
+													<li>минимальный срок поискового продвижения — 3 месяца</li>
+													<li>максимальная вовлеченность в процесс заказчика</li>
+													<li>зависимость от обновлений алгоритмов поисковых роботов</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="two-col__row">
+									<div class="two-col__col"></div>
+									<div class="two-col__col gray-text">
+										<div class="btn btn_fit btn_right">подробнее</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text tt-uc">
+								Что полезно знать, если вы хотите заказать продвижение сайта?
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Как вы заметили, у каждого из каналов продвижения есть свои плюсы и минусы. Однако,
+									одним из последних трендов интернет-маркетинга становится омниканальность. Это
+									говорит о том, что сейчас эффективно использовать сразу несколько каналов
+									привлечения посетителей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="simple-tile simple-tile_counter">
+						<div class="simple-tile__subtitle orange-text small-title">
+							Как нужно действовать, чтобы раскрутить сайт в 2021 году?
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Определить, какие каналы для привлечения трафика можно использовать конкретно в
+									вашей сфере и конкретно для вашего ресурса.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									На основе собранной статистики отключить малоэффективные каналы и перераспределить
+									рекламный бюджет.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Корректно настроить выбранные каналы и какое-то время протестировать их
+									эффективность.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Попробовать новые каналы продвижения.
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="small-title ff-rm">
+							<p>
+								Такой подход получил название комплексное продвижение сайта. Независимо от того, решили
+								вы идти по этому пути, или пользуетесь каким-то одним каналом для раскрутки ресурса,
+								очень важным остается вопрос — как оценить эффективность выбранного метода?
+							</p>
+						</div>
+
+						<a href="" class="btn btn_transparent btn_fit btn_right">узнать подробнее</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg pb-0">
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							КАК САМОСТОЯТЕЛЬНО <br>
+							ОЦЕНИТЬ СТОИМОСТЬ <br>
+							ПРОДВИЖЕНИЯ САЙТА?
+						</div>
+						<div class="simple-tile__text gray-text">
+							<p>
+								Зачастую человеку, далекому от мира digital, очень сложно оценить компанию-подрядчика по
+								продвижению сайта. Каждый канал интернет-маркетинга оценивается на основе своих ключевых
+								показателей эффективности (KPI).
+							</p>
+							<p>
+								И как же быть? Как понять, что вас не обманывают и не тратить деньги впустую? Как
+								убедиться, что цена на продвижение вашего сайта оправдана?
+							</p>
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Кол-во посетителей
+								</div>
+								<div class="simple-tile__text">
+									Оцените динамику количества посетителей сайта. Сделать это можно с помощью счетчиков
+									статики, установленных на сайте (как минимум, это Яндекс Метрика и Google
+									Analytics).
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Запросы
+								</div>
+								<div class="simple-tile__text">
+									Посмотрите, по каким запросам посетители переходят на ваш сайт. Если эти запросы
+									нецелевые – то грош цена такому трафику.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Кол-во отказов
+								</div>
+								<div class="simple-tile__text">
+									Оцените количество отказов. Сколько человек быстро покидают ваш сайт и почему. Оно
+									должно уменьшаться.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Показатели
+								</div>
+								<div class="simple-tile__text">
+									Одновременно должно увеличиваться время, которое провел пользователь на сайте и
+									глубина просмотра.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Цели
+								</div>
+								<div class="simple-tile__text">
+									Проверьте, настроены ли цели и отследите их достижение (все перечисленное выше можно
+									сделать в Яндекс Метрике, например)
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Конверсия
+								</div>
+								<div class="simple-tile__text">
+									На основе полученных данных оцените конверсию — для этого количество посетителей,
+									совершивших целевое действие нужно разделить на общее количество всех посетителей и
+									умножить на 100%.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text small-list-text white-text">
+									<span>ВАЖНО!</span> <br> <br>
+
+									Четко отследить откуда и по каким запросам идут заявки и выявить слабые стороны
+									рекламной кампании поможет комплексная сквозная аналитика.
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Самое главное, запомните золотое правило: какую конкретную цель ни преследовал
+										бы выбранный вами инструмент продвижения, задача у всех общая – ПРОДАТЬ.
+										Простыми словами, есть у вас продажи – подрядчик хороший, нет заявок – вы
+										тратите деньги впустую. Конечно, здесь есть свои нюансы. В каких-то сферах
+										большую роль играет сезонность, или «просадка» может произойти из-за ряда
+										технических моментов.
+									</p>
+									<p>
+										И да, есть еще один момент. Задача любой рекламы – привлечь потенциальных
+										клиентов на сайт. Осуществить непосредственно продажу должен сам сайт. И
+										начинать всегда надо с головы. Поэтому своим клиентам мы абсолютно всегда
+										советуем поисковое продвижение в связке с другими каналами. Дело в том, что у
+										нас в SEO входит работа с сайтом – контентом, техническими неполадками,
+										юзабилити и т.д. Кстати, хотите еще конкретных полезных советов?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section">
+				<div class="container">
+					<div class="title">Любим, умеем, практикуем</div>
+					<ul class="link-list">
+						<li class="link-list__item small-list-text">
+							<a href="">SEO-продвижение <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">Комплексное продвижение <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">Контекстная реклама <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">SERM аудит <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href=""> Видеореклама<span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">Крауд-маркетинг <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">SMM-продвижение <span></span></a>
+						</li>
+						<li class="link-list__item small-list-text">
+							<a href="">SERM-репутация в сети <span></span></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						ЭКСКЛЮЗИВ! СОВЕТЫ ПО ПРОДВИЖЕНИЮ от специалистов «НастАртВЕБ»!
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Сделайте сайт удобным и понятным для пользователя
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Наполняйте свой сайт качественным контентом
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Следите за тем, чтобы сайт корректно отображался с мобильных устройств
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Обязательно перейдите на защищенный HTTPS-протокол
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Контролируйте скорость загрузки сайта
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Не занимайтесь «накруткой» трафика, это грозит санкциями от поисковых систем
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Используйте «белые» методы продвижения. Это дольше, но того стоит
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Наращивайте ссылочную массу постепенно и используйте только проверенные биржи
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Старайтесь подходить к вопросу комплексно, пробуйте разные рекламные каналы
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section achieve achieve_without-line">
+				<div class="container">
+					<div class="achieve__wrapper">
+						<h2 class="achieve__title large-text black-text">вопросы и ответы</h2>
+						<div class="achieve__slider swiper-container">
+							<div class="achieve__slider-wrapper swiper-wrapper">
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">Почему SEO стоит так дорого?</div>
+									<div class="achieve__text">
+										Дорого понятие относительное, мы мониторим рынок digital услуг т.к. одна из
+										миссий нашей компании это соответствовать соотношению цена-качество, поэтому мы
+										всегда уверены что наше предложение всегда одно из лучших , да у нас нет всех
+										данных бизнес составляющей Вашей компании чтобы оценить все риски, но Вы можете
+										быть уверены что предложенная цена адекватная и что Вы получаете команду
+										профессионалов которая добросовестно будет выполнять свою работу.
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+							</div>
+							<div class="achieve__controls slider-controls">
+								<div class="slider-pagination achieve-pagination"></div>
+								<div class="slider-navigation achieve-navigation">
+									<div class="slider-prev achieve-prev">назад</div>
+									<div class="slider-next achieve-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

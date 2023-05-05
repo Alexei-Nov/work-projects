@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						АУДИТ РЕКЛАМНОЙ КАМПАНИИ
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Вас не устраивают результаты? Значит, пора делать аудит рекламной кампании.
+								</div>
+								<!-- <div class="detail-entrance__subtitle">
+									Дорогие швейцарские часы, которые никогда не ломаются, не выходят из строя, не
+									торопятся и не притормаживают.
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Вы запустили рекламную
+								кампанию в Яндекс или Google,
+								но не успеваете пополнить баланс?
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									Вы запустили рекламную кампанию в Яндекс или Google, но не успеваете пополнять
+									баланс? Ожидаете расширения клиентской базы, новых лидов, увеличения количества
+									заказов, но результаты вас не устраивают? Значит, пора делать аудит рекламной
+									кампании.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class="simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title large-text   tt-uc">
+							В каких случаях также <br>
+							необходим аудит рекламной <br>
+							кампании?
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Бюджет не окупается новыми заказами.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Низкая конверсия - посетители неактивно превращаются в покупателей.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Показатели эффективности у рекламной компании низкие.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Большой процент скликивания.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Вы не доверяете исполнителю-контекстологу, которому заказали настройку контекстной
+									рекламы.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Рекламная кампания была запущена недавно, необходимо оценить эффективность.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text white-text tt-uc large-text">
+									Что такое контекстная реклама?
+								</div>
+								<div class="comment__info  gray-text">
+									<p>
+										Вы знаете, что поисковые системы продают первые места на страницах поиска, а
+										также на сайтах из своей рекламной сети? Причем, в поиске рекламные объявления
+										выглядят как натуральная выдача по ключевому запросу, поэтому пользователи
+										охотно кликают по ним. В момент перехода по ссылке с рекламодателя списываются
+										деньги. Цена клика зависит от поисковой системы, региона, конкурентности в
+										тематике и правильной настройки рекламной кампании.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text  tt-uc">
+						Какие виды аудита контекстной рекламы бывают
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Аудит рекламной кампании
+							</div>
+							<div class="simple-tile__text">
+								Изучается правильность настройки рекламной кампании.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Аудит рекламы и сайта
+							</div>
+							<div class="simple-tile__text">
+								Помимо настройки объявления анализируется поведение пользователей на сайте, его
+								юзабилити, корректность работы функционала.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Маркетинговый аудит
+							</div>
+							<div class="simple-tile__text">
+								Вместе с первыми двумя анализами проводится аудит рекламы ваших конкурентов.
+							</div>
+						</div>
+					</div>
+					<div class="simple-tile__text small-title black-text">
+						<p>
+							Регулярные аудиты контекстной рекламы выявляют ошибки, препятствующие достижению
+							поставленных целей, а также точки роста, необходимые для улучшения маркетинговых
+							показателей.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text  tt-uc">
+						Какие виды аудита контекстной рекламы бывают
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Настройки РК и таргетинга
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Семантическое ядро (насколько целевые запросы подобраны)
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Поисковые запросы (по каким фразам показывается реклама, не путать с ключевыми фразами)
+								и минус-фразы (стоп-слова). Довольно часто списки минус-слов проработаны недостаточно
+								хорошо, из-за этого реклама может показываться по смежным или похожим, но нецелевым
+								запросам
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Ключевые фразы, которые должны приводить к вам пользователей, наиболее близко
+								находящихся в покупке продукта (услуги). Именно они превращаются в ваших клиентов
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Данные статистики, по ключевым словам, группам, кампаниям (процент отказов по фразам,
+								CTR, глубина просмотра, конверсия и другие параметры)
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Тексты объявлений. Они должны выгодно позиционировать ваш продукт с максимальным
+								использованием инструментария
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Сопоставление вашего предложения в объявлении с предложением конкурентов
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text white-text tt-uc large-text">
+									Что такое контекстная реклама?
+								</div>
+								<div class="comment__info white-text small-title">
+									У вас есть гостиница в Анапе. Бизнес - сезонный, который начинается в мае и
+									заканчивается в октябре. Небольшой всплеск может появиться в новогодние праздники -
+									ведь некоторые люди желают их провести на море.
+								</div>
+								<div class="comment__info  gray-text">
+									<p>
+										В рамках аудита контекстной рекламы сначала необходимо правильно подобрать
+										ключи, которые приведут к вам целевую аудиторию. Если в рекламной кампании
+										используется запрос "анапа гостиницы +на берегу", а отель находится на 2 или 3
+										линии от моря - он не ваш, и стоп-словом будет являться "берег". Если вы вновь
+										включите его в настройках рекламной кампании, то посетители с минимальной
+										вероятностью будут превращаться в покупателей (низкая конверсия). В итоге на
+										клики вы будете тратить деньги, но бронирования не дождетесь.
+									</p>
+									<p>
+										Запрос типа "гостевой дом самбурова анапа" - так же не ваш, если отель находится
+										на другой улице. Но если он размещен неподалеку - вполне реально включить его в
+										список. <br>
+										Рекламную кампанию нужно максимально продвигать в горячий сезон - летом. Но
+										многие люди начинают искать место для отдыха уже в феврале-марте, поэтому стоит
+										включить этот период. Цены на клики с февраля по май будут снижены, а взлетают
+										они именно в горячий сезон, когда конкуренция вырастает в десятки раз.
+									</p>
+									<p>
+										Для лучшего таргетирования стоит указать возраст клиентов от 18 до 60 лет, так
+										как именно эти люди являются вашими потенциальными и платежеспособными
+										покупателями. <br>
+										Чтобы правильно настроить рекламную кампанию - можно также провести аудит ваших
+										конкурентов и узнать, какими запросами и настройками пользуются они.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview project-preview_clear">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Чек-лист -
+							что мы Рекомендуем проверять в первую очередь
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Разделение по товарам или услугам
+								</div>
+								<div class="simple-tile__text">
+									Если у вашего сайта объемная структура, например, вы продаете платья и обувь, то под
+									каждую категорию создается отдельная кампания. Это упрощает оптимизацию и позволяет
+									исключить появление беспорядка в аккаунте.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Интернет-магазину
+								</div>
+								<div class="simple-tile__text">
+									Который работает по всей России, лучше создать отдельные кампании на крупные города
+									(Санкт-Петербург, Москва и другие) миллионники, что также помогает персонализировать
+									показы и контролировать ставки.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Кампаниям присваиваются регионы
+								</div>
+								<div class="simple-tile__text">
+									Например, в интернет-магазине по разным городам могут различаться условия доставки,
+									цены кликов и ассортимент. Вы будете показывать региональным пользователям
+									соответствующие объявления, что значительно повышает вероятность транзакций и
+									экономит рекламный бюджет.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title small-title orange-text">
+									Продумайте структуру наименований рекламных кампаний
+								</div>
+								<div class="simple-tile__text">
+									Это упрощает сбор статистики и анализ. Желательно указывать название товара или
+									категории, город, а также тип рекламной кампании - "платья_город_РСЯ" или
+									"ботинки_город_поиск".
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title small-title orange-text">
+									Изучается структура кампаний
+								</div>
+								<div class="simple-tile__text">
+									Такие показатели как: качество страниц, оптимизированных под рекламу, охват ключей в
+									группе и формат объявлений, наличие ошибок в тексте. Настройки кампании: партнерские
+									сети, язык и геолокация, устройства пользователей, скрипты и расширения,
+									автоматические правила, ротации, ставки. Трафик: ключи, их качество и соответствие,
+									стоп-слова, брендовые запросы.
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title small-title orange-text">
+									Отсутствие разделений в поиске
+								</div>
+								<div class="simple-tile__text">
+									Объявления в поиске Google и Яндекс и рекламной сети (когда объявления показываются
+									на сайтах) негативно отражается на эффективности, так как в этих кампаниях серьезно
+									различаются семантика, контент, ставки. Реклама показывается людям, которые здесь и
+									сейчас ввели ключ (поиск) или вводили его ранее (рекламная сеть). При объединении
+									этих двух форматов не получится выявить источник, откуда пришел клиент, чтобы
+									направить туда бюджет. Кроме того, управлять бюджетами эффективно не получится,
+									потому что цена клика на поиске выше, а в сети ниже. Если для поиска ставка будет
+									низкой - вы пропадете в нем, если высокой - быстро потратите деньги в рекламной
+									сети.
+								</div>
+							</div>
+
+						</div>
+						<div class="simple-tile__text small-title">
+							<p>
+								Если выявлено слишком много проблем - нет смысла в точечных правках после аудита
+								контекстной рекламы. Мы рекомендуем создать новый аккаунт или перестроить текущий
+								полностью.
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info gray-text small-title ff-rm">
+									<p>
+										Некоторые контекстологи пользуются автоматизированными сервисами по настройке
+										рекламы. Но их достижения оставляют желать лучшего. На сайты приходит нецелевой
+										трафик с небольшой глубиной просмотров и множеством отказов. Ведь никакие
+										автоматизированные сервисы не могу заменить подробного анализа и опытного
+										контекстолога.
+									</p>
+								</div>
+							</div>
+							<div class="btn btn_light btn_fit btn_right">хочу аудит от специалиста!</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text  tt-uc large-text">
+								Ключевые показатели аудита
+							</div>
+							<div class="comment__info  ">
+								<p>
+									Прежде всего сравниваются показатели на начало и конец выбранного периода (обычно
+									это один месяц), выявляется общая динамика роста. Также изучаются ключевые запросы -
+									специалисты digital-агентства НастАртВЕБ сравнивают семантическое ядро с теми
+									запросами, по которым приходят клиенты. Так выявляются неэффективные ключи и
+									стоп-слова.
+								</p>
+							</div>
+							<div class="comment__info black-text small-title">
+								Рассмотрим самые популярные термины, которые используются в рамках рекламного аудита.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section achieve achieve_top-line">
+				<div class="container">
+					<div class="achieve__wrapper">
+						<h2 class="achieve__title large-text black-text">СЛОВАРЬ ТЕРМИНОВ</h2>
+						<div class="achieve__slider swiper-container">
+							<div class="achieve__slider-wrapper swiper-wrapper">
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">Cloaking</div>
+									<div class="achieve__text">
+										нечестный прием, замена контента. Поисковые системы видят одно, а посетитель -
+										другое. Так продвигается нечистый на руку сайт по высокочастотным запросам,
+										"нагоняется" искусственный трафик.
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+							</div>
+							<div class="achieve__controls slider-controls">
+								<div class="slider-pagination achieve-pagination"></div>
+								<div class="slider-navigation achieve-navigation">
+									<div class="slider-prev achieve-prev">назад</div>
+									<div class="slider-next achieve-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg mb-0">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text white-text xlarge-text">
+									Если не проводится аудит -
+									насколько сильно это ударяет по карману?
+								</div>
+								<div class="comment__info  gray-text">
+									<p>
+										Эффективный маркетинговый инструмент в лучшем случае при неправильной настройке
+										превращается в черную дыру, высасывающую рекламный бюджет. Еще сложнее клиентам,
+										у которых в арсенале имеются и эффективные, и неэффективные кампании. Они могут
+										уносить до 1,5 млн рублей ежемесячно, а обнаружить "черную дыру" помогает только
+										периодический аудит.
+									</p>
+									<p>
+										После исправления всех ошибок клиенты digital-агентства полного цикла НастАртВЕБ
+										получают от 1 000 000 рублей дополнительного дохода.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info gray-text small-title ff-rm">
+									<p>
+										Кажется, что все предельно просто: вы составите семантическое ядро, пополните
+										бюджет, ожидаете лидов. Но любительская настройка чаще всего приводит к "черным
+										дырам" в бюджете. Множество нюансов и изменяющихся параметров существует в
+										рамках любой рекламной кампании. Если вы не хотите пользоваться услугами опытных
+										контекстологов - периодически проводите профессиональные аудиты, которые
+										являются специализацией веб-студии НастАртВЕБ. Мы своевременно выявим ошибки,
+										исправим недочеты и сохраним ваши деньги.
+									</p>
+								</div>
+							</div>
+							<div class="btn btn_light btn_fit btn_right">Оставить заявку на аудит РК</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text white-text large-text">
+									Если не проводится аудит -насколько сильно это ударяет по карману?
+								</div>
+								<div class="comment__info  gray-text">
+									<p>
+										Эффективный маркетинговый инструмент в лучшем случае при неправильной настройке
+										превращается в черную дыру, высасывающую рекламный бюджет. Еще сложнее клиентам,
+										у которых в арсенале имеются и эффективные, и неэффективные кампании. Они могут
+										уносить до 1,5 млн рублей ежемесячно, а обнаружить "черную дыру" помогает только
+										периодический аудит.
+									</p>
+								</div>
+								<div class="comment__info white-text small-title">
+									После исправления всех ошибок клиенты digital-агентства полного цикла НастАртВЕБ
+									получают от 1 000 000 рублей дополнительного дохода.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg mt-0">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужна именно SERM-репутация в сети?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

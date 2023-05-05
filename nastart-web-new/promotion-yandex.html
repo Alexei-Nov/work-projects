@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						ПРОДВИЖЕНИЕ НА ЯНДЕКС МАРКЕТЕ
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Магазин на Яндекс Маркете
+								</div>
+								<div class="detail-entrance__subtitle">
+									Площадка позволяет сортировать продукцию по цене и по другим полям, любой заказ
+									можно оформить с доставкой
+								</div>
+								<!-- <div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Яндекс-маркет — это интерактивный
+								агрегатор товаров, в котором
+								зарегистрированы онлайн-магазины.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									Отношение к работе на этой площадке со стороны бизнесменов разное. Одни считают
+									правила агрегатора слишком строгими, а работу в нем бесполезной, другие пользуются
+									только Яндекс Маркетом для повышения продаж. При грамотном управлении данная
+									площадка может увеличить в несколько раз ваши доходы и клиентскую базу.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg">
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title large-text tt-uc">
+							Плюсы использования <br> Яндекс маркета
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Посещаемость - от 30 млн. в месяц.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Доверие со стороны покупателей - высокое.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Предусмотрены рейтинги - оценка качества работы и товаров интернет-магазинов (далее
+									ИМ) со стороны покупателей.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Таргетинг по регионам.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Варианты оплаты - по кликам, действиям посетителей или времени размещения продукции.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Автозагрузка товаров в каталог на ЯМ.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title large-text tt-uc">
+							Как попасть в Яндекс Маркет
+						</div>
+						<div class="simple-tile__text gray-text">
+							<p>
+								Все интернет-магазины подают заявку на добавление в систему. Они проходят сложную
+								проверку, поэтому для начала необходимо доработать свой сайт.
+							</p>
+						</div>
+						<div class="simple-tile__subtitle orange-text">
+							Требования к интернет-магазинам:
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Размещены контакты ЮЛ и магазина на видном месте или отдельной странице.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									ИМ продает разрешенные товары, не б.у.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Разделы “Оплата” и “Доставка” понятно разъясняют условия работы.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Каждая карточка открывается на отдельной странице.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Работает корзина.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Цены и количество товара на складе соответствуют реальным.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview project-preview_clear">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class=" text-about">
+					<div class="container">
+						<div class="text-about__wrapper">
+							<div class="text-about__body two-col">
+								<div class="two-col__wrapper">
+									<div class="two-col__row">
+										<div class="two-col__col ">
+											<div class="xlarge-text">
+												Что такое YML-файл
+											</div>
+										</div>
+										<div class="two-col__col ">
+											<div class="small-title gray-text ff-rm">
+												Это каталог товаров в формате Yandex Market Language, который вы сможете
+												загружать в базу Яндекс Маркет. Во многих системах управления сайтами он
+												создается автоматически, а в других CMS приходится настраивать отдельную
+												выгрузку. Робот ЯМ периодически приходит за YML-файлом и загружает его в
+												свою базу. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" project">
+					<div class="container">
+						<div class="project__title large-text tt-uc">Как зарегистрировать <br> магазин в Яндекс Маркете
+						</div>
+						<div class="project__slider swiper-container">
+							<div class="project__slider-wrapper swiper-wrapper">
+								<a href="./img/seo-project3.png" data-fancybox="project"
+									class="project__slide swiper-slide">
+									<div class="project__slider-img">
+										<img src="./img/seo-project3.png" alt="">
+									</div>
+									<div class="project__slider-text">
+										Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+										данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда
+										-
+										Джинсы.
+									</div>
+								</a>
+								<a href="./img/seo-project3.png" data-fancybox="project"
+									class="project__slide swiper-slide">
+									<div class="project__slider-img">
+										<img src="./img/seo-project3.png" alt="">
+									</div>
+									<div class="project__slider-text">
+										Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+										данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда
+										-
+										Джинсы.
+									</div>
+								</a>
+								<a href="./img/seo-project3.png" data-fancybox="project"
+									class="project__slide swiper-slide">
+									<div class="project__slider-img">
+										<img src="./img/seo-project3.png" alt="">
+									</div>
+									<div class="project__slider-text">
+										Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+										данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда
+										-
+										Джинсы.
+									</div>
+								</a>
+								<a href="./img/seo-project3.png" data-fancybox="project"
+									class="project__slide swiper-slide">
+									<div class="project__slider-img">
+										<img src="./img/seo-project3.png" alt="">
+									</div>
+									<div class="project__slider-text">
+										Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+										данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда
+										-
+										Джинсы.
+									</div>
+								</a>
+							</div>
+							<div class="project-controls slider-controls">
+								<div class="slider-pagination project-pagination"></div>
+								<div class="slider-navigation project-navigation">
+									<div class="slider-prev project-prev">назад</div>
+									<div class="slider-next project-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text small-title white-text">
+									<span>ВАЖНО!</span> <br> <br>
+									Вам может позвонить тайный покупатель ЯМ и проверить качество работы с клиентами, а
+									также соответствие цен и прочие данные - будьте аккуратны!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section simple-tile  simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Магазин не прошел <br> модерацию - почему?
+					</div>
+					<div class="simple-tile__text small-title black-text">
+						К сожалению, не все магазины с первого раза проходят модерацию, если пытаются сделать это сами,
+						без помощи наших специалистов. На это есть несколько причин.
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Неправильные данные о ЮЛ, адресе и т.п.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Ошибки в прайсе или расхождение данных с ценами в интернет-магазине.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Неправильные способы оплаты и доставки.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								У магазина имеется сайт-двойник.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Телефон магазина не отвечает.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Тайный покупатель ЯМ не получил ответ в течение 1-2 часов, когда сделал пробный заказ.
+							</div>
+						</div>
+					</div>
+
+					<div class="simple-tile__text small-title black-text">
+						<span class="orange-text"> Внимание! </span> <br> <br>
+
+						Количество пробных добавлений ограничено. <br>
+						Для каждого интернет-магазина есть 7 попыток.
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section simple-tile ">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Если магазин добавлен
+					</div>
+					<div class="simple-tile__text">
+						<p>
+							Добавить ИМ в агрегатор ЯМ несложно. Большую часть времени и сил отнимает доработка
+							функционала
+							сайта. Компания "НастАртВЕБ" поможет привести ваш интернет-магазин в соответствующий вид,
+							организовать выгрузку прайс-листов и разместить товары в агрегаторе. Ваша задача в
+							дальнейшем -
+							предоставлять качественные услуги, работать с покупателями и вовремя обрабатывать отзывы.
+						</p>
+					</div>
+					<div class="simple-tile__text small-title black-text">
+						Бесплатные методы, которые помогают позиции в результатах поисковой выдачи на Яндекс Маркете.
+					</div>
+
+					<div class="simple-tile__text">
+						<p>
+							Цена на ваши товары может быть в пределах разумного, но чистая прибыль будет огорчать.
+							Агрегатор работает так: человек вводит поисковый запрос или заходит в каталог в поисках
+							нужного товара. Первыми выдаются товары, которые имеют высокие шансы быть проданными. Как же
+							добиться первых позиций?
+						</p>
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Правильное наименование товара
+							</div>
+							<div class="simple-tile__text">
+								должно подстраиваться под запросы потенциальных покупателей и правила платформы.
+								Обязательно указывается тип товара, модель, бренд, ключевые характеристики. В
+								прайс-листе запрещаются коммерческие слова типа "купить", "дешевый" и т.д.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Конкурентные цены
+							</div>
+							<div class="simple-tile__text">
+								часто пользователи агрегатора используют фильтры по цене товара.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Скидки
+							</div>
+							<div class="simple-tile__text">
+								товары с ними имеют отличительный знак, выделяются среди других предложений,
+								дополнительно размещаются на главной странице ЯМ и в блоке со скидками/акциями.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Быстрая дешевая доставка разными способами
+							</div>
+							<div class="simple-tile__text">
+								в агрегаторе отображаются приблизительные сроки доставки, на которые предусмотрен
+								отдельный фильтр.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Изучение зон, где спрос выше предложения
+							</div>
+							<div class="simple-tile__text">
+								не стоит обходить вниманием категории с небольшим количеством товаров, определенные
+								ценовые диапазоны, отдаленные регионы с небольшим количеством локальных селлеров.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Оформление товарных карточек
+							</div>
+							<div class="simple-tile__text">
+								они должны полно и точно характеризовать товар - качественные фото, описание до 3 тыс.
+								символов, разметка для оформления текста. Для отражения товара в системе поиска по
+								штрихкоду его также передают в базу.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Мотивация оставлять отзывы
+							</div>
+							<div class="simple-tile__text">
+								оценки и отклики покупателей учитываются алгоритмами при формировании выдачи в поиске.
+								Минимальный рейтинг для хороших продаж - от 4.5 звезд.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Ответы на вопросы
+							</div>
+							<div class="simple-tile__text">
+								повышается узнаваемость компании и увеличиваются продажи.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Постоянное повышение рейтинга
+							</div>
+							<div class="simple-tile__text">
+								"звезды" рассчитываются, исходя из оценок покупателей. Они сообщают системе о качестве
+								товара, скорости обработки заказа, упаковке, уровне соответствия описанию.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class=" section comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text large-text tt-uc">
+									Платное продвижение
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Вам необходимо пополнить баланс на размещение. Управлять ставками по кликам
+										можно при помощи отдельного сервиса, который автоматически подстраивается под
+										цену клика магазинов-конкурентов.
+									</p>
+									<p>
+										Рассмотрим, как работает третий пример.
+									</p>
+									<p>
+										На Маркете работает аукцион второй цены: первую позицию занимает участник,
+										который предложил самую высокую ставку, но платит он по цене ближайшего
+										конкурента + 0,01% к стоимости его клика. Например, детские качели на ЯМ
+										предлагают 3 интернет-магазина по цене 1 000 руб. Их ставки составляют 7, 5 и 3%
+										от цены. Товар первого магазина будет размещен впереди других на Маркете.
+										Магазин за каждую продажу заплатит агрегатору 5,01% -50,10 руб.
+									</p>
+									<p>
+										Второй магазин на второй позиции оплатит агрегатору за заказ 30,1 руб. А третий
+										магазин на последней позиции за заказ ничего платить не будет.
+									</p>
+									<p>
+										В данном случае важно следить за конкурентами и анализировать, как позиция
+										влияет на количество заказов. И, конечно же, экономить на оплате агрегатору.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text small-title white-text">
+									<span>ВАЖНО!</span> <br> <br>
+									Плата за продвижение списывается после доставки покупателю, если позиция приводит к
+									продаже. Продвижение бесплатно, если ваша ставка не влияет на позицию товара или в
+									случае отмены заказа.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Как веб-студия НастАртВеб <br> помогает в продвижении на <br> Яндекс маркете
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Изучаем ваш интернет-магазин на соответствие требованиям ЯМ.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Настраиваем выгрузку прайс-листов и описания карточек.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Помогаем в прохождении проверки на качество от Яндекс.Маркета.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Анализируем работу ваших конкурентов в агрегаторе.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Подбираем эффективную стратегию размещения.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Настраиваем рекламные кампании.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dark-bg section comment comment_career comment_center mb-0">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info gray-text small-title ff-rm">
+								<p>
+									Мы рассказали не обо всех способах продвижения н Яндекс Маркете, ведь для каждого
+									магазина они разные. Обычно наши специалисты используют одновременно 3-5
+									инструментов, чтобы достичь максимальной эффективности.
+								</p>
+								<p>
+									Оставьте заявку, и мы подготовим для вас индивидуальное предложение по продвижению
+									интернет-магазина на Яндекс Маркете!
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg m-0">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно продвижение на GMC?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

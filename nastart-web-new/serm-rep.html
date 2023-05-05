@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						SERM - РЕПУТАЦИЯ
+						В СЕТИ
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Исправлять недостатки и делать его лучше?
+								</div>
+								<div class="detail-entrance__subtitle">
+									Пресекать попытки конкурентов сыграть на эмоциях и вытеснить вас с рынка? Убрать
+									негатив о вас из Сети?
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Желаете показывать <br>
+								вашим клиентам лучшую <br>
+								сторону вашего бизнеса?
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info dark-gray-text">
+								<p>
+									Репутацией в интернете управлять очень сложно. Еще бы - поисковые роботы, механизмы,
+									фильтры, "однорукие бандиты", которые перемешивают поисковую выдачу, и постоянные
+									обновления поисковиков вносят свои коррективы в эту работу. К тому же, если с
+									какого-то сайта удалить негативный контент - люди будут обмениваться им на других
+									ресурсах со скоростью света, и проблема будет расти, как снежный ком. Поэтому
+									необходимо постоянно наблюдать за репутацией и обеспечивать защиту вашего имиджа в
+									интернет-пространстве.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text large-text tt-uc white-text">
+									Что такое SERM?
+								</div>
+								<div class="comment__info small-title">
+									<p>
+										SERM - управление мнением о вашей компании (товаре, услуге, бренде), которое
+										складывается у пользователей поисковых систем во время просмотра выдачи по
+										ключевым запросам.
+									</p>
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Например, человек вводит ключ "Бренд + отзывы" и попадает на страницу сайта,
+										наполненную негативом о вас. С какой вероятностью пользователь интернета
+										превратится в вашего покупателя или предложит партнерство?
+									</p>
+									<p>
+										Процесс SERM похож на SEO-продвижение, но задачей специалистов НастАртВЕБ
+										являются изучение и изменение репутации наших заказчиков в поисковой выдаче.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Для чего служит SERM?
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Поднимает уровень доверия пользователей Сети.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Повышает лояльность клиентов.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Формирует положительный образ компании как работодателя.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section comment comment_career comment_center ">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm ">
+								<p>
+									В SERM нуждаются не только организации и бренды, которые давно представлены в
+									интернете. Для продвижения нового товара (услуги) необходимо также создать
+									положительный репутационный фон для них. А если вас пытаются "убрать" с рынка
+									конкуренты и пишут негатив в Сети - пора применить для борьбы с ними тяжелую
+									артиллерию в виде SERM.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right btn_light">заявка на serm</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section project-preview project-preview_clear">
+				<div class="container">
+					<div class="project-preview__img">
+						<img src="./img/career-wide.png" alt="">
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Этапы работы в рамках управления репутацией в Сети
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Изучение вашей сферы и подбор ключевых запросов
+							</div>
+							<div class="simple-tile__text">
+								Составляется список из ключевых запросов с упоминанием бренда или наименования компании.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Анализ поисковой выдачи по ключам
+							</div>
+							<div class="simple-tile__text">
+								Изучаются сайты в ТОПе поисковых систем для того, чтобы отыскать отрицательные отзывы на
+								форумах, в соцсетях, на площадках-отзовиках, блогах, порталах-новостниках и т.д.
+								Составляется список преимуществ компании (товара, услуги), исчисляется объем негатива и
+								позитива, общий репутационный фон. Выявляются "слабые места" которые требуют особого
+								подхода.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Стратегия и ее реализация
+							</div>
+							<div class="simple-tile__text">
+								Отрицательный контент вытесняется из поисковой выдачи или заменяется на положительный.
+								Анализируются и обрабатываются все отзывы, найденные в ТОПе.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Ежемесячный отчет
+							</div>
+							<div class="simple-tile__text">
+								Вы получаете отчет о проделанной работе и ее результатах, а также план на следующий
+								месяц.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm gray-text">
+								<p>
+									Компания НастАртВЕБ рекомендует оставлять немного отрицательных и нейтральных
+									отзывов, так как репутация должна выглядеть естественно. Исключительно положительные
+									оценки бросают тень сомнения на правдивость контента. Также наши специалисты пишут
+									экспертные и имиджевые статьи, выводят их в ТОП.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Почему клиенты выбирают <br>
+						компанию НастАртВЕБ
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Мы не удаляем негативные отзывы "живых" людей, а обрабатываем их или вытесняем из
+								поисковой выдачи.
+							</div>
+							<div class="simple-tile__text">
+								<p>
+									Для обработки необходимо решить проблему покупателя/посетителя, после этого
+									попросить его удалить негатив. При выявлении факта фейковости отзыва мы обращаемся в
+									администрацию веб-ресурса. С ее помощью можно удалить комментарии, которые оставляют
+									фейковые посетители или тролли. Если убрать негатив от настоящего недовольного
+									клиента - вас ждет всплеск отрицательных публикаций на других площадках в Сети.
+								</p>
+								<p>
+									Клиент не отвечает и не удаляет негативный отзыв на сайте? Мы его вытесняем при
+									помощи положительного контента, который оставляют ваши реальные покупатели. Он
+									вытесняется из ТОПа.
+								</p>
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Мы работаем не "в течение трех-четырех-пяти месяцев", а отвечаем за результат.
+							</div>
+							<div class="simple-tile__text">
+								<p>
+									Вы получаете постоянного наблюдателя, который укрепляет репутационный фон и повышает
+									лояльность ваших настоящих и будущих клиентов.
+								</p>
+								<p>
+									Держим руку на пульсе" и постоянно следим за репутацией как вручную, так с
+									использованием автоматических сервисов. С их помощью выявляется негатив на тысячах
+									площадок и даже на изображениях.
+								</p>
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								SERM - долгосрочный процесс, но результаты работы вы увидите уже через месяц.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Мы обязуемся не разглашать конфиденциальную информацию, в т.ч. о факте нашего с вами
+								сотрудничества.
+							</div>
+						</div>
+					</div>
+					<div class="simple-tile__text small-title black-text">
+						Положительная репутация в интернете - это нематериальный актив. Она привлекает клиентов, опытных
+						специалистов, партнеров, увеличивает ценность ваших услуг и товаров. И если репутационный фон
+						снижается - это влияет на работу бизнеса в целом.
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm gray-text">
+								<p>
+									Доверьте специалистам компании НастАртВЕБ управление вашей репутацией в Сети, и
+									пусть ваш бизнес процветает! </p>
+							</div>
+						</div>
+						<div class="btn btn_light btn_fit btn_right">Хочу улучшить репутацию!</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners dark-bg mt-0" id="clients">
+				<div class="container">
+					<div class="partners__wrapper partners__wrapper_reverse">
+						<div class="partners__header">
+							<h2 class="partners__title title">нам доверяют</h2>
+							<div class="partners__filter">
+								<div class="partners__filter-btn filter-btn">Клиенты</div>
+								<div class="partners__filter-btn filter-btn">Партнёры</div>
+							</div>
+						</div>
+						<div class="partners__slider ">
+							<div class="partners__list swiper-wrapper">
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner6.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner16.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner7.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner8.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner9.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner10.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner11.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner12.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner13.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner14.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner15.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="partners-controls slider-controls">
+							<div class="slider-pagination partners-pagination"></div>
+							<div class="slider-navigation partners-navigation">
+								<div class="slider-prev partners-prev">назад</div>
+								<div class="slider-next partners-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block mt-0">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужна именно SERM-репутация в сети?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

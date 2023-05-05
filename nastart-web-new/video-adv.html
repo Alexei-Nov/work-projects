@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						видеореклама
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Это интересно!
+								</div>
+								<div class="detail-entrance__subtitle">
+									70% людей с большей вероятностью приобретут товар, если
+									увидят о нем видеоролик.
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Видеореклама — это особый вид рекламы, когда показ рекламного ролика происходит на
+								различных тематических площадках
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info ">
+								<p>
+									До сих пор люди считают, что видеореклама не всегда эффективна для продвижения
+									бренда в Сети. Но в настоящее время видеоролики - главный тренд интернет-маркетинга.
+									Ведь около 80% всего интернет-трафика приходится именно на нее.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Какие интернет-площадки <br> мы используем
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									Видеосеть Яндекса
+								</div>
+								<div class="simple-tile__text">
+									<ul>
+										<li> Посещаемость - более 35 млн. человек в месяц. </li>
+										<li>Из них - все жители России. </li>
+										<li>Реклама показывается на 150+ площадках-партнерах видеосети. </li>
+									</ul>
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									YouTube - видеосеть Google, ее сайты-партнеры и контекстно-медийная система, соцсети
+									и т.д.
+								</div>
+								<div class="simple-tile__text">
+									<ul>
+										<li> Посещаемость - более 60 млн. человек в месяц. </li>
+										<li> Целевая аудитория - жители России. </li>
+										<li>И они составляют около 90% пользователей Рунета. </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Преимущества видеорекламы
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item ">
+								<div class="simple-tile__text">
+									Можно установить диалог между представителем целевой аудитории и рекламным роликом.
+								</div>
+							</div>
+							<div class="simple-tile__item ">
+								<div class="simple-tile__text">
+									Выставляется таргетинг для показа - видеоролики просматривает только потенциально
+									заинтересованная аудитория.
+								</div>
+							</div>
+							<div class="simple-tile__item ">
+								<div class="simple-tile__text">
+									Широчайший охват и максимальная вовлеченность.
+								</div>
+							</div>
+							<div class="simple-tile__item ">
+								<div class="simple-tile__text">
+									Низкая стоимость показов - на рекламу можно тратить всего 10-50 тыс. руб. в месяц.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_career">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__info small-list-text white-text">
+								<p class="orange-text">Это интересно! </p>
+								<p>
+									9 человек из 10 утверждают, что видео помогает принимать решения о покупке.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Специалисты веб-студии <br> НастАртВЕБ умеют разрабатывать <br> ролики нескольких типов
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Обучающие
+								</div>
+								<div class="simple-tile__text">
+									предоставляют информацию о применении продукта или услуги, закрепляя ваши позиции на
+									рынке.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Имиджевые
+								</div>
+								<div class="simple-tile__text">
+									формируют репутацию бренда, отражают выгодные и уникальные стороны, повышают
+									лояльность целевой аудитории.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Рекламные
+								</div>
+								<div class="simple-tile__text">
+									продают " в лоб" с предоставлением гарантий, демонстрацией уникальности и новых
+									предложений.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Демонстрации и обзоры
+								</div>
+								<div class="simple-tile__text">
+									короткие или расширенные видео о продукте.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Новостные
+								</div>
+								<div class="simple-tile__text">
+									анонсирования, отчеты о работе, освещения инфоповодов.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Репортажи
+								</div>
+								<div class="simple-tile__text">
+									видео на месте событий.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Инструкции
+								</div>
+								<div class="simple-tile__text">
+									об использовании товаров, дополняются лайфхаками.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Видео-отзывы
+								</div>
+								<div class="simple-tile__text">
+									рассказы покупателей об опыте использования товаров.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Конкурсы
+								</div>
+								<div class="simple-tile__text">
+									для повышения активности ваших потребителей.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Вирусные
+								</div>
+								<div class="simple-tile__text">
+									управляют эмоциями целевой аудитории. Имеют провокационный характер, способствуют
+									мгновенному отклику и желаниям "поделиться" видео.
+								</div>
+							</div>
+						</div>
+						<div class="simple-tile__text gray-text">
+							<p>
+								Если у вас готов свой видеоролик - соблюдайте, пожалуйста, следующие требования:
+							</p>
+							<ul>
+								<li>для Яндекс - до 30 сек., расширения WebM, MP4, FLV, MOV, QT, AVI; </li>
+								<li> для YouTube - до 3 мин., расширения: WMV, MP4, AVI, MOV, MPEG 4, MPEGPS. </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center ">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									Около 85% всех людей являются визуалами, воспринимающими информацию посредством
+									зрения. Поэтому видеоролики помогают лучше доносить информацию до подавляющего
+									большинства ваших клиентов.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_light btn_fit btn_right">заказать видеоролик</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Какие рекламные форматы роликов мы предлагаем
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Pre-roll
+							</div>
+							<div class="simple-tile__text">
+								целевая аудитория просматривает ваш рекламный ролик перед началом загрузки основного
+								видеоконтента.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Post-roll
+							</div>
+							<div class="simple-tile__text">
+								просмотр после основного видео.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Pause-roll
+							</div>
+							<div class="simple-tile__text">
+								ролик демонстрируется при клике на "паузу".
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Mid-roll
+							</div>
+							<div class="simple-tile__text">
+								прерывает показ основного видеоконтента.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								TrueView In-Stream
+							</div>
+							<div class="simple-tile__text">
+								включаются в разных местах при просмотре контента на YouTube и сайтах
+								контекстно-медийной сети. Их можно пропустить, только просмотрев в течение 5 секунд или
+								дольше.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								In-Stream
+							</div>
+							<div class="simple-tile__text">
+								формат без возможности пропуска, длительность просмотра в течение 15-20 сек.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								TrueView Video Discovery
+							</div>
+							<div class="simple-tile__text">
+								видео, которые размещаются в списке подобных, на главной и поисковой страницах YouTube.
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm gray-text">
+								<p>
+									Видео намного информативнее текста. Например, про свойства уникальной
+									водонепроницаемой ткани зонтов можно рассказывать скучно и долго. А за 15 секунд
+									можно показать, как они не пропускают воду. Это намного убедительнее сухого текста.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_light btn_fit btn_right">заказать видеоролик</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Как начать рекламную кампанию <br> с веб-студией НастАртВЕБ
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Отправьте нам заявку
+							</div>
+							<div class="simple-tile__text">
+								Приложите ролик, если он у вас есть. Мы оценим, подойдет ли видеореклама для продвижения
+								вашего бренда. Предположим, примерный расход, охват, дадим рекомендации по креативам.
+								Обсудим желаемые показатели, рекламные площадки, таргет-цели, подготовим медиаплан.
+								Подпишем договор, после вы внесете предоплату.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Создание ролика
+							</div>
+							<div class="simple-tile__text">
+								Создадим видеоролик в течение 3-5 рабочих дней (если у вас его нет) и настроим рекламную
+								кампанию. Вы оплатите примерный рекламный бюджет. После этого начнутся показы.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Запуск рекламной кампании
+							</div>
+							<div class="simple-tile__text">
+								В процессе сопровождения дорабатываем и улучшаем рекламную кампанию. Ежемесячно
+								предоставляем отчеты и согласовываем следующий месяц работы.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_top ">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc">
+								Сколько это стоит?
+							</div>
+							<div class="comment__info">
+								<p class="small-list-text black-text ff-tektur"> Стоимость настройки видеорекламы </p>
+								<ul>
+									<li> Настройка для одной сети - от 3 000 руб. </li>
+									<li>Сопровождение - бесплатно 1 месяц. Второй и последующие - от 3 000 руб. </li>
+									<li>Разработка ролика для Яндекс в конструкторе - бесплатно </li>
+									<li>Создание ролика для Youtube - от 15 000 руб. </li>
+									<li>Минимальный бюджет на рекламу - от 10 000 руб. </li>
+								</ul>
+							</div>
+							<div class="comment__info">
+								<p class="small-list-text black-text ff-tektur"> Условия работы</p>
+								<ul>
+									<li>Оплата за бюджет на клики по рекламному объявлению - по выставленному счету.
+									</li>
+									<li>Если необходимо выделить НДС - просим об этом сообщить заранее.</li>
+								</ul>
+							</div>
+							<div class="comment__info small-title black-text">
+								<p>
+									Ваша деятельность не должна нарушать законодательство РФ и удовлетворять требованиям
+									видеосетей. Необходимо предоставить сертификаты и лицензии, если ваши товары/услуги
+									подлежат обязательной сертификации.
+								</p>
+							</div>
+						</div>
+						<div class="sqr-img ">
+							<div class="sqr-img__wrapper sqr-img__wrapper_small sqr-img__wrapper_right">
+								<img src="./img/sqr-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									Видеореклама доносит сообщения бренда до любой целевой аудитории. Она дешевле и
+									эффективнее традиционной, запускается очень быстро и может изменяться в режиме
+									реального времени. Пора воспользоваться этими преимуществами и освоить новые способы
+									интернет-маркетинга. А специалисты веб-студии НастАртВЕБ помогут вам в этом! </p>
+							</div>
+						</div>
+						<div class="btn btn_light btn_fit btn_right">хочу крутую видеорекламу</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners dark-bg mt-0" id="clients">
+				<div class="container">
+					<div class="partners__wrapper partners__wrapper_reverse">
+						<div class="partners__header">
+							<h2 class="partners__title title">нам доверяют</h2>
+							<div class="partners__filter">
+								<div class="partners__filter-btn filter-btn">Клиенты</div>
+								<div class="partners__filter-btn filter-btn">Партнёры</div>
+							</div>
+						</div>
+						<div class="partners__slider ">
+							<div class="partners__list swiper-wrapper">
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner6.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner16.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner7.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner8.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner9.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner10.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner11.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner12.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner13.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner14.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner15.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="partners-controls slider-controls">
+							<div class="slider-pagination partners-pagination"></div>
+							<div class="slider-navigation partners-navigation">
+								<div class="slider-prev partners-prev">назад</div>
+								<div class="slider-next partners-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block mt-0">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужна именно видеореклама?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

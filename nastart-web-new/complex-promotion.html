@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						КОмплексное продвижение
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Быстро, честно, качественно.
+								</div>
+								<div class="detail-entrance__subtitle">
+									Просто по-другому мы не умеем!
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer detail-entrance__offer_sticker small-title">
+								Настройка и ведение <br>
+								ретаргетинга ВК в подарок
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info dark-gray-text">
+								<p>
+									Вместе с ростом популярности сетевых продаж растёт потребность компаний и частных
+									предпринимателей в продвижении своих товаров и услуг в сети. Сейчас существует
+									множество рекламных каналов, которые вы можете использовать для этих целей:
+									SEO-продвижение, контекстная реклама, различные социальные сети, рекламные площадки
+									Яндекса и Гугла и многое другое.
+								</p>
+								<p>
+									Как не запутаться во всем этом многообразии? Как понять, какая реклама нужна именно
+									вам, и не сливать впустую деньги на бесполезные каналы? На помощь приходит стратегия
+									и системный подход - комплексное продвижение сайта в интернете.
+								</p>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Зачем нужно комплексное продвижение?
+					</div>
+					<div class="simple-tile__subtitle orange-text small-title">
+						Прежде всего — для масштабирования бизнеса и охвата новой аудитории:
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Пользователей различных социальных сетей
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Жителей определённого региона и города
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Представителей определённых профессий
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Групп населения нужного пола и/или уровня дохода
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Пользователей, имеющих те или иные интересы и т.д.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info gray-text">
+									<p>
+										Комплексное продвижение позволяет использовать максимальное количество именно
+										тех рекламных каналов, которые быстро и эффективно свяжут ваш бизнес с
+										покупателями.
+									</p>
+									<p>
+										Хотя каждый из таких каналов (по отдельности) и может давать определённую
+										отдачу, но именно системный подход к продвижению способен вызвать «взрывной»
+										рост продаж.
+									</p>
+									<p>
+										Важно! В комплексное продвижение входят все маркетинговые каналы и инструменты,
+										которые только существуют на просторах сети. Но только стратегический подход и
+										системная работа позволят вам добиться тех целей и результатов, которые вы
+										наметили для своего бизнеса.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Что такое комплексное продвижение сайта
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									В первую очередь, это грамотная стратегия. Она должна быть выстроена на основе
+									конкретных целей, которые вы перед собой ставите, будь то увеличение продаж,
+									расширение сферы охвата или повышение лояльности к компании.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Это система, объединяющая в себе разные способы рекламы и раскрутки бренда,
+									магазина, сайта – чего угодно. Причем нет единственно верного ответа на вопрос,
+									какие именно виды рекламы подойдут для вас - их эффективность различна для разных
+									проектов.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Всесторонняя аналитика постоянно сопровождает процесс комплексного продвижения
+									сайта. Начиная от плана работ и ожидаемых результатов, и заканчивая детальным
+									анализом показателей конкретных каналов. Нужно все время держать руку на пульсе и
+									своевременно вносить коррективы.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Нацеленность на долгосрочные перспективы - основная цель комплексного продвижения.
+									Постепенно выстраивается и оттачивается маркетинговая система, которая подходит
+									именно вашему бизнесу. И, естественно, будет приносить желаемые результаты
+									регулярно.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Кому нужно комплексное продвижение?
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Компаниям, которые смотрят в будущее и заботятся о темпах развития собственного бизнеса.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Всем, кто пытается развивать новое направление, «прощупывает» новые рынки для сбыта,
+								расширяет спектр услуг или ассортимент товаров.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Компаниям, перед которыми стоит задача повысить узнаваемость бренда или степень доверия
+								к нему.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm">
+								<p>
+									Если достигнутый уровень продаж и процент возврата клиентов в целом устраивают —
+									такая услуга не нужна.
+								</p>
+								<p>
+									Во всех остальных случаях: чтобы рост продаж не замедлялся, чтобы степень охвата
+									потенциально заинтересованной аудитории была максимальной, а уровень конверсии
+									посетители-покупатели не падал, комплексное продвижение будет отличным решением.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right btn_transparent">оставить заявку</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Кому нужно комплексное продвижение?
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								1. Изучение продвигаемого ресурса
+							</div>
+							<div class="simple-tile__text">
+								На данном этапе проводится тщательный анализ вашей сферы в общем и компании в частности.
+								Составляется портрет целевой аудитории, оценивается конкурентная среда, тестируется
+								удобство пользования имеющимся сайтом/блогом.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								2. Формирование стратегии
+							</div>
+							<div class="simple-tile__text">
+								Чтобы понимать, что бизнес получит от комплексного продвижения, необходимо максимально
+								четко сформулировать цели, которых он хочет добиться. Это должен быть ряд конкретных
+								задач, на основе которых строится рекламная стратегия.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								3. План работ
+							</div>
+							<div class="simple-tile__text">
+								На основе полученных данных составляется пошаговый план работ. Мы обычно используем в
+								работе два плана - долгосрочный, который отражает основную стратегию продвижения и
+								краткосрочный, который позволяет быстро ее корректировать.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								4. Каналы и инструменты продвижения
+							</div>
+							<div class="simple-tile__text">
+								Определяется набор каналов, которые необходимо включить в комплексное продвижение. В
+								зависимости от вашего бюджета выбираются основные каналы - те, которые точно дадут
+								результат в вашей нише. И дополнительные - те, которые мы рекомендуем для максимального
+								эффекта.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								5. Доработка сайта
+							</div>
+							<div class="simple-tile__text">
+								Необходимо помнить, что реклама приведет на ваш ресурс потенциальных клиентов. Но
+								собственно ваш сайт, как и продавец в магазине, должен инициировать продажу. Сайт должен
+								быть удобным, быстрым и продающим. На этом этапе мы "шлифуем" его до идеального
+								состояния.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								6. Связь «заказчик-исполнитель»
+							</div>
+							<div class="simple-tile__text">
+								Если у вас в компании нет маркетингового отдела, который отвечает за комплексное
+								продвижение, то лучше отдать это профессиональному агентству. Тем не менее, вы должны
+								быть готовы к тесному сотрудничеству. Лучше всего выделить ответственного сотрудника,
+								который сможет объяснить все тонкости вашего бизнеса. Ведь никто его не знает лучше вас!
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm gray-text">
+								<p>
+									Для того, чтобы комплексное продвижение было максимально эффективным, мы, как
+									digital-агентство, должны разбираться во всех тонкостях вашего бизнеса не хуже вас
+									самих! Только глубокое погружение в вашу нишу позволит нам сформировать действенную
+									стратегию и добиться отличных результатов. Поэтому, пожалуйста, не относитесь к
+									комплексному продвижению как к "заплатил и забыл". Взаимодействуйте с нами!
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right">хочу работать с наСтартвеб!</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Что входит в комплексное продвижение?
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								SEO-продвижение
+							</div>
+							<div class="simple-tile__text">
+								Изучение ресурса (или его аудит) с точки зрения поисковой оптимизации и юзабилити.
+								Далее – работа с самим ресурсом: внесение нужных изменений в структуру и наполнение,
+								составление семантического ядра, построение карты ресурса.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Работа с контентом
+							</div>
+							<div class="simple-tile__text">
+								Необходимо дать клиенту максимально полезный контент. Причём, НЕ в навязчивой форме,
+								которая могла бы отпугнуть часть аудитории и вызвать у неё негативное отношение к
+								ресурсу
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								SMM
+							</div>
+							<div class="simple-tile__text">
+								Настройка и отслеживание той части рекламной кампании, которая относится к социальным
+								сетям. Сюда входит общение с потенциальными покупателями и проведение различных промо
+								акций в соцсетях, работа с комментариями и многое другое
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Контекстная реклама
+							</div>
+							<div class="simple-tile__text">
+								Какой бы информативный и удобный сайт ни был, о нём мало кто узнает, если не
+								использовать контекстную и таргетированную рекламу. И это тоже неотъемлемая часть
+								продвижения.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Аналитика
+							</div>
+							<div class="simple-tile__text">
+								Без плотной работы с аналитикой также не обойтись. Именно она покажет, в правильном ли
+								направлении двигается вся кампания, оптимально ли тратятся средства, поможет внести
+								необходимые коррективы.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Яндекс.Маркет И Google Merchant
+							</div>
+							<div class="simple-tile__text">
+								Если сайт задействован в продаже каких-либо товаров, то подключаются специалисты по
+								работе с различными торговыми площадками, такими как Яндекс.Маркет и Google Merchant.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Техническая поддержка
+							</div>
+							<div class="simple-tile__text">
+								Любое сопровождение бизнеса нуждается в постоянной и квалифицированной технической
+								поддержке. Как правило, поддержка подключается ещё на начальном этапе и в любой момент
+								готова к решению возникшей проблемы.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Регулярность и отчетность
+							</div>
+							<div class="simple-tile__text">
+								Сюда входит и сквозная аналитика, и еженедельные/ ежемесячные отчёты по проделанной
+								работе, достигнутых результатах, использованию бюджета и так далее.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Оптимизация стратегии и новые каналы
+							</div>
+							<div class="simple-tile__text">
+								Интернет бурно развивается: одни каналы устаревают, появляются новые или более
+								эффективные инструменты. Поэтому нужно регулярно оптимизировать все ресурсы и всегда
+								быть в курсе текущей обстановки.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm gray-text">
+								<p>
+									Во всем, что касается рекламы в интернете, невозможно заранее абсолютно точно
+									предсказать результат. Только когда уже есть реальная статистика, можно вносить
+									коррективы в стратегию комплексного продвижения. От этого зависит правильное
+									распределение бюджета. Средства направляются в наиболее эффективные каналы, что-то
+									может быть полностью исключено из продвижения. Кроме того, мы постоянно находимся в
+									поиске новых идей и рекламных площадок. Подключаем, анализируем, делаем выводы. Все
+									для экономии вашего времени и денег!
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right btn_light">хочу сэкономить!</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners dark-bg " id="clients">
+				<div class="container">
+					<div class="partners__wrapper partners__wrapper_reverse">
+						<div class="partners__header">
+							<h2 class="partners__title title">нам доверяют</h2>
+							<div class="partners__filter">
+								<div class="partners__filter-btn filter-btn">Клиенты</div>
+								<div class="partners__filter-btn filter-btn">Партнёры</div>
+							</div>
+						</div>
+						<div class="partners__slider ">
+							<div class="partners__list swiper-wrapper">
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner6.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner16.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner7.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner8.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner9.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner10.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner11.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner12.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner13.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner14.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner15.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="partners-controls slider-controls">
+							<div class="slider-pagination partners-pagination"></div>
+							<div class="slider-navigation partners-navigation">
+								<div class="slider-prev partners-prev">назад</div>
+								<div class="slider-next partners-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block mt-0">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно комплексное продвижение?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

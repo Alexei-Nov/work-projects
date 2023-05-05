@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__mobile-header">
+						<a href="tel:" class="header__phone-btn">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M3.51667 6.99167C4.71667 9.35 6.65 11.275 9.00833 12.4833L10.8417 10.65C11.0667 10.425 11.4 10.35 11.6917 10.45C12.625 10.7583 13.6333 10.925 14.6667 10.925C15.125 10.925 15.5 11.3 15.5 11.7583V14.6667C15.5 15.125 15.125 15.5 14.6667 15.5C6.84167 15.5 0.5 9.15833 0.5 1.33333C0.5 0.875 0.875 0.5 1.33333 0.5H4.25C4.70833 0.5 5.08333 0.875 5.08333 1.33333C5.08333 2.375 5.25 3.375 5.55833 4.30833C5.65 4.6 5.58333 4.925 5.35 5.15833L3.51667 6.99167Z"
+									fill="white" />
+							</svg>
+						</a>
+						<div class="header__logo">
+							<a href="/" class="header__logo-img">
+								<img src="./img/logo.svg" alt="">
+							</a>
+							<div class="header__logo-text">
+								Строительная компания полного цикла
+							</div>
+						</div>
+						<div class="header__menu-btn">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__body">
+						<div class="header__nav">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item nav__item_lvl1">
+										<a href="" class="nav__link">О нас</a>
+									</li>
+									<li class="nav__item nav__item_lvl1 nav__item_has-children">
+										<a href="" class="nav__link">Услуги</a>
+										<ul class="nav__submenu">
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Строительство под ключ жилых домов,
+													коттеджей, МАФ</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Проектирование жилых домов, коттеджей,
+													МАФ</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Проектирование ландшафтов и общественных
+													пространств</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Озеленение</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Ландшафтное строительство полного цикла</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Проектирование и создание водоемов</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Дизайн и проектирование интерьеров</a>
+											</li>
+											<li class="nav__item nav__item_lvl2">
+												<a href="" class="nav__link">Строительно-отделочные работы</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav__item nav__item_lvl1">
+										<a href="" class="nav__link">Карта объектов</a>
+									</li>
+									<li class="nav__item nav__item_lvl1">
+										<a href="" class="nav__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__info">
+							<div class="header__location header__info-item"
+								style="background-image: url(./img/icon/location.svg);">
+								<div class="header__info-title">АДРЕС</div>
+								<div>Санкт-Петербург, <br> Бухарестская ул., д. 1, оф. 511</div>
+							</div>
+							<div class="header__contacts">
+								<div class="header__phone  header__info-item"
+									style="background-image: url(./img/icon/phone.svg);">
+									<div class="header__info-title">ТЕЛЕФОН</div>
+									<a href="tel:+7 812 923 15 17">+7 812 923 15 17</a>
+								</div>
+								<div class="header__mail  header__info-item"
+									style="background-image: url(./img/icon/mail.svg);">
+									<div class="header__info-title">E-MAIL</div>
+									<a href="mailto:zelenogradstroy@bk.ru">zelenogradstroy@bk.ru</a>
+								</div>
+							</div>
+						</div>
+						<div class="header__social social">
+							<a href="" class="social__link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M12 2C7.0625 2 2 3.0625 2 10.75C2 14.875 3.4375 17.4375 6.375 18.625V20.9375C6.375 21.375 6.625 21.75 7 21.9375C7.125 22 7.3125 22 7.4375 22C7.6875 22 8 21.875 8.1875 21.6875L10.4375 19.4375C10.9375 19.4375 11.4375 19.5 12 19.5C16.9375 19.5 22 18.4375 22 10.75C22 3.0625 16.9375 2 12 2ZM11.6875 8.375C12.8125 8.375 13.75 9.3125 13.75 10.4375C13.75 10.8125 13.5 11.0625 13.125 11.0625C12.75 11.0625 12.5 10.8125 12.5 10.4375C12.5 10 12.125 9.625 11.6875 9.625C11.3125 9.625 11.0625 9.375 11.0625 9C11.0625 8.625 11.3125 8.375 11.6875 8.375ZM11.0625 7.0625C11.0625 6.6875 11.3125 6.4375 11.6875 6.4375C13.875 6.4375 15.6875 8.25 15.6875 10.4375C15.6875 10.8125 15.4375 11.0625 15.0625 11.0625C14.6875 11.0625 14.4375 10.8125 14.4375 10.4375C14.4375 8.9375 13.1875 7.6875 11.6875 7.6875C11.3125 7.6875 11.0625 7.375 11.0625 7.0625ZM16.1875 14.8125C15.9375 15.5625 15 16.1875 14.1875 16.3125C14 16.375 13.8125 16.375 13.5625 16.375C13.0625 16.375 12.3125 16.25 11 15.6875C9.5 15.0625 8 13.75 6.8125 12.0625V12C6.4375 11.4375 5.75 10.375 5.75 9.25C5.75 7.875 6.4375 7.1875 6.6875 6.875C7.0625 6.5625 7.5 6.375 8 6.375C8.125 6.375 8.1875 6.375 8.3125 6.375C8.75 6.375 9.0625 6.5 9.375 7.125L9.625 7.625C9.8125 8.125 10.0625 8.6875 10.125 8.75C10.3125 9.125 10.3125 9.4375 10.125 9.75C10.0625 9.9375 9.9375 10.0625 9.8125 10.1875C9.75 10.3125 9.6875 10.375 9.625 10.375C9.5625 10.4375 9.5625 10.4375 9.5 10.5C9.6875 10.8125 10.0625 11.375 10.5625 11.8125C11.3125 12.5 11.875 12.6875 12.1875 12.8125C12.3125 12.6875 12.4375 12.4375 12.625 12.25L12.6875 12.125C13 11.6875 13.5 11.5625 14 11.75C14.25 11.875 15.625 12.5 15.625 12.5L15.75 12.5625C15.9375 12.6875 16.1875 12.75 16.3125 13C16.5 13.5625 16.3125 14.375 16.1875 14.8125ZM17 11.0625C16.625 11.0625 16.375 10.8125 16.375 10.4375C16.375 7.875 14.25 5.75 11.6875 5.75C11.3125 5.75 11.0625 5.5 11.0625 5.125C11.0625 4.75 11.3125 4.5 11.6875 4.5C14.9375 4.5 17.625 7.1875 17.625 10.4375C17.625 10.8125 17.375 11.0625 17 11.0625Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="" class="social__link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20.7097 3.6545C20.7097 3.6545 22.6523 2.897 22.4904 4.73664C22.4365 5.49415 21.9508 8.1454 21.573 11.0131L20.278 19.5079C20.278 19.5079 20.17 20.7524 19.1987 20.9688C18.2274 21.1852 16.7704 20.2113 16.5005 19.9949C16.2847 19.8326 12.4534 17.3977 11.1043 16.2074C10.7265 15.8827 10.2948 15.2334 11.1582 14.476L16.8244 9.06525C17.4719 8.41595 18.1194 6.90095 15.4213 8.7406L7.86655 13.8808C7.86655 13.8808 7.00315 14.4219 5.3843 13.9349L1.87671 12.8527C1.87671 12.8527 0.581605 12.0412 2.79408 11.2295C8.19035 8.68645 14.8278 6.0893 20.7097 3.6545Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="" class="social__link">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M7.40169 19.7625L7.06315 19.5938L3.67767 20.4375L4.58047 17.1188L4.35477 16.7812C3.5084 15.375 3.00058 13.7438 3.00058 12.0562C2.94416 7.05 7.00672 3 11.9721 3C14.3983 3 16.6553 3.95625 18.348 5.64375C20.0408 7.33125 21 9.6375 21 12C21 16.95 16.9374 21 11.9721 21C10.3922 21 8.81231 20.6063 7.40169 19.7625ZM16.373 14.0812L16.9937 14.3625C17.1065 14.4187 17.1629 14.475 17.1629 14.475V14.8687L17.1629 14.8687C17.1065 15.15 17.0501 15.4312 16.9372 15.6562C16.8808 15.7687 16.768 15.8812 16.6551 15.9937C16.5987 16.05 16.5423 16.0922 16.4858 16.1343C16.4294 16.1765 16.373 16.2187 16.3166 16.275L16.2037 16.3875C16.1403 16.4506 16.077 16.4783 16.0036 16.5104C15.9463 16.5355 15.883 16.5632 15.8087 16.6125C15.583 16.725 15.2445 16.8375 14.9624 16.8375H14.3981C14.3135 16.8094 14.2147 16.7953 14.116 16.7812C14.0173 16.7672 13.9185 16.7531 13.8339 16.725C12.3104 16.3312 10.9562 15.6 9.77132 14.5875C9.69759 14.4772 9.59978 14.391 9.49362 14.2974C9.43729 14.2477 9.3786 14.196 9.31992 14.1375L9.09422 13.9125C8.19143 13.0687 7.51434 12.1125 7.00652 11.0437L6.95009 10.875C6.78082 10.4812 6.66797 10.0312 6.66797 9.58123C6.66797 8.96248 6.89367 8.34373 7.28864 7.83748C7.34506 7.78123 7.38738 7.72498 7.4297 7.66873C7.47202 7.61248 7.51434 7.55623 7.57076 7.49998C7.62718 7.47185 7.68361 7.42966 7.74004 7.38748C7.79646 7.34529 7.85288 7.3031 7.90931 7.27498L7.96573 7.21873C8.02216 7.21873 8.07858 7.20466 8.13501 7.1906C8.19143 7.17654 8.24785 7.16248 8.30428 7.16248H8.75568H8.92495C9.09422 7.21873 9.20707 7.27498 9.31992 7.44373C9.48919 7.78123 10.1663 9.29998 10.2227 9.58123C10.2791 9.74998 10.2227 9.97498 10.1099 10.1437C10.0534 10.2 10.0111 10.2703 9.9688 10.3406C9.92648 10.4109 9.88417 10.4812 9.82774 10.5375C9.65847 10.7062 9.43277 10.9875 9.43277 10.9875C9.37635 11.0437 9.37635 11.1562 9.37635 11.2687C9.3979 11.3117 9.41122 11.3465 9.42259 11.3762C9.441 11.4242 9.45432 11.459 9.48919 11.4937L9.54562 11.6062C9.82774 12.1125 10.2227 12.5625 10.6177 12.9562C10.6741 13.0125 10.7446 13.0687 10.8152 13.125C10.8857 13.1812 10.9562 13.2375 11.0127 13.2937C11.4641 13.7437 12.0283 14.0812 12.649 14.3625L12.9311 14.475C12.9875 14.5312 13.1004 14.5875 13.1568 14.5875H13.2132C13.3261 14.5875 13.4389 14.5312 13.4953 14.4187C14.2853 13.5187 14.3417 13.4625 14.3417 13.4625L14.3417 13.4625C14.4546 13.4062 14.5674 13.35 14.7367 13.35C14.7649 13.35 14.7931 13.364 14.8213 13.3781C14.8495 13.3922 14.8777 13.4062 14.9059 13.4062C15.4702 13.6875 16.373 14.0812 16.373 14.0812Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="entrance" style="background-image: url(./img/Frame\ 261.png);">
+				<div class="container">
+					<div class="breadcrumb">
+						<ul class="breadcrumb__wrapper">
+							<li class="breadcrumb__item"><a href=""><span>Главная</span></a></li>
+							<li class="breadcrumb__item"><span>О нас</span></li>
+						</ul>
+					</div>
+
+					<div class="entrance__wrapper">
+						<div class="entrance__title page-title ">О нас</div>
+						<div class="btn">Задать вопрос</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section about-us bg-gray">
+				<div class="container">
+					<div class="title">О нас</div>
+					<div class="about-us__body">
+						<div class="about-us__team">
+							<div class="about-us__slider swiper">
+								<div class="about-us__slider-wrapper swiper-wrapper">
+									<div class="about-us__slide swiper-slide card">
+										<div class="card__img">
+											<img src="./img/team/image 18.png" alt="">
+										</div>
+										<div class="card__info">
+											<div class="card__name large-text">Андреев Александр</div>
+											<div class="card__position">Директор компании ООО <br> «Зеленоград»</div>
+											<div class="card__contacts">
+												<a href="tel:+7 812 923 15 17" class="card__link"
+													style="background-image: url(./img/icon/phone-dark.svg);">+7 812 923
+													15
+													17</a>
+												<a href="mailto:6001725@mail.ru" class="card__link"
+													style="background-image: url(./img/icon/mail-dark.svg);">6001725@mail.ru</a>
+											</div>
+										</div>
+									</div>
+									<div class="about-us__slide swiper-slide card">
+										<div class="card__img">
+											<img src="./img/team/image 19.png" alt="">
+										</div>
+										<div class="card__info">
+											<div class="card__name large-text">Андреев Александр</div>
+											<div class="card__position">Директор компании ООО <br> «Зеленоград»</div>
+											<div class="card__contacts">
+												<a href="tel:+7 812 923 15 17" class="card__link"
+													style="background-image: url(./img/icon/phone-dark.svg);">+7 812 923
+													15
+													17</a>
+												<a href="mailto:6001725@mail.ru" class="card__link"
+													style="background-image: url(./img/icon/mail-dark.svg);">6001725@mail.ru</a>
+											</div>
+										</div>
+									</div>
+									<div class="about-us__slide swiper-slide card">
+										<div class="card__img">
+											<img src="./img/team/image 20.png" alt="">
+										</div>
+										<div class="card__info">
+											<div class="card__name large-text">Андреев Александр</div>
+											<div class="card__position">Директор компании ООО <br> «Зеленоград»</div>
+											<div class="card__contacts">
+												<a href="tel:+7 812 923 15 17" class="card__link"
+													style="background-image: url(./img/icon/phone-dark.svg);">+7 812 923
+													15
+													17</a>
+												<a href="mailto:6001725@mail.ru" class="card__link"
+													style="background-image: url(./img/icon/mail-dark.svg);">6001725@mail.ru</a>
+											</div>
+										</div>
+									</div>
+									<div class="about-us__slide swiper-slide card">
+										<div class="card__img">
+											<img src="./img/team/image 21.png" alt="">
+										</div>
+										<div class="card__info">
+											<div class="card__name large-text">Андреев Александр</div>
+											<div class="card__position">Директор компании ООО <br> «Зеленоград»</div>
+											<div class="card__contacts">
+												<a href="tel:+7 812 923 15 17" class="card__link"
+													style="background-image: url(./img/icon/phone-dark.svg);">+7 812 923
+													15
+													17</a>
+												<a href="mailto:6001725@mail.ru" class="card__link"
+													style="background-image: url(./img/icon/mail-dark.svg);">6001725@mail.ru</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="about-us__subslider swiper">
+									<div class="about-us__subslider-wrapper swiper-wrapper">
+										<div class="about-us__subslide swiper-slide">
+											<img src="./img/team/image 18.png" alt="">
+										</div>
+										<div class="about-us__subslide swiper-slide">
+											<img src="./img/team/image 19.png" alt="">
+										</div>
+										<div class="about-us__subslide swiper-slide">
+											<img src="./img/team/image 20.png" alt="">
+										</div>
+										<div class="about-us__subslide swiper-slide">
+											<img src="./img/team/image 21.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="about-us__controls slider-controls">
+								<div class="about-us__next slider-next swiper-next"><svg width="15" height="15"
+										viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.68306 11.6919C5.43898 11.4479 5.43898 11.0521 5.68306 10.8081L8.99112 7.5L5.68306 4.19194C5.43898 3.94786 5.43898 3.55214 5.68306 3.30806C5.92714 3.06398 6.32286 3.06398 6.56694 3.30806L10.3169 7.05806C10.561 7.30214 10.561 7.69786 10.3169 7.94194L6.56694 11.6919C6.32286 11.936 5.92714 11.936 5.68306 11.6919Z"
+											fill="#373737" />
+									</svg>
+								</div>
+								<div class="about-us__prev slider-prev swiper-prev"><svg width="15" height="15"
+										viewBox="0 0 15 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.68306 11.6919C5.43898 11.4479 5.43898 11.0521 5.68306 10.8081L8.99112 7.5L5.68306 4.19194C5.43898 3.94786 5.43898 3.55214 5.68306 3.30806C5.92714 3.06398 6.32286 3.06398 6.56694 3.30806L10.3169 7.05806C10.561 7.30214 10.561 7.69786 10.3169 7.94194L6.56694 11.6919C6.32286 11.936 5.92714 11.936 5.68306 11.6919Z"
+											fill="#373737" />
+									</svg>
+								</div>
+								<div class="about-us__pagination slider-pagination swiper-pagination"></div>
+							</div>
+						</div>
+						<div class="about-us__content">
+							<div class="about-us__subtitle large-text">Компания «Зеленоград» выполняет комплексный
+								подход для благоустройства вашего участка.</div>
+							<div class="read-more">
+								<div class="read-more__text">
+									<p>Многолетний опыт работы позволяет грамотно подойти к вопросам от планирования
+										участка до интерьеров вашего дома. Мы готовы предложить Вам полный цикл работ по
+										проектированию жилого дома, ландшафта и интерьера, реализации проектов,
+										строительства и полного технического надзора. Основной отличительной чертой
+										нашей профессиональной команды, является: индивидуальный подход, конструктивный
+										диалог, амбициозность решений и внимание к мелочам.</p>
+									<p>Многолетний опыт работы позволяет грамотно подойти к вопросам от планирования
+										участка до интерьеров вашего дома. Мы готовы предложить Вам полный цикл работ по
+										проектированию жилого дома, ландшафта и интерьера, реализации проектов,
+										строительства и полного технического надзора. Основной отличительной чертой
+										нашей профессиональной команды, является: индивидуальный подход, конструктивный
+										диалог, амбициозность решений и внимание к мелочам.</p>
+									<p>Многолетний опыт работы позволяет грамотно подойти к вопросам от планирования
+										участка до интерьеров вашего дома. Мы готовы предложить Вам полный цикл работ по
+										проектированию жилого дома, ландшафта и интерьера, реализации проектов,
+										строительства и полного технического надзора. Основной отличительной чертой
+										нашей профессиональной команды, является: индивидуальный подход, конструктивный
+										диалог, амбициозность решений и внимание к мелочам.</p>
+								</div>
+								<div class="read-more__btn" toggle-text="Скрыть">Показать еще</div>
+							</div>
+							<a href="" class="about-us__btn btn btn_dark">Подробнее о нас</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section advantage">
+				<div class="container">
+					<div class="title">Преимущества</div>
+					<div class="advantage__wrapper">
+						<div class="advantage__body">
+							<div class="advantage__list">
+								<div class="advantage__item">
+									<div class="advantage__name">более 15 лет</div>
+									<div class="advantage__text">компания на рынке строительства</div>
+								</div>
+								<div class="advantage__item">
+									<div class="advantage__name">более 150</div>
+									<div class="advantage__text">объектов реализовано</div>
+								</div>
+							</div>
+							<div class="advantage__content">
+								<div class="read-more">
+									<div class="read-more__text">
+										<p>
+											Объективная оценка своей деятельности, строгие требования к результатам
+											работы, честное отношение к партнерам, гибкость и мобильность, внедрение
+											инновационных технологий, нацеленность на конечный результат позволяют
+											компании уверенно занимать лидирующие позиции на строительном рынке.
+											Компания активно расширяет территориальные границы своей деятельности,
+											наращивает парк строительной техники и механизмов, формирует коллектив
+											высококлассных профессионалов. Ресурсы компании в сочетании с грамотным,
+											высококвалифицированным персоналом позволяют не только выполнить заказ на
+											строительство объекта, но и провести весь цикл сопутствующих работ.
+											Многолетний опыт работы позволяет грамотно подойти к вопросам от
+											планирования участка до интерьеров вашего дома. Мы готовы предложить Вам
+											полный цикл работ по проектированию жилого дома, ландшафта и интерьера,
+											реализации проектов, строительства и полного технического надзора.
+										</p>
+									</div>
+									<div class="read-more__btn" toggle-text="Скрыть">Показать еще</div>
+								</div>
+							</div>
+							<div class="advantage__principle principle">
+								<div class="principle__title">Работа компании основана на принципах:</div>
+								<div class="principle__list">
+									<div class="principle__item"
+										style="background-image: url(./img/icon/principle1.svg);">
+										Высокий уровень компетенций и профессионализма нашей команды
+									</div>
+									<div class="principle__item"
+										style="background-image: url(./img/icon/principle2.svg);">
+										Внимание к мелочам, индивидуальный подход
+									</div>
+									<div class="principle__item"
+										style="background-image: url(./img/icon/principle3.svg);">
+										Конструктивный диалог, амбициозность и нестандартные решения
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantage__img">
+							<img src="./img/AdobeStock_150953127 3 (1).png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section service">
+				<div class="container">
+					<div class="title">Наши услуги</div>
+					<div class="service__list">
+						<a href="" class="service__item">
+							<div class="service__name large-text">Строительство под ключ жилых домов, коттеджей, МАФ
+							</div>
+							<div class="service__link">Подробнее</div>
+						</a>
+						<div class="service__item">
+							<div class="service__name large-text">Проектирование жилых домов, коттеджей, МАФ</div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text">Проектирование ландшафтов и общественных пространств
+							</div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text"> Озеленение</div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text">Ландшафтное строительство полного цикла </div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text">Проектирование и создание водоемов </div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text">Дизайн и проектирование интерьеров </div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+						<div class="service__item">
+							<div class="service__name large-text"> Строительно-отделочные работы</div>
+							<a href="" class="service__link">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact tab ">
+				<div class="container">
+					<div class="title">Контакты</div>
+					<div class="tab__header-wrapper">
+						<div class="tab__header">
+							<div class="tab__link tab__link-active btn btn_transparent">Карта наших объектов</div>
+							<div class="tab__link btn btn_transparent">Карта нашего офиса</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" tab__body">
+					<div class=" tab__item tab__item-active" id="map1">
+						<div class="contact__form">
+							<div class="contact__item">
+								<div class="contact__form-title large-text">Приходите к нам в гости</div>
+								<div class="contact__info contact__info_location"
+									style="background-image: url(./img/icon/location-dark.svg);">
+									Санкт-Петербург, <br> Бухарестская ул., д. 1, оф. 511</div>
+							</div>
+							<div class="contact__item">
+								<div class="contact__form-title large-text">Пишите, звоните</div>
+								<a href="tel:+7 812 923 15 17" class="contact__info"
+									style="background-image: url(./img/icon/phone-dark.svg);">+7 812 923 15 17</a>
+								<a href="mailto:6001725@mail.ru" class="contact__info"
+									style="background-image: url(./img/icon/location-dark.svg);">6001725@mail.ru</a>
+							</div>
+							<div class="contact__bottom">
+								<a href="#popup" data-fancybox
+									class="contact__btn btn btn_dark">Заказать
+									консультацию</a>
+								<label class="label__container">согласие на обработку персональных данных
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class=" tab__item " id="map2">
+						<div class="form">
+							<div class="form__title large-text">Свяжитесь с нами</div>
+							<div class="form__inputs">
+								<input class="input" type="text" placeholder="Ваше имя">
+								<input class="input" type="tel" placeholder="Номер телефона">
+							</div>
+							<a href="" class="contact__btn btn btn_dark">Заказать консультацию</a>
+							<label class="label__container">согласие на обработку персональных данных
+								<input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<script defer>
+					var myMap1
+					function initMap1() {
+						myMap1 = new ymaps.Map('map1', {
+							center: [59.940037, 30.328930], // СПб
+							zoom: 14,
+							controls: [],
+						}, {
+							searchControlProvider: 'yandex#search'
+						});
+
+						myPlacemark = new ymaps.Placemark([59.940037, 30.328930],
+							{ balloonContent: 'Зеленоград', },
+							{ iconColor: '#3c9e15' });
+
+						myMap1.geoObjects
+							.add(myPlacemark)
+
+						if (window.innerWidth < 1023) {
+							myMap1.behaviors
+								.disable(['drag', 'rightMouseButtonMagnifier']);
+						}
+					}
+
+					var myMap2
+					function initMap2() {
+						myMap2 = new ymaps.Map('map2', {
+							center: [59.95, 30.329], // СПб
+							zoom: 14,
+							controls: [],
+						}, {
+							searchControlProvider: 'yandex#search'
+						});
+
+						myPlacemark = new ymaps.Placemark([59.95, 30.329],
+							{ balloonContent: 'Зеленоград', },
+							{ iconColor: '#3c9e15' });
+
+						myMap2.geoObjects
+							.add(myPlacemark)
+
+						if (window.innerWidth < 1023) {
+							myMap2.behaviors
+								.disable(['drag', 'rightMouseButtonMagnifier']);
+						}
+					}
+					ymaps.ready(initMap1);
+					ymaps.ready(initMap2);
+
+				</script>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="/" class="footer__logo">
+						<img src="./img/logo-pic.svg" alt="">
+					</a>
+					<div class="footer__body">
+						<nav class="footer__nav">
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<div class="footer__title ">УСЛУГИ</div>
+									<ul class="footer__nav-submenu">
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Проектирование загородных домов</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Проектирование ландшафтов</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Строительство под ключ</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Ландшафтное строительство</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Озеленение</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Создание водоемов</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer__nav-item">
+									<div class="footer__title ">ИНФОРМАЦИЯ</div>
+									<ul class="footer__nav-submenu">
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Наши работы</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">О нас</a>
+										</li>
+										<li class="footer__nav-item">
+											<a href="" class="footer__link">Контакты</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__info">
+							<div class="footer__info-item">
+								<div class="footer__title">ТЕЛЕФОН</div>
+								<a href="tel:+7 812 923 15 17" class="footer__link">+7 812 923 15 17</a>
+							</div>
+							<div class="footer__info-item">
+								<div class="footer__title">E-MAIL</div>
+								<a href="mailto:zelenogradstroy@bk.ru" class="footer__link">zelenogradstroy@bk.ru</a>
+							</div>
+							<div class="footer__info-item">
+								<div class="footer__title">АДРЕС</div>
+								<div class="footer__link">Санкт-Петербург, <br> Бухарестская ул., д. 1, оф. 511</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__text">
+						<div>2023. Все права защищены.</div>
+						<div class="footer__dev">Разработка сайта <a href="https://nastart-web.ru/"><svg width="110"
+									height="11"
+									viewBox="0 0 110 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_121_637)">
+										<path
+											d="M68.0441 10.725V1.68536H64.6543V0H73.3337V1.68536H69.9438V10.725H68.0441Z"
+											fill="#A7A7A7" />
+										<path
+											d="M54.6934 10.725V0H58.9012C59.8073 0 60.5817 0.153215 61.2244 0.459645C61.8771 0.766073 62.3791 1.20529 62.7296 1.77729C63.0801 2.34929 63.2558 3.02854 63.2558 3.81503C63.2558 4.60153 63.0801 5.28078 62.7296 5.85278C62.3791 6.41459 61.8771 6.84866 61.2244 7.15511C61.179 7.17613 61.1328 7.1964 61.0858 7.21592L63.431 10.725H61.3854L59.3016 7.58937C59.1711 7.59609 59.0376 7.59941 58.9012 7.59941H56.5927V10.725H54.6934ZM56.5927 5.96003H58.8136C59.6514 5.96003 60.2795 5.77109 60.6986 5.39314C61.1273 5.01522 61.3414 4.48916 61.3414 3.81503C61.3414 3.13068 61.1273 2.60465 60.6986 2.23693C60.2795 1.86921 59.6514 1.68536 58.8136 1.68536H56.5927V5.96003Z"
+											fill="#A7A7A7" />
+										<path
+											d="M41.5713 10.725L46.1741 0H48.0441L52.6615 10.725H50.6742L49.6578 8.24291L49.3377 7.46153L49.0176 6.68014L47.0951 1.98643L45.1797 6.68014H49.0176L49.3377 7.46153L49.6578 8.24291H44.542L43.5293 10.725H41.5713Z"
+											fill="#A7A7A7" />
+										<path
+											d="M36.0872 10.725V1.68536H32.6973V0H41.3765V1.68536H37.9867V10.725H36.0872Z"
+											fill="#A7A7A7" />
+										<path
+											d="M27.4293 10.725C26.6305 10.725 25.8658 10.6108 25.1353 10.3824C24.4047 10.1441 23.8251 9.84119 23.3965 9.47375L24.054 7.96928C24.4631 8.29697 24.9697 8.57006 25.5736 8.78853C26.1776 9.007 26.7961 9.11625 27.4293 9.11625C27.965 9.11625 28.3985 9.05666 28.7297 8.9375C29.0609 8.81835 29.3044 8.65944 29.4603 8.46085C29.6161 8.25228 29.6941 8.01894 29.6941 7.76072C29.6941 7.44294 29.5821 7.18972 29.358 7.00103C29.134 6.80244 28.8417 6.6485 28.4813 6.53928C28.1306 6.42009 27.7361 6.31088 27.2978 6.21156C26.8692 6.11225 26.4357 5.99806 25.9974 5.86897C25.5687 5.72994 25.1742 5.55616 24.8138 5.34759C24.4631 5.12912 24.1758 4.84116 23.9517 4.48366C23.7277 4.12616 23.6157 3.66934 23.6157 3.11323C23.6157 2.54719 23.7618 2.0308 24.054 1.56406C24.356 1.0874 24.809 0.710034 25.4129 0.431978C26.0266 0.143993 26.801 0 27.7361 0C28.3498 0 28.9586 0.0794447 29.5626 0.238334C30.1665 0.397222 30.6925 0.625625 31.1406 0.923541L30.5416 2.42802C30.0837 2.14997 29.6113 1.94639 29.1242 1.81729C28.6372 1.67826 28.1696 1.60875 27.7215 1.60875C27.1955 1.60875 26.7669 1.6733 26.4357 1.8024C26.1143 1.93149 25.8756 2.10031 25.7197 2.30885C25.5736 2.5174 25.5006 2.75573 25.5006 3.02385C25.5006 3.34163 25.6077 3.59981 25.822 3.79844C26.0461 3.98713 26.3334 4.13606 26.6841 4.24531C27.0445 4.35457 27.4439 4.46378 27.8822 4.57303C28.3206 4.67231 28.7541 4.78653 29.1827 4.91563C29.621 5.04472 30.0155 5.21353 30.3662 5.4221C30.7266 5.63063 31.014 5.91366 31.2283 6.27116C31.4523 6.62866 31.5643 7.0805 31.5643 7.62666C31.5643 8.18278 31.4134 8.69916 31.1114 9.17585C30.8192 9.64256 30.3662 10.0199 29.7525 10.3079C29.1388 10.586 28.3644 10.725 27.4293 10.725Z"
+											fill="#A7A7A7" />
+										<path
+											d="M11.1133 10.725L15.7159 0H17.5862L22.2035 10.725H20.2163L19.1997 8.24291L18.8796 7.46153L18.5596 6.68014L16.6372 1.98643L14.7218 6.68014H18.5596L18.8796 7.46153L19.1997 8.24291H14.0841L13.0712 10.725H11.1133Z"
+											fill="#A7A7A7" />
+										<path
+											d="M0 10.725V0H1.56344L7.20353 7.26125V0H9.08842V10.725H7.52499L1.8849 3.46376V10.725H0Z"
+											fill="#A7A7A7" />
+										<path
+											d="M102.267 10.725V3.59788V0H106.196C107.21 0 108.008 0.229821 108.589 0.689464C109.179 1.14911 109.475 1.82836 109.475 2.72721C109.475 3.30943 109.345 3.79973 109.087 4.19809C108.838 4.59641 108.488 4.89264 108.036 5.08673C107.929 5.13331 107.819 5.17428 107.705 5.20967C108.013 5.26329 108.289 5.34488 108.534 5.45441C109.014 5.66891 109.378 5.98048 109.627 6.38903C109.876 6.79761 110 7.30323 110 7.90586C110 8.80473 109.705 9.49928 109.115 9.98959C108.534 10.4799 107.653 10.725 106.472 10.725H102.267ZM102.737 10.2654H106.5C107.487 10.2654 108.239 10.0764 108.755 9.69848C109.272 9.31034 109.53 8.70766 109.53 7.89053C109.53 7.06316 109.272 6.46053 108.755 6.08261C108.239 5.69448 107.487 5.50039 106.5 5.50039H102.661L102.654 5.05609H106.209C107.095 5.05609 107.782 4.862 108.271 4.47386C108.769 4.08573 109.018 3.51371 109.018 2.75786C109.018 2.002 108.769 1.43 108.271 1.04186C107.782 0.653714 107.095 0.459645 106.209 0.459645H102.737V3.59788H102.267V4.32697V5.05609H102.654L102.737 10.2654Z"
+											fill="#A7A7A7" />
+										<path
+											d="M93.4948 10.25H99.5687V10.725H93.0244V0H99.3751V0.474964H93.4948V3.57897H93.0244V5.04075H98.7525V5.51573H93.4948V10.25Z"
+											fill="#A7A7A7" />
+										<path
+											d="M80.3066 10.725L77 0H77.4979L80.6802 10.3726L80.791 10.725L81.5775 8.221L81.3476 7.4735L83.71 0H84.1665L87.3129 9.99502L87.5387 10.725L88.3256 8.22962L88.0913 7.46928L90.3925 0H90.8629L88.3256 8.22962L87.5387 10.725H87.0859L83.8761 0.551573H83.9868L81.5775 8.221L80.791 10.725H80.3066Z"
+											fill="#A7A7A7" />
+									</g>
+									<defs>
+										<clipPath id="clip0_121_637">
+											<rect width="110" height="11" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a></div>
+					</div>
+					<div class="footer__social social">
+						<a href="" class="social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12 2C7.0625 2 2 3.0625 2 10.75C2 14.875 3.4375 17.4375 6.375 18.625V20.9375C6.375 21.375 6.625 21.75 7 21.9375C7.125 22 7.3125 22 7.4375 22C7.6875 22 8 21.875 8.1875 21.6875L10.4375 19.4375C10.9375 19.4375 11.4375 19.5 12 19.5C16.9375 19.5 22 18.4375 22 10.75C22 3.0625 16.9375 2 12 2ZM11.6875 8.375C12.8125 8.375 13.75 9.3125 13.75 10.4375C13.75 10.8125 13.5 11.0625 13.125 11.0625C12.75 11.0625 12.5 10.8125 12.5 10.4375C12.5 10 12.125 9.625 11.6875 9.625C11.3125 9.625 11.0625 9.375 11.0625 9C11.0625 8.625 11.3125 8.375 11.6875 8.375ZM11.0625 7.0625C11.0625 6.6875 11.3125 6.4375 11.6875 6.4375C13.875 6.4375 15.6875 8.25 15.6875 10.4375C15.6875 10.8125 15.4375 11.0625 15.0625 11.0625C14.6875 11.0625 14.4375 10.8125 14.4375 10.4375C14.4375 8.9375 13.1875 7.6875 11.6875 7.6875C11.3125 7.6875 11.0625 7.375 11.0625 7.0625ZM16.1875 14.8125C15.9375 15.5625 15 16.1875 14.1875 16.3125C14 16.375 13.8125 16.375 13.5625 16.375C13.0625 16.375 12.3125 16.25 11 15.6875C9.5 15.0625 8 13.75 6.8125 12.0625V12C6.4375 11.4375 5.75 10.375 5.75 9.25C5.75 7.875 6.4375 7.1875 6.6875 6.875C7.0625 6.5625 7.5 6.375 8 6.375C8.125 6.375 8.1875 6.375 8.3125 6.375C8.75 6.375 9.0625 6.5 9.375 7.125L9.625 7.625C9.8125 8.125 10.0625 8.6875 10.125 8.75C10.3125 9.125 10.3125 9.4375 10.125 9.75C10.0625 9.9375 9.9375 10.0625 9.8125 10.1875C9.75 10.3125 9.6875 10.375 9.625 10.375C9.5625 10.4375 9.5625 10.4375 9.5 10.5C9.6875 10.8125 10.0625 11.375 10.5625 11.8125C11.3125 12.5 11.875 12.6875 12.1875 12.8125C12.3125 12.6875 12.4375 12.4375 12.625 12.25L12.6875 12.125C13 11.6875 13.5 11.5625 14 11.75C14.25 11.875 15.625 12.5 15.625 12.5L15.75 12.5625C15.9375 12.6875 16.1875 12.75 16.3125 13C16.5 13.5625 16.3125 14.375 16.1875 14.8125ZM17 11.0625C16.625 11.0625 16.375 10.8125 16.375 10.4375C16.375 7.875 14.25 5.75 11.6875 5.75C11.3125 5.75 11.0625 5.5 11.0625 5.125C11.0625 4.75 11.3125 4.5 11.6875 4.5C14.9375 4.5 17.625 7.1875 17.625 10.4375C17.625 10.8125 17.375 11.0625 17 11.0625Z"
+									fill="#373737" />
+							</svg>
+						</a>
+						<a href="" class="social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M20.7097 3.6545C20.7097 3.6545 22.6523 2.897 22.4904 4.73664C22.4365 5.49415 21.9508 8.1454 21.573 11.0131L20.278 19.5079C20.278 19.5079 20.17 20.7524 19.1987 20.9688C18.2274 21.1852 16.7704 20.2113 16.5005 19.9949C16.2847 19.8326 12.4534 17.3977 11.1043 16.2074C10.7265 15.8827 10.2948 15.2334 11.1582 14.476L16.8244 9.06525C17.4719 8.41595 18.1194 6.90095 15.4213 8.7406L7.86655 13.8808C7.86655 13.8808 7.00315 14.4219 5.3843 13.9349L1.87671 12.8527C1.87671 12.8527 0.581605 12.0412 2.79408 11.2295C8.19035 8.68645 14.8278 6.0893 20.7097 3.6545Z"
+									fill="#373737" />
+							</svg>
+						</a>
+						<a href="" class="social__link">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M7.40169 19.7625L7.06315 19.5938L3.67767 20.4375L4.58047 17.1188L4.35477 16.7812C3.5084 15.375 3.00058 13.7438 3.00058 12.0562C2.94416 7.05 7.00672 3 11.9721 3C14.3983 3 16.6553 3.95625 18.348 5.64375C20.0408 7.33125 21 9.6375 21 12C21 16.95 16.9374 21 11.9721 21C10.3922 21 8.81231 20.6063 7.40169 19.7625ZM16.373 14.0812L16.9937 14.3625C17.1065 14.4187 17.1629 14.475 17.1629 14.475V14.8687L17.1629 14.8687C17.1065 15.15 17.0501 15.4312 16.9372 15.6562C16.8808 15.7687 16.768 15.8812 16.6551 15.9937C16.5987 16.05 16.5423 16.0922 16.4858 16.1343C16.4294 16.1765 16.373 16.2187 16.3166 16.275L16.2037 16.3875C16.1403 16.4506 16.077 16.4783 16.0036 16.5104C15.9463 16.5355 15.883 16.5632 15.8087 16.6125C15.583 16.725 15.2445 16.8375 14.9624 16.8375H14.3981C14.3135 16.8094 14.2147 16.7953 14.116 16.7812C14.0173 16.7672 13.9185 16.7531 13.8339 16.725C12.3104 16.3312 10.9562 15.6 9.77132 14.5875C9.69759 14.4772 9.59978 14.391 9.49362 14.2974C9.43729 14.2477 9.3786 14.196 9.31992 14.1375L9.09422 13.9125C8.19143 13.0687 7.51434 12.1125 7.00652 11.0437L6.95009 10.875C6.78082 10.4812 6.66797 10.0312 6.66797 9.58123C6.66797 8.96248 6.89367 8.34373 7.28864 7.83748C7.34506 7.78123 7.38738 7.72498 7.4297 7.66873C7.47202 7.61248 7.51434 7.55623 7.57076 7.49998C7.62718 7.47185 7.68361 7.42966 7.74004 7.38748C7.79646 7.34529 7.85288 7.3031 7.90931 7.27498L7.96573 7.21873C8.02216 7.21873 8.07858 7.20466 8.13501 7.1906C8.19143 7.17654 8.24785 7.16248 8.30428 7.16248H8.75568H8.92495C9.09422 7.21873 9.20707 7.27498 9.31992 7.44373C9.48919 7.78123 10.1663 9.29998 10.2227 9.58123C10.2791 9.74998 10.2227 9.97498 10.1099 10.1437C10.0534 10.2 10.0111 10.2703 9.9688 10.3406C9.92648 10.4109 9.88417 10.4812 9.82774 10.5375C9.65847 10.7062 9.43277 10.9875 9.43277 10.9875C9.37635 11.0437 9.37635 11.1562 9.37635 11.2687C9.3979 11.3117 9.41122 11.3465 9.42259 11.3762C9.441 11.4242 9.45432 11.459 9.48919 11.4937L9.54562 11.6062C9.82774 12.1125 10.2227 12.5625 10.6177 12.9562C10.6741 13.0125 10.7446 13.0687 10.8152 13.125C10.8857 13.1812 10.9562 13.2375 11.0127 13.2937C11.4641 13.7437 12.0283 14.0812 12.649 14.3625L12.9311 14.475C12.9875 14.5312 13.1004 14.5875 13.1568 14.5875H13.2132C13.3261 14.5875 13.4389 14.5312 13.4953 14.4187C14.2853 13.5187 14.3417 13.4625 14.3417 13.4625L14.3417 13.4625C14.4546 13.4062 14.5674 13.35 14.7367 13.35C14.7649 13.35 14.7931 13.364 14.8213 13.3781C14.8495 13.3922 14.8777 13.4062 14.9059 13.4062C15.4702 13.6875 16.373 14.0812 16.373 14.0812Z"
+									fill="#373737" />
+							</svg>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+<div class="popup" id="popup">
+	<div class="popup__wrapper form">
+		<div class="form__title large-text">Свяжитесь с нами</div>
+		<div class="form__inputs">
+			<input class="input" type="text" placeholder="Ваше имя">
+			<input class="input" type="tel" placeholder="Номер телефона">
+		</div>
+		<a href="#" class="contact__btn btn btn_dark">Заказать консультацию</a>
+		<label class="label__container">согласие на обработку персональных данных
+			<input type="checkbox" checked="checked">
+			<span class="checkmark"></span>
+		</label>
+	</div>
+</div>
+
+</html>

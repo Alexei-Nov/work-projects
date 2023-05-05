@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body__wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<a href="" class="header__logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<nav class="header__nav nav">
+					<ul class="header__nav-list nav__list">
+						<li class="nav__link"><a class=" anchor " data-link="partner" href="">С кем работаем</a></li>
+						<li class="nav__link"><a class=" anchor " data-link="conductor" href="">Силовые
+								полупроводники</a>
+						</li>
+						<li class="nav__link"><a class=" anchor " data-link="work" href="">Как мы работаем</a></li>
+						<li class="nav__link"><a class=" anchor " data-link="contact" href="">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contact">
+					<a class="header__phone" style="background-image: url(./img/icon/phone.svg);"
+						href="tel:+78129804902">+7 (812) 980-49-02</a>
+					<a class="header__phone" style="background-image: url(./img/icon/whatsapp.svg);"
+						href="tel:+78129827850">+7 (812) 982-78-50</a>
+				</div>
+				<div class="header__mobile">
+					<a href="tel:+78129804902" class="header__mobile-phone"
+						style="background-image: url(./img/icon/phone.svg);"> </a>
+					<div class="header__menu-btn"></div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section gray-bg about-company block block_right">
+				<div class="block__col">
+					<h1 class="about-company__title main-title">О компании</h1>
+					<div class="about-company__subtitle ">ООО «ЭнергоРегионСервис» с 2004 года производит и
+						осуществляет поставки электрооборудования, комплектующих, силовых полупроводников и
+						электронных компонентов по ценам заводов изготовителей</div>
+					<a href="#popup-connect" data-fancybox class="btn btn_big">Оставить заявку</a>
+				</div>
+				<div class="block__col">
+					<div class="about-company__img">
+						<img src="./img/about-company.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="section " id="partner">
+				<div class="container">
+					<h2 class="title">С кем работаем</h2>
+					<div class="partner-slider">
+						<div class="partner-slider__container swiper-container">
+							<div class="partner-slider__wrapper swiper-wrapper">
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partner-slider__slide swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="partner-navigation slider-navigation">
+							<div class="slider-prev partner-prev"></div>
+							<div class="slider-next partner-next"></div>
+						</div>
+					</div>
+					<p>ООО «ЭнергоРегионСервис» является официальным дистрибьютором силовых проводников многих
+						знаменитых брендов.
+					</p>
+					<p>На нашем складе поддерживается широкий ассортимент электронных компонентов, приборов,
+						измерительного и паяльного оборудования, кабельной продукции, инструмента и прочих товаров
+						связанных с разработкой, производством, обслуживанием и ремонтом электронной техники, и монтажа
+						электротехнических цепей.</p>
+				</div>
+			</section>
+
+			<section class="section gray-bg " id="conductor">
+				<h2 class="title">Силовые полупроводники:</h2>
+				<div class="block block_right replace-title pb-130">
+					<div class="block__col">
+						<h3 class="small-title">Тиристоры</h3>
+						<p>Тиристоры – востребованные полупроводниковые устройства. Относятся к электронным ключам, так
+							как имеют два устойчивых положения. Могут проводить ток в одном или двух направлениях.
+							Являются неотъемлемыми компонентами регуляторов мощности, выпрямителей и инверторов.
+							Предназначены для автоматизации различных процессов.</p>
+						<a href="" class="btn">Оставить заявку</a>
+					</div>
+					<div class="block__col">
+						<div class="slider-right swiper-container">
+							<div class="slider-right__wrapper swiper-wrapper">
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor1.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor2.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor3.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor1.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor2.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/tiristor3.png" alt="">
+								</div>
+							</div>
+							<div class="slider-right-scrollbar slider-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+				<div class="block block_left replace-title pb-130">
+					<div class="block__col">
+						<h3 class="small-title">Диоды</h3>
+						<p>Диоды — электронные компоненты с двумя электродами, способные пропускать ток в одном
+							направлении. Их используют для выпрямления переменного тока, стабилизации напряжения,
+							создания оптического излучения и в других целях. При выборе важно обращать внимание на
+							основные характеристики — параметры максимального напряжения и прямого тока, условия
+							эксплуатации.</p>
+						<a href="" class="btn">Оставить заявку</a>
+					</div>
+					<div class="block__col">
+						<div class="slider-left swiper-container">
+							<div class="slider-left__wrapper swiper-wrapper">
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod1.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod2.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod3.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod1.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod2.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/diod3.png" alt="">
+								</div>
+							</div>
+							<div class="slider-left-scrollbar slider-scrollbar"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="block block_right replace-title pb-130">
+					<div class="block__col">
+						<h3 class="small-title">Силовые модули</h3>
+						<p>Поможем в выборе силовых модулей в Санкт-Петербурге. На нашем сайте представлен широкий
+							ассортимент моделей, даны основные характеристики и подробные описания. Если вам нужна
+							консультация, позвоните или закажите звонок с сайта. Менеджер поможет определиться с выбором
+							и оформит заказ на силовые модули . Вы получите товар в кратчайшие сроки!</p>
+						<a href="" class="btn">Оставить заявку</a>
+					</div>
+					<div class="block__col">
+						<div class="slider-right swiper-container">
+							<div class="slider-right__wrapper swiper-wrapper">
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul1.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul2.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul3.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul1.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul2.png" alt="">
+								</div>
+								<div class="slider-right__slide swiper-slide">
+									<img src="./img/modul3.png" alt="">
+								</div>
+							</div>
+							<div class="slider-right-scrollbar slider-scrollbar"></div>
+						</div>
+					</div>
+				</div>
+				<div class="block block_left replace-title">
+					<div class="block__col">
+						<h3 class="small-title">Охладители</h3>
+						<p>Чтобы узнать, как купить охладитель воздуха в Санкт-Петербурге по доступной цене,
+							воспользуйтесь нашим сервисом. Цены и магазины недорогих охладителей можно посмотреть в
+							нашем онлайн интернет каталоге товаров Санкт-Петербурга, а так же узнать, где продаются
+							охладители воздуха оптом в Санкт-Петербурге.</p>
+						<a href="" class="btn">Оставить заявку</a>
+					</div>
+					<div class="block__col">
+						<div class="slider-left swiper-container">
+							<div class="slider-left__wrapper swiper-wrapper">
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze1.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze2.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze3.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze1.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze2.png" alt="">
+								</div>
+								<div class="slider-left__slide swiper-slide">
+									<img src="./img/freeze3.png" alt="">
+								</div>
+							</div>
+							<div class="slider-left-scrollbar slider-scrollbar"></div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section work" id="work">
+				<div class="container">
+					<h2 class="work__title title">Как мы работаем</h2>
+					<h3 class="work__subtitle small-title">Наш принцип — развивать и расширять сам рынок, вместо того,
+						чтобы
+						конкурировать за место в существующем пространстве.</h3>
+					<div class="work__img">
+						<img src="./img/work.png" alt="">
+					</div>
+					<p>
+						Продукция компании применяется в сферах выработки и распределения электроэнергии,
+						машиностроении,
+						добычи и переработки угля, плавки и обработки металлов, судостроении, эксплуатации
+						железнодорожного транспорта и нефтегазовых сетей, ракетно-космического комплекса.
+					</p>
+					<p>
+						Ценность нашей работы заключается не только в продукции, но и в инфраструктуре, которую мы
+						выстроили для клиента.
+					</p>
+					<p>
+						Успешно работая на рынке более 10 лет, нам удалось достичь высоких результатов, благодаря тому,
+						что мы всегда строим свою работу на перспективу и стараемся мыслить широко.
+					</p>
+				</div>
+			</section>
+
+			<section class="map replace-title" id="contact">
+				<div class="map__body" id="map"></div>
+				<div class="map__contact">
+					<h3 class="map__title small-title">Контакты</h3>
+					<div class="map__info">
+						<div class=" map__info-item map__location"
+							style="background-image: url(./img/icon/location.svg);">
+							г. Санкт-Петербург, ул. Таллинская, дом 5, офис 111
+						</div>
+						<div class=" map__info-item map__phone"
+							style="background-image: url(./img/icon/phone-red.svg);">
+							<a href="tel:+78129804902">+7 (812) 980-49-02;</a>
+							<a href="tel:+78129827850">+7 (812) 982-78-50</a>
+						</div>
+						<div class=" map__info-item map__mail" style="background-image: url(./img/icon/mail.svg);">
+							<a href="mailto:email@mail.ru">email@mail.ru</a>
+						</div>
+						<div class=" map__info-item map__reglament"
+							style="background-image: url(./img/icon/reglament.svg);">
+							Пн-Пт: с 10:00 до 18:00 по Московскому времени
+						</div>
+					</div>
+					<a href="" class="btn">Заказать звонок</a>
+				</div>
+			</section>
+		</main>
+
+		<div class="popup popup_call" id="popup-call">
+			<form class="popup__wrapper">
+				<div class="popup__title"> Заказать звонок </div>
+				<input type="text" class="input" placeholder="Ваше имя*">
+				<input type="text" class="input" placeholder="Организация*">
+				<input type="text" class="input phone-mask" placeholder="Телефон*">
+				<button class="popup__btn btn">Заказать звонок</button>
+			</form>
+		</div>
+
+		<div class="popup popup_connect" id="popup-connect">
+			<form class="popup__wrapper">
+				<div class="popup__title">Обратная связь</div>
+				<input type="text" class="input" placeholder="Ваше имя*">
+				<input type="text" class="input" placeholder="Организация*">
+				<input type="text" class="input phone-mask" placeholder="Телефон*">
+				<input type="email" class="input " placeholder="E-mail*">
+				<input type="text" class="input " placeholder="Ваша заявка*">
+				<button class="popup__btn btn">Отправить заявку</button>
+			</form>
+		</div>
+		<div class="popup popup_send" id="popup-send">
+			<form class="popup__wrapper">
+				<div class="popup__title"> Ваша заявка отправлена</div>
+				<div class="popup__subtitle">В ближайшем времени мы свяжемся с вами</div>
+			</form>
+		</div>
+
+
+
+
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<a href="" class="footer__logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<div class="footer__body">
+					<div class="footer__nav nav">
+						<ul class="footer__nav-list nav__list">
+							<li class="nav__link"><a class=" anchor " data-link="partner" href="">С кем работаем</a>
+							</li>
+							<li class="nav__link"><a class=" anchor " data-link="conductor" href="">Силовые
+									полупроводники</a>
+							</li>
+							<li class="nav__link"><a class=" anchor " data-link="work" href="">Как мы работаем</a></li>
+							<li class="nav__link"><a class=" anchor " data-link="map" href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="footer__info">
+						ООО «ЭнергоРегионСервис» официальный дистрибьютор силовых проводников многих знаменитых
+						брендов.
+					</div>
+				</div>
+				<div class="footer__contact">
+					<a href="tel:+78129804902" class="footer__phone">+7 (812) 980-49-02</a>
+					<a href="" class="footer__cal-me" style="background-image: url(./img/icon/whatsapp.svg);">ПОЗВОНИТЕ
+						МНЕ</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body__wrapper">
+		<main class="main">
+			<section class="section quiz bg-yellow">
+				<div class="container">
+					<div class="quiz__wrapper">
+						<div class="quiz__entry quiz__item-active quiz__item">
+							<div class="quiz__text">
+								<div class="quiz__title">Узнайте стоимость Сертификата прямо сейчас!</div>
+								<div class="quiz__subtitle">Ответьте на несколько коротких вопросов</div>
+								<div class="quiz__entry-btn quiz-btn btn-yellow">УЗНАТЬ</div>
+							</div>
+							<div class="quiz__entry-img">
+								<img src="./img/icon/quiz-calc.svg" alt="">
+							</div>
+						</div>
+						<div class="quiz__slider swiper-container quiz__item">
+							<div class="quiz__slider-wrapper swiper-wrapper">
+								<div class="quiz__slide swiper-slide">
+									<div class="quiz__text">
+										<div class="quiz__title">Какая у Вас продукция?</div>
+										<div class="quiz__subtitle">Укажите, пожалуйста, наименование</div>
+									</div>
+									<div class="quiz__inputs">
+										<input class="quiz__input" type="text"
+											placeholder="Футболки, комбинезоны, майки, халаты, ...">
+									</div>
+								</div>
+								<div class="quiz__slide swiper-slide">
+									<div class="quiz__text">
+										<div class="quiz__title">Подобрать Вам коды ОКПД2? </div>
+										<div class="quiz__subtitle">Выберите один вариант</div>
+									</div>
+									<div class="quiz__inputs">
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="radio" name="radio-1">
+											<div class="btn-white">Да</div>
+										</label>
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="radio" name="radio-1">
+											<div class="btn-white">Нет, уже знаю</div>
+										</label>
+									</div>
+								</div>
+								<div class="quiz__slide swiper-slide">
+									<div class="quiz__text">
+										<div class="quiz__title">Продукция производится в РФ или за рубежом?</div>
+										<div class="quiz__subtitle">Выберите подходящий вариант</div>
+									</div>
+									<div class="quiz__inputs">
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="radio" name="radio-2">
+											<div class="btn-white">В России</div>
+										</label>
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="radio" name="radio-2">
+											<div class="btn-white">За рубежом</div>
+										</label>
+									</div>
+								</div>
+								<div class="quiz__slide swiper-slide">
+									<div class="quiz__text">
+										<div class="quiz__title">Если из РФ, то она произведена по ГОСТу или ТУ?</div>
+										<div class="quiz__subtitle">Выберите подходящий вариант или пропустите вопрос
+										</div>
+									</div>
+									<div class="quiz__inputs">
+										<label class="quiz__input-container btn-short">
+											<input class="quiz__radio" type="radio" name="radio-3">
+											<div class="btn-white ">По ГОСТу</div>
+										</label>
+										<label class="quiz__input-container btn-short">
+											<input class="quiz__radio" type="radio" name="radio-3">
+											<div class="btn-white ">По ТУ</div>
+										</label>
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="radio" name="radio-3">
+											<div class="btn-white ">Она иностранная</div>
+										</label>
+									</div>
+								</div>
+								<div class="quiz__slide swiper-slide">
+									<div class="quiz__text">
+										<div class="quiz__title">Если из РФ, то она произведена по ГОСТу или ТУ?</div>
+										<div class="quiz__subtitle">Выберите подходящий(ие) вариант(ы) или пропустите
+											вопрос
+										</div>
+									</div>
+									<div class="quiz__inputs">
+										<label class="quiz__input-container btn-short">
+											<input class="quiz__radio" type="checkbox" name="checkbox">
+											<div class="btn-white ">По ГОСТу</div>
+										</label>
+										<label class="quiz__input-container btn-short">
+											<input class="quiz__radio" type="checkbox" name="checkbox">
+											<div class="btn-white ">По ТУ</div>
+										</label>
+										<label class="quiz__input-container">
+											<input class="quiz__radio" type="checkbox" name="checkbox">
+											<div class="btn-white ">Она иностранная</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="quiz__controls">
+								<div class="quiz__steps">
+									<div class="quiz__steps-text">
+										Шаг
+									</div>
+									<div class="quiz-pagination"></div>
+								</div>
+								<div class="quiz-scrollbar"></div>
+								<div class="quiz-navigation">
+									<div class="quiz-prev"></div>
+									<div class="quiz-next quiz-next-disabled"></div>
+								</div>
+							</div>
+						</div>
+						<div class="quiz__final quiz__item">
+							<div class="quiz__final-text">
+								<div class="quiz__title">По какому номеру телефона сообщить Вам стоимость?</div>
+								<div class="quiz__subtitle">Впишите свой номер телефона и мы позвоним Вам с ответом
+								</div>
+							</div>
+							<form class="quiz__final-inputs">
+								<input type="hidden" name="data" value="" class="state-input">
+								<input class="quiz__final-input quiz__input phone-mask" type="text"
+									placeholder="ВАШ ТЕЛЕФОН">
+								<button href="#quiz" type="submit" class="quiz__final-btn btn-yellow"
+									data-fancybox>УЗНАТЬ
+									ЦЕНУ</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="popup-quiz" id="quiz">
+					<div class="popup-quiz__wrapper">
+						<div class="popup-quiz__title">Ваш запрос отправлен</div>
+						<div class="popup-quiz__subtitle">В ближайшее время мы свяжемся с вами и сориентируем по цене
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>

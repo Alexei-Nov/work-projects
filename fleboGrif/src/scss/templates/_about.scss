@@ -1,0 +1,21 @@
+.about {
+  &-method {
+    &__list {
+      margin-top: 30px;
+      @media screen and (max-width: 991.98px) {
+        margin-top: 34px;
+      }
+      ul {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        @media screen and (max-width: 991.98px) {
+          gap: 9px;
+        }
+        li {
+          @extend .check-item;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FleboGrif</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/swiper/swiper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+
+  <!-- js libs  -->
+  <script defer src="jsLibs/jquery-3.6.0.min.js"></script>
+  <script defer src="jsLibs/swiper-bundle.min.js"></script>
+
+  <!-- js code  -->
+  <script defer src="js/App.js"></script>
+</head>
+
+
+<body>
+  <div class="header__overlay"></div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img src="img/logo.png" alt="Картинка" />
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">О методе</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Клиники</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Вопрос-ответ</a>
+            </li>
+            <li class="has-children nav__item">
+              <a href="#">Для врачей</a>
+              <ul class="nav__hidden-list">
+                <li>
+                  <a href="#">О методе</a>
+                </li>
+                <li>
+                  <a href="#">Наши мероприятия</a>
+                </li>
+                <li>
+                  <a href="#">Видео мастерклассов</a>
+                </li>
+                <li>
+                  <a href="#">Вопрос-ответ</a>
+                </li>
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="phone">
+            <a href="tel:79142938797">+7 914 293-87-97</a>
+          </div>
+          <a href="#" class="nav__policy --mobile">Политика конфиденциальности</a>
+          <small class="nav__copyright --mobile">© Базис-медикал. Все права защищены</small>
+        </nav>
+
+        <div class="nav__btn --mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="breadcrumbs-title">
+    <div class="container">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li><a href="#">Главная</a></li>
+          <li><span>Статьи</span></li>
+        </ul>
+      </div>
+      <div class="title">
+        <h1>Статьи</h1>
+      </div>
+    </div>
+  </section>
+  <section class="section articles-main articles__mobile-hide">
+    <div class="container">
+      <div class="articles__list articles__main">
+        <div class="swiper-wrapper">
+          <article>
+            <img src="img/articles/article-1.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Причины возникновения варикоза и его лечение</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-2.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>
+                Склеротерапия <br />
+                для лечения варикоза
+              </h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-3.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Лечение варикоза устройством Flebogrif</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-1.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Причины возникновения варикоза и его лечение</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-2.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>
+                Склеротерапия <br />
+                для лечения варикоза
+              </h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-3.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Лечение варикоза устройством Flebogrif</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+        </div>
+        <div class="slider__pagination articles__list-pagination"></div>
+        <div class="slider__scrollbar articles__list-scrollbar"></div>
+      </div>
+      <!-- <a href="#" class="articles__more">Смотреть все</a> -->
+    </div>
+  </section>
+  <!--  <section class="main" style="background-image: url(../img/main/main-bg.png)">
+      <div class="container">
+        <div class="main__wrapper">
+          <h1 class="main__title">Flebogrif</h1>
+          <div class="main__dsc">Комплект для лечения варикозной болезни</div>
+          <div class="main__list">
+            <ul>
+              <li>Без боли</li>
+              <li>Быстрая процедура</li>
+              <li>Длительный эффект</li>
+            </ul>
+          </div>
+          <button class="main__btn">Записаться на процедуру</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section description --mobile-reverse">
+      <div class="container">
+        <h2 class="title">О методе</h2>
+        <div class="about-method__wrapper description__wrapper">
+          <div class="about-method__info description__info">
+            <h4 class="--mobile-576">Для чего используется Flebogrif?</h4>
+            <p>
+              Устройство используется для механохимической облитерации поверхностных венозных
+              стволов, которая заключается в одновременном механическом повреждении внутреннего слоя
+              вены и контролируемом введении склерозирующего препарата в виде пены или раствора
+            </p>
+            <div class="about-method__list">
+              <ul>
+                <li>Безболезненная амбулаторная процедура</li>
+                <li>Отличный и длительный косметический эффект</li>
+                <li>Процедура занимает ма ло времени</li>
+                <li>После операции можно ходить сразу и без боли</li>
+              </ul>
+            </div>
+          </div>
+          <div class="video description__photo">
+            <img src="img/about/about-method.jpg" alt="Видео" />
+            <button class="play-video"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantage">
+      <div class="container">
+        <h2 class="title">Преимущества аппарата</h2>
+        <ul class="advantage__list">
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/time.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Быстрая процедура</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                Занимает всего 10 минут, после неё пациент сможет спокойно передвигаться и идти
+                домой или по своим делам
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/like.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Эффективность 92%</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                На основе наблюдений за пациентами после механохимической облитерации в течение двух
+                лет
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/anesthesia.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Без анестезии</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                Не требует туменесцентной анестезии, что означает отсутствие болевых ощущений у
+                большинства пациентов во время операции
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section clinics">
+      <div class="container">
+        <h2 class="title">Клиники</h2>
+        <div class="select">
+          <form method="GET" class="select__form">
+            <select name="select-clinics">
+              <option value="sel-1">Москва</option>
+              <option value="sel-2">Санкт-Петербур</option>
+              <option value="sel-3">Краснодар</option>
+              <option value="sel-4">Сочи</option>
+              <option value="sel-5">Севастополь</option>
+              <option value="sel-6">Новороссийск</option>
+            </select>
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="clinics__list">
+          <div class="swiper-wrapper">
+            <div class="clinics__item" style="background-image: url(img/clinics/fleboCenter.png)">
+              <h4>Флебоцентр</h4>
+              <h5>Новороссийск</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Сергей Сергеевич Лебедев — ведущий специалист центра флебологии, стаж работы - 16
+                  лет. Применяет метод механохимической облитерации для лечения варикоза вен
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/fleboPlus.png)">
+              <h4>Флебо Плюс</h4>
+              <h5>Севастополь</h5>
+              <div class="hidden-mobile">
+                <p>
+                  В данном медцентре врачи успешно практикуют лечение <br />
+                  при помощи новейшей методики лечения варикоза - Flebogrif. <br />
+                  В клинике Флебо Плюс опытные специалисты вернут красоту <br />
+                  и молодость ваших ног!
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+            <div class="clinics__item" style="background-image: url(img/clinics/centerFlebo.png)">
+              <h4>Центр флебологии и лазерной хирургии</h4>
+              <h5>Сочи</h5>
+              <div class="hidden-mobile">
+                <p>
+                  Врачи клиники имеют большой опыт в лечении, в том числе <br />
+                  и хирургеческом, любой сосудистой паталогии
+                </p>
+              </div>
+              <a href="#" class="clinics__item-link">Перейти на сайт клиники</a>
+            </div>
+          </div>
+          <div class="slider__pagination clinics__list-pagination"></div>
+          <div class="slider__scrollbar clinics__list-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section articles articles__mobile-hide">
+      <div class="container">
+        <h2 class="title">Статьи</h2>
+        <div class="articles__list">
+          <article>
+            <img src="img/articles/article-1.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Причины возникновения варикоза и его лечение</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-2.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>
+                Склеротерапия <br />
+                для лечения варикоза
+              </h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-3.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Лечение варикоза устройством Flebogrif</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="articles__more">Смотреть все</a>
+      </div>
+    </section>
+
+    <section class="section answers">
+      <div class="container">
+        <h2 class="title">Вопрос-ответ</h2>
+        <div class="answers__list">
+          <div class="answers__item">
+            <h4>Как понять, что у меня варикоз?</h4>
+            <div class="answers__list-hidden">
+              <p>
+                Варикоз у вас или нет, ответит врач после обследования. Перед вами основные причины
+                возникновения варикоза:
+              </p>
+              <ul>
+                <li>Видимые расширенные извитые вены</li>
+                <li>Нарастающая усталость к концу дня</li>
+                <li>Отёки нижних конечностей</li>
+                <li>Судороги в ногах</li>
+                <li>Сосудистые узоры на коже</li>
+                <li>Потемнение кожи на стопе или голени</li>
+              </ul>
+              <p>Обнаружив у себя подобные признаки, стоит обследоваться</p>
+            </div>
+          </div>
+          <div class="answers__item">
+            <h4>Как проходит операция?</h4>
+            <div class="answers__list-hidden">
+              <p>
+                Варикоз у вас или нет, ответит врач после обследования. Перед вами основные причины
+                возникновения варикоза:
+              </p>
+              <ul>
+                <li>Видимые расширенные извитые вены</li>
+                <li>Нарастающая усталость к концу дня</li>
+                <li>Отёки нижних конечностей</li>
+                <li>Судороги в ногах</li>
+                <li>Сосудистые узоры на коже</li>
+                <li>Потемнение кожи на стопе или голени</li>
+              </ul>
+              <p>Обнаружив у себя подобные признаки, стоит обследоваться</p>
+            </div>
+          </div>
+          <div class="answers__item">
+            <h4>Могут ли появиться новые вздутые вены?</h4>
+            <div class="answers__list-hidden">
+              <p>
+                Варикоз у вас или нет, ответит врач после обследования. Перед вами основные причины
+                возникновения варикоза:
+              </p>
+              <ul>
+                <li>Видимые расширенные извитые вены</li>
+                <li>Нарастающая усталость к концу дня</li>
+                <li>Отёки нижних конечностей</li>
+                <li>Судороги в ногах</li>
+                <li>Сосудистые узоры на коже</li>
+                <li>Потемнение кожи на стопе или голени</li>
+              </ul>
+              <p>Обнаружив у себя подобные признаки, стоит обследоваться</p>
+            </div>
+          </div>
+          <div class="answers__item">
+            <h4>Как долго проходит восстановление после операции?</h4>
+            <div class="answers__list-hidden">
+              <p>
+                Варикоз у вас или нет, ответит врач после обследования. Перед вами основные причины
+                возникновения варикоза:
+              </p>
+              <ul>
+                <li>Видимые расширенные извитые вены</li>
+                <li>Нарастающая усталость к концу дня</li>
+                <li>Отёки нижних конечностей</li>
+                <li>Судороги в ногах</li>
+                <li>Сосудистые узоры на коже</li>
+                <li>Потемнение кожи на стопе или голени</li>
+              </ul>
+              <p>Обнаружив у себя подобные признаки, стоит обследоваться</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="answers__more">Смотреть все</a>
+      </div>
+    </section>
+
+    <section class="section form-section">
+      <div class="container form__container">
+        <img src="img/form/form-bg.jpg" class="form__photo" alt="Картинка" />
+        <form class="form">
+          <h2 class="title">Свяжитесь с нами</h2>
+          <span class="form__dsc"
+            >Оставьте свои контактные данные, если у вас остались вопросы по устройству</span
+          >
+          <div class="form__wrapper">
+            <input type="text" class="form__input" placeholder="Имя" />
+            <input type="tel" class="form__input" placeholder="Телефон" />
+            <input type="email" class="form__input" placeholder="Почта" />
+            <label class="form__policy">
+              <input type="checkbox" checked required />
+              <span>Я даю согласие на обработку персональных данных</span>
+            </label>
+          </div>
+          <button type="submit">Отправить данные</button>
+        </form>
+      </div>
+    </section> -->
+
+  <footer class="section footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="logo">
+          <img src="img/logo.png" alt="Картинка" />
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">О методе</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Клиники</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Статьи</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Вопрос-ответ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Для врачей</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="phone">
+            <a href="tel:79142938797">+7 914 293-87-97</a>
+          </div>
+        </nav>
+      </div>
+      <small class="footer__copyright">© Базис-медикал. Все права защищены</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>

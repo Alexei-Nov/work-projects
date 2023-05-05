@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						хостинг
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item header-anchor__item_open filter-btn"
+								toggle-text="скрыть варианты">
+								показать еще варианты
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Доверяйте свой сайт только лучшим: лучшим разработчикам, лучшим маркетологам, лучшим
+									хостерам!
+								</div>
+								<!-- <div class="detail-entrance__subtitle">
+									Дорогие швейцарские часы, которые никогда не ломаются, не выходят из строя, не
+									торопятся и не притормаживают.
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer detail-entrance__offer_sticker  small-title">
+								Подарим скидку 5% <br>
+								при заказе хостинга!
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text tt-uc">
+								Трио «сайт-домен-хостинг»
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Давайте оставим термины и определения Википедии, и разберёмся, что такое хостинг на
+									простых примерах
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Сайт
+								</div>
+								<div class="simple-tile__text">
+									Это набор «страничек» с информацией, файлов, базы данных и т.д.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Домен
+								</div>
+								<div class="simple-tile__text">
+									Это имя сайта, по которому можно найти его в интернете.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Хостинг
+								</div>
+								<div class="simple-tile__text">
+									Это место, где все данные хранятся.
+								</div>
+							</div>
+						</div>
+						<div class="simple-tile__text">
+							<p>
+								Другими словами, эта троица неразлучна. Без любого из звеньев выпустить свой сайт в сеть
+								вы не сможете.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text tt-uc">
+								Что такое хостинг
+								простыми словами?
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Представьте, что вы хотите разместить рекламу на билборде (рекламном щите) напротив
+									своего офиса. Вы обратились в рекламное агентство, вам нарисовали шикарный макет. Вы
+									всем довольны, НО... Чтобы рекламу увидели не только вы, но и все жители города, ее
+									надо разместить на билборде. И для этого вам нужно арендовать определённое место.
+									Конечно, вы можете распечатать свой рекламный плакат и прикрепить его на соседнее
+									дерево. Но нет никакой гарантии, что через пару дней его кто-нибудь оттуда не
+									сорвёт. Поэтому вы арендуете билборд у специальной компании. А та, в свою очередь,
+									гарантирует вам, что на срок аренды ничего с вашим объявлением не случится.
+								</p>
+								<p>
+									Так вот, в приведённом примере рекламный плакат — это сайт, билборд - место на
+									сервере, или другими словами, хостинг. Специальная компания — это хостер. Таким
+									образом, хостинг — это аренда места для вашего сайта. А хостер - посредник, который
+									обеспечивает его безопасную и непрерывную работу.
+								</p>
+							</div>
+						</div>
+						<div class="sqr-img ">
+							<div class="sqr-img__wrapper sqr-img__wrapper_big sqr-img__wrapper_right">
+								<img src="./img/sqr-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">Зачем платить за хостинг?</div>
+					<div class="simple-tile__text">
+						<p>
+							Когда видишь массу предложений бесплатных услуг хостинга, возникает резонный вопрос: а зачем
+							вообще платить? В действительности, экономия денег — это единственный плюс бесплатного
+							хостинга. К тому же, очень сомнительный. Подумайте сами: хостеру самому нео
+						</p>
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Нестабильность
+							</div>
+							<div class="simple-tile__text">
+								Хостер вынужден зарабатывать количеством: на одном и том же сервере размещаются
+								сотни проектов. Это влечёт за собой перебои в работе сайта и медленную скорость
+								загрузки.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Ограничения
+							</div>
+							<div class="simple-tile__text">
+								Вы едва ли сможете выбрать систему управления сайтом на своё усмотрение ввиду
+								ограниченной поддержки скриптов и PHP-расширений. Кроме того, на бесплатных
+								хостингах часто установлены запреты на загрузку файлов.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Отсутствие обратной связи
+							</div>
+							<div class="simple-tile__text">
+								Ни о какой адекватной технической поддержке речь идти, конечно же, не может. А плюс
+								к этому - проблемы с резервным копированием. Хранить ваши файлы бесплатно никто не
+								будет. И если что-то пойдёт не так, вы можете и вовсе попрощаться со своим сайтом,
+								не имея бэкапов под рукой.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Безопасность
+							</div>
+							<div class="simple-tile__text">
+								Ваши данные на бесплатной площадке слабо защищены. А значит, легко уязвимы для
+								хакеров и вирусов.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__item-title orange-text small-title">
+								Технические тонкости
+							</div>
+							<div class="simple-tile__text">
+								Бесплатный хостинг не может гарантировать своевременное обновление программного
+								обеспечения. Это значит, что вы получите неудобную и устаревшую панель управления.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info small-title ff-rm gray-text">
+									<p>
+										Как видите, бесплатный хостинг таит в себе больше проблем. Сомнительная экономия
+										станет серьезным препятствием на пути к развитию. Конечно, если ваш сайт создан
+										исключительно для себя, то такого хостинга ему будет достаточно. Но если ваш
+										проект коммерческий, то правильнее будет купить хостинг. Тем более, цены на него
+										более чем доступны и широко варьируются в зависимости от ваших задач.
+									</p>
+								</div>
+							</div>
+							<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+								<span class="round-btn__center-icon"
+									style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">Какие виды хостинга существуют?</div>
+					<div class="simple-tile__text small-title ff-tektur black-text">
+						<p>
+							Разновидностей хостинга немного. В общем, их можно разделить на 2 группы: виртуальный
+							хостинг и выделенный.
+						</p>
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Виртуальный хостинг
+							</div>
+							<div class="simple-tile__text">
+								— это фактически аренда места на сервере. И все вытекающие из этого ограничения: лимиты
+								на количество сайтов на хостинге, среднесуточная норма нагрузки, невозможность
+								устанавливать своё ПО.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Выделенный хостинг
+							</div>
+							<div class="simple-tile__text">
+								— это аренда сервера целиком. А следовательно, есть возможность устанавливать свой софт,
+								размещать сколько угодно сайтов и баз данных. Однако, и администрированием в таком
+								случае придётся заниматься тоже самому
+							</div>
+						</div>
+					</div>
+					<div class="simple-tile__text">
+						<p>
+							На самом деле, для старта в 99% случаев достаточно виртуального хостинга. Если у вас нет
+							миллиона товаров на сайте, или его не посещают сотни тысяч человек в месяц - виртуальный
+							хостинг ваш выбор. А перейти на более дорогой тариф вы всегда успеете!
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-tektur">
+								Итак, бесплатные хостинги мы отмели. Как же теперь сделать выбор среди многообразия
+								платных? Дадим несколько советов.
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="section achieve achieve_top-line">
+				<div class="container">
+					<div class="achieve__wrapper">
+						<h2 class="achieve__title large-text black-text">
+							Как хостинг для сайта лучше выбрать?
+						</h2>
+						<div class="achieve__slider swiper-container">
+							<div class="achieve__slider-wrapper swiper-wrapper">
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">Проверенный хостер</div>
+									<div class="achieve__text">
+										Выбирайте проверенного хостера. Воспользуйтесь поиском, посмотрите, какие
+										компании находятся в топе выдачи. Почитайте форумы. Главное, компания должна
+										быть крупной, с многолетней историей. Зайдите на сайт: посмотрите, как обстоят
+										дела с поддержкой, проверьте контактную информацию.
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+								<div class="achieve__slide swiper-slide">
+									<div class="achieve__slide-title">ТОП-3</div>
+									<div class="achieve__text">
+										В рейтинге веб-студий, которым можно заказать создание сайта и его последующее
+										поисковое продвижение,
+										Санкт-Петербург
+									</div>
+								</div>
+							</div>
+							<div class="achieve__controls slider-controls">
+								<div class="slider-pagination achieve-pagination"></div>
+								<div class="slider-navigation achieve-navigation">
+									<div class="slider-prev achieve-prev">назад</div>
+									<div class="slider-next achieve-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm gray-text">
+								<p>
+									Как видите, бесплатный хостинг таит в себе больше проблем. Сомнительная экономия
+									станет серьезным препятствием на пути к развитию. Конечно, если ваш сайт создан
+									исключительно для себя, то такого хостинга ему будет достаточно. Но если ваш
+									проект коммерческий, то правильнее будет купить хостинг. Тем более, цены на него
+									более чем доступны и широко варьируются в зависимости от ваших задач.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Бонус: личные Рекомендации <br> по выбору хостинга для сайта <br> от НастАртВЕБ
+					</div>
+					<div class="simple-tile__text ">
+						<p>
+							Перепробовав множество компаний, мы отдаём свое предпочтение хостеру РЕГ.РУ. Почему?
+						</p>
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Надежность
+							</div>
+							<div class="simple-tile__text">
+								Мы никогда не сталкивались с серьезными перебоями в работе сайтов по вине хостинга, а
+								это большая редкость.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Цена
+							</div>
+							<div class="simple-tile__text">
+								Гибкая линейка тарифов, как говорится, на любой вкус.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Оперативная поддержка
+							</div>
+							<div class="simple-tile__text">
+								Отвечают на любые вопросы быстро и профессионально.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Бэкапы
+							</div>
+							<div class="simple-tile__text">
+								Резервные копии создаются каждый день, хранятся в течении месяца и восстанавливаются
+								нажатием 1 кнопки.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg mb-0">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm gray-text">
+								<p>
+									Всем своим клиентам мы советуем именно РЕГ.РУ. К тому же, сейчас при покупке
+									хостинга они дарят домен и SSL-сертификат сроком на 1 год в подарок!
+									А еще, мы хотим поделиться с вами промокодом на скидку 5% на оплату любой услуги
+									рег.ру!
+								</p>
+								<p>
+									Пользуйтесь на здоровье! И не забывайте регулярно оплачивать услуги хостинга!
+								</p>
+							</div>
+						</div>
+						<div class="comment__btns">
+							<a href="" class="btn btn_fit">скопировать код</a>
+							<a href="" class="btn btn_light btn_fit">перейти на рег.ру</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section cert dark-bg mt-0" id="revards">
+				<div class="container">
+					<div class="cert__wrapper">
+						<div class="cert__header">
+							<div class="cert__header-text">
+								<div class="cert__title title"><span>наши </span>дипломы и
+									Сертификаты</div>
+								<div class="cert__subtitle">
+									Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+									вебинары.
+									Мы
+									никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+									интернет-технологии.
+								</div>
+							</div>
+							<div class="cert__round-btn round-btn round-btn_light">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+								<span class="round-btn__center-icon"
+									style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+							</div>
+						</div>
+						<div class="cert__preview">
+							<img src="./img/certificates.png" alt="">
+						</div>
+					</div>
+					<div class="cert__body">
+						<div class="cert__item">
+							<div class="cert__name small-list-text">Сертификаты</div>
+							<div class="cert__filter">
+								<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+								<div class="partners__filter-btn filter-btn">Сотрудники</div>
+							</div>
+							<div class="cert__slider swiper-container">
+								<div class="cert__slider-wrapper swiper-wrapper">
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert1.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert2.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert3.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert4.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert1.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert2.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert3.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/cert/cert4.png" alt="">
+									</div>
+								</div>
+								<div class="cert__controls slider-controls">
+									<div class="slider-pagination cert-pagination"></div>
+									<div class="slider-navigation cert-navigation">
+										<div class="slider-prev cert-prev">назад</div>
+										<div class="slider-next cert-next">а ещё</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cert__item">
+							<div class="cert__name small-list-text">Дипломы</div>
+							<div class="cert__slider swiper-container">
+								<div class="cert__slider-wrapper swiper-wrapper">
+									<div class="cert__slide swiper-slide">
+										<img src="./img/diploma/rating_diplom.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/diploma/Рейтинг.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/diploma/rating_diplom.png" alt="">
+									</div>
+									<div class="cert__slide swiper-slide">
+										<img src="./img/diploma/Рейтинг.png" alt="">
+									</div>
+								</div>
+								<div class="cert__controls slider-controls">
+									<div class="slider-pagination cert-pagination"></div>
+									<div class="slider-navigation cert-navigation">
+										<div class="slider-prev cert-prev">назад</div>
+										<div class="slider-next cert-next">а ещё</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужна именно SERM-репутация в сети?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

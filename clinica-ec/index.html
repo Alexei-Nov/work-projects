@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="nav">
+			<div class="container">
+				<div class="nav__wrapper">
+					<a href="" class="a nav__logo">
+						<img class="img" src="./img/logo.png" alt="">
+					</a>
+					<div class="nav__body">
+						<a class="a nav__phone-mobile" href="tel:">
+							<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M29.6785 22.7518C28.5618 20.6406 24.6837 18.3515 24.513 18.2514C24.0146 17.9678 23.4946 17.8176 23.008 17.8176C22.2845 17.8176 21.6922 18.1491 21.3334 18.752C20.7662 19.4305 20.0626 20.2235 19.8919 20.3464C18.5705 21.243 17.536 21.1412 16.3915 19.9966L10.0035 13.6081C8.86615 12.4708 8.76159 11.4235 9.65199 10.1093C9.77657 9.93749 10.5696 9.2334 11.2482 8.66557C11.6808 8.40807 11.9778 8.02544 12.108 7.55604C12.2809 6.93148 12.1536 6.1968 11.7454 5.48104C11.6491 5.31641 9.3589 1.4378 7.24886 0.321605C6.8551 0.113048 6.41129 0.00292969 5.96637 0.00292969C5.23336 0.00292969 4.54373 0.288792 4.0254 0.806571L2.61388 2.21753C0.381481 4.44937 -0.426609 6.97931 0.210742 9.73672C0.742425 12.0347 2.29187 14.4801 4.8168 17.0045L12.995 25.1828C16.1907 28.3784 19.2373 29.999 22.0503 29.999C22.0503 29.999 22.0503 29.999 22.0509 29.999C24.1198 29.999 26.0485 29.1198 27.782 27.3862L29.193 25.9753C30.0506 25.1182 30.2452 23.8224 29.6785 22.7518Z"
+									fill="#F1592A" />
+							</svg>
+						</a>
+
+						<div class="nav__menu-btn"> <span class="span"></span></div>
+
+						<div class="nav__location">
+							<div class="p">Санкт-Петербург, ул. Коломенская, д. 25,
+								лит. А, пом. 5-H</div>
+						</div>
+						<div class="nav__phone">
+							<a class="a" href="tel:88127648452">8 (812) 764-84-52 </a>
+							<a class="a" href="tel:89219074637">8 (921) 907-46-37</a>
+						</div>
+						<div class="nav__free-call">
+							<div class="p"> <a class="a" href="tel:88005500253">8 (800) 550-02-53 </a>
+								Бесплатный звонок по России</div>
+							<a href="#review" data-fancybox class="a btn-blue nav__btn">Оставить отзыв</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="ul nav__list">
+			<div class="container">
+				<div class="nav__list_wrapper">
+					<li class="nav__link nav-submenu"><a class="a" href="#">О нас</a>
+						<ul class="ul nav__dropdown">
+							<li> <a class="a" href="#">Терапевтическая стоматология</a> </li>
+							<li> <a class="a" href="#">Ортопедическая стоматология</a> </li>
+							<li> <a class="a" href="">Хирургическая стоматология</a> </li>
+							<li> <a class="a" href="">Пародонтология</a> </li>
+							<li> <a class="a" href="">Имплантация</a> </li>
+							<li> <a class="a" href="">Имплантация Zygoma</a> </li>
+							<li> <a class="a" href="">Имплантация All-on-4</a> </li>
+							<li> <a class="a" href="">Лазерная стоматология</a> </li>
+							<li> <a class="a" href="">Профессиональная гигиена</a> </li>
+						</ul>
+					</li>
+					<li class="nav__link nav-submenu"><a class="a" href="#">Услуги</a>
+						<div class="nav__dropdown">
+							<a class="a" href="">Терапевтическая стоматология</a>
+							<a class="a" href="">Ортопедическая стоматология</a>
+							<a class="a" href="">Хирургическая стоматология</a>
+							<a class="a" href="">Пародонтология</a>
+							<a class="a" href="">Имплантация</a>
+							<a class="a" href="">Имплантация Zygoma</a>
+							<a class="a" href="">Имплантация All-on-4</a>
+							<a class="a" href="">Лазерная стоматология</a>
+							<a class="a" href="">Профессиональная гигиена</a>
+						</div>
+					</li>
+					<li class="nav__link"><a class="a" href="#">All-on-4</a> </li>
+					<li class="nav__link"><a class="a" href="#">Врачи</a></li>
+					<li class="nav__link"><a class="a" href="#">Цены</a></li>
+					<li class="nav__link"><a class="a" href="#">Акции</a></li>
+					<li class="nav__link"><a class="a" href="#">Наши работы</a></li>
+					<li class="nav__link"><a class="a" href="#">Контакты</a></li>
+					<a href="#form" class="a nav__list_btn btn-red" data-fancybox>Записаться онлайн</a>
+				</div>
+
+				<div class="nav__list_phone">
+					<a class="a" href="tel:88126271717">
+						<div class="p">8 (812) 627-17-17</div>
+					</a>
+					<a class="a" href="https://t.me/+78126271717">
+						<svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M22.8686 0.185394C22.8686 0.185394 25.1813 -0.723605 24.9886 1.48397C24.9244 2.39298 24.3462 5.57448 23.8965 9.01571L22.3547 19.2095C22.3547 19.2095 22.2263 20.7029 21.0699 20.9626C19.9135 21.2223 18.1791 20.0536 17.8578 19.7939C17.6008 19.5991 13.0398 16.6773 11.4337 15.2489C10.984 14.8593 10.4701 14.0801 11.4979 13.1711L18.2433 6.6783C19.0142 5.89914 19.7851 4.08114 16.573 6.28872L7.57923 12.457C7.57923 12.457 6.55137 13.1062 4.62417 12.5219L0.448465 11.2233C0.448465 11.2233 -1.09333 10.2494 1.54057 9.27539C7.96471 6.22374 15.8664 3.10716 22.8686 0.185394Z"
+								fill="#F1592A" />
+						</svg>
+					</a>
+					<a class="a" href="https://vk.com/clinic_es" target="_blank">
+						<svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M25.8131 11.2157C25.8131 11.2157 28.1577 13.4504 28.7377 14.4845C28.749 14.4994 28.7578 14.516 28.7638 14.5335C29.0002 14.9155 29.0582 15.215 28.9422 15.4361C28.7464 15.8013 28.0838 15.9846 27.859 16H23.7149C23.4264 16 22.8261 15.9272 22.0953 15.4403C21.537 15.0638 20.9817 14.4439 20.4437 13.838C19.6404 12.9383 18.9459 12.1574 18.2426 12.1574C18.1538 12.1572 18.0656 12.1714 17.9816 12.1994C17.4494 12.3617 16.7737 13.0936 16.7737 15.0429C16.7737 15.653 16.2749 16 15.9255 16H14.0274C13.3807 16 10.0138 15.7817 7.02829 12.7437C3.36993 9.02431 0.0842307 1.56306 0.0523306 1.49729C-0.15212 1.01452 0.277081 0.751443 0.741081 0.751443H4.92579C5.48694 0.751443 5.66964 1.07889 5.79724 1.37275C5.94514 1.70999 6.49324 3.05895 7.39224 4.57443C8.84804 7.04006 9.74269 8.04338 10.4575 8.04338C10.5918 8.04376 10.7239 8.00997 10.8403 7.94543C11.7741 7.45006 11.6001 4.23159 11.5566 3.56831C11.5566 3.43957 11.5552 2.13119 11.0767 1.49869C10.7345 1.0453 10.1516 0.868987 9.79924 0.804618C9.89349 0.67308 10.0936 0.471576 10.3502 0.352632C10.9897 0.0447785 12.1453 0 13.2923 0H13.9288C15.1729 0.016792 15.4948 0.0937553 15.9472 0.204303C16.8578 0.414203 16.8752 0.983733 16.7955 2.92321C16.7723 3.47735 16.7476 4.10145 16.7476 4.8361C16.7476 4.99283 16.7404 5.16774 16.7404 5.34546C16.7128 6.34039 16.6766 7.46126 17.4045 7.92164C17.4989 7.97839 17.6079 8.00845 17.7191 8.0084C17.9714 8.0084 18.7269 8.0084 20.7758 4.61501C21.6748 3.11632 22.3708 1.34896 22.4186 1.21602C22.4592 1.14186 22.581 0.933356 22.7289 0.849396C22.8341 0.795375 22.952 0.76839 23.0711 0.771034H27.9939C28.5304 0.771034 28.8943 0.849397 28.9654 1.0453C29.0843 1.36295 28.9422 2.33269 26.6947 5.2657C26.3162 5.75407 25.9842 6.17667 25.6927 6.54609C23.6555 9.12646 23.6555 9.2566 25.8131 11.2157Z"
+								fill="#F1592A" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</ul>
+	</header>
+
+	<main class="main">
+		<section class="section">
+			<div class="main">
+				<img class="img" src="./img/main/main.png" alt="">
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+
+				<div class="h2">Наши услуги</div>
+
+				<div class="tile">
+					<div class="tile__column">
+						<div class="tile__item">
+							<div class="h2">Терапевтическая стоматология</div>
+						</div>
+						<div class="tile__item tile__item_list">
+							<div class="h2">Профессиональная гигиена</div>
+							<a class="a" href=""> Ультразвуковая чистка зубов </a>
+							<a class="a" href=""> Чистка зубов Air Flow </a>
+							<a class="a" href=""> Удаление зубного камня </a>
+							<a class="a" href=""> Лазерное отбеливание зубов </a>
+						</div>
+						<div class="tile__item tile__item_link">
+							<div class="h2">Имплантация All-on-4</div>
+							<a href="" class="a arrow-btn">Перейти</a>
+						</div>
+					</div>
+
+					<div class="tile__column">
+						<div class="tile__item">
+							<div class="h2">Ортопедическая стоматология</div>
+						</div>
+						<div class="tile__item">
+							<div class="h2">Лазерная стоматология</div>
+						</div>
+						<div class="tile__item tile__item_link">
+							<div class="h2">Имплантация Zygoma</div>
+							<a href="" class="a arrow-btn">Перейти</a>
+						</div>
+					</div>
+
+					<div class="tile__column">
+						<div class="tile__item">
+							<div class="h2">Хирургическая стоматология</div>
+						</div>
+						<div class="tile__item">
+							<div class="h2">Пародонтология</div>
+						</div>
+						<div class="tile__item tile__item_link">
+							<div class="h2">Имплантация</div>
+							<a href="" class="a arrow-btn">Перейти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Акции и спецпредложения</div>
+				<div class="slider-1">
+					<div class="slider-1__container swiper-container">
+						<div class="slider-1__wrapper swiper-wrapper">
+							<div class="slider-1__slide swiper-slide">
+								<div class="h2">MeDent
+									<svg width="74" height="50" viewBox="0 0 74 50" fill="none"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M74 24.1455H0V49.8847H74V24.1455Z" fill="url(#pattern0)" />
+										<path
+											d="M0.319641 21.3605C0.319641 9.60816 9.84659 0.0814209 21.5986 0.0814209V21.6782H0.319641V21.3605Z"
+											fill="#9D89AF" />
+										<path
+											d="M69.5561 21.3605C69.5561 9.60816 60.0286 0.0814209 48.277 0.0814209V21.6782H69.5561V21.3605Z"
+											fill="#9D89AF" />
+										<path d="M34.7793 21.6762L22.5401 0H47.0191L34.7793 21.6762Z" fill="#C1D436" />
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+												height="1">
+												<use xlink:href="#image0_49_969"
+													transform="translate(0 -0.943203) scale(0.00529101 0.0152198)" />
+											</pattern>
+											<image id="image0_49_969" width="189" height="128"
+												xlink:href="data:image/png;base64,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" />
+										</defs>
+									</svg>
+								</div>
+								<div class="h3">Коронка + Абатмент + Имплант</div>
+								<div class="slider-1__price">
+									<div class="slider-1__price_column">
+										<div class="p"><span class="span">61 550 ₽</span></div>
+										<div class="h3">39 800 ₽</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">или</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">2 платежа</div>
+										<div class="h3">по 19 900 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-1__slide swiper-slide">
+								<div class="h2">MeDent
+									<svg width="74" height="50" viewBox="0 0 74 50" fill="none"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M74 24.1455H0V49.8847H74V24.1455Z" fill="url(#pattern0)" />
+										<path
+											d="M0.319641 21.3605C0.319641 9.60816 9.84659 0.0814209 21.5986 0.0814209V21.6782H0.319641V21.3605Z"
+											fill="#9D89AF" />
+										<path
+											d="M69.5561 21.3605C69.5561 9.60816 60.0286 0.0814209 48.277 0.0814209V21.6782H69.5561V21.3605Z"
+											fill="#9D89AF" />
+										<path d="M34.7793 21.6762L22.5401 0H47.0191L34.7793 21.6762Z" fill="#C1D436" />
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+												height="1">
+												<use xlink:href="#image0_49_969"
+													transform="translate(0 -0.943203) scale(0.00529101 0.0152198)" />
+											</pattern>
+											<image id="image0_49_969" width="189" height="128"
+												xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAACACAYAAABeM2hDAAAAAXNSR0IArs4c6QAAIABJREFUeF7tXXd8FNUWPkkICYQQQgJIaAkpSAmgSAkQ6R2RXqWIYOjSBZEiRRAQREB6x1CkGZpKhxgBEcFQHiGB0AVDJ5B+3++b9ybu7MzuzuxONrPL7l/8yNx7T/nmzLnnnnuOE9nBLyUljaUmp9KrV+mUkZ5BmRmZ5JLHhUoGFHXSZy898wHLYE+szDUjxtKttqaLkye55Skj4v3erYcs9WUqJxtXN1dyc3OlfB6u5JbPjZycnETPW41gKy9kU4y+fJHCHt5/So//eU5JD57Q04fJlPz0BaWmponE5lOkELXt20DE34PnG9jlGwutLGbrLhdYoheV9B4i4n3/lhh2N/G+iBhX1zxUsFABKujrSYV9C5J3EU/yKeZFBQrmtyl8yJWypplKTU1l9xIf0s2EB5R09yE9fvhMLl9kCPSMMXb2Whd68SpR9ly29KC7W1GqHriLnJ3zyAa9If4KFvKkYqV8qaR/EfLz9yH3/O6axotcPWmOiZSXaezG1Xt07T936P6tfygzM0suL4LnDIEeDz16uYPFXptl1rxaH1S+zFAq6tlTUq+GLL0cnuD9FC/lS2XK+ZF/iB/lL2C7L4AmQA/reyfxH4qLvUk34+6YDXRd5RkDPZ6LvdmPPXr2lxx928wzBfL509tltxj0zy0Bva4Q8AKUDipO5ar4U4mAIuTs7KwJHMlVVK4Sm5WRxRIu36HYU3GKXBc5zJkC/bO0aHbu6ihijMmZziaeCS07jgrnb29Qp2qBXlcYcIEqVi9L5ULLkIurS67iSa6ScoXIzMxMFn/hNp2LuUIvniXLpVXRc6ZAj8ku3xnBHjz+VdG8Wn24cMHKFFp6pVF95gToeXnk88hHoTWDqUJVf82D3+qgv3H1Hjt9+CI9e/I8R/EjB/SvMq6wM3F9KSvLeuHEnGAa7kbV4K+pYN66uQZ6ni8Pz/xUo34lCijvp9kwqNVA//ThcxZzMJakQmY5AQQ5oMe6cffGsXsPD+cECVab07dQDapYcpFJXeakpddntqifD4U1qUy+bxQySZfVBPX/hXKcILgysacS6FzMZVU2qHIFJBf0qRk32O9xH1BmVqrcqTX1nLOzK1ULXkb5XSuZ1KU1QQ8h4QtUsXowvVP3TU25PCYFZYmGYd2P7/uTHtx9aMk0Zo2VC3pMnpg0i934e4dZ6+T2oOI+DSmk+CxZerQ26HnZePsUpHdbV9OM1ZclLHMUG3/hFov55Rylp2eYM9ziMUpAn5H1lJ2O60jpGU8tXteaE7g4u1H1kI2SKQdSdOQW6EGLi4sz1WgYShXeLptjmJMre9UJQBjy1JGLdOlsvFwacuQ5JaAHAbcfL2IJd9bnCC05NWmpom2obNHPZeswN0HPyyCoQmmq3bwyubq6yqZbbfmpujASv478eMZqm1VjwlAK+sysFPZ7fHtKTUtSW8Y5Ml+ePB5UM2QX5XH2kq1DLYAewsAmt1G7Grl2qitbYKY09+LJS/bLtt9UP2Qyta6hvysFPeb5+9kaduXmEnOXtOo4/+JdqYzPSEX60wroIagCBT2oaccwJLcp4kENIauyIDas+7fEUPLzl2rQpMoc5oCesSx29lpXzSejueX1pepBO8jFWVn+i5ZADyXjQKtpx1pW3+BaDPrH/wDwv9Kr5FeqgFWtScwBPdZOerGZXUycpxYZOTJPcKl+5Of1sWLdaQ30EI6bW15q3DGM3ihZWDE/5grXooWePk5m+zdFa8rC84IwF/QYf+56T/Y0+Yq5Ms3Rcfnd/eidwB3k5KQ8yUuLoOeB37xrHatZfLNBjwsde7+PzvF0AnMRZAnon6bsZecTpmoyGa2i/0jyLdDVLL1pFfS8q9OqRzh5eXuYxZsSnJi1QFpaGvt5y8lcOXSSy5wloMcaF28PYUlPTstdzirPeXmUo6oBG8zSGQjUMuhBHw6xWnYPJ/f8ec3mUY4iFE+O3Pcju/+g65dvyZk/156xFPQv08+zM3EDiLHMXONBf+GqQZPJy72VYp3x82gd9KDTr3QRato5jFxcci5NWbEA/zoZz34/FqsZIBgixFLQY14tJaPJSR02pRRbAD14qFQjhGo2qKgYm6b45/+uaGLcpt+/6YQmfV19htUAfWpGIvs9rmeuJ6PJTR02pXRbAT34aNS2JvmX81OET1P8KwY97q7uWntEk5EaKWbVAD3mvfZgOrv1IEquPHPkuaLedah8ifkWA8CWQI9QZtu+DXKkIoNsQR6OOsO07sfrIk4t0KNOzumrXSgjI2dueJl6S5A6/E7IGsqXJ0S2rgzNaUug5/x7/2LUvHOY6pdRZAkSt50O7jhpSj+a+rtaoAdTNx7OY4n3NucKfyWKtKCgYl/I0pMpAm0N9OCnbvO3qVwVceEqU7wa+7tJYaL2zM5VR23GreGZVRP0uZWMlsclH9UI+YFcXcSV2sxRui2CHm5O+36NVE1OMwn6U0cusgun48yRca6OURP0YOTu0+Xs6q2VVuWpzBvtyd93nEkdySXKFkEP3oJDA+jdllVVk4PRiZBmsHPVQate85OrQFPPqQ36rKwM9se1jvQy5a6ppVX5u2seL6oRsk1R6rCphW0V9IhetelVX7U0BaOgP7b7DxZ/6aYpWWry72qDHkxaMxnNUD1KS4Rtq6AHzyX9i1GzLrVVsfYGJ0H25M41h2wiJi8FhJwAPU6jzyf2opxORjNWj/J1BT34btn9XSpeysdi4BucwJatPASUE6DHvNaog1mu9EB6o+CHFitX/wWxZUsPXhDCbKGCtZcULG5BbVt5wCZ9+ZyI3uiDJyfrYJqqR/k6W3rw/n7vBhb79pKgt9WIjS4gcsrSY42crINpqh7l6w56XCyv9141i76CosGZ6Zls0+KfJBsdWCJwa4/NSdCDl5yog2lp6rApGdu6ewP+UEqk66BmFtXKF4H+2qU77MhubeWRm1KmtTayuuuoXQcTYbkqgZMsSh02JSd7AD14rNGwMoVWDzTb2osG/rwlht2WaNFiSqBa+3tOW3rwG39/Mrvzz35VWJdbj9KSxewF9IWLFqZ2H9ZTB/QpL1NY5KKfbDZMaS2fnl+HS0aL60QZmZZdindycqF3QpZSftcqZitSzstgL6AHrx37NSYvH/PKhwiEfOX8DRb901k58tP8M9aw9BCCGnUwldSjtETw9gT6auEVqWpt8zJPBaA/uOMUu3HVOsfslihPzlhrgd7SOphK61HK4d3QM/YEelRJe6/nu2Z9GbMHZWRksMhv9+dawVVLlJkbG1ndNS2pg6m0HqUlcrIn0GPj331Ic7OiONmgx1XAfZHHLZGppsZay9KDaaQen0noSCmpDxTJAPUoawRvUS112NTi9gR68GrulcJs0NvKhW9TiuX/bk3QY01z6mCaU49SLv9Sz9kb6M29QJ4Nenvy56Fwa4NeaR1Mc+tROkD/rwTM9euzQR+56CemtXqUlijY2qAHrUqS0cytR2mJTOzN0uN0tueI1opr5HCgR3z++4XqHLJYohQ1x+YG6EG/nDqYltSjtERG9gZ6yKJ938aKy31zoLe3TWxuuDc8GOXUwbSkHqUD9EIJmLOZ5UB/NfYWO77vjCXy1NzY3LL0EISxOphIKqviv171shZyFGCPlr56vVCqXCtIUbyee/hcTBz748RFOXKzmWdyE/TG6mBaWo/SEgXYI+grvB1EYU1ClYP++L5z7GrsdUvkqbmxuQl6CEOqDqYa9SgtEbQ9gr5MsB81bl9TOejtLVyZmz49D0r9psxq1aN0gF4oAXPCltwbsn9TNLt78x9L5Km5sblt6SEQ3TqYatWjtETQ9mjpCxbypE4RjZVb+p1rjrFHDx5ZIk/NjdUC6Pk6mFlZafROyGrKl6ecIuWoLVR7BL2HZ37cpFIkV+7hHSsPsccPn6kt41ydTwughwBQBxOdyNWqR2mJUO0R9Cj798FwZY0qONCjQGt6au60s7dEicbGuuXLS6UCiymyADlBC5LRstgzqyWVGePh9vUHLCU5NSfYzLU5nZ2dqWyFEor0rOjhXOPMsbBDAipKwAF6FYXpmMo2JOAAvW3oyUGlihJwgF5FYTqmsg0JOEBvG3pyUKmiBBygV1GYjqm0I4GUlBR2/PhRunr1Knl6eFKtWrUo5M03Obw7QK8dPTkoUUkC8fHxbPDggVQvvB69U+MdSn6eTJs3R1JISAhN/mKaA/QqydkxjUYkgB5pLZs3pVFjxtDXc+aQp6cnV7ysV8/etHtPFE2dPt0Beo3oykGGShI4duwYm/PVTNq2bRe9/XZl+uvCJfrtt19p7uzZNH7CRPLze8MBepVk7ZhGIxKIjNzIfvv1V5ozZz4H+jp16tDN27dpxIhRVKlSJcrKynCAXiO6cpChkgT2793L1qxZRevXR3Kg//N8LK1bt4b+vvs3tW3flgoVKuQAvUqydkyjEQk8ffqYNWnUiJYuX04fdO+e7d4sX7qUSpQqRYMGDXKAXiO6cpChogQOHTjApk+fSsOGDae3qlWjZ8+eUGRkJMXHxdG6Dd+T07Nnz1haWprBJd3d3alAgQJmhTYzMzPZ48ePjbLj5eVFrq6uZs1vqZweP37MMjMzFU3j4uJC+fLlI3d3d4tpRumVFy9fKFrf1MOgzcPDQ0RbcnIye/VKuqQ4bnX5+Mjv2idFt6urC3l5eWevi06MDx8+NEWuxX/PmzcvFSxYUMTvrRs32LYd2yjuP3H4O4XVCaOWLVtT3rx5nZw+7teXRUdHG1w8KCiEovbsMUvBJ04cYxH9+xtlbPvOH6l8+fJmzW+pxN6tW5slJSWZNY23tzdVqFCB6tVrQE2aNaNixZSnMW9cv559+eV0s9Y3NOiTT0ZQxMCBInlOnTqFbY6MNLjWxkj4wO/I0sP6tWvZrFlfCuaqVLkybd26LXs8XrLq1d5SlTepySD/JcuWyaKbH28S9Hhw7/6fKSAgQNHEGDdh/Hi2c+d2uwS9LlOw/m3btqVPRowgX9+isuWkJdDXrFmT1qzbIIv21wL0UGZEhNh6GENzeno6q1u7Fj1//tzuQc8ziIOQ2XPnUb168lrDaAn04CFy81aqWrWqSeC/FqAvGxREe/bsMykMXXTHxMSwfn37mPy82ap7Y4gx+MdffTWHWrdpY1JeWgM9YtorVq0xSbddgh6by6dPnwr0qtTFmTTpc7Zt69bsOWAFpay+1kDfPyKCunTpJonpzPR0evbsGV27do0OHjxIhw8fJKmNMK6wrVmzjqrXNF6PRQr0kD1kYu4Pcvb0FPdikvLpsQnUD2L88MN2qhhqvHiSHNBnZWWxv//+WxYbH37Ym27duCF49qOP+lO3Hj1MjsfG3dv73w20yQFIOJPayFatWpXOnTsnGK/ExUFXk/A6dejp038jN1JzYgGtgX702LHUt28/k9YOtN+8mcjGf/op/fnnnyJZ+/r60r6ffjEa+ZIGvTf9duqUrPXlKJh/Rgr02HxejI0VNNaTszGUA3oltLVu2ZzBkOj+ho8cSR9/PEB1OWANSdB36NSJ9u7eTSkpKdl0KHFxfj91ivXu3VPARJ++fWnt6tUiWdgy6MFMWloaGzJoAElFwPDVGDFilEHF5Tbo4c4gpHzp0qVsvcA9275zJ735ZgWDdNsl6PF5v349gU6fFjZRluviTPtiMtu0aZMA4IuXLKHBAwfaHejB0PPnz1nrls3pn3+EBbM8PDzo8NHjku4GxuU26KtVq0YtWrWi6VOnCvTSsHFjWrTou9cP9IHBgfTldGEMWY6LgwOpd+vW5iwI/0O+Q9SefYT/1/8ptfT37t1hf/zxB125ciUbZIULF6YKb1aAD60oXi4Vp1fi3ujysnP7djZhwngRfzNmzKR2HTpIAii3QQ/3ZvnyldSoQT3SPbiCtd8VtYeCg4Ml6bZbS//xgAHUuGF9gb8nx8U5e/YMQ86D7q9bt240ZNhwqhNW02zQ//XXOTb/66+5rw/yo6V+2EA2adKERo35lEqWLGnSH1QT9DilDA8Po+TkZAFp4eHhtGzFKs2CHgdKs2fPYvquZ7NmzWj+goWvF+gnf/GFU+fOHdmFv/4SKHHv3v0UEBhoEFBfTp/ONm5cLxizfv1GCgwONgv0iAIsXLCAli9fKruTOdyKed98Q+HhxuPlaoIeDH8ydCg7cOBnAe+ILpw+c1ayRYwWLD1An5T0gDVu2FAQyYG137Nnn6Su7dbSA/QbN65nSlwcALT+u3VJ92gfrs3x6BguXGmOpZ86ZQrDVS+lvzx58tAqhA2rVzf4gqoNeikwgG5Ecfz9/UV0aAX0oHHatC/Ypu+/F4j5vffep6/mzBHRbdegv3fvHlPi4pw7d45179pZ5NpMnPyFE5K7lIJeyk92dXWlXr36UKv3WlHJkqUpIyODiz4sX/qdaOONsCE231JxaxCpNugN5RotX7mS6tYVd7eWAj3i7JGbNyt6x/PmyUulypQx6s4ZClny+TJ3795lzZs25uTJ/+Au7tn3k+iFtWvQg/kunTqw2NhYWS6OlG+4bt0G7pBGKej5vOgXL/7NQsRhyuq1ayUTo/CVmTJlEukeiIHoQUOG0JAhwyQBoTboL126xDq2byvezM6cSe3aiTezap3I+vv742tiEehB9MQJ49n27cJcqTZt29KsWbMFc9s96KUUI5XJh1TShvXfpfv37wuiNnBt8uTJoxj0K1Ys4zauuj9TBxa4FAxrpUuDl5c3HTtxgksp1Uej2qDHYVXzpk1FoP980iTq3v0DWe6NIhP//4fVAj3ScVu0aEZZWVnZZCCZDl/L0qVLZ9Nv96CXdHHKlsVnT6BERFe6dha6Nl27dqdJU6Zwzym19C2bN2WJiYnZwoeVP/HrbwZdFf7BRYu+Zd8tWiTAzuq161H3JMdBf+fOHdakUQMRbseN+4x69emjedCD8E/HjGG7dwvTIDp06EDTZsx8fUAv18WZN3cuW7lyuUDhvGujFPT3799nDeqFC+aSm/oq5VcPHjqUBg8emuOgN2TpUWulS5cuskCPqAkiPkp+pcqUoZ07f7TYvcGaCQlXWZvWrQWRMgQF9v98gEqU+F9JbLu39GDSlIsD1wYb3nv37km6NkpBLwXcYIQ8w4UvghQwkOT00759gj81adKMFiwUx5zVdm8uxsayTp06iMiaO28ebu3IAj3cMWvm3uhe/OAJlwq96n61XwvQS7k4AQEB8PU4RV68eJF16tBOoGxdISkF/fatW9nESZ8rMXZGn0Xph63bduS4pT906BAbOlicaoF7mVKhUy2FLHUFePnyZW5DrnsIiKjZT78cpOLFizu9FqA35OLs3ruXAgODnRbMn8+WLVti0LVRCnpD8W5z3wJDJ8lqW3qpzTdoPh4dLXmjSqugB80R/T9iJ06cEIj8gw960Weff/76gF7Sxfn/japmzZow3Xxo/kAKURteako2slKHYsWLFyefIkXMwn1AmQDJQxa1QS+Vpo2zguPRMZpOQ5ASqlRgAsGEnw8cop/37ydTd2SVKEoTqcXIssSJrC7hUi4OsvTmzvuG9Ded+q6NUku/+8cf2aefjhHIbcSoUdS/f4TJfBolwlYT9Mi0DK8TJrqUYehU09BeSQs+PS/DD3v3ZKdOnRKI9KP+/ZHUJ0pG1L8YrkQPmgW9lIuTP39+mvP116KUYd2ojTmW/vfff2e9ewpvzUi9iEoEK/WsmqDfsG4dmzlzhmgZpFQ3aNDI5iw9GJHSA17KwUMHvz6gl3JxcGIXtWtXtrKlXBullh5WM6xmdcEhSVmJswEpIL948YLhSp/uD1fwpGrBqAV6JGy916qV6Iqlr29ROnj4sOTBmC1YetDYrUsXdv688GZY85YtRREyu7X0yGVHNp7url7/7quUa6MU9IaEvfPH3VSunPEGxF9Mnsy2bBFeYPn66/m4LJEj0RvUd8EdT/1sVPBg6CSWfyG1vJHlaZS64I+XOSnpgcCw2C3opVwcfWsr5dqYA/qdO7ezCeOFlzJwQIXMSWdnZ0l3ISkpiatNrpuvg8Oeg4ePcqE2fVottfSIy48fP57i4+NEHx18mfCSGqveZgugxxlM+/Zt6crly0a9SbsGvbEkKUOujTmgx93TFs2aCA68MA82hhMnTxZduEbeyLDhw0TKMXaJQwr0uPDy3vvCMwde2yjzjCoRaOly9PBhOn/+vGSOP0ohbvlhu8GbR8YsPb6cy1asMnu7kt/dPbvNjO4kprIsjS145MghJnXVU3eMXYNeysXhmTfk2pgDeow5efIk++jD3iJgYQNdq3ZtQigyk2XS5YsX6cyZM6JyHAix7dz5o8FLL5aU9TMEEqz53dLlVLt2bZORJrWyLHVpQYuZXVHiMoyWgB4ZrG3atKZr8fEG3w27Br0xF8eQa2Mu6DFuc2Qkmzp1imLLh+zA+fMXUOOmTRVdIlG8kM4AhPLmL1goq0oYhtkK6EHrL7/8xIYPG/b6gl5KWcZcG0tAzwt84oQJJksE8hrx8fEh5LvUrBlm1NqqZenhzvTo0ZNQ8kOqgq4hpNgS6HHhv2XL5qKiTDxvNmXpBwz4mP2qd9zcuXNnwm0nQ8qCi9OsSROB22FqzJMnT7jDG/3f1m07ZFUtxiYVHSV27dhBhkpAlyxZkuBidenWTTJEqb92g3rhiqsW4zYR3KuiRYuiNgyF1wtHHF7Wevrro1XMzBni2L4lX5ugkBDJjEvcXd60SXgdMDQ0FPUrTbphPD17oqLY+PGfSpKndC7dSdq0bs1Qckb3N2z4cNUPI/n5ZTNsiSLUHItoQuK1a1xpPT4ejxIguHgupwKCmrQ45rJNCdgc6G1TzA6qtSQBB+i1pA0HLVaRgAP0VhGzYxEtScABei1pw0GLVSTgAL1VxOxYREsScIBeS9pw0GIVCThAbxUxOxbRkgQcoNeSNhy0WEUCDtBbRcyORbQkAc2DHheUE64mcA2Kze1criWBO2jJfQlwtclnTJtGnTp1odp162ruJeArp/388wGTlXlzX5wOCmxBAk6HDhxgQ4cOJqnqtFpgQCugv337NvPz8zN4a0sLslKDBhTBffTokeRNMzXm18IcTkgZjYmJpkqVKivux2kNBrQAer4E+Z/nY8nNzU1zX0O19IAaoq1aNOPq/w8bPtxu+eRA//LlS9zYFykUGY24b+rm5sbd6IcrdPv2XQoIKENeXv82rE1MTGTJz59zmY7u7u6SwsI6aNGJ3HMXFxcnpArfvn2bihQpkl0YVEp5ckCPhgK4qOzp6YUGAuSEi7ESP1xBTE1NRRowZ7FhvR89SkKVNsnUYJ5/dN9DJV+UHYcseHnoL4G+U/HX4sEfBQYGGqyCYAykoPHatXjKyMiioLJB5J5fKM+UlBSGhs0o8qp/V5j/m1TlB8ybkJDAVZgIDAiUnPfWrVv0/nutCO1PBw4cDDka3EdBn4mJ1yg1NZ3KlCljMLUaPYXRxA3p2NA7itw+efKEQoLezKYBz/C3soAhPGdMRtAbut2gAFixYsUUv5xOV65cYe3ef4+GDv2EBg4eLJgAn7q3qoTS2HHj6e+792jDhnVcDj1ekC9nzaKwsDo0bMggQrc//HCRBFflqlatKiLk1Knf2Ie9e9PK1WspKmoX7f7xx+x8fFz4RtEoHx8f0ThjoI+Pj2dYX7ekN0D/7aLvKCgoSDTXnj1RbOzo0cghp2/mzc3uXAKFTJk6lVq3Fra2R2OIsJri5nCQR58+Hwrm37dvD5s8cWJ2ozXcdUU7TSkAGlIoKg+MHjmcAAr8YCDQlVE3ZXrx4oVs8cKFtHDxEmrU6N96Ounp6VxXR1SB27Nnn4C26OjjbMyoMdnNrPHC7N67n/z8/LKfm/Xll2z9+rUC0rD+2XN/ieSIO7NTJk3KbrMEIzBy5Gj6oFcv0bN84z10Y1m9ejWdjInh1vD29uawgPsJqP8JA4hfUFAIrVi1ShLM0Adub+kWoDKnCJhR0IOIiuXLMVyYwNs8euw4Snn5kj77bBzHcLly5QmXB9Bs+caN64Tu2QA+Sr/plvTDPHxrHlz0wFyfjBhFXp6eFLUnilBPvmLFirR56zaR9TIGepQK3Lt3N6EqMXLqL1++SAMjIsjbx0ekeNBw8Jdf2LBhQ7gKXc2ateDoRu/Xzz//jP65f5/27t9PpUv/2xsKFujChQu0ZPFCQl1HFGJFIVN9C4Pqb82aNAIIuZcHVvrc2bPUqEkT2VYIpURQKa5cuXI0f8ECypvXnU6ejOF40/1y8XeUGzZsCOBnz4/7xH379BKVHcG86AOGIrYwLKBfal5YT1Q84Pd3uIzj7ExUubLQgJ05fZr16dOLUOns448HcEBdvXIlLVmymKQKW/GVnCFz0NytR0+Kj4+nz8aN5eSIrz/mguE7fPgwoRGHoc6G6E+MTikrVq2hypUrU3xcHOV1dzd5AV/fyJgEfeVKFRgsg67V4je/KOu34ftN2YKfP/9rtmLZMvrhh+1UMTRUoHCeedRS3717r+DTzzf5WrlytSiCJMe90WXq22++YUuXfsdV2NXtnoFn+KrC+s2Bjx05wgYOjCBDPWT5tjSGfHpY0o/79eO+fm3btpcNdF26r169yuBaSHV50VcaiquePHmSjp34FUaGWw80RkVF0dHj0YK9GSoQd2j3PsmxiHxTiQEDBhn06Tt3bM9Qr173xhXcQOwFcE1TFw+gi29J9NZbb9HGyM3ZLzC/T4qIGEifjBiRLbMe3bqwixcvch0Z9bvHdGzfluHWHLBoyIWVs7+RBfqwsDBBL1T48Kgvo98GnrekCxcuFlm5CxcusM4d25OUQPm/SbWVNwV6CByVEM6ePUN37twh9MeCxYILo+9m8aDXb2jMN4Ho2r07TZr0v84puj9ToMcXp2njhpwVHT9+AjVr0UKxP8+3DkIXxpGjR9P777cz6BrxLynf7AH+Oq5i1qpVW1SHH/uMpk0bcs2RR40ag5dS5M/zvJoIGXT8AAAFj0lEQVQC/cOHD7l1EOlr1aqVQEZLv/uO4uLi6Pc//hTIjwe9fuskXD0cO3Y0LVmyjOo1aJA9hn8Zjhw7IXJx+OrYqLAGdzwgIMAsAyML9LgDqtvU4ObNm1xvJ/0mZseOHWMDI/rTvG++pebNmwsI4oEt5Q9jg/xu3brUsXNnmjp1umCcMdADrIMHRnB1aGrVqoV6L9y/jx89St9v2kRvvVVNMBcP+tlz5wr8d76iMtydadNmKAY9tA/+Phs3jiv8hApgkyZNMlqJQcoiwZjARUQZPZQiHD1qDHXo3FlED9yuhvXr0xtvFOXq7vNfGkNdDK8nJLBPx3/KVWHDvGPHjpPsYm4K9PxXA3sgV1c3EQt46Y9HR0uCHsagZ+/e2X/DHmj0yJGkT/PCBQsYXKUDh46IAhzYt6CnMPYe6enpnHGZPHmyIKiimqVXE/SjR4+lvv36CQSDDWmb1i1FXw4wYAz0ffv24Zo743I536eVr4xmbdCDVnx1Tp8+SdOmTaPrCQn0/aYtssuB6CoLp9AzZ8zkwP/tt4skXx5+Q4setXApsec4fPSoaC+lOy/2VTNnTOO+hvobYTxnCvTXr1/n3Bh9ABsDGm/p1QA9vw6M1IZ16wg9EWrXrg0fX5HFt7qll9qkrF69ks2dPZuWLFtB9eoJu3wbAj1CZlVCK1KDBg0EG7q1a9ew2bNmqmvpJ05g23/4AZ9uWdEYXtGf/L9+vxzro/8M70oYKqDFb2iHDBnGWb5u3XrIiq3zrly3Hj1o4sTJArBgQ96oQT366KP+NGrMGMkvDHoBly9fntau3ygLaDkBel5WAyMi2IkTxyj24mVFPr7VQY/Y76QpU6lTp05cpAahzCGDBlGx4sVp164okaUyBHpY1dq1alA+Dw9uY4zQIGLAH3T/gCsuKtXyxlz3ZsnixWzhwgXZ1hFr626k4J69Sn6VnSbB19c31GtK6iVAlOXu3bvZkQg+GiP1ZeTHY0N79uxZwjkLImZS1SBQxRm9wIKDgzmQxkRHs379+nJhaP2wK/YV1au9RaiShj0R3BX9DSPfbQX7r4ERg7P3B5CBm1s+UfdHNUGPYEhwuXLcfgny6tKpA71MSaHDh4/KegF5uVkd9GjPeOzYCcrISOOEipAhYutLl68URVtMuTfoTTVp8kQqWLAQveH3Bt29fZuwGcXnftmKFRQeLvxqmAt6+Nrt27Yh/mDrqzlzBDXnUYVt2rQvqGTp0uTi5EQ3btygmmFhtHTpctkbWp42hPEQLcPZAxS8YcP3Bg+I+DEocbh69VpJxfORNsyLuDvmRXh4zboNkl8tftOOZ4OCgkS9uvCFnTFjGm3ZtInTH8LZ2CQjdQG9CvQbyqkFepQWrBMWxuEG6SBoqAe/ftGi7xTnjHFvzKULF6h4iRKSlgKF+RF75y0FgIiIQGzsedEY+FqInQYEBpKvr6/BjWynTp25zSZi/aX9/QnRIanmxlgLhVnBYGhoFcmoQ9x//sNOnz5NHp4eADkVyF+AQFtAYICoz9O/9An/hujH+T//BM0G616CjhO/niAXF1eqX7++ILIAIMDiXr16hTLTM+nNChUI4VxD1ZWlLD2+HqD70oVLlJKWSkFBgVw0Rv+8Q3csf9hmqE8uv8/g501LS+OAXKNWLYPzYpOM4rT46kCG+oaDXx/yOHP2DPoDk7eXN/eCVqhQQcQzj6+SpUtS8eL/a8mJH74M1xOuc+P4sCv+H0GS+/fuUWiVKqLTfYxBqPbBgwfcuUzdunUle3mZcicVfRZMTWbs78aiN5bM+7qORRoHvj446NOPjb+uMpHLtwP0ciWloecQhUFPrkdJSVzkytx4tYZYsiopVgM9XAh8CgsUKCArAmJVKdjQYnCl4Bbi5+6eV3GM2oZYzTFS/wt5frza5h6rJQAAAABJRU5ErkJggg==" />
+										</defs>
+									</svg>
+								</div>
+								<div class="h3">Коронка + Абатмент + Имплант</div>
+								<div class="slider-1__price">
+									<div class="slider-1__price_column">
+										<div class="p"><span class="span">61 550 ₽</span></div>
+										<div class="h3">39 800 ₽</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">или</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">2 платежа</div>
+										<div class="h3">по 19 900 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-1__slide swiper-slide">
+								<div class="h2">MeDent
+									<svg width="74" height="50" viewBox="0 0 74 50" fill="none"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M74 24.1455H0V49.8847H74V24.1455Z" fill="url(#pattern0)" />
+										<path
+											d="M0.319641 21.3605C0.319641 9.60816 9.84659 0.0814209 21.5986 0.0814209V21.6782H0.319641V21.3605Z"
+											fill="#9D89AF" />
+										<path
+											d="M69.5561 21.3605C69.5561 9.60816 60.0286 0.0814209 48.277 0.0814209V21.6782H69.5561V21.3605Z"
+											fill="#9D89AF" />
+										<path d="M34.7793 21.6762L22.5401 0H47.0191L34.7793 21.6762Z" fill="#C1D436" />
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+												height="1">
+												<use xlink:href="#image0_49_969"
+													transform="translate(0 -0.943203) scale(0.00529101 0.0152198)" />
+											</pattern>
+											<image id="image0_49_969" width="189" height="128"
+												xlink:href="data:image/png;base64,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" />
+										</defs>
+									</svg>
+								</div>
+								<div class="h3">Коронка + Абатмент + Имплант</div>
+								<div class="slider-1__price">
+									<div class="slider-1__price_column">
+										<div class="p"><span class="span">61 550 ₽</span></div>
+										<div class="h3">39 800 ₽</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">или</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">2 платежа</div>
+										<div class="h3">по 19 900 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-1__slide swiper-slide">
+								<div class="h2">MeDent
+									<svg width="74" height="50" viewBox="0 0 74 50" fill="none"
+										xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<path d="M74 24.1455H0V49.8847H74V24.1455Z" fill="url(#pattern0)" />
+										<path
+											d="M0.319641 21.3605C0.319641 9.60816 9.84659 0.0814209 21.5986 0.0814209V21.6782H0.319641V21.3605Z"
+											fill="#9D89AF" />
+										<path
+											d="M69.5561 21.3605C69.5561 9.60816 60.0286 0.0814209 48.277 0.0814209V21.6782H69.5561V21.3605Z"
+											fill="#9D89AF" />
+										<path d="M34.7793 21.6762L22.5401 0H47.0191L34.7793 21.6762Z" fill="#C1D436" />
+										<defs>
+											<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+												height="1">
+												<use xlink:href="#image0_49_969"
+													transform="translate(0 -0.943203) scale(0.00529101 0.0152198)" />
+											</pattern>
+											<image id="image0_49_969" width="189" height="128"
+												xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAACACAYAAABeM2hDAAAAAXNSR0IArs4c6QAAIABJREFUeF7tXXd8FNUWPkkICYQQQgJIaAkpSAmgSAkQ6R2RXqWIYOjSBZEiRRAQREB6x1CkGZpKhxgBEcFQHiGB0AVDJ5B+3++b9ybu7MzuzuxONrPL7l/8yNx7T/nmzLnnnnuOE9nBLyUljaUmp9KrV+mUkZ5BmRmZ5JLHhUoGFHXSZy898wHLYE+szDUjxtKttqaLkye55Skj4v3erYcs9WUqJxtXN1dyc3OlfB6u5JbPjZycnETPW41gKy9kU4y+fJHCHt5/So//eU5JD57Q04fJlPz0BaWmponE5lOkELXt20DE34PnG9jlGwutLGbrLhdYoheV9B4i4n3/lhh2N/G+iBhX1zxUsFABKujrSYV9C5J3EU/yKeZFBQrmtyl8yJWypplKTU1l9xIf0s2EB5R09yE9fvhMLl9kCPSMMXb2Whd68SpR9ly29KC7W1GqHriLnJ3zyAa9If4KFvKkYqV8qaR/EfLz9yH3/O6axotcPWmOiZSXaezG1Xt07T936P6tfygzM0suL4LnDIEeDz16uYPFXptl1rxaH1S+zFAq6tlTUq+GLL0cnuD9FC/lS2XK+ZF/iB/lL2C7L4AmQA/reyfxH4qLvUk34+6YDXRd5RkDPZ6LvdmPPXr2lxx928wzBfL509tltxj0zy0Bva4Q8AKUDipO5ar4U4mAIuTs7KwJHMlVVK4Sm5WRxRIu36HYU3GKXBc5zJkC/bO0aHbu6ihijMmZziaeCS07jgrnb29Qp2qBXlcYcIEqVi9L5ULLkIurS67iSa6ScoXIzMxMFn/hNp2LuUIvniXLpVXRc6ZAj8ku3xnBHjz+VdG8Wn24cMHKFFp6pVF95gToeXnk88hHoTWDqUJVf82D3+qgv3H1Hjt9+CI9e/I8R/EjB/SvMq6wM3F9KSvLeuHEnGAa7kbV4K+pYN66uQZ6ni8Pz/xUo34lCijvp9kwqNVA//ThcxZzMJakQmY5AQQ5oMe6cffGsXsPD+cECVab07dQDapYcpFJXeakpddntqifD4U1qUy+bxQySZfVBPX/hXKcILgysacS6FzMZVU2qHIFJBf0qRk32O9xH1BmVqrcqTX1nLOzK1ULXkb5XSuZ1KU1QQ8h4QtUsXowvVP3TU25PCYFZYmGYd2P7/uTHtx9aMk0Zo2VC3pMnpg0i934e4dZ6+T2oOI+DSmk+CxZerQ26HnZePsUpHdbV9OM1ZclLHMUG3/hFov55Rylp2eYM9ziMUpAn5H1lJ2O60jpGU8tXteaE7g4u1H1kI2SKQdSdOQW6EGLi4sz1WgYShXeLptjmJMre9UJQBjy1JGLdOlsvFwacuQ5JaAHAbcfL2IJd9bnCC05NWmpom2obNHPZeswN0HPyyCoQmmq3bwyubq6yqZbbfmpujASv478eMZqm1VjwlAK+sysFPZ7fHtKTUtSW8Y5Ml+ePB5UM2QX5XH2kq1DLYAewsAmt1G7Grl2qitbYKY09+LJS/bLtt9UP2Qyta6hvysFPeb5+9kaduXmEnOXtOo4/+JdqYzPSEX60wroIagCBT2oaccwJLcp4kENIauyIDas+7fEUPLzl2rQpMoc5oCesSx29lpXzSejueX1pepBO8jFWVn+i5ZADyXjQKtpx1pW3+BaDPrH/wDwv9Kr5FeqgFWtScwBPdZOerGZXUycpxYZOTJPcKl+5Of1sWLdaQ30EI6bW15q3DGM3ihZWDE/5grXooWePk5m+zdFa8rC84IwF/QYf+56T/Y0+Yq5Ms3Rcfnd/eidwB3k5KQ8yUuLoOeB37xrHatZfLNBjwsde7+PzvF0AnMRZAnon6bsZecTpmoyGa2i/0jyLdDVLL1pFfS8q9OqRzh5eXuYxZsSnJi1QFpaGvt5y8lcOXSSy5wloMcaF28PYUlPTstdzirPeXmUo6oBG8zSGQjUMuhBHw6xWnYPJ/f8ec3mUY4iFE+O3Pcju/+g65dvyZk/156xFPQv08+zM3EDiLHMXONBf+GqQZPJy72VYp3x82gd9KDTr3QRato5jFxcci5NWbEA/zoZz34/FqsZIBgixFLQY14tJaPJSR02pRRbAD14qFQjhGo2qKgYm6b45/+uaGLcpt+/6YQmfV19htUAfWpGIvs9rmeuJ6PJTR02pXRbAT34aNS2JvmX81OET1P8KwY97q7uWntEk5EaKWbVAD3mvfZgOrv1IEquPHPkuaLedah8ifkWA8CWQI9QZtu+DXKkIoNsQR6OOsO07sfrIk4t0KNOzumrXSgjI2dueJl6S5A6/E7IGsqXJ0S2rgzNaUug5/x7/2LUvHOY6pdRZAkSt50O7jhpSj+a+rtaoAdTNx7OY4n3NucKfyWKtKCgYl/I0pMpAm0N9OCnbvO3qVwVceEqU7wa+7tJYaL2zM5VR23GreGZVRP0uZWMlsclH9UI+YFcXcSV2sxRui2CHm5O+36NVE1OMwn6U0cusgun48yRca6OURP0YOTu0+Xs6q2VVuWpzBvtyd93nEkdySXKFkEP3oJDA+jdllVVk4PRiZBmsHPVQate85OrQFPPqQ36rKwM9se1jvQy5a6ppVX5u2seL6oRsk1R6rCphW0V9IhetelVX7U0BaOgP7b7DxZ/6aYpWWry72qDHkxaMxnNUD1KS4Rtq6AHzyX9i1GzLrVVsfYGJ0H25M41h2wiJi8FhJwAPU6jzyf2opxORjNWj/J1BT34btn9XSpeysdi4BucwJatPASUE6DHvNaog1mu9EB6o+CHFitX/wWxZUsPXhDCbKGCtZcULG5BbVt5wCZ9+ZyI3uiDJyfrYJqqR/k6W3rw/n7vBhb79pKgt9WIjS4gcsrSY42crINpqh7l6w56XCyv9141i76CosGZ6Zls0+KfJBsdWCJwa4/NSdCDl5yog2lp6rApGdu6ewP+UEqk66BmFtXKF4H+2qU77MhubeWRm1KmtTayuuuoXQcTYbkqgZMsSh02JSd7AD14rNGwMoVWDzTb2osG/rwlht2WaNFiSqBa+3tOW3rwG39/Mrvzz35VWJdbj9KSxewF9IWLFqZ2H9ZTB/QpL1NY5KKfbDZMaS2fnl+HS0aL60QZmZZdindycqF3QpZSftcqZitSzstgL6AHrx37NSYvH/PKhwiEfOX8DRb901k58tP8M9aw9BCCGnUwldSjtETw9gT6auEVqWpt8zJPBaA/uOMUu3HVOsfslihPzlhrgd7SOphK61HK4d3QM/YEelRJe6/nu2Z9GbMHZWRksMhv9+dawVVLlJkbG1ndNS2pg6m0HqUlcrIn0GPj331Ic7OiONmgx1XAfZHHLZGppsZay9KDaaQen0noSCmpDxTJAPUoawRvUS112NTi9gR68GrulcJs0NvKhW9TiuX/bk3QY01z6mCaU49SLv9Sz9kb6M29QJ4Nenvy56Fwa4NeaR1Mc+tROkD/rwTM9euzQR+56CemtXqUlijY2qAHrUqS0cytR2mJTOzN0uN0tueI1opr5HCgR3z++4XqHLJYohQ1x+YG6EG/nDqYltSjtERG9gZ6yKJ938aKy31zoLe3TWxuuDc8GOXUwbSkHqUD9EIJmLOZ5UB/NfYWO77vjCXy1NzY3LL0EISxOphIKqviv171shZyFGCPlr56vVCqXCtIUbyee/hcTBz748RFOXKzmWdyE/TG6mBaWo/SEgXYI+grvB1EYU1ClYP++L5z7GrsdUvkqbmxuQl6CEOqDqYa9SgtEbQ9gr5MsB81bl9TOejtLVyZmz49D0r9psxq1aN0gF4oAXPCltwbsn9TNLt78x9L5Km5sblt6SEQ3TqYatWjtETQ9mjpCxbypE4RjZVb+p1rjrFHDx5ZIk/NjdUC6Pk6mFlZafROyGrKl6ecIuWoLVR7BL2HZ37cpFIkV+7hHSsPsccPn6kt41ydTwughwBQBxOdyNWqR2mJUO0R9Cj798FwZY0qONCjQGt6au60s7dEicbGuuXLS6UCiymyADlBC5LRstgzqyWVGePh9vUHLCU5NSfYzLU5nZ2dqWyFEor0rOjhXOPMsbBDAipKwAF6FYXpmMo2JOAAvW3oyUGlihJwgF5FYTqmsg0JOEBvG3pyUKmiBBygV1GYjqm0I4GUlBR2/PhRunr1Knl6eFKtWrUo5M03Obw7QK8dPTkoUUkC8fHxbPDggVQvvB69U+MdSn6eTJs3R1JISAhN/mKaA/QqydkxjUYkgB5pLZs3pVFjxtDXc+aQp6cnV7ysV8/etHtPFE2dPt0Beo3oykGGShI4duwYm/PVTNq2bRe9/XZl+uvCJfrtt19p7uzZNH7CRPLze8MBepVk7ZhGIxKIjNzIfvv1V5ozZz4H+jp16tDN27dpxIhRVKlSJcrKynCAXiO6cpChkgT2793L1qxZRevXR3Kg//N8LK1bt4b+vvs3tW3flgoVKuQAvUqydkyjEQk8ffqYNWnUiJYuX04fdO+e7d4sX7qUSpQqRYMGDXKAXiO6cpChogQOHTjApk+fSsOGDae3qlWjZ8+eUGRkJMXHxdG6Dd+T07Nnz1haWprBJd3d3alAgQJmhTYzMzPZ48ePjbLj5eVFrq6uZs1vqZweP37MMjMzFU3j4uJC+fLlI3d3d4tpRumVFy9fKFrf1MOgzcPDQ0RbcnIye/VKuqQ4bnX5+Mjv2idFt6urC3l5eWevi06MDx8+NEWuxX/PmzcvFSxYUMTvrRs32LYd2yjuP3H4O4XVCaOWLVtT3rx5nZw+7teXRUdHG1w8KCiEovbsMUvBJ04cYxH9+xtlbPvOH6l8+fJmzW+pxN6tW5slJSWZNY23tzdVqFCB6tVrQE2aNaNixZSnMW9cv559+eV0s9Y3NOiTT0ZQxMCBInlOnTqFbY6MNLjWxkj4wO/I0sP6tWvZrFlfCuaqVLkybd26LXs8XrLq1d5SlTepySD/JcuWyaKbH28S9Hhw7/6fKSAgQNHEGDdh/Hi2c+d2uwS9LlOw/m3btqVPRowgX9+isuWkJdDXrFmT1qzbIIv21wL0UGZEhNh6GENzeno6q1u7Fj1//tzuQc8ziIOQ2XPnUb168lrDaAn04CFy81aqWrWqSeC/FqAvGxREe/bsMykMXXTHxMSwfn37mPy82ap7Y4gx+MdffTWHWrdpY1JeWgM9YtorVq0xSbddgh6by6dPnwr0qtTFmTTpc7Zt69bsOWAFpay+1kDfPyKCunTpJonpzPR0evbsGV27do0OHjxIhw8fJKmNMK6wrVmzjqrXNF6PRQr0kD1kYu4Pcvb0FPdikvLpsQnUD2L88MN2qhhqvHiSHNBnZWWxv//+WxYbH37Ym27duCF49qOP+lO3Hj1MjsfG3dv73w20yQFIOJPayFatWpXOnTsnGK/ExUFXk/A6dejp038jN1JzYgGtgX702LHUt28/k9YOtN+8mcjGf/op/fnnnyJZ+/r60r6ffjEa+ZIGvTf9duqUrPXlKJh/Rgr02HxejI0VNNaTszGUA3oltLVu2ZzBkOj+ho8cSR9/PEB1OWANSdB36NSJ9u7eTSkpKdl0KHFxfj91ivXu3VPARJ++fWnt6tUiWdgy6MFMWloaGzJoAElFwPDVGDFilEHF5Tbo4c4gpHzp0qVsvcA9275zJ735ZgWDdNsl6PF5v349gU6fFjZRluviTPtiMtu0aZMA4IuXLKHBAwfaHejB0PPnz1nrls3pn3+EBbM8PDzo8NHjku4GxuU26KtVq0YtWrWi6VOnCvTSsHFjWrTou9cP9IHBgfTldGEMWY6LgwOpd+vW5iwI/0O+Q9SefYT/1/8ptfT37t1hf/zxB125ciUbZIULF6YKb1aAD60oXi4Vp1fi3ujysnP7djZhwngRfzNmzKR2HTpIAii3QQ/3ZvnyldSoQT3SPbiCtd8VtYeCg4Ml6bZbS//xgAHUuGF9gb8nx8U5e/YMQ86D7q9bt240ZNhwqhNW02zQ//XXOTb/66+5rw/yo6V+2EA2adKERo35lEqWLGnSH1QT9DilDA8Po+TkZAFp4eHhtGzFKs2CHgdKs2fPYvquZ7NmzWj+goWvF+gnf/GFU+fOHdmFv/4SKHHv3v0UEBhoEFBfTp/ONm5cLxizfv1GCgwONgv0iAIsXLCAli9fKruTOdyKed98Q+HhxuPlaoIeDH8ydCg7cOBnAe+ILpw+c1ayRYwWLD1An5T0gDVu2FAQyYG137Nnn6Su7dbSA/QbN65nSlwcALT+u3VJ92gfrs3x6BguXGmOpZ86ZQrDVS+lvzx58tAqhA2rVzf4gqoNeikwgG5Ecfz9/UV0aAX0oHHatC/Ypu+/F4j5vffep6/mzBHRbdegv3fvHlPi4pw7d45179pZ5NpMnPyFE5K7lIJeyk92dXWlXr36UKv3WlHJkqUpIyODiz4sX/qdaOONsCE231JxaxCpNugN5RotX7mS6tYVd7eWAj3i7JGbNyt6x/PmyUulypQx6s4ZClny+TJ3795lzZs25uTJ/+Au7tn3k+iFtWvQg/kunTqw2NhYWS6OlG+4bt0G7pBGKej5vOgXL/7NQsRhyuq1ayUTo/CVmTJlEukeiIHoQUOG0JAhwyQBoTboL126xDq2byvezM6cSe3aiTezap3I+vv742tiEehB9MQJ49n27cJcqTZt29KsWbMFc9s96KUUI5XJh1TShvXfpfv37wuiNnBt8uTJoxj0K1Ys4zauuj9TBxa4FAxrpUuDl5c3HTtxgksp1Uej2qDHYVXzpk1FoP980iTq3v0DWe6NIhP//4fVAj3ScVu0aEZZWVnZZCCZDl/L0qVLZ9Nv96CXdHHKlsVnT6BERFe6dha6Nl27dqdJU6Zwzym19C2bN2WJiYnZwoeVP/HrbwZdFf7BRYu+Zd8tWiTAzuq161H3JMdBf+fOHdakUQMRbseN+4x69emjedCD8E/HjGG7dwvTIDp06EDTZsx8fUAv18WZN3cuW7lyuUDhvGujFPT3799nDeqFC+aSm/oq5VcPHjqUBg8emuOgN2TpUWulS5cuskCPqAkiPkp+pcqUoZ07f7TYvcGaCQlXWZvWrQWRMgQF9v98gEqU+F9JbLu39GDSlIsD1wYb3nv37km6NkpBLwXcYIQ8w4UvghQwkOT00759gj81adKMFiwUx5zVdm8uxsayTp06iMiaO28ebu3IAj3cMWvm3uhe/OAJlwq96n61XwvQS7k4AQEB8PU4RV68eJF16tBOoGxdISkF/fatW9nESZ8rMXZGn0Xph63bduS4pT906BAbOlicaoF7mVKhUy2FLHUFePnyZW5DrnsIiKjZT78cpOLFizu9FqA35OLs3ruXAgODnRbMn8+WLVti0LVRCnpD8W5z3wJDJ8lqW3qpzTdoPh4dLXmjSqugB80R/T9iJ06cEIj8gw960Weff/76gF7Sxfn/japmzZow3Xxo/kAKURteako2slKHYsWLFyefIkXMwn1AmQDJQxa1QS+Vpo2zguPRMZpOQ5ASqlRgAsGEnw8cop/37ydTd2SVKEoTqcXIssSJrC7hUi4OsvTmzvuG9Ded+q6NUku/+8cf2aefjhHIbcSoUdS/f4TJfBolwlYT9Mi0DK8TJrqUYehU09BeSQs+PS/DD3v3ZKdOnRKI9KP+/ZHUJ0pG1L8YrkQPmgW9lIuTP39+mvP116KUYd2ojTmW/vfff2e9ewpvzUi9iEoEK/WsmqDfsG4dmzlzhmgZpFQ3aNDI5iw9GJHSA17KwUMHvz6gl3JxcGIXtWtXtrKlXBullh5WM6xmdcEhSVmJswEpIL948YLhSp/uD1fwpGrBqAV6JGy916qV6Iqlr29ROnj4sOTBmC1YetDYrUsXdv688GZY85YtRREyu7X0yGVHNp7url7/7quUa6MU9IaEvfPH3VSunPEGxF9Mnsy2bBFeYPn66/m4LJEj0RvUd8EdT/1sVPBg6CSWfyG1vJHlaZS64I+XOSnpgcCw2C3opVwcfWsr5dqYA/qdO7ezCeOFlzJwQIXMSWdnZ0l3ISkpiatNrpuvg8Oeg4ePcqE2fVottfSIy48fP57i4+NEHx18mfCSGqveZgugxxlM+/Zt6crly0a9SbsGvbEkKUOujTmgx93TFs2aCA68MA82hhMnTxZduEbeyLDhw0TKMXaJQwr0uPDy3vvCMwde2yjzjCoRaOly9PBhOn/+vGSOP0ohbvlhu8GbR8YsPb6cy1asMnu7kt/dPbvNjO4kprIsjS145MghJnXVU3eMXYNeysXhmTfk2pgDeow5efIk++jD3iJgYQNdq3ZtQigyk2XS5YsX6cyZM6JyHAix7dz5o8FLL5aU9TMEEqz53dLlVLt2bZORJrWyLHVpQYuZXVHiMoyWgB4ZrG3atKZr8fEG3w27Br0xF8eQa2Mu6DFuc2Qkmzp1imLLh+zA+fMXUOOmTRVdIlG8kM4AhPLmL1goq0oYhtkK6EHrL7/8xIYPG/b6gl5KWcZcG0tAzwt84oQJJksE8hrx8fEh5LvUrBlm1NqqZenhzvTo0ZNQ8kOqgq4hpNgS6HHhv2XL5qKiTDxvNmXpBwz4mP2qd9zcuXNnwm0nQ8qCi9OsSROB22FqzJMnT7jDG/3f1m07ZFUtxiYVHSV27dhBhkpAlyxZkuBidenWTTJEqb92g3rhiqsW4zYR3KuiRYuiNgyF1wtHHF7Wevrro1XMzBni2L4lX5ugkBDJjEvcXd60SXgdMDQ0FPUrTbphPD17oqLY+PGfSpKndC7dSdq0bs1Qckb3N2z4cNUPI/n5ZTNsiSLUHItoQuK1a1xpPT4ejxIguHgupwKCmrQ45rJNCdgc6G1TzA6qtSQBB+i1pA0HLVaRgAP0VhGzYxEtScABei1pw0GLVSTgAL1VxOxYREsScIBeS9pw0GIVCThAbxUxOxbRkgQcoNeSNhy0WEUCDtBbRcyORbQkAc2DHheUE64mcA2Kze1criWBO2jJfQlwtclnTJtGnTp1odp162ruJeArp/388wGTlXlzX5wOCmxBAk6HDhxgQ4cOJqnqtFpgQCugv337NvPz8zN4a0sLslKDBhTBffTokeRNMzXm18IcTkgZjYmJpkqVKivux2kNBrQAer4E+Z/nY8nNzU1zX0O19IAaoq1aNOPq/w8bPtxu+eRA//LlS9zYFykUGY24b+rm5sbd6IcrdPv2XQoIKENeXv82rE1MTGTJz59zmY7u7u6SwsI6aNGJ3HMXFxcnpArfvn2bihQpkl0YVEp5ckCPhgK4qOzp6YUGAuSEi7ESP1xBTE1NRRowZ7FhvR89SkKVNsnUYJ5/dN9DJV+UHYcseHnoL4G+U/HX4sEfBQYGGqyCYAykoPHatXjKyMiioLJB5J5fKM+UlBSGhs0o8qp/V5j/m1TlB8ybkJDAVZgIDAiUnPfWrVv0/nutCO1PBw4cDDka3EdBn4mJ1yg1NZ3KlCljMLUaPYXRxA3p2NA7itw+efKEQoLezKYBz/C3soAhPGdMRtAbut2gAFixYsUUv5xOV65cYe3ef4+GDv2EBg4eLJgAn7q3qoTS2HHj6e+792jDhnVcDj1ekC9nzaKwsDo0bMggQrc//HCRBFflqlatKiLk1Knf2Ie9e9PK1WspKmoX7f7xx+x8fFz4RtEoHx8f0ThjoI+Pj2dYX7ekN0D/7aLvKCgoSDTXnj1RbOzo0cghp2/mzc3uXAKFTJk6lVq3Fra2R2OIsJri5nCQR58+Hwrm37dvD5s8cWJ2ozXcdUU7TSkAGlIoKg+MHjmcAAr8YCDQlVE3ZXrx4oVs8cKFtHDxEmrU6N96Ounp6VxXR1SB27Nnn4C26OjjbMyoMdnNrPHC7N67n/z8/LKfm/Xll2z9+rUC0rD+2XN/ieSIO7NTJk3KbrMEIzBy5Gj6oFcv0bN84z10Y1m9ejWdjInh1vD29uawgPsJqP8JA4hfUFAIrVi1ShLM0Adub+kWoDKnCJhR0IOIiuXLMVyYwNs8euw4Snn5kj77bBzHcLly5QmXB9Bs+caN64Tu2QA+Sr/plvTDPHxrHlz0wFyfjBhFXp6eFLUnilBPvmLFirR56zaR9TIGepQK3Lt3N6EqMXLqL1++SAMjIsjbx0ekeNBw8Jdf2LBhQ7gKXc2ateDoRu/Xzz//jP65f5/27t9PpUv/2xsKFujChQu0ZPFCQl1HFGJFIVN9C4Pqb82aNAIIuZcHVvrc2bPUqEkT2VYIpURQKa5cuXI0f8ECypvXnU6ejOF40/1y8XeUGzZsCOBnz4/7xH379BKVHcG86AOGIrYwLKBfal5YT1Q84Pd3uIzj7ExUubLQgJ05fZr16dOLUOns448HcEBdvXIlLVmymKQKW/GVnCFz0NytR0+Kj4+nz8aN5eSIrz/mguE7fPgwoRGHoc6G6E+MTikrVq2hypUrU3xcHOV1dzd5AV/fyJgEfeVKFRgsg67V4je/KOu34ftN2YKfP/9rtmLZMvrhh+1UMTRUoHCeedRS3717r+DTzzf5WrlytSiCJMe90WXq22++YUuXfsdV2NXtnoFn+KrC+s2Bjx05wgYOjCBDPWT5tjSGfHpY0o/79eO+fm3btpcNdF26r169yuBaSHV50VcaiquePHmSjp34FUaGWw80RkVF0dHj0YK9GSoQd2j3PsmxiHxTiQEDBhn06Tt3bM9Qr173xhXcQOwFcE1TFw+gi29J9NZbb9HGyM3ZLzC/T4qIGEifjBiRLbMe3bqwixcvch0Z9bvHdGzfluHWHLBoyIWVs7+RBfqwsDBBL1T48Kgvo98GnrekCxcuFlm5CxcusM4d25OUQPm/SbWVNwV6CByVEM6ePUN37twh9MeCxYILo+9m8aDXb2jMN4Ho2r07TZr0v84puj9ToMcXp2njhpwVHT9+AjVr0UKxP8+3DkIXxpGjR9P777cz6BrxLynf7AH+Oq5i1qpVW1SHH/uMpk0bcs2RR40ag5dS5M/zvJoIGXT8AAAFj0lEQVQC/cOHD7l1EOlr1aqVQEZLv/uO4uLi6Pc//hTIjwe9fuskXD0cO3Y0LVmyjOo1aJA9hn8Zjhw7IXJx+OrYqLAGdzwgIMAsAyML9LgDqtvU4ObNm1xvJ/0mZseOHWMDI/rTvG++pebNmwsI4oEt5Q9jg/xu3brUsXNnmjp1umCcMdADrIMHRnB1aGrVqoV6L9y/jx89St9v2kRvvVVNMBcP+tlz5wr8d76iMtydadNmKAY9tA/+Phs3jiv8hApgkyZNMlqJQcoiwZjARUQZPZQiHD1qDHXo3FlED9yuhvXr0xtvFOXq7vNfGkNdDK8nJLBPx3/KVWHDvGPHjpPsYm4K9PxXA3sgV1c3EQt46Y9HR0uCHsagZ+/e2X/DHmj0yJGkT/PCBQsYXKUDh46IAhzYt6CnMPYe6enpnHGZPHmyIKiimqVXE/SjR4+lvv36CQSDDWmb1i1FXw4wYAz0ffv24Zo743I536eVr4xmbdCDVnx1Tp8+SdOmTaPrCQn0/aYtssuB6CoLp9AzZ8zkwP/tt4skXx5+Q4setXApsec4fPSoaC+lOy/2VTNnTOO+hvobYTxnCvTXr1/n3Bh9ABsDGm/p1QA9vw6M1IZ16wg9EWrXrg0fX5HFt7qll9qkrF69ks2dPZuWLFtB9eoJu3wbAj1CZlVCK1KDBg0EG7q1a9ew2bNmqmvpJ05g23/4AZ9uWdEYXtGf/L9+vxzro/8M70oYKqDFb2iHDBnGWb5u3XrIiq3zrly3Hj1o4sTJArBgQ96oQT366KP+NGrMGMkvDHoBly9fntau3ygLaDkBel5WAyMi2IkTxyj24mVFPr7VQY/Y76QpU6lTp05cpAahzCGDBlGx4sVp164okaUyBHpY1dq1alA+Dw9uY4zQIGLAH3T/gCsuKtXyxlz3ZsnixWzhwgXZ1hFr626k4J69Sn6VnSbB19c31GtK6iVAlOXu3bvZkQg+GiP1ZeTHY0N79uxZwjkLImZS1SBQxRm9wIKDgzmQxkRHs379+nJhaP2wK/YV1au9RaiShj0R3BX9DSPfbQX7r4ERg7P3B5CBm1s+UfdHNUGPYEhwuXLcfgny6tKpA71MSaHDh4/KegF5uVkd9GjPeOzYCcrISOOEipAhYutLl68URVtMuTfoTTVp8kQqWLAQveH3Bt29fZuwGcXnftmKFRQeLvxqmAt6+Nrt27Yh/mDrqzlzBDXnUYVt2rQvqGTp0uTi5EQ3btygmmFhtHTpctkbWp42hPEQLcPZAxS8YcP3Bg+I+DEocbh69VpJxfORNsyLuDvmRXh4zboNkl8tftOOZ4OCgkS9uvCFnTFjGm3ZtInTH8LZ2CQjdQG9CvQbyqkFepQWrBMWxuEG6SBoqAe/ftGi7xTnjHFvzKULF6h4iRKSlgKF+RF75y0FgIiIQGzsedEY+FqInQYEBpKvr6/BjWynTp25zSZi/aX9/QnRIanmxlgLhVnBYGhoFcmoQ9x//sNOnz5NHp4eADkVyF+AQFtAYICoz9O/9An/hujH+T//BM0G616CjhO/niAXF1eqX7++ILIAIMDiXr16hTLTM+nNChUI4VxD1ZWlLD2+HqD70oVLlJKWSkFBgVw0Rv+8Q3csf9hmqE8uv8/g501LS+OAXKNWLYPzYpOM4rT46kCG+oaDXx/yOHP2DPoDk7eXN/eCVqhQQcQzj6+SpUtS8eL/a8mJH74M1xOuc+P4sCv+H0GS+/fuUWiVKqLTfYxBqPbBgwfcuUzdunUle3mZcicVfRZMTWbs78aiN5bM+7qORRoHvj446NOPjb+uMpHLtwP0ciWloecQhUFPrkdJSVzkytx4tYZYsiopVgM9XAh8CgsUKCArAmJVKdjQYnCl4Bbi5+6eV3GM2oZYzTFS/wt5frza5h6rJQAAAABJRU5ErkJggg==" />
+										</defs>
+									</svg>
+								</div>
+								<div class="h3">Коронка + Абатмент + Имплант</div>
+								<div class="slider-1__price">
+									<div class="slider-1__price_column">
+										<div class="p"><span class="span">61 550 ₽</span></div>
+										<div class="h3">39 800 ₽</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">или</div>
+									</div>
+									<div class="slider-1__price_column">
+										<div class="p">2 платежа</div>
+										<div class="h3">по 19 900 ₽</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="slider-navigation slider-1-navigation">
+						<div class="slider-1-prev slider-prev swiper-button-prev"></div>
+						<div class="slider-1-next slider-next swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="slider-1-pagination slider-pagination"></div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="text-and-photo">
+				<div class="container">
+					<div class="h2">О клинике</div>
+					<div class="text-and-photo__wrapper">
+						<div class="text-and-photo__img">
+							<img class="img" src="./img/photo1.jpg" alt="">
+						</div>
+						<div class="text-and-photo__text">
+							<div class="p">Мы рады приветствовать Вас на нашем сайте. Стоматологический центр "Клиника
+								ЕС",
+								является центром клинического мастерства компании Nobel Biocare Russia, основанный в
+								2015 году под руководством ведущего специалиста Ефимова Д.В. </div>
+							<div class="p">
+
+								Специалисты клиники ЕС – это профессионалы с большим опытом работы, имеющие высокую
+								квалификацию. Наши врачи имеют сертификаты и дипломы международного образца. Основное
+								направление клиники – это самые сложные клинические случаи, когда пациент потерял
+								надежду избавиться от съемного протеза или ему отказано в классическом методе
+								имплантации из-за недостатка костной ткани или по другим серьезным причинам.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-adv">
+				<div class="container">
+					<div class="line-adv__wrapper">
+						<div class="line-adv__slider swiper-container">
+							<div class="line-adv__slider_wrapper swiper-wrapper">
+								<div class="line-adv__slide swiper-slide">
+									<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M25.596 15.2058C22.6007 15.2058 20.1637 17.6428 20.1637 20.6381C20.1637 23.6335 22.6007 26.0703 25.596 26.0703C28.5913 26.0703 31.0281 23.6335 31.0281 20.6381C31.0281 17.6428 28.5915 15.2058 25.596 15.2058Z"
+											fill="#F1592A" />
+										<path
+											d="M25.596 10.5359C20.0255 10.5359 15.4937 15.0678 15.4937 20.6382C15.4937 26.2085 20.0255 30.7404 25.596 30.7404C31.1663 30.7404 35.6982 26.2085 35.6982 20.6382C35.6983 15.0678 31.1665 10.5359 25.596 10.5359ZM25.596 28.4972C21.2625 28.4972 17.737 24.9717 17.737 20.6384C17.737 16.3049 21.2625 12.7794 25.596 12.7794C29.9293 12.7794 33.4548 16.3049 33.4548 20.6384C33.455 24.9715 29.9293 28.4972 25.596 28.4972Z"
+											fill="#F1592A" />
+										<path
+											d="M20.4907 39.636C20.187 39.6828 19.6635 39.8519 19.2653 39.9806C18.4142 40.2557 17.4495 40.5673 16.4439 40.5673C15.6845 40.5673 14.9935 40.3903 14.39 40.041C12.6948 39.0602 12.2888 37.1483 11.9922 35.7523C11.9113 35.3717 11.7956 34.8267 11.6893 34.5446C11.4071 34.4383 10.8622 34.3226 10.4816 34.2417C9.70577 34.077 8.77082 33.8775 7.92464 33.4426L0.355427 41.0118C0.0581352 41.3093 -0.0640731 41.7393 0.032573 42.1487C0.129044 42.558 0.430713 42.888 0.829729 43.0209L6.2666 44.8334L8.32751 50.5373C8.46845 50.9275 8.79936 51.2189 9.2045 51.3092C9.29222 51.3288 9.38064 51.3383 9.46853 51.3383C9.78683 51.3383 10.0966 51.2129 10.3266 50.983L21.0792 40.2304C20.8729 40.0049 20.6494 39.7691 20.4907 39.636Z"
+											fill="#F1592A" />
+										<path
+											d="M34.748 38.1407C35.0563 38.1407 35.3399 38.0835 35.5866 37.9406C36.9973 37.1244 36.6158 33.9475 37.7605 32.8028C38.9053 31.6579 42.0822 32.0394 42.8985 30.6287C43.703 29.2382 41.7928 26.6811 42.2172 25.0928C42.6274 23.5576 45.5725 22.3025 45.5725 20.6381C45.5725 18.9738 42.6274 17.7184 42.2172 16.1835C41.7926 14.5951 43.703 12.0382 42.8985 10.6477C42.0824 9.23704 38.9053 9.61855 37.7606 8.47368C36.6158 7.3288 36.9973 4.15191 35.5868 3.33585C35.3399 3.19298 35.0565 3.13573 34.7481 3.13573C33.4966 3.13573 31.8367 4.07925 30.5659 4.07925C30.3858 4.07925 30.2131 4.06017 30.0508 4.01692C28.5157 3.6067 27.2605 0.661621 25.5962 0.661621C23.9318 0.661621 22.6765 3.6067 21.1415 4.01692C20.9792 4.06034 20.8068 4.07925 20.6264 4.07925C19.3557 4.07925 17.6957 3.13555 16.4442 3.13555C16.1359 3.13555 15.8522 3.19298 15.6056 3.33567C14.1949 4.15174 14.5764 7.3288 13.4317 8.4735C12.287 9.6182 9.10995 9.23687 8.29371 10.6473C7.4892 12.038 9.39936 14.5949 8.97496 16.1833C8.56474 17.7183 5.61966 18.9736 5.61966 20.638C5.61966 22.3025 8.56474 23.5576 8.97496 25.0926C9.39954 26.681 7.4892 29.2379 8.29371 30.6286C9.10978 32.0392 12.2868 31.6577 13.4315 32.8024C14.5764 33.9473 14.1949 37.1242 15.6054 37.9404C15.8522 38.0833 16.1357 38.1405 16.444 38.1405C17.6955 38.1405 19.3555 37.1968 20.6262 37.1968C20.8064 37.1968 20.979 37.2159 21.1413 37.2592C22.6765 37.6696 23.9317 40.6145 25.596 40.6145C27.2603 40.6145 28.5157 37.6694 30.0508 37.2592C30.2131 37.2157 30.3856 37.1967 30.5659 37.1968C31.8365 37.197 33.4965 38.1407 34.748 38.1407ZM25.596 33.1671C18.6874 33.1671 13.067 27.5466 13.067 20.6383C13.067 13.7297 18.6875 8.10933 25.596 8.10933C32.5044 8.10933 38.1248 13.7299 38.1248 20.6383C38.125 27.5466 32.5044 33.1671 25.596 33.1671Z"
+											fill="#F1592A" />
+										<path
+											d="M51.6448 41.012L43.7744 33.1416C42.8111 33.7933 41.6454 34.0431 40.7101 34.2418C40.3295 34.3227 39.7844 34.4384 39.5024 34.5447C39.3961 34.827 39.2804 35.3718 39.1995 35.7524C38.9031 37.1484 38.497 39.0603 36.8017 40.0411C36.1982 40.3902 35.5071 40.5674 34.7478 40.5674C33.7423 40.5674 32.7774 40.2558 31.9263 39.9807C31.5287 39.8522 31.0057 39.6832 30.7009 39.6363C30.6435 39.6845 30.5773 39.7465 30.5067 39.8161L41.6736 50.983C41.9036 51.213 42.2134 51.3382 42.5317 51.3382C42.6196 51.3382 42.708 51.3288 42.7957 51.3091C43.2008 51.219 43.5317 50.9276 43.6727 50.5372L45.7336 44.8333L51.1705 43.0209C51.5695 42.888 51.8711 42.5579 51.9676 42.1486C52.0641 41.7394 51.9419 41.3094 51.6448 41.012Z"
+											fill="#F1592A" />
+									</svg>
+									<div class="h3">Опытные специалисты</div>
+									<div class="p">Наши врачи имеют сертификаты
+										и дипломы международного образца</div>
+								</div>
+								<div class="line-adv__slide swiper-slide">
+									<svg width="52" height="48" viewBox="0 0 52 48" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M38.1823 37.0073C35.6906 37.0072 33.6633 34.9801 33.6633 32.4884V24.9836C33.6633 22.4919 35.6906 20.4648 38.1823 20.4648H49.9572C50.0286 20.4648 50.0994 20.4669 50.17 20.4701V12.9942C50.17 11.0698 48.61 9.50977 46.6856 9.50977H3.4845C1.56001 9.50965 0 11.0697 0 12.994V44.4778C0 46.4022 1.56001 47.9623 3.4845 47.9623H46.6856C48.61 47.9623 50.17 46.4023 50.17 44.4778V37.0019C50.0994 37.0052 50.0286 37.0073 49.9572 37.0073H38.1823Z"
+											fill="#F1592A" />
+										<path
+											d="M49.9572 22.9407H38.1823C37.0541 22.9407 36.1395 23.8553 36.1395 24.9834V32.4882C36.1395 33.6163 37.0541 34.531 38.1823 34.531H49.9572C51.0854 34.531 52 33.6165 52 32.4882V24.9834C52 23.8552 51.0854 22.9407 49.9572 22.9407ZM42.2397 31.6841C40.6113 31.6841 39.2913 30.3641 39.2913 28.7357C39.2913 27.1073 40.6113 25.7873 42.2397 25.7873C43.8681 25.7873 45.1882 27.1073 45.1882 28.7357C45.1882 30.3641 43.8681 31.6841 42.2397 31.6841Z"
+											fill="#F1592A" />
+										<path
+											d="M40.6184 3.12696C39.8389 0.767447 37.2941 -0.513356 34.9347 0.266194L17.2329 6.11441H41.6054L40.6184 3.12696Z"
+											fill="#F1592A" />
+									</svg>
+
+									<div class="h3">Бесплатное лечение</div>
+									<div class="p">В рамках повторного обращения по гарантийному сроку</div>
+								</div>
+								<div class="line-adv__slide swiper-slide">
+									<svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M49.5318 20.1014C47.6542 10.2724 39.7281 2.34622 29.8991 0.46868C12.3163 -2.88982 -2.88982 12.3163 0.46868 29.8991C2.34632 39.728 10.2725 47.6542 20.1014 49.5318C37.6841 52.8903 52.8903 37.6841 49.5318 20.1014ZM36.5847 36.5847C35.9743 37.195 35.1748 37.5002 34.3752 37.5002C33.5756 37.5002 32.7761 37.195 32.1658 36.5847L22.7908 27.2097C22.2048 26.6238 21.8752 25.8303 21.8752 25.0002V12.5002C21.8752 10.7729 23.2744 9.37522 25.0002 9.37522C26.726 9.37522 28.1252 10.773 28.1252 12.5002V23.7063L36.5847 32.1658C37.8054 33.3865 37.8054 35.364 36.5847 36.5847Z"
+											fill="#F1592A" />
+									</svg>
+
+									<div class="h3">Экономия времени</div>
+									<div class="p">Здоровая и красивая улыбка всего за один день</div>
+								</div>
+								<div class="line-adv__slide swiper-slide">
+									<svg width="52" height="52" viewBox="0 0 52 52" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M19.5146 22.9589C23.1023 18.3841 28.6749 15.4439 34.948 15.4439C35.882 15.4439 36.8055 15.5076 37.7183 15.635V11.4529C34.8843 14.0003 27.5391 15.8154 18.9096 15.8154C10.3331 15.8154 3.0092 14.0216 0.143311 11.4847V16.8662C1.57626 22.736 19.3129 22.9695 19.5146 22.9589Z"
+											fill="#F1592A" />
+										<path
+											d="M0.132685 21.0696L0.12207 26.536C0.812007 29.5717 7.2125 32.0343 15.5024 32.5756C15.8208 29.9963 16.6487 27.5656 17.88 25.4003C9.73873 25.2623 2.8712 23.5109 0.132685 21.0696Z"
+											fill="#F1592A" />
+										<path
+											d="M0.122065 30.7817L0.11145 35.9828C0.143293 35.951 0.175137 35.9191 0.20698 35.8979C0.408654 39.252 7.57338 42.0012 16.7761 42.3939C15.8526 40.1224 15.3537 37.6493 15.3537 35.0487V35.0381C8.327 34.6029 2.56338 32.9683 0.122065 30.7817Z"
+											fill="#F1592A" />
+										<path
+											d="M17.9967 44.8672C9.69626 44.7292 2.72259 42.8929 0.111444 40.3879L0.10083 45.2918C0.10083 48.9856 8.51806 51.9789 18.9096 51.9789C20.8945 51.9789 22.8051 51.8727 24.5989 51.6711C21.8816 49.9728 19.6101 47.6376 17.9967 44.8672Z"
+											fill="#F1592A" />
+										<path
+											d="M18.9096 13.3529C29.3091 13.3529 37.7395 10.3638 37.7395 6.67646C37.7395 2.98915 29.3091 0 18.9096 0C8.51005 0 0.0795898 2.98915 0.0795898 6.67646C0.0795898 10.3638 8.51005 13.3529 18.9096 13.3529Z"
+											fill="#F1592A" />
+										<path
+											d="M34.9479 18.0657C25.5754 18.0657 17.9755 25.6656 17.9755 35.0381C17.9755 44.4106 25.5754 51.9999 34.9479 51.9999C44.3204 51.9999 51.9203 44.4 51.9203 35.0275C51.9203 25.655 44.3204 18.0657 34.9479 18.0657ZM36.4976 44.0922V45.1643C36.4976 46.024 35.8077 46.714 34.9479 46.714C34.0881 46.714 33.3982 46.024 33.3982 45.1643V44.0922C32.496 43.8162 31.6574 43.3174 30.9993 42.6168C30.4156 41.9906 30.4474 41.014 31.063 40.4302C31.6893 39.8464 32.634 39.9101 33.2496 40.4939C33.9289 41.1414 35.0541 41.2157 35.1071 41.2157C36.3066 41.1308 37.2618 40.1224 37.2618 38.9018C37.2618 37.628 36.2216 36.5772 34.9479 36.5772C31.9653 36.5772 29.5346 34.1465 29.5346 31.1639C29.5346 28.7119 31.1692 26.6421 33.3982 25.9734V24.9014C33.3982 24.0416 34.0881 23.3517 34.9479 23.3517C35.8077 23.3517 36.4976 24.0416 36.4976 24.9014V25.9734C37.3998 26.2494 38.2384 26.7483 38.8965 27.4488C39.4803 28.0751 39.4484 29.0516 38.8328 29.6354C38.2065 30.2192 37.1769 30.2404 36.6462 29.5717C36.0836 28.8605 34.8418 28.8499 34.7887 28.8499C33.5893 28.9348 32.634 29.9432 32.634 31.1639C32.634 32.4376 33.6742 33.4884 34.9479 33.4884C37.9306 33.4884 40.3613 35.9191 40.3613 38.9018C40.3613 41.3537 38.7266 43.4235 36.4976 44.0922Z"
+											fill="#F1592A" />
+									</svg>
+
+									<div class="h3">Рассрочка на лечение</div>
+									<div class="p">Оплачивайте первую часть
+										до имплантации, а вторую — после</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="line-adv-pagination"></div>
+			</div>
+
+			<div class="banner">
+				<div class="container">
+					<div class="banner__wrapper">
+						<div class="banner__text">
+							<div class="h3">Мы являемся центром клинического мастерства </div>
+							<div class="h2">Nobel Biocare Russia</div>
+						</div>
+
+						<div class="banner__img">
+							<img class="img" src="./img/banner-img.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-and-video">
+				<div class="container">
+					<div class="h2">Видео</div>
+					<div class="text-and-video__wrapper">
+						<div class="text-and-video__text">
+							<div class="p">Мы рады приветствовать Вас на нашем сайте. Стоматологический центр "Клиника
+								ЕС", является
+								центром клинического мастерства компании Nobel Biocare Russia, основанный в 2015 году
+								под
+								руководством ведущего специалиста Ефимова Д.В. </div>
+							<div class="p">
+								Специалисты клиники ЕС – это профессионалы с большим опытом работы, имеющие высокую
+								квалификацию. Наши врачи имеют сертификаты и дипломы международного образца. Основное
+								направление клиники – это самые сложные клинические случаи, когда пациент потерял
+								надежду
+								избавиться от съемного протеза или ему отказано в классическом методе имплантации из-за
+								недостатка костной ткани или по другим серьезным причинам. Когда пациент потерял надежду
+								избавиться от съемного протеза или ему отказано в классическом методе имплантации из-за
+								недостатка костной ткани или по другим серьезным причинам. Методе имплантации из-за
+								недостатка костной ткани или по другим серьезным причинам.
+							</div>
+						</div>
+						<a href="https://www.youtube.com/watch?v=K7ylwMki3mw" class="a text-and-video__img"
+							data-fancybox>
+							<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+									fill="#F1592A" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+									fill="#F1592A" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Наши преимущества</div>
+				<div class="template">
+					<div class="template__item template__item_count">
+						<div class="h2"><span class="span">10 лет</span>опыта работы</div>
+						<div class="h2"><span class="span">1200+</span>счастливых пациентов</div>
+						<div class="h2"><span class="span">10</span>лучших врачей</div>
+					</div>
+					<div class="template__item">
+						<div class="h3">БЫСТРАЯ ПОМОЩЬ</div>
+						<div class="p">Клиника ЕС расположена в самом центре Санкт-Петербурга, недалеко от метро
+							Лиговский проспект.
+							Работает без выходных – мы готовы подобрать удобное Вам время!</div>
+					</div>
+					<div class="template__item">
+						<div class="h3">БОЛЬШОЙ ОПЫТ</div>
+						<div class="p">Старейшие пользователи концепции ALL-ON-4 и первые в Санкт-Петербурге
+							пользователи
+							имплантатов Zygoma. Врачи основатели клиники – специалисты высшей категории. Повышают
+							квалификацию, участвуют в мировых форумах и симпозиумах, благодаря чему вносят весомый вклад
+							в развитие мировой имплантации.</div>
+					</div>
+					<div class="template__item">
+						<div class="h3">ШИРОКИЙ СПЕКТР СТОМАТОЛОГИЧЕСКИХ УСЛУГ</div>
+						<div class="p">Клиника ЕС оказывает все виды стоматологических услуг – лечение кариеса и
+							пульпита,
+							отбеливание, профессиональная гигиена, различные виды эстетического восстановления - виниры,
+							люминиры, оксид циркония; имплантация и хирургия, ортодонтия</div>
+					</div>
+					<div class="template__item">
+						<div class="h3">СОВРЕМЕННЫЕ МЕТОДИКИ</div>
+						<div class="p">Врачи клиники ЕС владеют самыми современным методикам имплантации и
+							протезирования на
+							имплантатах, широко применяется ЛАЗЕР. Специалисты клиники ЕС работают только качественными
+							современными материалами. Особое внимание мы уделяем соблюдению норм дезинфекции и
+							стерилизации.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Специалисты</div>
+				<div class="slider-2">
+
+					<div class="slider-2__container swiper-container">
+						<div class="slider-2__wrapper swiper-wrapper">
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+							<div class="slider-2__slide swiper-slide">
+								<div class="slider-2__img">
+									<img class="img" src="./img/slider-2.png" alt="">
+								</div>
+								<div class="slider-2__text">
+									<div class="h3">Ефимов Дмитрий Владимирович</div>
+									<div class="p">Главный врач Центра современной стоматологии “Клиника ЕС”</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-navigation">
+						<div class="slider-2-prev slider-prev swiper-button-prev"></div>
+						<div class="slider-2-next slider-next swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="slider-2-pagination slider-pagination"></div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Оценка независимых рейтингов</div>
+				<div class="rating">
+					<div class="rating__item">
+						<div class="rating__row">
+							<img class="img" src="./img/rating.png" alt="">
+							<div class="h3">5/5</div>
+						</div>
+
+						<div class="rating__stars">
+							<div class="rating__stars-active"></div>
+							<!-- <svg width="251" height="30" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z" />
+								<path
+									d="M70 0L75.5546 7.35479L84.2658 10.3647L78.9875 17.9202L78.8168 27.1353L70 24.45L61.1832 27.1353L61.0125 17.9202L55.7342 10.3647L64.4454 7.35479L70 0Z" />
+								<path
+									d="M125.5 0L131.24 7.35479L140.241 10.3647L134.787 17.9202L134.611 27.1353L125.5 24.45L116.389 27.1353L116.213 17.9202L110.759 10.3647L119.76 7.35479L125.5 0Z" />
+								<path
+									d="M181 0L186.555 7.35479L195.266 10.3647L189.987 17.9202L189.817 27.1353L181 24.45L172.183 27.1353L172.013 17.9202L166.734 10.3647L175.445 7.35479L181 0Z" />
+								<path
+									d="M236 0L241.555 7.35479L250.266 10.3647L244.987 17.9202L244.817 27.1353L236 24.45L227.183 27.1353L227.013 17.9202L221.734 10.3647L230.445 7.35479L236 0Z" />
+							</svg> -->
+						</div>
+					</div>
+					<div class="rating__item">
+						<div class="rating__row">
+							<img class="img" src="./img/rating2.png" alt="">
+							<div class="h3">5/5</div>
+						</div>
+
+						<div class="rating__stars">
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+						</div>
+					</div>
+					<div class="rating__item">
+						<div class="rating__row">
+							<img class="img" src="./img/rating3.png" alt="">
+							<div class="h3">5/5</div>
+						</div>
+
+						<div class="rating__stars">
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+						</div>
+					</div>
+					<div class="rating__item">
+						<div class="rating__row">
+							<img class="img" src="./img/rating4.png" alt="">
+							<div class="h3">5/5</div>
+						</div>
+
+						<div class="rating__stars">
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+							<svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15 0L20.5546 7.35479L29.2658 10.3647L23.9875 17.9202L23.8168 27.1353L15 24.45L6.18322 27.1353L6.01252 17.9202L0.734152 10.3647L9.44543 7.35479L15 0Z"
+									fill="#F1592A" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Гарантируем качество услуг</div>
+
+				<div class="service">
+					<div class="service__item">
+						<div class="h3">ЛЕЧЕНИЕ</div>
+						<div class="service__row">
+							<div class="p">На все виды лечения с
+								благоприятным прогнозом</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Кариес (материал Estelite)</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Кариес (материал – Filtek, Vitrimer)</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Эндодонтическое лечение (лечение каналов)</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+					</div>
+					<div class="service__item">
+						<div class="h3">ПРОТЕЗИРОВАНИЕ</div>
+						<div class="service__row">
+							<div class="p">Виниры</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Коронки</div>
+							<div class="p"><span class="span">2 года</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Несъемные протезы</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Съемные протезы</div>
+							<div class="p"><span class="span">1 год</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Временные конструкции</div>
+							<div class="p"><span class="span">6 мес</span></div>
+						</div>
+					</div>
+					<div class="service__item service__item_remove">
+						<div class="h3">ИМПЛАНТАЦИЯ</div>
+						<div class="service__row">
+							<div class="p">Гарантия от производителя на имплантаты Nobel</div>
+							<div class="p"><span class="span">Пожизненная</span></div>
+						</div>
+						<div class="service__row">
+							<div class="p">Гарантируется полное приживление имплантатов в 97% случаев</div>
+							<div class="p"><span class="span">В течение 1 года</span></div>
+						</div>
+					</div>
+
+					<div class="service__item service__item_mobile">
+						<div class="h3">ИМПЛАНТАЦИЯ</div>
+						<div class="service__row">
+							<div class="p">Предоставляется пожизненная гарантия от производителя на имплантаты Nobel
+							</div>
+						</div>
+						<div class="service__row">
+							<div class="p">Гарантируется полное приживление имплантатов в 97% случаев в течение 1 года
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Отзывы пациентов</div>
+				<div class="slider-3">
+					<div class="slider-3__container swiper-container">
+						<div class="slider-3__wrapper swiper-wrapper">
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+							<div class="slider-3__slide swiper-slide">
+								<a class="a" href="https://www.youtube.com/watch?v=K7ylwMki3mw" data-fancybox>
+									<img class="img" src="./img/video.png" alt="">
+								</a>
+								<svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M40 9.99992C23.4315 9.99992 10 23.4314 10 39.9999C10 56.5685 23.4315 69.9999 40 69.9999C56.5686 69.9999 70 56.5685 70 39.9999C70 23.4314 56.5686 9.99992 40 9.99992ZM3.33337 39.9999C3.33337 19.7495 19.7496 3.33325 40 3.33325C60.2505 3.33325 76.6667 19.7495 76.6667 39.9999C76.6667 60.2504 60.2505 76.6666 40 76.6666C19.7496 76.6666 3.33337 60.2504 3.33337 39.9999Z"
+										fill="#FFFFFF" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M31.7605 23.7277C32.8443 23.1476 34.1595 23.2112 35.1823 23.8931L55.1823 37.2264C56.1097 37.8446 56.6667 38.8854 56.6667 39.9999C56.6667 41.1144 56.1097 42.1552 55.1823 42.7734L35.1823 56.1068C34.1595 56.7887 32.8443 56.8522 31.7605 56.2722C30.6766 55.6921 30 54.5626 30 53.3333V26.6666C30 25.4373 30.6766 24.3077 31.7605 23.7277ZM36.6667 32.895V47.1049L47.3241 39.9999L36.6667 32.895Z"
+										fill="#FFFFFF" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider-3-pagination slider-pagination"></div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="license">
+				<div class="container">
+					<div class="license__wrapper">
+						<div class="license__text">
+							<div class="h2">Лицензии</div>
+							<div class="p">
+								Специалисты центра проходят регулярное обучение, повышают квалификацию, участвуют в
+								мировых форумах и симпозиумах, делятся своим опытом и наработками, благодаря чему вносят
+								весомый вклад в развитие мировой имплантации.
+							</div>
+							<div class="p">
+								Наши врачи являются членами многих обществ, в том числе российской и европейской
+								ассоциаций имплантологов, а также открытого сообщества стоматологов.
+							</div>
+						</div>
+						<div class="license__slider swiper-container">
+							<div class="license__slider_wrapper swiper-wrapper">
+								<a href="./img/license.png" class="a license__slide swiper-slide"
+									data-fancybox="gallery">
+									<img class="img" src="./img/license.png" alt="">
+								</a>
+								<a href="./img/license.png" class="a license__slide swiper-slide"
+									data-fancybox="gallery">
+									<img class="img" src="./img/license.png" alt="">
+								</a>
+								<a href="./img/license.png" class="a license__slide swiper-slide"
+									data-fancybox="gallery">
+									<img class="img" src="./img/license.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="license-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2 mb70">Партнеры</div>
+				<div class="slider-4">
+					<div class="slider-4__container swiper-container">
+						<div class="slider-4__wrapper swiper-wrapper">
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo2.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo3.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo4.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo2.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo3.png" alt="">
+							</div>
+							<div class="slider-4__slide swiper-slide">
+								<img class="img" src="./img/sliderlogo4.png" alt="">
+							</div>
+
+						</div>
+					</div>
+
+					<div class="slider-navigation">
+						<div class="slider-4-prev slider-prev swiper-button-prev"></div>
+						<div class="slider-4-next slider-next swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="slider-4-pagination"></div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="map">
+				<div class="map__wrapper" id="map"></div>
+				<div class="map__window">
+					<div class="h2">Где нас найти</div>
+					<a class="a" href="tel:88005500253"><span class="span">8 (800) 550-02-53</span></a>
+					<a class="a" href="tel:88127648452">8 (812) 764-84-52 </a>
+					<a class="a" href="tel:89219074637">8 (921) 907-46-37</a>
+					<div class="map__icons">
+						<a class="a" href="">
+							Санкт-Петербург, ул. Коломенская, </br>
+							д. 25, лит. А, пом. 5-H</a>
+						<a class="a" href="mailto:info@fenixplus-med.ru" target="_blank">
+							info@fenixplus-med.ru</a>
+						<a class="a" href="https://vk.com/clinic_es" target="_blank">
+							clinic_es</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="h2">Новости и статьи</div>
+				<div class="slider-5 ">
+					<div class="slider-5__container swiper-container">
+						<div class="slider-5__wrapper swiper-wrapper">
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Летний режим работы</div>
+										<div class="p">Внимание! Клиника переходит на летний режим работы!</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Курс на тему “Психология общения медицинского работника и
+											пациента”</div>
+										<div class="p">18 мая прошел курс на тему “Психология общения медицинского
+											работника и
+											пациента”
+										</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Летний режим работы</div>
+										<div class="p">Внимание! Клиника переходит на летний режим работы!</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Курс на тему “Психология общения медицинского работника и
+											пациента”</div>
+										<div class="p">18 мая прошел курс на тему “Психология общения медицинского
+											работника и
+											пациента”
+										</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Летний режим работы</div>
+										<div class="p">Внимание! Клиника переходит на летний режим работы!</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+							<div class="slider-5__slide swiper-slide">
+								<div class="slider-5__img">
+									<img class="img" src="./img/slider5.jpg" alt="">
+								</div>
+								<div class="slider-5__text">
+									<div class="slider-5__subdiv">
+										<div class="h3">Курс на тему “Психология общения медицинского работника и
+											пациента”</div>
+										<div class="p">18 мая прошел курс на тему “Психология общения медицинского
+											работника и
+											пациента”
+										</div>
+									</div>
+									<div class="p"><span class="span">09.07.2021</span></div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+					<div class="slider-navigation">
+						<div class="slider-5-prev slider-prev swiper-button-prev"></div>
+						<div class="slider-5-next slider-next swiper-button-next"></div>
+					</div>
+				</div>
+				<div class="slider-5-pagination slider-pagination"></div>
+			</div>
+		</section>
+
+		<section class="section_mb0">
+			<div class="line-text">
+				<div class="container">
+					<div class="line-text__wrapper">
+						<div class="p">Хотите на прием?
+							<span class="span">Просто позвоните нам!</span>
+						</div>
+						<div class="line-text__free-call">
+							<a href="tel:88005500253">
+								<div class="p">
+									8 (800) 550-02-53
+									<span class="span">Бесплатный звонок по России</span>
+								</div>
+							</a>
+						</div>
+						<div class="line-text__phones">
+							<a href="tel:88127648452">
+								<div class="p">8 (812) 764-84-52 </div>
+							</a>
+							<a href="tel:89219074637">
+								<div class="p">8 (921) 907-46-37</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form" id="form">
+				<div class="container">
+					<div class="form__wrapper">
+						<form action="submit">
+							<div class="h2">Записаться на прием</div>
+							<input class="input" type="text" placeholder="Имя">
+							<input type="phone" placeholder="Телефон" class="input phone-mask">
+							<input class="input" type="text" placeholder="Комментарии">
+							<label class="label__container">Даю согласие на обработку персональных данных
+								<input class="input" type="checkbox" checked="checked">
+								<span class="span checkmark"></span>
+							</label>
+							<button class="form__btn btn-red">Записаться на прием</button>
+						</form>
+						<div class="form__img">
+							<img class="img" src="./img/form.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+
+				<div class="footer__column">
+					<a href="" class="a footer__logo">
+						<img class="img" src="./img/logo.png" alt="">
+					</a>
+					<div class="footer__qr-div">
+						<div class="footer__qr_subdiv">
+							<div class="p">ООО "Феникс Плюс" </div>
+							<div class="p"> ИНН 7840038482 </div>
+							<div class="p"> КПП 784001001 </div>
+							<div class="p">ОГРН 1157847295836</div>
+						</div>
+						<div class="footer__qr-code">
+							<img class="img" src="./img/qr-code.png" alt="">
+						</div>
+					</div>
+					<div class="footer__copy">
+						<div class="p">
+							© 2022 «ЕС Клиника». Все права защищены
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__column">
+					<div class="h3">Навигация</div>
+					<ul class="ul">
+						<li><a class="a" href="">О нас</a></li>
+						<li><a class="a" href="">Услуги</a></li>
+						<li><a class="a" href="">All-on-4</a></li>
+						<li><a class="a" href="">Врачи</a></li>
+						<li><a class="a" href="">Цены</a></li>
+						<li><a class="a" href="">Акции</a></li>
+						<li><a class="a" href="">Наши работы</a></li>
+						<li><a class="a" href="">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__column">
+					<div class="h3">Контактная информация</div>
+
+					<div class="footer__contact">
+						<div class="footer__contact_subdiv">
+							<div class="footer__phone">
+								<a class="a" href="tel:88005500253">
+									<div class="p">8 (800) 550-02-53 </div>
+								</a>
+								<a class="a" href="tel:88127648452">
+									<div class="p">8 (812) 764-84-52 </div>
+								</a>
+								<a class="a" href="tel:89219074637">
+									<div class="p">8 (921) 907-46-37</div>
+								</a>
+							</div>
+							<div class="footer__social">
+								<a class="a" href="mailto:info@fenixplus-med.ru">
+									<div class="p">info@fenixplus-med.ru</div>
+								</a>
+								<a class="a" href="https://vk.com/clinic_es" target="_blank">
+									<div class="p">clinic_es</div>
+								</a>
+							</div>
+						</div>
+						<div class="footer__contact_subdiv">
+							<div class="footer__reglament">
+								<div class="p">Пн - Пт: с 09:00 до 21:00 </div>
+								<div class="p">Сб - Вс: с 09:00 до 20:00</div>
+							</div>
+							<div class="footer__location">
+								<div class="p">
+									Санкт-Петербург, ул. Коломенская, д. 25,
+									лит. А, пом. 5-H
+								</div>
+								<a class="a" href="">Как нас найти</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__nastart">
+					<div class="p">
+						Разработка и продвижение сайта Интернет-агентство "НастАрт ВЕБ"
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<div class="review-popup" id="review">
+		<div class="h2">Оставить отзыв</div>
+		<div class="review-popup__btns">
+			<a class="a btn-blue" href="">Яндекс</a>
+			<a class="a btn-blue" href="">Google</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

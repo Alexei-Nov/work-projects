@@ -1,0 +1,36 @@
+.slider {
+  position: relative;
+  padding-bottom: 36px;
+
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include font(16, 20.8, 600);
+    color: $color-secondary;
+    .current {
+      @include font(20, 26, 600);
+      color: $color-primary;
+    }
+  }
+
+  &__scrollbar {
+    position: absolute;
+    bottom: 12px;
+    left: 45px;
+
+    width: calc(100% - 45px);
+    height: 2px;
+
+    background-color: $color-light-blue;
+    .swiper-scrollbar-drag {
+      background-color: $color-primary;
+      height: 2px;
+    }
+  }
+}
+
+.swiper-initialized {
+  overflow: hidden;
+}

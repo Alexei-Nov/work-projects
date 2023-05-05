@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/fancybox.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container _container">
+		<div class="header__wrapper">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+			<div id="myDropdown" class="header__menu menu">
+				<nav>
+					<ul class="menu__list">
+						<li class="menu__item menu-sub">
+							<a href="catalog.html">Каталог</a>
+							<ul class="menu-sub__list">
+								<li class="menu-sub__item"><a href="road-slabs.html">Дорожные плиты</a></li>
+								<li class="menu-sub__item"><a href="#">Аэродромные плиты</a></li>
+								<li class="menu-sub__item"><a href="#">Железобетонные заборы</a></li>
+								<li class="menu-sub__item"><a href="#">ФБС</a></li>
+								<li class="menu-sub__item"><a href="#">Плиты Б/У</a></li>
+								<li class="menu-sub__item"><a href="#">Заборы Б/У</a></li>
+							</ul>
+						</li>
+						<li class="menu__item menu-sub">
+							<a href="#">Обратный выкуп</a>
+							<ul class="menu-sub__list">
+								<li class="menu-sub__item"><a href="road-plates.html">Дорожные плиты</a></li>
+								<li class="menu-sub__item"><a href="#">Аэродромные плиты</a></li>
+								<li class="menu-sub__item"><a href="#">Железобетонные заборы</a></li>
+							</ul>
+						</li>
+						<li class="menu__item menu-sub">
+							<a href="#">Услуги</a>
+							<ul class="menu-sub__list">
+								<li class="menu-sub__item"><a href="#">Монтаж</a></li>
+								<li class="menu-sub__item"><a href="#">Демонтаж</a></li>
+								<li class="menu-sub__item"><a href="reinforced-concrete.html">Транспорт и доставка</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="vacancies.html">Вакансии</a></li>
+						<li class="menu__item"><a href="#" class="download">Прайс-лист</a></li>
+						<li class="menu__item"><a href="about.html">О нас</a></li>
+						<li class="menu__item"><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="menu__connection">
+					<div class="menu__appeal">
+						<a href="tel:88124093680" class="menu__phone">8 (812) 409-36-80</a>
+						<a href="#modal-callback" data-fancybox class="menu__сall">Позвоните мне</a>
+					</div>
+					<div class="menu__social">
+						<a href="#" class="menu__link-social">
+							<img src="img/social/whatsapp.svg" alt="whatsapp">
+							<span>What’sApp</span>
+						</a>
+						<a href="#" class="menu__link-social">
+							<img src="img/social/telegram.svg" alt="telegram">
+							<span>Telegram</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="burger">
+				<span></span>
+			</button>
+		</div>
+	</div>
+</header>
+		<main class="main">
+			<section class="banner">
+				<div class="banner__slider">
+					<div class="swiper-wrapper">
+						<!--swiper-slide-->
+						<div class="swiper-slide banner__slide">
+							<div class="banner__image">
+								<img src="img/banners/contacts.jpg" alt="banner" loading="lazy">
+							</div>
+							<div class="banner__container _container">
+								<div class="banner__content">
+									<div class="banner__crumbs crumbs">
+										<ul class="crumbs__list">
+											<li class="crumbs__item">
+												<a href="/" title="Главная"><span>Главная</span></a>
+											</li>
+											<li class="crumbs__item">
+												<span>Контакты</span>
+											</li>
+										</ul>
+									</div>
+									<h1>КОНТАКТЫ И ИНФОРМАЦИЯ</h1>
+									<div class="banner__desc">
+										ПЛИТЫ24 — это компания ООО «ЖБИ Стандарт». Основная специализация — скупка и продажа бетонных плит.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banner__panel">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="banner__mask">
+						<img src="img/banners/mask.png" alt="mask">
+						<img class="img-mobile" src="img/banners/mask-mobile.png" alt="mask">
+					</div>
+					<button class="banner__btn">
+						<img src="img/icons/arrow-scroll.svg" alt="arrow-scroll">
+					</button>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__container _container">
+					<h2 class="contacts__title">Контакты</h2>
+					<div class="contacts__map map">
+						<div id="mapContact" class="map__init"></div>
+					</div>
+					<div class="contacts__wrapper">
+						<div class="contacts__content">
+							<div class="contacts__desc">
+								<div class="connection connection_phone">
+									<div class="connection__name">Телефон</div>
+									<a href="tel:88123393287">8 (812) 339-32-87</a>
+									<span>ПН-ПТ С 9 ДО 18, СБ С 10 ДО 15, ВС - ВЫХОДНОЙ</span>
+								</div>
+							</div>
+							<div class="contacts__desc">
+								<div class="connection connection_mail">
+									<div class="connection__name">Почта</div>
+									<a href="mailto:contact@plity24.ru">contact@plity24.ru</a>
+								</div>
+							</div>
+							<div class="contacts__desc">
+								<div class="connection connection_adress">
+									<div class="connection__name">Адрес</div>
+									<span>Офис продаж:</span>
+									<p>
+										Санкт-Петербург, пр. Народного ополчения 22, лит. П, Оф. Н-308
+									</p>
+									<span>Производство:</span>
+									<p>
+										Санкт-Петербург, п. Стрельна, Красносельское шоссе 25 а
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__info">
+							ООО «ПрофБетон» ИНН: 7805312326 КПП: 780501001 ОГРН: 1157847134730 ОКПО: 01179633 ОКАТО: 40276561000 р/с:
+							40702810932480000089 ФИЛИАЛ "САНКТ-ПЕТЕРБУРГСКИЙ" АО "АЛЬФА-БАНК" к/с: 30101810600000000786 БИК: 044030786
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="application-form mb-0">
+	<div class="application-form__bg">
+		<img src="img/form-bg.jpg" alt="questions-bg" loading="lazy">
+	</div>
+	<div class="application-form__container _container">
+		<div class="application-form__wrapper form">
+			<h3 class="application-form__title">У вас остались вопросы?</h3>
+			<div class="desc">Оставьте заявку на консультацию и наш менеджер перезвонит вам в кратчайшие сроки, чтобы ответить
+				на все интересующие вас вопросы!</div>
+			<div class="form__wrapper">
+				<form action="#" class="form__form">
+					<div class="form__input form__input_name">
+						<input type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="form__input form__input_phone">
+						<input class="phone-mask" name="phone" type="text" placeholder="8 (___) ___-__-__">
+					</div>
+					<div class="textarea">
+						<div class="textarea__wrapper">
+							<textarea autocomplete="off" name="form[]" maxlength="300" placeholder="Опишите свой вопрос"
+								class="textarea__item"></textarea>
+						</div>
+						<div class="textarea__counter"></div>
+					</div>
+					<div class="form__more">
+						<input type="submit" class="btn" value="Получить консультацию">
+						<div class="form__policy">Нажимая кнопку «Оформить заказ», вы соглашаетесь с <a href="policy.html">политикой
+								конфиденциальности</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer" id="footer">
+	<div class="footer__container _container">
+		<div class="footer__wrapper">
+			<div class="footer__header">
+				<div class="footer__logo">
+					<a href="/">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div>
+					Железобетонные изделия
+				</div>
+				<div class="footer__nav">
+					<ul class="footer__links">
+						<li>
+							<a href="catalog.html">Каталог</a>
+						</li>
+						<li>
+							<a href="#">Обратный выкуп</a>
+						</li>
+						<li>
+							<a href="#">Услуги</a>
+						</li>
+						<li><a href="vacancies.html">Вакансии</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__content">
+				<div class="footer__desc connection connection_phone">
+					<div class="connection__name">Телефон</div>
+					<a href="tel:88123393287">8 (812) 339-32-87</a>
+					<span>ПН-ПТ С 9 ДО 18, СБ С 10 ДО 15, ВС - ВЫХОДНОЙ</span>
+				</div>
+				<div class="footer__desc connection connection_mail">
+					<div class="connection__name">Почта</div>
+					<a href="mailto:contact@plity24.ru">contact@plity24.ru</a>
+				</div>
+				<div class="footer__desc connection connection_adress">
+					<div class="connection__name">Адрес</div>
+					<span>Офис продаж:</span>
+					<p>
+						Санкт-Петербург, пр. Народного ополчения 22, лит. П, Оф. Н-308
+					</p>
+					<span>Производство:</span>
+					<p>
+						Санкт-Петербург, п. Стрельна, Красносельское шоссе 25 а
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer__map map">
+			<div id="map" class="map__init"></div>
+		</div>
+	</div>
+	<div class="footer__footer">
+		<div class="_container">
+			<div>© 2014-2023, ООО «ЖБИ Стандарт»</div>
+			<a href="#">Политика конфиденциальности</a>
+			<div class="link-nastart">Разработка сайта
+				<a href="https://nastart-web.ru/" target="_blank">
+					<img src="img/logo-nastartWeb.svg" alt="logo-nastartWeb">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script
+	src="https://api-maps.yandex.ru/2.1/?apikey=aa738ede-ae14-4127-ad41-0327820e270b&amp;lang=ru_RU&amp;load=package.full&amp;onload=init"
+	type="text/javascript"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/imask.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>

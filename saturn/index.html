@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка - Сатурн</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./build/css/reset.css">
+    <link rel="stylesheet" href="./build/css/main.css">
+
+    <style>
+        section {
+            height: 100vh;
+            min-height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sectionContainer {
+            width: 900px;
+        }
+
+        .scSide {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .scMenu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .scMenu a {
+            color: #ddd;
+            text-decoration: none !important;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .scMenu a:hover {
+            color: #fff;
+        }
+
+        .scMenu li ul li {
+            padding: 3px 0;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .scMenu li ul li:first-child:before {
+            height: 12px;
+            top: 3px;
+        }
+        .scMenu li ul li:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 29px;
+            top: -14px;
+            left: 4px;
+            border-left: 1px solid #222;
+            border-bottom: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <section class="blackBg">
+        <div class="sectionContainer dFlex">
+            <div class="scSide" style="border-right: 1px solid #222">
+                <img src="./img/logo.svg" width="256px" alt="">
+                <img src="./build/img/logo.svg" width="256px" alt="">
+            </div>
+            <div class="scSide">
+                <div class="sectionTitle lightText">
+                    Верстка
+                </div>
+                <ul class="scMenu">
+                    <li>
+                        <a href="/build/home.html">[+] Главная страница</a>
+                    </li>
+                    <li>
+                        <a href="/build/about.html">[+] О компании</a>
+                    </li>
+                    <li>
+                        <a href="/build/production.html">[+] Продукция</a>
+                        <ul>
+                            <li>
+                                <a href="/build/service-coal.html">[+] Угольная промышленность</a>
+                            </li>
+                            <li>
+                                <a href="/build/service-detail.html">[+] Изготовление деталей по чертежам и ТЗ</a>
+                            </li>
+                            <li>
+                                <a href="/build/service-seals.html">[+] Торцевые уплотнения</a>
+                            </li> 
+                            <li>
+                                <a href="/build/service-opu.html">[+] ОПУ</a>
+                            </li>  
+                            <li>
+                                <a href="/build/service-bearings.html">[+] Гидродинамические подшипники скольжения</a>
+                            </li> 
+                            <li>
+                                <a href="/build/service-couplings.html">[+] Муфты привода</a>
+                            </li> 
+                            <li>
+                                <a href="/build/service-belts.html">[+] Приводные и трансмиссионные ремни</a>
+                            </li> 
+                            <li>
+                                <a href="/build/service-gearboxes.html">[+] Промышленные редукторы</a>
+                            </li> 
+                            <li>
+                                <a href="/build/service-al.html">[+] Конвейерная лента</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/build/contacts.html">[+] Контакты</a>
+                    </li> 
+                    <li>
+                        <a href="/build/404.html">[+] 404</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

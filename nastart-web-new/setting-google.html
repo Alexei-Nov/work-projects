@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						НАСТРОЙКА GOOGLE MERCHANT CENTER
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Google Merchant Center - агрегатор покупок
+								</div>
+								<div class="detail-entrance__subtitle">
+									Это агрегатор, который работает по типу "Яндекс.Маркет”. В нем собираются различные
+									продавцы, которые предлагают покупателям свои товары.
+								</div>
+								<!-- <div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Если вы занимаетесь интернет-торговлей, то наверняка ужестолкнулись с Google Покупками
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info ">
+								<p>
+									Этот сервис появился в России в 2010 году, просуществовал 3 года, затем закрылся и
+									вернулся к нам в 2016. Изначально Google Покупки создавались, чтобы пользователи
+									искали необходимые товары и сравнивали цены на них в разных онлайн-магазинах.
+								</p>
+								<p>
+									В настоящее время любой продавец имеет право выставить свои товары на этом
+									маркетплейсе, а потенциальные покупатели переходят по ссылкам на сайт и совершают
+									покупки на именно нем.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title large-text  tt-uc">
+							Преимущества Google Покупок
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Если ваши товары находятся на маркетплейсе, то они отображаются в поиске.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Ключевые слова к товарам сервис прописывает самостоятельно.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Покупатели знакомятся с отзывами и оставляют их в агрегаторе.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Настраивается таргетированная реклама - если покупатель ищет детские игрушки, то ему
+									не будут показываться мужские туфли.
+								</div>
+							</div>
+						</div>
+						<div class="simple-tile__text gray-text">
+							<p>
+								К интернет-магазинам, которые желают разместить свои товарные предложения в Google
+								Shopping, предъявляются строгие требования. Например, запрещено продавать:
+							</p>
+							<ul>
+								<li> билеты на развлечения и транспорт; </li>
+								<li>недвижимость; услуги; подписки; </li>
+								<li>бывшие в употреблении товары; </li>
+								<li>моторный и парусный транспорт; </li>
+								<li>финансы; </li>
+								<li>цифровые товары с дополнительным ПО и т.п. </li>
+							</ul>
+							<p>
+								Следует учитывать, что система Гугл Покупки предназначена только для сектора B2C.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title large-text  tt-uc">
+							Какие предъявляются требования:
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Каждый товар доступен по постоянной ссылке.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Фотографии в отличном качестве определенных размеров.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Обязательно размещение цен.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Все кнопки интернет-магазина должны работать корректно.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									На отдельной странице - контакты интернет-магазина, условия возврата и гарантийные
+									обязательства продавца.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						C чего начинается Google <br> Shopping?
+					</div>
+					<div class="simple-tile__text">
+						<p>
+							Наконец мы подходим непосредственно к Google Merchant Center, так как перед запуском показа
+							товаров необходимо создание нескольких аккаунтов и их взаимосвязь. У многих пользователей на
+							этом этапе возникают проблемы, поэтому компания НастАртВЕБ предлагает услуги по настройке
+							интернет-магазина в Google Shopping.
+						</p>
+					</div>
+					<div class="simple-tile__text xlarge-text black-text">
+						Что нужно сделать?
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title orange-text small-title">
+								Сначала создается основой аккаунт в Google
+							</div>
+							<div class="simple-tile__text">
+								На его основе формируются все остальные учетные записи - например, важна правильная
+								настройка учетной записи в Google Merchant Center. Именно в нем размещаются сведения об
+								интернет-магазине и его товарах.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title  orange-text small-title">
+								Заполнить данные
+							</div>
+							<div class="simple-tile__text">
+								Необходимо заполнить название онлайн-магазина; страну и язык продаж; контакты; название
+								фида (файла с товарами) и срок его периодического обновления. Например, фид может
+								обновляться после окончания срока распродажи. Все введенные данные проверяются в разделе
+								“Диагностика”. Затем загружается фид (файл с товарами) через Google Таблицы или вручную
+								с компьютера.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__item-title  orange-text small-title">
+								Создать связь
+							</div>
+							<div class="simple-tile__text">
+								На следующем шаге необходимо связать аккаунты Merchant Center и Google AdWords, чтобы на
+								каждый фид запустить одну рекламную кампанию.
+							</div>
+						</div>
+					</div>
+					<div class="simple-tile__text">
+						Итак, продвижение ваших товаров в Google Покупках начинается с правильной настройки Google
+						Merchant Center. Если он заполнен неполно или с ошибками - торговля не будет эффективной или
+						вообще не начнет работать.
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						От каких показателей <br>
+						зависит ранжирование <br>
+						вашего товара в поиске
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Ставка на Google AdWords.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Качество и отзывы.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Правильное заполнение фида.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Полные карточки товаров и их правильное наполнение.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg mb-0">
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							В чем мы можем вам помочь
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Если вы начали регистрацию в Гугл Покупках, но не можете пройти ее до конца -
+									возникли какие-либо затруднения в процессе запуска продаж.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Когда вы желаете доверить весь процесс регистрации специалистам и максимально
+									сэкономить свое время.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Если ваш интернет-магазин был отклонен системой - мы разберемся в причинах отказа и
+									поможем исправить ситуацию.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									У вас закончилось количество попыток запуска, а у нас есть опыт получения
+									дополнительных шансов на регистрацию интернет-магазина в Google.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Подготовим интернет-магазин к запуску, настроим продажи и оптимизируем ставки в
+									рекламной системе.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview project-preview_clear">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Ведение работающего онлайн-магазина
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Детально изучаем статистику и поведенческие факторы на сайте.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Помогаем настроить индексацию всех товарных позиций.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Повышаем окупаемость вложений в рекламные кампании.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Исправляем технические неполадки.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Управляем широкой номенклатурой товаров.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text small-title">
+									Мы поможем вывести вашу работу в Google Shopping на новый эффективный уровень!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Как мы оптимизируем Google Adwords
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Управляем расходами на уровне карточек и категорий товаров.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Тестируем рекламные кампании и находим оптимальные настройки.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Анализируем спрос и конкуренцию.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Проверяем соответствие информации в фиде интернет-магазину.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Следим за корректным попаданием карточки в Google Adwords.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Корректируем названия товаров и следим за их тэгами для лучшей индексации.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Добавляем релевантные ключевые запросы.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Настраиваем промокоды и акции.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Своевременно обновляем необходимую информацию.
+								</div>
+							</div>
+						</div>
+
+						<div class="simple-tile__text small-title">
+							С вашим аккаунтом в Google Merchant Center будут работать несколько специалистов. Именно
+							поэтому одному человеку без помощи опытных наставников трудно справиться со всеми
+							настройками.
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Схема работы
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Аккаунт менеджер принимает ваш магазин и изучает его, устанавливает и следит за
+									ставками; составляет расширенные отчеты; анализирует конкурентов; пишет статьи для
+									каталога Google Adwords.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Технический специалист проводит детальный аудит сайта, исправляет на нем найденные
+									ошибки. Составляет для вас инструкцию по заказу товаров в магазине тайными
+									покупателями. Работает с отзывами и вопросами клиентов, собирает семантику,
+									настраивает аналитику.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Аналитик проводит базовые аудиты сайта; изучает причины отклонения магазина;
+									работает с техподдержкой Google; распределяет задачи по всем специалистам; следит за
+									соблюдением KPI.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="table">
+					<div class="container">
+						<div class="table__title title">ТОП-3 самых популярных агрегаторов</div>
+						<div class="table__wrapper">
+							<div class="table__header small-title ff-rm">
+								<div class="table__row table__row_header ff-tektur">
+									<div class="table__col table__col_header">Характеристики</div>
+									<div class="table__col table__col_header">Яндекс Маркет</div>
+									<div class="table__col table__col_header">Google Shopping</div>
+									<div class="table__col table__col_header">Price.ru</div>
+								</div>
+							</div>
+							<div class="table__body">
+								<div class="table__row">
+									<div class="table__col"> Посетители (млн. в месяц)</div>
+									<div class="table__col">20 </div>
+									<div class="table__col">15 </div>
+									<div class="table__col"> 5</div>
+								</div>
+								<div class="table__row">
+									<div class="table__col">Конкуренты </div>
+									<div class="table__col">Много </div>
+									<div class="table__col">Мало </div>
+									<div class="table__col"> Мало</div>
+								</div>
+								<div class="table__row">
+									<div class="table__col">Поиск и сортировка </div>
+									<div class="table__col">По многим характеристиками, начиная с брендов и заканчивая
+										размерами. </div>
+									<div class="table__col">Только по продавцам и ценам. </div>
+									<div class="table__col">По многим характеристиками, начиная с брендов и заканчивая
+										размерами. </div>
+								</div>
+								<div class="table__row">
+									<div class="table__col">Модерация </div>
+									<div class="table__col">Сложная </div>
+									<div class="table__col">Сложная </div>
+									<div class="table__col">Упрощенная </div>
+								</div>
+								<div class="table__row">
+									<div class="table__col">В каких форматах загружаются файлы с товарами (фиды) </div>
+									<div class="table__col">Excel, CSV, YML, TSV </div>
+									<div class="table__col">TXT, XML </div>
+									<div class="table__col">CSV, XML </div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__info small-title ff-rm gray-text">
+									<p>
+										Как вы видите, агрегатор Google Shopping занимает почетное второе место в
+										рейтинге самых известных маркетплейсов Рунета. Поэтому представить в нем ваш
+										интернет-магазин можно и нужно. А специалисты компании НастАртВЕБ помогут вам в
+										этом!
+									</p>
+								</div>
+							</div>
+							<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+								<span class="round-btn__center-icon"
+									style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg m-0">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно продвижение на GMC?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel='shortcut icon' href='./images/favicon.svg'>
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/style-old.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/main.js?1516869538"></script>
+
+	<script
+		src='https://maps.google.com/maps/api/js?key=AIzaSyCYHPo5UES1qAt5LapVImHW885ZJrFRgqU&sensor=true&amp;language=ru'></script>
+
+	<title>Петербургский форум предпринимателей</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="header__logo" href="#">
+					<img src='./images/logo.svg' alt=''>
+				</a>
+				<nav class='header__nav-panel nav-panel'>
+					<img src='./images/logo.svg' alt='' class='nav-panel__logo'>
+					<div class='nav-panel-close menu_close'></div>
+					<ul class="nav-panel__nav">
+						<li class="nav-panel__item"><a class="anchor" data-link="o_forume" href='#o_forume'>О
+								форуме</a>
+						</li>
+						<li class="nav-panel__item"><a class="anchor" data-link="programma"
+								href='#programma'>Программа</a></li>
+						<li class="nav-panel__item"><a class="anchor" data-link="speaker" href='#speaker'>Спикеры</a>
+						</li>
+						<li class="nav-panel__item"><a class="anchor" data-link="pojects"
+								href='#pojects'>Спецпроекты</a></li>
+						<li class="nav-panel__item"><a class="anchor" data-link="bags" href='#bags'>Пакеты
+								участника</a></li>
+						<li class="nav-panel__item set "><a class="anchor" data-link="register"
+								href='#register'>Регистрация</a>
+						</li>
+						<li class="nav-panel__item"><a class="anchor" data-link="place" href='#place'>Площадка</a>
+						</li>
+					</ul>
+				</nav>
+				<div class='header__nav-panel-open menu_btn'></div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="section main">
+			<div class="container">
+				<div class="main__wrapper">
+					<div class="main__title">Петербургский Форум Предпринимателей</div>
+					<div class="main__text"> Форум для малого и среднего бизнеса, организованный практикующими
+						предпринимателями для своих коллег </div>
+					<div class="main__date">27-29 октября 2022</div>
+					<a href='#register' data-link="register" class=' anchor main__btn btn'>Зарегистрироваться</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section about-forum" id='o_forume'>
+			<div class="container">
+				<h2><span>О</span> форуме</h2>
+				<div class="about-forum__info">
+					<div class="about-forum__text">
+						<p><b>
+								27-29 октября 2022 года в г. Санкт-Петербург состоится Петербургский Форум
+								Предпринимателей. Бизнес-событие федерального уровня для представителей малого и
+								среднего бизнеса со всей России и СНГ, организатором которого выступает Лаборатория
+								Предпринимательства.
+							</b></p>
+						<p>
+							Форум объединит предпринимателей из различных субъектов Российской Федерации, которые смогут
+							принять участие в образовательных сессиях, посетить мастер-классы, расширить и наладить
+							деловые контакты, а также обменяться опытом со специалистами различных отраслей. Деловая
+							программа Форума будет дополнена вечерними мероприятиями, где в неформальной обстановке
+							участники смогут пообщаться на интересующие их темы.
+						</p>
+					</div>
+					<div class="about-forum__blue-block">
+						<div class="about-forum__title"> Ключевая тема форума </div>
+						<div class="about-forum__subtitle"> Роль предпринимательских сообществ в современном бизнесе
+						</div>
+						<div class="about-forum__title"> Форум - это: </div>
+						<ul class="about-forum__list">
+							<li>Мощный нетворкинг с активными и успешными предпринимателями</li>
+							<li>Образовательные программы для повышения собственной эффективности</li>
+							<li>Дискуссионные площадки по вопросам болей предпринимательства и векторов развития
+							</li>
+							<li>Деловые игры для прокачки soft skills</li>
+							<li>Акселератор стартапов</li>
+							<li>Инвест-сессия с участием инвест-клубов и бизнес-ангелов</li>
+							<li>Экскурсии на лучшие предприятия Санкт-Петербурга и Ленинградской области</li>
+							<li>Честные интервью с участниками, истории взлётов и падений</li>
+							<li>Help-чат предпринимательского комьюнити</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="about-forum__advantages">
+					<div class="about-forum__advantages-numbers">
+						<div class="about-forum__advantages-item">
+							<span>10</span>
+							часов инвестсессий
+						</div>
+						<div class="about-forum__advantages-item">
+							<span>45</span>
+							мероприятий в рамках форума
+						</div>
+						<div class="about-forum__advantages-item">
+							<span>9</span>
+							форматов мероприятий
+						</div>
+					</div>
+					<ul class="about-forum__adantages-list">
+						<li>Культурная программа </li>
+						<li>Деловые игры </li>
+						<li>Нетворкинг </li>
+						<li>Менторские гостиные </li>
+						<li>Мастермайнды </li>
+						<li>Круглые столы </li>
+						<li>Мастер-классы </li>
+						<li>Инвестиционные сессии</li>
+						<li>Стратегические сессии</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id='programma'>
+			<div class="container">
+				<h2><span>Программа </span> форума</h2>
+				<a href='/files/programma_PFP_osen_2022.pdf' class=' btn_border' download>Скачать программу</a>
+			</div>
+		</section>
+
+		<section class="section speaker-list" id='speaker'>
+			<div class="container">
+				<h2>Спикеры <span>форума</span></h2>
+				<div class="speaker-list__wrapper">
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+					<div class="speaker-list__item speaker">
+						<div class="speaker__photo">
+							<img src="./images/speaker_01.jpg" alt="">
+						</div>
+						<div class="speaker__name">Павел Ленец</div>
+						<div class="speaker__info">
+							<ul>
+								<li>Директор федеральной строительной компании ООО «Сапфир»</li>
+								<li>Основатель и глава оргкомитета Петербургского Форума Предпринимателей</li>
+								<li>Член общественной организации малого и среднего бизнеса «Опора России»</li>
+								<li>Член бизнес-клуба «Росмолодёжь. Бизнес</li>
+								<li>Член совета по предпринимательству Молодёжного парламента при Гос. Думе РФ</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="speaker-list__btn btn_border">Показать еще</div>
+			</div>
+		</section>
+
+		<section class="section line-form">
+			<div class="container">
+				<div class="line-form__wrapper">
+					<div class="line-form__info">
+						<div class="line-form__title">Хотите провести мастер-класс?</div>
+						<div class="line-form__subtitle">
+							Мы предлагаем такую возможность!
+							<br>
+							Отправьте нам ваши контактные данные и тему, на которую вы хотите провести мастер-класс.
+							Дирекция форума выберет лучшие и даст время в расписании.
+						</div>
+					</div>
+					<form class="line-form__form" id="form1">
+						<input type="hidden" name="masterClass" value="1">
+						<div class="input_block">
+							<input type="text" name="name" class="input" value="" required=""
+								placeholder="Фамилия, имя и отчество">
+						</div>
+						<div class="input_block2">
+							<div class="input_block">
+								<input type="text" name="phone" class="input phone" value="" required=""
+									placeholder="Телефон">
+							</div>
+							<div class="input_block">
+								<input type="email" name="mail" class="input" value="" required="" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="input_block">
+							<input type="text" name="text" class="input" value="" required=""
+								placeholder="Тема мастер-класса">
+						</div>
+						<div class="input_block2">
+							<div class="input_block ch">
+								<div class="checkbox_block">
+									<div class="checkbox set"></div>
+									<div class="checkbox_txt">
+										Заполняя форму, я принимаю <a href="#">условия передачи информации</a>
+									</div>
+								</div>
+							</div>
+							<div class="input_block ch">
+								<button type="submit" class="btn">Отправить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id='pojects'>
+			<div class="container">
+				<h2><span>Спецпроекты</span><br>Лаборатории Предпринимательства</h2>
+				<div class='tabs'>
+					<div class='tab set' data-i='1'>Биржа проектов</div>
+					<div class='tab' data-i='2'>Менторская гостиная</div>
+					<div class='tab' data-i='3'>Акселератор Lab StartUp</div>
+					<div class='tab' data-i='4'>Бюро Biz & Travel</div>
+				</div>
+				<div class='tab_block tab_block1'>
+					<b>
+						<p>
+							Биржа проектов позволяет разместить информацию о своём проекте для привлечения
+							инвесторов.
+							Участники форума могут подать информацию о своём проекте для размещения его в
+							интерактивных
+							зонах общественных пространств Форума. В течении дня информацию о проекте увидят сотни
+							людей –
+							инвесторов, партнёров, подрядчиков. Оргкомитет свяжет заинтересованные стороны прямо на
+							площадке
+							форума.
+						</p>
+						<p>
+							Инвесторы же получат широкий выбор проектов, готовых к реализации. При этом информация о
+							проектах
+							будет сведена к численной оценке характеристик проекта и понятному предложению для
+							инвестирования.
+						</p>
+					</b>
+					<p>
+						Биржа проектов – упрощает взаимодействие между командой проекта и инвесторами. При этом
+						увеличивает
+						количество вовлечённых сторон кратно, чем при презентации на питч-сессии. <br>
+						Если Вы хотите разместить свой проект - направьте запрос на почту
+						<a href="mailto:forum@pfp.spb.ru">forum@pfp.spb.ru</a>. С вами свяжется представитель
+						Оргкомитета и
+						предоставит необходимую информацию для участия в Бирже проектов.
+					</p>
+				</div>
+				<div class='tab_block tab_block2 none'>
+					<b>
+						<p>
+							Предприниматели часто сталкиваются с большим количеством вопросов в процессе построения
+							собственного бизнеса:
+						</p>
+						<ul>
+							<li>привлечением инвестиций;</li>
+							<li>выбор стратегии;</li>
+							<li>кадровые и управленческие решения;</li>
+							<li>масштабирование;</li>
+							<li>маркетинг компании и товаров;</li>
+							<li>выстраивание деловых связей.</li>
+						</ul>
+						<p>
+							Многие в поисках решений этих вопросов прибегают к помощи различных образовательных
+							курсов,
+							профильной литературы, советов у товарищей.
+						</p>
+						<p>
+							Однако, в большинстве случаев, получения только новых знаний недостаточно, для их
+							эффективного
+							практического применения необходим свежий взгляд со стороны, а также совет опытных
+							экспертов.
+						</p>
+					</b>
+					<p>
+						Если у Вас есть запрос для консультации у опытного ментора - направьте запрос на почту <a
+							href="mailto:forum@pfp.spb.ru">forum@pfp.spb.ru</a>. С вами свяжется представитель
+						Оргкомитета и
+						предоставит информацию по профильным специалистам, кто можем максимально эффективно
+						проконсультировать
+						Вас.
+					</p>
+				</div>
+				<div class='tab_block tab_block3 none'>
+					<b>
+						<p>
+							Акселератор работает с проектами, нацеленными на реализацию в течении 2021-2022 годов.
+							Акселератор создан опытными предпринимателями и трекерами с многолетним стажем.
+						</p>
+						<p>
+							Процесс работы в акселераторе разделён на этапы, после прохождения которых - можно
+							запустить
+							свой стартап или же масштабировать существующий бизнес.
+						</p>
+						<p>
+							Критерии отбора проектов для акселератора:
+						</p>
+						<ul>
+							<li>Команда проекта – от 2-х человек и более;</li>
+							<li>Возраст одного из участника проекта от 18 до 35 лет;</li>
+							<li>Проект имеет экономическую модель прибыльности;</li>
+							<li>Определена целевая аудитория проекта;</li>
+							<li>Произведена оценка рынка;</li>
+							<li>Сформировано уникальное торговое предложение.</li>
+						</ul>
+						<p>
+							Работа над проектом в акселераторе - процесс многомесячный. По итогам прохождения
+							акселератора
+							успешные проекты смогут воспользоваться Ресурсным Центром Лаборатории
+							Предпринимательства.
+						</p>
+					</b>
+					<p>
+						Если у Вас есть желание принять участие в работе акселератора - направьте запрос на почту <a
+							href="mailto:forum@pfp.spb.ru">forum@pfp.spb.ru</a>. С вами свяжется представитель
+						акселератора и предоставит необходимую информацию.
+					</p>
+				</div>
+				<div class='tab_block tab_block4 none'>
+					<b>
+						<p>
+							Путешествия – это то, что любят все. Однако, если ты предприниматель, то всегда хочется
+							получить
+							чуточку больше, чем просто отдых во время путешествий.
+						</p>
+						<p>
+							Именно поэтому мы создаём путешествия с пользой для предпринимательства. Совместно с
+							коллегами-предпринимателями – формируем маршруты для совместного отдыха, нахождения
+							новых
+							партнёров, расширения своих бизнесов и инвестирования в другие, саморазвития и хорошего
+							времяпрепровождения.
+						</p>
+						<p>
+							Путешествия Бюро проходят в небольших группах как по территории России, так и в другие
+							страны.
+						</p>
+						<p>
+							Участники тура могут сформировать свои индивидуальные запросы, которые будут учтены при
+							организации поездки.
+						</p>
+					</b>
+					<p>
+						Если у Вас есть желание присоединиться к участию в путешествиях Бюро Biz & Travel - направьте
+						запрос на почту <a href="mailto:forum@pfp.spb.ru">forum@pfp.spb.ru</a>. С вами свяжется
+						представитель Бюро и предоставит информацию о ближайших поездках.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="bags">
+			<div class="container">
+				<h2><span>Пакеты</span> участия</h2>
+				<div class="price-list">
+					<div class="price-list__row">
+						<div class="price-list__col">
+							<div class="price-list__name">Пакет Классик</div>
+							<div class="price-list__date">2 дня (28,29 октября)</div>
+							<div class="price-list__cost">8 000 руб.</div>
+						</div>
+						<div class="price-list__col price-list__list">
+							<ul>
+								<li>Участие во всех сессиях Форума</li>
+								<li>Кофе-брэйк</li>
+								<li>Поездки на экскурсии по предприятиям Петербурга
+									<span>по предварительной регистрации</span>
+								</li>
+							</ul>
+							<ul>
+								<li>Бронирование номеров в отелях-партнёрах форума по специальным ценам
+									<span>при наличии свободных номеров</span>
+								</li>
+								<li>Предварительное бронирование программы развлечений (экскурсии, театры, музеи, спа)
+									по
+									специальным ценам
+									<span>при наличии свободных мест</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="price-list__row">
+						<div class="price-list__col">
+							<div class="price-list__name">Пакет Классик</div>
+							<div class="price-list__date">2 дня (28,29 октября)</div>
+							<div class="price-list__cost">8 000 руб.</div>
+						</div>
+						<div class="price-list__col price-list__list">
+							<ul>
+								<li>Участие во всех сессиях Форума</li>
+								<li>Кофе-брэйк</li>
+								<li>Поездки на экскурсии по предприятиям Петербурга
+									<span>по предварительной регистрации</span>
+								</li>
+							</ul>
+							<ul>
+								<li>Бронирование номеров в отелях-партнёрах форума по специальным ценам
+									<span>при наличии свободных номеров</span>
+								</li>
+								<li>Предварительное бронирование программы развлечений (экскурсии, театры, музеи, спа)
+									по
+									специальным ценам
+									<span>при наличии свободных мест</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="price-list__row">
+						<div class="price-list__col">
+							<div class="price-list__name">Пакет Классик</div>
+							<div class="price-list__date">2 дня (28,29 октября)</div>
+							<div class="price-list__cost">8 000 руб.</div>
+						</div>
+						<div class="price-list__col price-list__list">
+							<ul>
+								<li>Участие во всех сессиях Форума</li>
+								<li>Кофе-брэйк</li>
+								<li>Поездки на экскурсии по предприятиям Петербурга
+									<span>по предварительной регистрации</span>
+								</li>
+							</ul>
+							<ul>
+								<li>Бронирование номеров в отелях-партнёрах форума по специальным ценам
+									<span>при наличии свободных номеров</span>
+								</li>
+								<li>Предварительное бронирование программы развлечений (экскурсии, театры, музеи, спа)
+									по
+									специальным ценам
+									<span>при наличии свободных мест</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="price-list__row">
+						<div class="price-list__col">
+							<div class="price-list__name">Пакет Классик</div>
+							<div class="price-list__date">2 дня (28,29 октября)</div>
+							<div class="price-list__cost">8 000 руб.</div>
+						</div>
+						<div class="price-list__col price-list__list">
+							<ul>
+								<li>Участие во всех сессиях Форума</li>
+								<li>Кофе-брэйк</li>
+								<li>Поездки на экскурсии по предприятиям Петербурга
+									<span>по предварительной регистрации</span>
+								</li>
+							</ul>
+							<ul>
+								<li>Бронирование номеров в отелях-партнёрах форума по специальным ценам
+									<span>при наличии свободных номеров</span>
+								</li>
+								<li>Предварительное бронирование программы развлечений (экскурсии, театры, музеи, спа)
+									по
+									специальным ценам
+									<span>при наличии свободных мест</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="price-list__row">
+						<div class="price-list__col">
+							<div class="price-list__name">Пакет Классик</div>
+							<div class="price-list__date">2 дня (28,29 октября)</div>
+							<div class="price-list__cost">8 000 руб.</div>
+						</div>
+						<div class="price-list__col price-list__list">
+							<ul>
+								<li>Участие во всех сессиях Форума</li>
+								<li>Кофе-брэйк</li>
+								<li>Поездки на экскурсии по предприятиям Петербурга
+									<span>по предварительной регистрации</span>
+								</li>
+							</ul>
+							<ul>
+								<li>Бронирование номеров в отелях-партнёрах форума по специальным ценам
+									<span>при наличии свободных номеров</span>
+								</li>
+								<li>Предварительное бронирование программы развлечений (экскурсии, театры, музеи, спа)
+									по
+									специальным ценам
+									<span>при наличии свободных мест</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<a href='#register' data-link="register" class='anchor btn'>Зарегистрироваться</a>
+			</div>
+		</section>
+
+		<section class="section form" id='register'>
+			<div class="container">
+				<h2>Регистрация</h2>
+				<div class="form__wrapper">
+					<p> Заполните форму для регистрации - и мы свяжемся с вами. </p>
+					<form method='post' action='/send.php' id='form2'>
+						<input type='hidden' name='register' value='1'>
+						<div class='input_block mt'>
+							<select name='bag' class='input set' required placeholder='Выберите пакет участия'>
+								<option value=''>Выберите пакет участия</option>
+								<option value='Классик'>Классик (2 дня | 8 000 рублей)</option>
+								<option value='Бизнес'>Бизнес (2 дня | 18 000 рублей)</option>
+								<option value='VIP'>VIP (3 дня | 40 000 рублей)</option>
+								<option value='Молодёжный день'>Молодёжный (Молодёжный день | бесплатно)</option>
+							</select>
+						</div>
+						<div class='input_block mt'>
+							<input type='text' name='name' class='input' value='' required
+								placeholder='Фамилия, имя и отчество'>
+						</div>
+						<div class='input_block2'>
+							<div class='input_block'>
+								<input type='text' name='bdate' class='input' value='' required
+									placeholder='Дата рождения'>
+							</div>
+							<div class='input_block'>
+								<input type='text' name='city' class='input' value='' required placeholder='Регион'>
+							</div>
+						</div>
+						<div class='input_block2'>
+							<div class='input_block'>
+								<input type='text' name='phone' class='input phone' value='' required
+									placeholder='Телефон'>
+							</div>
+							<div class='input_block'>
+								<input type='email' name='mail' class='input' value='' required placeholder='E-mail'>
+							</div>
+						</div>
+						<div class='input_block2'>
+							<div class='input_block'>
+								<input type='text' name='vk' class='input' value='' required
+									placeholder='Ссылка на ваш vk'>
+							</div>
+							<div class='input_block'>
+								<input type='text' name='inst' class='input' value='' required
+									placeholder='Ссылка на ваш instagram'>
+							</div>
+						</div>
+						<div class='input_block mt'>
+							<input type='text' name='pos' class='input' value='' required placeholder='Ваша должность'>
+						</div>
+						<div class='input_block2'>
+							<div class='input_block'>
+								<input type='text' name='company' class='input' value='' required
+									placeholder='Название компании'>
+							</div>
+							<div class='input_block'>
+								<input type='text' name='year' class='input' value='' required
+									placeholder='Год основания компании'>
+							</div>
+						</div>
+						<div class='input_block mt'>
+							<input type='text' name='sfera' class='input' value='' required
+								placeholder='Сфера деятельности компании'>
+						</div>
+
+
+						<div class='input_block2'>
+							<div class='input_block'>
+								<div class='checkbox_block'>
+									<div class='checkbox set'></div>
+									<div class='checkbox_txt'>
+										Заполняя форму, я принимаю <a href='#'>условия передачи информации</a>
+									</div>
+								</div>
+							</div>
+							<div class='input_block'>
+								<button type='submit' class='btn'>Зарегистрироваться</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="section place " id='place'>
+			<div class="container">
+				<h2><span>Место</span> проведения</h2>
+				<div class="place__info">
+					<div class="place__location">
+						<span>Отель “Санкт-Петербург”, Пироговская наб., д. 5/2</span>
+					</div>
+					<div class="place__location">
+						<span>Точка Кипения, пр. Медиков, д. 3</span>
+						(Молодёжный день - 28 мая)
+					</div>
+				</div>
+				<div class="place__map" id='maps'></div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__title"> Деловые партнёры: </div>
+
+				<div class="footer__partners">
+					<a href="https://spb.pageclub.ru/" rel="nofollow" target="_blank">
+						<img src="./images/partner_pageclub.jpg" alt="">
+					</a>
+					<a href="https://soba.club/" rel="nofollow" target="_blank">
+						<img src="./images/partner_soba.jpg" alt="">
+					</a>
+					<a href="https://t.me/spbbiz_channel/" rel="nofollow" target="_blank">
+						<img src="./images/partner_spbbiz.jpg" alt="">
+					</a>
+					<a href="https://active-lady-spb.ru/" rel="nofollow" target="_blank">
+						<img src="./images/partner_activelady.jpg" alt="">
+					</a>
+					<a href="https://clubidei.ru/" rel="nofollow" target="_blank">
+						<img src="./images/partner_cludidei.jpg" alt="">
+					</a>
+					<a href="https://equium.club/ru/" rel="nofollow" target="_blank">
+						<img src="./images/partner_ekviym.jpg" alt="">
+					</a>
+					<a href="https://dp-club.ru/" rel="nofollow" target="_blank">
+						<img src="./images/partner_dp.jpg" alt="">
+					</a>
+					<a href="https://vk.com/szfofranch/" rel="nofollow" target="_blank">
+						<img src="./images/partner_afc.jpg" alt="">
+					</a>
+					<a href="https://etalon.club/" rel="nofollow" target="_blank">
+						<img src="./images/partner_etalon.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="footer__contact">
+					<a class="footer__phone" href="tel:+79522620737">+7 (952) 262 07 37</a>
+					<a class="footer__mail" href="mailto:forum@pfp.spb.ru">forum@pfp.spb.ru</a>
+				</div>
+
+				<div class="footer__subtitle">Медиапартнёры: </div>
+				<div class="footer__row">
+					<div class="footer__partners">
+						<a href="https://rueconomics.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_rueconomics.jpg" alt="">
+						</a>
+						<a href="https://prohotel.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_prohotel.jpg" alt="">
+
+						</a>
+						<a href="https://piterzavtra.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_piterzavtra.jpg" alt="">
+						</a>
+						<a href="https://novostimb.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_novostimb.jpg" alt="">
+						</a>
+						<a href="https://nation-news.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_nation-news.jpg" alt="">
+						</a>
+						<a href="https://spbdnevnik.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_spbdnevnik.jpg" alt="">
+						</a>
+						<a href="https://xn--80apbncz.xn--p1ai/" rel="nofollow" target="_blank">
+							<img src="./images/partner_miamir.jpg" alt="">
+						</a>
+						<a href="https://ingria-park.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_tehnopark.jpg" alt="">
+						</a>
+						<a href="https://www.rosmolcenter.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_rosmol.jpg" alt="">
+						</a>
+						<a href="https://smallbusiness.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_smallbiz.jpg" alt="">
+						</a>
+						<a href="https://crpp.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_centr.jpg" alt="">
+						</a>
+						<a href="https://xn--90aifddrld7a.xn--p1ai/" rel="nofollow" target="_blank">
+							<img src="./images/partner_mybiz.jpg" alt="">
+						</a>
+						<a href="https://rusnewsday.ru/" rel="nofollow" target="_blank">
+							<img src="./images/partner_rusnewsday.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="footer__menu">
+						<a class="anchor" data-link="o_forume" href='#o_forume'>О форуме</a>
+						<a class="anchor" data-link="programma" href='#programma'>Программа</a>
+						<a class="anchor" data-link="speaker" href='#speaker'>Спикеры</a>
+						<a class="anchor" data-link="bags" href='#bags'>Пакеты участника</a>
+						<a class="anchor" data-link="register" href='#register' class='set'>Регистрация</a>
+						<a class="anchor" data-link="place" href='#place'>Площадка</a>
+						<div class='clear'></div>
+						<a href='https://vk.com/event204425034' rel="nofollow" target="_blank">vk.com</a>
+						<a href='https://zen.yandex.ru/id/60aa0eecc8212d7dc731c0e7' rel="nofollow"
+							target="_blank">zen.yandex.ru</a>
+						<a href='https://t.me/pfpspb' rel="nofollow" target="_blank">t.me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

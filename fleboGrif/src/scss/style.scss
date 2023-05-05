@@ -1,0 +1,211 @@
+// settings
+@import 'fonts';
+@import 'variables';
+
+// mixins
+@import 'mixins/font';
+
+// extends
+@import 'extend/pointer';
+@import 'extend/check-item';
+@import 'extend/primary-btn';
+
+// components
+@import 'templates/breadcrumbs';
+@import 'templates/video';
+@import 'templates/slider';
+@import 'templates/description';
+@import 'templates/hidden-mobile';
+@import 'templates/nav';
+@import 'templates/header';
+@import 'templates/advantage';
+@import 'templates/dev-advantage';
+@import 'templates/compound';
+@import 'templates/event';
+@import 'templates/select';
+@import 'templates/clinics';
+@import 'templates/articles';
+@import 'templates/answers';
+@import 'templates/form';
+@import 'templates/footer';
+@import 'templates/variants';
+
+// pages
+@import 'templates/main';
+@import 'templates/about';
+
+// global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mont', sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: $color-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-black;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+button {
+  font-family: 'Mont', sans-serif;
+}
+
+input {
+  font-family: 'Mont', sans-serif;
+  font-size: 16px;
+  line-height: 21.6px;
+  font-weight: 400;
+  color: $color-black;
+
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.--mobile {
+  &-576 {
+    @media screen and (min-width: 576px) {
+      display: none;
+    }
+  }
+}
+
+.hide-mobile {
+  @media screen and (max-width: 575.98px) {
+    max-width: 120px;
+    max-height: 28px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  @media screen and (max-width: 1399.98px) {
+    padding: 0 30px;
+  }
+}
+
+.section {
+  padding-top: 110px;
+  @media screen and (max-width: 575.98px) {
+    padding-top: 70px;
+  }
+}
+
+.last-block {
+  padding-bottom: 110px;
+}
+
+.usual_ul {
+  ul {
+    padding: 15px;
+    line-height: 22px;
+    li {
+      margin-bottom: 5px;
+      &::before {
+        content: '\2022';
+        color: #1783d3;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+}
+
+.more__link {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 15px;
+  font-weight: 600;
+  color: $color-primary;
+  &.pdf::before {
+    content: '';
+
+    margin-right: 15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+    background-image: url('../img/icons/pdf.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+
+  @include font(35, 40.25, 800);
+  text-align: left;
+  color: $color-black;
+  @media screen and (max-width: 575.98px) {
+    margin-bottom: 30px;
+
+    @include font(25, 32.5, 800);
+  }
+}
+
+.title50 {
+  max-width: 510px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+
+  @include font(25, 32.5, 600);
+  @media screen and (max-width: 575.98px) {
+    @include font(20, 26, 600);
+  }
+}
+
+.logo {
+  max-width: 181px;
+  max-height: 42px;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 575.98px) {
+    max-width: 120px;
+    max-height: 28px;
+  }
+}
+
+.phone {
+  @include font(20, 26, 600);
+  color: $color-light-blue3;
+}

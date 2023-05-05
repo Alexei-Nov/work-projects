@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>Doc</title>
+
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.mask.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+</head>
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapepr">
+					<a href="" class="header__logo">
+						<img src="./img/logo.png" alt="">
+					</a>
+					<div class="header__body">
+						<div class="header__location" style="background-image: url(./img/location.png);">
+							<span>г. Название</span>
+							Название улицы, 0, стр. 0
+						</div>
+						<div class="header__phone" style="background-image: url(./img/phone.png);">
+							<div class="header__phone-text">Сейчас работаем, звоните</div>
+							<a href="tel:+7 (999) 999-99-99" class="header__phone-link">+7 (999) 999-99-99</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main-page">
+				<div class="container">
+					<div class="main-page__wrapper">
+						<div class="main-page__body">
+							<div class="main-page__title">
+								<b>Вернём улыбку</b> <span>за 1 день</span> по системе <b>ALL-ON-4</b> <br> c постоянным
+								протезом
+							</div>
+							<div class="main-page__list">
+								<div class="main-page__item">
+									<div class="main-page__img">
+										<img src="./img/main-list1.png" alt="">
+									</div>
+									<div class="main-page__info"><b>Пожизненная гарантия</b>по договору</div>
+								</div>
+								<div class="main-page__item">
+									<div class="main-page__img">
+										<img src="./img/main-list2.png" alt="">
+									</div>
+									<div class="main-page__info"><b>Без боли </b>ДО и ПОСЛЕ операции</div>
+								</div>
+								<div class="main-page__item">
+									<div class="main-page__img">
+										<img src="./img/main-list3.png" alt="">
+									</div>
+									<div class="main-page__info"><b>Установка </b>за 1 день</div>
+								</div>
+							</div>
+							<div class="main-page__controls">
+								<div class="main-page__btn-block">
+									<a href="#quiz" class="main-page__btn btn anchor"> <b> Рассчитать стоимость </b>
+										установки имплантов с гарантией
+									</a>
+									<div class="main-page__btn-label">Ответьте на 5 простых вопросов — узнайте стоимость
+										имплантации и получите подарок
+									</div>
+								</div>
+								<div class="main-page__gifts">
+									<div class="main-page__gifts-item gift">
+										<div class="gift__img">
+											<img src="./img/gift.png" alt="">
+										</div>
+										<div class="gift__body">
+											<div class="gift__text">Завлекающее предлложение</div>
+											<div class="gift__cost">
+												<div class="gift__cost-price"> 00 000 ₽ </div>
+												<div class="gift__cost-label">В подарок</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="main-page__gifts-item gift">
+										<div class="gift__img">
+											<img src="./img/gift.png" alt="">
+										</div>
+										<div class="gift__body">
+											<div class="gift__text">Второе крутое предложение</div>
+											<div class="gift__cost">
+												<div class="gift__cost-price"> 00 000 ₽ </div>
+												<div class="gift__cost-label">В подарок</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="quiz" id="quiz">
+				<div class="container">
+					<div class="quiz__header">
+						<div class="quiz__title">Опишите свою ситуацию и мы
+							посчитаем стоимость под ваш случай</div>
+						<div class="quiz__subtitle">в 3-х ценовых категориях: «Категория», «Категория», «Категория»!
+						</div>
+					</div>
+					<div class="quiz__wrapper">
+						<form class="quiz__form">
+							<div class="quiz__info">
+								<div class="quiz__info-title">Пройдите тест до конца и получите подарок от нашей
+									стоматологии</div>
+								<div class="quiz__info-gift">
+									<img src="./img/quiz-gift.png" alt="">
+								</div>
+								<div class="quiz__info-text">
+									Все наши пациенты прошедшие предварительное тестирование на сайте,
+									гарантированно получают подарки при заключении договора!
+								</div>
+								<div class="quiz__doc">
+									<div class="quiz__doc-photo">
+										<img src="./img/doc.png" alt="">
+									</div>
+									<div class="quiz__doc-info">
+										<div class="quiz__doc-name">
+											Имя Фамилия Отчество
+										</div>
+										<div class="quiz__doc-position">
+											Главный врач клиники, Стоматолог-Хирург, Имплантолог
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="quiz__body">
+								<div class="quiz__progress">
+									<div class="quiz__progress-title">Этап <span
+											class="quiz__progress-cuurent"></span>/<span
+											class="quiz__progress-total"></span>
+									</div>
+									<div class="quiz__progress-line"></div>
+								</div>
+
+								<div class="quiz__list">
+									<div class="quiz__list-item active">
+										<div class="quiz__question"><span>01.</span>Сколько зубов нужно восстановить?
+										</div>
+										<div class="quiz__answers quiz__answers_row">
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q1"
+													checked="checked">
+												<img src="img/q1-1.png" alt="">
+												<span class="quiz__checkbox-label">
+													1 зуб
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q1">
+												<img src="img/q1-2.png" alt="">
+												<span class="quiz__checkbox-label">
+													Несколько зубов
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q1">
+												<img src="img/q1-3.png" alt="">
+												<span class="quiz__checkbox-label">
+													Вся челюсть
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q1">
+												<img src="img/q1-4.png" alt="">
+												<span class="quiz__checkbox-label">
+													Обе челюсти
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="quiz__list-item ">
+										<div class="quiz__question"><span>02.</span>Какие зубы нужно восстановить?
+										</div>
+										<div class="quiz__answers">
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q2"
+													checked="checked">
+												<span class="quiz__checkbox-label">
+													Передние
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q2">
+												<span class="quiz__checkbox-label">
+													Жевательные
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="quiz__list-item ">
+										<div class="quiz__question"><span>03.</span>Как давно у вас эта проблема?
+										</div>
+										<div class="quiz__answers">
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q3"
+													checked="checked">
+												<span class="quiz__checkbox-label">
+													Меньше месяца
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q3">
+												<span class="quiz__checkbox-label">
+													Больше полугода
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q3">
+												<span class="quiz__checkbox-label">
+													До полугода
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q3">
+												<span class="quiz__checkbox-label">
+													Затрудняюсь ответить
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="quiz__list-item ">
+										<div class="quiz__question"><span>04.</span>Когда вы планируете начать лечение?
+										</div>
+										<div class="quiz__answers">
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q4"
+													checked="checked">
+												<span class="quiz__checkbox-label">
+													Как можно скорее
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q4">
+												<span class="quiz__checkbox-label">
+													В течение месяца
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q4">
+												<span class="quiz__checkbox-label">
+													В течение недели
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q4">
+												<span class="quiz__checkbox-label">
+													Затрудняюсь ответить
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="quiz__list-item ">
+										<div class="quiz__question"><span>05.</span>Хотите оформить налоговый вычет?
+										</div>
+										<div class="quiz__answers">
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q5"
+													checked="checked">
+												<span class="quiz__checkbox-label">
+													Да, хочу!
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q5">
+												<span class="quiz__checkbox-label">
+													Нет, не нуждаюсь
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+											<label class="quiz__answer">
+												<input class="quiz__input" type="radio" name="q5">
+												<span class="quiz__checkbox-label">
+													Пока не знаю
+													<span class="quiz__checkmark"></span>
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="quiz__bottom">
+									<div class="next quiz__next-btn btn">Следующий вопрос</div>
+								</div>
+							</div>
+						</form>
+						<div class="quiz__final">
+							<div class="quiz__final-img">
+								<img src="img/final.png" alt="">
+							</div>
+							<div class="quiz__final-info">
+								<div class="quiz__final-title">Мы всё посчитали! Готовы выслать Вам!</div>
+								<form class="quiz__final-form">
+									<input class="input phone-mask" type="tel" placeholder="+7 (___) ___-__-__"
+										name="phone">
+									<button type="submit" class="quiz__final-btn btn">
+										<b>Получить расчёт </b>
+										<img src="img/icon/final-arrow.svg" alt="">
+									</button>
+								</form>
+								<div class="quiz__final-confidance">
+									Нажимая на кнопку, вы соглашаетесь на обработку
+									<a href="" target="_blank">персональных данных</a>
+								</div>
+
+								<div class="quiz__final-present">
+									<div class="quiz__final-present-img"><img src="img/quiz-gift.png" alt=""></div>
+									<div class="quiz__final-present-info">
+										<div class="quiz__final-present-title">Мы закрепили за Вами подарки:</div>
+										<ol class="quiz__final-present-list">
+											<li>Гигиена перед имплантацией или хирургией</li>
+											<li>Прототип коронки на
+												имплантат</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__caution">
+						ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА.
+					</div>
+					<div class="footer__info">
+						<div class="footer__text">
+							Информация не является публичной офертой и носит информационный характер.
+						</div>
+						<div class="footer__block">
+							<div class="footer__text footer__text_underline">Лицензия №ЛО-77-01-016289 от 28 июня 2018
+								г.</div>
+							<a href="" class="footer__text">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

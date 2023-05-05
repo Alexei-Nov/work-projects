@@ -1,0 +1,24 @@
+.breadcrumbs {
+  margin: 50px 0px;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a::after {
+      content: '/';
+      margin: 0px 5px;
+    }
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &-title {
+    .title {
+      font-size: 40px;
+    }
+    + section {
+      padding-top: 0;
+    }
+  }
+}

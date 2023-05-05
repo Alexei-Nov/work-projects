@@ -1,0 +1,18 @@
+.variants {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item {
+    width: 400px;
+    &-title {
+      margin-bottom: 15px;
+
+      @include font(25, 32, 600);
+      color: $color-dark-blue;
+    }
+  }
+}

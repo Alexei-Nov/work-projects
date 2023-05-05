@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FleboGrif</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- js libs  -->
+  <script defer src="jsLibs/jquery-3.6.0.min.js"></script>
+  <script defer src="jsLibs/swiper-bundle.min.js"></script>
+
+  <!-- js code  -->
+  <script defer src="js/App.js"></script>
+</head>
+
+
+  <body>
+    <div class="header__overlay"></div>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Картинка" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">О методе</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Клиники</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Статьи</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li class="has-children nav__item">
+            <a href="#">Для врачей</a>
+            <ul class="nav__hidden-list">
+              <li>
+                <a href="#">О методе</a>
+              </li>
+              <li>
+                <a href="#">Наши мероприятия</a>
+              </li>
+              <li>
+                <a href="#">Видео мастерклассов</a>
+              </li>
+              <li>
+                <a href="#">Вопрос-ответ</a>
+              </li>
+              <li>
+                <a href="#">Статьи</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="phone">
+          <a href="tel:79142938797">+7 914 293-87-97</a>
+        </div>
+        <a href="#" class="nav__policy --mobile">Политика конфиденциальности</a>
+        <small class="nav__copyright --mobile">© Базис-медикал. Все права защищены</small>
+      </nav>
+
+      <div class="nav__btn --mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="breadcrumbs-title">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Для врачей</a></li>
+        <li><span>О методе</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="section description --mobile-reverse">
+      <div class="container">
+        <h1 class="title">О методе</h1>
+        <div class="about-method__wrapper description__wrapper">
+          <div class="about-method__info description__info">
+            <h4 class="--mobile-576">Для чего используется Flebogrif?</h4>
+            <p>
+              Устройство используется для механохимической облитерации поверхностных венозных
+              стволов, которая заключается в одновременном механическом повреждении внутреннего слоя
+              вены и контролируемом введении склерозирующего препарата в виде пены или раствора
+            </p>
+            <div class="about-method__list">
+              <ul>
+                <li>Безболезненная амбулаторная процедура</li>
+                <li>Отличный и длительный косметический эффект</li>
+                <li>Процедура занимает ма ло времени</li>
+                <li>После операции можно ходить сразу и без боли</li>
+              </ul>
+            </div>
+          </div>
+          <div class="video description__photo">
+            <img src="img/about/about-method.jpg" alt="Видео" />
+            <button class="play-video"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantage">
+      <div class="container">
+        <h2 class="title">Преимущества аппарата</h2>
+        <ul class="advantage__list">
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/time.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Быстрая процедура</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                Занимает всего 10 минут, после неё пациент сможет спокойно передвигаться и идти
+                домой или по своим делам
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/like.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Эффективность 92%</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                На основе наблюдений за пациентами после механохимической облитерации в течение двух
+                лет
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="advantage__item-icon">
+              <img src="img/icons/anesthesia.svg" alt="Картинка" />
+            </div>
+            <h3 class="subtitle">Без анестезии</h3>
+            <div class="advantage__item-dsc">
+              <p>
+                Не требует туменесцентной анестезии, что означает отсутствие болевых ощущений у
+                большинства пациентов во время операции
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section description">
+      <div class="container">
+        <div class="about-method__wrapper description__wrapper">
+          <div class="video hide-mobile">
+            <img src="img/about/girl.png" alt="Видео" />
+          </div>
+          <div class="about-method__info description__info usual_ul">
+            <h2 class="title">Ограничения методики</h2>
+            <p>
+            Безусловно, процедура не может быть рекомендована 100% пациентов с венозной недостаточностью,
+учитывая специфику метода. Некоторым ограничением методики может являться наличие крупных варикозных притоков, удаление которых другими методами (минифлебэктомия, ЭВЛК) возможно имело бы большую эффективность. Кроме того, по данным современных
+мировых исследований, реканализцация облитерированной части после склеротерапии ниже, чем после термооблитерации, что приводит к необходимости более тщательного отбора пациентов
+            </p>
+           
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section articles articles__mobile-hide last-block">
+      <div class="container">
+        <h2 class="title">Статьи</h2>
+        <div class="articles__list">
+          <article>
+            <img src="img/articles/article-1.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Причины возникновения варикоза и его лечение</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-2.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>
+                Склеротерапия <br />
+                для лечения варикоза
+              </h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/articles/article-3.jpg" alt="Картинка" />
+            <div class="articles__list-info">
+              <h4>Лечение варикоза устройством Flebogrif</h4>
+              <a href="#">Читать статью</a>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="articles__more">Смотреть все</a>
+      </div>
+    </section>
+
+    <footer class="section footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="logo">
+        <img src="img/logo.png" alt="Картинка" />
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">О методе</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Клиники</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Статьи</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Для врачей</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="phone">
+          <a href="tel:79142938797">+7 914 293-87-97</a>
+        </div>
+      </nav>
+    </div>
+    <small class="footer__copyright">© Базис-медикал. Все права защищены</small>
+  </div>
+</footer>
+
+  </body>
+</html>

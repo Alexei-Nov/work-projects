@@ -1,0 +1,150 @@
+.answers {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+    &-hidden {
+      z-index: 10;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      padding: 5px 30px 27px 30px;
+
+      width: 100%;
+
+      display: none;
+
+      @include font(16, 21.6, 600);
+      color: $color-secondary;
+
+      background-color: $color-light;
+      box-shadow: 0px 15px 15px rgba(39, 54, 95, 0.15);
+      @media screen and (max-width: 1399.98px) {
+        padding: 20px;
+        padding-top: 5px;
+      }
+      ul {
+        margin: 15px 0;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        @media screen and (max-width: 575.98px) {
+          padding: 0 15px;
+        }
+        li {
+          position: relative;
+
+          padding-left: 16px;
+          &::before {
+            content: '';
+
+            position: absolute;
+            top: 6px;
+            left: 0;
+
+            width: 5px;
+            height: 5px;
+
+            background-color: $color-primary;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+
+    padding: 25px 30px;
+    min-height: 115px;
+    height: 100%;
+    max-width: 620px;
+    width: 100%;
+
+    background-color: $color-light-blue;
+
+    transition: 0.4s;
+
+    @extend .pointer;
+    @media screen and (max-width: 1399.98px) {
+      max-width: 100%;
+    }
+    @media screen and (max-width: 575.98px) {
+      padding: 15px 20px 17px 20px;
+      min-height: 110px;
+    }
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 34px;
+      right: 30px;
+
+      width: 29px;
+      height: 14px;
+
+      background-image: url(../img/icons/arrowDown2.svg);
+      background-repeat: no-repeat;
+
+      transition: 0.4s;
+      @media screen and (max-width: 575.98px) {
+        top: 22px;
+        right: 20px;
+
+        width: 22px;
+        height: 11px;
+
+        background-size: contain;
+      }
+    }
+    &.--active {
+      padding-bottom: 0;
+      min-height: 70px;
+
+      background-color: $color-light;
+      box-shadow: 0px -10px 15px rgba(39, 54, 95, 0.15);
+      &::after {
+        transform: rotate(180deg);
+      }
+      .answers__list-hidden {
+        display: block;
+      }
+    }
+    h4 {
+      padding-right: 64px;
+      @include font(25, 32.5, 600);
+      @media screen and (max-width: 575.98px) {
+        padding-right: 33px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        @include font(20, 26, 600);
+
+        overflow: hidden;
+      }
+    }
+  }
+  &__more {
+    margin-left: auto;
+    margin-top: 19px;
+    padding-right: 16px;
+    display: block;
+    width: fit-content;
+
+    @include font(16, 20.8, 600);
+    color: $color-primary;
+
+    background-image: url(../img/icons/arrowRight2.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    background-size: 6px 10px;
+    @media screen and (max-width: 575.98px) {
+      margin-top: 9px;
+      margin-left: 0;
+    }
+  }
+}

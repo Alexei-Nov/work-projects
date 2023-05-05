@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-old.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="body-wrapper">
+        <header class="header"> </header>
+        <main class="main">
+            <section class="section quiz-table">
+                <div class="container">
+                    <div class="quiz-table__header">
+                        <div class="quiz-table__inputs">
+                            <input style="max-width: 215px;" type="text" class="quiz-table__input"
+                                placeholder="ФИО пациента">
+                            <input style="max-width: 225px;" type="text" class="quiz-table__input"
+                                placeholder="Дата рождения">
+                            <input style="max-width: 260px;" type="text" class="quiz-table__input"
+                                placeholder="№ карты">
+                            <input style="max-width: 370px;" type="text" class="quiz-table__input"
+                                placeholder="Опрос по анкете провел врач">
+                            <input style="max-width: 425px;" type="text" class="quiz-table__input"
+                                placeholder="Дата последнего лечения (кроме чистки)">
+                            <input style="max-width: 390px;" type="text" class="quiz-table__input"
+                                placeholder="Дата последнего рентгенологического исследования">
+                        </div>
+                        <div class="quiz-table__caution">ЕСТЬ ЛИ У ВАС ПРОБЛЕМЫ, ТРЕБУЮЩИЕ НЕМЕДЛЕННОГО РЕШЕНИЯ? ЕСЛИ
+                            ДА, ТО КАКИЕ?</div>
+                        <div class="quiz-table__body">
+                            <table class="quiz-table__table">
+                                <caption>Личный анамнез</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Есть у Вас неблагоприятный опыт предыдущего лечения?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q1">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q1">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Есть ли у Вас осложнения после стоматологических вмешательств?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q2">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q2">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td> Были ли у Вас когда-либо негативные последствия от местной анестезии?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q3">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q3">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td> Болеете ли Вы в данный момент ОРЗ, гриппом, герпесом?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q4">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q4">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Случались ли у Вас ранее нарушения мозгового кровообращения, инсульты? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q5">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q5">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Наблюдаетесь ли Вы у врача-кардиолога? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q6">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q6">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Страдаете ли Вы пониженным/повышенным артериальным давлением?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q7">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q7">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td> Страдаете ли Вы эпилепсией?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q8">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q8">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td> Страдаете ли Вы заболеваниями почек, печени, крови и др.?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q9">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q9">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Страдаете ли Вы ревматическими заболеваниями? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q10">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q10">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Ставили ли Вам диагноз остеопороз?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q11">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q11">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Переносили ли Вы гепатит, диабет? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q12">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q12">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td> Случаются ли у Вас припадки, обмороки, головокружения?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q13">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q13">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Переносили ли Вы синусит/гайморит? Как регулярно? Как давно в последний раз?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q14">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q14">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Страдаете ли Вы длительными кровотечениями после порезов?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q15">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q15">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Принимаете ли Вы медикаменты, тормозящие свертывание крови? Какие?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q16">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q16">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td> Страдаете ли Вы лекарственной/пищевой аллергией, астмой?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q17">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q17">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td> Для женщин: беременны ли Вы? Срок? Если ДА, беременность протекает без
+                                            осложнений/с осложнениями (какими?)-нужное подчеркнуть.
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q18">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q18">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td> Возможно ли, что Вы подвергались воздействию вируса СПИДа?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q19">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q19">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td> Связана ли Ваша работа с контактом с цельной кровью, препаратами крови или
+                                            загрязненными иглами и инструментами?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q20">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q20">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Лечились ли Вы когда-либо от наркомании? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q21">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q21">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td> Какие медикаменты Вы принимаете в настоящее время?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q22">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q22">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Проводилось ли когда-нибудь ортодонтическое лечение или избирательное
+                                            пришлифовывание? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q23">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q23">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td> Удалялись ли Вам когда-нибудь зубы?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q24">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q24">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="quiz-table__table">
+                                <caption>Характеристика улыбки</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>25</td>
+                                        <td> Вы хотите изменить что-нибудь во внешнем виде Ваших зубов?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q25">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q25">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Вы когда-нибудь отбеливали зубы? Когда последний раз? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q26">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q26">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Чувствуете ли Вы дискомфорт, неуверенность, стеснение из-за того, как
+                                            выглядят Ваши зубы? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q27">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q27">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <table class="quiz-table__table">
+                                <caption>Прикус и височно-нижнечелюстной сустав</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>28</td>
+                                        <td> Есть ли у Вас проблемы с челюстным суставом (боль, шумы, ограничение
+                                            открывания, блокировка, щелчки, вывихи)?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q28">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q28">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Отмечаете ли Вы, что стараетесь найти наиболее комфортное положение челюстей
+                                            при смыкании зубов? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q29">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q29">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td> Испытываете ли Вы трудности с жеванием или избегаете ли Вы жвачку, морковь,
+                                            орехи, сухари или другую твердую и сухую пищу?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q30">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q30">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td> Изменились ли Ваши зубы за последние 5 лет, стали короче, тоньше или
+                                            произошло истирание зубов?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q31">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q31">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td> Стискиваете ли Вы зубы или скрипите зубами днем или ночью?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q32">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q32">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td> Ставили ли Вам диагноз Бруксизм?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q33">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q33">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td> Страдаете ли Вы головной болью (мигренью)?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q34">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q34">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>Есть ли у Вас проблемы с осанкой/позвоночником? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q35">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q35">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>Есть ли у Вас проблемы со сном (т.е.беспокойный сон), просыпаетесь ли Вы с
+                                            головной болью или с чувством ощущения собственных зубов?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q36">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q36">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="quiz-table__table">
+                                <caption>Структура зубов</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>Есть ли у Вас чувствительность зубов на горячее, холодное или сладкое?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q37">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q37">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>38</td>
+                                        <td>Застревает ли у Вас пища между зубами регулярно?, если да, то пользуетесь ли
+                                            зубочистками/флосом?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q38">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q38">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <table class="quiz-table__table">
+                                <caption>Состояние пародонта и слизистых оболочек</caption>
+                                <tbody>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>Кровоточат ли у Вас десна во время еды, чистки щеткой или ночью? </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q39">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q39">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td> Проводилось ли Вам когда-нибудь лечение десен?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q40">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q40">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>41</td>
+                                        <td>Вы когда-нибудь ощущали неприятный привкус во рту или неприятный запах?
+                                        </td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q41">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q41">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td> Страдаете ли Вы сухостью в полости рта?</td>
+                                        <td>
+                                            <div class="quiz-table__answer">
+                                                <label class="quiz-table__label">Да
+                                                    <input type="radio" name="q42">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                                <label class="quiz-table__label">Нет
+                                                    <input type="radio" name="q42">
+                                                    <span class="quiz-table__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="quiz-table__bottom">
+                            <input style="max-width: 225px;" type="text" class="quiz-table__input" placeholder="Дата">
+                            <div class="quiz-table__sign"><span> подпись врача</span></div>
+                            <div class="quiz-table__sign"><span>подпись пациента</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"> </footer>
+    </div>
+
+</body>
+
+</html>

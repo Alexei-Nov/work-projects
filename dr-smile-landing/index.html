@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header ">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="" class="header__logo">
+						<img src="./img/logo.jpg" alt="">
+					</a>
+					<div class="header__menu-btn"> <span></span> </div>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item "><a class="anchor" data-link="about-company" href="">о
+									компании</a></li>
+							<li class="header__nav-item "><a class="anchor" data-link="dots" href="">франшиза</a></li>
+							<li class="header__nav-item "><a class="anchor" data-link="franchise" href="">состав
+									франшизы</a>
+							</li>
+							<li class="header__nav-item "><a class="anchor" data-link="review" href="">отзывы</a></li>
+							<li class="header__nav-item "><a class="anchor" data-link="contact" href="">контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#popup" data-fancybox class="header__btn btn">перезвоним вам сами</a>
+				</div>
+				<div class="header__panel">
+					<div class="header__panel-body">
+						<div class="header__panel-info">
+							<a href="" class="header__panel-link">Политика конфиденциальности</a>
+							<a href="" class="header__panel-btn btn btn_light">Обратный звонок</a>
+						</div>
+						<div class="header__cross"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section entrance">
+				<div class="container">
+					<div class="entrance__wrapper">
+						<div class="entrance__title title left-animation">ПРИБЫЛЬНАЯ ФРАНШИЗА СЕТИ СТОМАТОЛОГИЙ «ДОКТОР
+							СМАЙЛ»</div>
+						<div class="entrance__body">
+							<div class="entrance__subtitle right-animation">Гарантированный поток клиентов за счёт ОМС и
+								ДМС с первого
+								дня работы клиники!</div>
+							<ul class="entrance__list right-animation">
+								<li>Научим работать с клиентами по ОМС и ДМС</li>
+								<li>Поможем подписать договоры со страховыми компаниями</li>
+							</ul>
+							<a href="" class="btn entrance__btn size-animation">Узнать подробнее о франшизе</a>
+						</div>
+						<div class="entrance__doc">
+							<div class="entrance__doc-img">
+								<img src="./img/entrance-doc.png" alt="">
+							</div>
+							<div class="entrance__doc-label size-animation">
+								<div class="entrance__doc-name">
+									Михаил Леонидович Каган
+								</div>
+								<div class="entrance__doc-position">
+									Основатель и директор клиники
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section about-company" id="about-company">
+				<div class="container">
+					<div class="about-company__wrapper dark-bg br-20">
+						<div class="about-company__img br-20">
+							<img src="./img/about-company.jpg" alt="">
+						</div>
+						<div class="about-company__body">
+							<div class="about-company__title title">О компании</div>
+							<div class="about-company__text">
+								<p>Клиника «Доктор Смайл» основана в 1999-м году стоматологом – ортопедом Михаилом
+									Леонидовичем Каганом.</p>
+								<p>Сегодня клиника занимает одно из ведущих мест среди лидеров московской стоматологии и
+									состоит в Ассоциации частных стоматологических клиник города Москвы. Мы предлагаем
+									партнерам свой многолетний опыт в обслуживании корпоративных клиентов,
+									документальное и информационное сопровождение при вступлении в системы ОМС и ДМС.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-photo">
+				<div class="container">
+					<div class="text-photo__wrapper">
+						<div class="text-photo__img br-20">
+							<img src="./img/text-photo.jpg" alt="">
+						</div>
+						<div class="text-photo__body br-20">
+							<div class="text-photo__title title">ЗАРАБОТОК НА ОМС и ДМС</div>
+							<div class="text-photo__text">
+								<p>Объём рынка платных стоматологических услуг в России за 2021 год составил 255,6 млн
+									приёмов. 68% приёмов были оплачены с помощью полисов ОМС.</p>
+								<p><strong>Мы предлагаем документальное и информационное сопровождение при вступлении в
+										системы ОМС и ДМС:</strong></p>
+								<ul>
+									<li>Инструктаж по подготовке необходимого оборудования и программного обеспечения
+										для работы в рамках системы</li>
+									<li>Предоставление документов и справочников</li>
+									<li>Инструктаж ответственных лиц учреждения</li>
+									<li>Консультация во время предоставления отчетности</li>
+									<li>Консультация при подготовке документации</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section tile">
+				<div class="container">
+					<div class="tile__title title">наши преимущества</div>
+					<div class="tile__wrapper">
+						<div class="tile__item br-20">
+							Помощь клиентам в получении налогового вычета в размере 13% (НДФЛ) от потраченных средств на
+							лечение и процедуры
+						</div>
+						<div class="tile__item br-20">
+							Современное и высокотехнологичное стоматологическое оборудование Германии, Японии и США
+						</div>
+						<div class="tile__item br-20">
+							Сотрудничество с ведущими страховыми компаниями в рамках программы ДМС и ОМС
+						</div>
+						<div class="tile__item br-20">
+							Гарантия бесплатной первичной консультации специалиста
+						</div>
+						<div class="tile__item br-20">
+							Бесплатный профилактический осмотр для пациентов каждые 4 месяца
+						</div>
+						<div class="tile__item br-20">
+							Сложное протезирование и хирургия реализуется на принципах 3D-стоматологии
+						</div>
+						<div class="tile__item br-20">
+							Уникальные программы годового обслуживания для всей семьи, а также сотрудников компаний
+						</div>
+						<div class="tile__item br-20">
+							План лечения с визуализацией будущей улыбки
+						</div>
+						<div class="tile__item br-20">
+							Инновационные технологии на основе "искусственного интеллекта"
+						</div>
+						<div class="tile__item br-20">
+							Собственный учебный центр и система непрерывного обучения врачей
+						</div>
+					</div>
+					<a href="" class="tile__btn btn btn_light">оставить заявку менеджеру</a>
+				</div>
+			</section>
+
+			<section class="section staff">
+				<div class="container">
+					<div class="staff__wrapper">
+						<div class="staff__slider swiper-container">
+							<div class="staff__slider-wrapper swiper-wrapper">
+								<div class="staff__slide swiper-slide">
+									<img src="./img/staff1.jpg" alt="">
+								</div>
+								<div class="staff__slide swiper-slide">
+									<img src="./img/staff2.jpg" alt="">
+								</div>
+								<div class="staff__slide swiper-slide">
+									<img src="./img/staff3.jpg" alt="">
+								</div>
+								<div class="staff__slide swiper-slide">
+									<img src="./img/staff4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="staff__pagination slider-pagination"></div>
+
+						<div class="staff__body">
+							<div class="staff__item">
+								<div class="staff__key">
+									Специалистов:
+								</div>
+								<div class="staff__value">
+									25 человек
+								</div>
+							</div>
+
+							<div class="staff__item">
+								<div class="staff__key">
+									Средний чек:
+								</div>
+								<div class="staff__value">
+									15 000 руб
+								</div>
+							</div>
+
+							<div class="staff__item">
+								<div class="staff__key">
+									Всего пациентов:
+								</div>
+								<div class="staff__value">
+									60 000 человек
+								</div>
+							</div>
+
+							<div class="staff__item">
+								<div class="staff__key">
+									Пациентов за месяц:
+								</div>
+								<div class="staff__value">
+									415 человек
+								</div>
+							</div>
+
+							<div class="staff__item">
+								<div class="staff__key">
+									Пациентов за год:
+								</div>
+								<div class="staff__value">
+									5 000 человек
+								</div>
+							</div>
+						</div>
+						<a href="" class="staff__btn btn btn_light">оставить заявку менеджеру</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section dots" id="dots">
+				<div class="container">
+					<div class="dots__title title">о франшизе</div>
+					<div class="dots__wrapper">
+						<div class="dots__item">
+							<div class="dots__name">проверенная система</div>
+							<div class="dots__text">Мы идеально отточили скрипты продаж, оформление гарантий,
+								должностные инструкции</div>
+						</div>
+						<div class="dots__item dots__item_dark">
+							<div class="dots__name">более 20 лет опыта</div>
+							<div class="dots__text">Это более 175 000 часов практического опыта, которым мы готовы
+								делиться с Вами</div>
+						</div>
+						<div class="dots__item">
+							<div class="dots__name">Надёжный и стабильный бизнес</div>
+							<div class="dots__text">Медицина работает даже в кризис</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section advantages on-view">
+				<div class="container">
+					<div class="advantages__title title">почему именно мы</div>
+					<div class="advantages__wrapper">
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/adv1.png" alt="">
+							</div>
+							<div class="advantages__text">
+								Поможем заключить договоры со страховыми компаниями для привлечения пациентов по ДМС
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/adv2.png" alt="">
+							</div>
+							<div class="advantages__text">
+								Уточним даты подачи заявок на обслуживание пациентов по ОМС
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/adv3.png" alt="">
+							</div>
+							<div class="advantages__text">
+								Поможем правильно составить заявление и отчетность
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/adv4.png" alt="">
+							</div>
+							<div class="advantages__text">
+								Научим проводить ОМС и ДМС клиентов по базам и получать максимум, при минимальных
+								трудозатратах
+							</div>
+						</div>
+					</div>
+					<a href="" class="advantages__btn btn btn_light">оставить заявку менеджеру</a>
+				</div>
+			</section>
+
+			<section class="section founder">
+				<div class="container">
+					<div class="founder__wrapper">
+						<div class="founder__img br-20">
+							<img src="./img/founder.jpg" alt="">
+						</div>
+						<div class="founder__body">
+							<div class="founder__title title">основатель клиники</div>
+							<div class="founder__subtitle">Главный врач, ортопед с опытом работы 27 лет. Основатель и
+								генеральный директор сети клиник «Доктор Смайл» г.Москва. Руководитель, обладающий
+								стратегическим видением будущего развития своего дела.</div>
+							<div class="founder__citation">
+								<div class="founder__citation-text">
+									«Давать пациентам больше, чем они ожидают – не только высочайшее качество
+									стоматологических услуг, но и искреннюю заботу сродни той, которой окружают только
+									самых близких – вот основной принцип нашей работы»
+								</div>
+								<div class="founder__citation-name">— михаил каган, основатель</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section franchise" id="franchise">
+				<div class="container">
+					<div class="franchise__wrapper">
+						<div class="franchise__title title">состав франшизы</div>
+						<div class="franchise__body br-20">
+							<ul>
+								<li>Руководство по запуску и ведению бизнеса
+									(франчайзи-бук)</li>
+								<li>Услуги менеджера по сопровождению</li>
+								<li>Помощь в подборе и найме персонала</li>
+								<li>Консультации и рекомендации по выбору локации и
+									помещения для клиники</li>
+								<li>Скрипты продаж и стандарты обслуживания пациентов</li>
+								<li>Брендбук</li>
+								<li>Колл-центр</li>
+								<li>Сайт для каждого партнера на домене doctorsmile.ru и
+									корпоративную почту
+									@doctorsmile.ru</li>
+								<li>Рекомендации по ведению и наполнению соц. сетей</li>
+								<li>Отдел маркетинга, готовый приступить к выполнению ваших
+									задач</li>
+								<li>Подключение к медицинской информационной системе для
+									эффективного управления
+									клиникой</li>
+								<li>Рекомендации по подрядчикам</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section economic ">
+				<div class="container">
+					<div class="economic__wrapper br-20">
+						<div class="economic__title title">экономика франшизы</div>
+						<div class="economic__body">
+							<div class="economic__item br-20">
+								<div class="economic__count"> 6 225 000 руб </div>
+								<div class="economic__label"> доходы </div>
+							</div>
+							<div class="economic__item br-20">
+								<div class="economic__count"> 4 837 661 руб </div>
+								<div class="economic__label"> расходы </div>
+							</div>
+							<div class="economic__item br-20">
+								<div class="economic__count">1 387 339 руб</div>
+								<div class="economic__label"> чистая прибыль / мес </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section stage dark-bg">
+				<div class="container">
+					<div class="stage__title title">8 простых шагов к открытию</div>
+					<div class="stage__wrapper">
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage1.png" alt="">
+							</div>
+							<div class="stage__step">
+								1 шаг
+							</div>
+							<div class="stage__name">
+								Подписание договора
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage2.png" alt="">
+							</div>
+							<div class="stage__step">
+								2 шаг
+							</div>
+							<div class="stage__name">
+								Поиск и ремонт помещения
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage3.png" alt="">
+							</div>
+							<div class="stage__step">
+								3 шаг
+							</div>
+							<div class="stage__name">
+								Заказ оборудования и подготовка кабинетов
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage4.png" alt="">
+							</div>
+							<div class="stage__step">
+								4 шаг
+							</div>
+							<div class="stage__name">
+								Автоматизация бизнес-процессов
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage5.png" alt="">
+							</div>
+							<div class="stage__step">
+								5 шаг
+							</div>
+							<div class="stage__name">
+								Поиск и отбор персонала
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage6.png" alt="">
+							</div>
+							<div class="stage__step">
+								6 шаг
+							</div>
+							<div class="stage__name">
+								Лицензирование
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage7.png" alt="">
+							</div>
+							<div class="stage__step">
+								7 шаг
+							</div>
+							<div class="stage__name">
+								Рекламная кампания
+							</div>
+						</div>
+						<div class="stage__item">
+							<div class="stage__img">
+								<img src="./img/stage8.png" alt="">
+							</div>
+							<div class="stage__step">
+								8 шаг
+							</div>
+							<div class="stage__name">
+								Открытие
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review" id="review">
+				<div class="container">
+					<div class="review__header">
+						<div class="review__title title">что говорят о нас клиенты</div>
+						<a href="https://yandex.ru/maps/org/doktor_smayl/1063686514/reviews/?ll=37.660388%2C55.768464&z=14"
+							class="review__link" target="_blank">
+							<img src="./img/review-link.jpg" alt="">
+						</a>
+					</div>
+					<div class="review__slider swiper-container">
+						<div class="review__slider-wrapper swiper-wrapper">
+							<div class="review__slide swiper-slide br-20">
+								<div class="review__stars">
+									<img src="./img/stars.png" alt="">
+								</div>
+								<div class="review__name">Мария н.</div>
+								<div class="review__text">
+									<p>
+										Впервые обратилась в данную клинику. Была приятно удивлена сервису, оформлению и
+										коллективу. Все на высоте. Врач (если не путаю Денис Кириллович) осмотрел, все
+										рассказал по зубам, не навязывал услуги! С собой дал все рекомендации с
+										указанием цен, чтобы можно было сориентироваться и реализовать задуманное.
+										Благодарю за работу.
+									</p>
+									<p>
+										С уважением, Новикова Мария!
+									</p>
+								</div>
+							</div>
+
+							<div class="review__slide swiper-slide br-20">
+								<div class="review__stars">
+									<img src="./img/stars.png" alt="">
+								</div>
+								<div class="review__name">станислав и.</div>
+								<div class="review__text">
+									<p>
+										Мазаев С. И. Записался впервые сюда на прием, принимали по ОМС, все прошло
+										быстро и качественно, сделали осмотр и обо всем подробно рассказали. Было
+										принято решение поставить пломбу на один из зубов. Персонал вежливый,
+										внимательный, врачи профессиональные, оборудование новое, помещение чистое. Буду
+										и дальше лечится в этом месте. Спасибо за вашу работу, желаю вам здоровья и
+										процветания!
+									</p>
+									<p>
+										С уважением, Новикова Мария!
+									</p>
+								</div>
+							</div>
+
+							<div class="review__slide swiper-slide br-20">
+								<div class="review__stars">
+									<img src="./img/stars.png" alt="">
+								</div>
+								<div class="review__name">виталий г.</div>
+								<div class="review__text">
+									<p>
+										Ходил первый раз. Приятно удивлён.
+										<br>
+										С детства фобия на стоматологов, но пришлось собраться и идти решать проблемы с
+										зубами. Выбор пал на данную клинику. Можно прикрепиться по ОМС и решить бОльшую
+										часть проблем, за счёт страховки. Клиника и персонал оставили только
+										положительные эмоции. Спасибо.
+									</p>
+									<p>
+										С уважением, Гладких Виталий.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="review__pagination slider-pagination"></div>
+					<a href="https://yandex.ru/maps/org/doktor_smayl/1063686514/reviews/?ll=37.660388%2C55.768464&z=14"
+						class="review__btn btn" target="_blank">Прочитать все отзывы</a>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<section class="section contact" id="contact">
+				<div class="container">
+					<div class="contact__wrapper">
+						<div class="contact__info">
+							<div class="contact__info-item">
+								<div class="contact__info-label">
+									Контактный телефон:
+								</div>
+								<a href="tel:84999554741" class="contact__info-link">
+									8 499 955-47-41
+								</a>
+							</div>
+
+							<div class="contact__info-item">
+								<div class="contact__info-label">
+									Электронная почта:
+								</div>
+								<a href="mailto:mail@doctorsmile.ru" class="contact__info-link">
+									mail@doctorsmile.ru
+								</a>
+							</div>
+
+							<div class="contact__info-item">
+								<div class="contact__info-label">
+									Основной сайт:
+								</div>
+								<a href="https://doctorsmile.ru/" target="_blank" class="contact__info-link">
+									https://doctorsmile.ru/
+								</a>
+							</div>
+						</div>
+						<div class="contact__body">
+							<div class="contact__header">
+								<div class="contact__title title">мы будем рады обсудить с вами дальнейшее
+									сотрудничество уже сейчас</div>
+								<div class="contact__subtitle">
+									Оставьте свои контакты в форме и мы свяжемся с Вами в ближайшее время!
+								</div>
+							</div>
+							<form class="contact__form">
+								<input class="input" type="text" placeholder="Введите ваше имя">
+								<input class="input phone-mask" type="tel" placeholder="+7(999) 999-99-99">
+								<button class="contact__btn btn">Оставить заявку на сотрудничество</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="map" id="map">
+			</section>
+		</footer>
+	</div>
+
+	<div class="scroll-btn"></div>
+	<div class="progress-bar"></div>
+
+</body>
+
+</html>

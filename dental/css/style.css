@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------------------------------*/
+.container {
+  width: 1490px;
+  margin: 0 auto;
+}
+
+.faq {
+  font-family: "Mulish";
+  overflow: hidden;
+}
+
+.faq__replace {
+  width: 816px;
+}
+
+.faq h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 56px;
+  color: #333333;
+  margin-bottom: 90px;
+}
+
+.faq__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  padding-bottom: 20px;
+}
+
+.faq__slide a {
+  width: 100%;
+  max-width: 60%;
+}
+
+.faq__slide img {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.faq__slider {
+  margin-bottom: 60px;
+  position: relative;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  overflow: visible !important;
+}
+
+.faq__slider__wrapper {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.faq__slider_controls {
+  bottom: 0;
+  right: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  width: 100%;
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.faq__slider_btns {
+  position: relative;
+  height: 50px;
+  background: #f6f6f6;
+  width: 100%;
+  max-width: 65px;
+}
+
+.faq-scrollbar {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
+
+.faq-scrollbar div {
+  height: 3px;
+  border-radius: 0;
+  top: -1px;
+  background: #aaaaaa;
+}
+
+.faq-button-next {
+  right: 0;
+  position: absolute !important;
+}
+
+.faq-button-next::after {
+  display: none;
+}
+
+.faq-button-prev {
+  left: 0 !important;
+  right: unset !important;
+  position: absolute !important;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.faq-button-prev::after {
+  display: none;
+}
+
+.faq-pagination {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c4c4c4;
+  max-width: 35px;
+  width: 100%;
+}
+
+.faq__wrapper {
+  position: relative;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+
+.faq__wrapper::after {
+  display: block;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 385px;
+  background-image: url(../img/icon/faq.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.faq__btn {
+  background: #458bf4;
+  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 60px;
+}
+
+.faq__btn h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.faq__btn a {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ffffff;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #458bf4;
+  padding: 14px 40px;
+  white-space: nowrap;
+}
+
+.swiper-pagination-total {
+  color: #458bf4;
+}
+
+.swiper-button-disabled path {
+  fill: #c4c4c4;
+}
+
+.v1 {
+  max-width: 600px;
+}
+
+.v1 .a-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.v1 .a-btn {
+  position: relative;
+  padding: 15px 30px;
+  width: 100%;
+  display: block;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  padding-right: 90px;
+  margin-bottom: 15px;
+}
+
+.v1 .a-btn span {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background: #458bf4;
+  pointer-events: none;
+}
+
+.v1 .a-btn span:after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.v1 .a-btn span:before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.v1 .a-panel {
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background: #f6f6f6;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  padding: 20px 30px;
+}
+
+.v1 .a-container.active .a-btn span::before {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.v1 .a-container.active .a-panel {
+  margin-top: 15px;
+  padding: 20px 30px;
+  opacity: 1;
+  max-height: none;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  display: none;
+}
+
+.swiper-slide-active .a-container.active .a-panel {
+  display: block;
+}
+
+.v1 .a-panel {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .v1 .a-panel {
+    opacity: 0;
+    max-height: 0;
+    padding: 0px 10px;
+    height: auto;
+  }
+  .v1 .a-panel::before {
+    display: none;
+  }
+  .v1 .a-btn span {
+    display: block;
+  }
+  .v1 .read-more {
+    display: none !important;
+  }
+  .faq__slide {
+    gap: 30px;
+    padding-bottom: 0;
+  }
+  .faq__slide a {
+    max-width: none;
+  }
+  .faq__slide .v1 {
+    max-width: none;
+  }
+  .faq__slide .v1 .a-btn {
+    padding: 20px 15px;
+    padding-right: 90px;
+  }
+  .faq__slider {
+    padding-bottom: 60px;
+  }
+  .faq__slider_btns {
+    display: none;
+  }
+  .faq__slider_controls {
+    max-width: none;
+  }
+  .faq .a-btn {
+    margin-bottom: 30px;
+  }
+  .faq__wrapper::after {
+    right: unset;
+    left: 15px;
+    top: -25px;
+    z-index: -1;
+    height: 100px;
+    width: 51px;
+  }
+  .faq__wrapper h1 {
+    font-weight: 700;
+  }
+  .faq__replace {
+    width: 100%;
+  }
+  .faq .a-btn span {
+    top: 15px;
+    right: 15px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .faq .a-container.active .a-btn {
+    color: #458bf4;
+    background: #f6f6f6;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .faq .a-container.active .a-btn span {
+    background: #c4c4c4;
+  }
+  .faq .a-container.active {
+    background: #f6f6f6;
+  }
+  .faq .a-container.active .faq__replace {
+    padding: 0 15px;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  .faq .a-container {
+    padding-bottom: 0;
+  }
+  .swiper-slide-active .a-container.active .a-panel {
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0;
+  }
+  .faq__btn {
+    padding: 15px;
+    margin: 0 -15px;
+    padding-bottom: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+  .faq__btn h2 {
+    font-size: 25px;
+    line-height: 31px;
+    text-align: left;
+  }
+  .faq__btn a {
+    width: 260px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .faq__wrapper {
+    padding: 0 15px;
+    padding-top: 80px;
+  }
+  .faq__wrapper::after {
+    z-index: -1;
+    top: 50px;
+  }
+  .faq__wrapper h1 {
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 60px;
+  }
+  .faq__slider {
+    overflow: visible;
+    margin-bottom: 30px !important;
+    padding-bottom: 0;
+  }
+  .faq__slider_controls {
+    margin-top: 20px;
+    position: relative;
+  }
+  .swiper-slide-active .a-container.active .a-panel {
+    display: block;
+    padding: 20px 15px;
+    margin-bottom: 0;
+  }
+}

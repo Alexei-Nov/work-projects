@@ -1,0 +1,48 @@
+.hidden-mobile {
+  @media screen and (max-width: 575.98px) {
+    overflow: hidden;
+  }
+  &-show {
+    max-height: 100% !important;
+  }
+  &-btn {
+    position: relative;
+    padding-right: 20px;
+    width: fit-content;
+
+    @include font(15, 19.5, 600);
+    color: $color-primary;
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      right: 4px;
+
+      width: 8px;
+      height: 7px;
+
+      background-image: url(../img/icons/arrowDown.svg);
+      background-position: right center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      transition: 0.4s;
+    }
+    &.--active {
+      &::after {
+        transform: rotate(180deg);
+      }
+      .show {
+        display: none;
+      }
+      .hide {
+        display: block;
+      }
+    }
+    .hide {
+      display: none;
+    }
+  }
+}

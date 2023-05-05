@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>X&G</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container container_wide header__wrapper">
+				<div class="header__info-line caption-big">
+					<div class="header__info-line-links">
+						<a href="./" class="header__info-line-link">Оплата и доставка</a>
+						<a href="/" class="header__info-line-link">Специальные предложения</a>
+						<a href="/" class="header__info-line-link">Связаться с представителем</a>
+					</div>
+					<div class="header__info-line-contacts">
+						<div class="header__info-line-contact"><a href="tel:880000000000">8 (800) 000-000-00</a>
+						</div>
+						<div class="header__info-line-contact">
+							<a href="tel:880000000000">8 (800) 000-000-00</a>
+							<span class="caption-small color-midgray">(бесплатно по России)</span>
+						</div>
+					</div>
+				</div>
+				<div class="header__body">
+					<nav class="header__nav nav">
+						<div class="header__menu-btn menu-btn"><span></span></div>
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="">МУЖСКОЕ</a>
+								<div class="nav__submenu-panel">
+									<ul class="nav__submenu caption-big">
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">БРЮКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ЖАКЕТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ПОЛО</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">РУБАШКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ХАЛАТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОМБИНЕЗОНЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">ШАПОЧКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ОДЕЖДА
+												С
+												ПРИНТОМ И
+												ВЫШИВКОЙ</a></li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОСТЮМЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link"><b>
+													ПОСМОТРЕТЬ
+													ВСЁ</b></a>
+										</li>
+									</ul>
+									<div class="nav__offer">
+										<a href class="nav__offer-img">
+											<img src="./img/nav-offer.png" alt="">
+										</a>
+										<div class="nav__offer-name caption-big">Подарочные сертификаты на
+											одежду</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="">ЖЕНСКОЕ</a>
+								<div class="nav__submenu-panel">
+									<ul class="nav__submenu caption-big">
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">БРЮКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ЖАКЕТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ПОЛО</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">РУБАШКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ХАЛАТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОМБИНЕЗОНЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">ШАПОЧКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ОДЕЖДА
+												С
+												ПРИНТОМ И
+												ВЫШИВКОЙ</a></li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОСТЮМЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link"><b>
+													ПОСМОТРЕТЬ
+													ВСЁ</b></a>
+										</li>
+									</ul>
+									<div class="nav__offer">
+										<a href class="nav__offer-img">
+											<img src="./img/nav-offer.png" alt="">
+										</a>
+										<div class="nav__offer-name caption-big">Подарочные сертификаты на
+											одежду</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="">АКСЕССУАРЫ</a>
+								<div class="nav__submenu-panel">
+									<ul class="nav__submenu caption-big">
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">БРЮКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ЖАКЕТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ПОЛО</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">РУБАШКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ХАЛАТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОМБИНЕЗОНЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">ШАПОЧКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ОДЕЖДА
+												С
+												ПРИНТОМ И
+												ВЫШИВКОЙ</a></li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОСТЮМЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link"><b>
+													ПОСМОТРЕТЬ
+													ВСЁ</b></a>
+										</li>
+									</ul>
+									<div class="nav__offer">
+										<a href class="nav__offer-img">
+											<img src="./img/nav-offer.png" alt="">
+										</a>
+										<div class="nav__offer-name caption-big">Подарочные сертификаты на
+											одежду</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="">ОБУВЬ</a>
+								<div class="nav__submenu-panel">
+									<ul class="nav__submenu caption-big">
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">БРЮКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ЖАКЕТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ПОЛО</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">РУБАШКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ХАЛАТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОМБИНЕЗОНЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">ШАПОЧКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ОДЕЖДА
+												С
+												ПРИНТОМ И
+												ВЫШИВКОЙ</a></li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОСТЮМЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link"><b>
+													ПОСМОТРЕТЬ
+													ВСЁ</b></a>
+										</li>
+									</ul>
+									<div class="nav__offer">
+										<a href class="nav__offer-img">
+											<img src="./img/nav-offer.png" alt="">
+										</a>
+										<div class="nav__offer-name caption-big">Подарочные сертификаты на
+											одежду</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="">ОДЕТЬ КЛИНИКУ</a>
+								<div class="nav__submenu-panel">
+									<ul class="nav__submenu caption-big">
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">БРЮКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ЖАКЕТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ПОЛО</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">РУБАШКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ХАЛАТЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОМБИНЕЗОНЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">ШАПОЧКИ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link">ОДЕЖДА
+												С
+												ПРИНТОМ И
+												ВЫШИВКОЙ</a></li>
+										<li class="nav__item nav__item_lvl2"><a href=""
+												class="nav__link">КОСТЮМЫ</a>
+										</li>
+										<li class="nav__item nav__item_lvl2"><a href="" class="nav__link"><b>
+													ПОСМОТРЕТЬ
+													ВСЁ</b></a>
+										</li>
+									</ul>
+									<div class="nav__offer">
+										<a href class="nav__offer-img">
+											<img src="./img/nav-offer.png" alt="">
+										</a>
+										<div class="nav__offer-name caption-big">Подарочные сертификаты на
+											одежду</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<a href="/" class="header__logo">
+						<img src="./img/logo.svg" alt="">
+					</a>
+					<div class="header__right">
+						<div class="header__search">
+							<form class="header__search-form">
+								<div class="input">
+									<input class="caption-small" placeholder="Белый мужской халат..." type="text">
+									<button type="submit" class="input__icon">
+										<img src="./img/icon/Search.svg" alt="">
+									</button>
+								</div>
+							</form>
+						</div>
+						<a href="" class="header__icon header__icon_active">
+							<img src="./img/icon/Heart.svg" alt="">
+						</a>
+						<a href="" class="header__icon">
+							<img src="./img/icon/Basket.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="header__menu-panel">
+					<div class="header__menu-panel-wrapper">
+						<nav class="header__menu menu">
+							<div class="header__menu-btn-close menu-btn"></div>
+							<div class="header__search header__search_mobile">
+								<form class="header__search-form">
+									<div class="input">
+										<input class="caption-small" placeholder="Белый мужской халат..." type="text">
+										<button type="submit" class="input__icon">
+											<img src="./img/icon/Search.svg" alt="">
+										</button>
+									</div>
+								</form>
+							</div>
+							<ul class="menu__list menu__list_mobile caption-big">
+								<li class="menu__item menu__item_lvl1 menu__item_has-children">
+									<a class="menu__link" href="">МУЖСКОЕ</a>
+									<div class="menu__submenu-panel">
+										<ul class="menu__submenu ">
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Публичная
+													оферта</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Доставка</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Оплата</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Обмен и
+													возврат</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Политика
+													обработки <br>
+													конфиденциальных данных</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Часто
+													задаваемые вопросы</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item_lvl1 menu__item_has-children">
+									<a class="menu__link" href="">ЖЕНСКОЕ</a>
+									<div class="menu__submenu-panel">
+										<ul class="menu__submenu ">
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Публичная
+													оферта</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Доставка</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Оплата</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Обмен и
+													возврат</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Политика
+													обработки <br>
+													конфиденциальных данных</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Часто
+													задаваемые вопросы</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">АКСЕССУАРЫ</a>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">ОБУВЬ</a>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">ОДЕТЬ КЛИНИКУ</a>
+								</li>
+							</ul>
+							<ul class="menu__list caption-big">
+								<li class="menu__item menu__item_lvl1 menu__item_has-children">
+									<a class="menu__link" href="">Покупателям</a>
+									<div class="menu__submenu-panel">
+										<ul class="menu__submenu ">
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Публичная
+													оферта</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Доставка</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Оплата</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Обмен и
+													возврат</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Политика
+													обработки <br>
+													конфиденциальных данных</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Часто
+													задаваемые вопросы</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item_lvl1 menu__item_has-children">
+									<a class="menu__link" href="">Подарочные сертификаты</a>
+									<div class="menu__submenu-panel">
+										<ul class="menu__submenu ">
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Публичная
+													оферта</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Доставка</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Оплата</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Обмен и
+													возврат</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Политика
+													обработки <br>
+													конфиденциальных данных</a>
+											</li>
+											<li class="menu__item menu__item_lvl2"><a href=""
+													class="menu__link">Часто
+													задаваемые вопросы</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">Дистрибюьюторам</a>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">Клиникам</a>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">Адреса магазинов</a>
+								</li>
+								<li class="menu__item menu__item_lvl1">
+									<a class="menu__link" href="">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu__info">
+							<div class="menu__info-contact"><a href="tel:880000000000">8 (800) 000-000-00</a>
+							</div>
+							<div class="menu__info-contact">
+								<a href="tel:880000000000">8 (800) 000-000-00</a>
+								<span class="caption-small color-midgray">(бесплатно по России)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="main-block">
+				<div class="container">
+					<div class="main-block__wrapper">
+						<div class="main-block__body">
+							<div class="main-block__title-wrapper">
+								<div class="main-block__title main-block__title_line page-title">НАШУ ОДЕЖДУ
+									<i>ВЫБИРАЮТ</i>
+								</div>
+								<div class="main-block__title main-block__title_right page-title">МИЛЛИОНЫ ВРАЧЕЙ <i>ПО
+										ВСЕМУ МИРУ</i></div>
+							</div>
+							<div class="main-block__subtitle">Мы шьем медицинскую одежду из лучших материалов
+								высочайшего качества.</div>
+							<a href="" class="main-block__btn caption-big btn">Перейти в каталог</a>
+						</div>
+						<div class="main-block__slider swiper">
+							<div class="main-block__slider-wrapper swiper-wrapper">
+								<div class="main-block__slide swiper-slide">
+									<div class="main-block__img">
+										<img src="./img/main/Frame 23.png" alt="">
+									</div>
+									<div class="main-block__img-bg">
+										<img src="./img/main/Frame 24.png" alt="">
+									</div>
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<div class="main-block__img">
+										<img src="./img/main/Frame 23.png" alt="">
+									</div>
+									<div class="main-block__img-bg">
+										<img src="./img/main/Frame 24.png" alt="">
+									</div>
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<div class="main-block__img">
+										<img src="./img/main/Frame 23.png" alt="">
+									</div>
+									<div class="main-block__img-bg">
+										<img src="./img/main/Frame 24.png" alt="">
+									</div>
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<div class="main-block__img">
+										<img src="./img/main/Frame 23.png" alt="">
+									</div>
+									<div class="main-block__img-bg">
+										<img src="./img/main/Frame 24.png" alt="">
+									</div>
+								</div>
+								<div class="main-block__slide swiper-slide">
+									<div class="main-block__img">
+										<img src="./img/main/Frame 23.png" alt="">
+									</div>
+									<div class="main-block__img-bg">
+										<img src="./img/main/Frame 24.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__pagination slider-pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-block">
+				<div class="container">
+					<div class="text-block__wrapper">
+						<div class="text-block__body">
+							<div class="headline text-block__title tt-uc">МОДНАЯ МЕДИЦИНСКАЯ ОДЕЖДА</div>
+							<p>
+								Медицина — это искусство, а тот, кто связал свою жизнь с ней, подобен творцу. Его сила в
+								мастерстве, точности действий и бесценном даре возвращать здоровье. Мы видим в каждом
+								медицинском специалисте уникальную, яркую личность, поэтому создаем особую одежду,
+								которая помогает выразить индивидуальность.
+							</p>
+						</div>
+						<div class="text-block__img">
+							<img src="./img/planet.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section tile bg-gray">
+				<div class="container">
+					<div class="headline tile__title tt-uc">КАТАЛОГ</div>
+					<div class="tile__slider swiper">
+						<div class="tile__slider-wrapper swiper-wrapper">
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 295.png" alt="">
+								</div>
+								<div class="tile__name headline">Женское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 296.png" alt="">
+								</div>
+								<div class="tile__name headline">Мужское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<div class="tile__filler">
+								<img src="./img/catalog/image 302.png" alt="">
+							</div>
+							<div class="tile__filler">
+								<img src="./img/catalog/image 302.png" alt="">
+							</div>
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 295.png" alt="">
+								</div>
+								<div class="tile__name headline">Женское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 296.png" alt="">
+								</div>
+								<div class="tile__name headline">Мужское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 295.png" alt="">
+								</div>
+								<div class="tile__name headline">Женское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<a href="" class="tile__slide swiper-slide color-white">
+								<div class="tile__img">
+									<img src="./img/catalog/image 296.png" alt="">
+								</div>
+								<div class="tile__name headline">Мужское</div>
+								<div class="tile__text caption-big">Текстовое описание категории товаров</div>
+							</a>
+							<a href="" class="tile__filler">
+								<img src="./img/catalog/image 302.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="tile__scrollbar slider-scrollbar"></div>
+				</div>
+			</section>
+
+			<section class="section new-block">
+				<div class="container">
+					<div class="new-block__wrapper">
+						<div class="new-block__body">
+							<div class="headline new-block__title tt-uc">НОВИНКИ</div>
+							<div class="new-block__content">
+								<p>
+									Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+									быстро заполнить макеты или прототипы содержимым.
+								</p>
+							</div>
+							<a href="" class="new-block__btn btn caption-big">Смотреть все</a>
+						</div>
+
+						<div class="new-block__navigation slider-navigation">
+							<div class="new-block__prev slider-prev"></div>
+							<div class="new-block__next slider-next"></div>
+						</div>
+
+						<div class="new-block__slider swiper">
+							<div class="new-block__slider-wrapper swiper-wrapper">
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/Rectangle 556.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="new-block__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="new-block__scrollbar slider-scrollbar"></div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section gallery">
+				<div class="container">
+					<div class="gallery__wrapper">
+						<div class="headline gallery__title ">Хиты продаж</div>
+						<div class="gallery__slider swiper">
+							<div class="gallery__slider-wrapper swiper-wrapper">
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/Rectangle 575.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<div class="card">
+										<div class="card__sticker caption-big">Новинка!</div>
+										<div class="card__heart">
+											<svg viewBox="0 0 32 32" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M16 10.9258C13.3333 4.66651 4 5.33318 4 13.3332C4 21.3333 16 27.9999 16 27.9999C16 27.9999 28 21.3333 28 13.3332C28 5.33318 18.6667 4.66651 16 10.9258Z"
+													stroke="white" stroke-width="2" stroke-linecap="round"
+													stroke-linejoin="round" />
+											</svg>
+										</div>
+										<a href="" class="card__img">
+											<img src="./img/catalog/image 295.png" alt="">
+										</a>
+										<a href="" class="card__name">Название товара</a>
+										<div class="card__info">
+											<div class="card__price caption-big"><b>0 000 ₽</b></div>
+											<div class="card__colors">
+												<div class="card__color" style="background-color: #19232C;"></div>
+												<div class="card__color" style="background-color: #D9CBBE;"></div>
+												<div class="card__color" style="background-color: #C2D6E9;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery__scrollbar slider-scrollbar"></div>
+							<div class="gallery__navigation slider-navigation">
+								<div class="gallery__prev slider-prev"></div>
+								<div class="gallery__next slider-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section img-block bg-noise" style="background-color: #E5E1D6;">
+				<div class="container">
+					<div class="img-block__wrapper">
+						<div class="img-block__content bg-white">
+							<div class="img-block__title headline ">Наше производство</div>
+							<p>
+								X&G – производитель медицинской одежды, который ответственно относится к выпускаемой
+								продукции и заботится о том, чтобы Вы могли выглядеть безупречно! Большая часть
+								клиентов приходит к нам с повторными обращениями, поскольку лично убеждается в том, что
+								мы производим качественную продукцию.
+							</p>
+						</div>
+						<div class="img-block__img">
+							<img src="./img/Rectangle 564.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section table-block">
+				<div class="container">
+					<div class="table-block__wrapper">
+						<div class="table-block__header">
+							<div class="table-block__title headline tt-uc">
+								ТЕКСТ РАССКАЗЫВАЮЩИЙ О ТОМ, ЧТО МЫ ДЕЛАЕМ ЭСТЕТИЧЕСКУЮ ОДЕЖДУ
+							</div>
+							<div class="table-block__subtitle">
+								Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно
+								быстро заполнить макеты или прототипы содержимым.
+							</div>
+						</div>
+						<div class="table-block__table">
+							<div class="table-block__row">
+								<div class="table-block__item">
+									<div class="table-block__img">
+										<img src="./img/image.png" alt="">
+									</div>
+									<div class="table-block__info">
+										<div class="table-block__name heading">Производство</div>
+										<a href="" class="table-block__link caption-big">Смотреть всё</a>
+									</div>
+									<div class="table-block__text caption-big">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+										нужно быстро заполнить макеты или прототипы содержимым.
+									</div>
+								</div>
+							</div>
+							<div class="table-block__row">
+								<div class="table-block__item">
+									<div class="table-block__img">
+										<img src="./img/image.png" alt="">
+									</div>
+									<div class="table-block__info">
+										<div class="table-block__name heading">Работа с дизайнером</div>
+										<a href="" class="table-block__link caption-big">Смотреть всё</a>
+									</div>
+									<div class="table-block__text caption-big">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+										нужно быстро заполнить макеты или прототипы содержимым.
+									</div>
+								</div>
+							</div>
+							<div class="table-block__row">
+								<div class="table-block__item">
+									<div class="table-block__img">
+										<img src="./img/image.png" alt="">
+									</div>
+									<div class="table-block__info">
+										<div class="table-block__name heading">Регулярные поставки ассортимента</div>
+										<a href="" class="table-block__link caption-big">Смотреть всё</a>
+									</div>
+									<div class="table-block__text caption-big">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+										нужно быстро заполнить макеты или прототипы содержимым.
+									</div>
+								</div>
+							</div>
+							<div class="table-block__row">
+								<div class="table-block__item">
+									<div class="table-block__img">
+										<img src="./img/image.png" alt="">
+									</div>
+									<div class="table-block__info">
+										<div class="table-block__name heading">Доставка по всей России</div>
+										<a href="" class="table-block__link caption-big">Смотреть всё</a>
+									</div>
+									<div class="table-block__text caption-big">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда
+										нужно быстро заполнить макеты или прототипы содержимым.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section form-block">
+				<div class="container">
+					<div class="form-block__wrapper">
+						<div class="form-block__body">
+							<div class="form-block__title headline">Оформите подписку</div>
+							<div class="form-block__subtitle">Подпишитесь на рассылку, чтобы всегда быть в курсе наших
+								новостей</div>
+							<form class="form-block__form">
+								<div class="form-block__input input">
+									<input type="text" placeholder="Имя">
+									<div class="input__icon">
+										<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M20 21.5C20 18.7386 16.4183 16.5 12 16.5C7.58172 16.5 4 18.7386 4 21.5M12 13.5C9.23858 13.5 7 11.2614 7 8.5C7 5.73858 9.23858 3.5 12 3.5C14.7614 3.5 17 5.73858 17 8.5C17 11.2614 14.7614 13.5 12 13.5Z"
+												stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+								<div class="form-block__input input">
+									<input type="tel" placeholder="+7 (___) ___-__-__">
+									<div class="input__icon">
+										<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.50295 4.75722C9.19922 3.9979 8.46381 3.5 7.646 3.5H4.89474C3.8483 3.5 3 4.34834 3 5.39478C3 14.2895 10.2108 21.5 19.1055 21.5C20.1519 21.5 21 20.6518 21 19.6053L20.9999 16.854C20.9999 16.0362 20.5019 15.3009 19.7426 14.9971L17.1071 13.9429C16.4251 13.6701 15.6485 13.793 15.0842 14.2633L14.4031 14.8307C13.6084 15.4929 12.44 15.44 11.7085 14.7085L9.79136 12.7915C9.05993 12.0601 9.00722 10.8915 9.66943 10.0969L10.2368 9.41597C10.7071 8.85163 10.83 8.07493 10.5572 7.39286L9.50295 4.75722Z"
+												stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+								<div class="form-block__input input">
+									<input type="email" placeholder="Электронная почта">
+									<div class="input__icon">
+										<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4 6.5L12.2286 12.5L19.9999 6.5M21 8.69995V16.3C21 17.4201 21.0002 17.9802 20.7822 18.408C20.5905 18.7844 20.2841 19.0902 19.9078 19.282C19.48 19.5 18.9203 19.5 17.8002 19.5H6.2002C5.08009 19.5 4.51962 19.5 4.0918 19.282C3.71547 19.0902 3.40973 18.7844 3.21799 18.408C3 17.9802 3 17.4201 3 16.3V8.69995C3 7.57985 3 7.01986 3.21799 6.59204C3.40973 6.21572 3.71547 5.90973 4.0918 5.71799C4.51962 5.5 5.08009 5.5 6.2002 5.5H17.8002C18.9203 5.5 19.48 5.5 19.9078 5.71799C20.2841 5.90973 20.5905 6.21572 20.7822 6.59204C21.0002 7.01986 21 7.57985 21 8.69995Z"
+												stroke="#303030" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+								<label class="acceptance caption-small">
+									Согласие с политикой конфиденциальности
+									<input class="acceptance__input" type="checkbox" checked="checked">
+									<span class="acceptance__checkmark"></span>
+								</label>
+								<input type="submit" value="Совершить действие" class="form-block__btn btn btn_black">
+							</form>
+						</div>
+						<div class="form-block__images">
+							<div class="form-block__img">
+								<img src="./img/form/Frame 69.png" alt="">
+							</div>
+							<div class="form-block__img">
+								<img src="./img/form/Frame 70.png" alt="">
+							</div>
+							<div class="form-block__img">
+								<img src="./img/form/Frame 67.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="/" class="footer__logo">
+						<img src="./img/logo.svg" alt="">
+					</a>
+					<div class="footer__nav">
+						<ul class="footer__nav-list">
+							<li class="footer__nav-item footer__nav-item_has-children">
+								<a href=""><b>О компании</b></a>
+								<ul class="footer__nav-sublist caption-big">
+									<li class="footer__nav-item"><a href="">О нас</a></li>
+									<li class="footer__nav-item"><a href="">Карьера</a></li>
+									<li class="footer__nav-item"><a href="">Контакты</a></li>
+								</ul>
+							</li>
+							<li class="footer__nav-item footer__nav-item_has-children">
+								<a href=""><b>Покупателям</b></a>
+								<ul class="footer__nav-sublist caption-big">
+									<li class="footer__nav-item"><a href="">Коллекции</a></li>
+									<li class="footer__nav-item"><a href="">Новинки</a></li>
+									<li class="footer__nav-item"><a href="">Оплата и доставка</a></li>
+									<li class="footer__nav-item"><a href="">Возврат товара</a></li>
+								</ul>
+							</li>
+							<li class="footer__nav-item footer__nav-item_has-children">
+								<a href=""><b>Оставаться на связи</b></a>
+								<ul class="footer__nav-sublist caption-big">
+									<li class="footer__nav-item"><a href="">Telegram</a></li>
+									<li class="footer__nav-item"><a href="">WhatsApp</a></li>
+									<li class="footer__nav-item"><a href="">Instagram</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__info">
+						<b>Новостная рассылка</b>
+						<form class="footer__form">
+							<div class="footer__input-wrapper">
+								<input class="footer__input input caption-small" type="email"
+									placeholder="Введите ваш e-mail">
+								<input class="btn-submit" type="submit" value="">
+							</div>
+							<label class="acceptance caption-small">
+								Я прочитал Политику конфиденциальности и согласен с условиями
+								<input class="acceptance__input" type="checkbox" checked="checked">
+								<span class="acceptance__checkmark"></span>
+							</label>
+						</form>
+					</div>
+				</div>
+				<div class="footer__line-info caption-small">
+					<div class="footer__line-info-text">
+						<div>2023 © X&G — Дом Медицинской Одежды</div>
+						<a href="" class="">Политика конфиденциальности</a>
+					</div>
+					<div class="footer__line-dev">
+						Разработка сайта
+						<a href="https://nastart-web.ru/" target="_blank">
+							<svg width="120" height="13" viewBox="0 0 120 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_649_9171)">
+									<path d="M74.2293 12.2V2.33857H70.5312V0.5H79.9997V2.33857H76.3017V12.2H74.2293Z"
+										fill="#303030" />
+									<path
+										d="M59.666 12.2V0.5H64.2564C65.2448 0.5 66.0896 0.667143 66.7908 1.00143C67.5028 1.33572 68.0504 1.81486 68.4328 2.43886C68.8152 3.06286 69.0068 3.80386 69.0068 4.66185C69.0068 5.51985 68.8152 6.26085 68.4328 6.88485C68.0504 7.49773 67.5028 7.97127 66.7908 8.30558C66.7412 8.32851 66.6908 8.35062 66.6396 8.37192L69.198 12.2H66.9664L64.6932 8.77931C64.5508 8.78664 64.4052 8.79027 64.2564 8.79027H61.738V12.2H59.666ZM61.738 7.00185H64.1608C65.0748 7.00185 65.76 6.79573 66.2172 6.38342C66.6848 5.97115 66.9184 5.39727 66.9184 4.66185C66.9184 3.91529 66.6848 3.34143 66.2172 2.94028C65.76 2.53914 65.0748 2.33857 64.1608 2.33857H61.738V7.00185Z"
+										fill="#303030" />
+									<path
+										d="M45.3506 12.2L50.3718 0.5H52.4118L57.449 12.2H55.281L54.1722 9.49227L53.823 8.63985L53.4738 7.78742L51.3766 2.66702L49.287 7.78742H53.4738L53.823 8.63985L54.1722 9.49227H48.5914L47.4866 12.2H45.3506Z"
+										fill="#303030" />
+									<path d="M39.367 12.2V2.33857H35.6689V0.5H45.1372V2.33857H41.4392V12.2H39.367Z"
+										fill="#303030" />
+									<path
+										d="M29.9229 12.2C29.0515 12.2 28.2173 12.0754 27.4203 11.8263C26.6233 11.5663 25.991 11.2358 25.5234 10.835L26.2408 9.19376C26.687 9.55124 27.2396 9.84916 27.8985 10.0875C28.5574 10.3258 29.2321 10.445 29.9229 10.445C30.5073 10.445 30.9802 10.38 31.3415 10.25C31.7028 10.12 31.9685 9.94666 32.1385 9.73001C32.3085 9.50249 32.3936 9.24794 32.3936 8.96624C32.3936 8.61957 32.2714 8.34333 32.0269 8.13749C31.7825 7.92084 31.4637 7.75291 31.0705 7.63376C30.688 7.50374 30.2576 7.38459 29.7794 7.27625C29.3118 7.16791 28.839 7.04334 28.3608 6.90251C27.8932 6.75084 27.4628 6.56126 27.0696 6.33374C26.687 6.09541 26.3736 5.78126 26.1292 5.39126C25.8848 5.00126 25.7626 4.50292 25.7626 3.89625C25.7626 3.27875 25.922 2.71542 26.2408 2.20625C26.5702 1.68625 27.0643 1.27458 27.7232 0.971249C28.3926 0.657083 29.2374 0.5 30.2576 0.5C30.9271 0.5 31.5912 0.586667 32.2501 0.760001C32.909 0.933333 33.4828 1.1825 33.9716 1.5075L33.3181 3.14875C32.8186 2.84542 32.3032 2.62333 31.7719 2.4825C31.2406 2.33083 30.7305 2.255 30.2416 2.255C29.6678 2.255 29.2002 2.32541 28.839 2.46625C28.4883 2.60708 28.2279 2.79125 28.0579 3.01875C27.8985 3.24625 27.8188 3.50625 27.8188 3.79875C27.8188 4.14542 27.9357 4.42707 28.1695 4.64375C28.4139 4.84959 28.7274 5.01207 29.1099 5.13125C29.5031 5.25043 29.9388 5.36958 30.417 5.48876C30.8952 5.59707 31.3681 5.72167 31.8356 5.8625C32.3138 6.00333 32.7442 6.18749 33.1268 6.41501C33.52 6.6425 33.8334 6.95126 34.0672 7.34126C34.3116 7.73126 34.4338 8.22418 34.4338 8.81999C34.4338 9.42667 34.2692 9.98999 33.9397 10.51C33.6209 11.0192 33.1268 11.4308 32.4573 11.745C31.7878 12.0483 30.943 12.2 29.9229 12.2Z"
+										fill="#303030" />
+									<path
+										d="M12.124 12.2L17.1451 0.5H19.1854L24.2224 12.2H22.0546L20.9456 9.49227L20.5964 8.63985L20.2473 7.78742L18.1501 2.66702L16.0606 7.78742H20.2473L20.5964 8.63985L20.9456 9.49227H15.3649L14.26 12.2H12.124Z"
+										fill="#303030" />
+									<path
+										d="M0 12.2V0.5H1.70557L7.8584 8.42137V0.5H9.91464V12.2H8.20908L2.05625 4.27865V12.2H0Z"
+										fill="#303030" />
+									<path
+										d="M111.562 12.2V4.42496V0.5H115.849C116.956 0.5 117.826 0.750714 118.46 1.25214C119.104 1.75357 119.426 2.49457 119.426 3.47514C119.426 4.11029 119.285 4.64515 119.003 5.07973C118.732 5.51427 118.349 5.83742 117.856 6.04915C117.74 6.09997 117.62 6.14467 117.495 6.18328C117.831 6.24178 118.132 6.33077 118.4 6.45027C118.923 6.68427 119.32 7.02416 119.592 7.46985C119.864 7.91558 119.999 8.46715 119.999 9.12458C119.999 10.1052 119.677 10.8628 119.033 11.3977C118.4 11.9326 117.438 12.2 116.151 12.2H111.562ZM112.076 11.6986H116.181C117.257 11.6986 118.078 11.4924 118.641 11.0802C119.205 10.6567 119.486 9.99927 119.486 9.10785C119.486 8.20527 119.205 7.54785 118.641 7.13558C118.078 6.71215 117.257 6.50042 116.181 6.50042H111.993L111.985 6.01573H115.864C116.83 6.01573 117.579 5.804 118.113 5.38058C118.656 4.95715 118.928 4.33314 118.928 3.50857C118.928 2.684 118.656 2.06 118.113 1.63657C117.579 1.21314 116.83 1.00143 115.864 1.00143H112.076V4.42496H111.562V5.22033V6.01573H111.985L112.076 11.6986Z"
+										fill="#303030" />
+									<path
+										d="M101.995 11.6818H108.621V12.2H101.481V0.5H108.409V1.01814H101.995V4.40433H101.481V5.999H107.73V6.51715H101.995V11.6818Z"
+										fill="#303030" />
+									<path
+										d="M87.6072 12.2L84 0.5H84.5432L88.0148 11.8156L88.1356 12.2L88.9936 9.46836L88.7428 8.65291L91.32 0.5H91.818L95.2504 11.4037L95.4968 12.2L96.3552 9.47776L96.0996 8.64831L98.61 0.5H99.1232L96.3552 9.47776L95.4968 12.2H95.0028L91.5012 1.10172H91.622L88.9936 9.46836L88.1356 12.2H87.6072Z"
+										fill="#303030" />
+								</g>
+								<defs>
+									<clipPath id="clip0_649_9171">
+										<rect width="120" height="12" fill="white" transform="translate(0 0.5)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper gray-bg">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						Продвижение интернет-магазина
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>кейсы</span></a></li>
+								<li class="breadcrumb__item"><span>Продвижение интернет-магазина</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section project-preview">
+				<div class="container">
+					<div class="project-preview__img">
+						<img src="./img/seo-project.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg mt-0">
+				<div class=" two-col">
+					<div class="container">
+						<div class="two-col__row">
+							<div class="two-col__col">
+								<div class="xlarge-text">Начало работы</div>
+							</div>
+							<div class="two-col__col gray-text">
+								<p>
+									Компания из Санкт-Петербурга, занимается производством изделий из фарфора. Основой
+									упор
+									на новогодние игрушки.
+								</p>
+								<p>
+									Изначально у заказчика был сайт, но с устаревшим дизайном, неактуальным каталогом и
+									без
+									возможности онлайн-оплаты.
+								</p>
+								<p>
+									Мы сразу приняли решение о создании нового сайта. Стояла задача сделать его более
+									современным и удобным. Мы провели анализ конкурентов, много общались с заказчиком и
+									его
+									сотрудниками, чтобы учесть всю специфику их бизнеса.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" two-col">
+					<div class="container">
+						<div class="two-col__row">
+							<div class="two-col__col">
+								<div class="xlarge-text">Описание проекта</div>
+							</div>
+							<div class="two-col__col gray-text">
+								<div class="two-col__small-title small-title white-text">Задача проекта:</div>
+								<p> Разработка интернет-магазина для продажи электронных компонентов </p>
+								<div class="two-col__small-title small-title white-text">Год разработки:</div>
+								<p> 2022 год </p>
+								<div class="two-col__small-title small-title white-text">Срок разработки:</div>
+								<p> 3 месяца </p>
+								<div class="two-col__small-title small-title white-text">Система управления:</div>
+								<p> 1С-Битрикс </p>
+								<div class="two-col__small-title small-title white-text">Сайт:</div>
+								<p><a href="подшипник.рф">подшипник.рф</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" two-col">
+					<div class="container">
+						<div class="two-col__row">
+							<div class="two-col__col">
+								<div class="xlarge-text">Цвета</div>
+							</div>
+							<div class="two-col__col">
+								<div class="color">
+									<div class="color__item" style="background: #EFEFEF;"></div>
+									<div class="color__item" style="background: #112B3C;"></div>
+									<div class="color__item" style="background: #005792;"></div>
+									<div class="color__item" style="background: #F66B0E;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_whithout-btn">
+				<div class="container">
+					<div class="comment__wrapper comment__wrapper_center">
+						<div class="comment__text">
+							Клиент хотел запустить проект в сжатые сроки — за <span>три месяца</span> . Чтобы уложиться
+							в дедлайн и не потерять в качестве работы, предложили верстать сайт в Readymag.
+						</div>
+						<div class="comment__info">
+							<p>
+								Кадров нашей по рост реализация соответствующий значение соображения поставленных же
+								повседневная реализация высшего постоянный задач. Высшего реализации проверки позволяет
+								занимаемых идейные активности подготовки представляет также соображения реализации
+								порядка, образом нас заданий порядка.
+							</p>
+							<p>
+								Задания выполнять порядка, роль организации постоянный и практика направлений задания
+								таким оценить рост а и модель а высшего организационной направлений интересный
+								особенности активизации. От рост выполнять постоянный постоянный проверки образом рамки
+								что рост место и в организации.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section project">
+				<div class="container">
+					<div class="project__slider swiper-container">
+						<div class="project__slider-wrapper swiper-wrapper">
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+							<a href="./img/seo-project2.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<img src="./img/seo-project2.png" alt="">
+							</a>
+						</div>
+						<div class="project-controls slider-controls">
+							<div class="slider-pagination project-pagination"></div>
+							<div class="slider-navigation project-navigation">
+								<div class="slider-prev project-prev">назад</div>
+								<div class="slider-next project-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section team dark-bg more-padding mb-0" id="team">
+				<div class="container">
+					<div class="team__wrapper">
+						<div class="team__title title "><span>команда</span> проекта</div>
+						<div class="team__slider swiper-container">
+							<div class="team__slider-wrapper swiper-wrapper">
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo.png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo(1).png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo(2).png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo(3).png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo.png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo(1).png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+								<div class="team__slide swiper-slide">
+									<div class="team__img">
+										<img class="img" src="./img/team/photo(2).png" alt="">
+									</div>
+									<div class="team__person">
+										<div class="team__name medium-text">Константин</div>
+										<div class="team__position">руководитель отдела продаж</div>
+										<div class="team__about">Наши сотрудники постоянно развиваются, посещают
+											различные семинары, курсы, вебинары. Мы никогда не стоим на месте, и
+											постоянно внедряем в свою работу новейшие интернет-технологии </div>
+									</div>
+								</div>
+							</div>
+							<div class="team-controls slider-controls">
+								<div class="slider-pagination team-pagination"></div>
+								<div class="slider-navigation team-navigation">
+									<div class="slider-prev team-prev">назад</div>
+									<div class="slider-next team-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section creation creation_separate-bg more-padding dark-bg m-0">
+				<div class="container">
+					<div class="creation__wrapper creation__wrapper_half">
+						<div class="creation__body creation__body_center">
+							<div class="creation__title title"> Как создавался этот проект </div>
+							<div class="creation__subtitle small-title ff-rm gray-text mb-0"> Текст рыба, который
+								кратенько
+								расскажет о
+								том, как тут всё круто, а Лера вообще молодец, ведь делает ролики и интро!!1! </div>
+						</div>
+						<div class="creation__img">
+							<img src="./img/preview2.png" alt="">
+							<a href="" data-fancybox=""
+								class="creation__round-btn round-btn round-btn_orange round-btn_play ">
+								<span class="round-btn__circle-text"
+									style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+								<span class="round-btn__center-icon"
+									style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

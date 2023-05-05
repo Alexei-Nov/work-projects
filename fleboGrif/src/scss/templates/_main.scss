@@ -1,0 +1,55 @@
+.main {
+  background-color: $color-light-blue;
+  background-repeat: no-repeat;
+  background-position: 70% center;
+  @media screen and (max-width: 1399.98px) {
+    background-size: 465px 370px;
+    background-position: 90% center;
+  }
+  @media screen and (max-width: 991.98px) {
+    background-size: 45%;
+    background-position: right 50%;
+  }
+  @media screen and (max-width: 575.98px) {
+    background-size: 260px 182px;
+    background-position: center calc(100% - 70px);
+  }
+  &__wrapper {
+    padding: 137px 0;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 991.98px) {
+      max-width: 50%;
+    }
+    @media screen and (max-width: 575.98px) {
+      max-width: 100%;
+      padding-top: 70px;
+      padding-bottom: 282px;
+    }
+  }
+  &__title {
+    margin-bottom: 5px;
+    @include font(45, 58.5, 800);
+    color: $color-black;
+    @media screen and (max-width: 575.98px) {
+      @include font(30, 39, 800);
+    }
+  }
+  &__dsc {
+    color: $color-secondary;
+  }
+  &__list {
+    margin: 25px 0;
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      li {
+        @extend .check-item;
+      }
+    }
+  }
+  &__btn {
+    @extend .primary-btn;
+  }
+}

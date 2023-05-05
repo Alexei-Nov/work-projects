@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+	<section class="header">
+		<div class="nav">
+			<div class="container">
+				<div class="nav__wrapper">
+					<div class="nav__logo">
+						<img src="./img/logo.png" alt="logo-icon">
+					</div>
+					<ul class="nav__list">
+						<li class="nav__link">О компании</li>
+						<li class="nav__link">Продукция</li>
+						<li class="nav__link">Наше производство</li>
+						<li class="nav__link">Монтаж</li>
+						<li class="nav__link">Преимущества</li>
+						<li class="nav__link">Контакты</li>
+						<li class="nav__link nav__phone">
+							<img src="./img/icon/phone.png" alt="phone-icon">
+							<p> + 7 (812) 777-90-59</p>
+						</li>
+						<li class="nav__link nav__location">
+							<img src="./img/icon/location.png" alt="location-icon">
+							<p> Cанкт-Петербург, проезд Гагарина, 32</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="breadcrumb">
+			<div class="container">
+				<div class="breadcrumb__wrapper">
+					<div class="breadcrumb__item breadcrumb__main">Главная</div>
+					<div class="breadcrumb__item">Каталог</div>
+					<div class="breadcrumb__item">Алюминиевый профиль</div>
+					<div class="breadcrumb__item breadcrumb__last">Плинтус пристеночный на самоклеющейся ленте ПП
+						100/10/С</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main">
+		<div class="order">
+			<div class="container">
+				<div class="order__wrapper">
+					<div class="order__title main-title">ОФОРМЛЕНИЕ ЗАКАЗА</div>
+					<form action="submit">
+						<div class="order__inputs">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваша фамилия">
+							<input type="phone" placeholder="Контактый номер" id="phone-mask">
+							<input type="text" placeholder="Адрес доставки">
+							<textarea placeholder="Комментарии"></textarea>
+
+							<label class="label__container">
+								<p>
+									Даю согласие на обработку персональных данных
+								</p>
+								<input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+
+						</div>
+						<div class="order__body">
+							<h2>Ваш заказ</h2>
+							<div class="order__body_separated-title">
+								<p><span>Товары (2)</span> <span>24 000 руб</span></p>
+								<p><span>Доставка </span> <span>Укажите адрес</span></p>
+							</div>
+							<h2>
+								<span>Итого</span> <span>24 000 руб</span>
+							</h2>
+							<button class="order__btn btn-main">Перейти к оплате</button>
+						</div>
+					</form>
+
+				</div>
+
+
+
+	</section>
+	<section class="footer"></section>
+
+
+</body>
+
+</html>

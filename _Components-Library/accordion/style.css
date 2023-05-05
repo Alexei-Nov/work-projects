@@ -1,0 +1,84 @@
+.a-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  transition: all ease 0.3s;
+}
+
+.a-btn {
+  position: relative;
+  padding: 20px 0;
+  padding-right: 50px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #213570;
+}
+
+.a-btn span {
+  background: #5bc4f8;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.a-btn span:after {
+  content: "";
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a-btn span:before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: all 0.3s ease;
+}
+
+.a-panel {
+  width: 100%;
+  color: #3f4556;
+  transition: all 0.3s ease;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0px;
+  padding-right: 50px;
+}
+
+.a-container.active .a-btn span::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 0.5px;
+}
+
+.a-container.active .a-panel {
+  opacity: 1;
+  max-height: 1000px;
+  transition: all ease 0.8s;
+}

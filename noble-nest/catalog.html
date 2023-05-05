@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="body__wrapper">
+		<header class="header">
+			<div class="container_header">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="">
+							<img src="./img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header__body">
+						<div class="nav-panel__wrapper">
+							<div class="nav-panel__body">
+								<nav class="nav-panel">
+									<ul class="nav-panel__list">
+										<li class="nav-panel__item nav-panel__item_lvl1 nav-panel__item_has-children">
+											<a>Проекты</a>
+											<ul class="nav-panel__submenu nav-panel__submenu_lvl2">
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														домов</a>
+												</li>
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														домов-бань</a></li>
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														бань</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Наши работы</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Цены</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">О компании</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Контакты</a></li>
+									</ul>
+								</nav>
+
+								<div class="nav-panel__menu_btns">
+									<a href="#popup" data-fancybox class="nav-panel__btn btn-red">Заказать звонок
+									</a>
+									<div class="nav-panel__mail"><a
+											href="mailto:zakaz.dvg@gmail.com">zakaz.dvg@gmail.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__callback">
+						<div class="header__info">
+							<div class="header__phone"><a href="tel:88129821005">+7 (812) 982-10-05</a></div>
+							<div class="header__mail"><a href="mailto:zakaz.dvg@gmail.com">zakaz.dvg@gmail.com</a></div>
+						</div>
+						<a href="#popup" data-fancybox class="header__btn btn-red">Заказать звонок </a>
+					</div>
+
+					<div class="header__mobile-btns">
+						<div class="header__phone">
+							<a href="">
+								<img src="./img/icon/tel.svg" alt="">
+							</a>
+						</div>
+						<div class="header__menu-btn">
+							<span></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<main class="main">
+
+			<div class="breadcrumb">
+				<div class="container">
+					<ul class="breadcrumb__wrapper">
+						<li class="breadcrumb__item"><a href="">Главная</a></li>
+						<li class="breadcrumb__item"><a href="">Проекты домов</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="h2 container">Проекты домов из оцилиндрованного бревна</div>
+
+			<section class="section catalog">
+				<div class="container">
+					<div class="catalog__wrapper">
+						<div class="catalog__body">
+
+							<div class="catalog__item">
+								<div class="catalog__img">
+									<a href="">
+										<img src="./img/catalog/catalog2.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span> 7 x 10м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Дон”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">115 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">2 санузла</div>
+									<div class="catalog__condition-item ">4 комнаты</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>1 950 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img">
+									<a href="">
+										<img src="./img/catalog/catalog3.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>8 x 10,5м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Днепр”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">117 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 450 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img">
+									<a href="">
+										<img src="./img/catalog/catalog4.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>10,1 x 10,3м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Енисей”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">120 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 300 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img">
+									<a href="">
+										<img src="./img/catalog/catalog1.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>8,2 x 8,4м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Байкал”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">108 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">2 санузла</div>
+									<div class="catalog__condition-item ">4 комнаты</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>1 670 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img">
+									<a href="">
+										<img src="./img/catalog/catalog2.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span> 7 x 10м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Дон”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">115 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">2 санузла</div>
+									<div class="catalog__condition-item ">4 комнаты</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>1 950 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog3.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>8 x 10,5м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Днепр”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">117 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 450 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog4.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>10,1 x 10,3м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Енисей”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">120 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 300 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog1.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>8,2 x 8,4м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Байкал”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">108 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">2 санузла</div>
+									<div class="catalog__condition-item ">4 комнаты</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>1 670 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog2.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span> 7 x 10м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Дон”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">115 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">2 санузла</div>
+									<div class="catalog__condition-item ">4 комнаты</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>1 950 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog3.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>8 x 10,5м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Днепр”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">117 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 450 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+							<div class="catalog__item">
+								<div class="catalog__img"><a href="">
+										<img src="./img/catalog/catalog4.png" alt="">
+									</a>
+								</div>
+								<div class="catalog__prop">
+									<div class="catalog__prop-item">Материал: <span> Бревно оцилиндрованное</span></div>
+									<div class="catalog__prop-item">Размеры дома: <span>10,1 x 10,3м</span></div>
+								</div>
+								<div class="catalog__name">Проект “Енисей”</div>
+								<div class="catalog__condition">
+									<div class="catalog__condition-item ">120 м2</div>
+									<div class="catalog__condition-item ">2 этажа</div>
+									<div class="catalog__condition-item">3 санузла</div>
+									<div class="catalog__condition-item ">5 комнат</div>
+								</div>
+								<div class="catalog__price">Цена проекта: <span>2 300 000 ₽</span></div>
+								<a href="" class="catalog__btn btn-green">Смотреть проект</a>
+							</div>
+						</div>
+
+						<div class="catalog__controls">
+							<a href="" class="catalog__pagination-btn btn-green-border_black-text">Показать еще</a>
+							<ul class="catalog__pagination">
+								<li class="catalog__pagination-item">1</li>
+								<li class="catalog__pagination-item catalog__pagination-item_current">2</li>
+								<li class="catalog__pagination-item">3</li>
+								<li class="catalog__pagination-item">4</li>
+								<li class="catalog__pagination-item">5</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_shadow banner ">
+				<div class="container">
+					<div class="banner__wrapper">
+
+						<a href="" class="banner__item banner__item_orange">
+							<div class="banner__label banner__label_uppercase">ТОП 50</div>
+							<div class="banner__title">Лидеры продаж</div>
+							<div class="banner__subtitle">Проекты с самым высоким рейтингом</div>
+							<div class="banner__link">
+								<div>Смотреть ТОП
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.999999 12.4668L6.625 6.80013L1 1.13346" stroke="white"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</a>
+
+						<a href="" class="banner__item banner__item_black">
+							<div class="banner__label">Акции</div>
+							<div class="banner__title">Подарки и скидки</div>
+							<div class="banner__subtitle">Помогаем вам экономить на строительстве!</div>
+							<div class="banner__link">
+								<div>Смотреть все
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.999999 12.4668L6.625 6.80013L1 1.13346" stroke="white"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+						</a>
+						<a href="" class="banner__item banner__item_white">
+							<div class="banner__label">Выгода</div>
+							<div class="banner__title">Уже есть проект?</div>
+							<div class="banner__subtitle">Пересчитаем стоимость строительства</div>
+							<div class="banner__link">
+								<div>Рассчитать стоимость
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.999999 12.4668L6.625 6.80013L1 1.13346" stroke="white"
+											stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section gift">
+				<div class="gift__wrapper">
+					<div class="gift__img">
+						<img src="./img/gift.png" alt="">
+					</div>
+					<div class="gift__body">
+						<div class="gift__title"> <span> 50% </span>работ по фундаменту в подарок!</div>
+						<div class="gift__subtitle p">
+							<p>
+								Если вы заключаете договор на строительство сруба с фундаментом —
+								50% стоимости работ по фундаменту в подарок!
+							</p>
+							<p>
+								Акция действует если вы строите свайный фундамент.
+							</p>
+						</div>
+						<a href="" class="gift__btn btn-red"> Подробнее</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section photo">
+				<div class="container">
+					<div class="h2">Фото построенных срубов</div>
+					<div class="photo__wrapper">
+						<div class="photo__slider swiper-container">
+							<div class="photo__slider-wrapper swiper-wrapper">
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo.png" data-fancybox>
+											<img src="./img/photo.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo2.png" data-fancybox>
+											<img src="./img/photo2.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo3.png" data-fancybox>
+											<img src="./img/photo3.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo4.png" data-fancybox>
+											<img src="./img/photo4.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="" class="photo__btn btn-green-border_black-text ">Посмотреть все</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section form">
+				<div class="container">
+					<div class="form__wrapper">
+						<form action="submit" class="form__body">
+							<div class="form__title h3">Не нашли подходяший проект? Нужен индивидуальный проект?
+								Напишите нам!</div>
+							<input class="input input_white" type="text" placeholder="Имя*">
+							<input class="input input_white phone-mask" type="tel" placeholder="Телефон*">
+							<input class="input input_white" type="email" placeholder="Почта">
+							<textarea class="textarea textarea_white" placeholder="Сообщение"></textarea>
+
+							<label class="label__container">
+								<input type="checkbox" checked="checked">
+								<span>
+									Я согласен на обработку <a class="red" href=""> персональных
+										данных</a>
+									<span class="checkmark"></span>
+								</span>
+							</label>
+
+							<div class="form__btns">
+								<div class="form__load-btn-wrapper">
+									<input type="file" class="file-btn">
+									<div class="form__load-btn btn-green-border_black-text">Загрузить файл</div>
+								</div>
+								<button class="form__request-btn btn-green">Оставить заявку</button>
+							</div>
+						</form>
+						<div class="form__img">
+							<img src="./img/form-2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact">
+				<div class="h2 h2_mobile">Контакты</div>
+				<div class="contact__wrapper">
+					<div class="contact__map" id="map">
+					</div>
+					<div class="contact__info">
+						<div class="h2 h2_left">Контакты</div>
+						<div class="contact__item contact__location">г. Санкт-Петербург ул.Смоленская, 9
+							— Бизнес-центр "Оптима"</div>
+						<div class="contact__item contact__tel"> <a href="tel:88129821005">+7 (812) 982-10-05;</a> <a
+								href="tel: 89627090229"> +7 (962) 709-02-29</a>
+						</div>
+						<div class="contact__item contact__mail"> <a href="mailto:zakaz.dvg@gmail.com">
+								zakaz.dvg@gmail.com</a></div>
+						<div class="contact__item contact__reglament">Пн-Сб 10:00–19:00</div>
+						<a href="#popup" data-fancybox class=" contact__btn btn-red">Заказать звонок</a>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class=" footer__logo footer__logo_mobile">
+						<a href="">
+							<img src="./img/footer-logo.png" alt="">
+						</a>
+					</div>
+					<div class="footer__nav">
+						<nav>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-link"> <a href=""> ПРОЕКТЫ </a></li>
+								<li class="footer__nav-link"> <a href=""> НАШИ РАБОТЫ</a></li>
+								<li class="footer__nav-link"> <a href=""> ЦЕНЫ</a></li>
+								<li class="footer__nav-link"> <a href=""> О КОМПАНИИ</a></li>
+								<li class="footer__nav-link"> <a href=""> КОНТАКТЫ</a></li>
+							</ul>
+						</nav>
+						<div class="footer__social">
+							<div class="footer__social-icon">
+								<a href="">
+									<img src="./img/icon/vk.svg" alt="">
+								</a>
+							</div>
+							<div class="footer__social-icon">
+								<a href="">
+									<img src="./img/icon/wa.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__body">
+
+						<div class="footer__logo">
+							<a href="">
+								<img src="./img/footer-logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer__text">
+							Сайт носит исключительно информационный характер и не является публичной офертой,
+							определяемой положениями ГК РФ. Для получения подробной информации о наличии, видах,
+							характеристиках и стоимости домов обращайтесь в офис продаж.
+						</div>
+
+						<div class="footer__info">
+							<div class="footer__map"> <a href=""> Карта сайта </a> </div>
+							<div class="footer__confidance"><a href="">Политика конфиденциальности</a></div>
+							<div class="footer__copyright">© 2010-2022. Компания «Дворянское Гнездо»</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="popup" id="popup">
+		<div class="popup__wrapper">
+			<form action="submit">
+				<div class="popup__title h3">Мы вам перезвоним</div>
+				<div class="popup__subtitle p">Среднее время ожидание звонка - 1 минута</div>
+				<input class="input input_white" type="text" placeholder="Имя*">
+				<input class="input input_white phone-mask" type="tel" placeholder="Телефон*">
+				<label class="label__container">
+					<input type="checkbox" checked="checked">
+					<span>
+						Я согласен на обработку <a class="red" href=""> персональных
+							данных</a>
+						<span class="checkmark"></span>
+					</span>
+				</label>
+				<button class="popup__btn btn-green">Перезвоните мне</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>

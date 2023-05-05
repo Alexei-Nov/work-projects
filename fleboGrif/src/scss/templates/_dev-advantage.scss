@@ -1,0 +1,17 @@
+.dev-advantage {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  &__item {
+    width: 48%;
+  }
+  &-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @include font(25, 32, 600);
+    color: $color-black;
+  }
+}

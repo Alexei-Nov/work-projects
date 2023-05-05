@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body class="body">
+
+
+	<main>
+		<div class="breadcrumb">
+			<div class="container">
+				<ul class="breadcrumb__wrapper">
+					<li class="breadcrumb__item breadcrumb__main"><a class="a" href=""> Главная</a></li>
+					<li class="breadcrumb__item "><a class="a" href=""> Авторизация</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="sub-nav">
+			<div class="container">
+				<div class="registration__tab_header user-profile__tab_header ">
+					<div class="registration__tab_title user-profile__tab_title">
+						<div class="user-profile__tab_menu-close-btn">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.74707" y="0.0400391" width="30" height="1" rx="0.5"
+									transform="rotate(45 0.74707 0.0400391)" fill="black" />
+								<rect x="0.0400391" y="21.2529" width="30" height="1" rx="0.5"
+									transform="rotate(-45 0.0400391 21.2529)" fill="black" />
+							</svg>
+						</div>
+						<a href="" class="a registration__tab_title-1 active_tab">Авторизация</a>
+						<a href="" class="a registration__tab_title-2">Регистрация</a>
+					</div>
+					<div class="user-profile__tab_menu-btn">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect y="11" width="30" height="1" rx="0.5" fill="black" />
+							<rect y="18" width="30" height="1" rx="0.5" fill="black" />
+							<circle cx="8.5" cy="11.5" r="2.5" fill="black" />
+							<circle cx="8.5" cy="11.5" r="1.5" fill="white" />
+							<circle cx="21.5" cy="18.5" r="2.5" fill="black" />
+							<circle cx="21.5" cy="18.5" r="1.5" fill="white" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="registration section">
+			<div class="container">
+				<div class="registration__wrapper">
+					<div class="h1 replaced__title">Авторизация</div>
+
+					<div class="registration__tab-1 registration__tab active ">
+						<div class="registration__title title">
+							<div class="h1">Для зарегистрированных пользователей</div>
+							<div class="p">Если у Вас уже есть аккаунт, пожалуйста, войдите в систему</div>
+						</div>
+
+						<form class="registration__login">
+							<input class="input" type="text" placeholder="Логин">
+							<input class="input" type="password" placeholder="Пароль">
+							<div class="registration__login_btns">
+								<button class="registration__login_btn btn-main"> войти</button>
+								<a class="a" href="">Забыли пароль? <span class="span"></span></a>
+							</div>
+							<div class="registration__check">
+								<label class="label__container">Запомнить данные для входа
+									<input type="checkbox" checked="checked">
+									<span class=" span checkmark"></span>
+								</label>
+								<label class="label__container">Принимаю пользовательское соглашение о
+									конфиденциальности
+									<input type="checkbox" checked="checked">
+									<span class="span checkmark"></span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+
+	<div class="popup" id="basket">
+		<div class="popup__wrapper">
+			<div class="popup__title">
+				<div class="h1">Товар добавлен в корзину!</div>
+			</div>
+			<div class="popup__btns">
+				<a class="a popup__btn-offer btn-main">Оформить</a>
+				<a class="a popup__btn-back btn-secondary ">к покупкам</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

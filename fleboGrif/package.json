@@ -1,0 +1,28 @@
+{
+  "name": "normabrus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rezoneblock/normaBrus.git"
+  },
+  "author": "Gordeev Timur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rezoneblock/normaBrus/issues"
+  },
+  "homepage": "https://github.com/Rezoneblock/normaBrus#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  }
+}

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						ПРОДВИЖЕНИЕ НА WILDBERRIES
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Продажа на WildBerries
+								</div>
+								<div class="detail-entrance__subtitle">
+									Онлайн-ритейлеры, которые успешно работают на Wildberries, могут в несколько раз
+									увеличить свои доходы.
+								</div>
+								<!-- <div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Но для того, чтобы занять достойные
+								позиции и радоваться хорошим
+								продажам, необходимо продвижение
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info ">
+								<p>
+									В настоящее время торговая площадка под названием "Вайлдберриз" на слуху практически
+									у каждого. Как только человек видит фирменные сиреневые цвета маркетплейса - у него
+									сразу возникают ассоциации с удобным сайтом, на котором можно купить все - от одежды
+									до продуктов и электроники. Поэтому онлайн-ритейлеры, которые успешно работают на
+									Wildberries (далее - ВБ), могут в несколько раз увеличить свои доходы.
+								</p>
+								<p>
+									Но продажи на ВБ не идут сами собой, потому что там слишком много конкурентов с
+									хорошими отзывами, "сильными" описаниями, качественными товарами и низкими ценами.
+									Поэтому для того, чтобы занять достойные позиции и радоваться хорошим продажам,
+									необходимо продвижение.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text large-text tt-uc">
+									Продажи на Wildberries -
+									от чего они зависят
+								</div>
+								<div class="comment__info small-title orange-text">
+									Посмотрите на простую формулу:
+								</div>
+								<div class="comment__info small-list-text ff-tektur">
+									Прибыль на онлайн-платформе = Общее число продаж * Маржа (разница между выручкой и
+									себестоимостью товара).
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Таким образом для увеличения продаж необходимо поднять количество показов и
+										посещений карточки товара. Этого вы добьетесь только при условии попадания
+										продукта в ТОП поисковой выдачи на площадке.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section project">
+				<div class="container">
+					<div class="project__title xlarge-text black-text">Как пользователи ищут товары на WB</div>
+					<div class="project__slider swiper-container">
+						<div class="project__slider-wrapper swiper-wrapper">
+							<a href="./img/seo-project3.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<div class="project__slider-img">
+									<img src="./img/seo-project3.png" alt="">
+								</div>
+								<div class="project__slider-text">
+									Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+									данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда -
+									Джинсы.
+								</div>
+							</a>
+							<a href="./img/seo-project3.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<div class="project__slider-img">
+									<img src="./img/seo-project3.png" alt="">
+								</div>
+								<div class="project__slider-text">
+									Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+									данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда -
+									Джинсы.
+								</div>
+							</a>
+							<a href="./img/seo-project3.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<div class="project__slider-img">
+									<img src="./img/seo-project3.png" alt="">
+								</div>
+								<div class="project__slider-text">
+									Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+									данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда -
+									Джинсы.
+								</div>
+							</a>
+							<a href="./img/seo-project3.png" data-fancybox="project"
+								class="project__slide swiper-slide">
+								<div class="project__slider-img">
+									<img src="./img/seo-project3.png" alt="">
+								</div>
+								<div class="project__slider-text">
+									Допустим, посетитель зашел на сайт, чтобы купить женские джинсы. Он может искать
+									данный товар в каталоге. Для этого человек переходит в раздел Женщинам - Одежда -
+									Джинсы.
+								</div>
+							</a>
+						</div>
+						<div class="project-controls slider-controls">
+							<div class="slider-pagination project-pagination"></div>
+							<div class="slider-navigation project-navigation">
+								<div class="slider-prev project-prev">назад</div>
+								<div class="slider-next project-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-about">
+				<div class="container">
+					<div class="text-about__wrapper">
+						<div class="text-about__body two-col">
+							<div class="two-col__wrapper">
+								<div class="two-col__row">
+									<div class="two-col__col ">
+										<div class="xlarge-text black-text">
+											Главный закон ВБ
+										</div>
+									</div>
+									<div class="two-col__col ">
+										<div class="large-text tt-uc black-text">
+											Чем лучше в поиске ранжируется ваш товар - тем больше продаж.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title xlarge-text">
+							Как выглядит карточка товара
+						</div>
+
+						<div class="simple-tile__text gray-text">
+							<p>
+								Это подробное описание вашего продукта, в котором указаны все его характеристики
+								и размещены фотографии.
+							</p>
+							<p>
+								Особенности SEO-продвижения карточек на ВБ очень ограничены. Вы не можете менять
+								мета-теги, которые играют важную роль при отображении страницы в поисковой
+								системе. Но вам доступны управление описанием, названием, фотографиями и
+								дополнительными параметрами.
+							</p>
+						</div>
+
+						<div class="simple-tile__img">
+							<img src="./img/seo-project4.png" alt="">
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Для оптимизации карточки сначала следует собрать список ключевых слов.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Самые частотные (которые запрашивают чаще) указать в названии, остальные - включить
+									в описание.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Длина текста определяется по конкурентам из ТОПа. максимальное количество символов с
+									учетом пробелов в описании - 1000, в названии - 100.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									В дополнительные поля в характеристиках вписываются низкочастотные запросы,
+									например, "светло-бежевые джинсы", "джинсы с низкой посадкой женские" и т.п.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile simple-tile_counter">
+					<div class="container">
+						<div class="simple-tile__title xlarge-text">
+							Что влияет на ранжирование карточки в поиске
+						</div>
+
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Отзывы, их количество и характер.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Общий товарооборот селлера.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Отношение количества кликов по карточке к ее показам.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Процент выкупа. Если покупатели часто отказываются от товара в токе получения -
+									рейтинг значительно снижается.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Товары с повышенным спросом ранжируются лучше.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Скидки - чем она выше, тем лучше позиция.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Цена - товары по низким ценам покупают активнее.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Конверсия - разница между оформленными заказами и просмотрами карточки.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__text">
+									Регион продавца.
+								</div>
+							</div>
+						</div>
+
+						<div class="simple-tile__text small-title">
+							Следует работать над всеми показателями, так как каждый из них влияет на ранжирование.
+						</div>
+
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title large-text black-text tt-uc">
+						Все методы и инструменты <br> продвижения на ВБ
+					</div>
+
+					<div class="simple-tile__text">
+						Продвигать товар можно при помощи внутренней оптимизации карточки или платной рекламы. Они могут
+						работать в совокупности, при этом усиливая друг друга.
+					</div>
+
+					<div class="simple-tile__img">
+						<img src="./img/seo-project5.png" alt="">
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section simple-tile  simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title xlarge-text black-text">
+						Внутренняя оптимизация - советы
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Обратите внимание на название продукта. В нем должны использоваться высокочастотные
+								ключевые фразы. В нашем случае это текст "Женские джинсы". Искать популярные запросы
+								можно в сервисе "Яндекс.Вордстат", а также на самом маркетплейсе - в поисковых
+								подсказках ВБ, тегах конкурентов, в блоке "С этим товаром ищут".
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Описание в карточке должно быть максимально информативным, не содержать воду,
+								наполняться ключами. Недостоверная информация чревата повышением количества возврата
+								товаров, а это негативно сказывается на позициях. В тексте можно давить на "боли"
+								покупателей и обрабатывать их возражения. Так подключаются психологические механизмы
+								продаж и улучшается конверсия.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								<p>
+									Характеристики следует заполнять очень подробно. В нашем случае с джинсами
+									обязательно указывать размеры, цвет, материал, застежки, карманы и т.д.
+								</p>
+								<p>
+									Главное фото должно выделять вас на фоне конкурентов.
+								</p>
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Фото товара должны быть качественными, иметь высокое разрешение. Не ограничивайтесь
+								одной фотографией, но не перегружайте карточку огромным количеством изображений.
+								Оптимально размещать 3-5 снимков с разных ракурсов. Хорошо работает инфографика, видео
+								обзоры и снимки в формате 360 градусов.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Правильно выбирайте раздел каталога для вашего товара. Если вы разместите джинсы в
+								брюки, то товар будут просматривать нецелевые покупатели, что снизит количество продаж.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Еще один нюанс - тщательно следите за наполняемостью ваших складов. Допустим, карточка
+								занимает первые позиции, а товар закончился. Или в наличии нет каких-то размеров. Такая
+								карточка будет понижена в выдаче. Поэтому дефицита у вас не должно быть.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dark-bg section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info gray-text small-title ff-rm">
+								<p>
+									Важный момент - обработка отзывов. Необходимо следить за ними и оперативно отвечать
+									на все, особенно негативные. Процент соотношения негатива к позитиву должен
+									составлять максимум 1 к 10. Рейтинг более 4 звезд значительно влияет на продажи, а
+									товары с меньшим количеством звезд продаются плохо.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc">
+								Как распределять <br> товары по складам
+							</div>
+							<div class="comment__info ">
+								<p>
+									Распределяется товар в соответствии с месторасположением. Но на показы влияет регион
+									посетителя. Продукция на отдаленном складе в Иркутске хуже предлагается жителям
+									Калининграда. Платформа показывает пользователям товары, которые находятся
+									неподалеку, чтобы ускорить доставку. Распределяйте запасы между складами
+									рационально, фокусируйтесь на самых активных точках и контролируйте своевременность
+									отгрузки.
+								</p>
+							</div>
+						</div>
+						<div class="sqr-img sqr-img_top">
+							<div class="sqr-img__wrapper ">
+								<img src="./img/sqr-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile  simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title xlarge-text black-text">
+						Особенности работы со складами ВБ и отгрузкой
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Склады ВБ находятся не в каждом городе, а в Подольске, Коледино (Подольск-2),
+								Электростали, Санкт-Петербурге, Казани, Краснодаре, Екатеринбурге, Новосибирске,
+								Хабаровске. Но от региона местоположения товара зависит поисковая выдача на ВБ и
+								доступность заказа покупателям. Если вы направите первую поставку на самый ближайший от
+								вас склад, то можете упустить прибыль. Поэтому первую поставку тестовой партии (30-50
+								штук) лучше отгрузить на центральный склад - в Москве и ЦФО продаж больше, чем в
+								регионах.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Карточки товаров, которые находятся на московском складе, получают больше просмотров,
+								что улучшает позиции товара в поисковой выдаче. В результате растет трафик и продажи.
+								Как только первая тестовая партия в московском районе закончится, с повторной поставкой
+								в ЦФО отправьте по 10-15 товаров в региональные склады.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Не отгружайте товар "с запасом", потому что невыкупленную продукцию сложно вернуть, а
+								плохие обороты понизят рейтинг карточки. И не забывайте о правилах упаковки, чтобы товар
+								был точно принят на складе ВБ.
+							</div>
+						</div>
+						<div class="simple-tile__item simple-tile__item_wide">
+							<div class="simple-tile__text">
+								Если оборачиваемость товаров более 50 дней, то отгрузка на склад ВБ недоступна - так
+								маркетплейс разгружает свои склады. Что же в таком случае делать селлерам? Этим вопросом
+								также задаются продавцы, которые обладают собственными складскими мощностями или если их
+								товары требуют особых условий хранения.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile  simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title xlarge-text black-text">
+						Отгрузка товаров со склада продавца
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								FBS - эта аббревиатура означает, что продавец держит товар у себя на личном складе, а
+								при поступлении заказа отправляет его на склад маркетплейса или в точку приема
+								FBS-поставок.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								FBS позволяет поставщикам расширить ассортимент за счет низкооборачиваемых или
+								крупногабаритных товаров, а также предметов, требующих особых условий хранения.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								В течение суток селлеры консолидируют заказы, затем отправляют их на склады ВБ, а оттуда
+								- к покупателям. Такие поставки осуществляются только с полной предоплатой товара.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Чтобы подключиться к FBS, поставщик должен подписать договор, загрузить свой
+								ассортимент, настроить автообмен данными между своим ПО и API маркетплейса.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text xlarge-text tt-uc">
+								Сколько стоит доставка и хранение
+							</div>
+							<div class="comment__info ">
+								<p>
+									Стоимость услуги доставки в ВБ ранее была фиксированной и составляла 33 рубля за
+									единицу продукции. По новым тарифам учитывается категория и подкатегория товара, а
+									цены на доставку составляют от 30 до 90 рублей.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dark-bg section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									По кнопке вы можете ознакомиться с <br> тарифами на логистику маркетплейса:
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text xlarge-text tt-uc">
+								Рекламные инструменты ВБ - как продвинуть товары в конкурентной нише
+							</div>
+							<div class="comment__info ">
+								<p>
+									Одними бесплатными действиями на маркетплейсе обойтись можно. Но в очень
+									конкурентных нишах селлерам приходится вкладывать деньги в продвижение. Рекламные
+									инструменты на ВБ бывают платными и условно-бесплатными.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title xlarge-text black-text">
+						Платные инструменты
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Баннеры
+							</div>
+							<div class="simple-tile__text">
+								Яркие красочные картинки размещаются на главной странице, в каталоге, блоке с акциями,
+								на других внутренних страницах. Они увеличивают лояльность аудитории, напоминают о
+								бренде, рассказывают о новинках. К сожалению, "баннерная слепота" препятствует большому
+								количеству кликов и переходов по ним. Поэтому такая реклама по большей части работает
+								как имиджевая, стоит дорого и подходит для крупных брендов.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Промо-страницы магазина и Shop in shop
+							</div>
+							<div class="simple-tile__text">
+								Привлекают трафик извне. Подходят селлерам с широким ассортиментом. При переходе на
+								страницу магазина включается навигация.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Реклама в блоке "С этим товаром покупали"
+							</div>
+							<div class="simple-tile__text">
+								Предлагает посетителю ваши товары. На эффективность такого формата оказывает влияние
+								качество фотографий и описаний.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Реклама в каталоге
+							</div>
+							<div class="simple-tile__text">
+								Подойдет селлеру, если у него более 8 наименований товаров. Среди естественной выдачи
+								показывается товар, место которого "проплачено". Цена клика по карточке зависит от
+								спроса и формируется в формате аукциона.
+							</div>
+						</div>
+					</div>
+
+					<div class="simple-tile__text small-title black-text">
+						Есть также другие виды продвижения. Через соцсети — это публикация постов, проведение конкурсов,
+						или Email-рассылка - самый бюджетный формат рекламы.
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section simple-tile">
+				<div class="container">
+					<div class="simple-tile__title xlarge-text black-text">
+						Условно-бесплатные инструменты
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Вариант 1
+							</div>
+							<div class="simple-tile__text">
+								Размещение обзоров на свои продукты рядом с блоками отзывов и вопросов. Инструмент
+								актуален для новинок.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Вариант 2
+							</div>
+							<div class="simple-tile__text">
+								Оптимизация товарных карточек, о которой мы уже рассказывали выше. Как правило, селлеры
+								поручают наполнение карточек опытным копирайтерам.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__item-title orange-text small-title">
+								Привлечение внешнего трафика
+							</div>
+							<div class="simple-tile__text">
+								Дополнительный инструмент. Используются связи между соцсетями и маркетплейсом,
+								контекстная реклама в поисковых системах и другие эффективные инструменты.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="dark-bg section comment comment_career comment_center mb-0">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info gray-text small-title ff-rm">
+								<p>
+									Компания "НастАртВЕБ" помогает продавцам в регистрации на Wildberries, анализе ниши
+									и конкурентов, разработке стратегии продвижения и дальнейшей поддержке продаж.
+								</p>
+								<p>
+									Обращайтесь к профессионалам - вы без экспериментов сэкономите драгоценное время и
+									деньги, а рост продаж не заставит себя ждать!
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg m-0">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно продвижение на GMC?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

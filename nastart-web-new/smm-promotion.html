@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						smm-продвижение
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Вашего бизнеса еще нет в социальных сетях?
+								</div>
+								<div class="detail-entrance__subtitle">
+									Если так, то у Вас нет бизнеса! <br>
+									Пока вы думаете, Ваши конкуренты успешно продают! <br>
+									Быстро, честно, качественно. Просто по-другому мы не умеем!
+								</div>
+								<div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div>
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<!-- <div class="detail-entrance__offer detail-entrance__offer_sticker small-title">
+								Настройка и ведение <br>
+								ретаргетинга ВК в подарок
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text tt-uc">
+								Что такое SMM?
+							</div>
+							<div class="comment__info">
+								<p>
+									SMM продвижение - важный инструмент интернет-маркетинга. Его цель - привлечение
+									клиентов из соцсетей. По статистике более 95% людей в возрасте 18-34 пользуются
+									соцсетями.
+								</p>
+								<p>
+									Поэтому им удобно следить за брендом и взаимодействовать с ним именно там.
+									Практически каждая компания ведет свои аккаунты в соцсетях. А многие бренды
+									используют для продвижения в Сети исключительно соцсети.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+				<div class="simple-tile">
+					<div class="container">
+						<!-- <div class="simple-tile__title large-text black-text tt-uc">
+							Зачем нужно комплексное продвижение?
+						</div> -->
+						<div class="simple-tile__subtitle orange-text small-title">
+							Где демонстрируются рекламные объявления:
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">+150%</div>
+								<div class="simple-tile__text">
+									Рост целевых подписчиков
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">+200%</div>
+								<div class="simple-tile__text">
+									Увеличение количества подписчиков
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">+300%</div>
+								<div class="simple-tile__text">
+									Рост активности подписчиков
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container  dark-bg">
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__title  large-text  tt-uc">
+							Какие преимущества <br> у SMM-продвижения?
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									Сарафанное радио и трафик
+								</div>
+								<div class="simple-tile__text">
+									<p>
+										По статистике более 70% людей, получивших положительный опыт работы с компанией
+										в одной из социальных сетей, рекомендуют ее. Поэтому для расширения охвата
+										следует поддерживать аккаунты в различных социальных сетях.
+									</p>
+									<p>
+										Во многих социальных медиа бренды могут осуществлять продажи без перехода на
+										свой сайт, но все же это отличный способ увеличения трафика, более 10% которого
+										генерируется с социальных платформ.
+									</p>
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									Быстрое продвижение
+								</div>
+								<div class="simple-tile__text">
+									<p>
+										Контент-маркетинг в соцсетях позволяет максимально быстро привлекать ЦА, которая
+										делится интересной информацией с друзьями (лайки, репосты, комментарии).
+									</p>
+									<p>
+										Также это отличный способ быстро и дешево подать информацию клиентам об акциях,
+										спецпредложениях.
+									</p>
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									Эффективное взаимодействие с ЦА
+								</div>
+								<div class="simple-tile__text">
+									<p>
+										Около 50% населения мира используют соцсети 3 часа в день, и ваш бренд будет
+										находиться там, где обитают клиенты.
+									</p>
+									<p>
+										Также SMM — это эффективный канал для обратной связи. Анализ отзывов, лайков,
+										репостов, комментариев, посещений и других метрик позволяет получить ее.
+									</p>
+								</div>
+							</div>
+							<div class="simple-tile__item simple-tile__item_wide">
+								<div class="simple-tile__item-title orange-text small-title">
+									Исследования
+								</div>
+								<div class="simple-tile__text">
+									Соцмедиа помогают отслеживать тренды и конкурентов, что позволяет найти новые идеи
+									для контента и улучшать маркетинговую стратегию.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text tt-uc white-text">
+									Кому подходит
+									продвижение в социальных сетях?
+								</div>
+								<div class="comment__info small-title">
+									<p>
+										SMM – это абсолютно универсальный инструмент интернет-маркетинга, который
+										подходит компаниям B2B, B2C, интернет-магазинам, организациям сферы услуг и
+										медиа.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text tt-uc white-text">
+									Кому не подходит
+									SMM продвижение в соцсетях?
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Аудитория соцсетей в последние годы сильно расширяется, появляются возможности
+										удачного таргетирования на клиента, поэтому продвигаться таким образом может
+										даже любой нишевый бизнес.
+									</p>
+									<p>
+										Например, промышленным компаниям можно многое рассказать - посмотрите, как
+										работают страницы "Кубаньжелдормаш" и "Metinvest".
+									</p>
+									<p>
+										Но SMM не поможет, если вы:
+									</p>
+									<ul>
+										<li> не готовы отвечать на личные сообщения; </li>
+										<li> предлагаете некачественные товары или услуги; </li>
+										<li> не хотите создавать качественный уникальный контент. </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__title black-text large-text  tt-uc">
+						Что входит в услугу SMM-продвижения?
+					</div>
+					<div class="simple-tile__body">
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Создание страниц в социальных сетях - VK, Одноклассники, Tik Tok и других. Привлечение
+								целевой аудитории для подписки.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Контент-маркетинг - именно из-за него люди будут подписываться на вас в соцсетях.
+								Интересные тексты, картинки, видео, сториз, подкасты и разработка прочих информационных
+								форм.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Проведение акций - флешмобов, вебинаров, прямых эфиров, розыгрышей, промокодов,
+								специальных скидок.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Работа с лидерами мнений - гостевые посты, видео с известными людьми, реклама, получение
+								промокодов от блогеров и т.д.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Продвижение личного бренда - руководителя, сотрудников, команды, проектов.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Общение с клиентами - оперативные ответы на комментарии и вопросы, вовлекающие посты,
+								организация дискуссий, опросов.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Рекламные рассылки - новости, промокоды, скидки и акции, новинки, обновление
+								ассортимента.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Реклама в тематических сообществах. Репосты записей в других группах или рекламные
+								публикации. Этот способ подходит новым страницам.
+							</div>
+						</div>
+						<div class="simple-tile__item">
+							<div class="simple-tile__text">
+								Таргетированная реклама - самый эффективный способ продвижения в социальных медиа. Мы
+								настраиваем цели, и реклама показывается только людям, которые максимально
+								заинтересованы вашими товарами/услугами.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center dark-bg">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm gray-text">
+								<p>
+									Если вы направляете рекламное предложение на максимально заинтересованную целевую
+									аудиторию, то быстрее запустите продажи и сэкономите рекламный бюджет. Мы выбираем
+									город, пол, интересы, возраст и другие показатели для настройки таргетированной
+									рекламы.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right btn_light">оставить заявку</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc">
+								Что такое таргетинг в соцсетях?
+							</div>
+							<div class="comment__info dark-gray-text">
+								<p>
+									Таргет работает во всех социальных медиа, где пользователи вводят свои данные при
+									регистрации. Представьте, что вы продаете электросамокаты в Екатеринбурге. Ваша
+									основная ЦА - молодые люди этого города до 35 лет, мобильные и активные. На них и
+									нужно ориентироваться при заказе продвижения в соцсети.
+								</p>
+								<p>
+									К примеру, предложение будет показываться на странице молодого жителя Екатеринбурга
+									в возрасте 21 года. Таким образом мы "отсекаем" представителей не вашей ЦА, которые
+									никогда не купят электросамокаты.
+								</p>
+								<p>
+									Оплату за рекламные услуги следует производить за показы объявлений или клики по
+									нему.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title ff-rm dark-gray-text">
+								<p>
+									Ваш аккаунт должен быть кому-то интересен. Для поиска "ваших подписчиков" создается
+									портрет ЦА на все от пола до социального статуса и стиля жизни ее представителя.
+								</p>
+							</div>
+						</div>
+						<div class="btn btn_fit btn_right btn_transparent">оставить заявку</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-about dark-bg mb-0">
+				<div class="container">
+					<div class="text-about__wrapper">
+						<div class="text-about__title large-text tt-uc">
+							Особенности SMM
+						</div>
+						<div class="text-about__subtitle gray-text">
+							<p>
+								SMM в соц.сетях предполагает работу в разных диапазонах. Многие получают из них дешевые
+								лиды, но после создания аккаунта предстоит еще хорошенько поработать.
+							</p>
+							<p>
+								Сначала анализ конкурентов помогает осознать, в каком направлении нужно двигаться, чтобы
+								не создать "клон" популярного в нише аккаунта. Изучаются количественные и качественные
+								показатели конкурентов: подписчики, регулярность публикаций, комментарии и лайки,
+								вовлеченность ЦА. Также обращают внимание на креативы, типы контента, оформление,
+								механизмы вовлечения аудитории.
+							</p>
+							<p>
+								Продолжительные перерывы в обновлении контента делать нельзя. Поэтому необходимо
+								составить контент-план и точно ему следовать. Посты бывают запланированными (70%) и
+								ситуативными (30%). Оптимальное количество постов в день обычно составляет 1-2 шт.
+							</p>
+						</div>
+						<div class="text-about__filter">
+							<div class="filter-btn filter-btn_active">SMM ВКонтакте</div>
+							<div class="filter-btn">SMM в Одноклассниках</div>
+							<div class="filter-btn">SMM в TikTok</div>
+						</div>
+						<div class="text-about__body two-col">
+							<div class="two-col__wrapper">
+								<div class="two-col__row">
+									<div class="two-col__col">
+										<div class="light-text small-list-text">
+											SMM <br> ВКонтакте
+										</div>
+									</div>
+									<div class="two-col__col gray-text">
+										<p>
+											Это сайт с самой высокой посещаемостью в РФ и 5-й по посещаемости в мире.
+										</p>
+										<p>
+											Сначала необходимо определить тип сообщества, подходящий под ваши задачи:
+											Публичная страница или Группа. Если вам нужна площадка для информирования о
+											новостях компании - подойдет Публичная страница. Группа необходима для
+											активного взаимодействия с подписчиками. Стиль оформления сообщества должен
+											перекликаться с дизайном сайта, если он у вас есть.
+										</p>
+										<p>
+											Проводится аналитическая работа по выявлению своей целевой аудитории. Нужно
+											подавать для нее интересный контент: информационные записи, новости
+											индустрии, факты; развлекательный - картинки, веселые истории на тему вашего
+											бизнеса; а вот с продающими постами важно не переборщить. Отвечать на
+											обращение пользователя следует быстро, желательно в течение 1-2 часов.
+										</p>
+										<p>
+											Старайтесь не допускать самые распространённые ошибки:
+										</p>
+										<ul>
+											<li> спам постами; </li>
+											<li> публикация разных записей одновременно; </li>
+											<li> слишком длинные или слишком короткие посты (рекомендовано ограничение
+												текстовых постов (не более 300-1000 символов).
+											</li>
+										</ul>
+										<p>
+											Чтобы сообщество приносило продажи необходимо запускать рекламу:
+											таргетированные тизеры, информацию в ленте, рекламу в других сообществах.
+										</p>
+									</div>
+								</div>
+								<div class="two-col__row">
+									<div class="two-col__col">
+										<a href="#popup" data-fancybox=""
+											class="comment__btn round-btn round-btn_light">
+											<span class="round-btn__circle-text"
+												style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+										</a>
+									</div>
+									<div class="two-col__col gray-text">
+										<div class="text-about__row">
+											<div class="btn btn_fit btn_right">подробнее</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners dark-bg mt-0" id="clients">
+				<div class="container">
+					<div class="partners__wrapper partners__wrapper_reverse">
+						<div class="partners__header">
+							<h2 class="partners__title title">нам доверяют</h2>
+							<div class="partners__filter">
+								<div class="partners__filter-btn filter-btn">Клиенты</div>
+								<div class="partners__filter-btn filter-btn">Партнёры</div>
+							</div>
+						</div>
+						<div class="partners__slider ">
+							<div class="partners__list swiper-wrapper">
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner1.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner2.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner3.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner4.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner5.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner6.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner16.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner7.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner8.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner9.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner10.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner11.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner12.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner13.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner14.png" alt="">
+								</div>
+								<div class="partners__item swiper-slide">
+									<img src="./img/partner/partner15.png" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="partners-controls slider-controls">
+							<div class="slider-pagination partners-pagination"></div>
+							<div class="slider-navigation partners-navigation">
+								<div class="slider-prev partners-prev">назад</div>
+								<div class="slider-next partners-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block mt-0">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно комплексное продвижение?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

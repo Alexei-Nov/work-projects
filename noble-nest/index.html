@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="body__wrapper">
+		<header class="header">
+			<div class="container_header">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="">
+							<img src="./img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header__body">
+						<div class="nav-panel__wrapper">
+							<div class="nav-panel__body">
+								<nav class="nav-panel">
+									<ul class="nav-panel__list">
+										<li class="nav-panel__item nav-panel__item_lvl1 nav-panel__item_has-children">
+											<a href="">Проекты</a>
+											<ul class="nav-panel__submenu nav-panel__submenu_lvl2">
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														домов</a>
+												</li>
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														домов-бань</a></li>
+												<li class="nav-panel__item nav-panel__item_lvl2"><a href="">Проекты
+														бань</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Наши работы</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Цены</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">О компании</a></li>
+										<li class="nav-panel__item nav-panel__item_lvl1"><a href="">Контакты</a></li>
+									</ul>
+								</nav>
+
+								<div class="nav-panel__menu_btns">
+									<a href="#popup" data-fancybox class="nav-panel__btn btn-red">Заказать звонок
+									</a>
+									<div class="nav-panel__mail"><a
+											href="mailto:zakaz.dvg@gmail.com">zakaz.dvg@gmail.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__callback">
+						<div class="header__info">
+							<div class="header__phone"><a href="tel:88129821005">+7 (812) 982-10-05</a></div>
+							<div class="header__mail"><a href="mailto:zakaz.dvg@gmail.com">zakaz.dvg@gmail.com</a></div>
+						</div>
+						<a href="#popup" data-fancybox class="header__btn btn-red">Заказать звонок </a>
+					</div>
+
+					<div class="header__mobile-btns">
+						<div class="header__phone">
+							<a href="">
+								<img src="./img/icon/tel.svg" alt="">
+							</a>
+						</div>
+						<div class="header__menu-btn">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main ">
+			<section class="section main-page ul ul_white">
+				<div class="container">
+					<div class="main-page__wrapper">
+						<div class="main-page__title">Срубы домов и бань из оцилиндрованного бревна от производителя
+						</div>
+						<div class="main-page__list">
+							<div class="main-page__list-item">
+								<div class="main-page__list-title main-page__list-title_loop">Выполняем полный цикл
+									работ</div>
+								<ul>
+									<li>Проектирование </li>
+									<li>Строительство </li>
+									<li>Фундаменты </li>
+									<li>Отделка</li>
+								</ul>
+							</div>
+							<div class="main-page__list-item main-page__list-item_product">
+								<div class="main-page__list-title ">Собственное
+									производство</div>
+								<ul>
+									<li>Производим бревно диаметром от 200 до 320 мм </li>
+								</ul>
+							</div>
+							<div class="main-page__list-item main-page__list-item_guarantee">
+								<div class="main-page__list-title ">Гарантия от 5 лет
+								</div>
+								<ul>
+									<li>Фиксированная стоимость договора </li>
+								</ul>
+							</div>
+						</div>
+						<a href="#popup" class="main-page__btn btn-green" data-fancybox>Заказать консультацию</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section adv">
+				<div class="container">
+					<div class="h2">Почему выбирают нас?</div>
+					<div class="adv__wrapper">
+						<div class="adv__item">
+							<div class="adv__img">
+								<img src="./img/icon/adv-check.svg" alt="">
+								<div class="adv__title adv__title_mobile">Мы состоим в СРО</div>
+							</div>
+							<div class="adv__body">
+								<div class="adv__title">Мы состоим в СРО</div>
+								<div class="adv__subtitle p">Строительство ведется в соответствии СНИПам и ГОСТам.
+									Будьте уверены в качестве своего дома и сохранности своих средств!</div>
+							</div>
+						</div>
+						<div class="adv__item">
+							<div class="adv__img">
+								<img src="./img/icon/engineer.svg" alt="">
+								<div class="adv__title adv__title_mobile">Профессиональные бригады</div>
+							</div>
+							<div class="adv__body">
+								<div class="adv__title">Профессиональные бригады</div>
+								<div class="adv__subtitle p">Наша компания располагает постоянными бригадами. Только
+									высококвалифицированные специалисты, строители с большим опытом работы в деревянном
+									домостроении.</div>
+							</div>
+						</div>
+						<div class="adv__item">
+							<div class="adv__img">
+								<img src="./img/icon/tools.svg" alt="">
+								<div class="adv__title adv__title_mobile">Индивидуальное проектирование</div>
+							</div>
+							<div class="adv__body">
+								<div class="adv__title">Индивидуальное проектирование</div>
+								<div class="adv__subtitle p">Мы строим по типовым и индивидуальным проектам. Поможем
+									создать проект вашей мечты!</div>
+							</div>
+						</div>
+						<div class="adv__item">
+							<div class="adv__img">
+								<img src="./img/icon/big-finger.svg" alt="">
+								<div class="adv__title adv__title_mobile">Строим точно в срок</div>
+							</div>
+							<div class="adv__body">
+								<div class="adv__title">Строим точно в срок</div>
+								<div class="adv__subtitle p">Объекты сдаются точно в срок! На всех этапах строительства
+									ведется фото и видео отчет. Все условия прописываются в договоре.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_shadow project">
+				<div class="container">
+					<div class="h2">Каталог проектов</div>
+					<div class="project__wrapper">
+						<div class="project__item">
+							<div class="project__item-body">
+								<div class="project__text">
+									<div class="project__title">Дома</div>
+									<div class="project__count">18 проектов</div>
+								</div>
+								<a href="" class="project__btn btn-green-border">Смотреть все</a>
+							</div>
+						</div>
+						<div class="project__item">
+							<div class="project__item-body">
+								<div class="project__text">
+									<div class="project__title">Дома-бани</div>
+									<div class="project__count">10 проектов</div>
+								</div>
+								<a href="" class="project__btn btn-green-border">Смотреть все</a>
+							</div>
+						</div>
+						<div class="project__item">
+							<div class="project__item-body">
+								<div class="project__text">
+									<div class="project__title">Бани</div>
+									<div class="project__count">10 проектов</div>
+								</div>
+								<a href="" class="project__btn btn-green-border">Смотреть все</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_shadow loop">
+				<div class="container">
+					<div class="h2 h2_mb30">Цикл работ</div>
+					<div class="loop__slider swiper-container">
+						<div class="loop__slider-wrapper swiper-wrapper">
+							<div class="loop__slide swiper-slide">
+								<div class="loop__item">
+									<div class="loop__img">
+										<img src="./img/loop1.png" alt="">
+									</div>
+									<div class="loop__count">01</div>
+									<div class="loop__title">Фундамент</div>
+									<div class="loop__text p">
+										<p>
+											При стоительстве используем свайно-ростверковый фундамент
+											наиболее рациональный и теплый вид фундамента.
+										</p>
+										<p>
+											Без подвала.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class=" loop__slide swiper-slide">
+								<div class="loop__item">
+									<div class="loop__img">
+										<img src="./img/loop2.png" alt="">
+									</div>
+									<div class="loop__count">02</div>
+									<div class="loop__title">Стены</div>
+									<div class="loop__text p">Для стен используется отборный зимний Вологодский и
+										Карельский лес. Порода дерева - преимущественно сосна, с небольшим допуском ели.
+									</div>
+								</div>
+							</div>
+							<div class="loop__slide swiper-slide">
+								<div class="loop__item">
+									<div class="loop__img">
+										<img src="./img/loop3.png" alt="">
+									</div>
+									<div class="loop__count">03</div>
+									<div class="loop__title">Крыша</div>
+									<div class="loop__text p">Усиленная строительная система — доска 50 x 200мм. Кровля
+										— профлист (Цвет графита).
+										+200-250 мм. утеплителя для вашего комфорта.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section gift">
+				<div class="gift__wrapper">
+					<div class="gift__img">
+						<img src="./img/gift.png" alt="">
+					</div>
+					<div class="gift__body">
+						<div class="gift__title"> <span> 50% </span>работ по фундаменту в подарок!</div>
+						<div class="gift__subtitle p">
+							<p>
+								Если вы заключаете договор на строительство сруба с фундаментом —
+								50% стоимости работ по фундаменту в подарок!
+							</p>
+							<p>
+								Акция действует если вы строите свайный фундамент.
+							</p>
+						</div>
+						<a href="" class="gift__btn btn-red"> Подробнее</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_shadow example">
+				<div class="container container_example">
+					<div class="example__wrapper">
+						<div class="h2 h2_example">Примеры выполненных работ</div>
+						<div class="example__slider swiper-container">
+							<div class="example__slider-wrapper swiper-wrapper">
+								<div class="example__slide swiper-slide">
+									<div class="example__left">
+										<div class="example__title h3">Проект бани “Тайга”</div>
+										<div class="example__text p">
+											<p>
+												Уютная небольшая баня из оцилиндрованного бревна
+												вмещает в себе все необходимое: парная, помывочная, комната отдыха.</p>
+											<p>
+												Терраса для отдыха на свежем воздухе.
+											</p>
+											<p>
+												Такая банька идеально впишется практически в любой уголок вашего
+												участка.
+											</p>
+										</div>
+										<div class="example__adv-body">
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/wood.svg" alt="">
+												</div>
+												<div class="example__key">
+													Материал:
+												</div>
+												<div class="example__value">Бревно 220мм.</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/calendar.svg" alt="">
+												</div>
+												<div class="example__key">
+													Реализация:
+												</div>
+												<div class="example__value">2 месяца</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/money.svg" alt="">
+												</div>
+												<div class="example__key">
+													Стоимость:
+												</div>
+												<div class="example__value"> <span>900 000 руб.</span></div>
+											</div>
+										</div>
+										<a href="" class="example__btn btn-green">Смотреть проект</a>
+									</div>
+									<div class="example__right">
+										<div class="example__hash-body hash__body">
+											<div class="example__hash-item hash__item">Баня из бревна</div>
+											<div class="example__hash-item hash__item">5,5 x 7,75м</div>
+											<div class="example__hash-item hash__item">35м2</div>
+										</div>
+										<div class="example__subslider swiper-container">
+											<div class="example__subslider-wrapper swiper-wrapper">
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery1">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery1">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery1">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="example-navigation slider-navigation">
+											<div class="example-prev btn-prev"></div>
+											<div class="example-next btn-next"></div>
+										</div>
+									</div>
+								</div>
+								<div class="example__slide swiper-slide">
+									<div class="example__left">
+										<div class="example__title h3">Проект бани “Тайга”</div>
+										<div class="example__text p">
+											<p>
+												Уютная небольшая баня из оцилиндрованного бревна
+												вмещает в себе все необходимое: парная, помывочная, комната отдыха.</p>
+											<p>
+												Терраса для отдыха на свежем воздухе.
+											</p>
+											<p>
+												Такая банька идеально впишется практически в любой уголок вашего
+												участка.
+											</p>
+										</div>
+										<div class="example__adv-body">
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/wood.svg" alt="">
+												</div>
+												<div class="example__key">
+													Материал:
+												</div>
+												<div class="example__value">Бревно 220мм.</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/calendar.svg" alt="">
+												</div>
+												<div class="example__key">
+													Реализация:
+												</div>
+												<div class="example__value">2 месяца</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/money.svg" alt="">
+												</div>
+												<div class="example__key">
+													Стоимость:
+												</div>
+												<div class="example__value"> <span>900 000 руб.</span></div>
+											</div>
+										</div>
+										<a href="" class="example__btn btn-green">Смотреть проект</a>
+									</div>
+									<div class="example__right">
+										<div class="example__hash-body hash__body">
+											<div class="example__hash-item hash__item">Баня из бревна</div>
+											<div class="example__hash-item hash__item">5,5 x 7,75м</div>
+											<div class="example__hash-item hash__item">35м2</div>
+										</div>
+										<div class="example__subslider swiper-container">
+											<div class="example__subslider-wrapper swiper-wrapper">
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery2">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery2">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery2">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="example-navigation slider-navigation">
+											<div class="example-prev btn-prev"></div>
+											<div class="example-next btn-next"></div>
+										</div>
+									</div>
+								</div>
+								<div class="example__slide swiper-slide">
+									<div class="example__left">
+										<div class="example__title h3">Проект бани “Тайга”</div>
+										<div class="example__text p">
+											<p>
+												Уютная небольшая баня из оцилиндрованного бревна
+												вмещает в себе все необходимое: парная, помывочная, комната отдыха.</p>
+											<p>
+												Терраса для отдыха на свежем воздухе.
+											</p>
+											<p>
+												Такая банька идеально впишется практически в любой уголок вашего
+												участка.
+											</p>
+										</div>
+										<div class="example__adv-body">
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/wood.svg" alt="">
+												</div>
+												<div class="example__key">
+													Материал:
+												</div>
+												<div class="example__value">Бревно 220мм.</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/calendar.svg" alt="">
+												</div>
+												<div class="example__key">
+													Реализация:
+												</div>
+												<div class="example__value">2 месяца</div>
+											</div>
+											<div class="example__adv-item">
+												<div class="example__adv-icon">
+													<img src="./img/icon/money.svg" alt="">
+												</div>
+												<div class="example__key">
+													Стоимость:
+												</div>
+												<div class="example__value"> <span>900 000 руб.</span></div>
+											</div>
+										</div>
+										<a href="" class="example__btn btn-green">Смотреть проект</a>
+									</div>
+									<div class="example__right">
+										<div class="example__hash-body hash__body">
+											<div class="example__hash-item hash__item">Баня из бревна</div>
+											<div class="example__hash-item hash__item">5,5 x 7,75м</div>
+											<div class="example__hash-item hash__item">35м2</div>
+										</div>
+										<div class="example__subslider swiper-container">
+											<div class="example__subslider-wrapper swiper-wrapper">
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery3">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery3">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+												<div class=" example__subslide swiper-slide">
+													<div class="example__img">
+														<a href="./img/example.png" data-fancybox="gallery3">
+															<img src="./img/example.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="example-navigation slider-navigation">
+											<div class="example-prev btn-prev"></div>
+											<div class="example-next btn-next"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="example-scrollbar__wrapper">
+							<div class="example-scrollbar "></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section form">
+				<div class="container">
+					<div class="form__wrapper">
+						<form action="submit" class="form__body">
+							<div class="form__title h3">Поможем выбрать проект из нашего каталога или рассчитаем
+								стоимость
+								вашего проекта</div>
+							<div class="form__subtitle p">Оставьте заявку - наш менеджер вам перезвонит, рассчитает
+								стоимость и сроки строительства, ответит на вопросы</div>
+							<input class="input input_white" type="text" placeholder="Имя*">
+							<input class="input input_white phone-mask" type="tel" placeholder="Телефон*">
+							<input class="input input_white" type="email" placeholder="Почта">
+							<textarea class="textarea textarea_white" placeholder="Сообщение"></textarea>
+
+							<label class="label__container">
+								<input type="checkbox" checked="checked">
+								<span>
+									Я согласен на обработку <a class="red" href=""> персональных
+										данных</a>
+									<span class="checkmark"></span>
+								</span>
+							</label>
+
+							<div class="form__btns">
+								<div class="form__load-btn-wrapper">
+									<input type="file" class="file-btn">
+									<div class="form__load-btn btn-green-border_black-text">Загрузить файл</div>
+								</div>
+								<button class="form__request-btn btn-green">Оставить заявку</button>
+							</div>
+						</form>
+						<div class="form__img">
+							<img src="./img/form.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section faq">
+				<div class="container">
+					<div class="h2">Часто задаваемые вопросы</div>
+					<div class="faq__wrapper">
+						<div class="faq__accordion  accordion ">
+							<div class="faq__accordion-container a-container">
+								<p class="faq__accordion-btn a-btn">В какой комплектации сдается готовый брус? Как
+									происходит строительство </p>
+								<div class="faq__accordion-panel a-panel">
+									<p>
+										Самая интенсивная усадка происходит в первый год после строительства сруба.
+										Отделочные работы возможны после технологической паузы — от 6 мес. до 1 года.
+									</p>
+								</div>
+							</div>
+
+
+							<div class="faq__accordion-container a-container">
+								<p class="faq__accordion-btn a-btn">Сколько времени требуется на усадку сруба?
+
+								</p>
+								<div class="faq__accordion-panel a-panel">
+									<p>
+										Самая интенсивная усадка происходит в первый год после строительства сруба.
+										Отделочные работы возможны после технологической паузы — от 6 мес. до 1 года.
+									</p>
+								</div>
+							</div>
+
+
+							<div class="faq__accordion-container a-container">
+								<p class="faq__accordion-btn a-btn">Сколько времени строится сруб? </p>
+								<div class="faq__accordion-panel a-panel">
+									<p>
+										Самая интенсивная усадка происходит в первый год после строительства сруба.
+										Отделочные работы возможны после технологической паузы — от 6 мес. до 1 года.
+									</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion-container a-container">
+								<p class="faq__accordion-btn a-btn">Какая порода дерева используется для строительства
+									срубов? </p>
+								<div class="faq__accordion-panel a-panel">
+									<p>
+										Самая интенсивная усадка происходит в первый год после строительства сруба.
+										Отделочные работы возможны после технологической паузы — от 6 мес. до 1 года.
+									</p>
+								</div>
+							</div>
+
+							<div class="faq__accordion-container a-container">
+								<p class="faq__accordion-btn a-btn">Можно ли построить сруб сразу под ключ?
+
+								</p>
+								<div class="faq__accordion-panel a-panel">
+									<p>
+										Самая интенсивная усадка происходит в первый год после строительства сруба.
+										Отделочные работы возможны после технологической паузы — от 6 мес. до 1 года.
+									</p>
+								</div>
+							</div>
+						</div>
+						<a href="" class="faq__btn btn-green-border_black-text">Посмотреть все</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section abuot-company ul ul_small-fsz">
+				<div class="container">
+					<div class="h2">О компании и производстве</div>
+					<div class="about-company__wrapper tab">
+						<div class="about-company__tab-header-wrapper tab__header-wrapper">
+							<div class="about-company__tab-header tab__header">
+								<div class="tab__link tab__link-active">О компании</div>
+								<div class="tab__link">Производство</div>
+							</div>
+						</div>
+						<div class="about-company__tab-body tab__body">
+							<div class="about-company__tab-item tab__item tab__item-active">
+								<div class="about-company__content">
+									<div class="about-company__text p">
+										<p>
+											Компания «Дворянское Гнездо» специализируется на строительстве срубов домов,
+											бань, беседок, гаражей, хозблоков, а также коммерческих объектов под ключ из
+											оцилиндрованного бревна и бруса камерной сушки.
+										</p>
+										<p>
+											Мы строим в Ленинградской, Московской, Псковской, Новгородской областях,
+											Карелии.
+										</p>
+										<p>
+											Нами реализованы сотни проектов, что позволило накопить бесценный опыт
+											строительства деревянных домов.
+										</p>
+									</div>
+									<div class="about-company__list">
+										<div class="about-company__list-title">
+											Предоставляемые услуги:
+										</div>
+										<ul>
+											<li>Производство домокомплектов</li>
+											<li>Строительство срубов</li>
+											<li>Установка фундамента</li>
+											<li>Кровельные работы</li>
+										</ul>
+									</div>
+									<a href="" class="about-company__btn btn-green-border_black-text">Подробнее</a>
+								</div>
+
+								<div class="about-company__gallery">
+									<div class="about-company__slider swiper-container">
+										<div class="about-company__slider-wrapper swiper-wrapper">
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company.png" data-fancybox="gallery5">
+														<img src="./img/about-company.png" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company.png" data-fancybox="gallery5">
+														<img src="./img/about-company.png" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company.png" data-fancybox="gallery5">
+														<img src="./img/about-company.png" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-company-navigation slider-navigation">
+										<div class="about-company-prev btn-prev"></div>
+										<div class="about-company-next btn-next"></div>
+									</div>
+								</div>
+							</div>
+							<div class="about-company__tab-item tab__item about-company__tab-item_reverse">
+								<div class="about-company__content">
+									<div class="about-company__text-title p">Наша компания производит оцилиндрованное
+										бревно диаметром от 200 мм до 350 мм естественной влажности и бревно камерной
+										сушки.</div>
+									<div class=" p">
+										<p>
+											Высокоточные импортные токарно-фрезерного типа станки обеспечивают высокий
+											результат изготавливаемых материалов и позволяют производить большой объем
+											готового бревна в сутки, что определяет короткие сроки производства
+											домокомплекта. Нашему заказчику не придется ждать очереди долгие месяцы!
+
+										</p>
+										<p>
+											Следует отметить, что оцилиндрованное бревно является уникальным материалом,
+											практически не требующим последующей обработки вручную в отличие от бревна
+											ручной рубки.
+										</p>
+										<p>
+											Бревна имеют компенсационный пропил, для снятия внутреннего напряжения в
+											древесине и минимизации трещин в “ненужных местах”
+										</p>
+									</div>
+								</div>
+
+								<div class="about-company__gallery">
+									<div class="about-company__slider swiper-container">
+										<div class="about-company__slider-wrapper swiper-wrapper">
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company2.png" data-fancybox="gallery6">
+														<img src="./img/about-company2.png" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company2.png" data-fancybox="gallery6">
+														<img src="./img/about-company2.png" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="about-company__slide swiper-slide">
+												<div class="about-company__img">
+													<a href="./img/about-company2.png" data-fancybox="gallery6">
+														<img src="./img/about-company2.png" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="about-company-navigation slider-navigation">
+										<div class="about-company-prev btn-prev"></div>
+										<div class="about-company-next btn-next"></div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section photo">
+				<div class="container">
+					<div class="h2">Фото построенных срубов</div>
+					<div class="photo__wrapper">
+						<div class="photo__slider swiper-container">
+							<div class="photo__slider-wrapper swiper-wrapper">
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo.png" data-fancybox>
+											<img src="./img/photo.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo2.png" data-fancybox>
+											<img src="./img/photo2.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo3.png" data-fancybox>
+											<img src="./img/photo3.png" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="photo__slide swiper-slide">
+									<div class="photo__img">
+										<a href="./img/photo4.png" data-fancybox>
+											<img src="./img/photo4.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="" class="photo__btn btn-green-border_black-text ">Посмотреть все</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section director">
+				<div class="container">
+					<div class="director__wrapper">
+						<div class="director__img">
+							<img src="./img/director.png" alt="">
+						</div>
+						<div class="director__body">
+							<div class="director__title">Александр Матвеев</div>
+							<div class="director__subtitle">Директор СК “Дворянское гнездо”</div>
+							<div class="director__text p">
+								<p>
+									Деревянные дома являются самыми комфортными и экологичными для проживания и
+									положительно влияющими на здоровье человека.
+								</p>
+								<p>
+									Очень важно соблюсти все тонкости строительства деревянных домов, во избежание
+									серьезных последствий в будущем.
+								</p>
+								<p>
+									Многолетний опыт нашей квалифицированной команды позволяет с достойным качеством
+									реализовывать мечты о доме или бане наших заказчиков .
+								</p>
+								<p>
+									​Мы готовы взять на себя все сложности строительства Вашего будущего дома и
+									предложить весь спектр строительных услуг - от проектирования, до строительства, от
+									фундамента, до готового дома с отделкой под ключ.
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact">
+				<div class="h2 h2_mobile">Контакты</div>
+				<div class="contact__wrapper">
+					<div class="contact__map" id="map">
+					</div>
+					<div class="contact__info">
+						<div class="h2 h2_left">Контакты</div>
+						<div class="contact__item contact__location">г. Санкт-Петербург ул.Смоленская, 9
+							— Бизнес-центр "Оптима"</div>
+						<div class="contact__item contact__tel"> <a href="tel:88129821005">+7 (812) 982-10-05;</a> <a
+								href="tel: 89627090229"> +7 (962) 709-02-29</a>
+						</div>
+						<div class="contact__item contact__mail"> <a href="mailto:zakaz.dvg@gmail.com">
+								zakaz.dvg@gmail.com</a></div>
+						<div class="contact__item contact__reglament">Пн-Сб 10:00–19:00</div>
+						<a href="#popup" data-fancybox class=" contact__btn btn-red">Заказать звонок</a>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class=" footer__logo footer__logo_mobile">
+						<a href="">
+							<img src="./img/footer-logo.png" alt="">
+						</a>
+					</div>
+					<div class="footer__nav">
+						<nav>
+							<ul class="footer__nav-list">
+								<li class="footer__nav-link"> <a href=""> ПРОЕКТЫ </a></li>
+								<li class="footer__nav-link"> <a href=""> НАШИ РАБОТЫ</a></li>
+								<li class="footer__nav-link"> <a href=""> ЦЕНЫ</a></li>
+								<li class="footer__nav-link"> <a href=""> О КОМПАНИИ</a></li>
+								<li class="footer__nav-link"> <a href=""> КОНТАКТЫ</a></li>
+							</ul>
+						</nav>
+						<div class="footer__social">
+							<div class="footer__social-icon">
+								<a href="">
+									<svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M29.3125 1.435C29.52 0.7525 29.3125 0.25 28.3188 0.25H25.0375C24.2025 0.25 23.8175 0.68375 23.6087 1.1625C23.6087 1.1625 21.94 5.1575 19.5763 7.7525C18.8113 8.505 18.4638 8.74375 18.0462 8.74375C17.8375 8.74375 17.5238 8.505 17.5238 7.82125V1.435C17.5238 0.615 17.2938 0.25 16.5988 0.25H11.4388C10.9175 0.25 10.6038 0.63 10.6038 0.99125C10.6038 1.7675 11.7863 1.9475 11.9075 4.1325V8.88C11.9075 9.92125 11.7162 10.11 11.2987 10.11C10.1862 10.11 7.48 6.09625 5.87375 1.50375C5.5625 0.61 5.2475 0.25 4.40875 0.25H1.125C0.1875 0.25 0 0.68375 0 1.1625C0 2.015 1.1125 6.25 5.18125 11.8512C7.89375 15.6763 11.7125 17.75 15.1912 17.75C17.2775 17.75 17.535 17.29 17.535 16.4963V13.605C17.535 12.6838 17.7325 12.5 18.3937 12.5C18.8813 12.5 19.715 12.74 21.6625 14.5837C23.8875 16.77 24.2538 17.75 25.5063 17.75H28.7875C29.725 17.75 30.195 17.29 29.925 16.38C29.6275 15.475 28.565 14.1613 27.1562 12.6025C26.3913 11.715 25.2437 10.7587 24.895 10.28C24.4088 9.66625 24.5475 9.3925 24.895 8.84625C24.895 8.84625 28.895 3.31375 29.3112 1.435H29.3125Z"
+											fill="white" />
+									</svg>
+								</a>
+							</div>
+							<div class="footer__social-icon">
+								<a href="">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M21.7688 17.9776C21.3963 17.7913 19.57 16.8938 19.23 16.7688C18.89 16.6451 18.6425 16.5838 18.3937 16.9563C18.1462 17.3263 17.435 18.1638 17.2188 18.4113C17.0012 18.6601 16.785 18.6901 16.4137 18.5051C16.0425 18.3176 14.845 17.9263 13.4263 16.6613C12.3225 15.6763 11.5763 14.4601 11.36 14.0876C11.1438 13.7163 11.3363 13.5151 11.5225 13.3301C11.69 13.1638 11.8937 12.8963 12.08 12.6801C12.2662 12.4626 12.3275 12.3076 12.4513 12.0588C12.5763 11.8113 12.5138 11.5951 12.42 11.4088C12.3275 11.2226 11.585 9.3938 11.275 8.65005C10.9738 7.9263 10.6675 8.02505 10.44 8.01255C10.2225 8.00255 9.975 8.00005 9.7275 8.00005C9.48 8.00005 9.0775 8.09255 8.7375 8.46505C8.39625 8.8363 7.4375 9.73505 7.4375 11.5638C7.4375 13.3913 8.7675 15.1576 8.95375 15.4063C9.14 15.6538 11.5725 19.4063 15.2987 21.0151C16.1863 21.3976 16.8775 21.6263 17.4163 21.7963C18.3062 22.08 19.1163 22.0401 19.7563 21.9438C20.4688 21.8376 21.9538 21.045 22.2638 20.1776C22.5725 19.3101 22.5725 18.5663 22.48 18.4113C22.3875 18.2563 22.14 18.1638 21.7675 17.9776H21.7688ZM14.9913 27.2313H14.9862C12.773 27.2317 10.6005 26.6368 8.69625 25.5088L8.24625 25.2413L3.56875 26.4688L4.8175 21.9088L4.52375 21.4413C3.28642 19.4717 2.63162 17.1923 2.635 14.8663C2.6375 8.0538 8.18 2.5113 14.9963 2.5113C18.2962 2.5113 21.3988 3.7988 23.7313 6.1338C24.8817 7.27953 25.7936 8.64201 26.4141 10.1424C27.0346 11.6428 27.3514 13.2514 27.3463 14.8751C27.3438 21.6875 21.8013 27.2313 14.9913 27.2313ZM25.5063 4.36005C24.129 2.97371 22.4903 1.87447 20.6851 1.12605C18.8799 0.377631 16.9442 -0.00509531 14.99 5.12219e-05C6.7975 5.12219e-05 0.1275 6.6688 0.125 14.8651C0.121204 17.4735 0.805468 20.0368 2.10875 22.2963L0 30L7.88 27.9326C10.0598 29.1202 12.5026 29.7425 14.985 29.7425H14.9913C23.1838 29.7425 29.8538 23.0738 29.8563 14.8763C29.8623 12.9229 29.481 10.9877 28.7343 9.18259C27.9876 7.37751 26.8905 5.73839 25.5063 4.36005Z"
+											fill="white" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__body">
+
+						<div class="footer__logo">
+							<a href="">
+								<img src="./img/footer-logo.png" alt="">
+							</a>
+						</div>
+						<div class="footer__text">
+							Сайт носит исключительно информационный характер и не является публичной офертой,
+							определяемой положениями ГК РФ. Для получения подробной информации о наличии, видах,
+							характеристиках и стоимости домов обращайтесь в офис продаж.
+						</div>
+
+						<div class="footer__info">
+							<div class="footer__map"> <a href=""> Карта сайта </a> </div>
+							<div class="footer__confidance"><a href="">Политика конфиденциальности</a></div>
+							<div class="footer__copyright">© 2010-2022. Компания «Дворянское Гнездо»</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="popup" id="popup">
+		<div class="popup__wrapper">
+			<form action="submit">
+				<div class="popup__title h3">Мы вам перезвоним</div>
+				<div class="popup__subtitle p">Среднее время ожидание звонка - 1 минута</div>
+				<input class="input input_white" type="text" placeholder="Имя*">
+				<input class="input input_white phone-mask" type="tel" placeholder="Телефон*">
+				<label class="label__container">
+					<input type="checkbox" checked="checked">
+					<span>
+						Я согласен на обработку <a class="red" href=""> персональных
+							данных</a>
+						<span class="checkmark"></span>
+					</span>
+				</label>
+				<button class="popup__btn btn-green">Перезвоните мне</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>

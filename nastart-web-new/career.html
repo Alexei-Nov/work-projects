@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						Работа у нас
+					</div>
+				</div>
+			</div>
+
+			<section class="section career" id="about-us">
+				<div class="container">
+					<div class="career__wrapper">
+						<div class="career__anchor">
+							<div class="career__anchor-item filter-btn anchor-container"><a class="anchor"
+									href="#about-us">О работе в
+									НастАртВЕБ</a>
+							</div>
+							<div class="career__anchor-item filter-btn anchor-container"><a class="anchor"
+									href="#rating">рейтинги</a>
+							</div>
+							<div class="career__anchor-item filter-btn anchor-container"><a class="anchor"
+									href="#vacancy">вакансии</a>
+							</div>
+							<div class="career__anchor-item filter-btn anchor-container"><a class="anchor"
+									href="#join">хочу к вам</a>
+							</div>
+						</div>
+						<div class="career__header">
+							<div class="career__title title">Почему у нас круто</div>
+							<div class="career__info">
+								<div class="career__info-text">
+									<p>
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою работу
+										новейшие интернет-технологии
+									</p>
+								</div>
+								<a href="" class="career__info-btn small-title">подробнее о нас</a>
+							</div>
+						</div>
+						<div class="career__wide-img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_right">
+				<div class="container">
+					<div class="comment__wrapper">
+						<div class="comment__text"><span> Наши сотрудники </span> постоянно развиваются,
+							посещают
+							различные семинары, курсы, вебинары. <span> Мы </span>никогда не стоим на месте, и постоянно
+							внедряем в свою работу новейшие интернет-технологии
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section advantage" id="rating">
+				<div class="container">
+					<div class="advantage__slider swiper-container">
+						<div class="advantage__slider-wrapper swiper-wrapper">
+							<div class="advantage__slide swiper-slide">
+								<div class="advantage__img">
+									<img src="./img/advantage.png" alt="">
+								</div>
+								<div class="advantage__body">
+									<div class="advantage__name title">
+										Мы в топе рейтинга рунета
+									</div>
+									<div class="advantage__subtitle">
+										ТОП-3
+									</div>
+									<div class="advantage__info">
+										<p>
+											В рейтинге веб-студий, которым можно заказать создание сайта и его
+											последующее поисковое продвижение,
+											Санкт-Петербург
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantage__slide swiper-slide">
+								<div class="advantage__img">
+									<img src="./img/advantage.png" alt="">
+								</div>
+								<div class="advantage__body">
+									<div class="advantage__name title">
+										Мы в топе рейтинга рунета
+									</div>
+									<div class="advantage__subtitle">
+										ТОП-3
+									</div>
+									<div class="advantage__info">
+										<p>
+											В рейтинге веб-студий, которым можно заказать создание сайта и его
+											последующее поисковое продвижение,
+											Санкт-Петербург
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="advantage__slide swiper-slide">
+								<div class="advantage__img">
+									<img src="./img/advantage.png" alt="">
+								</div>
+								<div class="advantage__body">
+									<div class="advantage__name title">
+										Мы в топе рейтинга рунета
+									</div>
+									<div class="advantage__subtitle">
+										ТОП-3
+									</div>
+									<div class="advantage__info">
+										<p>
+											В рейтинге веб-студий, которым можно заказать создание сайта и его
+											последующее поисковое продвижение,
+											Санкт-Петербург
+										</p>
+										<p>
+											В рейтинге веб-студий, которым можно заказать создание сайта и его
+											последующее поисковое продвижение,
+											Санкт-Петербург
+										</p>
+										<p>
+											В рейтинге веб-студий, которым можно заказать создание сайта и его
+											последующее поисковое продвижение,
+											Санкт-Петербург
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantage__controls slider-controls">
+							<div class="slider-pagination advantage-pagination"></div>
+							<div class="slider-navigation advantage-navigation">
+								<div class="slider-prev advantage-prev">назад</div>
+								<div class="slider-next advantage-next">а ещё</div>
+							</div>
+						</div>
+					</div>
+					<div class="advantage__tips">
+						<div class="advantage__tips-title small-list-text">Что делать, если на главной странице нет
+							левого (правого) меню, а на остальных есть? Tip & Tricks для сайтов на Битрикс.</div>
+						<div class="advantage__tips-text gray-text">
+							<p>
+								Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для одного
+								сайта только из-за того, что главная страница отличается от остальных.
+								Достаточно просто использовать конструкцию вариант - самый простой в реализации. Не
+								нужно создавать разные шаблоны для одного сайта только из-за того, что главная страница
+								отличается от остальных.
+							</p>
+						</div>
+						<a href="" class="advantage__round-btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section vacancy" id="vacancy">
+				<div class="container">
+					<div class="vacancy__wrapper">
+						<div class="vacancy__title title">Открытые вакансии</div>
+						<div class="vacancy__filter">
+							<div class="filter-btn filter-btn_active">НастАртВЕБ</div>
+							<div class="filter-btn ">Разработка</div>
+							<div class="filter-btn ">Продвижение</div>
+							<div class="filter-btn ">Дизайн</div>
+							<div class="filter-btn ">Продажи</div>
+						</div>
+						<ul class="vacancy__list link-list">
+							<li class="link-list__item vacancy__list-item small-list-text">
+								<a href="">Разработчик Битрикс <span></span></a>
+							</li>
+							<li class="link-list__item vacancy__list-item small-list-text">
+								<a href="">Верстальщик <span></span></a>
+							</li>
+							<li class="link-list__item vacancy__list-item small-list-text">
+								<a href="">SEO-специалист <span></span></a>
+							</li>
+							<li class="link-list__item vacancy__list-item small-list-text">
+								<a href="">Дизайнер <span></span></a>
+							</li>
+							<li class="link-list__item vacancy__list-item small-list-text">
+								<a href="">Менеджер по продажам <span></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section vacancy" id="vacancy">
+				<div class="container">
+					<div class="vacancy__wrapper">
+						<div class="vacancy__title title">Открытые вакансии</div>
+						<div class="advantage__tips white-bg m-0">
+							<div class="advantage__tips-title small-list-text black-text">К сожалению, открытых вакансий
+								сейчас нет</div>
+							<div class="advantage__tips-text">
+								<p>
+									Но если вы очень крутой специалист, мы будем рады посмотреть ваше резюме! Заполните
+									форму и прикрепите файлик, мы обязательно с ним ознакомимся в кратчайшие сроки.
+								</p>
+								<a href="" class="btn btn_transparent btn_fit">Отправить резюме</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="section career">
+				<div class="container">
+					<div class="career__header">
+						<div class="career__title title">Почему у нас круто</div>
+						<div class="career__info">
+							<div class="career__info-text">
+								<p>
+									Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для
+									одного сайта только из-за того, что главная страница отличается от остальных.
+									Достаточно просто использовать конструкцию вариант - самый простой в реализации.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="career__slider swiper-container">
+						<div class="career__slider-wrapper swiper-wrapper">
+							<div class="career__slide swiper-slide">
+								<div class="career__slide-img"><img src="./img/career-slide1.png" alt=""></div>
+								<div class="career__slide-text">Подпись к фото</div>
+							</div>
+							<div class="career__slide swiper-slide">
+								<div class="career__slide-img"><img src="./img/career-slide2.png" alt=""></div>
+								<div class="career__slide-text">Подпись к фото</div>
+							</div>
+							<div class="career__slide swiper-slide">
+								<div class="career__slide-img"><img src="./img/career-slide3.png" alt=""></div>
+								<div class="career__slide-text">Подпись к фото</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comment comment_career" id="join">
+				<div class="container">
+					<div class="comment__wrapper">
+						<div class="comment__text">
+							Не нашли интересующую вакансию, но хотите работать с нами? <br> <br> Пишите нам на <a
+								href="mailto:info@nastart-web.ru"><span>info@nastart-web.ru</span></a> . Мы обязательно
+							рассмотрим
+							ваше резюме.
+						</div>
+						<a href="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>

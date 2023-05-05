@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body__wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="breadcrumb">
+				<div class="container">
+					<ul class="breadcrumb__wrapper">
+						<li class="breadcrumb__item"><a href="">Услуги</a></li>
+						<li class="breadcrumb__item"><a href="">Лечение кариеса</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="section pt-0">
+				<div class="container">
+					<div class="caries-treatment " style="background-image:url(./img/caries-treatment-bg.png) ;">
+						<h2 class="caries-treatment__title title">Лечение кариеса</h2>
+						<div class="caries-treatment__advantages">
+							<div class="caries-treatment__advantages-item"><span
+									class="caries-treatment__advantages-icon"
+									style="background-image:url(./img/icon/caries-list3.svg) ;"></span>Бережно</div>
+							<div class="caries-treatment__advantages-item"><span
+									class="caries-treatment__advantages-icon"
+									style="background-image:url(./img/icon/caries-list2.svg) ;"></span>Весело</div>
+							<div class="caries-treatment__advantages-item"><span
+									class="caries-treatment__advantages-icon"
+									style="background-image:url(./img/icon/caries-list1.svg) ;"></span>Комфортно</div>
+						</div>
+						<div data-btnpopup="1" class="caries-treatment__btn button button-green">Записаться на приём
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section kids-caries">
+				<div class="kids-caries__wrapper">
+					<div class="kids-caries__img">
+						<img src="./img/kids-caries.jpg" alt="">
+					</div>
+					<div class="kids-caries__content">
+						<h2 class="kids-caries__title title">Детский кариес</h2>
+						<div class="read-more__wrapper">
+							<div class="kids-caries__text show-scroll read-more__text">
+								<p>Кариес может поразить детские зубы ещё на стадии прорезывания. Но большинство
+									родителей
+									не заостряет внимание на этой проблеме. Между тем, лечить необходимо не только
+									постоянные зубы, но и молочные, поскольку они тоже подвержены пульпиту, способны
+									вызвать
+									гнойную инфекцию и другие осложнения. Для лечения кариеса у детей сегодня
+									не требуется
+									сверлить зубы. Современная стоматология располагает малоинвазивными техниками —
+									серебрением, фторированием, инфильтрацией</p>
+								<h3>Основная причина кариеса</h3>
+								<p>Длительное ночное вскармливание из бутылочки сладкими смесями, соками, нерегулярная
+									гигиена полости рта, кариесогенная флора, передающаяся от членов семьи через
+									предметы
+									обихода</p>
+								<h3>У 80% детей</h3>
+								<p>До 7 лет диагностируют кариес молочных зубов</p>
+							</div>
+							<div class="read-more__btn"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="title">Особенности лечения</h2>
+					<div class="treatment-advantages__slider swiper-container">
+						<div class="treatment-advantages__slider-wrapper swiper-wrapper">
+							<div class="treatment-advantages__item swiper-slide"
+								style="background-image: url(./img/icon/adv1.svg);">
+								<div class="treatment-advantages__title h3">Не более 30-ти минут</div>
+								<div class="treatment-advantages__subtitle">Длительность приема детского стоматолога
+								</div>
+							</div>
+							<div class="treatment-advantages__item swiper-slide"
+								style="background-image: url(./img/icon/adv2.svg);">
+								<div class="treatment-advantages__title h3">Метод без сверления</div>
+								<div class="treatment-advantages__subtitle">Применяется в лечении у детей раннего
+									возраста
+								</div>
+							</div>
+							<div class="treatment-advantages__item swiper-slide"
+								style="background-image: url(./img/icon/adv3.svg);">
+								<div class="treatment-advantages__title h3">Лечение как игра</div>
+								<div class="treatment-advantages__subtitle">Организуем развлчения: игры, 3D-очки
+									или мультфильмы во время лечения в удобном кресле</div>
+							</div>
+						</div>
+						<div class="treatment-advantages-pagination slider-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="comfort">
+					<div class="comfort__content">
+						<h2 class="title">Комфортное лечение</h2>
+						<div class="read-more__wrapper">
+							<div class="comfort__text read-more__text">
+								<p>
+									Вообще в лечении маленьких пациентов основную роль играют родители. Поэтому
+									мы всегда
+									устанавливаем доверительные отношения в первую очередь с родителями. Объясняем
+									им необходимость тех или иных процедур. Без поддержки и доверия со стороны родителей
+									невозможно провести лечение на высшем уровне.
+								</p>
+								<p>
+									В нашей клинике сделано все возможное, чтобы дети чувствовали себя комфортно
+									и спокойно во время приёма. Никаких больничных запахов и никакого удержания.
+									У нас ребёнок смотрит любимый мультфильм во время осмотра и лечения,
+									а не зажмуривается от страха
+								</p>
+							</div>
+							<div class="read-more__btn"></div>
+						</div>
+						<div data-btnpopup="1" class="comfort__btn button button-green">получить консультацию</div>
+					</div>
+					<div class="comfort__tile">
+						<div class="comfort__video" style="background-image:url(./img/comfort-video.jpg) ;">
+							<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+						</div>
+						<div class="comfort__discription">
+							Организуем позитивную среду с персональными предпочтениями вашего ребёнка: игры, 3D-очки
+							или мультфильмы во время лечения в удобном кресле
+						</div>
+						<div class="comfort__photo">
+							<div class="sign">
+								Любимые мультики
+							</div>
+							<img src="./img/comfort-photo.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="stages">
+					<div class="stages__img">
+						<img src="./img/stage-img.jpg" alt="">
+					</div>
+					<div class="stages__body">
+						<h2 class="stages__title title">Этапы лечения</h2>
+						<div class="stages__text">Для лечения постоянных зубов у детей и взрослых используются
+							одинаковые методы. Основой
+							терапии остаётся пломбирование фотополимерным композитом, который считается идеальным
+							материалом для этой цели – прочность, эстетика натуральной эмали, возможность выбора
+							оптимального оттенка</div>
+						<div class="stages__slider swiper-container">
+							<div class="stages__slider-wrapper swiper-wrapper">
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Местная анестезия</div>
+								</div>
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Удаление кариозных тканей и размягчённого дентина
+									</div>
+								</div>
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Антисептическая обработка</div>
+								</div>
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Просушка</div>
+								</div>
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Наложение изолирующего слоя из фосфат-цемента</div>
+								</div>
+								<div class="stages__slide swiper-slide">
+									<div class="stages__slide-count"><span></span> этап </div>
+									<div class="stages__slide-text">Пломбирование композитом</div>
+								</div>
+							</div>
+							<div class="stages-pagination slider-pagination"></div>
+							<div class="stages-navigation slider-navigation">
+								<div class="stages-prev slider-prev"></div>
+								<div class="stages-next slider-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="title">Выбираем эффективные и щадящие методы</h2>
+					<div class="method">
+						<div class="method__slider swiper-container">
+							<div class="method__slider-wrapper swiper-wrapper">
+								<div class="method__slide swiper-slide">
+									<div class="method__name">Фторирование</div>
+									<div class="method__about">Второе название этого метода — реминерализация.
+										Это насыщение поражённых участков эмали минералами, её восстановление.
+										Поверхность зуба обрабатывается особым составом, содержащим кальций, фосфор,
+										фтор и другие элементы. Эффекта такого лечения хватает на срок около полугода.
+										Фторирование показано детям с 6-летнего возраста</div>
+									<div class="method__count"></div>
+								</div>
+								<div class="method__slide swiper-slide">
+									<div class="method__name">Серебрение</div>
+									<div class="method__about">Данный способ устарел, но до сих пор иногда встречается.
+										Поверхность зуба покрывают 30-процентным раствором нитрата серебра, который
+										уничтожает бактерии, вызывающие кариес. Процедура абсолютно безболезненна.
+										Но после неё зубы становятся чёрными, что может вызвать у ребёнка комплексы
+									</div>
+									<div class="method__count"></div>
+								</div>
+								<div class="method__slide swiper-slide">
+									<div class="method__name">Инфильтрация</div>
+									<div class="method__about">
+										На место поражения зуба наносят специальный гель, который размягчает ткани.
+										После их вымывают абразивной смесью. Затем место сушат и покрывают жидкой
+										пломбой Icon. Материал застывает под полимеризационной лампой.
+									</div>
+									<div class="method__count"></div>
+								</div>
+								<div class="method__slide swiper-slide">
+									<div class="method__name">Озонотерапия</div>
+									<div class="method__about">
+										На поражённую кариесом зону зуба наносят озон под давлением в газообразном
+										состоянии. Это не вызывает никаких болевых ощущений. Продолжительность процедуры
+										10–20 секунд. Озон уничтожает бактерии, вызывающие кариес. После озонотерапии
+										разрушение приостанавливается
+									</div>
+									<div class="method__count"></div>
+								</div>
+								<div class="method__slide swiper-slide">
+									<div class="method__name">Пломбирование</div>
+									<div class="method__about">
+										Установку пломб на молочные зубы начинают с удаления из полости отмерших тканей.
+										Это делается ручными инструментами или бормашиной. Полость дезинфицируется
+										специальным составом и герметично пломбируется. По завершении поверхность пломбы
+										шлифую
+									</div>
+									<div class="method__count"></div>
+								</div>
+							</div>
+							<div class="method-pagination slider-pagination"></div>
+						</div>
+						<div class="method-navigation slider-navigation">
+							<div class="method-prev slider-prev"></div>
+							<div class="method-next slider-next"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section bg-gray">
+				<div class="container">
+					<div class="text-with-photo">
+						<div class="text-with-photo__img">
+							<img src="./img/photo.png" alt="">
+						</div>
+						<div class="text-with-photo__body">
+							<h2 class="title">осложнения кариеса</h2>
+							<div class="read-more__wrapper">
+								<div class="text-with-photo__text read-more__text">
+									<p>
+										Лечить важно уже молочные зубы. Ведь глубокий кариес может проникнуть в ткани
+										настолько, что повредит постоянный зубной ряд. К тому же, состояние временных
+										зубов
+										в дальнейшем влияет на прикус ребёнка. Удаление приводит к неправильному росту
+										челюсти. В результате постоянные зубы могут появиться не на своих местах.
+										Из-за этого ребёнку придётся носить брекеты.
+									</p>
+									<p>
+										Глубокий кариес приводит к воспалению пульпы, периодонтиту, образованию
+										прикорневых
+										кист. Лечение этих проблем очень сложно и болезненно. Оно требует пломбирования
+										каналом корней.
+									</p>
+									<p>
+										Если запустить периодонтит, он может вызвать абсцесс и даже остеомиелит.
+										Это уже опасно для жизни ребёнка.
+									</p>
+								</div>
+								<div class="read-more__btn"></div>
+							</div>
+							<div data-btnpopup="1" class="text-with-photo__btn button button-green">Записаться на приём
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section indication">
+				<div class="container">
+					<div class="indication__wrapper">
+						<h2 class="title">Показания и противопоказания</h2>
+						<div class="tab">
+							<div class="tab__header">
+								<div class="tab__title title-active">показания</div>
+								<div class="tab__title">противопоказания</div>
+							</div>
+							<div class="tab__body">
+								<div class="tab__item item-active">
+									<ul>
+										<li>Изменение цвета, пигментация эмали</li>
+										<li>Потемнение пришеечного сегмента</li>
+										<li>Откол эмали</li>
+										<li>Тёмная щель, расположенная по границе пломбы</li>
+										<li>Кариозная полость</li>
+										<li>Реакция зуба на горячее, холодное, сладкое, солёное</li>
+									</ul>
+								</div>
+								<div class="tab__item">
+									<ul>
+										<li>Воспалительные процессы в области воздействия</li>
+										<li>Болезни в острой форме (инфекционные, вирусные, простудные)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section example">
+				<div class="container">
+					<h2 class="title">наши работы</h2>
+					<div class="example__slider swiper-container">
+						<div class="example__slider-wrapper swiper-wrapper">
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example2.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение поверхностного кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Шмаков Денис Кириллович</div>
+								</div>
+							</div>
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example3.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example4.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение глубокого кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Тамкович Елизавета Юрьевна</div>
+								</div>
+							</div>
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example2.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение поверхностного кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Шмаков Денис Кириллович</div>
+								</div>
+							</div>
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example3.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example4.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение глубокого кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Тамкович Елизавета Юрьевна</div>
+								</div>
+							</div>
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example2.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение поверхностного кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Шмаков Денис Кириллович</div>
+								</div>
+							</div>
+							<div class="example__slide swiper-slide">
+								<div class="example__item">
+									<div class="example__before-after">
+										<div class="example__img">
+											<img src="./img/example3.jpg" alt="">
+										</div>
+										<div class="example__img">
+											<img src="./img/example4.jpg" alt="">
+										</div>
+									</div>
+									<div class="example__title">Лечение глубокого кариеса</div>
+									<div class="example__doc"><span>Врач: </span> Тамкович Елизавета Юрьевна</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="example-navigation slider-navigation">
+							<div class="example-prev slider-prev"></div>
+							<div class="example-next slider-next"></div>
+						</div>
+						<div class="example-pagination slider-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<h2 class="title">Цены</h2>
+					<div class="pricelist">
+						<div class="pricelist__row">
+							<div class="pricelist__name">
+								Первичный прием врача-стоматолога (консультация, составление плана лечения)
+							</div>
+							<div class="pricelist__cost">от 2000 ₽</div>
+						</div>
+						<div class="pricelist__row">
+							<div class="pricelist__name">
+								Лечение кариеса молочного зуба у ребенка
+							</div>
+							<div class="pricelist__cost">от 4000 ₽</div>
+						</div>
+						<div class="pricelist__row">
+							<div class="pricelist__name">
+								Лечение кариеса постоянного зуба у ребенка
+							</div>
+							<div class="pricelist__cost">от 4500 ₽</div>
+						</div>
+						<div class="pricelist__row">
+							<div class="pricelist__name">
+								Временная пломба
+							</div>
+							<div class="pricelist__cost">от 500 ₽</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section treatment">
+				<div class="container">
+					<h2 class="title">Где проходит лечение</h2>
+					<div class="treatment__wrapper">
+						<div class="treatment__slider swiper-container">
+							<div class="treatment__slider-wrapper swiper-wrapper">
+								<div class="treatment__slide swiper-slide">
+									<img src="./img/treatment.jpg" alt="">
+								</div>
+								<div class="treatment__slide swiper-slide">
+									<img src="./img/treatment2.jpg" alt="">
+								</div>
+								<div class="treatment__slide swiper-slide">
+									<img src="./img/treatment.jpg" alt="">
+								</div>
+								<div class="treatment__slide swiper-slide">
+									<img src="./img/treatment2.jpg" alt="">
+								</div>
+							</div>
+							<div class="treatment-pagination slider-pagination"></div>
+							<div class="treatment-navigation slider-navigation">
+								<div class="treatment-prev slider-prev"></div>
+								<div class="treatment-next slider-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<div class="container">
+					<div class="sign">Счастливые пациенты</div>
+					<div class="review__slider swiper-container">
+						<div class="review__slider-wrapper swiper-wrapper">
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+							<div class="review__slide swiper-slide">
+								<div class="review__video" style="background-image:url(./img/review.jpg) ;">
+									<a href="https://www.youtube.com/watch?v=4L905iuVpTk" data-fancybox></a>
+								</div>
+								<div class="review__body">
+									<h2 class="title">Отзывы <br> наших пациентов</h2>
+									<p>В этом видео пациент поделится своей историей лечения кариеса в нашей клинике</p>
+									<h3>Что больше всего понравилось</h3>
+									<p>Аккуратность врача, профессионализм</p>
+									<h3>Время лечения</h3>
+									<p>2 часа</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="review__subslider swiper-container">
+						<div class="review__subslider-wrapper swiper-wrapper">
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+							<div class="review__subslide swiper-slide">
+								<div class="review__img">
+									<img src="./img/review.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section faq">
+				<div class="container">
+					<div class="faq__wrapper">
+						<div class="faq__body">
+							<h2 class="title">Вопрос-ответ</h2>
+							<div class="faq__accordion accordion_v1">
+								<div class="a-container">
+									<div class="a-btn">Чем опасен кариес молочных зубов? <span></span></div>
+									<div class="a-panel">
+										<p>Кариозный процесс во временных зубах протекает настолько быстро, что зубы
+											могут разрушиться и заболеть всего за несколько месяцев. Через несколько
+											месяцев, возможно, придётся их удалить. Дальше могут начаться проблемы
+											с прикусом, развитием речи, не говоря уже о внешнем виде ребёнка</p>
+									</div>
+								</div>
+
+								<div class="a-container">
+									<div class="a-btn">Как предотвратить кариес у детей? <span></span></div>
+									<div class="a-panel">
+										<p>Кариозный процесс во временных зубах протекает настолько быстро, что зубы
+											могут разрушиться и заболеть всего за несколько месяцев. Через несколько
+											месяцев, возможно, придётся их удалить. Дальше могут начаться проблемы
+											с прикусом, развитием речи, не говоря уже о внешнем виде ребёнка</p>
+									</div>
+								</div>
+
+								<div class="a-container">
+									<div class="a-btn">Нужно ли пройти дополнительное обследование? <span></span></div>
+									<div class="a-panel">
+										<p>Кариозный процесс во временных зубах протекает настолько быстро, что зубы
+											могут разрушиться и заболеть всего за несколько месяцев. Через несколько
+											месяцев, возможно, придётся их удалить. Дальше могут начаться проблемы
+											с прикусом, развитием речи, не говоря уже о внешнем виде ребёнка</p>
+									</div>
+								</div>
+								<div class="a-container">
+									<div class="a-btn">Применяется ли в лечении анестизия? <span></span></div>
+									<div class="a-panel">
+										<p>Кариозный процесс во временных зубах протекает настолько быстро, что зубы
+											могут разрушиться и заболеть всего за несколько месяцев. Через несколько
+											месяцев, возможно, придётся их удалить. Дальше могут начаться проблемы
+											с прикусом, развитием речи, не говоря уже о внешнем виде ребёнка</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="faq__photos">
+							<div class="faq__img">
+								<img src="./img/review.jpg" alt="">
+							</div>
+							<div class="faq__img">
+								<img src="./img/faq.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

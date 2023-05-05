@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------------------------------*/
+.container {
+  width: 1490px;
+  margin: 0 auto;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Mulish";
+  font-style: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service__types {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #458bf4;
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  z-index: 2;
+}
+
+.service__title {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #458bf4;
+  padding: 17px 20px;
+  padding-right: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ffffff;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  margin: 20px 0;
+  min-width: 230px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  position: relative;
+  z-index: 2;
+}
+
+.service__item {
+  width: 270px;
+  height: 270px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service__item:hover .service__list,
+.service__item:hover .service__types, .service__item:hover::after {
+  opacity: 1;
+}
+
+.service__item::after {
+  display: block;
+  content: "";
+  width: 102%;
+  height: 102%;
+  background: rgba(249, 249, 249, 0.8);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  position: absolute;
+  left: -1%;
+  top: -1%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.service__list {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.service__list a {
+  color: inherit;
+}
+
+.service__list a:hover {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  color: #458bf4;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service__list,
+  .service__types,
+  .service__item::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .service__item {
+    width: 100%;
+  }
+}

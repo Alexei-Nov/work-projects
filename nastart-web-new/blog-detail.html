@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper overflow-unset">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						//Блог
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>Блог</span></a></li>
+								<li class="breadcrumb__item"><span>уровень 2</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section blog-detail">
+				<div class="container">
+					<div class="blog-detail__header">
+						<div class="blog-detail__hash-list hash-list hash-list_light">
+							<div class="hash-list__item">#битрикс</div>
+							<div class="hash-list__item">#левое меню</div>
+							<div class="hash-list__item">#сайдбар</div>
+						</div>
+						<div class="blog-detail__author">
+							<div class="blog-detail__info">
+								<div class="blog-detail__author-name small-title">Анастасия Лебедева</div>
+								<div class="blog-detail__author-date">13 апреля 2021</div>
+							</div>
+							<div class="blog-detail__author-photo">
+								<img src="./img/author.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="blog-detail__body">
+						<ul class="blog-detail__menu">
+						</ul>
+						<div class="blog-detail__content">
+							<div class="blog-detail__title title">Все о сайдбарах в Битрикс</div>
+							<h2>1Что делать, если на главной странице нет левого (правого) меню, а на остальных есть?
+								Tip
+								& Tricks для сайтов на Битрикс.</h2>
+							<p>Этот вариант - самый простой в реализации. Не нужно создавать разные шаблоны для одного
+								сайта только из-за того, что главная страница отличается от остальных.
+								Достаточно просто использовать конструкцию</p>
+							<code>
+								<xmp>
+<?/* Если мы НЕ находимся на главной */?>
+<?if (!CSite::InDir('/index.php')) :?>
+<? endif; ?>
+								</xmp>
+							</code>
+							<span>То есть, вы внедряете шаблон, и после обозначения главного контейнера будет что-то
+								вроде этого:</span>
+							<code>
+								<xmp>
+<?if (!CSite::InDir('/index.php')) :?>
+	/** Заголовок **/
+	<?$APPLICATION->ShowTitle(false);?>
+
+	/** Крошки **/
+	<?$APPLICATION->IncludeComponent(
+"bitrix:breadcrumb",
+"",
+Array(
+	"COMPONENT_TEMPLATE" => ".default",
+	"PATH" => "",
+	"SITE_ID" => "-",
+	"START_FROM" => "0"
+)
+	);?>
+
+	/** Левый сайдбар **/
+	<div class="col-lg-3">
+	Здесь может быть левое меню, включаемая область или любой другой компонент.
+	</div>
+
+	/** Рабочая область **/
+	<div class="col-lg-9">
+<?endif;?
+
+#WORK_AREA#
+
+<?if (!CSite::InDir('/index.php')) :?>
+	/** Закрываем Рабочая область **/
+	</div>
+<?endif;?
+								</xmp>
+							</code>
+							<h2>2Что делать, если сайдбар нужен только в каталоге?</h2>
+							<p>Для этого в настройках комплексного компонента Каталог есть галочка Показывать боковую
+								панель в списке товаров: (если сайдбар нужен в списке товаров) и Показывать боковую
+								панель на детальной странице: (если сайдбар нужен в детальной карточке товара).
+								Указываем в поле Путь к включаемой области для вывода информации в боковой панели: путь
+								к области, например /include/catalog.php. Добавляем файл, расположенный по указанному
+								пути и о чудо! сайдбар появляется в каталоге.</p>
+							<span>NB: если сайдбар нужен на общей странице каталога, то копируем следующий код в
+								sections.php</span>
+							<div class="code__slider swiper-container">
+								<div class="code__slider-wrapper swiper-wrapper">
+									<div class="code__slide swiper-slide">
+										<code>
+											<xmp>
+if ($isSidebar):?>     
+<div class="col-lg-3">
+	<?
+	$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => $arParams["SIDEBAR_PATH"],
+		"AREA_FILE_RECURSIVE" => "N",
+		"EDIT_MODE" => "html",
+		),
+		false,
+		array('HIDE_ICONS' => 'Y')
+	);
+	?>
+</div>
+<? endif; ?>
+											</xmp>
+										</code>
+									</div>
+									<div class="code__slide swiper-slide">
+										<code>
+											<xmp>
+if ($isSidebar):?>     
+<div class="col-lg-3">
+	<?
+	$APPLICATION->IncludeComponent("bitrix:main.include", "", array(
+		"AREA_FILE_SHOW" => "file",
+		"PATH" => $arParams["SIDEBAR_PATH"],
+		"AREA_FILE_RECURSIVE" => "N",
+		"EDIT_MODE" => "html",
+		),
+		false,
+		array('HIDE_ICONS' => 'Y')
+	);
+	?>
+</div>
+<? endif; ?>
+											</xmp>
+										</code>
+									</div>
+								</div>
+								<div class="code__controls slider-controls">
+									<div class="slider-pagination code-pagination"></div>
+									<div class="slider-navigation code-navigation">
+										<div class="slider-prev code-prev">назад</div>
+										<div class="slider-next code-next">а ещё</div>
+									</div>
+								</div>
+							</div>
+							<h2>3Что делать, если сайдбар нужен на некоторых страницах сайта, выборочно?</h2>
+							<p>
+								В этом случае разумнее всего использовать свойства страницы.
+							</p>
+							<p>
+								Из визуальной части. <br>
+								На панели управления Изменить раздел - Свойства раздела - Редактировать свойства папки в
+								панели управления. В открывшейся форме, вкладка Свойства Каталога. В левом столбце пишем
+								название свойства, например SIDEBAR, в правом - значение, например Y.
+							</p>
+							<span>После этого мы можем обратиться к этому свойству из шаблона сайта</span>
+							<code>
+								<xmp>
+<?if($APPLICATION->GetProperty("SIDEBAR") == "Y"):?>      
+	/** Левый сайдбар **/
+	<div class="col-lg-3">
+	Здесь может быть левое меню, включаемая область или любой другой компонент.
+	</div>
+<?endif;?
+								</xmp>
+							</code>
+							<span>В принципе, если таких страниц 2-3, то можно использовать решение для пункта 1. Только
+								вместо index.php указывать название каталога, например</span>
+							<code>
+								<xmp>
+<?if (CSite::InDir('/contacts/') && CSite::InDir('/page/')) :?>
+	Здесь ваш код
+<?endif;?>
+								</xmp>
+							</code>
+							<blockquote>
+								<p>
+									Однако, советую использовать такие конструкции ТОЛЬКО в том случае, если страниц
+									действительно 2-3, и вы точно это знаете. Иначе придется каждый раз при добавлении
+									новой страницы с сайдбаром править код шаблона.
+								</p>
+								<p>
+									Вы можете использовать тот метод, который вам нужен именно для вашего проекта на
+									Битриксе, или комбинировать их. Удачи в разработке! И не забывайте делать все
+									правильно!
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section blog blog_more">
+				<div class="container">
+					<div class="blog__slider swiper-container">
+						<div class="blog__slider-wrapper swiper-wrapper">
+							<div class="blog__slide swiper-slide">
+								<div class="blog__item">
+									<div class="blog__img">
+										<img src="./img/blog.png" alt="">
+									</div>
+									<a href="" class="blog__name">название статьи</a>
+									<div class="blog__hash-list hash-list hash-list_light">
+										<div class="hash-list__item">#какой-то тег</div>
+										<div class="hash-list__item">#какой-то тег</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__slide swiper-slide">
+								<div class="blog__item">
+									<div class="blog__img">
+										<img src="./img/blog.png" alt="">
+									</div>
+									<a href="" class="blog__name">название статьи</a>
+									<div class="blog__hash-list hash-list hash-list_light">
+										<div class="hash-list__item">#какой-то тег</div>
+										<div class="hash-list__item">#какой-то тег</div>
+									</div>
+								</div>
+							</div>
+							<div class="blog__slide swiper-slide">
+								<div class="blog__item">
+									<div class="blog__img">
+										<img src="./img/blog.png" alt="">
+									</div>
+									<a href="" class="blog__name">название статьи</a>
+									<div class="blog__hash-list hash-list hash-list_light">
+										<div class="hash-list__item">#какой-то тег</div>
+										<div class="hash-list__item">#какой-то тег</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section service more-padding">
+				<div class="container">
+					<div class="service__wrapper">
+						<div class="service__header">
+							<div class="service__col">
+								<h2 class="service__title title">Будем рады сотрудничать с вами</h2>
+							</div>
+							<div class="service__col">
+								<a href="" class="service__btn round-btn round-btn_orange">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-phone.svg)"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

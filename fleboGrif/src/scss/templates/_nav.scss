@@ -1,0 +1,213 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  .phone {
+    margin-left: 100px;
+    @media screen and (max-width: 1399.98px) {
+      margin-left: 42px;
+    }
+    @media screen and (max-width: 991.98px) {
+      margin-left: 0;
+    }
+    a {
+      color: $color-light-blue3;
+    }
+  }
+  .--mobile {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+  &__policy {
+    display: block;
+
+    @include font(15, 19.17, 600);
+    color: $color-light-blue;
+
+    opacity: 0.7;
+    @media screen and (max-width: 991.98px) {
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 575.98px) {
+      text-align: right;
+    }
+  }
+  &__copyright {
+    display: block;
+
+    @include font(15, 19.17, 600);
+    color: $color-light-blue;
+
+    opacity: 0.7;
+    @media screen and (max-width: 575.98px) {
+      text-align: right;
+    }
+  }
+  &__btn {
+    position: relative;
+
+    width: 23px;
+    height: 16px;
+
+    @extend .pointer;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    &.--active {
+      span {
+        &:nth-child(1) {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &:nth-child(2) {
+          width: 0;
+        }
+        &:nth-child(3) {
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+      }
+    }
+    span {
+      position: absolute;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: $color-light-blue3;
+
+      transition: 0.4s;
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:nth-child(3) {
+        bottom: 0;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    @media screen and (max-width: 1199.98px) {
+      gap: 10px;
+    }
+  }
+  &__item {
+    position: relative;
+
+    padding: 10px 0;
+    @media screen and (max-width: 575.98px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0;
+    }
+    &.has-children {
+      @media screen and (max-width: 991.98px) {
+        span {
+          padding-right: 20px;
+        }
+        &::after {
+          content: '';
+
+          position: absolute;
+          right: 0;
+          top: 15px;
+
+          width: 12px;
+          height: 8px;
+          background-image: url(../img/icons/arrowDown.svg);
+          background-repeat: no-repeat;
+          background-position: right center;
+
+          transition: 0.4s;
+          @media screen and (max-width: 575.98px) {
+            top: 7px;
+          }
+        }
+        &.--active {
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &:hover {
+      ul {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+    a,
+    span {
+      color: $color-light;
+    }
+  }
+
+  &__hidden-list {
+    z-index: 10;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+
+    padding: 15px 18px 14px 20px;
+    width: 226px;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+
+    background-color: $color-light;
+    box-shadow: 0px 5px 15px rgba(39, 54, 95, 0.15);
+    opacity: 0;
+
+    transition: 0.4s;
+
+    pointer-events: none;
+    @media screen and (max-width: 991.98px) {
+      left: auto;
+      right: 0;
+    }
+    @media screen and (max-width: 575.98px) {
+      position: relative;
+      top: auto;
+
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      padding: 0;
+      padding-top: 10px;
+
+      opacity: 1;
+      background-color: $color-dark-blue;
+
+      transition: none;
+      a {
+        color: $color-light !important;
+      }
+    }
+    li {
+      width: 100%;
+      padding: 0;
+      @media screen and (max-width: 991.98px) {
+        text-align: right;
+      }
+      &:hover {
+        a {
+          color: $color-primary;
+        }
+      }
+      a {
+        color: $color-black;
+
+        transition: 0.4s;
+      }
+    }
+  }
+}

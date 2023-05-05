@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a href="/" class="header__logo-img">
+							<img src="./img/logo.svg" alt="logo">
+						</a>
+						<div class="header__logo-text">
+							<div class="header__logo-title">
+								ОЛИМПИК
+							</div>
+							<div class="header__logo-subtitle">
+								Промышленный альпинизм
+							</div>
+						</div>
+					</div>
+					<div class="header__body">
+						<div class="header__info">
+							<div class="header__links">
+								<a href="" class="header__link" style="background-image: url(./img/icon/phone.svg);">
+									+ 7(812) 718-87-17
+								</a>
+								<a href="" class="header__link header__link_mobile-dn"
+									style="background-image: url(./img/icon/mail.svg);">
+									8127188717@mail.ru
+								</a>
+							</div>
+							<div class="header__social">
+								<a href="" class="header__link" style="background-image: url(./img/icon/telegram.svg);">
+								</a>
+								<a href="" class="header__link" style="background-image: url(./img/icon/whatsapp.svg);">
+								</a>
+							</div>
+							<a href="" class="header__btn btn">Оставить заявку</a>
+							<div class="header__menu-btn"><span></span></div>
+						</div>
+						<div class="header__nav-panel">
+							<nav class="header__nav nav">
+								<ul class="nav__list">
+									<li class="nav__item nav__item_has-children">
+										<a href="" class="nav__link nav__link_lvl1">Виды работ</a>
+										<ul class="nav__submenu">
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Герметизация
+													межпанельных швов</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Все виды
+													кровельных работ</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Фасадные
+													работы</a></li>
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Герметизация и
+													гидроизоляция козырьков</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Монтаж,
+													демонтаж металлоконструкций</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Уборка
+													крыш от
+													снега и льда</a></li>
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Косметический
+													ремонт парадных</a></li>
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Обеспыливание
+													конструкций</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Ремонт
+													переходных балконов</a></li>
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Гидрофобизация
+													фасадов</a></li>
+											<li class="nav__item"><a href=""
+													class="nav__link nav__link_lvl2">Тепловизионное
+													обследование</a></li>
+											<li class="nav__item"><a href="" class="nav__link nav__link_lvl2">Мойка окон
+													и
+													фасада здания</a></li>
+										</ul>
+									</li>
+									<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Прайс-лист</a>
+									</li>
+									<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Портфолио</a></li>
+									<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Контакты</a></li>
+									<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Отзывы</a></li>
+									<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Вакансии</a></li>
+								</ul>
+							</nav>
+							<div class="header__nav-info gray-text">
+								<a href="" class="header__nav-info-link"
+									style="background-image: url(./img/icon/phone.svg);">+7(812) 718-87-17</a>
+								<a href="" class="header__nav-info-link"
+									style="background-image: url(./img/icon/mail.svg);">8127188717@mail.ru</a>
+								<a href="" class="header__nav-info-link"
+									style="background-image: url(./img/icon/map-pin.svg);">Санкт-Петербург, <br> улица
+									Шаврова, дом 13/1-187</a>
+								<a href="" class="header__nav-info-link"
+									style="background-image: url(./img/icon/telegram.svg);">Telegram</a>
+								<a href="" class="header__nav-info-link"
+									style="background-image: url(./img/icon/whatsapp.svg);">WhatsApp</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="home-block">
+				<div class="home-block__slider swiper">
+					<div class="home-block__slider-wrapper swiper-wrapper">
+						<div class="home-block__slide swiper-slide">
+							<div class="home-block__img">
+								<img src="./img/main.png" alt="pic">
+							</div>
+							<div class="home-block__content-wrapper">
+								<div class="container">
+									<div class="home-block__content white-text">
+										<div class="home-block__title page-title">
+											<a href="">Герметизация межпанельных швов</a>
+										</div>
+										<div class="home-block__subtitle">
+											Защита от промерзания и проникновения в помещения влаги и образования на
+											стенах
+											плесени
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="home-block__slide swiper-slide">
+							<div class="home-block__img">
+								<img src="./img/main.png" alt="pic">
+							</div>
+							<div class="home-block__content-wrapper">
+								<div class="container">
+									<div class="home-block__content white-text">
+										<div class="home-block__title page-title">
+											<a href="">Герметизация межпанельных швов</a>
+										</div>
+										<div class="home-block__subtitle">
+											Защита от промерзания и проникновения в помещения влаги и образования на
+											стенах
+											плесени
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="home-block__navigation slider-navigation">
+						<div class="home-block__prev slider-prev"></div>
+						<div class="home-block__next slider-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section line-form">
+				<div class="container">
+					<div class="line-form__wrapper">
+						<div class="line-form__title subtitle">
+							Оставьте заявку и в ближайшее время мы Вам ответим!
+						</div>
+						<form class="line-form__form">
+							<div class="line-form__inputs">
+								<input class="line-form__input input" type="text" placeholder="Ваше имя">
+								<input class="line-form__input input" type="tel" placeholder="Номер телефона">
+								<input class="line-form__btn btn btn_big" type="submit" value="Оставить заявку">
+							</div>
+							<div class="line-form__acceptance small-text gray-text">
+								Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<a href="/" class="footer__logo-img">
+							<img src="./img/logo.svg" alt="logo">
+						</a>
+						<div class="footer__logo-text">
+							<div class="footer__logo-title">
+								ОЛИМПИК
+							</div>
+							<div class="footer__logo-subtitle">
+								Промышленный альпинизм
+							</div>
+						</div>
+					</div>
+					<div class="footer__body">
+						<div class="footer__contacts">
+							<div class="footer__title">Контакты</div>
+							<div class="footer__list">
+								<a href="" class="footer__contact-item"
+									style="background-image: url(./img/icon/phone-white.svg);">+7(812) 718-87-17</a>
+								<a href="" class="footer__contact-item"
+									style="background-image: url(./img/icon/mail-white.svg);">8127188717@mail.ru</a>
+								<div class="footer__contact-item"
+									style="background-image: url(./img/icon/map-pin-white.svg);">
+									Санкт-Петербург, <br> улица Шаврова, дом 13/1-187</div>
+								<a href="" class="footer__contact-item"
+									style="background-image: url(./img/icon/telegram-white.svg);">Telegram</a>
+								<a href="" class="footer__contact-item"
+									style="background-image: url(./img/icon/whatsapp-white.svg);">WhatsApp</a>
+							</div>
+						</div>
+						<div class="footer__nav">
+							<ul class="footer__nav-list">
+								<li class="footer__nav-item">
+									<a href="" class="footer__title">Навигация</a>
+									<ul class="footer__nav-sublist footer__list">
+										<li class="footer__nav-item"><a href="">Виды работ</a></li>
+										<li class="footer__nav-item"><a href="">Прайс-лист</a></li>
+										<li class="footer__nav-item"><a href="">Оставить заявку</a></li>
+										<li class="footer__nav-item"><a href="">Контакты</a></li>
+									</ul>
+								</li>
+								<li class="footer__nav-item">
+									<a href="" class="footer__title">Наши услуги</a>
+									<ul class="footer__nav-sublist footer__list">
+										<li class="footer__nav-item"><a href="">Герметизация межпанельных швов</a></li>
+										<li class="footer__nav-item"><a href="">Все виды кровельных работ</a></li>
+										<li class="footer__nav-item"><a href="">Фасадные работы</a></li>
+										<li class="footer__nav-item"><a href="">Герметизация и гидроизоляция
+												козырьков</a></li>
+										<li class="footer__nav-item"><a href="">Монтаж, демонтаж металлоконструкций</a>
+										</li>
+										<li class="footer__nav-item"><a href="">Уборка крыш от снега и льда</a></li>
+										<li class="footer__nav-item"><a href="">Косметический ремонт парадных</a></li>
+										<li class="footer__nav-item"><a href="">Обеспыливание конструкций</a></li>
+										<li class="footer__nav-item"><a href="">Ремонт переходных балконов</a></li>
+										<li class="footer__nav-item"><a href="">Гидрофобизация фасадов</a></li>
+										<li class="footer__nav-item"><a href="">Тепловизионное обследование</a></li>
+										<li class="footer__nav-item"><a href="">Мойка окон и фасада здания</a></li>
+									</ul>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__dev-wrapper">
+				<div class="container">
+					<div class="footer__dev small-text">
+						<div>Copyright © Все права защищены</div>
+						<a href="https://nastart-web.ru/">
+							Разработка сайта
+							<svg width="110" height="11" viewBox="0 0 110 11"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_312_1314)">
+									<path d="M68.0441 10.725V1.68536H64.6543V0H73.3337V1.68536H69.9438V10.725H68.0441Z"
+										fill="#A7A7A7" />
+									<path
+										d="M54.6934 10.725V0H58.9012C59.8073 0 60.5817 0.153215 61.2244 0.459645C61.8771 0.766073 62.3791 1.20529 62.7296 1.77729C63.0801 2.34929 63.2558 3.02854 63.2558 3.81503C63.2558 4.60153 63.0801 5.28078 62.7296 5.85278C62.3791 6.41459 61.8771 6.84866 61.2244 7.15511C61.179 7.17613 61.1328 7.1964 61.0858 7.21592L63.431 10.725H61.3854L59.3016 7.58937C59.1711 7.59609 59.0376 7.59941 58.9012 7.59941H56.5927V10.725H54.6934ZM56.5927 5.96003H58.8136C59.6514 5.96003 60.2795 5.77109 60.6986 5.39314C61.1273 5.01522 61.3414 4.48916 61.3414 3.81503C61.3414 3.13068 61.1273 2.60465 60.6986 2.23693C60.2795 1.86921 59.6514 1.68536 58.8136 1.68536H56.5927V5.96003Z"
+										fill="#A7A7A7" />
+									<path
+										d="M41.5713 10.725L46.1741 0H48.0441L52.6615 10.725H50.6742L49.6578 8.24291L49.3377 7.46153L49.0176 6.68014L47.0951 1.98643L45.1797 6.68014H49.0176L49.3377 7.46153L49.6578 8.24291H44.542L43.5293 10.725H41.5713Z"
+										fill="#A7A7A7" />
+									<path d="M36.0872 10.725V1.68536H32.6973V0H41.3765V1.68536H37.9867V10.725H36.0872Z"
+										fill="#A7A7A7" />
+									<path
+										d="M27.4293 10.725C26.6305 10.725 25.8658 10.6108 25.1353 10.3824C24.4047 10.1441 23.8251 9.84119 23.3965 9.47375L24.054 7.96928C24.4631 8.29697 24.9697 8.57006 25.5736 8.78853C26.1776 9.007 26.7961 9.11625 27.4293 9.11625C27.965 9.11625 28.3985 9.05666 28.7297 8.9375C29.0609 8.81835 29.3044 8.65944 29.4603 8.46085C29.6161 8.25228 29.6941 8.01894 29.6941 7.76072C29.6941 7.44294 29.5821 7.18972 29.358 7.00103C29.134 6.80244 28.8417 6.6485 28.4813 6.53928C28.1306 6.42009 27.7361 6.31088 27.2978 6.21156C26.8692 6.11225 26.4357 5.99806 25.9974 5.86897C25.5687 5.72994 25.1742 5.55616 24.8138 5.34759C24.4631 5.12912 24.1758 4.84116 23.9517 4.48366C23.7277 4.12616 23.6157 3.66934 23.6157 3.11323C23.6157 2.54719 23.7618 2.0308 24.054 1.56406C24.356 1.0874 24.809 0.710034 25.4129 0.431978C26.0266 0.143993 26.801 0 27.7361 0C28.3498 0 28.9586 0.0794447 29.5626 0.238334C30.1665 0.397222 30.6925 0.625625 31.1406 0.923541L30.5416 2.42802C30.0837 2.14997 29.6113 1.94639 29.1242 1.81729C28.6372 1.67826 28.1696 1.60875 27.7215 1.60875C27.1955 1.60875 26.7669 1.6733 26.4357 1.8024C26.1143 1.93149 25.8756 2.10031 25.7197 2.30885C25.5736 2.5174 25.5006 2.75573 25.5006 3.02385C25.5006 3.34163 25.6077 3.59981 25.822 3.79844C26.0461 3.98713 26.3334 4.13606 26.6841 4.24531C27.0445 4.35457 27.4439 4.46378 27.8822 4.57303C28.3206 4.67231 28.7541 4.78653 29.1827 4.91563C29.621 5.04472 30.0155 5.21353 30.3662 5.4221C30.7266 5.63063 31.014 5.91366 31.2283 6.27116C31.4523 6.62866 31.5643 7.0805 31.5643 7.62666C31.5643 8.18278 31.4134 8.69916 31.1114 9.17585C30.8192 9.64256 30.3662 10.0199 29.7525 10.3079C29.1388 10.586 28.3644 10.725 27.4293 10.725Z"
+										fill="#A7A7A7" />
+									<path
+										d="M11.1133 10.725L15.7159 0H17.5862L22.2035 10.725H20.2163L19.1997 8.24291L18.8796 7.46153L18.5596 6.68014L16.6372 1.98643L14.7218 6.68014H18.5596L18.8796 7.46153L19.1997 8.24291H14.0841L13.0712 10.725H11.1133Z"
+										fill="#A7A7A7" />
+									<path
+										d="M0 10.725V0H1.56344L7.20353 7.26125V0H9.08842V10.725H7.52499L1.8849 3.46376V10.725H0Z"
+										fill="#A7A7A7" />
+									<path
+										d="M102.267 10.725V3.59788V0H106.196C107.21 0 108.008 0.229821 108.589 0.689464C109.179 1.14911 109.475 1.82836 109.475 2.72721C109.475 3.30943 109.345 3.79973 109.087 4.19809C108.838 4.59641 108.488 4.89264 108.036 5.08673C107.929 5.13331 107.819 5.17428 107.705 5.20967C108.013 5.26329 108.289 5.34488 108.534 5.45441C109.014 5.66891 109.378 5.98048 109.627 6.38903C109.876 6.79761 110 7.30323 110 7.90586C110 8.80473 109.705 9.49928 109.115 9.98959C108.534 10.4799 107.653 10.725 106.472 10.725H102.267ZM102.737 10.2654H106.5C107.487 10.2654 108.239 10.0764 108.755 9.69848C109.272 9.31034 109.53 8.70766 109.53 7.89053C109.53 7.06316 109.272 6.46053 108.755 6.08261C108.239 5.69448 107.487 5.50039 106.5 5.50039H102.661L102.654 5.05609H106.209C107.095 5.05609 107.782 4.862 108.271 4.47386C108.769 4.08573 109.018 3.51371 109.018 2.75786C109.018 2.002 108.769 1.43 108.271 1.04186C107.782 0.653714 107.095 0.459645 106.209 0.459645H102.737V3.59788H102.267V4.32697V5.05609H102.654L102.737 10.2654Z"
+										fill="#A7A7A7" />
+									<path
+										d="M93.4948 10.25H99.5687V10.725H93.0244V0H99.3751V0.474964H93.4948V3.57897H93.0244V5.04075H98.7525V5.51573H93.4948V10.25Z"
+										fill="#A7A7A7" />
+									<path
+										d="M80.3066 10.725L77 0H77.4979L80.6802 10.3726L80.791 10.725L81.5775 8.221L81.3476 7.4735L83.71 0H84.1665L87.3129 9.99502L87.5387 10.725L88.3256 8.22962L88.0913 7.46928L90.3925 0H90.8629L88.3256 8.22962L87.5387 10.725H87.0859L83.8761 0.551573H83.9868L81.5775 8.221L80.791 10.725H80.3066Z"
+										fill="#A7A7A7" />
+								</g>
+								<defs>
+									<clipPath id="clip0_312_1314">
+										<rect width="110" height="11" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

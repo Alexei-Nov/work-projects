@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style-new.css">
+
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<!-- <script src="./js/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="header__wrapper dark-bg">
+				<div class="header__logo">
+					<a href="" style="-webkit-mask-image: url(./img/icon/logo-main.svg);"></a>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-open header__menu-btn">
+						<span></span>
+					</div>
+				</div>
+				<a href="" class="header__btn btn">Оставить заявку</a>
+			</div>
+			<div class="header__nav-panel">
+				<div class="header__submenu">
+					<div class="header__col">
+						<div class="header__col-title"><a href=""></a></div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href=""></a> </li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title"><a href="">Услуги</a></div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="1">Разработка сайтов</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a href="">SEO</a></li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link nav__link_lvl1" href="2">Реклама</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-каталог с
+											корзиной</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href="">
+											Интернет-магазин</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт с
+											каталогом</a> </li>
+								</ul>
+							</li>
+							<li class="nav__item nav__item_lvl1"><a class="nav__link" href="">Техническая поддержка</a>
+							</li>
+							<li class="nav__item nav__item_lvl1 nav__item_has-children">
+								<a class="nav__link" href="3">Маркетплейсы</a>
+								<ul class="nav__submenu">
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Landing page</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Сайт-визитка</a>
+									</li>
+									<li class="nav__item nav__item_lvl2"><a class="nav__link" href=""> Корпоративный
+											сайт</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__col">
+					<div class="header__col-title">О нас</div>
+					<nav class="header__nav subtitle nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="">О нас</a></li>
+							<li class="nav__item"><a href="">Наши проекты</a> </li>
+							<li class="nav__item"><a href="">Блог</a> </li>
+							<li class="nav__item"><a href="">Отзывы</a> </li>
+							<li class="nav__item"><a href="">Карьера</a> </li>
+							<li class="nav__item"><a href="">Контакты</a> </li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__side light-bg">
+				<div class="header__menu-close header__menu-btn">
+					<span></span>
+				</div>
+				<div class="header__side-phrase">
+					Тут надо придумать фразу <br> <br> что-то <a href="">о нас</a> <br> <br> но по сути это ссылка
+					на страницу
+					О нас
+				</div>
+				<div class="header__social">
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+					<a href="" target="_blank" class="header__social-item"
+						style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="page-title dark-bg">
+				<div class="container">
+					<div class="page-title__wrapper title">
+						ПРОДВИЖЕНИЕ НА СБЕРМЕГАМАРКЕТ
+					</div>
+				</div>
+			</div>
+
+			<div class="page-header">
+				<div class="container">
+					<div class="page-header__wrapper">
+						<div class="breadcrumb">
+							<ul class="breadcrumb__wrapper">
+								<li class="breadcrumb__item"><a href=""><span>услуги</span></a></li>
+								<li class="breadcrumb__item"><span>продвижение сайтов</span></li>
+							</ul>
+						</div>
+
+						<div class="header-anchor">
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#about-us"> О компании</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#revards">Награды</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#team">Команда</a>
+							</div>
+							<div class="header-anchor__item filter-btn anchor-container">
+								<a class="anchor" href="#clients">Клиенты и партнёры</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="section detail-entrance gray-bg">
+				<div class="container">
+					<div class="detail-entrance__wrapper">
+						<div class="row">
+							<div class="detail-entrance__info">
+								<div class="detail-entrance__title small-list-text black-text">
+									Магазин на СберМегаМаркет
+								</div>
+								<div class="detail-entrance__subtitle">
+									Число маркетплейсов растет, но лидерами также остаются старые крупные веб ресурсы.
+									За годы работы в Сети они создали идеальную инфраструктуру, добились известности и в
+									рекламе практически не нуждаются
+
+								</div>
+								<!-- <div class="detail-entrance__label">ВХОДИМ В ТОП 20 АГЕНТСТВ ИНТЕРНЕТ-МАРКЕТИНГА
+									ПЕТЕРБУРГА</div> -->
+								<div class="detail-entrance__btn btn btn_light">Оставить заявку</div>
+							</div>
+							<div class="detail-entrance__offer  small-title">
+								Нужна помощь в продвижении
+								на маркетплейсах? Поможем
+								разобраться во всех тонкостях!
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_center">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__info small-title ff-rm">
+								<p>
+									Поддерживать в рабочем состоянии свой интернет-магазин и обгонять мощных конкурентов
+									становится все сложнее. Поэтому продавцы объединяются на торговых площадках -
+									маркетплейсах. Продвижение таких сайтов, организация продаж, систем оплат и
+									логистики ложится на плечи администрации веб-ресурсов, а селлерам остается только
+									конкурировать в рамках условий соответствующей торговой площадки.
+								</p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg">
+				<div class=" comment comment_career comment_center">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text large-text tt-uc white-text">
+									СберМегаМаркет - как он появился?
+								</div>
+								<div class="comment__info small-title">
+									<p>
+										Данный маркетплейс ранее назывался "Goods". Старую торговую площадку выкупил
+										Сбербанк, начав ее ребрендинг весной 2021.
+									</p>
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Чтобы исключить риски потери лояльности Сбербанк решил не изменять условия для
+										партнеров, которые ранее работали с Goods. Поэтому при посещении старого URL
+										посетители перенаправляются на другой веб-адрес, а во всех личных кабинетах
+										сохраняется старая информация. Также партнерам не нужно заключать новые договора
+										с владельцем площадки.
+									</p>
+									<p>
+										Но появились некоторые новшества. Например, на маркетплейсе теперь есть удобная
+										авторизация через Сбер ID, а подписчики "СберПрайм" могут порадоваться
+										бесплатной доставке. К тому же возможность списать бонусы "Спасибо" привлекает
+										на площадку многих пользователей дебетовых и кредитных карт Сбербанка.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class=" simple-tile">
+					<div class="container">
+						<div class="simple-tile__text small-title">
+							Для любителей интернет-покупок очевидно, что Сбербанк активно пытается занять нишу
+							среди крупных маркетплейсов. По статистике на 2021 год у маркетплейса:
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									20.000+
+								</div>
+								<div class="simple-tile__text">
+									заказов в сутки
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									7.000.000
+								</div>
+								<div class="simple-tile__text">
+									посетителей ежемесячно
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									8.000+
+								</div>
+								<div class="simple-tile__text">
+									селлеров
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									2.500.000
+								</div>
+								<div class="simple-tile__text">
+									товарных позиций
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									450+
+								</div>
+								<div class="simple-tile__text">
+									населенных пунктов по доставке
+								</div>
+							</div>
+						</div>
+						<div class="simple-tile__text gray-text">
+							Поэтому продавцам стоить уделить максимум внимания этой площадке.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc ">
+								Особенности СберМегаМаркет
+							</div>
+							<div class="comment__info">
+								<p>
+									Универсальная торговая площадка без узкой направленности в настоящее время может
+									похвастаться самым широким ассортиментом в категориях "Электроника" и "Бытовая
+									техника".
+								</p>
+								<p>
+									Предоставляются услуги контакт-центра, есть инструменты расчетно-кассового
+									обслуживания, продвижения товаров, разработана программа лояльности для покупателей.
+								</p>
+								<p>
+									Каждый селлер участвует в программе лояльности. Покупатели получают бонусные рубли
+									за приобретение товаров, которые они могут использовать при оплате новых заказов.
+									Продавец предоставляет им соответствующую скидку, а маркетплейс компенсирует эту
+									сумму перечислении ему денежных средств один раз в неделю.
+								</p>
+							</div>
+						</div>
+
+						<div class="sqr-img ">
+							<div class="sqr-img__wrapper sqr-img__wrapper_right">
+								<img src="./img/sqr-img.png" alt="">
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc ">
+								Как происходит отгрузка
+							</div>
+							<div class="comment__info">
+								<p>
+									Селлеры могут проводить самостоятельную отгрузку и не платить за это. Все, что от
+									них требуется, - вовремя доставлять товары в в "СберМегаМаркет". К сожалению, точки
+									приема есть пока только в столице и Санкт-Петербурге.
+								</p>
+								<p>
+									Также продавец может заказать забор со своего склада. Данная услуга ограничена 50
+									километрами от МКАД. Ее цена - 600 рублей в день. Каждый 25-й заказ стоит 25 рублей.
+								</p>
+							</div>
+						</div>
+
+					</div>
+			</section>
+
+			<section class="section section_container  dark-bg pb-0">
+				<div class="simple-tile">
+					<div class="container">
+						<div class="simple-tile__text large-text tt-uc">
+							Схемы работы маркетплейса
+						</div>
+						<div class="simple-tile__body">
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Вариант 1
+								</div>
+								<div class="simple-tile__text">
+									"Витрина + Самовывоз". Продавец работает напрямую с клиентом. Покупатель бронирует
+									товар в магазине и забирает заказ самостоятельно. Условие - не менее 10 точек в
+									торговой сети селлера и интеграция по API с маркетплейсом.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Вариант 2
+								</div>
+								<div class="simple-tile__text">
+									"Витрина + Доставка селлера". Подойдет, если у селлера имеется своя служба доставки.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Вариант 3
+								</div>
+								<div class="simple-tile__text">
+									"Витрина + Логистика силами маркетплейса". Селлер хранит свои товары на складе
+									"СберМегаМаркет". Отгружаются они в точки приема или отдаются курьеру
+									"СберМегаМаркет". Условия: открытие ИП или ЮЛ, наличие склада не дальше, чем в 50
+									километрах от МКАД.
+								</div>
+							</div>
+							<div class="simple-tile__item">
+								<div class="simple-tile__item-title orange-text small-title">
+									Вариант 4
+								</div>
+								<div class="simple-tile__text">
+									"Витрина + Фулфилмент". Продавец хранит товары на складе "СберМегаМаркет", доставку
+									осуществляет маркетплейс. Подойдет селлерам, которые работают с крупными партиями.
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="comment comment_career comment_top">
+					<div class="container">
+						<div class="comment__wrapper ">
+							<div class="comment__body">
+								<div class="comment__text xlarge-text">
+									Тарифы на услуги
+								</div>
+								<div class="comment__info gray-text">
+									<p>
+										Допустим, селлер доставляет товары самостоятельно. Значит, он отдает площадке
+										минимум 3% от их цены (размер ставки зависит от категории). Денежные средства
+										перечисляются на расчетный счет продавца дважды в неделю.
+									</p>
+									<p>
+										Отдельно берется плата за расчетно-кассовое обслуживание (РКО), которая
+										составляет 1,5% от цены товарной позиции. Стоимость доставки равна 50 руб. за
+										изделие, если его вес менее 25 кг, или 150 руб. за крупногабаритный товар.
+										Комиссию маркетплейс возьмет с продавца только за оплаченный и подтвержденный
+										заказ. А оплата доставки не возвращаются.
+									</p>
+									<p>
+										Если курьер площадки забрал у селлера 10 заказов, а выкупили всего 5 позиций, то
+										продавец оплатит доставку всех 10 заказов
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project-preview">
+					<div class="container">
+						<div class="project-preview__img">
+							<img src="./img/career-wide.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text large-text tt-uc ">
+								Кто может продавать товары на СберМегаМаркет
+							</div>
+							<div class="comment__info">
+								<p>
+									Крупная площадка сотрудничает только с ЮЛ или ИП. Самозанятые или физические лица
+									продавать товары на "СберМегаМаркет" не имеют права. А ИП и ЮЛ должны иметь 47
+									ОКВЭД. Хотя в скором времени маркетплейс обещает расширить рамки также для
+									самозанятых.
+								</p>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title">
+								Как происходит регистрация на площадке
+							</div>
+							<div class="comment__info">
+								<p>
+									Повторим: для работы на этом маркетплейсе селлеру необходимо открыть ИП или ЮЛ.
+									Менеджер проверяет все документы и подписанное соглашение, затем продавец получает
+									доступ к личному кабинету.
+								</p>
+								<p>
+									Необходимо также подписать оферту на продажи физлицам, чтобы в случае возможных
+									претензий покупатели предъявляли их не к площадке, а непосредственно к селлеру.
+								</p>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__text small-title black-text">
+						Шаги по регистрации на "СберМегаМаркет"
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Заполните форму.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Маркетплейс пришлет вам письмо, в ответ на которое необходимо прислать учредительные
+								документы и согласиться с офертой.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Ожидайте ответ на указанный при регистрации email с доступами к личному кабинету.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Войдите в личный кабинет.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Загрузите ваши товары.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Оформите тестовый заказ.
+							</div>
+						</div>
+					</div>
+
+					<div class="simple-tile__text">
+						<p>
+							Небольшая разница между подключениями ИП и ЮЛ состоит в пакете документов, которых для ЮЛ
+							немного больше, чем для ИП.
+						</p>
+						<p>
+							Загрузка товаров может осуществляться вручную или посредством массового импорта. Если ваши
+							товары есть в 1С или "Мой Склад", то есть возможность выгрузить весь ассортимент под
+							необходимый формат файла.
+						</p>
+						<p>
+							В личном кабинете селлеры видят заказы, акты сверок, платежные поручения и необходимые
+							закрывающие документы, которые появляются 6 числа месяца, следующего за отчетным. Бумаги
+							можно получать также в электронном формате, если настроить соответствующий обмен в
+							"Контур.Диадок". Процесс получения бумажных оригиналов обходится в 1500 рублей ежемесячно.
+							Если в этот период продаж не было - селлер ничего не платит.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section simple-tile simple-tile_counter">
+				<div class="container">
+					<div class="simple-tile__text large-text black-text tt-uc">
+						Для чего нужно продвижение на площадке
+					</div>
+					<div class="simple-tile__text">
+						<p>
+							Особенность "СберМегаМаркет" в том, что для одинаковых продуктов создаются идентичные
+							карточки. Предложения разных селлеров покупатель видит на одной странице, где может сравнить
+							цены и отзывы. Поэтому товары, у которых привлекательные и полные описания, дополненные
+							положительными отзывами покупателей имеют все шансы обойти конкурентов по количеству продаж.
+						</p>
+						<p>
+							Также на заказы значительно влияет рейтинг самого продавца. Если он хороший - его
+							предложения высоко поднимаются в общем списке товаров.
+						</p>
+					</div>
+
+					<div class="simple-tile__subtitle orange-text">
+						Действия, которые помогут повысить рейтинг продавца:
+					</div>
+
+					<div class="simple-tile__body">
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Быстрое подтверждение заказов (до 2 часов).
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Поддержание и планирование товарных остатков на складе.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Конкурентные цены.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Актуальные сроки отгрузки.
+							</div>
+						</div>
+						<div class="simple-tile__item ">
+							<div class="simple-tile__text">
+								Устранение неликвидных товаров, которые часто возвращают покупатели или не покупают.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section comment comment_career comment_top">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-title">
+								СберМегаМаркет — отличный маркетплейс для начинающих селлеров. Его потенциал просто
+								огромен, так как площадка находится под широким крылом Сбербанка. Поэтому не теряйте
+								время и осваивайте ее, а сотрудники компании "НастАртВЕБ" помогут вам в этом.
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section class="dark-bg section comment comment_career comment_center mb-0">
+				<div class="container">
+					<div class="comment__wrapper ">
+						<div class="comment__body">
+							<div class="comment__text small-list-text ff-tektur">
+								Компания "НастАртВЕБ"
+							</div>
+							<div class="comment__info gray-text small-title ff-rm">
+								<p>
+									с 2014 года специализируется на продвижении брендов в условиях различных
+									маркетплейсов. В настоящее время специалисты активно работают с площадкой
+									"СберМегаМаркет". Мы регистрируем продавцов на площадке, изучаем конкурентов,
+									правильно заполняем карточки товаров, создаем продающие описания с ключевыми
+									запросами, стимулируем покупателей оставлять отзывы. </p>
+							</div>
+						</div>
+						<a href="#popup" data-fancybox="" class="comment__btn round-btn round-btn_light">
+							<span class="round-btn__circle-text"
+								style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+							<span class="round-btn__center-icon"
+								style="-webkit-mask-image:url(./img/icon/button-nw.svg)"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review mt-0">
+				<a href="" class="review__title title">отзывы</a>
+				<div class="review__slider swiper-container">
+					<div class="review__wrapper swiper-wrapper">
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								<div class="review__company">«ПИК-Недвижимость»</div>
+								<div class="review__author">Игорь, учредитель компании</div>
+								<p>
+									Хочу поблагодарить компанию «НастАрт ВЕБ» в лице генерального директора Артема и
+									сотрудника компании Дианы! За плодотворное сотрудничество. Ребята показали себя
+									настоящими профессионалами <br> Разработали нам отличный сайт и настроили рекламную
+									кампанию
+								</p>
+								<p>Всем рекомендую! Ребята знают своё дело. <br> Спасибо!</p>
+								<p></p>
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары.
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+						<div class="review__slide swiper-slide">
+							<div class="review__description">
+								Наши сотрудники постоянно развиваются, посещают различные
+								семинары, курсы, вебинары. Мы никогда не стоим на месте, и постоянно внедряем в свою
+								работу новейшие интернет-технологии. Мы не только в курсе последних тенденций, мы еще и
+								успешно применяем их на практике!
+							</div>
+							<div class="review__photo">
+								<a href="https://www.youtube.com/watch?v=Z0oStgF6yaw"
+									class="review__btn round-btn round-btn_play">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button2.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-play.svg)"></span>
+								</a>
+
+								<img src="./img/review.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="review-controls slider-controls">
+						<div class="slider-pagination review-pagination"></div>
+						<div class="slider-navigation review-navigation">
+							<div class="slider-prev review-prev">назад</div>
+							<div class="slider-next review-next">а ещё</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_container dark-bg m-0">
+				<div class=" cert dark-bg " id="revards">
+					<div class="container">
+						<div class="cert__wrapper">
+							<div class="cert__header">
+								<div class="cert__header-text">
+									<div class="cert__title title"><span>наши </span>дипломы и
+										Сертификаты</div>
+									<div class="cert__subtitle">
+										Наши сотрудники постоянно развиваются, посещают различные семинары, курсы,
+										вебинары.
+										Мы
+										никогда не стоим на месте, и постоянно внедряем в свою работу новейшие
+										интернет-технологии.
+									</div>
+								</div>
+								<div class="cert__round-btn round-btn round-btn_light">
+									<span class="round-btn__circle-text"
+										style="-webkit-mask-image:url(./img/icon/button.svg)"></span>
+									<span class="round-btn__center-icon"
+										style="-webkit-mask-image:url(./img/icon/button-arrow.svg)"></span>
+								</div>
+							</div>
+							<div class="cert__preview">
+								<img src="./img/certificates.png" alt="">
+							</div>
+						</div>
+						<div class="cert__body">
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Сертификаты</div>
+								<div class="cert__filter">
+									<div class="partners__filter-btn filter-btn">НастАртВЕБ</div>
+									<div class="partners__filter-btn filter-btn">Сотрудники</div>
+								</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert1.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert2.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert3.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/cert/cert4.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cert__item">
+								<div class="cert__name small-list-text">Дипломы</div>
+								<div class="cert__slider swiper-container">
+									<div class="cert__slider-wrapper swiper-wrapper">
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/rating_diplom.png" alt="">
+										</div>
+										<div class="cert__slide swiper-slide">
+											<img src="./img/diploma/Рейтинг.png" alt="">
+										</div>
+									</div>
+									<div class="cert__controls slider-controls">
+										<div class="slider-pagination cert-pagination"></div>
+										<div class="slider-navigation cert-navigation">
+											<div class="slider-prev cert-prev">назад</div>
+											<div class="slider-next cert-next">а ещё</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=" partners dark-bg m-0" id="clients">
+					<div class="container">
+						<div class="partners__wrapper partners__wrapper_reverse">
+							<div class="partners__header">
+								<h2 class="partners__title title">нам доверяют</h2>
+								<div class="partners__filter">
+									<div class="partners__filter-btn filter-btn">Клиенты</div>
+									<div class="partners__filter-btn filter-btn">Партнёры</div>
+								</div>
+							</div>
+							<div class="partners__slider ">
+								<div class="partners__list swiper-wrapper">
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner1.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner2.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner3.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner4.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner5.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner6.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner16.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner7.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner8.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner9.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner10.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner11.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner12.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner13.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner14.png" alt="">
+									</div>
+									<div class="partners__item swiper-slide">
+										<img src="./img/partner/partner15.png" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="partners-controls slider-controls">
+								<div class="slider-pagination partners-pagination"></div>
+								<div class="slider-navigation partners-navigation">
+									<div class="slider-prev partners-prev">назад</div>
+									<div class="slider-next partners-next">а ещё</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section link-block ">
+				<div class="container">
+					<div class="link-block__wrapper">
+						<div class="link-block__title xlarge-text black-text">
+							Сомневаетесь, что вам нужно именно продвижение на GMC?
+						</div>
+						<div class="link-block__list">
+							<a href="" class="filter-btn">сайт-визитка</a>
+							<a href="" class="filter-btn">корпоративный сайт</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт с каталогом</a>
+							<a href="" class="filter-btn">сайт-каталог с корзиной</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+							<a href="" class="filter-btn">интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer dark-bg footer_big">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Разработка </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">Разработка сайтов</a></li>
+								<li class="footer__list-item"><a href="">Сайт-визитка</a></li>
+								<li class="footer__list-item"><a href="">Сайт с каталогом</a></li>
+								<li class="footer__list-item"><a href="">Интернет-магазин</a></li>
+								<li class="footer__list-item"><a href="">Landing-page</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<a href="" class="footer__title small-title"> Продвижение и реклама </a>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a href="">SEO-продвижение</a></li>
+								<li class="footer__list-item"><a href="">Комплексное продвижение</a></li>
+								<li class="footer__list-item"><a href="">Крауд-маркетинг</a></li>
+								<li class="footer__list-item"><a href="">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a href="">SMM-продвижение</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__social">
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/vk.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/telegram.svg);"></a>
+							<a href="" target="_blank" class="footer__social-item"
+								style="-webkit-mask-image: url(./img/icon/whatsapp.svg);"></a>
+						</div>
+						<div class="footer__info">
+							<div class="footer__phones">
+								<a href="tel:+78123098510" class="footer__phone">+7 (812) 309-85-10</a>
+								<a href="tel:+78129094035" class="footer__phone">+7 (812) 909-40-35</a>
+							</div>
+							<div class="footer__mail">
+								<a href="mailto:info@nastart-web.ru">info@nastart-web.ru</a>
+							</div>
+							<div class="footer__location">г. Санкт-Петербург, Фермское шоссе 30, офис 111</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__developer">
+					© 2022 Digital-агентство полного цикла "НастАртВЕБ"
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+</body>
+
+</html>
