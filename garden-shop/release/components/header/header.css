@@ -1,3 +1,223 @@
 .header {
-  background-color: red;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.header_stick .header__line {
+  height: 0;
+}
+.header_stick .header__btm {
+  margin-top: -60px;
+}
+.header__line {
+  display: flex;
+  background: #f7f8fb;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  height: 60px;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+.header__line-discount {
+  color: #124144;
+}
+.header__line-logo {
+  object-fit: contain;
+}
+.header__link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #8a8894;
+}
+.header__link span {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  padding: 13px 0;
+}
+.header__region {
+  width: 307px;
+}
+.header__region:hover .header__region-title::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.header__region:hover .header__region-list {
+  opacity: 1;
+  pointer-events: all;
+}
+.header__region-title {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+.header__region-title::before {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url(../../images/icons/Map_Pin.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__region-title::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/icons/Caret_Down_SM.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all ease 0.5s;
+}
+.header__region-list {
+  transition: all ease 0.5s;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.header__wrapper {
+  background-color: #fff;
+}
+.header__mid {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+.header__logo {
+  width: 160px;
+  height: 50px;
+}
+.header__search {
+  width: 100%;
+  max-width: 705px;
+}
+.header__body {
+  display: flex;
+  gap: 30px;
+}
+.header__login {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../images/icons/personal\ account.svg);
+}
+.header__body-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.header__body-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f93232;
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  transform: scale(0);
+  transition: all ease 0.5s;
+  font-weight: 600;
+  font-size: 12px;
+  font-feature-settings: normal;
+}
+.header__body-btn_notification span {
+  transform: scale(1);
+}
+.header__body-btn-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.header__nav-btn {
+  padding: 10px 20px;
+}
+.header__btm {
+  display: flex;
+  gap: 30px;
+  padding-top: 15px;
+  overflow: hidden;
+  transition: all ease 0.5s;
+  height: 60px;
+}
+.header__nav-links {
+  background: #f7f8fb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+}
+.search__form {
+  display: flex;
+  width: 100%;
+}
+.search__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 5px 5px 0px;
+}
+.search__btn span {
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+.search__input {
+  border: 1.5px solid #e25b26;
+  border-radius: 5px 0px 0px 5px;
+  padding: 13px 20px;
+  width: 100%;
 }

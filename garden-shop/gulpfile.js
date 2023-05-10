@@ -111,7 +111,6 @@ function building() {
 		.pipe(dest('./release'))
 }
 
-
 // html composer
 const fileinclude = require('gulp-file-include')
 function fileincluding() {
@@ -127,17 +126,17 @@ const fs = require('fs');
 const fonter = require('gulp-fonter');
 const outToTtf = () => {
 	// Ищем файлы шрифтов .otf, .eot
-	return src(`dev/fonts/*.{eot,otf}`, {})
+	return src(`dev/fonts/*.{eot,otf}`)
 		// Конвертируем в .ttf
 		.pipe(fonter({
 			formats: ['ttf']
 		}))
 		// Выгружаем в исходную папку
-		.pipe(dest(`release/fonts/`))
+		.pipe(dest(`release/fonts`))
 		// Ищем файлы шрифтов .ttf
-		.pipe(src(`dev/fonts/*.ttf`))
+		.pipe(src(['dev/fonts/*',], { base: 'dev' }))
 		// Выгружаем в исходную папку
-		.pipe(dest(`release/fonts/`))
+		.pipe(dest(`./release`))
 }
 exports.outToTtf = outToTtf;
 
@@ -146,7 +145,7 @@ exports.outToTtf = outToTtf;
 const fontsStyle = () => {
 	let fontsFile = `dev/style/scss/fonts.scss`;
 	// Проверяем существует ли файлы шрифтов
-	fs.readdir('release/fonts/', function (err, fontsFiles) {
+	fs.readdir('dev/fonts/', function (err, fontsFiles) {
 		if (fontsFiles) {
 			// Проверяем существует ли файл стилей для подключения шрифтов
 			if (!fs.existsSync(fontsFile)) {
@@ -178,7 +177,7 @@ const fontsStyle = () => {
 						} else {
 							fontWeight = 400;
 						}
-						fs.appendFile(fontsFile, `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.ttf") format("ttf"), url("../fonts/${fontFileName}.ttf") format("ttf");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`, cb);
+						fs.appendFile(fontsFile, `@font-face {\n\tfont-family: ${fontName};\n\tsrc: url(../fonts/${fontFileName}.ttf);\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`, cb);
 						newFileOnly = fontFileName;
 					}
 				}

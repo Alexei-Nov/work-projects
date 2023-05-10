@@ -1,19 +1,129 @@
-html {
+body {
+  font-family: "TTWELLINGTONS";
+  font-feature-settings: "pnum" on, "lnum" on;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 140%;
+  color: #212121;
 }
 
-.main {
-  font-size: 24px;
-  position: relative;
+.page-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 67px;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  color: #3f3f3f;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 125%;
+}
+
+.caption-large {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.caption-small {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.demibold {
+  font-weight: 600;
+}
+
+@media (max-width: 570px) {
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .btn {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1;
   padding: 0.875em 1.5625em;
-  background-color: #333;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   width: fit-content;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+  color: #fff;
+  --color: #e25b26;
+  background: var(--color);
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover {
+  --color: #cc5222;
+}
+.btn:active {
+  --color: #b5491e;
+}
+.btn_green {
+  --color: #124144;
+}
+.btn_green:hover {
+  --color: #103b3d;
+}
+.btn_green:active {
+  --color: #0d2e30;
+}
+.btn_transparent {
+  background-color: transparent;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+.btn_large {
+  font-size: 24px;
+}
+.btn_medium {
+  font-size: 16px;
+}
+.btn_small {
+  font-size: 14px;
+}
+.btn_xsmall {
+  font-size: 10px;
+}
+.btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange-text {
+  color: #e25b26 !important;
+}
+
+.container {
+  width: 1560px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.filler {
+  height: 5000px;
+  background-color: #64bbd1;
 }

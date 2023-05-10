@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll('[type="tel"]').forEach((e=>{IMask(e,{mask:"+{7}(000)000-00-00"})}))}));
+document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll('[type="tel"]').forEach((e=>{IMask(e,{mask:"+{7}(000)000-00-00"})})),document.addEventListener("scroll",(e=>{window.pageYOffset>60?document.querySelector(".header").classList.add("header_stick"):document.querySelector(".header").classList.remove("header_stick")}))}));
