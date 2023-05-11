@@ -1,0 +1,207 @@
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Thin.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-UltraLight.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Black.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Heavy.ttf);
+  font-weight: 1000;
+  font-style: normal;
+}
+
+.block-info {
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gilroy";
+  font-weight: 400;
+  padding-top: 7.4364vw;
+}
+
+.block-info__logo {
+  max-width: 47.94521vw;
+  margin: 0 auto;
+  margin-bottom: 6.197vw;
+}
+
+.block-info__item {
+  border-radius: 3.13112vw;
+  border: 0.26093vw solid rgba(255, 255, 255, 0.5);
+  padding: 2.93542vw 6.0013vw;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  padding-bottom: 2.41357vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 8.4801vw;
+  line-height: 10.56751vw;
+  color: #ffffff;
+}
+
+.block-info__item-tel svg {
+  width: 4.17482vw;
+  height: 5.54468vw;
+}
+
+.block-info__location {
+  font-size: 4.10959vw;
+  line-height: 5.28376vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+.block-info__reglament {
+  font-size: 4.56621vw;
+  line-height: 5.28376vw;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 0.32616vw;
+}
+
+.block-info__desc {
+  border-top: 0.13046vw solid rgba(255, 255, 255, 0.5);
+  padding-top: 1.95695vw;
+  margin-top: 1.82648vw;
+  width: 100%;
+}
+
+.block-info__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3.00065vw;
+          column-gap: 3.00065vw;
+  row-gap: 4.63144vw;
+  margin-top: 7.2407vw;
+  font-size: 4.89237vw;
+  line-height: 5.67515vw;
+  color: #ffffff;
+}
+
+.block-info__social-link {
+  border-radius: 1.63079vw;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border: 0.26093vw solid rgba(255, 255, 255, 0.5);
+  padding: 2.73973vw 3.5225vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.5225vw;
+}
+
+.block-info__social-link svg {
+  width: 7.2407vw;
+  height: 7.2407vw;
+}
+
+.block-info__btn {
+  margin-top: 4.63144vw;
+  padding: 3.06588vw;
+  padding-bottom: 3.65297vw;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 1.63079vw;
+  border: 0.26093vw solid #ffffff;
+  font-weight: 700;
+  font-size: 4.89237vw;
+  line-height: 5.93607vw;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+
+.block-info__btn_gray {
+  background: rgba(255, 255, 255, 0.55);
+  color: #1a1b1f;
+}
+
+.block-info__text {
+  font-weight: 300;
+  font-size: 4.89237vw;
+  line-height: 5.60992vw;
+  text-align: center;
+  color: #ffffff;
+  padding: 2.87019vw 0;
+}
+
+.container {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4.82714vw;
+}

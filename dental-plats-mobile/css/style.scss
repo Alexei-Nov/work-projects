@@ -1,0 +1,176 @@
+@function toVW($pxValue) {
+    @return ($pxValue / 1533px) * 100vw;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-UltraLight.ttf);
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Heavy.ttf);
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.block-info {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gilroy";
+    font-weight: 400;
+    padding-top: toVW(114px);
+    &__logo {
+        max-width: toVW(735px);
+        margin: 0 auto;
+        margin-bottom: toVW(95px);
+    }
+    &__item {
+        border-radius: toVW(48px);
+        border: toVW(4px) solid rgba(255, 255, 255, 0.5);
+        padding: toVW(45px) toVW(92px);
+        backdrop-filter: blur(25px);
+        padding-bottom: toVW(37px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-weight: 500;
+        font-size: toVW(130px);
+        line-height: toVW(162px);
+        color: #ffffff;
+    }
+    &__item-tel {
+        & svg {
+            width: toVW(64px);
+            height: toVW(85px);
+        }
+    }
+    &__location {
+        font-size: toVW(63px);
+        line-height: toVW(81px);
+        color: #ffffff;
+        text-align: center;
+    }
+    &__reglament {
+        font-size: toVW(70px);
+        line-height: toVW(81px);
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.5;
+        margin-top: toVW(5px);
+    }
+    &__desc {
+        border-top: toVW(2px) solid rgba(255, 255, 255, 0.5);
+        padding-top: toVW(30px);
+        margin-top: toVW(28px);
+        width: 100%;
+    }
+    &__social {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: toVW(46px);
+        row-gap: toVW(71px);
+        margin-top: toVW(111px);
+        font-size: toVW(75px);
+        line-height: toVW(87px);
+        color: #ffffff;
+    }
+    &__social-link {
+        border-radius: toVW(25px);
+        backdrop-filter: blur(25px);
+        border: toVW(4px) solid rgba(255, 255, 255, 0.5);
+        padding: toVW(42px) toVW(54px);
+        display: flex;
+        align-items: center;
+        gap: toVW(54px);
+        & svg {
+            width: toVW(111px);
+            height: toVW(111px);
+        }
+    }
+    &__btn {
+        margin-top: toVW(71px);
+        padding: toVW(47px);
+        padding-bottom: toVW(56px);
+        backdrop-filter: blur(25px);
+        border-radius: toVW(25px);
+        border: toVW(4px) solid #ffffff;
+        font-weight: 700;
+        font-size: toVW(75px);
+        line-height: toVW(91px);
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        &_gray {
+            background: rgba(255, 255, 255, 0.55);
+            color: #1a1b1f;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: toVW(75px);
+        line-height: toVW(86px);
+        text-align: center;
+        color: #ffffff;
+        padding: toVW(44px) 0;
+    }
+}
+
+.container {
+    width: toVW(1533px);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 toVW(74px);
+}
