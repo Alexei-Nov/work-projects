@@ -11,10 +11,15 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style-result.css" />
 
-	<script src="../../js/main.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../../js/main-result.js"></script>
 
 	<title>@@title</title>
 </head>
@@ -35,14 +40,17 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__top">
-						<div class="header__region caption">
-							<div class="header__region-title">Санкт-Петербург, Ленинградская область</div>
-							<div class="header__region-list">
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+						<div class="header__region dropdown caption">
+							<div class="header__region-title dropdown__title">Санкт-Петербург, Ленинградская область
+							</div>
+							<div class="header__region-list dropdown__list">
+								<div class="header__region-item dropdown__item"><a href="#">1</a>
 								</div>
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+								<div class="header__region-item dropdown__item"><a href="#">2</a>
 								</div>
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+								<div class="header__region-item dropdown__item"><a href="#">Санкт-Петербург,
+										Ленинградская область
+									</a>
 								</div>
 							</div>
 						</div>

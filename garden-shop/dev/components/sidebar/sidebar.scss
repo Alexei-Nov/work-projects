@@ -1,0 +1,17 @@
+.sidebar {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__link {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    &__link-icon {
+        display: block;
+        width: 24px;
+        height: 22px;
+    }
+}

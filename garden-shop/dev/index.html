@@ -1,8 +1,18 @@
 @@include('components/header/header.html',{ "title": "Главная" })
 
-<section class="section filler">
+<section class="section home-block">
 	<div class="container">
+		<div class="home-block__wrapper">
+			@@include('components/sidebar/sidebar.html')
+			@@include('components/home-slider/home-slider.html',{ "title": "Новые акции" })
+			@@include('components/default-slider/default-slider.html',{ "title": "Товары недели" })
+		</div>
+	</div>
+</section>
 
+<section class="section">
+	<div class="container">
+		@@include('components/default-slider/default-slider.html',{ "title": "Хиты продаж" })
 	</div>
 </section>
 

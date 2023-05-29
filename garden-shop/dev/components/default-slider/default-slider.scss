@@ -1,0 +1,9 @@
+.default-slider {
+    width: 100%;
+    &__slide {
+        width: fit-content;
+    }
+    &__holder {
+        position: relative;
+    }
+}

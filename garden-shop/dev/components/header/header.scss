@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #fff;
     z-index: 10;
-    &_stick {
+    &-stick {
         & .header {
             &__line {
                 height: 0;
@@ -60,22 +60,9 @@
     }
     &__region {
         width: 307px;
-        &:hover {
-            & .header__region-title {
-                &::after {
-                    transform: translateY(-50%) rotate(180deg);
-                }
-            }
-            & .header__region-list {
-                opacity: 1;
-                pointer-events: all;
-            }
-        }
     }
     &__region-title {
-        position: relative;
         padding-left: 25px;
-        padding-right: 30px;
         &::before {
             display: block;
             content: "";
@@ -90,32 +77,9 @@
             top: 50%;
             transform: translateY(-50%);
         }
-        &::after {
-            display: block;
-            content: "";
-            width: 20px;
-            height: 20px;
-            background-image: url(../../images/icons/Caret_Down_SM.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: all ease 0.5s;
-        }
     }
     &__region-list {
-        transition: all ease 0.5s;
-        opacity: 0;
-        position: absolute;
-        pointer-events: none;
         background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
     }
     &__wrapper {
         background-color: #fff;

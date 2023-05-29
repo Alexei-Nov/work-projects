@@ -134,3 +134,138 @@ body {
 	height: 1500px;
 	background-color: #64bbd1;
 }
+
+.dropdown {
+	position: relative;
+	z-index: 3;
+	&__list {
+		transition: all ease 0.5s;
+		opacity: 0;
+		position: absolute;
+		pointer-events: none;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 20px;
+		z-index: 1;
+	}
+	&__title {
+		position: relative;
+		padding-right: 30px;
+		cursor: pointer;
+		user-select: none;
+		&::after {
+			display: block;
+			content: "";
+			width: 20px;
+			height: 20px;
+			background-image: url(../../images/icons/Caret_Down_SM.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: all ease 0.5s;
+		}
+	}
+	&_active .dropdown {
+		&__list {
+			opacity: 1;
+			pointer-events: all;
+		}
+		&__title {
+			&::after {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+}
+
+.main {
+	padding-top: 276px;
+	transition: all ease 0.5s;
+}
+
+.header-stick {
+	& .main {
+		padding-top: 156px;
+	}
+}
+
+.home-block {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 230px auto 360px;
+		gap: 30px;
+		width: 100%;
+	}
+}
+
+.slider-pagination {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	min-height: 7px;
+	& .swiper-pagination-bullet {
+		display: flex;
+		width: 5px;
+		height: 5px;
+		margin: 0 !important;
+		opacity: 1;
+		transition: all ease 0.5s;
+		background: #c9c8d3;
+	}
+	& .swiper-pagination-bullet-active {
+		width: 7px;
+		height: 7px;
+		background: #8a8894;
+	}
+}
+
+.slider-navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.slider-prev,
+.slider-next {
+	width: 30px;
+	height: 30px;
+	background-color: #f7f8fb;
+	border-radius: 5px;
+	overflow: hidden;
+	background-image: url(../../images/icons/slider-arrow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: all ease 0.5s;
+}
+
+.slider-next {
+	transform: scale(-1);
+}
+
+.rating-stars {
+	background-image: url(../../images/icons/rating-empty.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 96px;
+	height: 16px;
+	position: relative;
+	&__current {
+		background-image: url(../../images/icons/rating-full.svg);
+		background-repeat: no-repeat;
+		background-position: center left;
+		position: absolute;
+		height: 100%;
+	}
+}

@@ -11,10 +11,15 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style-result.css" />
 
-	<script src="../../js/main.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="../../js/main-result.js"></script>
 
 	<title>Главная</title>
 </head>
@@ -35,14 +40,17 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__top">
-						<div class="header__region caption">
-							<div class="header__region-title">Санкт-Петербург, Ленинградская область</div>
-							<div class="header__region-list">
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+						<div class="header__region dropdown caption">
+							<div class="header__region-title dropdown__title">Санкт-Петербург, Ленинградская область
+							</div>
+							<div class="header__region-list dropdown__list">
+								<div class="header__region-item dropdown__item"><a href="#">1</a>
 								</div>
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+								<div class="header__region-item dropdown__item"><a href="#">2</a>
 								</div>
-								<div class="header__region-item"><a href="">Санкт-Петербург, Ленинградская область</a>
+								<div class="header__region-item dropdown__item"><a href="#">Санкт-Петербург,
+										Ленинградская область
+									</a>
 								</div>
 							</div>
 						</div>
@@ -206,9 +214,556 @@
 		</header>
 		<main class="main">
 
-<section class="section filler">
+<section class="section home-block">
 	<div class="container">
+		<div class="home-block__wrapper">
+			<nav class="sidebar">
+    <ul class="sidebar__list">
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-1.svg" alt="icon">
+                </span>
+                Минитракторы
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-2.svg" alt="icon">
+                </span>
+                Тракторы
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-3.svg" alt="icon">
+                </span>
+                Мотоблоки
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-4.svg" alt="icon">
+                </span>
+                Навесное оборудование
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-5.svg" alt="icon">
+                </span>
+                Двигатели
+            </a>
+        </li>
+        <li class="sidebar__item">
+            <a href="" class="sidebar__link">
+                <span class="sidebar__link-icon">
+                    <img src="./images/icons/sidebar-6.svg" alt="icon">
+                </span>
+                Запасные части
+            </a>
+        </li>
+    </ul>
+</nav>
+			<div class="home-slider">
+    <div class="title">Новые акции</div>
+    <div class="home-slider__container swiper">
+        <div class="home-slider__wrapper swiper-wrapper">
+            <a href="#" class="home-slider__slide swiper-slide">
+                <div class="home-slider__text">
+                    <div class="home-slider__title home-slider__title_leaf orange-text page-title">Скидка
+                        10%
+                    </div>
+                    <div class="home-slider__desc title">На минитракторы Shifeng SF-240B</div>
+                </div>
+                <div class="home-slider__img">
+                    <picture>
+                        <source media="(max-width: 570px)"
+                            srcset="./images/home-slider/mob-banner.png">
+                        <source media="(max-width: 768px)"
+                            srcset="./images/home-slider/tab-banner.png">
+                        <img src="./images/home-slider/web-banner.png" alt="img">
+                    </picture>
+                </div>
+            </a>
+            <a href="#" class="home-slider__slide swiper-slide">
+                <div class="home-slider__text">
+                    <div class="home-slider__title home-slider__title_leaf orange-text page-title">Скидка
+                        10%
+                    </div>
+                    <div class="home-slider__desc title">На минитракторы Shifeng SF-240B</div>
+                </div>
+                <div class="home-slider__img">
+                    <picture>
+                        <source media="(max-width: 570px)"
+                            srcset="./images/home-slider/mob-banner.png">
+                        <source media="(max-width: 768px)"
+                            srcset="./images/home-slider/tab-banner.png">
+                        <img src="./images/home-slider/web-banner.png" alt="img">
+                    </picture>
+                </div>
+            </a>
+            <a href="#" class="home-slider__slide swiper-slide">
+                <div class="home-slider__text">
+                    <div class="home-slider__title home-slider__title_leaf orange-text page-title">Скидка
+                        10%
+                    </div>
+                    <div class="home-slider__desc title">На минитракторы Shifeng SF-240B</div>
+                </div>
+                <div class="home-slider__img">
+                    <picture>
+                        <source media="(max-width: 570px)"
+                            srcset="./images/home-slider/mob-banner.png">
+                        <source media="(max-width: 768px)"
+                            srcset="./images/home-slider/tab-banner.png">
+                        <img src="./images/home-slider/web-banner.png" alt="img">
+                    </picture>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="home-slider__pagination slider-pagination"></div>
+    <div class="home-slider__navigation slider-navigation">
+        <div class="home-slider__prev slider-prev"></div>
+        <div class="home-slider__next slider-next"></div>
+    </div>
+</div>
+			<div class="default-slider">
+    <div class="title">Товары недели</div>
+    <div class="default-slider__holder">
+        <div class="default-slider__container swiper">
+            <div class="default-slider__wrapper swiper-wrapper">
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:50%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">Нет в наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="default-slider__pagination slider-pagination"></div>
+        </div>
+        <div class="default-slider__navigation slider-navigation">
+            <div class="default-slider__prev slider-prev"></div>
+            <div class="default-slider__next slider-next"></div>
+        </div>
+    </div>
 
+</div>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="default-slider">
+    <div class="title">Хиты продаж</div>
+    <div class="default-slider__holder">
+        <div class="default-slider__container swiper">
+            <div class="default-slider__wrapper swiper-wrapper">
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:50%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">Нет в наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="default-slider__slide swiper-slide">
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__sticker demibold">-10%</div>
+                            <div class="card__sticker card__sticker_gray ">До 11.04</div>
+                        </div>
+                        <a href="" class="card__img">
+                            <img src="./images/card.png" alt="card">
+                        </a>
+                        <a href="" class="card__name">Трактор Shifeng | Шифенг SF-240В</a>
+                        <div class="card__mid">
+                            <div class="card__rating">
+                                <div class="card__rating-stars rating-stars">
+                                    <div class="rating-stars__current" style="width:100%"></div>
+                                </div>
+                                <div class="card__rating-num caption">8</div>
+                            </div>
+                            <div class="card__state card__state_false caption-large">В наличии</div>
+                        </div>
+                        <div class="card__bot">
+                            <div class="card__price-wrapper">
+                                <div class="card__price">
+                                    <div class="card__current-price demibold subtitle">
+                                        349 900 ₽
+                                    </div>
+                                    <div class="card__price-difference caption">-20 000 </div>
+                                </div>
+                                <div class="card__old-price caption">369 900 ₽</div>
+                            </div>
+                            <div class="card__basket"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="default-slider__pagination slider-pagination"></div>
+        </div>
+        <div class="default-slider__navigation slider-navigation">
+            <div class="default-slider__prev slider-prev"></div>
+            <div class="default-slider__next slider-next"></div>
+        </div>
+    </div>
+
+</div>
 	</div>
 </section>
 

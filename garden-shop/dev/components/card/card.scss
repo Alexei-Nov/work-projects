@@ -1,0 +1,83 @@
+.card {
+    width: 360px;
+    height: 396px;
+    max-width: 100%;
+    border: 1.5px solid #ebebeb;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    &__name {
+        margin: 20px 0;
+        display: block;
+    }
+    &__mid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__state {
+        padding-right: 20px;
+        background-image: url(../../images/icons/state_true.svg);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: center right;
+        color: #33b939;
+        line-height: 100%;
+        &_false {
+            color: #f93232;
+            background-image: url(../../images/icons/state_false.svg);
+        }
+    }
+    &__img {
+        margin-top: 40px;
+        display: block;
+    }
+    &__sticker {
+        height: 30px;
+        min-width: 80px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        border-radius: 5px;
+        background: #e25b26;
+        color: #fff;
+        margin-right: 5px;
+        &_gray {
+            background: #f7f8fb;
+            color: #8a8894;
+        }
+    }
+    &__top {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    &__rating {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__rating-num {
+        color: #8a8894;
+        height: 100%;
+    }
+    &__price {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    &__price-difference {
+        padding: 4px 11px;
+        background: #f7f8fb;
+        border-radius: 5px;
+        color: #8a8894;
+    }
+    &__old-price {
+        margin-top: 5px;
+        color: #8a8894;
+        text-decoration-line: line-through;
+    }
+}
