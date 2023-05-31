@@ -29,6 +29,12 @@
 .header__line-logo {
   object-fit: contain;
 }
+.header__line-img {
+  height: 100%;
+}
+.header__line-img img {
+  height: 100%;
+}
 .header__link {
   display: flex;
   gap: 5px;
@@ -87,6 +93,7 @@
   position: relative;
   z-index: 2;
   background-color: #fff;
+  gap: 30px;
 }
 .header__logo {
   width: 160px;
@@ -101,7 +108,9 @@
   gap: 30px;
 }
 .header__login {
-  width: 50px;
+  display: block;
+  width: 100%;
+  max-width: 50px;
   height: 50px;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -138,6 +147,9 @@
 .header__body-btn_notification span {
   transform: scale(1);
 }
+.header__body-btn_mobile {
+  display: none;
+}
 .header__body-btn-icon {
   width: 24px;
   height: 24px;
@@ -163,6 +175,13 @@
   padding: 10px 50px;
   align-items: center;
   width: 100%;
+  overflow-x: auto;
+}
+.header__nav-links::-webkit-scrollbar {
+  display: none;
+}
+.header__nav-link {
+  white-space: nowrap;
 }
 
 .search {
@@ -188,4 +207,87 @@
   border-radius: 5px 0px 0px 5px;
   padding: 13px 20px;
   width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .header__body {
+    gap: 15px;
+  }
+  .header__body-btn {
+    display: none;
+  }
+  .header__body-btn_mobile {
+    display: flex;
+  }
+  .header__search {
+    max-width: none;
+  }
+  .header__nav-btn {
+    display: none;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__order-btn {
+    display: none;
+  }
+  .header__line {
+    display: none;
+  }
+  .header__search {
+    margin-right: 15px;
+  }
+  .header__nav-links {
+    padding: 14px 15px;
+    gap: 20px;
+  }
+  .search__form {
+    gap: 5px;
+  }
+  .search__input {
+    border-radius: 5px;
+  }
+  .search__btn {
+    border-radius: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .header__logo {
+    width: 100%;
+    max-width: 104px;
+    height: 33px;
+    margin: auto 0;
+  }
+  .header__body {
+    width: 100%;
+  }
+  .search__btn {
+    gap: 0;
+    font-size: 0;
+    padding: 8px;
+    min-width: 40px;
+  }
+  .search__btn svg, .search__btn span {
+    width: 24px;
+    height: 24px;
+  }
+  .search__input {
+    padding: 9px 10px;
+  }
+}
+@media (max-width: 570px) {
+  .header__mid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+  .header__search {
+    grid-column: span 2;
+  }
+  .header__body {
+    justify-content: flex-end;
+  }
+  .header__nav-links {
+    font-size: 12px;
+    line-height: 130%;
+  }
 }

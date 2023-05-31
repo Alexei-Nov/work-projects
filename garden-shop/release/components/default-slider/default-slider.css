@@ -7,3 +7,6 @@
 .default-slider__holder {
   position: relative;
 }
+.default-slider__container {
+  position: static;
+}

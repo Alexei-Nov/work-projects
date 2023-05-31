@@ -1,0 +1,18 @@
+.category__slide {
+  background: #f7f8fb;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.category__slider {
+  position: static;
+}
+.category__slider-container {
+  position: relative;
+}

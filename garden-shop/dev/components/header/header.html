@@ -41,17 +41,21 @@
 				<div class="header__wrapper">
 					<div class="header__top">
 						<div class="header__region dropdown caption">
-							<div class="header__region-title dropdown__title">Санкт-Петербург, Ленинградская область
+							<div class="header__region-title dropdown__title">
+								<div class="dropdown__title-text">Санкт-Петербург, Ленинградская область</div>
+								<div class="dropdown__caret">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.3327 8.33331L9.99935 11.6666L6.66602 8.33331" stroke="#3F3F3F"
+											stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
 							</div>
 							<div class="header__region-list dropdown__list">
-								<div class="header__region-item dropdown__item"><a href="#">1</a>
-								</div>
-								<div class="header__region-item dropdown__item"><a href="#">2</a>
-								</div>
-								<div class="header__region-item dropdown__item"><a href="#">Санкт-Петербург,
-										Ленинградская область
-									</a>
-								</div>
+								<div class=" header__region-item dropdown__item"><a href="#">Text1</a></div>
+								<div class=" header__region-item dropdown__item"><a href="#">Text2</a></div>
+								<div class=" header__region-item dropdown__item"><a href="#">Санкт-Петербург,
+										Ленинградская область</a></div>
 							</div>
 						</div>
 						<div class="header__links caption">
@@ -150,7 +154,7 @@
 									</button>
 								</form>
 							</div>
-							<a href="" class="btn">Заказать звонок</a>
+							<a href="" class="header__order-btn btn">Заказать звонок</a>
 							<a href="" class="header__body-btn caption">
 								<div class="header__body-btn-icon">
 									<svg width="24" height="24" viewBox="0 0 24 25" fill="none"
@@ -187,7 +191,44 @@
 								</div>
 								Корзина
 							</a>
-							<a href="" class="header__login"></a>
+							<a href="" class="header__login header__body-btn"></a>
+
+							<a href="" class="header__body-btn header__body-btn_mobile caption">
+								<div class="header__body-btn-icon">
+									<svg width="24" height="24" viewBox="0 0 20 21" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.25854 17.0015C7.35979 17.6366 8.63751 18 10.0001 18C14.1422 18 17.5 14.6421 17.5 10.5C17.5 6.35786 14.1421 3 10 3C5.85786 3 2.5 6.35786 2.5 10.5C2.5 11.8626 2.86337 13.1403 3.49849 14.2416L3.49902 14.2425C3.56142 14.3507 3.59269 14.4049 3.6068 14.4559C3.61996 14.5036 3.62431 14.5461 3.62094 14.5954C3.61736 14.6477 3.59929 14.7019 3.56357 14.809L3.56223 14.813L2.92155 16.7351L2.92105 16.7366C2.78567 17.1427 2.71795 17.3459 2.76616 17.4811C2.80817 17.5989 2.901 17.6916 3.0188 17.7336C3.15417 17.7819 3.35794 17.7141 3.76506 17.5784L5.68711 16.9377L5.68844 16.9372C5.79734 16.9009 5.85177 16.8828 5.90452 16.8792C5.95382 16.8758 5.99648 16.8801 6.04411 16.8932C6.09528 16.9074 6.14975 16.9387 6.25854 17.0015Z"
+											stroke="#8A8894" stroke-width="1" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<span></span>
+								</div>
+							</a>
+							<a href="" class="header__body-btn header__body-btn_mobile caption">
+								<div class="header__body-btn-icon">
+									<svg width="24" height="24" viewBox="0 0 15 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.125 6.20193C3.125 9.23432 5.7778 11.742 6.95199 12.7034L6.95245 12.7038C7.12082 12.8416 7.20504 12.9106 7.33053 12.9459C7.42816 12.9734 7.57175 12.9734 7.66937 12.9459C7.79498 12.9106 7.87942 12.8415 8.0481 12.7034C9.22229 11.742 11.875 9.2343 11.875 6.20192C11.875 5.05434 11.4141 3.95378 10.5936 3.14233C9.77312 2.33087 8.66035 1.875 7.50003 1.875C6.3397 1.875 5.22688 2.33086 4.40641 3.14232C3.58594 3.95377 3.125 5.05436 3.125 6.20193Z"
+											stroke="#8A8894" stroke-width="0.7" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+
+									<span></span>
+								</div>
+							</a>
+							<a href="" class="header__body-btn header__body-btn_mobile caption">
+								<div class="header__body-btn-icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.50295 4.25722C9.19922 3.4979 8.4638 3 7.646 3H4.89474C3.8483 3 3 3.84834 3 4.89478C3 13.7895 10.2108 21 19.1055 21C20.1519 21 21 20.1518 21 19.1053L20.9999 16.354C20.9999 15.5362 20.5019 14.8009 19.7426 14.4971L17.1071 13.4429C16.4251 13.1701 15.6485 13.293 15.0842 13.7633L14.4031 14.3307C13.6084 14.9929 12.44 14.94 11.7085 14.2085L9.79136 12.2915C9.05993 11.5601 9.00722 10.3915 9.66943 9.59688L10.2368 8.91597C10.7071 8.35163 10.83 7.57493 10.5572 6.89286L9.50295 4.25722Z"
+											stroke="#8A8894" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span></span>
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="header__btm">

@@ -1,5 +1,4 @@
 // tab
-
 document.querySelectorAll('.tab').forEach(el => {
     el.addEventListener('click', (e) => {
         if (e.target.closest('.tab__link')) {

@@ -1,0 +1,16 @@
+.partners__slide {
+  background: #f7f8fb;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.partners__slider {
+  position: static;
+}
+.partners__slider-container {
+  position: relative;
+}

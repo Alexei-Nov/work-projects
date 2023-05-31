@@ -89,3 +89,137 @@
         justify-content: flex-end;
     }
 }
+
+@media (max-width: 1150px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__info {
+            display: flex;
+            gap: 15px;
+            max-width: none;
+            margin-top: 30px;
+        }
+        &__info-top {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 0;
+        }
+        &__info-title {
+            text-align: left;
+        }
+        &__info-payment {
+            justify-content: flex-start;
+        }
+        &__info-btm {
+            width: 100%;
+        }
+        &__info-item {
+            width: 100%;
+        }
+        &__info-social {
+            justify-content: flex-start;
+        }
+        &__info-tel {
+            text-align: left;
+            width: 230px;
+            max-width: 100%;
+        }
+        &__dev-wrapper {
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        &__dev-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__nav-list {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 700px;
+        }
+        &__nav-item {
+            max-width: 50%;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .footer {
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__info-social {
+            gap: 10px;
+        }
+        &__info-btm {
+            display: flex;
+            gap: 20px;
+        }
+        &__info-payment {
+            min-width: 156px;
+        }
+        &__nav-list {
+            max-height: none;
+            gap: 20px;
+        }
+        &__subnav {
+            gap: 5px;
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all ease 0.5s;
+        }
+        &__nav-item {
+            &_has-children {
+                & .footer__nav-link_lvl1 {
+                    position: relative;
+                    padding-right: 30px;
+                    &::after {
+                        display: block;
+                        content: "";
+                        width: 24px;
+                        height: 24px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url(../../images/icons/Caret_Down_MD.svg);
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: all ease 0.5s;
+                    }
+                }
+            }
+            &_open {
+                & .footer__subnav {
+                    margin-top: 10px;
+                }
+                & .footer__nav-link_lvl1 {
+                    &::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+        &__dev-links {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

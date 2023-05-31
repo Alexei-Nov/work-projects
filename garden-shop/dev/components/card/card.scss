@@ -53,7 +53,16 @@
     &__top {
         position: absolute;
         top: 30px;
-        left: 30px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding: 0 30px;
+        align-items: center;
+    }
+    &__bot {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
     &__rating {
         display: flex;
@@ -79,5 +88,137 @@
         margin-top: 5px;
         color: #8a8894;
         text-decoration-line: line-through;
+    }
+    &__icons {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+        height: 100%;
+    }
+    &__dropdown {
+        width: 182px;
+        max-width: 100%;
+    }
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
+    &_kit {
+        width: 750px;
+        padding: 0;
+        & .card {
+            &__top {
+                position: relative;
+                top: 0;
+                padding: 0;
+                gap: 7px;
+            }
+            &__img {
+                margin: 0;
+            }
+            &__name {
+                margin: 0;
+                margin-bottom: 10px;
+            }
+            &__mid {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 10px;
+                height: 100%;
+            }
+        }
+    }
+    &__body {
+        padding: 30px;
+        display: flex;
+        gap: 30px;
+    }
+    &__main-info {
+        display: flex;
+        gap: 30px;
+    }
+    &__gallery {
+        width: 100%;
+        max-width: 215px;
+        height: 195px;
+        padding-bottom: 27px;
+    }
+    &__gallery-slide {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    &__main-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__kit-price {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        border-top: 1px solid #ebebeb;
+        justify-content: space-between;
+    }
+    &__kit-price-info {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    &__kit-price-num {
+        margin: 0;
+    }
+    &__kit-list {
+        width: 200px;
+        height: 100%;
+        max-height: 235px;
+        overflow-y: auto;
+        padding-right: 10px;
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #f7f8fb;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #c9c8d3;
+            border-radius: 5px;
+        }
+    }
+    &__kit-list-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__kit-item {
+        padding: 15px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        height: auto;
+    }
+    &__kit-item-img {
+        margin-bottom: 5px;
+        display: block;
+    }
+    &__kit-item-name {
+        margin-bottom: 5px;
+        display: block;
+    }
+    &__kit-price-btn {
+        width: 260px;
+    }
+    &__basket {
+        background: #f7f8fb;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url(../../images/icons/Shopping_Cart_02.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
     }
 }

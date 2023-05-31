@@ -4,6 +4,8 @@
         max-width: 880px;
         height: 396px;
         width: 100%;
+        position: relative;
+        z-index: 1;
     }
     &__slide {
         display: flex;

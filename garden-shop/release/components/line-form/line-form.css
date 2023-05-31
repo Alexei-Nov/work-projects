@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.line-form__text {
+  margin-top: 5px;
+  position: relative;
+  z-index: 3;
+}
+.line-form__btn {
+  position: relative;
+  z-index: 3;
+}
+.line-form__item {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 37px 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url(../../images/Pattern_Монтажная\ область\ 1\ копия\ 2.svg);
+  background-size: 223px 130px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.line-form__wrapper {
+  display: flex;
+  gap: 30px;
+}
+.line-form__title {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.line-form__info-text {
+  margin-top: 5px;
+}
+.line-form__info::before {
+  display: block;
+  content: "";
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: -20px;
+  bottom: -30px;
+}
+.line-form__info::after {
+  display: block;
+  content: "";
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #e25b26;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+.line-form__form::before {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #124144;
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+}
+.line-form__form::after {
+  display: block;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  mask-image: url(../../images/icons/leaf.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+.line-form__input {
+  position: relative;
+  z-index: 3;
+}

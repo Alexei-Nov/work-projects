@@ -5,6 +5,8 @@
   max-width: 880px;
   height: 396px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 .home-slider__slide {
   display: flex;

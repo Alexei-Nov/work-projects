@@ -33,6 +33,12 @@
     &__line-logo {
         object-fit: contain;
     }
+    &__line-img {
+        height: 100%;
+        & img {
+            height: 100%;
+        }
+    }
     &__link {
         display: flex;
         gap: 5px;
@@ -91,6 +97,7 @@
         position: relative;
         z-index: 2;
         background-color: #fff;
+        gap: 30px;
     }
     &__logo {
         width: 160px;
@@ -105,7 +112,9 @@
         gap: 30px;
     }
     &__login {
-        width: 50px;
+        display: block;
+        width: 100%;
+        max-width: 50px;
         height: 50px;
         border-radius: 50%;
         background-repeat: no-repeat;
@@ -141,6 +150,9 @@
         &_notification span {
             transform: scale(1);
         }
+        &_mobile {
+            display: none;
+        }
     }
     &__body-btn-icon {
         width: 24px;
@@ -167,6 +179,13 @@
         padding: 10px 50px;
         align-items: center;
         width: 100%;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__nav-link {
+        white-space: nowrap;
     }
 }
 
@@ -192,5 +211,101 @@
         border-radius: 5px 0px 0px 5px;
         padding: 13px 20px;
         width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .header {
+        &__body {
+            gap: 15px;
+        }
+        &__body-btn {
+            display: none;
+            &_mobile {
+                display: flex;
+            }
+        }
+        &__search {
+            max-width: none;
+        }
+        &__nav-btn {
+            display: none;
+        }
+        &__top {
+            display: none;
+        }
+        &__order-btn {
+            display: none;
+        }
+        &__line {
+            display: none;
+        }
+        &__search {
+            margin-right: 15px;
+        }
+        &__nav-links {
+            padding: 14px 15px;
+            gap: 20px;
+        }
+    }
+    .search {
+        &__form {
+            gap: 5px;
+        }
+        &__input {
+            border-radius: 5px;
+        }
+        &__btn {
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__logo {
+            width: 100%;
+            max-width: 104px;
+            height: 33px;
+            margin: auto 0;
+        }
+        &__body {
+            width: 100%;
+        }
+    }
+    .search {
+        &__btn {
+            gap: 0;
+            font-size: 0;
+            padding: 8px;
+            min-width: 40px;
+            & svg,
+            & span {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &__input {
+            padding: 9px 10px;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .header {
+        &__mid {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+        }
+        &__search {
+            grid-column: span 2;
+        }
+        &__body {
+            justify-content: flex-end;
+        }
+        &__nav-links {
+            font-size: 12px;
+            line-height: 130%;
+        }
     }
 }
