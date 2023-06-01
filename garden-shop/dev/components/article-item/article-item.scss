@@ -40,3 +40,9 @@
         text-overflow: ellipsis;
     }
 }
+
+@media (max-width: 570px) {
+    .article-item {
+        width: 100%;
+    }
+}

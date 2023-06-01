@@ -180,6 +180,11 @@ body {
   background-color: #124144;
 }
 
+@media (max-width: 768px) {
+  .gray-bg.section {
+    padding: 40px 0;
+  }
+}
 .container {
   width: 1560px;
   max-width: 100%;
@@ -281,7 +286,7 @@ body {
 
 .home-block__wrapper {
   display: grid;
-  grid-template-columns: 230px auto 360px;
+  grid-template-columns: 230px calc(100% - 650px) 360px;
   gap: 30px;
   width: 100%;
 }
@@ -392,6 +397,10 @@ body {
   display: flex;
   gap: 10px;
   height: 100%;
+  overflow-x: auto;
+}
+.tab__header::-webkit-scrollbar {
+  display: none;
 }
 .tab__link {
   background: #f7f8fb;
@@ -402,6 +411,7 @@ body {
   transition: all ease 0.5s;
   user-select: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .tab__link-active {
   color: #212121;
@@ -413,8 +423,90 @@ body {
 .tab__item-active {
   display: block;
 }
+.tab__title {
+  margin-bottom: 0;
+}
+.tab__header-wrapper {
+  margin-bottom: 30px;
+}
 
-.main,
-.header {
-  display: none;
+.popup-info {
+  padding: 30px;
+  padding-right: 84px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 650px;
+  max-width: calc(100% - 30px);
+  z-index: 99;
+  transition: all ease 0.5s;
+}
+.popup-info_hide {
+  transform: translateY(100%);
+  bottom: 0 !important;
+}
+.popup-info__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  background-image: url(../../images/icons/Close_MD.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1650px) {
+  .slider-navigation {
+    display: none;
+  }
+}
+@media (max-width: 1300px) {
+  .home-block__wrapper {
+    grid-template-columns: calc(100% - 420px) 360px;
+  }
+  .home-block__wrapper .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .main {
+    padding-top: 170px;
+  }
+  .header-stick .main {
+    padding-top: 80px;
+  }
+  .popup-info {
+    bottom: 100px;
+  }
+}
+@media (max-width: 1024px) {
+  .home-block {
+    overflow: hidden;
+  }
+  .home-block__wrapper {
+    flex-direction: column;
+    display: flex;
+    gap: 70px;
+  }
+  .tab__header-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 570px) {
+  .popup-info {
+    padding: 15px;
+    padding-right: 40px;
+  }
+  .popup-info__close {
+    top: 15px;
+    right: 15px;
+  }
+  .main {
+    padding-top: 215px;
+  }
 }

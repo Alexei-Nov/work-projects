@@ -33,7 +33,9 @@
 }
 .card__img {
   margin-top: 40px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__sticker {
   height: 30px;
@@ -123,14 +125,6 @@
   margin: 0;
   margin-bottom: 10px;
 }
-.card_kit .card__mid {
-  flex-direction: column-reverse;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
-  height: 100%;
-}
 .card__body {
   padding: 30px;
   display: flex;
@@ -219,4 +213,97 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .card_kit .card__mid {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .card_kit {
+    height: auto;
+    width: 360px;
+  }
+  .card__header {
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+  }
+  .card__main-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card__mid {
+    margin-bottom: 10px;
+  }
+  .card__body {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card__kit-list {
+    width: 100%;
+    max-height: none;
+    overflow-x: auto;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  .card__kit-list::-webkit-scrollbar {
+    height: 5px;
+  }
+  .card__kit-list-wrapper {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .card__kit-item {
+    min-width: 258px;
+    display: flex;
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  .card__kit-item-img {
+    margin: 0;
+  }
+  .card__kit-price {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card__kit-price-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .card__kit-price-profit {
+    display: none;
+  }
+  .card__kit-price-btn {
+    width: 100%;
+  }
+  .card__gallery {
+    height: auto;
+    max-width: 300px;
+  }
+}
+@media (max-width: 680px) {
+  .card {
+    padding: 15px;
+    width: 100%;
+  }
+  .card_kit {
+    padding: 0;
+  }
+  .card__body {
+    padding: 15px;
+  }
+  .card__top {
+    padding: 0 15px;
+    top: 15px;
+  }
+  .card__kit-price {
+    padding: 15px;
+  }
 }

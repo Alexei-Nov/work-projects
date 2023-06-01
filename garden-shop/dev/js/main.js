@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			loop: true,
+			centeredSlides: true,
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
@@ -21,6 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.home-slider__next',
 				prevEl: '.home-slider__prev',
 			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 1.25,
+					spaceBetween: 20,
+				},
+				1024: {
+					slidesPerView: 1,
+					spaceBetween: 30,
+				},
+			}
 		});
 	};
 	sliderHome()
@@ -31,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			slidesPerView: 'auto',
 			spaceBetween: 30,
 			loop: true,
+			autoHeight: true,
 			pagination: {
 				el: ".default-slider__pagination",
 				type: 'bullets',
@@ -40,6 +56,18 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.default-slider__next',
 				prevEl: '.default-slider__prev',
 			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 15,
+				},
+				680: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 'auto',
+				},
+			}
 		});
 	};
 	sliderDefault()
@@ -109,6 +137,14 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.partners__next',
 				prevEl: '.partners__prev',
 			},
+			breakpoints: {
+				0: {
+					spaceBetween: 10,
+				},
+				570: {
+					spaceBetween: 24,
+				}
+			}
 		});
 	};
 	sliderPartners()
@@ -223,11 +259,26 @@ document.addEventListener('DOMContentLoaded', function () {
 				} else {
 					document.querySelectorAll('.footer__nav-item_open').forEach(elem => {
 						elem.classList.remove('footer__nav-item_open')
-						el.querySelector('.footer__subnav').style.height = el.querySelector('.footer__subnav').scrollHeight + 'px'
+						elem.querySelector('.footer__subnav').style.height = 0
 					})
 				}
 			})
 		})
 	}
+
+	// popup info
+	document.querySelectorAll('.popup-info').forEach(el => {
+		el.addEventListener('click', (e) => {
+			if (e.target.closest('.popup-info__close')) {
+				el.classList.add('popup-info_hide')
+			}
+		})
+	})
+
+
+	// menu 
+	document.querySelector('.menu__btn').addEventListener('click', (e) => {
+		document.querySelector('.menu').classList.toggle('menu_open')
+	})
 
 }) 

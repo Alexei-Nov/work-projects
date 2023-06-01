@@ -28,3 +28,10 @@
   padding-left: 10px;
   gap: 15px;
 }
+
+@media (max-width: 570px) {
+  .advantages__wrapper {
+    gap: 15px;
+    row-gap: 10px;
+  }
+}

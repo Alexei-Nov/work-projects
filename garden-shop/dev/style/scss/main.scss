@@ -185,6 +185,14 @@ body {
 	background-color: #124144;
 }
 
+@media (max-width: 768px) {
+	.gray-bg {
+		&.section {
+			padding: 40px 0;
+		}
+	}
+}
+
 // styles
 
 .container {
@@ -295,7 +303,7 @@ body {
 .home-block {
 	&__wrapper {
 		display: grid;
-		grid-template-columns: 230px auto 360px;
+		grid-template-columns: 230px calc(100% - (230px + 360px + 60px)) 360px;
 		gap: 30px;
 		width: 100%;
 	}
@@ -419,6 +427,10 @@ body {
 		display: flex;
 		gap: 10px;
 		height: 100%;
+		overflow-x: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 	&__link {
 		background: #f7f8fb;
@@ -429,6 +441,7 @@ body {
 		transition: all ease 0.5s;
 		user-select: none;
 		cursor: pointer;
+		white-space: nowrap;
 		&-active {
 			color: #212121;
 			border-color: #ebebeb;
@@ -440,9 +453,99 @@ body {
 			display: block;
 		}
 	}
+	&__title {
+		margin-bottom: 0;
+	}
+	&__header-wrapper {
+		margin-bottom: 30px;
+	}
 }
 
-.main,
-.header {
-	display: none;
+.popup-info {
+	padding: 30px;
+	padding-right: 84px;
+	border-radius: 5px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 650px;
+	max-width: calc(100% - 30px);
+	z-index: 99;
+	transition: all ease 0.5s;
+	&_hide {
+		transform: translateY(100%);
+		bottom: 0 !important;
+	}
+	&__close {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		cursor: pointer;
+		background-image: url(../../images/icons/Close_MD.svg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 1650px) {
+	.slider-navigation {
+		display: none;
+	}
+}
+
+@media (max-width: 1300px) {
+	.home-block {
+		&__wrapper {
+			grid-template-columns: calc(100% - (360px + 60px)) 360px;
+			& .sidebar {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1150px) {
+	.main {
+		padding-top: 170px;
+	}
+	.header-stick .main {
+		padding-top: 80px;
+	}
+	.popup-info {
+		bottom: 100px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.home-block {
+		overflow: hidden;
+		&__wrapper {
+			flex-direction: column;
+			display: flex;
+			gap: 70px;
+		}
+	}
+	.tab {
+		&__header-wrapper {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.popup-info {
+		padding: 15px;
+		padding-right: 40px;
+		&__close {
+			top: 15px;
+			right: 15px;
+		}
+	}
+	.main {
+		padding-top: 215px;
+	}
 }
