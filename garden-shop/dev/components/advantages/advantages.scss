@@ -28,6 +28,30 @@
         align-items: center;
         padding-left: 10px;
         gap: 15px;
+        &:hover {
+            & .advantages__icon {
+                &-bg {
+                    fill: #ebebeb;
+                }
+                &-pin {
+                    fill: #e25b26;
+                }
+                &-leafs {
+                    transform: none;
+                }
+            }
+        }
+    }
+    &__icon {
+        & path,
+        & circle {
+            transition: all ease 0.5s;
+        }
+        &-leafs {
+            transition: all ease 0.5s;
+            transform: rotate(90deg) translate(-10px, 5px) scale(0.5);
+            transform-origin: center;
+        }
     }
 }
 

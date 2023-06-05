@@ -1,0 +1,16 @@
+.breadcrumb {
+    margin-bottom: 40px;
+    &__item {
+        background: #f7f8fb;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    &__wrapper {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

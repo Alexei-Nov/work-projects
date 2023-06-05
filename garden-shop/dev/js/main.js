@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 1,
 					spaceBetween: 10,
 				},
-				768: {
+				769: {
 					slidesPerView: 1.25,
 					spaceBetween: 20,
 				},
@@ -63,10 +63,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 				680: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 'auto',
+					spaceBetween: 15,
 				},
+				991: {
+					spaceBetween: 30,
+				}
 			}
 		});
 	};
@@ -107,12 +112,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
+					spaceBetween: 15,
 				},
 				570: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 3,
+					spaceBetween: 30,
 				},
 				1200: {
 					slidesPerView: 4,
@@ -140,9 +148,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					spaceBetween: 10,
+					slidesPerView: 2,
 				},
 				570: {
 					spaceBetween: 24,
+					slidesPerView: 'auto',
 				}
 			}
 		});
@@ -167,14 +177,17 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
+					spaceBetween: 15,
 				},
 				570: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 3,
+					spaceBetween: 30,
 				},
-				1200: {
+				1300: {
 					slidesPerView: 4,
 				}
 			}
@@ -243,28 +256,30 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.querySelector('.header__body .header__search').remove()
 	}
 
+	function accordion(activeClass, elemClass) {
+		if (!e.target.closest('.' + activeClass)) {
+			e.preventDefault()
+			document.querySelectorAll('.' + activeClass).forEach(elem => {
+				elem.classList.remove(activeClass)
+				elem.querySelector(elemClass).style.height = 0
+			})
+			el.classList.add(activeClass)
+			el.querySelector(elemClass).style.height = el.querySelector(elemClass).scrollHeight + 'px'
+		} else {
+			document.querySelectorAll('.' + activeClass).forEach(elem => {
+				elem.classList.remove(activeClass)
+				elem.querySelector(elemClass).style.height = 0
+			})
+		}
+	}
 
 	// accordion footer nav
 	if (window.innerWidth < 570) {
 		document.querySelectorAll('.footer__nav-item_has-children').forEach(el => {
-			el.addEventListener('click', (e) => {
-				if (!e.target.closest('.footer__nav-item_open')) {
-					e.preventDefault()
-					document.querySelectorAll('.footer__nav-item_open').forEach(elem => {
-						elem.classList.remove('footer__nav-item_open')
-						elem.querySelector('.footer__subnav').style.height = 0
-					})
-					el.classList.add('footer__nav-item_open')
-					el.querySelector('.footer__subnav').style.height = el.querySelector('.footer__subnav').scrollHeight + 'px'
-				} else {
-					document.querySelectorAll('.footer__nav-item_open').forEach(elem => {
-						elem.classList.remove('footer__nav-item_open')
-						elem.querySelector('.footer__subnav').style.height = 0
-					})
-				}
-			})
+			el.addEventListener('click', accordion('footer__nav-item_open', 'footer__subnav'))
 		})
 	}
+
 
 	// popup info
 	document.querySelectorAll('.popup-info').forEach(el => {
@@ -277,8 +292,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// menu 
-	document.querySelector('.menu__btn').addEventListener('click', (e) => {
-		document.querySelector('.menu').classList.toggle('menu_open')
+	document.querySelector('.menu').addEventListener('click', (e) => {
+		if (e.target.closest('.menu__btn')) {
+			document.querySelector('body').classList.toggle('menu-open')
+		} else if (!e.target.closest('.menu__nav') && !e.target.closest('.menu__list')) {
+			document.querySelector('body').classList.remove('menu-open')
+		}
+	})
+
+
+	// catalog list
+	if (window.innerWidth < 570) {
+		document.querySelectorAll('.catalog-list__filter').forEach(el => {
+			el.addEventListener('click', accordion('catalog-list__filter_open', 'catalog-list__filter-list'))
+		})
+	}
+
+
+	// tags
+	document.querySelectorAll('.tags').forEach(el => {
+		el.querySelector('.tags__btn').addEventListener('click', (e) => {
+			let currentText = e.target.innerText
+			let toggleText = e.target.getAttribute('data-toggle-text')
+			e.target.setAttribute('data-toggle-text', currentText)
+			e.target.innerText = toggleText
+			el.classList.toggle('tags_open')
+		})
 	})
 
 }) 

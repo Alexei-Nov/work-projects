@@ -1,0 +1,93 @@
+.catalog-list {
+    &__title {
+        padding-left: 50px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    &__filter {
+        padding: 30px;
+        background: #f7f8fb;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        height: fit-content;
+        &_open {
+            & .catalog-list {
+                &__filter-title {
+                    &::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+                &__filter-list {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    &__filter-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .catalog-list {
+        &__wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .catalog-list {
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+    }
+}
+@media (max-width: 570px) {
+    .catalog-list {
+        &__filter {
+            padding: 16px 15px;
+            border: none;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__filter-title {
+            position: relative;
+            padding-right: 30px;
+            &::after {
+                display: block;
+                content: "";
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                transition: all ease 0.5s;
+
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-image: url(../images/icons/Caret_Down_MD.svg);
+            }
+        }
+        &__filter-list {
+            height: 0;
+            overflow: hidden;
+            transition: all ease 0.5s;
+            margin: 0;
+        }
+    }
+}

@@ -1,71 +1,25 @@
-@include('components/header/header.html',{ "title": "Главная" })
+@@include('components/header/header.html',{ "title": "Каталог" })
 
-<section class="section home-block">
+@@include('components/breadcrumb/breadcrumb.html')
+
+<div class="container">
+	<div class="title">Каталог товаров “GardenShop”</div>
+</div>
+
+@@include('components/tags/tags.html')
+
+<section class="section catalog">
 	<div class="container">
-		<div class="home-block__wrapper">
-			@@include('components/sidebar/sidebar.html')
-			@@include('components/home-slider/home-slider.html',{ "title": "Новые акции" })
-			@@include('components/default-slider/default-slider.html',{ "title": "Товары недели" })
-		</div>
-	</div>
-</section>
+		<div class="catalog__wrapper">
+			<div class="catalog__filter">
 
-<section class="section">
-	<div class="container">
-		@@include('components/default-slider/default-slider.html',{ "title": "Хиты продаж", "nav-class":
-		"slider-navigation_gray slider-navigation_outside" })
-	</div>
-</section>
-
-@@include('components/category/category.html',{ "title": "Сезонные категории" })
-@@include('components/partners/partners.html',{ "title": "Популярные бренды" })
-
-<section class="section tab">
-	<div class="container">
-		<div class="tab-wrapper">
-			<div class="tab__header-wrapper">
-				<div class="tab__title title">Полезные статьи</div>
-				<div class="tab__header">
-					<div class="tab__link tab__link-active">Все статьи</div>
-					<div class="tab__link">Новости</div>
-					<div class="tab__link">Блог</div>
-					<div class="tab__link">Гайды</div>
-					<div class="tab__link">Подборки</div>
-					<div class="tab__link">Видео</div>
-				</div>
-			</div>
-
-			<div class=" tab__body">
-				<div class=" tab__item tab__item-active">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
-				<div class=" tab__item ">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
-				<div class=" tab__item ">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
-				<div class=" tab__item ">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
-				<div class=" tab__item ">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
-				<div class=" tab__item ">
-					@@include('components/tab-slider/tab-slider.html')
-				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-@@include('components/advantages/advantages.html',{title: "Наши преимущества"})
-
+@@include('components/advantages/advantages.html', {title: 'Наши преимущества'})
 @@include('components/line-form/line-form.html')
-
-
-
-
 
 @@include('components/footer/footer.html',{})

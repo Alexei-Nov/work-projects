@@ -1,0 +1,64 @@
+.tags {
+    margin-bottom: 40px;
+    &__wrapper {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        max-height: 33px;
+        overflow: hidden;
+    }
+    &__item {
+        background: #f7f8fb;
+        border-radius: 5px;
+        padding: 5px 10px;
+        white-space: nowrap;
+    }
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: 30px;
+        &::before {
+            display: block;
+            content: "";
+            height: 100%;
+            width: 80px;
+            position: absolute;
+            right: 100%;
+            top: 0;
+            background: linear-gradient(270deg, #ffffff 20%, rgba(255, 255, 255, 0) 100%);
+        }
+        &::after {
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../../images/icons/Chevron_Right.svg);
+        }
+    }
+    &_open {
+        & .tags {
+            &__btn {
+                position: relative;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    transform: translateY(-50%) rotate(-90deg);
+                }
+            }
+            &__wrapper {
+                max-height: none;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

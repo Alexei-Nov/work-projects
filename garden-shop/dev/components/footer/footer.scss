@@ -170,12 +170,17 @@
             display: flex;
             gap: 20px;
         }
+        &__nav-link {
+            display: inline-block;
+        }
         &__info-payment {
             min-width: 156px;
         }
         &__nav-list {
             max-height: none;
-            gap: 20px;
+            gap: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
         &__subnav {
             gap: 5px;
@@ -185,6 +190,7 @@
             transition: all ease 0.5s;
         }
         &__nav-item {
+            max-width: 100%;
             &_has-children {
                 & .footer__nav-link_lvl1 {
                     position: relative;
@@ -197,7 +203,7 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: contain;
-                        background-image: url(../../images/icons/Caret_Down_MD.svg);
+                        background-image: url(../images/icons/Caret_Down_MD.svg);
                         position: absolute;
                         right: 0;
                         top: 50%;

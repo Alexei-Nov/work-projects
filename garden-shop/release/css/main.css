@@ -126,7 +126,7 @@ body {
 .input__submit {
   width: 24px;
   height: 24px;
-  background-image: url(../../images/icons/Chevron_Right.svg);
+  background-image: url(../images/icons/Chevron_Right.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -318,7 +318,7 @@ body {
   height: 30px;
   border-radius: 5px;
   overflow: hidden;
-  background-image: url(../../images/icons/slider-arrow.svg);
+  background-image: url(../images/icons/slider-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -351,7 +351,7 @@ body {
 }
 
 .rating-stars {
-  background-image: url(../../images/icons/rating-empty.svg);
+  background-image: url(../images/icons/rating-empty.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 96px;
@@ -359,7 +359,7 @@ body {
   position: relative;
 }
 .rating-stars__current {
-  background-image: url(../../images/icons/rating-full.svg);
+  background-image: url(../images/icons/rating-full.svg);
   background-repeat: no-repeat;
   background-position: center left;
   position: absolute;
@@ -453,7 +453,7 @@ body {
   right: 30px;
   top: 30px;
   cursor: pointer;
-  background-image: url(../../images/icons/Close_MD.svg);
+  background-image: url(../images/icons/Close_MD.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

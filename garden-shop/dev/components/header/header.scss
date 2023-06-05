@@ -68,7 +68,7 @@
             content: "";
             width: 15px;
             height: 15px;
-            background-image: url(../../images/icons/Map_Pin.svg);
+            background-image: url(../images/icons/Map_Pin.svg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -114,7 +114,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        background-image: url(../../images/icons/personal\ account.svg);
+        background-image: url(../images/icons/personal\ account.svg);
     }
     &__body-btn {
         display: flex;
@@ -218,9 +218,11 @@
     z-index: 100;
     display: none;
     transition: all ease 0.5s;
-    &_open {
-        background-color: rgba(18, 65, 68, 0.8);
+    &-open {
+        overflow: hidden;
         & .menu {
+            pointer-events: all;
+            background-color: rgba(18, 65, 68, 0.8);
             &__nav {
                 transform: none;
             }
@@ -248,7 +250,7 @@
             }
         }
     }
-    &__item-icon {
+    &__icon {
         position: relative;
         width: 24px;
         height: 24px;
@@ -274,19 +276,48 @@
         pointer-events: all;
         position: absolute;
         z-index: -1;
-        top: 15px;
-        left: 15px;
-        height: 100%;
-        width: calc(100% - 30px);
+        bottom: 0;
+        right: 15px;
         border-radius: 5px;
         padding: 15px;
         background-color: #fff;
         transition: all ease 0.5s;
         transform: translateY(100%);
+
+        height: auto;
+        width: fit-content;
+        min-width: 290px;
+        max-width: 570px;
+        padding-bottom: 66px;
+        max-height: calc(100% - 15px);
     }
     &__nav-logo {
         width: 104px;
         height: 33px;
+        display: block;
+    }
+    &__nav-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav-close {
+        display: flex;
+        height: 100%;
+    }
+    &__nav-list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: auto;
+        max-height: calc(100vh - 75px - 90px);
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    &__nav-link {
+        display: flex;
+        gap: 5px;
+        align-items: center;
     }
 }
 

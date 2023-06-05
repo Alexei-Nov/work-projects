@@ -28,6 +28,23 @@
   padding-left: 10px;
   gap: 15px;
 }
+.advantages__item:hover .advantages__icon-bg {
+  fill: #ebebeb;
+}
+.advantages__item:hover .advantages__icon-pin {
+  fill: #e25b26;
+}
+.advantages__item:hover .advantages__icon-leafs {
+  transform: none;
+}
+.advantages__icon path, .advantages__icon circle {
+  transition: all ease 0.5s;
+}
+.advantages__icon-leafs {
+  transition: all ease 0.5s;
+  transform: rotate(90deg) translate(-10px, 5px) scale(0.5);
+  transform-origin: center;
+}
 
 @media (max-width: 570px) {
   .advantages__wrapper {

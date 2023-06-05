@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 1,
 					spaceBetween: 10,
 				},
-				768: {
+				769: {
 					slidesPerView: 1.25,
 					spaceBetween: 20,
 				},
@@ -63,10 +63,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 				680: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 'auto',
+					spaceBetween: 15,
 				},
+				991: {
+					spaceBetween: 30,
+				}
 			}
 		});
 	};
@@ -107,12 +112,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
+					spaceBetween: 15,
 				},
 				570: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 3,
+					spaceBetween: 30,
 				},
 				1200: {
 					slidesPerView: 4,
@@ -140,9 +148,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					spaceBetween: 10,
+					slidesPerView: 2,
 				},
 				570: {
 					spaceBetween: 24,
+					slidesPerView: 'auto',
 				}
 			}
 		});
@@ -167,14 +177,17 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
+					spaceBetween: 15,
 				},
 				570: {
 					slidesPerView: 2,
+					spaceBetween: 15,
 				},
-				768: {
+				769: {
 					slidesPerView: 3,
+					spaceBetween: 30,
 				},
-				1200: {
+				1300: {
 					slidesPerView: 4,
 				}
 			}
@@ -266,6 +279,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 
+
 	// popup info
 	document.querySelectorAll('.popup-info').forEach(el => {
 		el.addEventListener('click', (e) => {
@@ -274,5 +288,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	})
+
+
+	// menu 
+	document.querySelector('.menu').addEventListener('click', (e) => {
+		if (e.target.closest('.menu__btn')) {
+			document.querySelector('body').classList.toggle('menu-open')
+		} else if (!e.target.closest('.menu__nav') && !e.target.closest('.menu__list')) {
+			document.querySelector('body').classList.remove('menu-open')
+		}
+	})
+
 
 }) 

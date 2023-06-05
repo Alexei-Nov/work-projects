@@ -1,0 +1,18 @@
+@@include('components/header/header.html',{ "title": "Каталог список" })
+
+@@include('components/breadcrumb/breadcrumb.html')
+
+<div class="container">
+	<div class="title">Каталог товаров “GardenShop”</div>
+</div>
+
+@@include('components/catalog-list/catalog-list.html',{title: 'Минитракторы'})
+@@include('components/catalog-list/catalog-list.html',{title: 'Тракторы'})
+@@include('components/catalog-list/catalog-list.html',{title: 'Мотоблоки'})
+@@include('components/catalog-list/catalog-list.html',{title: 'Навесное оборудование'})
+@@include('components/catalog-list/catalog-list.html',{title: 'Двигатели'})
+@@include('components/catalog-list/catalog-list.html',{title: 'Запасные части'})
+
+@@include('components/line-form/line-form.html')
+
+@@include('components/footer/footer.html',{})

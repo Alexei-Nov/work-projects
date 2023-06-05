@@ -20,7 +20,7 @@
 }
 .card__state {
   padding-right: 20px;
-  background-image: url(../../images/icons/state_true.svg);
+  background-image: url(../images/icons/state_true.svg);
   background-repeat: no-repeat;
   background-size: 15px;
   background-position: center right;
@@ -29,7 +29,7 @@
 }
 .card__state_false {
   color: #f93232;
-  background-image: url(../../images/icons/state_false.svg);
+  background-image: url(../images/icons/state_false.svg);
 }
 .card__img {
   margin-top: 40px;
@@ -206,7 +206,7 @@
   background: #f7f8fb;
   border-radius: 50%;
   overflow: hidden;
-  background-image: url(../../images/icons/Shopping_Cart_02.svg);
+  background-image: url(../images/icons/Shopping_Cart_02.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px;

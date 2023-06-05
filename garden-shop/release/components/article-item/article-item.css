@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: column;
 }
+.article-item:hover .article-item__img {
+  transform: scale(1.1);
+}
 .article-item::after {
   position: absolute;
   left: 0;
@@ -28,9 +31,12 @@
   width: 100%;
   height: 100%;
   z-index: -2;
+  transition: all ease 0.5s;
 }
 .article-item__img img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .article-item__text {
   margin-top: auto;
