@@ -62,3 +62,17 @@
         }
     }
 }
+
+@media (max-width: 1150px) {
+    .tags {
+        &__btn {
+            display: none;
+        }
+        &__wrapper {
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}

@@ -16,16 +16,17 @@
   border-radius: 5px;
   height: fit-content;
 }
-.catalog-list__filter_open .catalog-list__filter-title::after {
-  transform: translateY(-50%) rotate(180deg);
-}
-.catalog-list__filter_open .catalog-list__filter-list {
-  margin-top: 15px;
-}
 .catalog-list__filter-list {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 15px;
+}
+
+.accordion_v1 .a-container_open .catalog-list__filter-title::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.accordion_v1 .a-container_open .catalog-list__filter-list {
   margin-top: 15px;
 }
 

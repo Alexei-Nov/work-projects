@@ -214,6 +214,70 @@
   height: 50px;
   cursor: pointer;
 }
+.card_wide {
+  display: grid;
+  grid-template-columns: 280px 1fr 1fr;
+  gap: 30px;
+  height: auto;
+  padding-right: 100px;
+}
+.card_wide .card__body {
+  padding: 0;
+}
+.card_wide .card__main-info-item {
+  display: flex;
+  justify-content: space-between;
+}
+.card_wide .card__main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card_wide .card__main-info-value {
+  text-align: right;
+}
+.card_wide .card__main-hash {
+  display: inline-block;
+  background: #f7f8fb;
+  border-radius: 5px;
+  padding: 4px 5px;
+}
+.card_wide .card__main-hash-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.card_wide .card__current-price {
+  margin-bottom: 0;
+}
+.card_wide .card__old-price {
+  margin: 0;
+}
+.card_wide .card__price {
+  margin-bottom: 20px;
+}
+.card_wide .card__btn {
+  width: 100%;
+}
+.card_wide .card__deliver {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 214px;
+  width: 100%;
+}
+.card_wide .card__deliver-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.card_wide .card__gallery {
+  max-width: 280px;
+  height: 227px;
+}
 
 @media (min-width: 768px) {
   .card_kit .card__mid {

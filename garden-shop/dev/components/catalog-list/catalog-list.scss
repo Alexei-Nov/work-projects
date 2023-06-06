@@ -16,24 +16,25 @@
         border: 1px solid #ebebeb;
         border-radius: 5px;
         height: fit-content;
-        &_open {
-            & .catalog-list {
-                &__filter-title {
-                    &::after {
-                        transform: translateY(-50%) rotate(180deg);
-                    }
-                }
-                &__filter-list {
-                    margin-top: 15px;
-                }
-            }
-        }
     }
     &__filter-list {
         display: flex;
         flex-direction: column;
         gap: 15px;
         margin-top: 15px;
+    }
+}
+
+.accordion_v1 .a-container_open {
+    & .catalog-list {
+        &__filter-title {
+            &::after {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+        &__filter-list {
+            margin-top: 15px;
+        }
     }
 }
 

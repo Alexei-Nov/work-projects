@@ -215,6 +215,72 @@
         height: 50px;
         cursor: pointer;
     }
+    &_wide {
+        display: grid;
+        grid-template-columns: 280px 1fr 1fr;
+        gap: 30px;
+        height: auto;
+        padding-right: 100px;
+        & .card {
+            &__body {
+                padding: 0;
+            }
+            &__main-info-item {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__main-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            &__main-info-value {
+                text-align: right;
+            }
+            &__main-hash {
+                display: inline-block;
+                background: #f7f8fb;
+                border-radius: 5px;
+                padding: 4px 5px;
+            }
+            &__main-hash-list {
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            &__current-price {
+                margin-bottom: 0;
+            }
+            &__old-price {
+                margin: 0;
+            }
+            &__price {
+                margin-bottom: 20px;
+            }
+            &__btn {
+                width: 100%;
+            }
+            &__deliver {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 214px;
+                width: 100%;
+            }
+            &__deliver-list {
+                margin-top: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 10px;
+                column-gap: 20px;
+            }
+            &__gallery {
+                max-width: 280px;
+                height: 227px;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {

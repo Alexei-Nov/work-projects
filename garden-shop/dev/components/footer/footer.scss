@@ -212,20 +212,20 @@
                     }
                 }
             }
-            &_open {
-                & .footer__subnav {
-                    margin-top: 10px;
-                }
-                & .footer__nav-link_lvl1 {
-                    &::after {
-                        transform: translateY(-50%) rotate(180deg);
-                    }
-                }
-            }
         }
         &__dev-links {
             display: flex;
             flex-direction: column;
+        }
+    }
+    .accordion_v1 .a-container_open {
+        & .footer__subnav {
+            margin-top: 10px;
+        }
+        & .footer__nav-link_lvl1 {
+            &::after {
+                transform: translateY(-50%) rotate(180deg);
+            }
         }
     }
 }

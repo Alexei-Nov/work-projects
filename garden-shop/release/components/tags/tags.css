@@ -58,3 +58,15 @@
   max-height: none;
   flex-wrap: wrap;
 }
+
+@media (max-width: 1150px) {
+  .tags__btn {
+    display: none;
+  }
+  .tags__wrapper {
+    overflow-x: auto;
+  }
+  .tags__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
