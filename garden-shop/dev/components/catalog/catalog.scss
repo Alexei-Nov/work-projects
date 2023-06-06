@@ -131,6 +131,9 @@
         &__list {
             grid-template-columns: 1fr 1fr;
         }
+        &__template {
+            display: none;
+        }
     }
 }
 
@@ -186,9 +189,6 @@
             &::-webkit-scrollbar {
                 display: none;
             }
-        }
-        &__template {
-            display: none;
         }
         &__filter-menu-btn {
             display: block;
