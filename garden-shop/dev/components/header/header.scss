@@ -14,24 +14,16 @@
         }
     }
     &__line {
-        display: flex;
-        background: #f7f8fb;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 120%;
-        height: 60px;
         overflow: hidden;
         transition: all ease 0.5s;
-    }
-    &__line-discount {
-        color: #124144;
-    }
-    &__line-logo {
-        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        background: #f7f8fb;
+        height: 60px;
+        & img {
+            object-fit: cover;
+            height: 60px;
+        }
     }
     &__link {
         display: flex;

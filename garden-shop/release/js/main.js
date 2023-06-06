@@ -195,6 +195,32 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 	sliderTab()
 
+	// slider review
+	let sliderReview = () => {
+		let SwiperReview = new Swiper('.review__slider', {
+			slidesPerView: 'auto',
+			spaceBetween: 30,
+			autoHeight: true,
+			navigation: {
+				nextEl: '.review__next',
+				prevEl: '.review__prev',
+			},
+			scrollbar: {
+				el: '.review__scrollbar',
+				draggable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+				},
+				570: {
+					slidesPerView: 'auto',
+				},
+			}
+		});
+	};
+	sliderReview()
+
 
 	// phone mask
 	document.querySelectorAll('[type="tel"]').forEach(el => {
@@ -383,30 +409,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// read more 
-	document.querySelectorAll('.read-more').forEach(el => {
-		let btn = el.querySelector('.read-more__btn')
-		let text = el.querySelector('.read-more__text')
-
-		let limitHeight = +text.style.height.split('').slice(0, -2).join('')
-		let fullHeight = text.scrollHeight
-
-		if (limitHeight >= fullHeight) {
-			btn.remove()
-		}
-
-		btn.addEventListener('click', (e) => {
-			e.target.closest('.read-more_open') ? text.style.height = limitHeight + 'px' : text.style.height = fullHeight + 'px'
-
-			let currentText = btn.innerHTML
-			let toggleText = btn.getAttribute('data-toggle-text')
-			btn.setAttribute('data-toggle-text', currentText)
-			btn.innerText = toggleText
-			el.classList.toggle('read-more_open')
-		})
-	});
-
-
 	// catalog filter
 	document.querySelectorAll('.catalog__filter').forEach(el => {
 		el.addEventListener('click', (e) => {
@@ -423,3 +425,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 })
+
+
+window.onload = () => {
+	// read more 
+	document.querySelectorAll('.read-more').forEach(el => {
+		let btn = el.querySelector('.read-more__btn')
+		let text = el.querySelector('.read-more__text')
+
+		let limitHeight = +text.style.maxHeight.split('').slice(0, -2).join('')
+		let fullHeight = text.scrollHeight
+
+		if (limitHeight >= fullHeight) {
+			btn.remove()
+			el.classList.toggle('read-more_open')
+		}
+
+		btn.addEventListener('click', (e) => {
+			e.target.closest('.read-more_open') ? text.style.maxHeight = limitHeight + 'px' : text.style.maxHeight = fullHeight + 'px'
+
+			let currentText = btn.innerHTML
+			let toggleText = btn.getAttribute('data-toggle-text')
+			btn.setAttribute('data-toggle-text', currentText)
+			btn.innerText = toggleText
+			el.classList.toggle('read-more_open')
+		})
+	});
+}

@@ -1,0 +1,79 @@
+.table-info__header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.table-info__btn {
+  padding-left: 24px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-image: url(../images/icons/product_card\ -\ compare.svg);
+  cursor: pointer;
+}
+.table-info__title {
+  margin-bottom: 0;
+}
+.table-info__subtitle {
+  margin-bottom: 20px;
+}
+.table-info__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.table-info__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+.table-info__row:last-child {
+  margin-bottom: 0;
+}
+.table-info__row::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  background-image: url(../images/icons/doted-line.svg);
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
+.table-info__list {
+  column-count: 2;
+  gap: 60px;
+}
+.table-info__key {
+  max-width: 230px;
+  width: 100%;
+}
+.table-info__key-text {
+  background-color: #fff;
+  display: inline;
+}
+.table-info__value {
+  background-color: #fff;
+  width: 240px;
+}
+
+@media (max-width: 1200px) {
+  .table-info__list {
+    column-count: 1;
+  }
+}
+@media (max-width: 768px) {
+  .table-info__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

@@ -503,6 +503,7 @@ body {
   background-image: url(../images/icons/rating-empty.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 100%;
   width: 96px;
   height: 16px;
   position: relative;
@@ -511,6 +512,7 @@ body {
   background-image: url(../images/icons/rating-full.svg);
   background-repeat: no-repeat;
   background-position: center left;
+  background-size: auto 100%;
   position: absolute;
   height: 100%;
 }
@@ -725,6 +727,17 @@ body {
   left: 0;
   top: 9px;
   background-color: #e25b26;
+}
+
+.slider-scrollbar {
+  width: 100%;
+  height: 5px;
+  background: #f7f8fb;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.slider-scrollbar .swiper-scrollbar-drag {
+  background: #c9c8d3;
 }
 
 @media (max-width: 1650px) {
