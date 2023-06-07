@@ -59,10 +59,12 @@
 .table-info__key-text {
   background-color: #fff;
   display: inline;
+  padding-right: 5px;
 }
 .table-info__value {
   background-color: #fff;
   width: 240px;
+  padding-left: 5px;
 }
 
 @media (max-width: 1200px) {

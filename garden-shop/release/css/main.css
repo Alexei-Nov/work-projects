@@ -314,6 +314,10 @@ body {
   color: #ffffff;
 }
 
+.green-text {
+  color: #124144;
+}
+
 .orange-bg {
   background-color: #e25b26;
 }
@@ -738,6 +742,41 @@ body {
 }
 .slider-scrollbar .swiper-scrollbar-drag {
   background: #c9c8d3;
+}
+
+.gray-bg .slider-scrollbar {
+  background: #c9c8d3;
+}
+.gray-bg .slider-scrollbar .swiper-scrollbar-drag {
+  background: #8a8894;
+}
+
+.video-test-link {
+  cursor: pointer;
+  padding-right: 20px;
+  background-image: url(../images/icons/video.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.info-item__btn {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/Info.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info-item__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media (max-width: 1650px) {

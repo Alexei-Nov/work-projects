@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				nextEl: '.default-slider__next',
 				prevEl: '.default-slider__prev',
 			},
+			scrollbar: {
+				el: '.default-slider__scrollbar',
+				draggable: true,
+			},
 			breakpoints: {
 				0: {
 					slidesPerView: 1,
@@ -220,6 +224,24 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	};
 	sliderReview()
+
+	// slider detail-block
+	let sliderDetailBlock = () => {
+		let SwiperDetailBlock = new Swiper('.detail-block__slider', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.detail-block__next',
+				prevEl: '.detail-block__prev',
+			},
+			pagination: {
+				el: ".detail-block__pagination",
+				type: 'bullets',
+				clickable: true,
+			},
+		});
+	};
+	sliderDetailBlock()
 
 
 	// phone mask
@@ -423,6 +445,22 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.querySelector('body').classList.toggle('filter-open')
 		})
 	})
+
+
+	// acnhor
+	document.querySelectorAll('.anchor').forEach((el => {
+		el.addEventListener('click', (e) => {
+			e.preventDefault()
+			let currentAnchor = e.target.href.split('#').slice(1).join('')
+			let blockPosition = document.getElementById(currentAnchor).offsetTop - 276
+			console.log(blockPosition);
+			window.scroll({
+				top: blockPosition,
+				left: 0,
+				behavior: 'smooth'
+			});
+		})
+	}))
 
 })
 

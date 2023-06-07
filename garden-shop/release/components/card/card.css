@@ -7,6 +7,7 @@
   padding: 30px;
   position: relative;
   z-index: 1;
+  background-color: #fff;
 }
 .card__name {
   margin: 20px 0;
@@ -18,7 +19,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.card__state {
+.card-state {
   padding-right: 20px;
   background-image: url(../images/icons/state_true.svg);
   background-repeat: no-repeat;
@@ -27,7 +28,7 @@
   color: #33b939;
   line-height: 100%;
 }
-.card__state_false {
+.card-state_false {
   color: #f93232;
   background-image: url(../images/icons/state_false.svg);
 }
@@ -213,6 +214,9 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+.card__basket_plus {
+  background-image: url(../images/icons/Add_Plus.svg);
 }
 .card_wide {
   display: grid;

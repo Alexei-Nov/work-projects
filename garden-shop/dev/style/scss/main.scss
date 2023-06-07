@@ -329,6 +329,9 @@ body {
 .white-text {
 	color: #ffffff;
 }
+.green-text {
+	color: #124144;
+}
 
 .orange-bg {
 	background-color: #e25b26;
@@ -789,6 +792,41 @@ body {
 	margin-top: 20px;
 	& .swiper-scrollbar-drag {
 		background: #c9c8d3;
+	}
+}
+
+.gray-bg .slider-scrollbar {
+	background: #c9c8d3;
+	& .swiper-scrollbar-drag {
+		background: #8a8894;
+	}
+}
+
+.video-test-link {
+	cursor: pointer;
+	padding-right: 20px;
+	background-image: url(../images/icons/video.svg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+}
+
+.info-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	&__btn {
+		width: 24px;
+		height: 24px;
+		background-image: url(../../images/icons/Info.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&__text {
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	}
 }
 

@@ -7,6 +7,7 @@
     padding: 30px;
     position: relative;
     z-index: 1;
+    background-color: #fff;
     &__name {
         margin: 20px 0;
         display: block;
@@ -17,7 +18,7 @@
         align-items: center;
         margin-bottom: 20px;
     }
-    &__state {
+    &-state {
         padding-right: 20px;
         background-image: url(../images/icons/state_true.svg);
         background-repeat: no-repeat;
@@ -214,6 +215,9 @@
         width: 50px;
         height: 50px;
         cursor: pointer;
+        &_plus {
+            background-image: url(../images/icons/Add_Plus.svg);
+        }
     }
     &_wide {
         display: grid;
