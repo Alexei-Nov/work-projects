@@ -55,7 +55,7 @@ function scriptsConcat() {
 		'dev/js/*.js'
 	])
 		.pipe(concat('main-result.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(dest('release/js'))
 		.pipe(browserSync.stream())
 }

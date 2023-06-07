@@ -12,8 +12,15 @@
   align-items: center;
   margin-top: 30px;
 }
-.additional__current-price {
+.additional__price-num {
   margin-bottom: 0;
+}
+.additional__current-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  row-gap: 5px;
 }
 .additional__btn {
   width: 100%;
@@ -28,6 +35,7 @@
   border-radius: 5px;
   padding: 20px;
   display: block;
+  cursor: pointer;
 }
 .additional__service-list {
   max-height: 375px;
@@ -35,15 +43,24 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-right: 10px;
 }
 .additional__service-list::-webkit-scrollbar {
   width: 5px;
-  background: #c9c8d3;
   border-radius: 5px;
+  background: #c9c8d3;
 }
 .additional__service-list::-webkit-scrollbar-thumb {
   background: #8a8894;
   border-radius: 5px;
+  width: 5px;
+}
+.additional__service {
+  width: 100%;
+  max-width: 460px;
+}
+.additional__profit {
+  min-width: 94px;
 }
 .additional .tab__header {
   display: flex;
@@ -57,6 +74,7 @@
   color: #000000;
   position: relative;
   width: 100%;
+  max-width: 326px;
 }
 .additional .tab__link::after {
   display: block;
@@ -75,4 +93,16 @@
 }
 .additional .card {
   width: 326px;
+}
+
+@media (max-width: 1400px) {
+  .additional__wrapper {
+    flex-direction: column;
+  }
+  .additional__types {
+    max-width: none;
+  }
+  .additional__service {
+    max-width: none;
+  }
 }

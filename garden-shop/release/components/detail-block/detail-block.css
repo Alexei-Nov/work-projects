@@ -17,6 +17,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  min-width: 300px;
 }
 .detail-block__rating {
   display: flex;
@@ -27,10 +28,15 @@
   background: #f7f8fb;
   border-radius: 5px;
   padding: 5px;
+  white-space: nowrap;
 }
 .detail-block__tags {
   display: flex;
   gap: 5px;
+  overflow-x: auto;
+}
+.detail-block__tags::-webkit-scrollbar {
+  display: none;
 }
 .detail-block__wrapper {
   display: grid;
@@ -95,6 +101,9 @@
 .detail-block__subtitle {
   margin-bottom: 10px;
 }
+.detail-block__subtitle:last-child {
+  margin-bottom: 0;
+}
 .detail-block__body-item {
   margin-bottom: 40px;
 }
@@ -122,6 +131,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  row-gap: 10px;
 }
 .detail-block__order-info {
   display: flex;
@@ -149,7 +159,7 @@
   height: 50px;
 }
 .detail-block__login {
-  display: flex;
+  display: block;
   padding: 15px 20px;
   padding-right: 90px;
   background-image: url(../../images/icons/login-discount.svg);
@@ -193,4 +203,81 @@
 }
 .detail-block__sticker_green {
   background: #e8eced;
+}
+.detail-block .specification-row__value {
+  width: auto;
+  text-align: right;
+  background-color: transparent;
+}
+
+@media (max-width: 1650px) {
+  .detail-block__navigation {
+    display: flex;
+  }
+}
+@media (max-width: 1505px) {
+  .detail-block__order-info {
+    flex-direction: row;
+    gap: 10px;
+    height: fit-content;
+  }
+}
+@media (max-width: 1400px) {
+  .detail-block__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .detail-block__gallery {
+    order: 1;
+  }
+  .detail-block__order {
+    order: 2;
+    grid-row: span 1;
+  }
+  .detail-block__body {
+    order: 3;
+    grid-column: span 2;
+  }
+  .detail-block__panel {
+    order: 4;
+    grid-column: span 2;
+  }
+  .detail-block__slider {
+    max-width: 354px;
+    height: 281px;
+  }
+}
+@media (max-width: 767px) {
+  .detail-block__login {
+    padding: 10px 20px;
+    padding-right: 115px;
+  }
+  .detail-block__subheader {
+    flex-direction: column;
+  }
+  .detail-block__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-block__slider {
+    max-width: none;
+    padding: 0;
+    padding-bottom: 30px;
+    height: 316px;
+  }
+  .detail-block__navigation {
+    display: none;
+  }
+  .detail-block__subheader-info {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 570px) {
+  .detail-block__header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .detail-block__order-info {
+    flex-wrap: wrap;
+  }
 }

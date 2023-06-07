@@ -78,6 +78,17 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			}
 		});
+
+		// update slider when tab changes
+		document.querySelectorAll('.default-slider').forEach((el, index) => {
+			if (el.closest('.tab')) {
+				el.closest('.tab').querySelectorAll('.tab__header').forEach(elem => {
+					elem.addEventListener('click', (e) => {
+						SwiperDefault[index].update()
+					})
+				})
+			}
+		})
 	};
 	sliderDefault()
 
@@ -462,6 +473,21 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}))
 
+
+	// info item popup
+	document.addEventListener('click', (e) => {
+		if (e.target.closest('.info-item__btn') && !e.target.closest('.info-item_open')
+			|| e.target.closest('.info-item__popup') && !e.target.closest('.info-item__btn')) {
+			document.querySelectorAll('.info-item').forEach(el => {
+				el.classList.remove('info-item_open')
+			})
+			e.target.closest('.info-item').classList.add('info-item_open')
+		} else {
+			document.querySelectorAll('.info-item').forEach(el => {
+				el.classList.remove('info-item_open')
+			})
+		}
+	})
 })
 
 
