@@ -488,6 +488,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		}
 	})
+
+
+	// card basket icon
+	document.querySelectorAll('.card-basket').forEach(el => {
+		el.addEventListener('click', (e) => {
+			el.classList.toggle('card-basket_add')
+		})
+	})
 })
 
 

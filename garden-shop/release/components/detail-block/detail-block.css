@@ -162,7 +162,7 @@
   display: block;
   padding: 15px 20px;
   padding-right: 90px;
-  background-image: url(../../images/icons/login-discount.svg);
+  background-image: url(../images/icons/login-discount.svg);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -204,11 +204,6 @@
 .detail-block__sticker_green {
   background: #e8eced;
 }
-.detail-block .specification-row__value {
-  width: auto;
-  text-align: right;
-  background-color: transparent;
-}
 
 @media (max-width: 1650px) {
   .detail-block__navigation {
@@ -247,6 +242,9 @@
   }
 }
 @media (max-width: 767px) {
+  .detail-block .specification-row__key, .detail-block .specification-row__value {
+    max-width: calc(50% - 10px);
+  }
   .detail-block__login {
     padding: 10px 20px;
     padding-right: 115px;

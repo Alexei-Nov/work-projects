@@ -106,3 +106,8 @@
     max-width: none;
   }
 }
+@media (max-width: 768px) {
+  .additional .card {
+    width: 100%;
+  }
+}

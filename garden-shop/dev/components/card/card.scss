@@ -204,21 +204,7 @@
     &__kit-price-btn {
         width: 260px;
     }
-    &__basket {
-        background: #f7f8fb;
-        border-radius: 50%;
-        overflow: hidden;
-        background-image: url(../images/icons/Shopping_Cart_02.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 24px;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        &_plus {
-            background-image: url(../images/icons/Add_Plus.svg);
-        }
-    }
+
     &_wide {
         display: grid;
         grid-template-columns: 280px 1fr 1fr;

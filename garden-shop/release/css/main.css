@@ -660,7 +660,7 @@ body {
 .pagination__prev, .pagination__next {
   width: 24px;
   height: 24px;
-  mask-image: url(../../images/icons/Caret_Down_MD.svg);
+  mask-image: url(../images/icons/Caret_Down_MD.svg);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -861,6 +861,42 @@ body {
   background-color: #fff;
   width: 240px;
   padding-left: 5px;
+}
+
+.card-basket {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f7f8fb;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 0.5s;
+}
+.card-basket::after {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #212121;
+  mask-image: url(../images/icons/Shopping_Cart_02.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  transition: all ease 0.5s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-basket_plus::after {
+  mask-image: url(../images/icons/Add_Plus.svg);
+}
+.card-basket_add {
+  background-color: #e25b26;
+}
+.card-basket_add::after {
+  background-color: #fff;
 }
 
 @media (max-width: 1650px) {

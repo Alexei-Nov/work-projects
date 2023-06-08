@@ -10,3 +10,9 @@
 .default-slider__container {
   position: static;
 }
+
+@media (max-width: 570px) {
+  .default-slider .card {
+    height: auto;
+  }
+}

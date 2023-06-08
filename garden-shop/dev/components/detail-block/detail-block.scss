@@ -165,7 +165,7 @@
         display: block;
         padding: 15px 20px;
         padding-right: 90px;
-        background-image: url(../../images/icons/login-discount.svg);
+        background-image: url(../images/icons/login-discount.svg);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -205,13 +205,6 @@
         width: fit-content;
         &_green {
             background: #e8eced;
-        }
-    }
-    & .specification-row {
-        &__value {
-            width: auto;
-            text-align: right;
-            background-color: transparent;
         }
     }
 }
@@ -263,6 +256,12 @@
 
 @media (max-width: 767px) {
     .detail-block {
+        & .specification-row {
+            &__key,
+            &__value {
+                max-width: calc(50% - 10px);
+            }
+        }
         &__login {
             padding: 10px 20px;
             padding-right: 115px;
