@@ -100,6 +100,25 @@
         display: none;
     }
     & .range-slider {
+        &__input {
+            padding-left: 35px;
+        }
+        &__input-wrapper {
+            position: relative;
+            z-index: 1;
+            &::before {
+                display: flex;
+                align-items: center;
+                content: attr(data-before);
+                position: absolute;
+                left: 10px;
+                top: 0;
+                height: 100%;
+                width: 20px;
+                color: #c9c8d3;
+                z-index: 2;
+            }
+        }
         & .rs-scale span ins {
             font-size: 0;
             height: 0;

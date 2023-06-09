@@ -425,8 +425,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// range slider
-	document.querySelectorAll('.range-slider').forEach(el => {
+	// catalog range slider
+	document.querySelectorAll('.catalog .range-slider').forEach(el => {
 		let rangeLimits
 		el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
 		let rangeStep
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let rangeUnit
 		el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
 
-		var rangeSlider = new rSlider({
+		var catalogRangeSlider = new rSlider({
 			target: el.querySelector('.range-slider__slider'),
 			values: { min: +rangeLimits[0], max: +rangeLimits[1] },
 			step: rangeStep,
@@ -443,7 +443,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			labels: false,
 			tooltip: false,
 			onChange: function (vals) {
-				let valueArr = rangeSlider.getValue().split(',')
+				let valueArr = catalogRangeSlider.getValue().split(',')
 				el.querySelector('.range-slider__input_min').value = valueArr[0] + rangeUnit
 				el.querySelector('.range-slider__input_max').value = valueArr[1] + rangeUnit
 			}
@@ -500,7 +500,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			e.preventDefault()
 			let currentAnchor = e.target.href.split('#').slice(1).join('')
 			let blockPosition = document.getElementById(currentAnchor).offsetTop - 276
-			console.log(blockPosition);
 			window.scroll({
 				top: blockPosition,
 				left: 0,
@@ -534,10 +533,51 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// remove autofocus
+	// fancybox defaults
 	Fancybox.bind('[data-fancybox]', {
 		autoFocus: false,
+		dragToClose: false,
 	});
+
+
+	// quiz range slider
+	function quizRangeSliderFunc() {
+
+		document.querySelectorAll('.quiz__stage_active .range-slider').forEach(el => {
+			el.querySelectorAll('.rs-container').forEach(elem => {
+				elem.remove()
+			})
+			let rangeLimits
+			el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
+			let rangeStep
+			el.getAttribute('data-step') ? rangeStep = el.getAttribute('data-step') : rangeStep = 10
+			let rangeUnit
+			el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
+
+			quizRangeSlider ? quizRangeSlider.destroy() : ''
+			var quizRangeSlider = new rSlider({
+				target: el.querySelector('.range-slider__slider'),
+				values: { min: +rangeLimits[0], max: +rangeLimits[1] },
+				step: rangeStep,
+				range: false,
+				scale: false,
+				labels: false,
+				tooltip: true,
+				onChange: function (vals) {
+					el.querySelector('.range-slider__input_max').value = vals + rangeUnit
+				}
+			});
+		})
+	}
+
+
+	document.querySelectorAll('a[href="#popup-quiz"]').forEach(el => {
+		el.addEventListener('click', (e) => {
+			setTimeout(() => {
+				quizRangeSliderFunc()
+			}, 10)
+		})
+	})
 
 
 	// quiz
@@ -548,12 +588,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		let prevBtn = quiz.querySelector('.quiz__prev')
 		let nextBtn = quiz.querySelector('.quiz__next')
 
-		updateProgressBar()
+		inputCheck()
 
 		quiz.querySelectorAll('.quiz__btn').forEach(btn => {
 			btn.addEventListener('click', (e) => {
 				btn.closest('.quiz__prev') ? activeStageNum-- : activeStageNum++
 				activeStageObj = quiz.querySelectorAll('.quiz__stage')[activeStageNum]
+
 
 				endPointCheck()
 				updateDiscountBar()
@@ -564,6 +605,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 
 		quiz.addEventListener('input', inputCheck)
+
+		nextBtn.addEventListener('click', (e) => {
+			setTimeout(() => {
+				quizRangeSliderFunc()
+			}, 0)
+		})
 
 		function inputCheck() {
 			let inputArr = 0
@@ -578,6 +625,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				nextBtn.classList.add('quiz__btn_disable')
 			}
+			console.log(inputArr);
 		}
 
 		function endPointCheck() {
@@ -614,7 +662,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		function updateProgressBar() {
-			let progressNum = Math.floor(100 / stagesCount * (activeStageNum + 1))
+			let progressNum = Math.floor(100 / (stagesCount - 1) * (activeStageNum))
 			quiz.querySelector('.quiz__progress-title span').innerHTML = progressNum + '%'
 			quiz.querySelector('.quiz__progress-fill').style.width = progressNum + '%'
 		}

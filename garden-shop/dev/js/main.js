@@ -451,31 +451,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// quiz range slider
-	document.querySelectorAll('.quiz .range-slider').forEach(el => {
-		let rangeLimits
-		el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
-		let rangeStep
-		el.getAttribute('data-step') ? rangeStep = el.getAttribute('data-step') : rangeStep = 10
-		let rangeUnit
-		el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
-
-		var quizRangeSlider = new rSlider({
-			target: el.querySelector('.range-slider__slider'),
-			values: { min: +rangeLimits[0], max: +rangeLimits[1] },
-			step: rangeStep,
-			range: false,
-			scale: false,
-			labels: false,
-			tooltip: true,
-			onChange: function (vals) {
-				el.querySelector('.range-slider__input_max').value = vals + rangeUnit
-			}
-		});
-	})
-
-
-
 	// catalog sort
 	document.querySelectorAll('.catalog__sort').forEach(el => {
 		el.addEventListener('click', (e) => {
@@ -525,7 +500,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			e.preventDefault()
 			let currentAnchor = e.target.href.split('#').slice(1).join('')
 			let blockPosition = document.getElementById(currentAnchor).offsetTop - 276
-			console.log(blockPosition);
 			window.scroll({
 				top: blockPosition,
 				left: 0,
@@ -559,10 +533,51 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// remove autofocus
+	// fancybox defaults
 	Fancybox.bind('[data-fancybox]', {
 		autoFocus: false,
+		dragToClose: false,
 	});
+
+
+	// quiz range slider
+	function quizRangeSliderFunc() {
+
+		document.querySelectorAll('.quiz__stage_active .range-slider').forEach(el => {
+			el.querySelectorAll('.rs-container').forEach(elem => {
+				elem.remove()
+			})
+			let rangeLimits
+			el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
+			let rangeStep
+			el.getAttribute('data-step') ? rangeStep = el.getAttribute('data-step') : rangeStep = 10
+			let rangeUnit
+			el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
+
+			quizRangeSlider ? quizRangeSlider.destroy() : ''
+			var quizRangeSlider = new rSlider({
+				target: el.querySelector('.range-slider__slider'),
+				values: { min: +rangeLimits[0], max: +rangeLimits[1] },
+				step: rangeStep,
+				range: false,
+				scale: false,
+				labels: false,
+				tooltip: true,
+				onChange: function (vals) {
+					el.querySelector('.range-slider__input_max').value = vals + rangeUnit
+				}
+			});
+		})
+	}
+
+
+	document.querySelectorAll('a[href="#popup-quiz"]').forEach(el => {
+		el.addEventListener('click', (e) => {
+			setTimeout(() => {
+				quizRangeSliderFunc()
+			}, 10)
+		})
+	})
 
 
 	// quiz
@@ -573,11 +588,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		let prevBtn = quiz.querySelector('.quiz__prev')
 		let nextBtn = quiz.querySelector('.quiz__next')
 
+		inputCheck()
 
 		quiz.querySelectorAll('.quiz__btn').forEach(btn => {
 			btn.addEventListener('click', (e) => {
 				btn.closest('.quiz__prev') ? activeStageNum-- : activeStageNum++
 				activeStageObj = quiz.querySelectorAll('.quiz__stage')[activeStageNum]
+
 
 				endPointCheck()
 				updateDiscountBar()
@@ -588,6 +605,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 
 		quiz.addEventListener('input', inputCheck)
+
+		nextBtn.addEventListener('click', (e) => {
+			setTimeout(() => {
+				quizRangeSliderFunc()
+			}, 0)
+		})
 
 		function inputCheck() {
 			let inputArr = 0

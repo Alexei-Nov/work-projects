@@ -127,6 +127,7 @@ body {
 .input__field {
   padding: 14px 15px;
   width: 100%;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .input__submit {
   width: 24px;
@@ -284,23 +285,6 @@ body {
 }
 .range-slider__input {
   padding: 10px;
-  padding-left: 35px;
-}
-.range-slider__input-wrapper {
-  position: relative;
-  z-index: 1;
-}
-.range-slider__input-wrapper::before {
-  display: flex;
-  align-items: center;
-  content: attr(data-before);
-  position: absolute;
-  left: 10px;
-  top: 0;
-  height: 100%;
-  width: 20px;
-  color: #c9c8d3;
-  z-index: 2;
 }
 .range-slider .rs-bg {
   background: rgba(226, 91, 38, 0.2);
@@ -310,6 +294,12 @@ body {
   width: calc(100% + 30px);
   transform: translateY(-50%);
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.range-slider .rs-bg-point {
+  display: none;
 }
 .range-slider .rs-container {
   height: 30px;
@@ -319,7 +309,7 @@ body {
   background: #e25b26;
   top: 50%;
   transform: translateY(-50%);
-  border: none;
+  border: none !important;
 }
 .range-slider .rs-pointer {
   border: none;
@@ -335,6 +325,9 @@ body {
 }
 .range-slider .rs-pointer::after, .range-slider .rs-pointer::before {
   display: none;
+}
+.range-slider .rs-scale span::before {
+  display: none !important;
 }
 
 .orange-text {
@@ -957,10 +950,12 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
   width: 24px;
   height: 24px;
   top: 18px !important;
   right: 30px !important;
+  opacity: 1;
 }
 .popup .f-button.is-close-btn svg {
   display: none;
@@ -1020,5 +1015,9 @@ body {
     height: 0;
     overflow: hidden;
     transition: all ease 0.5s;
+  }
+  .popup__body {
+    padding: 15px;
+    padding-top: 30px;
   }
 }

@@ -6,9 +6,11 @@
     justify-content: space-between;
     flex-direction: column;
     position: relative;
+    gap: 60px;
     &__body {
         display: flex;
         justify-content: space-between;
+        gap: 30px;
     }
     &__title {
         margin-bottom: 30px;
@@ -32,7 +34,6 @@
     }
     &__checkbox {
         display: block;
-        margin-bottom: 20px;
     }
     &__stage-content {
         max-height: 300px;
@@ -55,10 +56,15 @@
         border-radius: 5px;
         margin-bottom: 30px;
         justify-content: space-between;
+        align-items: center;
+    }
+    &__discount-total-num {
+        white-space: nowrap;
     }
     &__discount {
         width: 100%;
         max-width: 240px;
+        min-width: 240px;
     }
     &__bottom {
         position: relative;
@@ -168,6 +174,113 @@
         display: none;
         &_active {
             display: block;
+        }
+    }
+    .range-slider {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        gap: 50px;
+        padding-top: 25px;
+        &__wrapper {
+            width: 100%;
+        }
+        &__limits {
+            max-width: 100px;
+            margin: 0;
+        }
+        & .rs-selected {
+            border-radius: 5px 0 0 5px;
+            background-color: #124144;
+            left: -15px !important;
+        }
+        & .rs-pointer {
+            background-color: #124144;
+        }
+        & .rs-bg {
+            background-color: rgba(18, 65, 68, 0.2);
+        }
+        & .rs-bg-point {
+            display: block;
+            background: #124144;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        & .rs-scale span ins {
+            color: #c9c8d3;
+            margin-top: 30px;
+        }
+        & .rs-tooltip {
+            padding: 0;
+            border: none;
+            height: 16px;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .quiz {
+        & .range-slider {
+            &__limits {
+                display: none;
+            }
+        }
+        &__checkbox-list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .quiz {
+        &__body {
+            flex-direction: column-reverse;
+        }
+        &__discount {
+            max-width: none;
+        }
+        &__discount-bar {
+            flex-direction: row;
+            height: 8px;
+        }
+        &__discount-item {
+            font-size: 0;
+            padding: 0;
+            width: 100%;
+            &::after {
+                width: 100%;
+            }
+            &:first-child::after {
+                border-radius: 5px 0px 0px 5px;
+            }
+            &:last-child::after {
+                border-radius: 0px 5px 5px 0px;
+            }
+        }
+        &__discount-total {
+            margin-bottom: 10px;
+        }
+        &__bottom {
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__btns {
+            width: 100%;
+        }
+        &__next {
+            width: 100%;
+        }
+        &__progress {
+            max-width: none;
+        }
+        &__btn-send-form {
+            width: 100%;
+        }
+        &__input-list {
+            max-width: none;
         }
     }
 }

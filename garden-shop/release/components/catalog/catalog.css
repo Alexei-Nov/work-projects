@@ -96,6 +96,25 @@
 .catalog__filter-mobile-title {
   display: none;
 }
+.catalog .range-slider__input {
+  padding-left: 35px;
+}
+.catalog .range-slider__input-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.catalog .range-slider__input-wrapper::before {
+  display: flex;
+  align-items: center;
+  content: attr(data-before);
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  color: #c9c8d3;
+  z-index: 2;
+}
 .catalog .range-slider .rs-scale span ins {
   font-size: 0;
   height: 0;
