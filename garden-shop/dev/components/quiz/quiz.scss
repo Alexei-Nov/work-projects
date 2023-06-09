@@ -1,0 +1,173 @@
+.quiz {
+    min-height: 494px;
+    max-width: 100%;
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__radio-list {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    &__checkbox-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        row-gap: 20px;
+    }
+    &__input-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+    }
+    &__checkbox {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__stage-content {
+        max-height: 300px;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 8px;
+            background: #f7f8fb;
+            border-radius: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #e25b26;
+            border-radius: 5px;
+        }
+    }
+    &__discount-total {
+        padding: 15px 20px;
+        display: flex;
+        gap: 30px;
+        background: #f3f3f3;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+    &__discount {
+        width: 100%;
+        max-width: 240px;
+    }
+    &__bottom {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+            display: block;
+            content: "";
+            width: calc(100% + 60px);
+            height: calc(100% + 60px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #f7f8fb;
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+    &__progress {
+        width: 100%;
+        max-width: 460px;
+    }
+    &__progress-bar {
+        background: #c9c8d3;
+        border-radius: 5px;
+        position: relative;
+        height: 8px;
+        overflow: hidden;
+    }
+    &__progress-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0%;
+        background: #e25b26;
+        border-radius: 5px;
+        transition: all ease 0.5s;
+    }
+    &__progress-title {
+        margin-bottom: 5px;
+    }
+    &__prev {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/icons/Arrow_Right_LG.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px;
+        transition: all ease 0.5s;
+    }
+    &__btns {
+        display: flex;
+        gap: 30px;
+    }
+    &__btn {
+        &_disable {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        &_remove {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    &__discount-bar {
+        height: 262px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3px;
+    }
+    &__discount-item {
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 28px;
+        &:first-child::after {
+            border-radius: 0px 0px 5px 5px;
+        }
+        &:last-child::after {
+            border-radius: 5px 5px 0px 0px;
+        }
+        &::after {
+            display: block;
+            content: "";
+            width: 8px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #f7f8fb;
+            transition: all ease 0.5s;
+        }
+        &_active {
+            &::after {
+                background: #e25b26;
+            }
+        }
+    }
+    &__stage {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+}

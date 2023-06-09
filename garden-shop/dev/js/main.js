@@ -255,6 +255,42 @@ document.addEventListener('DOMContentLoaded', function () {
 	sliderDetailBlock()
 
 
+	// slider advantages
+	let sliderAdvantages = () => {
+		let SwiperAdvantages = new Swiper('.advantages__slider', {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			grid: {
+				rows: 2,
+			},
+			scrollbar: {
+				el: '.advantages__scrollbar',
+				draggable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 15,
+				},
+				570: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				},
+				769: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				1025: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			}
+		});
+	};
+	sliderAdvantages()
+
+
+
 	// phone mask
 	document.querySelectorAll('[type="tel"]').forEach(el => {
 		let mask = IMask(el, { mask: '+{7}(000)000-00-00' })
@@ -389,8 +425,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// range slider
-	document.querySelectorAll('.range-slider').forEach(el => {
+	// catalog range slider
+	document.querySelectorAll('.catalog .range-slider').forEach(el => {
 		let rangeLimits
 		el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
 		let rangeStep
@@ -398,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let rangeUnit
 		el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
 
-		var rangeSlider = new rSlider({
+		var catalogRangeSlider = new rSlider({
 			target: el.querySelector('.range-slider__slider'),
 			values: { min: +rangeLimits[0], max: +rangeLimits[1] },
 			step: rangeStep,
@@ -407,12 +443,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			labels: false,
 			tooltip: false,
 			onChange: function (vals) {
-				let valueArr = rangeSlider.getValue().split(',')
+				let valueArr = catalogRangeSlider.getValue().split(',')
 				el.querySelector('.range-slider__input_min').value = valueArr[0] + rangeUnit
 				el.querySelector('.range-slider__input_max').value = valueArr[1] + rangeUnit
 			}
 		});
 	})
+
+
+	// quiz range slider
+	document.querySelectorAll('.quiz .range-slider').forEach(el => {
+		let rangeLimits
+		el.getAttribute('data-limits') ? rangeLimits = el.getAttribute('data-limits').split(',') : rangeLimits = [0, 100]
+		let rangeStep
+		el.getAttribute('data-step') ? rangeStep = el.getAttribute('data-step') : rangeStep = 10
+		let rangeUnit
+		el.getAttribute('data-unit') ? rangeUnit = el.getAttribute('data-unit') : rangeUnit = ''
+
+		var quizRangeSlider = new rSlider({
+			target: el.querySelector('.range-slider__slider'),
+			values: { min: +rangeLimits[0], max: +rangeLimits[1] },
+			step: rangeStep,
+			range: false,
+			scale: false,
+			labels: false,
+			tooltip: true,
+			onChange: function (vals) {
+				el.querySelector('.range-slider__input_max').value = vals + rangeUnit
+			}
+		});
+	})
+
 
 
 	// catalog sort
@@ -495,6 +556,103 @@ document.addEventListener('DOMContentLoaded', function () {
 		el.addEventListener('click', (e) => {
 			el.classList.toggle('card-basket_add')
 		})
+	})
+
+
+	// remove autofocus
+	Fancybox.bind('[data-fancybox]', {
+		autoFocus: false,
+	});
+
+
+	// quiz
+	document.querySelectorAll('.quiz').forEach(quiz => {
+		let activeStageNum = 0
+		let stagesCount = quiz.querySelectorAll('.quiz__stage').length
+		let activeStageObj = quiz.querySelectorAll('.quiz__stage')[activeStageNum]
+		let prevBtn = quiz.querySelector('.quiz__prev')
+		let nextBtn = quiz.querySelector('.quiz__next')
+
+
+		quiz.querySelectorAll('.quiz__btn').forEach(btn => {
+			btn.addEventListener('click', (e) => {
+				btn.closest('.quiz__prev') ? activeStageNum-- : activeStageNum++
+				activeStageObj = quiz.querySelectorAll('.quiz__stage')[activeStageNum]
+
+				endPointCheck()
+				updateDiscountBar()
+				updateStage()
+				updateProgressBar()
+				inputCheck()
+			})
+		})
+
+		quiz.addEventListener('input', inputCheck)
+
+		function inputCheck() {
+			let inputArr = 0
+			activeStageObj.querySelectorAll('input').forEach(input => {
+				let inputType = input.getAttribute('type')
+				if ((input.checked && (inputType == 'radio' || inputType == 'checkbox')) || input.value != '' && !(inputType == 'radio' || inputType == 'checkbox')) {
+					inputArr++
+				}
+			})
+			if (inputArr > 0) {
+				nextBtn.classList.remove('quiz__btn_disable')
+			} else {
+				nextBtn.classList.add('quiz__btn_disable')
+			}
+		}
+
+		function endPointCheck() {
+			if (activeStageNum == 0) {
+				prevBtn.classList.add('quiz__btn_remove')
+			} else {
+				prevBtn.classList.remove('quiz__btn_remove')
+			}
+
+			if (activeStageNum == stagesCount - 1) {
+				replaceBtn()
+			}
+			nextBtn.classList.remove('quiz__btn_disable')
+		}
+
+		function updateDiscountBar() {
+			quiz.querySelectorAll('.quiz__discount-item_active').forEach(item => {
+				item.classList.remove('quiz__discount-item_active')
+			})
+			quiz.querySelectorAll('.quiz__discount-item').forEach((item, index) => {
+				if (index <= activeStageNum) {
+					item.classList.add('quiz__discount-item_active')
+				}
+			})
+
+			quiz.querySelector('.quiz__discount-total-num ').innerText = quiz.querySelector(`.quiz__discount-item_active:nth-child(${activeStageNum + 1}) span`).innerText
+		}
+
+		function updateStage() {
+			quiz.querySelectorAll('.quiz__stage_active').forEach(stage => {
+				stage.classList.remove('quiz__stage_active')
+			})
+			activeStageObj.classList.add('quiz__stage_active')
+		}
+
+		function updateProgressBar() {
+			let progressNum = Math.floor(100 / (stagesCount - 1) * (activeStageNum))
+			quiz.querySelector('.quiz__progress-title span').innerHTML = progressNum + '%'
+			quiz.querySelector('.quiz__progress-fill').style.width = progressNum + '%'
+		}
+
+		function replaceBtn() {
+			let sendBtn = document.createElement('input')
+			sendBtn.setAttribute('type', 'submit')
+			sendBtn.setAttribute('value', 'Показать результат')
+			sendBtn.classList.add('btn')
+			sendBtn.classList.add('quiz__btn-send-form')
+			nextBtn.after(sendBtn)
+			nextBtn.remove()
+			prevBtn.remove()
+		}
 	})
 })
 

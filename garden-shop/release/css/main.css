@@ -188,6 +188,45 @@ body {
   background-size: contain;
 }
 
+.radio {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.radio__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+.radio__input:checked ~ .radio__checkmark::after {
+  opacity: 1;
+}
+.radio__checkmark {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e25b26;
+  border-radius: 50%;
+}
+.radio__checkmark::after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: #212121;
+}
+
 .toggle {
   position: relative;
   padding-right: 60px;
@@ -262,10 +301,6 @@ body {
   width: 20px;
   color: #c9c8d3;
   z-index: 2;
-}
-.range-slider .rs-scale span ins {
-  font-size: 0;
-  height: 0;
 }
 .range-slider .rs-bg {
   background: rgba(226, 91, 38, 0.2);
@@ -897,6 +932,38 @@ body {
 }
 .card-basket_add::after {
   background-color: #fff;
+}
+
+.fancybox__backdrop {
+  background: rgba(18, 65, 68, 0.9);
+}
+
+.popup {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden;
+  display: none;
+}
+.popup__title {
+  padding: 18px 30px;
+  padding-right: 70px;
+}
+.popup__body {
+  padding: 30px;
+}
+.popup .f-button.is-close-btn {
+  background-image: url(../../images/icons/Close_MD.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  top: 18px !important;
+  right: 30px !important;
+}
+.popup .f-button.is-close-btn svg {
+  display: none;
 }
 
 @media (max-width: 1650px) {

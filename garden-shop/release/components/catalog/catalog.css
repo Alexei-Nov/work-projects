@@ -96,6 +96,10 @@
 .catalog__filter-mobile-title {
   display: none;
 }
+.catalog .range-slider .rs-scale span ins {
+  font-size: 0;
+  height: 0;
+}
 
 .accordion_v2 .a-btn::after {
   display: block;
