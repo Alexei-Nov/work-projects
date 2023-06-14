@@ -582,6 +582,10 @@ body {
   margin-bottom: 10px;
 }
 
+.advantages__name {
+  margin-bottom: 10px;
+}
+
 .slider-pagination {
   margin-top: 30px;
   display: -webkit-box;
