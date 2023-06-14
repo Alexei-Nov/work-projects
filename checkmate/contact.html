@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__menu-btn header__menu-close"></div>
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">О компании</a></li>
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Услуги</a></li>
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__mobile-info">
+						<div>г. Санкт-Петербург, пр-кт Приморский 78, корпус 5, строение 1, помещение 38Н</div>
+						<div>Пн-Чт: 09:30 — 18:00</div>
+					</div>
+					<div class="header__info">
+						<a href="tel:+79111011333" class="header__link header__link_phone">+7 911 101-13-33</a>
+						<a href="mailto:mail@shakhimat.ru" class="header__link">mail@shakhimat.ru</a>
+					</div>
+				</div>
+				<div class="header__body">
+					<a href="/" class="header__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</a>
+					<a href="#form" class="header__btn btn anchor">Получить консультацию</a>
+					<div class="header__mobile">
+						<a href="tel:" class="header__phone">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.8881 16.9201V19.9201C21.8892 20.1986 21.8322 20.4743 21.7206 20.7294C21.6091 20.9846 21.4454 21.2137 21.2402 21.402C21.035 21.5902 20.7927 21.7336 20.5289 21.8228C20.265 21.912 19.9855 21.9452 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66194 17.3148 6.61345 15.2663 5.07812 12.8501C3.38809 10.2413 2.33636 7.27109 2.00812 4.1801C1.98313 3.90356 2.01599 3.62486 2.10462 3.36172C2.19324 3.09859 2.33569 2.85679 2.52288 2.65172C2.71008 2.44665 2.93792 2.28281 3.19191 2.17062C3.44589 2.05843 3.72046 2.00036 3.99812 2.0001H6.99812C7.48342 1.99532 7.95391 2.16718 8.32188 2.48363C8.68985 2.80008 8.93019 3.23954 8.99812 3.7201C9.12474 4.68016 9.35957 5.62282 9.69812 6.5301C9.83266 6.88802 9.86178 7.27701 9.78202 7.65098C9.70227 8.02494 9.51698 8.36821 9.24812 8.6401L7.97812 9.9101C9.40167 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.52 14.3712 15.8633 14.1859 16.2372 14.1062C16.6112 14.0264 17.0002 14.0556 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C20.6539 14.9586 21.0975 15.2033 21.4146 15.5776C21.7318 15.9519 21.9003 16.4297 21.8881 16.9201Z"
+									fill="#A47F65" />
+							</svg>
+						</a>
+						<div class="header__menu-btn header__menu-open"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="breadcrumb">
+				<div class="container">
+					<ul class="breadcrumb__wrapper">
+						<li class="breadcrumb__item"><a href=""><span>Главная</span></a></li>
+						<li class="breadcrumb__item"><span>Контакты</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="section contact">
+				<div class="container">
+					<div class="contact__wrapper">
+						<div class="contact__body">
+							<div class="contact__title title brown-text">Контакты</div>
+							<div class="contact__text">
+								<div class="subtitle">г. Санкт-Петербург, пр-кт Приморский 78, корпус 5, строение 1,
+									помещение 38Н</div>
+								<div class="subtitle">Пн-Чт: 09:30 — 18:00</div>
+								<a href="mailto:mail@shakhimat.ru" class="subtitle">mail@shakhimat.ru</a>
+								<a href="tel:+79111011333" class="subtitle">+7 (911) 101-13-33</a>
+							</div>
+							<div class="contact__map" id="map"></div>
+						</div>
+						<form class="contact__form">
+							<div class="contact__subtitle subtitle">Напишите нам</div>
+							<div class="contact__inputs">
+								<input class="input" type="text" placeholder="Ваше имя">
+								<input class="input" type="tel" placeholder="Телефон">
+								<input class="input" type="email" placeholder="E-mail">
+								<input class="input" type="text" placeholder="Выберите направление">
+								<div class="textarea-wrapper">
+									<label class="textarea-label">Комментарий</label>
+									<textarea class="textarea"></textarea>
+								</div>
+							</div>
+							<div class="contact__text">
+								Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+								соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+								на условиях и для целей, определенных в Согласии на обработку персональных данных
+							</div>
+							<input type="submit" class="contact__btn btn" value="Получить консультацию">
+							<a href="" class="contact__feedback">Сообщить о нарушении</a>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__info">
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Адрес</div>
+							<div class="footer__text">г. Санкт-Петербург, пр-кт Приморский 78, корпус 5, строение 1,
+								помещение 38Н</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Почта</div>
+							<div class="footer__text"><a href="mailto:mail@shakhimat.ru">mail@shakhimat.ru</a></div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Телефон</div>
+							<div class="footer__text"><a href="tel:+79111011333">+7 (911) 101-13-33</a></div>
+						</div>
+					</div>
+					<div class="footer__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

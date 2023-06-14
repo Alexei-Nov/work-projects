@@ -1,0 +1,50 @@
+.advantages__item {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  gap: 15px;
+}
+
+.advantages__item:hover .advantages__icon-bg {
+  fill: #ebebeb;
+}
+
+.advantages__item:hover .advantages__icon-pin {
+  fill: #e25b26;
+}
+
+.advantages__item:hover .advantages__icon-leafs {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.advantages__slider {
+  height: 210px;
+}
+
+.advantages__slide {
+  height: calc((100% - 30px) / 2) !important;
+}
+
+.advantages__icon path,
+.advantages__icon circle {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.advantages__icon-leafs {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-transform: rotate(90deg) translate(-10px, 5px) scale(0.5);
+          transform: rotate(90deg) translate(-10px, 5px) scale(0.5);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}

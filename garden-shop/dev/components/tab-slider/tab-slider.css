@@ -1,0 +1,7 @@
+.tab-slider {
+  position: relative;
+}
+
+.tab-slider__container {
+  position: static;
+}
