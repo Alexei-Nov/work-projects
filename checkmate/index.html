@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__menu-btn header__menu-close"></div>
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">О компании</a></li>
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Услуги</a></li>
+							<li class="nav__item"><a href="" class="nav__link nav__link_lvl1">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__mobile-info">
+						<div>г. Санкт-Петербург, пр-кт Приморский 78, корпус 5, строение 1, помещение 38Н</div>
+						<div>Пн-Чт: 09:30 — 18:00</div>
+					</div>
+					<div class="header__info">
+						<a href="tel:+79111011333" class="header__link header__link_phone">+7 911 101-13-33</a>
+						<a href="mailto:mail@shakhimat.ru" class="header__link">mail@shakhimat.ru</a>
+					</div>
+				</div>
+				<div class="header__body">
+					<a href="/" class="header__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</a>
+					<div class="header__btn btn">Получить консультацию</div>
+					<div class="header__mobile">
+						<a href="tel:" class="header__phone">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M21.8881 16.9201V19.9201C21.8892 20.1986 21.8322 20.4743 21.7206 20.7294C21.6091 20.9846 21.4454 21.2137 21.2402 21.402C21.035 21.5902 20.7927 21.7336 20.5289 21.8228C20.265 21.912 19.9855 21.9452 19.7081 21.9201C16.631 21.5857 13.6751 20.5342 11.0781 18.8501C8.66194 17.3148 6.61345 15.2663 5.07812 12.8501C3.38809 10.2413 2.33636 7.27109 2.00812 4.1801C1.98313 3.90356 2.01599 3.62486 2.10462 3.36172C2.19324 3.09859 2.33569 2.85679 2.52288 2.65172C2.71008 2.44665 2.93792 2.28281 3.19191 2.17062C3.44589 2.05843 3.72046 2.00036 3.99812 2.0001H6.99812C7.48342 1.99532 7.95391 2.16718 8.32188 2.48363C8.68985 2.80008 8.93019 3.23954 8.99812 3.7201C9.12474 4.68016 9.35957 5.62282 9.69812 6.5301C9.83266 6.88802 9.86178 7.27701 9.78202 7.65098C9.70227 8.02494 9.51698 8.36821 9.24812 8.6401L7.97812 9.9101C9.40167 12.4136 11.4746 14.4865 13.9781 15.9101L15.2481 14.6401C15.52 14.3712 15.8633 14.1859 16.2372 14.1062C16.6112 14.0264 17.0002 14.0556 17.3581 14.1901C18.2654 14.5286 19.2081 14.7635 20.1681 14.8901C20.6539 14.9586 21.0975 15.2033 21.4146 15.5776C21.7318 15.9519 21.9003 16.4297 21.8881 16.9201Z"
+									fill="#A47F65" />
+							</svg>
+						</a>
+						<div class="header__menu-btn header__menu-open"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section home-block">
+				<div class="container">
+					<div class="home-block__wrapper">
+						<div class="home-block__body ">
+							<div class="home-block__title title light-text">Консультация юриста, которая решает проблемы
+							</div>
+							<div class="home-block__subtitle subtitle light-text">Консультация от <span class="bold">20
+									000 ₽</span>
+								до <span class="bold">50 000 ₽</span>
+							</div>
+							<div class="home-block__desc light-text">*в зависимости от плана и анализа проблемы</div>
+							<div class="home-block__btn btn">Получить консультацию</div>
+						</div>
+						<div class="home-block__info light-text">
+							<div class="home-block__person-photo">
+								<picture>
+									<source media="(max-width: 570px)" srcset="./img/home-person-mob.png">
+									<img src="./img/home-person.png" alt="img">
+								</picture>
+							</div>
+							<div class="home-block__person-info">
+								<div class="home-block__preson-position">
+									Руководитель юридического бюро <br> “Шах и Мат”
+								</div>
+								<div class="home-block__person-name subtitle">
+									Хорушко Юлия Николаевна
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section text-img">
+				<div class="container">
+					<div class="text-img__title title brown-text">Юридическая консультация в Санкт - Петербурге</div>
+					<div class="text-img__subtitle subtitle">Мы не работаем по шаблонам — созданная нами методология
+						приводит к положительным результатам, которые другим кажутся невозможными. Юридическое бюро «Шах
+						и Мат» уже помогло многим клиентам, которые стали друзьями компании, а теперь мы готовы помочь и
+						вам.</div>
+					<div class="text-img__wrapper">
+						<div class="text-img__img">
+							<picture>
+								<source media="(max-width: 570px)" srcset="./img/text-img-mob.png">
+								<img src="./img/text-img.png" alt="img">
+							</picture>
+						</div>
+						<div class="text-img__text content">
+							<p>
+								«Шах и Мат» — юридическая фирма с богатым опытом в уголовных, гражданских и
+								административных процессах.
+							</p>
+							<p>
+								Наша формула успеха — отличное знание закона, грамотно выстроенная стратегия, эксперты с
+								опытом работы в государственных и правоохранительных органах.
+							</p>
+							<p>
+								Оперативно помогаем клиентам достичь положительного результата даже в сложных правовых
+								ситуациях: выстроим стратегию и поставим вашим оппонентам шах и мат. В нашей юридической
+								фирме работают профессионалы разных направлений, которые достигают успеха всеми
+								возможными способами.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section why-we">
+				<div class="container">
+					<div class="why-we__title title brown-text">Почему выбирают нас?</div>
+					<div class="why-we__list">
+						<div class="why-we__item">
+							<div class="why-we__num title">15+</div>
+							<div class="why-we__text">лет опыта юридической практики</div>
+						</div>
+						<div class="why-we__item">
+							<div class="why-we__num title">250+</div>
+							<div class="why-we__text">успешных кейсов</div>
+						</div>
+						<div class="why-we__item">
+							<div class="why-we__num title">300+</div>
+							<div class="why-we__text">довольных клиентов</div>
+						</div>
+						<div class="why-we__item">
+							<div class="why-we__num title">15+</div>
+							<div class="why-we__text">доверенных партнеров</div>
+						</div>
+						<div class="why-we__item">
+							<div class="why-we__num title">23М+</div>
+							<div class="why-we__text">взыскано денежных средств</div>
+						</div>
+						<div class="why-we__item">
+							<div class="why-we__num title">6</div>
+							<div class="why-we__text">юристов по различным отраслям</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section case">
+				<div class="container">
+					<div class="case__header header-row">
+						<div class="case__title header-row__title title brown-text">Кейсы</div>
+						<div class="case__subtitle header-row__subtitle subtitle brown-text">Примеры выигранных нами дел
+							в различных
+							практиках, с
+							которыми вы можете ознакомиться</div>
+					</div>
+					<div class="case__wrapper">
+						<div class="case__item colored-row">
+							<div class="case__body">
+								<div class="case__name">
+									Команде Юридического Бюро “Шах и Мат” удалось утвердить Мировое соглашение
+								</div>
+								<a href="" data-fancybox class="case__play">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M5 3L19 12L5 21V3Z" stroke="#2B2A29" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+							<div class="case__info">
+								<div class="case__date">01 сентября 2022</div>
+								<a href="" class="case__link"></a>
+							</div>
+						</div>
+						<div class="case__item colored-row">
+							<div class="case__body">
+								<div class="case__name">
+									Команде Юридического Бюро “Шах и Мат” удалось утвердить Мировое соглашение
+								</div>
+								<a href="" data-fancybox class="case__play">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M5 3L19 12L5 21V3Z" stroke="#2B2A29" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+							<div class="case__info">
+								<div class="case__date">01 сентября 2022</div>
+								<a href="" class="case__link"></a>
+							</div>
+						</div>
+						<div class="case__item colored-row">
+							<div class="case__body">
+								<div class="case__name">
+									Команде Юридического Бюро “Шах и Мат” удалось утвердить Мировое соглашение
+								</div>
+								<a href="" data-fancybox class="case__play">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M5 3L19 12L5 21V3Z" stroke="#2B2A29" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+							<div class="case__info">
+								<div class="case__date">01 сентября 2022</div>
+								<a href="" class="case__link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section advantages">
+				<div class="container">
+					<div class="advantages__wrapper">
+						<div class="advantages__title title light-text">Преимущества</div>
+						<div class="advantages__slider swiper">
+							<div class="advantages__slider-wrapper swiper-wrapper">
+								<div class="advantages__slide swiper-slide">
+									<div class="advantages__num title">01</div>
+									<div class="advantages__name subtitle">Конфиденциальность</div>
+									<div class="advantages__text">Гарантируем конфиденциальность и сохранность ваших
+										данных. Готовы подписать соглашение о неразглашении.</div>
+								</div>
+								<div class="advantages__slide swiper-slide">
+									<div class="advantages__num title">02</div>
+									<div class="advantages__name subtitle">Конфиденциальность</div>
+									<div class="advantages__text">Гарантируем конфиденциальность и сохранность ваших
+										данных. Готовы подписать соглашение о неразглашении.</div>
+								</div>
+							</div>
+							<div class="advantages__pagination slider-pagination"></div>
+							<div class="advantages__navigation slider-navigation">
+								<div class="advantages__prev slider-prev"></div>
+								<div class="advantages__next slider-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section service">
+				<div class="container">
+					<div class="service__header header-row">
+						<div class="service__title header-row__title subtitle brown-text">Услуги</div>
+						<div class="service__subtitle header-row__subtitle brown-text">«Шах и Мат» предлагает
+							все виды юридических услуг — от регистрации юридических лиц до ведения сложных дел. Юристы
+							бюро решают вопросы по административным, гражданским и уголовным делам. В частности,
+							специалисты занимаются оказанием правовой помощи по следующим вопросам:</div>
+					</div>
+					<div class="service__wrapper subtitle">
+						<a href="" class="service__item colored-row">Оставление места ДТП</a>
+						<a href="" class="service__item colored-row">«Повторный красный»</a>
+						<a href="" class="service__item colored-row">«Встречка»</a>
+						<a href="" class="service__item colored-row">«Изменённые, нечитаемые ГРЗ или езда без них» </a>
+						<a href="" class="service__item colored-row">ДТП с пострадавшими </a>
+					</div>
+					<a href="" class="show-all-link ">Все услуги</a>
+
+				</div>
+			</section>
+
+			<section class="section team">
+				<div class="container">
+					<div class="team__title title">Команда</div>
+					<div class="team__wrapper">
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-1.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Руководитель юридического бюро “Шах и Мат”
+							</div>
+							<div class="team__name subtitle">Хорушко Юлия </div>
+						</div>
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-2.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Адвокат
+							</div>
+							<div class="team__name subtitle">Погорелов Иван</div>
+						</div>
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-3.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Руководитель имущественно - правовых и земельных вопросов
+							</div>
+							<div class="team__name subtitle">Зарянская Людмила</div>
+						</div>
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-4.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Юрист
+							</div>
+							<div class="team__name subtitle">Буров Олег</div>
+						</div>
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-5.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Руководитель отдела развития
+							</div>
+							<div class="team__name subtitle">Стаганович Анна</div>
+						</div>
+						<div class="team__item">
+							<div class="team__photo">
+								<img src="./img/team/team-6.png" alt="photo">
+							</div>
+							<div class="team__position">
+								Юрист, земельный эксперт
+							</div>
+							<div class="team__name subtitle">Сутягин Александр</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section review">
+				<div class="container">
+					<div class="review__wrapper">
+						<div class="review__title title light-text">Отзывы о нашей работе</div>
+						<div class="review__slider swiper">
+							<div class="review__slider-wrapper swiper-wrapper">
+								<div class="review__slide swiper-slide">
+									<div class="review__photo">
+										<img src="./img/review.png" alt="photo">
+									</div>
+									<div class="review__navigaTION __name subtitle">Васильева Анна</div>
+									<div class="review__content">
+										Очень благодарна юридической компании Шах и Мат за хорошую работу и человеческое
+										отношение! Пока шло дело по разделу имущества, я получала поддержку и дельные
+										советы от своего адвоката. В итоге я отсудила то, что мне полагалось, и сберегла
+										кучу нервов. Юрист всегда был на связи, отвечал на все волнующие меня вопросы.
+										Наконец-то я нашла своего юриста, к которому можно смело обращаться с любой
+										проблемой.
+									</div>
+								</div>
+								<div class="review__slide swiper-slide">
+									<div class="review__photo">
+										<img src="./img/review.png" alt="photo">
+									</div>
+									<div class="review__navigaTION __name subtitle">Васильева Анна</div>
+									<div class="review__content">
+										Очень благодарна юридической компании Шах и Мат за хорошую работу и человеческое
+										отношение! Пока шло дело по разделу имущества, я получала поддержку и дельные
+										советы от своего адвоката. В итоге я отсудила то, что мне полагалось, и сберегла
+										кучу нервов. Юрист всегда был на связи, отвечал на все волнующие меня вопросы.
+										Наконец-то я нашла своего юриста, к которому можно смело обращаться с любой
+										проблемой.
+										Очень благодарна юридической компании Шах и Мат за хорошую работу и человеческое
+										отношение! Пока шло дело по разделу имущества, я получала поддержку и дельные
+										советы от своего адвоката. В итоге я отсудила то, что мне полагалось, и сберегла
+										кучу нервов. Юрист всегда был на связи, отвечал на все волнующие меня вопросы.
+										Наконец-то я нашла своего юриста, к которому можно смело обращаться с любой
+										проблемой.
+									</div>
+								</div>
+							</div>
+							<div class="review__navigation slider-navigation">
+								<div class="review__prev slider-prev"></div>
+								<div class="review__next slider-next"></div>
+							</div>
+							<div class="review__pagination slider-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section article">
+				<div class="container">
+					<div class="article__title title brown-text">Статьи</div>
+					<div class="artcile__wrapper">
+						<div class="article__item colored-row">
+							<div class="article__name subtitle">
+								Собственников недвижимости не будут указывать в выписках для сторонних лиц
+							</div>
+							<div class="article__info">
+								<div class="article__text">
+									С 1 января 2023 года Росреестр не будет указывать
+									собственников недвижимости в выписках для сторонних лиц.
+								</div>
+								<a href="" class="article__link"></a>
+							</div>
+						</div>
+						<div class="article__item colored-row">
+							<div class="article__name subtitle">
+								Собственников недвижимости не будут указывать в выписках для сторонних лиц
+							</div>
+							<div class="article__info">
+								<div class="article__text">
+									С 1 января 2023 года Росреестр не будет указывать
+									собственников недвижимости в выписках для сторонних лиц.
+								</div>
+								<a href="" class="article__link"></a>
+							</div>
+						</div>
+						<div class="article__item colored-row">
+							<div class="article__name subtitle">
+								Собственников недвижимости не будут указывать в выписках для сторонних лиц
+							</div>
+							<div class="article__info">
+								<div class="article__text">
+									С 1 января 2023 года Росреестр не будет указывать
+									собственников недвижимости в выписках для сторонних лиц.
+								</div>
+								<a href="" class="article__link"></a>
+							</div>
+						</div>
+					</div>
+					<a href="" class="show-all-link ">Все статьи</a>
+				</div>
+			</section>
+
+			<section class="section cert">
+				<div class="container">
+					<div class="cert__title title">Сертификаты</div>
+					<div class="cert__slider swiper">
+						<div class="cert__slider-wrapper swiper-wrapper">
+							<a href="" class="cert__slide swiper-slide">
+								<div class="cert__icon">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M35.2625 50.8748C35.2625 48.9748 33.9425 47.8398 31.615 47.8398C30.665 47.8398 30.0225 47.9323 29.685 48.0223V54.1248C30.085 54.2148 30.575 54.2473 31.2475 54.2473C33.73 54.2473 35.2625 52.9898 35.2625 50.8748ZM49.6775 47.8998C48.635 47.8998 47.96 47.9923 47.56 48.0848V61.6048C47.96 61.6973 48.6025 61.6973 49.185 61.6973C53.415 61.7273 56.175 59.3973 56.175 54.4623C56.2075 50.1698 53.6925 47.8998 49.6775 47.8998Z"
+											fill="#2B2A29" />
+										<path
+											d="M77.295 39.9573H75.6V31.7798C75.5986 31.7279 75.5936 31.6761 75.585 31.6248C75.5877 31.296 75.4714 30.9772 75.2575 30.7273L61.65 15.1873L61.64 15.1773C61.4672 14.9898 61.2469 14.8525 61.0025 14.7798L60.9275 14.7548C60.8236 14.7289 60.717 14.7155 60.61 14.7148H27.1675C25.64 14.7148 24.4 15.9573 24.4 17.4823V39.9573H22.705C20.52 39.9573 18.75 41.7273 18.75 43.9123V64.4823C18.75 66.6648 20.5225 68.4373 22.705 68.4373H24.4V82.5198C24.4 84.0448 25.64 85.2873 27.1675 85.2873H72.8325C74.3575 85.2873 75.6 84.0448 75.6 82.5198V68.4373H77.295C79.48 68.4373 81.25 66.6648 81.25 64.4823V43.9123C81.25 41.7273 79.4775 39.9573 77.295 39.9573ZM27.1675 17.4823H59.225V31.6423C59.225 32.4073 59.845 33.0248 60.61 33.0248H72.835V39.9573H27.1675V17.4823ZM61.1425 54.3073C61.1425 58.2623 59.7025 60.9923 57.705 62.6773C55.53 64.4848 52.22 65.3448 48.1725 65.3448C45.75 65.3448 44.035 65.1898 42.8675 65.0398V44.7423C44.585 44.4673 46.8225 44.3148 49.185 44.3148C53.1075 44.3148 55.6525 45.0198 57.645 46.5223C59.7925 48.1148 61.1425 50.6598 61.1425 54.3073ZM25.0525 65.1323V44.7423C26.4925 44.4973 28.5175 44.3148 31.3675 44.3148C34.25 44.3148 36.305 44.8673 37.6825 45.9698C39 47.0123 39.8875 48.7298 39.8875 50.7523C39.8875 52.7773 39.215 54.4923 37.9875 55.6573C36.3925 57.1598 34.0325 57.8348 31.2725 57.8348C30.66 57.8348 30.1075 57.8048 29.68 57.7423V65.1323H25.0525ZM72.8325 81.7698H27.1675V68.4373H72.8325V81.7698ZM76.8425 48.2998H68.9V53.0223H76.32V56.8248H68.9V65.1323H64.2125V44.4673H76.8425V48.2998Z"
+											fill="#2B2A29" />
+									</svg>
+								</div>
+								<div class="cert__body">
+									<div class="cert__name subtitle">
+										Сертификат соответствия №1
+									</div>
+									<div class="cert__size">1.37 МБ</div>
+								</div>
+							</a>
+							<a href="" class="cert__slide swiper-slide">
+								<div class="cert__icon">
+									<svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M35.2625 50.8748C35.2625 48.9748 33.9425 47.8398 31.615 47.8398C30.665 47.8398 30.0225 47.9323 29.685 48.0223V54.1248C30.085 54.2148 30.575 54.2473 31.2475 54.2473C33.73 54.2473 35.2625 52.9898 35.2625 50.8748ZM49.6775 47.8998C48.635 47.8998 47.96 47.9923 47.56 48.0848V61.6048C47.96 61.6973 48.6025 61.6973 49.185 61.6973C53.415 61.7273 56.175 59.3973 56.175 54.4623C56.2075 50.1698 53.6925 47.8998 49.6775 47.8998Z"
+											fill="#2B2A29" />
+										<path
+											d="M77.295 39.9573H75.6V31.7798C75.5986 31.7279 75.5936 31.6761 75.585 31.6248C75.5877 31.296 75.4714 30.9772 75.2575 30.7273L61.65 15.1873L61.64 15.1773C61.4672 14.9898 61.2469 14.8525 61.0025 14.7798L60.9275 14.7548C60.8236 14.7289 60.717 14.7155 60.61 14.7148H27.1675C25.64 14.7148 24.4 15.9573 24.4 17.4823V39.9573H22.705C20.52 39.9573 18.75 41.7273 18.75 43.9123V64.4823C18.75 66.6648 20.5225 68.4373 22.705 68.4373H24.4V82.5198C24.4 84.0448 25.64 85.2873 27.1675 85.2873H72.8325C74.3575 85.2873 75.6 84.0448 75.6 82.5198V68.4373H77.295C79.48 68.4373 81.25 66.6648 81.25 64.4823V43.9123C81.25 41.7273 79.4775 39.9573 77.295 39.9573ZM27.1675 17.4823H59.225V31.6423C59.225 32.4073 59.845 33.0248 60.61 33.0248H72.835V39.9573H27.1675V17.4823ZM61.1425 54.3073C61.1425 58.2623 59.7025 60.9923 57.705 62.6773C55.53 64.4848 52.22 65.3448 48.1725 65.3448C45.75 65.3448 44.035 65.1898 42.8675 65.0398V44.7423C44.585 44.4673 46.8225 44.3148 49.185 44.3148C53.1075 44.3148 55.6525 45.0198 57.645 46.5223C59.7925 48.1148 61.1425 50.6598 61.1425 54.3073ZM25.0525 65.1323V44.7423C26.4925 44.4973 28.5175 44.3148 31.3675 44.3148C34.25 44.3148 36.305 44.8673 37.6825 45.9698C39 47.0123 39.8875 48.7298 39.8875 50.7523C39.8875 52.7773 39.215 54.4923 37.9875 55.6573C36.3925 57.1598 34.0325 57.8348 31.2725 57.8348C30.66 57.8348 30.1075 57.8048 29.68 57.7423V65.1323H25.0525ZM72.8325 81.7698H27.1675V68.4373H72.8325V81.7698ZM76.8425 48.2998H68.9V53.0223H76.32V56.8248H68.9V65.1323H64.2125V44.4673H76.8425V48.2998Z"
+											fill="#2B2A29" />
+									</svg>
+								</div>
+								<div class="cert__body">
+									<div class="cert__name subtitle">
+										Сертификат соответствия
+									</div>
+									<div class="cert__size">1.37 МБ</div>
+								</div>
+							</a>
+						</div>
+						<div class="cert__navigation slider-navigation">
+							<div class="cert__prev slider-prev"></div>
+							<div class="cert__next slider-next"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners">
+				<div class="container">
+					<div class="partners__title title">Нам доверяют</div>
+					<div class="partners__slider swiper">
+						<div class="partners__slider-wrapper swiper-wrapper">
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled.png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (1).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (2).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (3).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (4).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (5).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (6).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (7).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (8).png" alt="logo">
+								</div>
+							</div>
+							<div class="partners__slide swiper-slide">
+								<div class="partners__img">
+									<img src="./img/partners/Untitled (9).png" alt="logo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section map" id="map"></section>
+
+			<section class="section form">
+				<div class="container">
+					<div class="form__title title brown-text">Напишите нам</div>
+					<div class="form__wrapper">
+						<form class="form__body">
+							<div class="form__inputs">
+								<input class="input" type="text" placeholder="Ваше имя">
+								<input class="input" type="tel" placeholder="Телефон">
+								<input class="input" type="email" placeholder="E-mail">
+								<input class="input" type="text" placeholder="Выберите направление">
+								<div class="textarea-wrapper">
+									<label class="textarea-label">Комментарий</label>
+									<textarea class="textarea"></textarea>
+								</div>
+							</div>
+							<div class="form__text">
+								Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+								соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»,
+								на условиях и для целей, определенных в Согласии на обработку персональных данных
+							</div>
+							<input type="submit" class="form__btn btn" value="Получить консультацию">
+							<a href="" class="form__feedback">Сообщить о нарушении</a>
+						</form>
+						<div class="form__img">
+							<img src="./img/form.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__info">
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Адрес</div>
+							<div class="footer__text">г. Санкт-Петербург, пр-кт Приморский 78, корпус 5, строение 1,
+								помещение 38Н</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Почта</div>
+							<div class="footer__text"><a href="mailto:mail@shakhimat.ru">mail@shakhimat.ru</a></div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__subtitle subtitle">Телефон</div>
+							<div class="footer__text"><a href="tel:+79111011333">+7 (911) 101-13-33</a></div>
+						</div>
+					</div>
+					<div class="footer__logo">
+						<img src="./img/logo.svg" alt="logo">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
