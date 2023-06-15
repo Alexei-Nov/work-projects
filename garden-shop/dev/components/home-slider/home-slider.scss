@@ -61,6 +61,22 @@
             object-position: left center;
         }
     }
+    &_sale {
+        & .home-slider {
+            &__navigation {
+                display: none;
+            }
+            &__pagination {
+                display: none;
+            }
+            &__container {
+                max-width: none;
+            }
+            &__slide {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 1650px) {

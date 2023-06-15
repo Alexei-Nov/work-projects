@@ -625,7 +625,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			} else {
 				nextBtn.classList.add('quiz__btn_disable')
 			}
-			console.log(inputArr);
 		}
 
 		function endPointCheck() {

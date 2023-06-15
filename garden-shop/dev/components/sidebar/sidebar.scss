@@ -16,14 +16,18 @@
         display: block;
         width: 24px;
         height: 22px;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        background-color: #212121;
     }
     &__item {
         &:hover .sidebar {
             &__link {
                 color: #e25b26;
-                & svg path {
-                    fill: #e25b26;
-                }
+            }
+            &__link-icon {
+                background-color: #e25b26;
             }
             &__sublist {
                 opacity: 1;

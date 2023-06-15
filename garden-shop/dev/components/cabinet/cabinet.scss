@@ -1,0 +1,21 @@
+.cabinet {
+    &__body {
+        display: flex;
+        gap: 40px;
+    }
+    &__photo {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__name {
+        margin-bottom: 10px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,55 @@
+@@include('components/header/header.html',{ "title": "Каталог" })
+
+@@include('components/breadcrumb/breadcrumb.html')
+
+
+<section class="section block-with-sidebar">
+	<div class="container">
+		<div class="block-with-sidebar__wrapper">
+			<nav class="sidebar">
+				<ul class="sidebar__list">
+					<li class="sidebar__item">
+						<a href="" class="sidebar__link">
+							<span class="sidebar__link-icon"
+								style="-webkit-mask-image:url('./images/icons/cabinet-1.svg')"></span>
+							Личный кабинет
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="" class="sidebar__link">
+							<span class="sidebar__link-icon"
+								style="-webkit-mask-image:url('./images/icons/cabinet-2.svg')"></span>
+							Заказы
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="" class="sidebar__link">
+							<span class="sidebar__link-icon"
+								style="-webkit-mask-image:url('./images/icons/cabinet-3.svg')"></span>
+							Избранное
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="" class="sidebar__link">
+							<span class="sidebar__link-icon"
+								style="-webkit-mask-image:url('./images/icons/cabinet-4.svg')"></span>
+							Техподдержка
+						</a>
+					</li>
+					<li class="sidebar__item">
+						<a href="" class="sidebar__link">
+							<span class="sidebar__link-icon"
+								style="-webkit-mask-image:url('./images/icons/cabinet-5.svg')"></span>
+							Мой трактор
+						</a>
+					</li>
+				</ul>
+			</nav>
+			@@include('components/cabinet/cabinet.html',{})
+		</div>
+	</div>
+</section>
+
+
+
+@@include('components/footer/footer.html',{})

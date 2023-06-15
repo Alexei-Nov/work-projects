@@ -60,6 +60,18 @@
   object-fit: cover;
   object-position: left center;
 }
+.home-slider_sale .home-slider__navigation {
+  display: none;
+}
+.home-slider_sale .home-slider__pagination {
+  display: none;
+}
+.home-slider_sale .home-slider__container {
+  max-width: none;
+}
+.home-slider_sale .home-slider__slide {
+  width: 100%;
+}
 
 @media (max-width: 1024px) {
   .home-slider__container {

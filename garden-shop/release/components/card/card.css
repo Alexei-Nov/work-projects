@@ -27,6 +27,7 @@
   background-position: center right;
   color: #33b939;
   line-height: 100%;
+  width: fit-content;
 }
 .card-state_false {
   color: #f93232;

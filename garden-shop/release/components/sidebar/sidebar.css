@@ -17,12 +17,16 @@
   display: block;
   width: 24px;
   height: 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  background-color: #212121;
 }
 .sidebar__item:hover .sidebar__link {
   color: #e25b26;
 }
-.sidebar__item:hover .sidebar__link svg path {
-  fill: #e25b26;
+.sidebar__item:hover .sidebar__link-icon {
+  background-color: #e25b26;
 }
 .sidebar__item:hover .sidebar__sublist {
   opacity: 1;

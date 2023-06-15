@@ -1,0 +1,19 @@
+.cabinet__body {
+  display: flex;
+  gap: 40px;
+}
+.cabinet__photo {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cabinet__name {
+  margin-bottom: 10px;
+}
+.cabinet__info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}

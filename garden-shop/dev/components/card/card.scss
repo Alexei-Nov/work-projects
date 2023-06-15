@@ -26,9 +26,12 @@
         background-position: center right;
         color: #33b939;
         line-height: 100%;
+        width: fit-content;
         &_false {
             color: #f93232;
             background-image: url(../images/icons/state_false.svg);
+        }
+        &_transparent {
         }
     }
     &__img {
