@@ -52,7 +52,8 @@ exports.cssCopy = cssCopy;
 const uglify = require('gulp-uglify-es').default;
 function scriptsConcat() {
 	return src([
-		'dev/js/*.js'
+		// 'dev/js/*.js'
+		'dev/js/main.js'
 	])
 		.pipe(concat('main-result.js'))
 		// .pipe(uglify())

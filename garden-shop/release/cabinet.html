@@ -13,17 +13,19 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/vanilla-calendar.min.css" />
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/rSlider.min.css" />
 	<link rel="stylesheet" href="css/style-result.css" />
 
+	<script src="./js/vanilla-calendar.min.js"></script>
 	<script src="https://unpkg.com/imask"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/rSlider.min.js"></script>
 	<script src="./js/main-result.js"></script>
 
-	<title>Каталог</title>
+	<title>Личный кабинет</title>
 </head>
 
 <body>
@@ -456,45 +458,60 @@
 <section class="section block-with-sidebar">
 	<div class="container">
 		<div class="block-with-sidebar__wrapper">
-			<nav class="sidebar">
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<a href="" class="sidebar__link">
-							<span class="sidebar__link-icon"
-								style="-webkit-mask-image:url('./images/icons/cabinet-1.svg')"></span>
-							Личный кабинет
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="" class="sidebar__link">
-							<span class="sidebar__link-icon"
-								style="-webkit-mask-image:url('./images/icons/cabinet-2.svg')"></span>
-							Заказы
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="" class="sidebar__link">
-							<span class="sidebar__link-icon"
-								style="-webkit-mask-image:url('./images/icons/cabinet-3.svg')"></span>
-							Избранное
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="" class="sidebar__link">
-							<span class="sidebar__link-icon"
-								style="-webkit-mask-image:url('./images/icons/cabinet-4.svg')"></span>
-							Техподдержка
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="" class="sidebar__link">
-							<span class="sidebar__link-icon"
-								style="-webkit-mask-image:url('./images/icons/cabinet-5.svg')"></span>
-							Мой трактор
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="dropdown dropdown_sidebar">
+				<div class="dropdown__title">
+					<div class="dropdown__title-text">Личный кабинет</div>
+					<div class="dropdown__caret">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.3327 8.33331L9.99935 11.6666L6.66602 8.33331" stroke="#3F3F3F"
+								stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</div>
+				<div class="dropdown__list">
+					<nav class="sidebar">
+						<ul class="sidebar__list">
+							<li class="dropdown__item sidebar__item">
+								<a href="" class="sidebar__link">
+									<span class="sidebar__link-icon"
+										style="-webkit-mask-image:url('./images/icons/cabinet-1.svg')"></span>
+									Личный кабинет
+								</a>
+							</li>
+							<li class="dropdown__item sidebar__item">
+								<a href="" class="sidebar__link">
+									<span class="sidebar__link-icon"
+										style="-webkit-mask-image:url('./images/icons/cabinet-2.svg')"></span>
+									Заказы
+								</a>
+							</li>
+							<li class="dropdown__item sidebar__item">
+								<a href="" class="sidebar__link">
+									<span class="sidebar__link-icon"
+										style="-webkit-mask-image:url('./images/icons/cabinet-3.svg')"></span>
+									Избранное
+								</a>
+							</li>
+							<li class="dropdown__item sidebar__item">
+								<a href="" class="sidebar__link">
+									<span class="sidebar__link-icon"
+										style="-webkit-mask-image:url('./images/icons/cabinet-4.svg')"></span>
+									Техподдержка
+								</a>
+							</li>
+							<li class="dropdown__item sidebar__item">
+								<a href="" class="sidebar__link">
+									<span class="sidebar__link-icon"
+										style="-webkit-mask-image:url('./images/icons/cabinet-5.svg')"></span>
+									Мой трактор
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
 			<div class="cabinet">
     <div class="cabinet__title title">Личный кабинет</div>
     <div class="cabinet__body">
@@ -507,7 +524,7 @@
                 <div class="gray-text">01 мая 1990</div>
                 <div class="gray-text">Пол не указан</div>
                 <div class="gray-text">Физическое лицо</div>
-                <a href="#popup" data-fancybox class="orange-text">Изменить</a>
+                <a href="#popup-user" data-fancybox class="orange-text">Изменить</a>
             </div>
             <div class="cabinet__row">
                 <div class="cabinet__col">
@@ -516,7 +533,16 @@
                         <div class="bold">
                             +7 999 999-99-99
                         </div>
-                        <div class="cabinet-state">
+                    </div>
+                    <a href="#popup" data-fancybox class="orange-text">Изменить</a>
+                </div>
+                <div class="cabinet__col">
+                    <div class="caption-large gray-text">Почта</div>
+                    <div class="cabinet__contact-info">
+                        <div class="bold">
+                            mymail@mail.ru
+                        </div>
+                        <div class="cabinet-state caption-large">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -527,10 +553,26 @@
                             </svg>
                             Почта подтверждена
                         </div>
+                        <!-- <div class="cabinet-state cabinet-state_false caption-large">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.5 5.83333C2.5 3.99238 3.99238 2.5 5.83333 2.5H14.1667C16.0076 2.5 17.5 3.99238 17.5 5.83333V14.1667C17.5 16.0076 16.0076 17.5 14.1667 17.5H5.83333C3.99238 17.5 2.5 16.0076 2.5 14.1667V5.83333Z"
+                                    stroke="#FFC700" stroke-width="0.833333" />
+                                <path d="M6.66797 10H13.3346" stroke="#FFC700" stroke-width="0.833333"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Почта не подтверждена
+                        </div> -->
                     </div>
                     <a href="#popup" data-fancybox class="orange-text">Изменить</a>
                 </div>
             </div>
+            <div class="cabinet__history">
+                <div class="cabinet__subtitle subtitle">Управление аккаунтом</div>
+                <div class="gray-text">Вы зарегистрированы в системе 01 декабря 2022 года</div>
+            </div>
+            <a href="#popup" data-fancybox class="orange-text">Выйти из аккаунта</a>
         </div>
     </div>
 </div>
@@ -901,6 +943,19 @@
         </div>
     </div>
 </form>
+    </div>
+</div>
+
+<div class="popup" id="popup-user">
+    <div class="popup__title orange-bg white-text demibold">Личные данные</div>
+    <div class="popup__body">
+        <div class="input">
+            <input type="text" class="input__field" placeholder="Фамилия Имя Отчество" required>
+        </div>
+        <div class="input">
+            <input type="date" class="input__field" value="1990-01-01" min="1920-01-01" required>
+        </div>
+        <div class="vanilla-calendar"></div>
     </div>
 </div>
 

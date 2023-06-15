@@ -677,7 +677,23 @@ document.addEventListener('DOMContentLoaded', function () {
 			prevBtn.remove()
 		}
 	})
+
+
+	// calendar
+	let date = new Date
+	const calendar = new VanillaCalendar('.vanilla-calendar', {
+		date: {
+			min: '1920-01-01',
+			max: date.toISOString().split('T')[0],
+		},
+		locale: {
+			months: ['Январь', 'Ферваль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+			weekday: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+		},
+	});
+	calendar.init();
 })
+
 
 
 window.onload = () => {

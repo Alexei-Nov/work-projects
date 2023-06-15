@@ -13,10 +13,12 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/vanilla-calendar.min.css" />
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/rSlider.min.css" />
 	<link rel="stylesheet" href="css/style-result.css" />
 
+	<script src="./js/vanilla-calendar.min.js"></script>
 	<script src="https://unpkg.com/imask"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -3278,6 +3280,19 @@
         </div>
     </div>
 </form>
+    </div>
+</div>
+
+<div class="popup" id="popup-user">
+    <div class="popup__title orange-bg white-text demibold">Личные данные</div>
+    <div class="popup__body">
+        <div class="input">
+            <input type="text" class="input__field" placeholder="Фамилия Имя Отчество" required>
+        </div>
+        <div class="input">
+            <input type="date" class="input__field" value="1990-01-01" min="1920-01-01" required>
+        </div>
+        <div class="vanilla-calendar"></div>
     </div>
 </div>
 

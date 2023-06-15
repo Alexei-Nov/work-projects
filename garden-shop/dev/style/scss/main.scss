@@ -131,11 +131,22 @@ body {
 	border-radius: 4px;
 	width: 100%;
 	font-feature-settings: "pnum" on, "lnum" on;
-
+	display: flex;
+	align-items: center;
+	padding: 14px 15px;
+	background-color: #fff;
 	&__field {
-		padding: 14px 15px;
 		width: 100%;
 		font-feature-settings: "pnum" on, "lnum" on;
+		&::-webkit-calendar-picker-indicator {
+			background-image: url(../images/icons/calendar.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 24px;
+			height: 24px;
+			display: block;
+		}
 	}
 	&__submit {
 		width: 24px;
@@ -353,6 +364,46 @@ body {
 	}
 }
 
+.vanilla-calendar {
+	&-arrow {
+		display: block;
+		width: 30px;
+		height: 30px;
+		&:before {
+			height: 100%;
+			width: 100%;
+			mask-image: url(../../images/icons/Caret_Left_SM.svg);
+			mask-position: center;
+			mask-size: contain;
+			background-color: #8a8894;
+		}
+		&_prev:before {
+			transform: none !important;
+		}
+		&_next:before {
+			transform: scaleX(-1) !important;
+		}
+	}
+	&-year {
+		font-feature-settings: "pnum" on, "lnum" on;
+	}
+	&-day {
+		border-radius: 5px;
+		&__btn {
+			font-feature-settings: "pnum" on, "lnum" on;
+			background: none;
+			&_prev,
+			&_next {
+				opacity: 0.5;
+			}
+		}
+		&_selected {
+			color: #fff;
+			background: #e25b26;
+		}
+	}
+}
+
 // colors
 
 .orange-text {
@@ -484,6 +535,34 @@ body {
 				background: #f7f8fb;
 				border-radius: 5px;
 				padding: 7px 5px;
+			}
+		}
+	}
+	&_sidebar {
+		& .dropdown {
+			&__title {
+				padding: 14px 15px;
+				border: 1px solid #ebebeb;
+				border-radius: 4px;
+			}
+			&__caret {
+				right: 15px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.dropdown {
+		&_sidebar {
+			& .dropdown {
+				&__title {
+					display: none;
+				}
+				&__list {
+					position: static;
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -1009,6 +1088,7 @@ body {
 	padding: 0;
 	overflow: hidden;
 	display: none;
+	min-width: 490px;
 	&__title {
 		padding: 18px 30px;
 		padding-right: 70px;
@@ -1121,9 +1201,18 @@ body {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+	.block-with-sidebar {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 }
 
 @media (max-width: 570px) {
+	.popup {
+		min-width: 0;
+	}
 	.popup-info {
 		padding: 15px;
 		padding-right: 40px;

@@ -127,11 +127,23 @@ body {
   border-radius: 4px;
   width: 100%;
   font-feature-settings: "pnum" on, "lnum" on;
+  display: flex;
+  align-items: center;
+  padding: 14px 15px;
+  background-color: #fff;
 }
 .input__field {
-  padding: 14px 15px;
   width: 100%;
   font-feature-settings: "pnum" on, "lnum" on;
+}
+.input__field::-webkit-calendar-picker-indicator {
+  background-image: url(../images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 .input__submit {
   width: 24px;
@@ -334,6 +346,43 @@ body {
   display: none !important;
 }
 
+.vanilla-calendar-arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.vanilla-calendar-arrow:before {
+  height: 100%;
+  width: 100%;
+  mask-image: url(../../images/icons/Caret_Left_SM.svg);
+  mask-position: center;
+  mask-size: contain;
+  background-color: #8a8894;
+}
+.vanilla-calendar-arrow_prev:before {
+  transform: none !important;
+}
+.vanilla-calendar-arrow_next:before {
+  transform: scaleX(-1) !important;
+}
+.vanilla-calendar-year {
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.vanilla-calendar-day {
+  border-radius: 5px;
+}
+.vanilla-calendar-day__btn {
+  font-feature-settings: "pnum" on, "lnum" on;
+  background: none;
+}
+.vanilla-calendar-day__btn_prev, .vanilla-calendar-day__btn_next {
+  opacity: 0.5;
+}
+.vanilla-calendar-day_selected {
+  color: #fff;
+  background: #e25b26;
+}
+
 .orange-text {
   color: #e25b26 !important;
 }
@@ -463,7 +512,24 @@ body {
   border-radius: 5px;
   padding: 7px 5px;
 }
+.dropdown_sidebar .dropdown__title {
+  padding: 14px 15px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+}
+.dropdown_sidebar .dropdown__caret {
+  right: 15px;
+}
 
+@media (min-width: 1024px) {
+  .dropdown_sidebar .dropdown__title {
+    display: none;
+  }
+  .dropdown_sidebar .dropdown__list {
+    position: static;
+    opacity: 1;
+  }
+}
 .main {
   padding-top: 276px;
   transition: all ease 0.5s;
@@ -946,6 +1012,7 @@ body {
   padding: 0;
   overflow: hidden;
   display: none;
+  min-width: 490px;
 }
 .popup__title {
   padding: 18px 30px;
@@ -1042,8 +1109,15 @@ body {
   .tile__wrapper {
     grid-template-columns: 1fr 1fr;
   }
+  .block-with-sidebar__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 570px) {
+  .popup {
+    min-width: 0;
+  }
   .popup-info {
     padding: 15px;
     padding-right: 40px;

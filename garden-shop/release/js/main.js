@@ -677,6 +677,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			prevBtn.remove()
 		}
 	})
+
+
+	// calendar
+	const calendar = new VanillaCalendar('.vanilla-calendar', {
+		// Options
+	});
+	calendar.init();
 })
 
 
