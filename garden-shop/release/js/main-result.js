@@ -682,16 +682,31 @@ document.addEventListener('DOMContentLoaded', function () {
 	// calendar
 	let date = new Date
 	const calendar = new VanillaCalendar('.vanilla-calendar', {
+		settings: {
+			lang: 'ru',
+		},
 		date: {
 			min: '1920-01-01',
 			max: date.toISOString().split('T')[0],
 		},
-		locale: {
-			months: ['Январь', 'Ферваль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-			weekday: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+		actions: {
+			clickDay(event, dates) {
+				event.target.closest('.input').querySelector('.input__field').value = dates
+			},
 		},
 	});
 	calendar.init();
+
+	document.querySelectorAll('.input_with-calendar').forEach(input => {
+		input.addEventListener('click', (e) => {
+			if (!e.target.closest('.input__calendar')
+				&& !e.target.closest('.vanilla-calendar-header')
+				&& !e.target.closest('.vanilla-calendar-months')
+				&& !e.target.closest('.vanilla-calendar-years')) {
+				input.classList.toggle('input_calendar-open')
+			}
+		})
+	})
 })
 
 

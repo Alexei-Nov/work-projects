@@ -55,6 +55,14 @@ body {
 	font-weight: 600;
 }
 
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
 .mb-40 {
 	margin-bottom: 40px;
 }
@@ -123,6 +131,9 @@ body {
 		justify-content: center;
 		align-items: center;
 	}
+	&_fill {
+		width: 100%;
+	}
 }
 
 .input {
@@ -138,15 +149,6 @@ body {
 	&__field {
 		width: 100%;
 		font-feature-settings: "pnum" on, "lnum" on;
-		&::-webkit-calendar-picker-indicator {
-			background-image: url(../images/icons/calendar.svg);
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: center;
-			width: 24px;
-			height: 24px;
-			display: block;
-		}
 	}
 	&__submit {
 		width: 24px;
@@ -168,6 +170,43 @@ body {
 			}
 			&__field {
 				padding-right: 50px;
+			}
+		}
+	}
+	&_with-calendar {
+		cursor: pointer;
+		z-index: 2;
+		& .input {
+			user-select: none;
+			&__field {
+				pointer-events: none;
+				&::-webkit-calendar-picker-indicator {
+					background-image: url(../images/icons/calendar.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 24px;
+					height: 24px;
+					display: block;
+				}
+			}
+			&__calendar {
+				position: absolute;
+				top: calc(100%);
+				left: 0;
+				background-color: #fff;
+				opacity: 0;
+				transition: all ease 0.5s;
+				pointer-events: none;
+				z-index: 9;
+			}
+		}
+	}
+	&_calendar-open {
+		& .input {
+			&__calendar {
+				opacity: 1;
+				pointer-events: all;
 			}
 		}
 	}
@@ -384,6 +423,7 @@ body {
 			transform: scaleX(-1) !important;
 		}
 	}
+	&-years__year,
 	&-year {
 		font-feature-settings: "pnum" on, "lnum" on;
 	}
@@ -1086,12 +1126,11 @@ body {
 	border-radius: 5px;
 	background-color: #fff;
 	padding: 0;
-	overflow: hidden;
 	display: none;
-	min-width: 490px;
 	&__title {
 		padding: 18px 30px;
 		padding-right: 70px;
+		border-radius: 5px 5px 0 0;
 	}
 	&__body {
 		padding: 30px;
@@ -1110,6 +1149,25 @@ body {
 		& svg {
 			display: none;
 		}
+	}
+	&_content {
+		width: 490px;
+		max-width: 100%;
+	}
+	&__gender-inputs {
+		display: flex;
+		gap: 20px;
+	}
+	&__gender {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		row-gap: 10px;
+		margin-bottom: 20px;
+	}
+	&__btns {
+		display: flex;
+		gap: 10px;
 	}
 }
 

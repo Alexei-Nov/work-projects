@@ -119,6 +119,14 @@ body {
   font-weight: 600;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -194,6 +202,10 @@ body {
   align-items: center;
 }
 
+.btn_fill {
+  width: 100%;
+}
+
 .input {
   position: relative;
   border: 1px solid #ebebeb;
@@ -209,16 +221,6 @@ body {
 .input__field {
   width: 100%;
   font-feature-settings: "pnum" on, "lnum" on;
-}
-
-.input__field::-webkit-calendar-picker-indicator {
-  background-image: url(../images/icons/calendar.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 24px;
-  height: 24px;
-  display: block;
 }
 
 .input__submit {
@@ -241,6 +243,47 @@ body {
 
 .input_with-arrow .input__field {
   padding-right: 50px;
+}
+
+.input_with-calendar {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.input_with-calendar .input {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.input_with-calendar .input__field {
+  pointer-events: none;
+}
+
+.input_with-calendar .input__field::-webkit-calendar-picker-indicator {
+  background-image: url(../images/icons/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.input_with-calendar .input__calendar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  transition: all ease 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.input_calendar-open .input__calendar {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .textarea {
@@ -478,6 +521,7 @@ body {
   transform: scaleX(-1) !important;
 }
 
+.vanilla-calendar-years__year,
 .vanilla-calendar-year {
   font-feature-settings: "pnum" on, "lnum" on;
 }
@@ -1210,14 +1254,13 @@ body {
   border-radius: 5px;
   background-color: #fff;
   padding: 0;
-  overflow: hidden;
   display: none;
-  min-width: 490px;
 }
 
 .popup__title {
   padding: 18px 30px;
   padding-right: 70px;
+  border-radius: 5px 5px 0 0;
 }
 
 .popup__body {
@@ -1239,6 +1282,29 @@ body {
 
 .popup .f-button.is-close-btn svg {
   display: none;
+}
+
+.popup_content {
+  width: 490px;
+  max-width: 100%;
+}
+
+.popup__gender-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.popup__gender {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.popup__btns {
+  display: flex;
+  gap: 10px;
 }
 
 .img-wide {
@@ -3325,6 +3391,96 @@ body {
   bottom: 0;
 }
 
+.review__rating {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.review__rating-stars {
+  height: 32px;
+  width: 192px;
+}
+
+.review__header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.review__slider {
+  position: static;
+}
+
+.review__slider-container {
+  position: relative;
+}
+
+.review__slide {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.review-card {
+  padding: 20px;
+  border: 1.5px solid #ebebeb;
+  border-radius: 5px;
+  width: 400px;
+  min-height: 420px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card__header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.review-card__rating {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-card__info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 275px;
+  overflow-y: auto;
+  padding-bottom: 1px;
+}
+
+.review-card__info-text::-webkit-scrollbar {
+  width: 5px;
+  background: #c9c8d3;
+  border-radius: 5px;
+}
+
+.review-card__info-text::-webkit-scrollbar-thumb {
+  background: #8a8894;
+  border-radius: 5px;
+}
+
+.review-card__info-text::after {
+  display: none;
+}
+
+.review-card__desc-title {
+  margin-bottom: 5px;
+}
+
+.review-card__controls {
+  display: flex;
+  margin-top: auto;
+}
+
 .sale-block__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -3578,96 +3734,6 @@ body {
 
 .text-block__wrapper {
   max-width: 1010px;
-}
-
-.review__rating {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.review__rating-stars {
-  height: 32px;
-  width: 192px;
-}
-
-.review__header {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.review__slider {
-  position: static;
-}
-
-.review__slider-container {
-  position: relative;
-}
-
-.review__slide {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.review-card {
-  padding: 20px;
-  border: 1.5px solid #ebebeb;
-  border-radius: 5px;
-  width: 400px;
-  min-height: 420px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.review-card__header {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.review-card__rating {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.review-card__info-text {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-height: 275px;
-  overflow-y: auto;
-  padding-bottom: 1px;
-}
-
-.review-card__info-text::-webkit-scrollbar {
-  width: 5px;
-  background: #c9c8d3;
-  border-radius: 5px;
-}
-
-.review-card__info-text::-webkit-scrollbar-thumb {
-  background: #8a8894;
-  border-radius: 5px;
-}
-
-.review-card__info-text::after {
-  display: none;
-}
-
-.review-card__desc-title {
-  margin-bottom: 5px;
-}
-
-.review-card__controls {
-  display: flex;
-  margin-top: auto;
 }
 
 @media (min-width: 768px) {
@@ -4693,11 +4759,6 @@ body {
     max-width: none;
   }
 
-  .sale-block__list {
-    display: flex;
-    flex-direction: column;
-  }
-
   .review__header {
     flex-direction: column;
     gap: 10px;
@@ -4716,5 +4777,10 @@ body {
   .review-card {
     width: 100%;
     min-height: 0;
+  }
+
+  .sale-block__list {
+    display: flex;
+    flex-direction: column;
   }
 }
