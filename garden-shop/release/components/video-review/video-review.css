@@ -1,0 +1,49 @@
+.video-review__slider {
+  width: 100%;
+}
+.video-review__subslider {
+  width: 100%;
+}
+.video-review__wrapper {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  gap: 30px;
+}
+.video-review__pagination {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .video-review__subslider {
+    height: 570px;
+    width: 315px;
+    margin: 0;
+    padding-right: 25px;
+  }
+  .video-review__scrollbar {
+    width: 5px;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .video-review__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 570px) {
+  .video-review__slider {
+    display: none;
+  }
+  .video-review__scrollbar {
+    display: none;
+  }
+  .video-review__pagination {
+    display: flex;
+  }
+}

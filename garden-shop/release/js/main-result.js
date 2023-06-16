@@ -290,6 +290,50 @@ document.addEventListener('DOMContentLoaded', function () {
 	sliderAdvantages()
 
 
+	// slider video-review
+	let sliderVideoReview = () => {
+		let SubswiperVideoReview = new Swiper('.video-review__subslider', {
+			slidesPerView: '3',
+			spaceBetween: 20,
+			direction: 'vertical',
+			watchSlidesProgress: true,
+			scrollbar: {
+				el: '.video-review__scrollbar',
+				draggable: true,
+			},
+			pagination: {
+				el: ".video-review__pagination",
+				type: 'bullets',
+				clickable: true,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					direction: 'horizontal',
+				},
+				570: {
+					slidesPerView: 2.5,
+					direction: 'horizontal',
+				},
+				1025: {
+					slidesPerView: 3,
+					direction: 'vertical',
+				},
+			}
+		});
+
+		let SwiperVideoReview = new Swiper('.video-review__slider', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			thumbs: {
+				swiper: SubswiperVideoReview,
+			},
+		});
+
+	};
+	sliderVideoReview()
+
+
 
 	// phone mask
 	document.querySelectorAll('[type="tel"]').forEach(el => {
@@ -706,6 +750,72 @@ document.addEventListener('DOMContentLoaded', function () {
 				input.classList.toggle('input_calendar-open')
 			}
 		})
+	})
+
+
+	// 3d render
+	function show_3d(pid, add_compl_id) {
+		add_compl_id = add_compl_id || '';
+		if (!pid) return;
+		$.ajax({
+			url: './product_3d_ajax.php',
+			type: 'POST',
+			cache: false,
+			dataType: 'json',
+			data: 'pid=' + pid + '&add_compl_id=' + add_compl_id,
+			success: function (res) {
+				var title = res['title'];
+				var fold = res['fold'];
+
+				var windowHeight = $(window).height();
+				var windowWidth = $(window).width();
+
+				var img_w = 1280;
+				var img_h = 720;
+
+				var z = img_w / img_h;
+
+				img_h = windowHeight - 150;
+
+				if (img_w > windowWidth - 90) {
+					img_w = windowWidth - 90;
+					img_w = img_w > 1280 ? 1280 : img_w;
+					img_h = img_w / z;
+				} else {
+					img_w = img_h * z;
+					if (img_w > 1280) {
+						img_w = 1280;
+						img_h = img_w / z;
+					}
+				}
+
+				open_modal('#modal_3d');
+
+				setTimeout(function () {
+					$('.spritespin').spritespin({
+						source: SpriteSpin.sourceArray(fold + '/images-{lane}-{frame}.jpg', {
+							lane: [0, 3],
+							frame: [0, 35],
+							digits: 2,
+						}),
+						width: img_w,
+						height: img_h,
+						frames: 36,
+						lanes: 4,
+						sense: 1,
+						senseLane: 2,
+						animate: false,
+						plugins: ['progress', '360', 'drag'],
+					});
+
+				}, 100);
+			},
+			error: function () { },
+		});
+	}
+
+	document.querySelectorAll('.btn-3d').forEach(btn => {
+		btn.addEventListener('click', show_3d)
 	})
 })
 
