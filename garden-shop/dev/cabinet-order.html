@@ -60,7 +60,127 @@
 				</div>
 			</div>
 
-			@@include('components/cabinet/cabinet.html',{})
+			<div class="tab order">
+				<div class="tab-wrapper">
+					<div class="tab__header-wrapper order__header-wrapper">
+						<div class="tab__header order__header">
+							<div class="tab__link order__title tab__link-active title">Мои заказы</div>
+							<div class="tab__link order__title title">Купленные товары</div>
+						</div>
+						<div class="dropdown order-filter">
+							<div class="dropdown__title">
+								<div class="dropdown__title-text caption demibold">Все статусы</div>
+								<div class="dropdown__caret">
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.6654 6L7.9987 10.6667L3.33203 6" stroke="#212121"
+											stroke-width="0.666667" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="dropdown__list">
+								<div class="dropdown__item">Все статусы Все статусы</div>
+								<div class="dropdown__item">Все </div>
+								<div class="dropdown__item">Все статусы</div>
+							</div>
+						</div>
+					</div>
+
+					<div class=" tab__body">
+						<div class=" tab__item tab__item-active">
+							<div class="order__table table bold">
+								<table>
+									<thead class="gray-text">
+										<tr>
+											<th></th>
+											<th>Название продукта</th>
+											<th>Цена</th>
+											<th>Количество</th>
+											<th>Стоимость</th>
+											<th>Статус</th>
+											<th>Номер заказа</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="table__img">
+													<img src="./images/card.png" alt="img">
+												</div>
+											</td>
+											<td class="order__table-name">
+												Трактор Shifeng | Шифенг SF-240В
+											</td>
+											<td class="table__col">
+												<div class="table__label gray-text caption">Цена</div>
+												1 243 450 ₽
+											</td>
+											<td>
+												<div class="table__label gray-text caption">Количество</div>
+												2
+											</td>
+											<td class="order__table-full-mobile">
+												<div class="table__label gray-text caption">Стоимость</div>
+												49 900 ₽
+											</td>
+											<td class="order__table-full-mobile">
+												<div class="table__label gray-text caption">Статус</div>
+												<div class="table__state caption-large">
+													Заказ доставлен
+												</div>
+											</td>
+											<td class="order__table-full-mobile">
+												<div class="table__label gray-text caption">Номер заказа</div>
+												№ 123456 от <br> 03.05.2023
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+
+							<div class="order__load-btn btn btn_transparent">Показать ещё</div>
+							<div class="order__pagination pagination demibold">
+								<div class="pagination__prev"></div>
+								<div class="pagination__item pagination__item_active">1</div>
+								<div class="pagination__item">2</div>
+								<div class="pagination__item">3</div>
+								<div class="pagination__item">4</div>
+								<div class="pagination__item">5</div>
+								<div class="pagination__item">...</div>
+								<div class="pagination__item">15</div>
+								<div class="pagination__next"></div>
+							</div>
+
+						</div>
+						<div class=" tab__item ">
+							<div class="tile tile_3col">
+								<div class="tile__wrapper">
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+									@@include('components/card/card.html', {title: 'Наши преимущества'})
+								</div>
+								<div class="order__load-btn btn btn_transparent">Показать ещё</div>
+								<div class="order__pagination pagination demibold">
+									<div class="pagination__prev"></div>
+									<div class="pagination__item pagination__item_active">1</div>
+									<div class="pagination__item">2</div>
+									<div class="pagination__item">3</div>
+									<div class="pagination__item">4</div>
+									<div class="pagination__item">5</div>
+									<div class="pagination__item">...</div>
+									<div class="pagination__item">15</div>
+									<div class="pagination__next"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

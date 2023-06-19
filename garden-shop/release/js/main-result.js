@@ -817,6 +817,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.querySelectorAll('.btn-3d').forEach(btn => {
 		btn.addEventListener('click', show_3d)
 	})
+
+
+	// password input toggle visibility
+	document.querySelectorAll('.input__pass-toggle').forEach(btn => {
+		let input = btn.closest('.input').querySelector('.input__field')
+		btn.addEventListener('click', (e) => {
+			btn.classList.toggle('input__pass-toggle_show')
+			input.getAttribute('type') == 'password' ? input.setAttribute('type', 'text') : input.setAttribute('type', 'password')
+		})
+	})
 })
 
 
