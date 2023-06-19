@@ -14,7 +14,7 @@
 .cabinet__photo img {
   width: 100%;
 }
-.cabinet__photo:hover .cabinet__photo-change {
+.cabinet__photo_show .cabinet__photo-change {
   opacity: 1;
   pointer-events: all;
 }
@@ -96,6 +96,12 @@
   color: #ffc700;
 }
 
+@media (min-width: 768px) {
+  .cabinet__photo:hover .cabinet__photo-change {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
 @media (max-width: 1200px) {
   .cabinet__row {
     flex-direction: column;

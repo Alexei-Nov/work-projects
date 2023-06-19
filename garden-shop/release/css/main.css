@@ -62,11 +62,16 @@ body {
   margin-bottom: 20px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
 
 @media (max-width: 570px) {
+  .content h2,
   .title {
     font-size: 20px;
     line-height: 28px;
@@ -130,6 +135,12 @@ body {
 }
 .btn_fill {
   width: 100%;
+}
+.btn_disable {
+  border-color: transparent;
+  color: #8a8894;
+  cursor: default;
+  pointer-events: none;
 }
 
 .input {
@@ -202,14 +213,14 @@ body {
 .input__pass-toggle {
   width: 24px;
   height: 24px;
-  background-image: url(../../images/icons/Eye_off.svg);
+  background-image: url(../images/icons/Eye_off.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   cursor: pointer;
 }
 .input__pass-toggle_show {
-  background-image: url(../../images/icons/Eye.svg);
+  background-image: url(../images/icons/Eye.svg);
 }
 
 .textarea {
@@ -401,7 +412,7 @@ body {
 .vanilla-calendar-arrow:before {
   height: 100%;
   width: 100%;
-  mask-image: url(../../images/icons/Caret_Left_SM.svg);
+  mask-image: url(../images/icons/Caret_Left_SM.svg);
   mask-position: center;
   mask-size: contain;
   background-color: #8a8894;
@@ -1064,7 +1075,7 @@ body {
   padding: 30px;
 }
 .popup .f-button.is-close-btn {
-  background-image: url(../../images/icons/Close_MD.svg);
+  background-image: url(../images/icons/Close_MD.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1282,7 +1293,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../images/icons/state_true.svg);
+  background-image: url(../images/icons/state_true.svg);
 }
 
 .cabinet-favorite__load-btn {
@@ -1305,6 +1316,45 @@ body {
 }
 .cabinet-support__textarea {
   height: 140px;
+}
+
+.my-tractor__search {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.my-tractor__search-input {
+  max-width: 450px;
+}
+.my-tractor__load-btn {
+  margin-top: 20px;
+}
+.my-tractor .tab__header {
+  gap: 20px;
+  width: 100%;
+}
+.my-tractor .tab__link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  position: relative;
+  color: #212121;
+}
+.my-tractor .tab__link::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #ebebeb;
+}
+.my-tractor .tab__link-active::after {
+  background-color: #e25b26;
+  height: 3px;
 }
 
 @media (max-width: 1650px) {
@@ -1413,6 +1463,9 @@ body {
   .cabinet-support__btn {
     width: 100%;
   }
+  .order__table-full-mobile br {
+    display: none;
+  }
 }
 @media (max-width: 570px) {
   .table tr {
@@ -1463,5 +1516,15 @@ body {
   .tile__wrapper {
     display: flex;
     flex-direction: column;
+  }
+  .my-tractor__search {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .my-tractor__search-btn {
+    width: 100%;
+  }
+  .my-tractor__search-input {
+    max-width: none;
   }
 }

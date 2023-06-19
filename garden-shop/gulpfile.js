@@ -203,10 +203,10 @@ function imageCompress() {
 exports.imageCompress = imageCompress;
 
 
-// copy image 
+// copy image
 function imageCopy() {
 	return src([
-		'dev/images/**/*',
+		'dev/images/**/*'
 	])
 		.pipe(dest('release/images'))
 		.pipe(browserSync.stream())

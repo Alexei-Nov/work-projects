@@ -14,7 +14,7 @@
         & img {
             width: 100%;
         }
-        &:hover {
+        &_show {
             & .cabinet {
                 &__photo-change {
                     opacity: 1;
@@ -99,6 +99,21 @@
     width: fit-content;
     &_false {
         color: #ffc700;
+    }
+}
+
+@media (min-width: 768px) {
+    .cabinet {
+        &__photo {
+            &:hover {
+                & .cabinet {
+                    &__photo-change {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
     }
 }
 

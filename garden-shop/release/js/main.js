@@ -754,11 +754,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// 3d render
-	function show_3d(pid, add_compl_id) {
-		add_compl_id = add_compl_id || '';
+	function open_modal(modal_id) {
+		// $.fancybox.close();
+		// $.fancybox.open({src : modal_id});
+		$(modal_id).modal('show');
+	}
+	function show_3d(pid, add_compl_id = '') {
+		// add_compl_id = add_compl_id || '';
 		if (!pid) return;
-		$.ajax({
-			url: './product_3d_ajax.php',
+		jQuery.ajax({
+			url: '../dev/product_3d_ajax.php',
 			type: 'POST',
 			cache: false,
 			dataType: 'json',
@@ -767,8 +772,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				var title = res['title'];
 				var fold = res['fold'];
 
-				var windowHeight = $(window).height();
-				var windowWidth = $(window).width();
+				var windowHeight = jQuery(window).height();
+				var windowWidth = jQuery(window).width();
 
 				var img_w = 1280;
 				var img_h = 720;
@@ -792,7 +797,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				open_modal('#modal_3d');
 
 				setTimeout(function () {
-					$('.spritespin').spritespin({
+					jQuery('.spritespin').spritespin({
 						source: SpriteSpin.sourceArray(fold + '/images-{lane}-{frame}.jpg', {
 							lane: [0, 3],
 							frame: [0, 35],
@@ -815,8 +820,30 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	document.querySelectorAll('.btn-3d').forEach(btn => {
-		btn.addEventListener('click', show_3d)
+		let pid = btn.getAttribute('pid')
+		let add_compl_id = btn.getAttribute('add_compl_id')
+
+		btn.addEventListener('click', show_3d(pid, add_compl_id))
 	})
+
+
+	// password input toggle visibility
+	document.querySelectorAll('.input__pass-toggle').forEach(btn => {
+		let input = btn.closest('.input').querySelector('.input__field')
+		btn.addEventListener('click', (e) => {
+			btn.classList.toggle('input__pass-toggle_show')
+			input.getAttribute('type') == 'password' ? input.setAttribute('type', 'text') : input.setAttribute('type', 'password')
+		})
+	})
+
+	// cabinet photo
+	if (window.innerWidth < 768) {
+		document.querySelectorAll('.cabinet__photo').forEach(el => {
+			el.addEventListener('click', (e) => {
+				el.classList.toggle('cabinet__photo_show')
+			})
+		})
+	}
 })
 
 
