@@ -33,6 +33,10 @@
   color: #f93232;
   background-image: url(../images/icons/state_false.svg);
 }
+.card-state_order {
+  background-image: url(../images/icons/Add_rectangle.svg);
+  color: #ffc700;
+}
 .card__img {
   margin-top: 40px;
   display: flex;
@@ -273,6 +277,33 @@
 .card_wide .card__order {
   max-width: 260px;
 }
+.card__compare-fix {
+  width: 24px;
+  height: 24px;
+  mask-image: url(../images/icons/icon_pin.svg);
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-color: #c9c8d3;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.card__compare-fix_fixed {
+  background-color: #33b939;
+}
+.card__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.card__mobile-elem {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .card_kit .card__mid {
@@ -290,6 +321,13 @@
   }
 }
 @media (max-width: 768px) {
+  .card__mobile-elem {
+    display: flex;
+    margin-top: 10px;
+  }
+  .card__compare-fix {
+    display: none;
+  }
   .card_kit {
     height: auto;
     width: 360px;

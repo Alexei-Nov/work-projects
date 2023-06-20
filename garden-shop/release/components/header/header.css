@@ -220,7 +220,7 @@
 .menu__list {
   display: flex;
   gap: 15px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 11px 15px;
   background-color: #fff;
   border-top: 1px solid #ebebeb;

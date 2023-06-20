@@ -31,7 +31,9 @@
             color: #f93232;
             background-image: url(../images/icons/state_false.svg);
         }
-        &_transparent {
+        &_order {
+            background-image: url(../images/icons/Add_rectangle.svg);
+            color: #ffc700;
         }
     }
     &__img {
@@ -279,6 +281,33 @@
             }
         }
     }
+    &__compare-fix {
+        width: 24px;
+        height: 24px;
+        mask-image: url(../images/icons/icon_pin.svg);
+        mask-position: center;
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: #c9c8d3;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        cursor: pointer;
+        &_fixed {
+            background-color: #33b939;
+        }
+    }
+    &__close {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+    }
+    &__mobile-elem {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -308,6 +337,13 @@
 
 @media (max-width: 768px) {
     .card {
+        &__mobile-elem {
+            display: flex;
+            margin-top: 10px;
+        }
+        &__compare-fix {
+            display: none;
+        }
         &_kit {
             height: auto;
             width: 360px;

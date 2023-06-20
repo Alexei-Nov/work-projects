@@ -335,6 +335,59 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+	// slider compare
+	let SubswiperCompare = new Swiper('.compare__subslider', {
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		breakpoints: {
+			0: {
+				slidesPerView: 1.5,
+				spaceBetween: 10,
+			},
+			570: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			769: {
+				slidesPerView: 'auto',
+				spaceBetween: 30,
+			},
+		}
+	});
+
+	let SwiperCompare = new Swiper('.compare__slider', {
+		slidesPerView: 'auto',
+		spaceBetween: 30,
+		scrollbar: {
+			el: '.compare__scrollbar',
+			draggable: true,
+		},
+		navigation: {
+			nextEl: '.compare__next',
+			prevEl: '.compare__prev',
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1.5,
+				spaceBetween: 10,
+			},
+			570: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			769: {
+				slidesPerView: 'auto',
+				spaceBetween: 30,
+			},
+		}
+	});
+	SwiperCompare.controller.control = SubswiperCompare
+	SubswiperCompare.forEach(slider => {
+		slider.controller.control = SwiperCompare
+	})
+
+
+
 	// phone mask
 	document.querySelectorAll('[type="tel"]').forEach(el => {
 		let mask = IMask(el, { mask: '+{7}(000)000-00-00' })
@@ -836,6 +889,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	})
 
+
 	// cabinet photo
 	if (window.innerWidth < 768) {
 		document.querySelectorAll('.cabinet__photo').forEach(el => {
@@ -844,6 +898,88 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	}
+
+
+	// compare fix card
+	document.querySelectorAll('.card').forEach(card => {
+		let btn = card.querySelector('.card__compare-fix')
+		let slide = card.closest('.compare__slide')
+
+		function fixSlide() {
+			let indexOfCard
+			document.querySelectorAll('.compare__slide').forEach((elem, index) => {
+				elem.querySelector('.card__compare-fix.icon_active') ? indexOfCard = index : ''
+			})
+			document.querySelector('.compare__slider-holder').prepend(slide)
+
+			document.querySelectorAll('.compare__subslider-holder').forEach(subslider => {
+				let subslide = subslider.querySelectorAll('.compare__subslide')[indexOfCard]
+				subslider.prepend(subslide)
+			})
+		}
+
+		function unFixSlides() {
+			document.querySelectorAll('.compare__slider-holder > .compare__slide').forEach(slide => {
+				document.querySelector('.compare__slider-wrapper').prepend(slide)
+			})
+			document.querySelectorAll('.compare__row').forEach(row => {
+				row.querySelectorAll('.compare__subslider-holder > .compare__subslide').forEach(subslide => {
+					row.querySelector('.compare__subslider-wrapper').prepend(subslide)
+				})
+			})
+		}
+
+		btn.addEventListener('click', (e) => {
+			if (!e.target.closest('.card__compare-fix_fixed')) {
+				document.querySelectorAll('.card__compare-fix_fixed').forEach(btn => {
+					btn.classList.remove('card__compare-fix_fixed')
+				})
+				btn.classList.add('card__compare-fix_fixed')
+
+				unFixSlides()
+				fixSlide()
+			} else {
+				document.querySelectorAll('.card__compare-fix_fixed').forEach(btn => {
+					btn.classList.remove('card__compare-fix_fixed')
+				})
+
+				unFixSlides()
+			}
+		})
+	})
+
+
+	// compare remove card
+	document.querySelectorAll('.card').forEach(card => {
+		let btn = card.querySelector('.card__close')
+		let slide = card.closest('.compare__slide')
+		btn.addEventListener('click', (e) => {
+			if (e.target.closest('.compare__slider-wrapper')) {
+				card.classList.add('card_remove')
+				let indexOfCard
+				document.querySelectorAll('.compare__slider .card').forEach((elem, index) => {
+					elem.closest('.card_remove') ? indexOfCard = index : ''
+				})
+				slide.remove()
+				document.querySelectorAll('.compare__subslider').forEach(subslider => {
+					subslider.querySelectorAll('.compare__subslide')[indexOfCard].remove()
+				})
+			} else {
+				document.querySelector('.compare__slider-holder > .compare__slide').remove()
+				document.querySelectorAll('.compare__row').forEach(row => {
+					row.querySelector('.compare__subslider-holder > .compare__subslide').remove()
+				})
+			}
+
+			SwiperCompare.update()
+			SubswiperCompare.forEach(slider => {
+				slider.update()
+			})
+			if (document.querySelectorAll('.compare__slide').length == 1 && !document.querySelector('.compare__slider-holder > .compare__slide')) {
+				document.querySelector('.compare__table').remove()
+			}
+		})
+	})
 })
 
 
