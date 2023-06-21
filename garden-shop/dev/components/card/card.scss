@@ -234,16 +234,21 @@
                 text-align: right;
             }
             &__main-hash {
-                display: inline-block;
+                display: inline-flex;
                 background: #f7f8fb;
                 border-radius: 5px;
                 padding: 4px 5px;
+                align-items: center;
+                gap: 5px;
             }
             &__main-hash-list {
                 margin-bottom: 20px;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
             &__current-price {
                 margin-bottom: 0;
@@ -308,6 +313,59 @@
     &__mobile-elem {
         display: none;
     }
+    &_basket {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        & .card {
+            &__state {
+                white-space: nowrap;
+            }
+            &__order {
+                width: 100%;
+                max-width: 280px;
+            }
+            &__gallery {
+                max-width: 200px;
+                height: 177px;
+                margin: 0;
+            }
+            &__name {
+                margin-top: 0;
+            }
+            &__main {
+                max-width: 330px;
+            }
+            &__price {
+                margin: 0;
+            }
+            &__price-difference {
+                margin-top: 5px;
+                margin-left: auto;
+                width: fit-content;
+            }
+            &__price-wrapper {
+                width: fit-content;
+                margin-bottom: 20px;
+            }
+            &__controls {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            &__icon-btn {
+                background: #f7f8fb;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            &__mid {
+                justify-content: flex-start;
+                gap: 40px;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -329,8 +387,28 @@
 
 @media (max-width: 1400px) {
     .card {
-        &_wide {
-            display: none;
+        &_basket {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px;
+            gap: 30px;
+            & .card {
+                &__gallery {
+                    margin: 0 auto;
+                }
+                &__price-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 5px;
+                }
+                &__order {
+                    max-width: none;
+                }
+                &__counter {
+                    margin-right: auto;
+                }
+            }
         }
     }
 }
@@ -424,6 +502,21 @@
         }
         &__kit-price {
             padding: 15px;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .card {
+        &_basket {
+            & .card {
+                &__price-wrapper {
+                    display: block;
+                }
+                &__mid {
+                    gap: 20px;
+                }
+            }
         }
     }
 }

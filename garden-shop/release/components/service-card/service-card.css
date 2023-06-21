@@ -1,0 +1,26 @@
+.service-card {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.service-card__remove-btn {
+  margin-top: auto;
+}
+.service-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 393px;
+}
+
+@media (max-width: 570px) {
+  .service-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+}

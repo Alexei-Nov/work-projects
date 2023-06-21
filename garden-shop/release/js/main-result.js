@@ -382,9 +382,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 	SwiperCompare.controller.control = SubswiperCompare
-	SubswiperCompare.forEach(slider => {
-		slider.controller.control = SwiperCompare
-	})
+	if (SubswiperCompare.length > 1) {
+		SubswiperCompare.forEach(slider => {
+			slider.controller.control = SwiperCompare
+		})
+	} else {
+		SubswiperCompare.controller.control = SwiperCompare
+	}
 
 
 
@@ -454,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.addEventListener('click', function (e) {
 			if (!e.target.closest('.a-btn')) {
 				if (document.querySelector(`${elem} > .a-container_open`) && option == true) {
-					document.querySelector(`${elem} > .a-container_open .a-panel`).style.height = 0
+					document.querySelector(`${elem} > .a-container_open .a-panel`).style.maxHeight = 0
 					document.querySelector(`${elem} > .a-container_open`).classList.remove('a-container_open')
 				}
 				return;
@@ -466,14 +470,14 @@ document.addEventListener('DOMContentLoaded', function () {
 						var elementList = document.querySelectorAll(elem + ' .a-container');
 						Array.prototype.forEach.call(elementList, function (e) {
 							e.classList.remove('a-container_open');
-							e.querySelector('.a-panel').style.height = 0
+							e.querySelector('.a-panel').style.maxHeight = 0
 						});
 					}
 					e.target.closest('.a-container').classList.add('a-container_open');
-					e.target.closest('.a-container').querySelector('.a-panel').style.height = e.target.closest('.a-container').querySelector('.a-panel').scrollHeight + 'px'
+					e.target.closest('.a-container').querySelector('.a-panel').style.maxHeight = e.target.closest('.a-container').querySelector('.a-panel').scrollHeight + 1 + 'px'
 				} else {
 					e.target.closest('.a-container').classList.remove('a-container_open');
-					e.target.closest('.a-container').querySelector('.a-panel').style.height = 0
+					e.target.closest('.a-container').querySelector('.a-panel').style.maxHeight = 0
 				}
 			}
 		});
@@ -482,6 +486,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// catalog filter accordion
 	initAcc('.accordion_v2', false)
+
+	// order list accordion
+	initAcc('.accordion_v3', false)
 
 
 	// footer nav and catalog list accordion
@@ -901,7 +908,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// compare fix card
-	document.querySelectorAll('.card').forEach(card => {
+	document.querySelectorAll('.compare .card').forEach(card => {
 		let btn = card.querySelector('.card__compare-fix')
 		let slide = card.closest('.compare__slide')
 
@@ -949,28 +956,28 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
-	// compare remove card
-	document.querySelectorAll('.card').forEach(card => {
-		let btn = card.querySelector('.card__close')
-		let slide = card.closest('.compare__slide')
-		btn.addEventListener('click', (e) => {
+	// remove card
+	document.querySelectorAll('.card__close').forEach(btn => {
+		let card = btn.closest('.card')
+
+		function removeSubslides(e) {
 			if (e.target.closest('.compare__slider-wrapper')) {
 				card.classList.add('card_remove')
 				let indexOfCard
 				document.querySelectorAll('.compare__slider .card').forEach((elem, index) => {
 					elem.closest('.card_remove') ? indexOfCard = index : ''
 				})
-				slide.remove()
 				document.querySelectorAll('.compare__subslider').forEach(subslider => {
 					subslider.querySelectorAll('.compare__subslide')[indexOfCard].remove()
 				})
 			} else {
-				document.querySelector('.compare__slider-holder > .compare__slide').remove()
 				document.querySelectorAll('.compare__row').forEach(row => {
 					row.querySelector('.compare__subslider-holder > .compare__subslide').remove()
 				})
 			}
+		}
 
+		function updateSliders() {
 			SwiperCompare.update()
 			SubswiperCompare.forEach(slider => {
 				slider.update()
@@ -978,6 +985,25 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (document.querySelectorAll('.compare__slide').length == 1 && !document.querySelector('.compare__slider-holder > .compare__slide')) {
 				document.querySelector('.compare__table').remove()
 			}
+		}
+
+		btn.addEventListener('click', (e) => {
+			if (btn.closest('.compare')) {
+				removeSubslides(e)
+				card.remove()
+				updateSliders()
+			} else {
+				card.remove()
+			}
+		})
+	})
+
+
+	// remove service card
+	document.querySelectorAll('.service-card__remove-btn').forEach(btn => {
+		let card = btn.closest('.service-card')
+		btn.addEventListener('click', (e) => {
+			card.remove()
 		})
 	})
 })

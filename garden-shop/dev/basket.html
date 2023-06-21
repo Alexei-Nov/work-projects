@@ -1,0 +1,53 @@
+@@include('components/header/header.html',{ "title": "Корзина" })
+
+@@include('components/breadcrumb/breadcrumb.html')
+
+<div class="container">
+    <div class="title">Корзина</div>
+</div>
+
+<section class="section block-with-sidebar block-with-sidebar_4col block-with-sidebar_right">
+    <div class="container">
+        <div class="block-with-sidebar__wrapper">
+            @@include('components/basket/basket.html')
+
+            <div class="order-info">
+                <div class="order-info__top">
+                    <div class="btn btn_fill mb-20">Перейти к оформлению</div>
+                    <div class="gray-text">Доступные способы и время доставки можно выбрать при оформлении заказа</div>
+                </div>
+                <div class="order-info__body">
+                    <div class="order-info__basket">
+                        <div class="order-info__row order-info__row_header">
+                            <div class="order-info__col subtitle">Ваша корзина</div>
+                            <div class="order-info__col">3 товара, 2 услуги</div>
+                        </div>
+                        <div class="order-info__row caption">
+                            <div class="order-info__col ">Товары (3)</div>
+                            <div class="order-info__col">359 900 ₽</div>
+                        </div>
+                        <div class="order-info__row caption">
+                            <div class="order-info__col ">Услуги (2)</div>
+                            <div class="order-info__col">0 ₽</div>
+                        </div>
+                        <div class="order-info__row caption">
+                            <div class="order-info__col ">Скидка</div>
+                            <div class="order-info__col">- 30 000 ₽</div>
+                        </div>
+                        <div class="order-info__row order-info__row_sum subtitle">
+                            <div class="order-info__col ">Итого:</div>
+                            <div class="order-info__col">329 900 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('components/text-img/text-img.html')
+
+@@include('components/line-form/line-form.html')
+
+
+@@include('components/footer/footer.html',{})

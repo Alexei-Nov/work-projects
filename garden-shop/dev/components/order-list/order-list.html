@@ -1,0 +1,220 @@
+<div class="order-list">
+    <div class="order-list__accordion accordion_v3">
+        <div class="a-container a-container_open">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Товары в заказе</div>
+                <div class="a-btn-text">(3 товара, 2 услуги)</div>
+            </div>
+            <div class="a-panel">
+                @@include('../basket/basket.html')
+
+                @@include('../service-card/service-card.html')
+                @@include('../service-card/service-card.html')
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_next btn">Далее</div>
+                </div>
+            </div>
+        </div>
+        <div class="a-container">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Тип покупателя</div>
+            </div>
+            <div class="a-panel">
+                <div>Тип плательщика</div>
+
+                <label class="radio pl-40">
+                    Физическое лицо
+                    <div class="radio__subtitle caption gray-text">Если вы проводите оплату самостоятельно
+                    </div>
+                    <input class="radio__input" type="radio" name="stage-1" value="Да">
+                    <span class="radio__checkmark"></span>
+                </label>
+                <label class="radio pl-40">
+                    Юридическое лицо
+                    <div class="radio__subtitle caption gray-text">Если вы покупаете от лица компании</div>
+                    <input class="radio__input" type="radio" name="stage-1" value="Нет">
+                    <span class="radio__checkmark"></span>
+                </label>
+
+                <div class="pl-40">
+                    <div class="mb-10">Оплата по счету в банке</div>
+                    <div class="input order-list__input">
+                        <input type="text" class="input__field" placeholder="ИНН организации">
+                    </div>
+                </div>
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_prev btn btn_transparent">Назад</div>
+                    <div class="order-list__btn order-list__btn_next btn">Далее</div>
+                </div>
+            </div>
+        </div>
+        <div class="a-container">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Доставка</div>
+            </div>
+            <div class="a-panel">
+                <div>Местоположение</div>
+                <div>
+                    <div class="input order-list__input mb-10">
+                        <input type="text" class="input__field"
+                            placeholder="Санкт-Петербург, Северо-Запад, Россия">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 10.3636C19 16.0909 12 21 12 21C12 21 5 16.0909 5 10.3636C5 8.41068 5.7375 6.53771 7.05025 5.15676C8.36301 3.77581 10.1435 3 12 3C13.8565 3 15.637 3.77581 16.9497 5.15676C18.2625 6.53771 19 8.41068 19 10.3636Z"
+                                stroke="#3F3F3F" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                stroke="#212121" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="gray-text caption">Выберите свой город в списке. Если вы не нашли свой
+                        город, выберите "другое местоположение", а город впишите в поле "Город"</div>
+                </div>
+
+                <div class="order-list__radio-img">
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="./images/article.jpg" alt="img">
+                        </div>
+                        Самовывоз
+                        <input class="radio__input" type="radio" name="stage-1" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="" alt="img">
+                        </div>
+                        Доставка транспортной компанией
+                        <input class="radio__input" type="radio" name="stage-1" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="" alt="img">
+                        </div>
+                        Доставка машиной
+                        <input class="radio__input" type="radio" name="stage-1" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+
+                </div>
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_prev btn btn_transparent">Назад</div>
+                    <div class="order-list__btn order-list__btn_next btn">Далее</div>
+                </div>
+            </div>
+        </div>
+        <div class="a-container">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Оплата (физлицо)</div>
+            </div>
+            <div class="a-panel">
+                <div class="order-list__radio-img">
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="./images/article.jpg" alt="img">
+                        </div>
+                        Наличными в нашем офисе
+                        <input class="radio__input" type="radio" name="stage-2" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="" alt="img">
+                        </div>
+                        Оплата по карте
+                        <input class="radio__input" type="radio" name="stage-2" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="" alt="img">
+                        </div>
+                        Оформить в кредит
+                        <input class="radio__input" type="radio" name="stage-2" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+
+                </div>
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_prev btn btn_transparent">Назад</div>
+                    <div class="order-list__btn order-list__btn_next btn">Далее</div>
+                </div>
+            </div>
+        </div>
+        <div class="a-container">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Оплата (юрлицо)</div>
+            </div>
+            <div class="a-panel">
+                <div class="order-list__radio-img">
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="./images/article.jpg" alt="img">
+                        </div>
+                        Банковский счет
+                        <input class="radio__input" type="radio" name="stage-2" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                    <label class="radio radio_img caption">
+                        <div class="radio__img">
+                            <img src="" alt="img">
+                        </div>
+                        Оформить в лизинг
+                        <input class="radio__input" type="radio" name="stage-2" value="Да">
+                        <span class="radio__checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_prev btn btn_transparent">Назад</div>
+                    <div class="order-list__btn order-list__btn_next btn">Далее</div>
+                </div>
+            </div>
+        </div>
+        <div class="a-container">
+            <div class="a-btn demibold orange-bg white-text">
+                <div class="a-btn-text">Контактные данные</div>
+            </div>
+            <div class="a-panel">
+                <div class="input order-list__input">
+                    <input type="text" class="input__field"
+                        placeholder="Константин Константинович Константинопольский">
+                </div>
+                <div class="input order-list__input">
+                    <input type="tel" class="input__field" placeholder="+7 (999) 999-99-99">
+                </div>
+                <div class="input order-list__input">
+                    <input type="email" class="input__field" placeholder="konstantin@garden-shop.ru">
+                </div>
+
+                <textarea class="textarea order-list__textarea"
+                    placeholder="Введите свой комментарий"></textarea>
+
+                <div class="order-list__promo">
+                    <div class="order-list__promo-input input">
+                        <input type="text" class="input__field" placeholder="Промокод">
+                    </div>
+                    <div class="order-list__promo-btn btn">Применить промокод</div>
+                </div>
+
+                <label class="checkbox mb-10 mt-10">Я согласен на обработку персональных данных
+                    <input class="checkbox__input" type="checkbox" name="policy" value="policy">
+                    <span class="checkbox__checkmark"></span>
+                </label>
+
+                <div class="order-list__btns">
+                    <div class="order-list__btn order-list__btn_prev btn btn_transparent">Назад</div>
+                    <input type="submit" class="btn order-list__btn order-list__btn_fit"
+                        value="Оформить заказ">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

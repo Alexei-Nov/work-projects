@@ -232,16 +232,21 @@
   text-align: right;
 }
 .card_wide .card__main-hash {
-  display: inline-block;
+  display: inline-flex;
   background: #f7f8fb;
   border-radius: 5px;
   padding: 4px 5px;
+  align-items: center;
+  gap: 5px;
 }
 .card_wide .card__main-hash-list {
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+}
+.card_wide .card__main-hash-list:last-child {
+  margin-bottom: 0;
 }
 .card_wide .card__current-price {
   margin-bottom: 0;
@@ -304,6 +309,57 @@
 .card__mobile-elem {
   display: none;
 }
+.card_basket {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card_basket .card__state {
+  white-space: nowrap;
+}
+.card_basket .card__order {
+  width: 100%;
+  max-width: 280px;
+}
+.card_basket .card__gallery {
+  max-width: 200px;
+  height: 177px;
+  margin: 0;
+}
+.card_basket .card__name {
+  margin-top: 0;
+}
+.card_basket .card__main {
+  max-width: 330px;
+}
+.card_basket .card__price {
+  margin: 0;
+}
+.card_basket .card__price-difference {
+  margin-top: 5px;
+  margin-left: auto;
+  width: fit-content;
+}
+.card_basket .card__price-wrapper {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.card_basket .card__controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.card_basket .card__icon-btn {
+  background: #f7f8fb;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 10px;
+}
+.card_basket .card__mid {
+  justify-content: flex-start;
+  gap: 40px;
+}
 
 @media (min-width: 768px) {
   .card_kit .card__mid {
@@ -316,8 +372,26 @@
   }
 }
 @media (max-width: 1400px) {
-  .card_wide {
-    display: none;
+  .card_basket {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 30px;
+  }
+  .card_basket .card__gallery {
+    margin: 0 auto;
+  }
+  .card_basket .card__price-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+  .card_basket .card__order {
+    max-width: none;
+  }
+  .card_basket .card__counter {
+    margin-right: auto;
   }
 }
 @media (max-width: 768px) {
@@ -407,5 +481,13 @@
   }
   .card__kit-price {
     padding: 15px;
+  }
+}
+@media (max-width: 570px) {
+  .card_basket .card__price-wrapper {
+    display: block;
+  }
+  .card_basket .card__mid {
+    gap: 20px;
   }
 }
