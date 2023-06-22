@@ -1,0 +1,86 @@
+.default-form {
+    &__wrapper {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    &__body {
+        width: 100%;
+        max-width: 430px;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__bottom {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    &__info {
+        width: 100%;
+        max-width: 760px;
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__contacts {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+    }
+    &__socials-icons {
+        display: flex;
+        gap: 20px;
+    }
+    &__socials-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__img {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .default-form {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            display: none;
+        }
+        &__contacts {
+            justify-content: flex-start;
+        }
+        &__body {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .default-form {
+        &__contacts {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        &__bottom {
+            flex-direction: column;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}

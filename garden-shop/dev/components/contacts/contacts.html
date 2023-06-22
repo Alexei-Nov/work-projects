@@ -1,0 +1,75 @@
+<section class="section contacts">
+    <div class="container">
+        <div class="contacts__header">
+            <div class="contacts__title title">Контакты</div>
+            <div class="contacts__links gray-text">
+                <a href="" class="contacts__link contacts__link_active">
+                    <svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.125 6.20193C3.125 9.23432 5.7778 11.742 6.95199 12.7034L6.95245 12.7038C7.12082 12.8416 7.20504 12.9106 7.33053 12.9459C7.42816 12.9734 7.57175 12.9734 7.66937 12.9459C7.79498 12.9106 7.87942 12.8415 8.0481 12.7034C9.22229 11.742 11.875 9.2343 11.875 6.20192C11.875 5.05434 11.4141 3.95378 10.5936 3.14233C9.77312 2.33087 8.66035 1.875 7.50003 1.875C6.3397 1.875 5.22688 2.33086 4.40641 3.14232C3.58594 3.95377 3.125 5.05436 3.125 6.20193Z"
+                            stroke="#E25B26" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Санкт-Петербург
+                </a>
+                <a href="" class="contacts__link">Тула</a>
+                <a href="" class="contacts__link">Москва</a>
+            </div>
+        </div>
+        <div class="contacts__map" id="map">
+            <a href="#popup-text" data-fancybox class="contacts__map-btn btn">Как проехать?</a>
+            <script>
+                window.onload = () => {
+                    ymaps.ready((e) => {
+                        ymaps.ready(initMap([60.084437, 30.390545], 'map', './images/icons/map-location.svg'));
+                    });
+                }
+            </script>
+        </div>
+        <div class="contacts__body">
+            <div class="contacts__info-list">
+                <div class="contacts__info-item">
+                    <div class="contacts__info-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.50295 4.25722C9.19922 3.4979 8.4638 3 7.646 3H4.89474C3.8483 3 3 3.84834 3 4.89478C3 13.7895 10.2108 21 19.1055 21C20.1519 21 21 20.1518 21 19.1053L20.9999 16.354C20.9999 15.5362 20.5019 14.8009 19.7426 14.4971L17.1071 13.4429C16.4251 13.1701 15.6485 13.293 15.0842 13.7633L14.4031 14.3307C13.6084 14.9929 12.44 14.94 11.7085 14.2085L9.79136 12.2915C9.05993 11.5601 9.00722 10.3915 9.66943 9.59688L10.2368 8.91597C10.7071 8.35163 10.83 7.57493 10.5572 6.89286L9.50295 4.25722Z"
+                                stroke="#212121" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="contacts__info-text">
+                        <div class="subtitle mb-10">Телефон</div>
+                        <a href="">8 (800) 551-18-22</a>
+                    </div>
+                </div>
+                <div class="contacts__info-item">
+                    <div class="contacts__info-icon">
+                        <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.66406 8C3.66406 6.34315 5.00721 5 6.66406 5H18.6641C20.3209 5 21.6641 6.34315 21.6641 8V16C21.6641 17.6569 20.3209 19 18.6641 19H6.66406C5.00721 19 3.66406 17.6569 3.66406 16V8Z"
+                                stroke="#212121" />
+                            <path d="M7.66406 9L12.6641 13L17.6641 9" stroke="#212121" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="contacts__info-text">
+                        <div class="subtitle mb-10">Почта</div>
+                        <a href="">russia@garden-shop.ru</a>
+                    </div>
+                </div>
+                <div class="contacts__info-item">
+                    <div class="contacts__info-icon">
+                        <svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.125 6.20193C3.125 9.23432 5.7778 11.742 6.95199 12.7034L6.95245 12.7038C7.12082 12.8416 7.20504 12.9106 7.33053 12.9459C7.42816 12.9734 7.57175 12.9734 7.66937 12.9459C7.79498 12.9106 7.87942 12.8415 8.0481 12.7034C9.22229 11.742 11.875 9.2343 11.875 6.20192C11.875 5.05434 11.4141 3.95378 10.5936 3.14233C9.77312 2.33087 8.66035 1.875 7.50003 1.875C6.3397 1.875 5.22688 2.33086 4.40641 3.14232C3.58594 3.95377 3.125 5.05436 3.125 6.20193Z"
+                                stroke="#212121" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="contacts__info-text">
+                        <div class="subtitle mb-10">Адрес</div>
+                        <div>Санкт-Петербург, Ленинградская область, поселок Бугры, ул. Торговая, д. 3А</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__info-label caption">Реквизиты: ООО "СКАУТ СЕРВИС" ИНН: 7813660528, КПП: 781301001,
+                ОГРН: 1227800012516, Юридический адрес: 197046, Певческий пер, дом 12, литера А, офис 502</div>
+        </div>
+    </div>
+</section>

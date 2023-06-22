@@ -116,6 +116,7 @@
     &_kit {
         width: 750px;
         padding: 0;
+        grid-column: span 2;
         & .card {
             &__top {
                 position: relative;

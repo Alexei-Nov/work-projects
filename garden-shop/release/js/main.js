@@ -1006,6 +1006,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			card.remove()
 		})
 	})
+
+
+	// custom select
+	document.querySelectorAll('.select').forEach(select => {
+		let selectOptionArr = select.querySelectorAll('.select__input option')
+		let selectItemArr = select.querySelectorAll('.select__item')
+		selectItemArr.forEach((item, index) => {
+			item.addEventListener('click', (e) => {
+				selectOptionArr[index].setAttribute('selected', '')
+			})
+		})
+	})
 })
 
 
@@ -1034,4 +1046,31 @@ window.onload = () => {
 			el.classList.toggle('read-more_open')
 		})
 	});
+
+}
+
+var myMap
+function initMap(coords, id, placemarkImgUrl) {
+	myMap = new ymaps.Map(id, {
+		center: coords,
+		zoom: 18,
+		controls: ['zoomControl']
+	}, {
+		searchControlProvider: 'yandex#search'
+	});
+
+	myPlacemark = new ymaps.Placemark(coords, {}, {
+		iconLayout: 'default#image',
+		iconImageHref: placemarkImgUrl,
+		iconImageSize: [46, 66],
+		iconImageOffset: [-23, -66],
+	});
+
+	myMap.geoObjects.add(myPlacemark)
+
+	if (window.innerWidth < 1023) {
+		myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier']);
+		//  - drag - перемещение карты при нажатой левой кнопки мыши;
+		//  - magnifier.rightButton - увеличение области, выделенной правой кнопкой мыши.
+	}
 }

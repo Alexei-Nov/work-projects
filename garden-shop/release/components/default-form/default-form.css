@@ -1,0 +1,79 @@
+.default-form__wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+.default-form__body {
+  width: 100%;
+  max-width: 430px;
+}
+.default-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.default-form__bottom {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.default-form__info {
+  width: 100%;
+  max-width: 760px;
+}
+.default-form__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.default-form__contacts {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+.default-form__socials-icons {
+  display: flex;
+  gap: 20px;
+}
+.default-form__socials-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.default-form__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.default-form__img {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .default-form__wrapper {
+    flex-direction: column;
+  }
+  .default-form__img {
+    display: none;
+  }
+  .default-form__contacts {
+    justify-content: flex-start;
+  }
+  .default-form__body {
+    max-width: none;
+  }
+}
+@media (max-width: 570px) {
+  .default-form__contacts {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .default-form__bottom {
+    flex-direction: column;
+  }
+  .default-form__btn {
+    width: 100%;
+  }
+}

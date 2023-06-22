@@ -1,0 +1,30 @@
+.header-with-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.header-with-btns__btns {
+  display: flex;
+  gap: 10px;
+  height: fit-content;
+}
+.header-with-btns__title {
+  margin-bottom: 0;
+}
+
+@media (max-width: 570px) {
+  .header-with-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-with-btns__btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header-with-btns__btn {
+    width: 100%;
+  }
+}

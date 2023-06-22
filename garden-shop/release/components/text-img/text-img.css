@@ -17,6 +17,10 @@
   display: flex;
   gap: 30px;
 }
+.text-img__img {
+  width: 100%;
+  max-width: 750px;
+}
 
 @media (max-width: 1024px) {
   .text-img__wrapper {
@@ -25,6 +29,9 @@
   .text-img__body {
     margin: 0;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .text-img__btns {
     justify-content: center;

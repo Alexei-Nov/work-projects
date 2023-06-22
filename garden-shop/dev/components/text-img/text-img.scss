@@ -18,6 +18,10 @@
         display: flex;
         gap: 30px;
     }
+    &__img {
+        width: 100%;
+        max-width: 750px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -28,6 +32,9 @@
         &__body {
             margin: 0;
             text-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
         }
         &__btns {
             justify-content: center;
