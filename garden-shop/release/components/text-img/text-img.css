@@ -4,8 +4,18 @@
   align-items: center;
 }
 .text-img__body {
+  width: 100%;
   max-width: 490px;
   margin-left: 70px;
+}
+.text-img__body_wide {
+  margin-left: 0;
+  max-width: 750px;
+}
+.text-img__body_gray {
+  padding: 30px;
+  border-radius: 5px;
+  background: #f7f8fb;
 }
 .text-img__title {
   margin-bottom: 20px;
@@ -32,6 +42,13 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+  .text-img__body_left {
+    display: block;
+    text-align: left;
+  }
+  .text-img__body_gray {
+    padding: 15px;
   }
   .text-img__btns {
     justify-content: center;

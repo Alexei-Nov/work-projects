@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let SwiperDefault = new Swiper('.default-slider__container', {
 			slidesPerView: 'auto',
 			spaceBetween: 30,
-			loop: true,
+			// loop: true,
 			autoHeight: true,
 			pagination: {
 				el: ".default-slider__pagination",
@@ -1021,6 +1021,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	})
+
+
+
+
 })
 
 

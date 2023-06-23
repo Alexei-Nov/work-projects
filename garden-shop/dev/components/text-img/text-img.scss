@@ -5,8 +5,18 @@
         align-items: center;
     }
     &__body {
+        width: 100%;
         max-width: 490px;
         margin-left: 70px;
+        &_wide {
+            margin-left: 0;
+            max-width: 750px;
+        }
+        &_gray {
+            padding: 30px;
+            border-radius: 5px;
+            background: #f7f8fb;
+        }
     }
     &__title {
         margin-bottom: 20px;
@@ -35,6 +45,13 @@
             align-items: center;
             display: flex;
             flex-direction: column;
+            &_left {
+                display: block;
+                text-align: left;
+            }
+            &_gray {
+                padding: 15px;
+            }
         }
         &__btns {
             justify-content: center;

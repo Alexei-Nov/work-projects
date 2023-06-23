@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let SwiperDefault = new Swiper('.default-slider__container', {
 			slidesPerView: 'auto',
 			spaceBetween: 30,
-			loop: true,
+			// loop: true,
 			autoHeight: true,
 			pagination: {
 				el: ".default-slider__pagination",
@@ -518,14 +518,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// tags
-	document.querySelectorAll('.tags').forEach(el => {
-		el.querySelector('.tags__btn').addEventListener('click', (e) => {
-			let currentText = e.target.innerText
-			let toggleText = e.target.getAttribute('data-toggle-text')
-			e.target.setAttribute('data-toggle-text', currentText)
-			e.target.innerText = toggleText
-			el.classList.toggle('tags_open')
-		})
+	document.querySelectorAll('.tags').forEach(tags => {
+		let tag = tags.querySelector('.tags__btn')
+		if (tag) {
+			tag.addEventListener('click', (e) => {
+				let currentText = e.target.innerText
+				let toggleText = e.target.getAttribute('data-toggle-text')
+				e.target.setAttribute('data-toggle-text', currentText)
+				e.target.innerText = toggleText
+				tags.classList.toggle('tags_open')
+			})
+		}
 	})
 
 
@@ -1018,6 +1021,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	})
+
+
+
+
 })
 
 
