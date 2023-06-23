@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 8x;
+  white-space: nowrap;
 }
 .contacts__link_active {
   color: #e25b26;
@@ -9,6 +10,10 @@
 .contacts__links {
   display: flex;
   gap: 20px;
+  overflow-x: auto;
+}
+.contacts__links::-webkit-scrollbar {
+  display: none;
 }
 .contacts__title {
   margin-bottom: 0;
@@ -91,6 +96,8 @@
     padding: 10px;
     position: relative;
     color: #212121;
+    font-size: 12px;
+    line-height: 130%;
   }
   .contacts__link svg {
     display: none;
@@ -109,5 +116,8 @@
   .contacts__link_active::after {
     height: 3px;
     background-color: #e25b26;
+  }
+  .contacts__map {
+    height: 350px;
   }
 }

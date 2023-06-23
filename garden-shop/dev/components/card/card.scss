@@ -1,6 +1,7 @@
 .card {
     width: 360px;
-    height: 396px;
+    max-height: 396px;
+    height: 100%;
     max-width: 100%;
     border: 1.5px solid #ebebeb;
     border-radius: 5px;
@@ -117,6 +118,7 @@
         width: 750px;
         padding: 0;
         grid-column: span 2;
+        max-height: none;
         & .card {
             &__top {
                 position: relative;
@@ -218,6 +220,7 @@
         height: auto;
         padding-right: 100px;
         width: 100%;
+        max-height: none;
         & .card {
             &__body {
                 padding: 0;

@@ -11,6 +11,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .default-slider {
+        & .article-img {
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 570px) {
     .default-slider {
         & .card {

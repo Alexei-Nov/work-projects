@@ -162,7 +162,7 @@ body {
 		align-items: center;
 	}
 	&_fill {
-		width: 100%;
+		width: 100% !important;
 	}
 	&_disable {
 		border-color: transparent;
@@ -584,6 +584,9 @@ body {
 	max-width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
+	&_fit {
+		width: 1010px;
+	}
 }
 
 .section {

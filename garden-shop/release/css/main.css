@@ -159,7 +159,7 @@ body {
   align-items: center;
 }
 .btn_fill {
-  width: 100%;
+  width: 100% !important;
 }
 .btn_disable {
   border-color: transparent;
@@ -554,6 +554,9 @@ body {
   max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+.container_fit {
+  width: 1010px;
 }
 
 .section {

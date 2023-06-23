@@ -54,9 +54,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .article-item {
+        padding: 15px;
+    }
+}
+
 @media (max-width: 570px) {
     .article-item {
         width: 100%;
-        padding: 15px;
     }
 }
