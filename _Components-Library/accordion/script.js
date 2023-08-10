@@ -12,7 +12,7 @@ document.querySelectorAll('.accordion').forEach(accordion => {
 
 			if (!item.closest('.accordion__item_open')) {
 				item.classList.add('accordion__item_open')
-				body.style.maxHeight = item.scrollHeight + 'px'
+				body.style.maxHeight = body.scrollHeight + 'px'
 			} else {
 				item.classList.remove('accordion__item_open')
 				body.style.maxHeight = 0
