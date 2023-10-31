@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/style.css">
+
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0656f73b-e753-48d3-a789-31a5dc9f3442"
+		type="text/javascript"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper small-text">
+					<div class="header__body">
+						<div class="header__menu-btn btn">
+							<div class="header__menu-btn-icon">
+								<span></span>
+							</div>
+							<div class="header__menu-btn-text">
+								меню
+							</div>
+						</div>
+						<div class="header__logo">
+							<img loading="lazy" src="./img/logo.svg" alt="logo">
+						</div>
+						<a href="tel:+74993993399" class="header__phone">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+								fill="none">
+								<path
+									d="M21.8507 18.1771C21.2453 17.5714 20.4457 17.5714 19.8346 18.1771C19.3549 18.6571 18.8751 19.1028 18.4297 19.5828C18.3954 19.6171 18.3668 19.6457 18.3326 19.6457L18.0128 19.9657C17.9157 20.0286 17.8186 20.0286 17.7272 19.9657C17.4416 19.8057 17.0875 19.68 16.802 19.4857C15.4256 18.6228 14.2776 17.5314 13.2839 16.2857C12.7698 15.68 12.3244 15.0057 12.0045 14.2686C11.9417 14.1428 11.9417 14.0457 12.0388 13.9486L12.8384 13.1486C13.1582 12.8286 13.478 12.5086 13.7979 12.1543C14.4375 11.5143 14.4375 10.7486 13.7979 10.0743C13.4438 9.69142 13.0611 9.33713 12.6785 8.95427C12.2958 8.57142 11.9132 8.18856 11.5248 7.79999C10.9194 7.19427 10.1198 7.19427 9.50874 7.79999C9.02899 8.27999 8.58352 8.75999 8.10377 9.2057C7.6583 9.62285 7.42985 10.1314 7.36703 10.7714C7.3042 11.7657 7.52694 12.6914 7.88104 13.5886C8.58352 15.4743 9.64009 17.1428 10.9194 18.6743C12.6442 20.7543 14.7231 22.3886 17.1561 23.5714C18.2412 24.1143 19.3949 24.4971 20.6114 24.5657C21.4452 24.6 22.2105 24.4057 22.7873 23.7314C23.2043 23.2857 23.6497 22.8686 24.0667 22.4171C24.7063 21.7771 24.7063 21.0114 24.0667 20.3714C23.387 19.68 22.6217 18.9143 21.8507 18.1771Z"
+									fill="white" />
+							</svg>
+						</a>
+						<div class="header__info ">
+							<a href="tel:+74993993399" class="header__link">
+								+7 (499) 399 33 99
+							</a>
+							<a href="#popup-form" data-fancybox class="header__btn btn btn_white small-text">оставить
+								запрос</a>
+						</div>
+					</div>
+					<div class="header__panel">
+						<div class="header__backdrop"></div>
+						<div class="container header__panel-container">
+							<div class="header__panel-wrapper">
+								<nav class="header__nav nav subtitle">
+									<ul class="nav__list">
+										<li class="nav__item"><a href="#description"
+												class="nav__link nav__link_lvl1 anchor">О
+												БАШНЕ</a>
+										</li>
+										<li class="nav__item"><a href="#"
+												class="nav__link nav__link_lvl1 anchor">ИНФРАСТРУКТУРА</a>
+										</li>
+										<li class="nav__item"><a href="#aparts"
+												class="nav__link nav__link_lvl1 anchor">АППАРТАМЕНТЫ</a>
+										</li>
+										<li class="nav__item"><a href="#location"
+												class="nav__link nav__link_lvl1 anchor">МЕСТОПОЛОЖЕНИЕ</a>
+										</li>
+										<li class="nav__item"><a href="#payment"
+												class="nav__link nav__link_lvl1 anchor">КАК
+												КУПИТЬ</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="header__menu-close round-btn" style="--imgUrl:url(../img/icons/close.svg)"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class=" home">
+				<div class="container">
+					<div class="home__wrapper">
+						<div class="home__title page-title heading">
+							<div class="heading__row heading__row_left-offset ">all</div>
+							<div class="heading__row ">habtoor</div>
+							<div class="heading__row heading__row_center brown-text ">tower</div>
+						</div>
+						<a href="#description" class="home__btn round-btn anchor"
+							style="--imgUrl:url(../img/icons/arrow.svg)"></a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg pb-0 mt-0" id="description">
+				<div class="container">
+					<div class="col-text">
+						<div class="col-text__wrapper">
+							<div class="col-text__title brown-text large-text">
+								Al Habtoor Tower — это больше, чем дом.
+							</div>
+							<div class="col-text__content content">
+								<p>
+									Al Habtoor Tower от Al Habtoor Group — новый роскошный проект в Al Habtoor City,
+									рядом с
+									Dubai Canal. В 82-этажном небоскребе представлена коллекция из апартаментов.
+									Застройщик
+									предлагает привлекательную возможность стать владельцем целого этажа в комплексе.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_separate">
+						<img src="./img/wide-img/img-1.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section welcome">
+				<div class="container">
+					<div class="welcome__title title heading brown-text">
+						<div class="heading__row heading__row_left-offset ">ДОБРО</div>
+						<div class="heading__row ">ПОЖАЛОВАТЬ </div>
+						<div class="heading__row ">НА РОСКОШНЫй</div>
+						<div class="heading__row heading__row_center  ">ОТДЫХ</div>
+					</div>
+					<div class="welcome__text col-text">
+						<div class="welcome__text-img">
+							<img src="./img/welcome/img-1.png" alt="img">
+						</div>
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Al Habtoor Tower — премиальный проект в самом центре Дубая от амбициозного
+									застройщика Al Habtoor Group. Комплекс строится в непосредственной близости от
+									выезда на одну из главных магистралей эмирата Sheikh Zayed Road.
+								</p>
+								<p>
+									Небоскреб создается совместно China Railway 18Th Bureau Group и специалистами из
+									архитектурного бюро MAK Consultancy & Architects. Планируется, что строительные
+									работы будут закончены в рекордные сроки и проект будет сдан в третьем квартале
+									2026
+									года. В проекте будет собственная парковка и различные магазины на первом этаже
+									здания.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="welcome__img-list">
+						<div class="welcome__img-col">
+							<div class="welcome__img-item">
+								<img src="./img/welcome/img-2.png" alt="img">
+							</div>
+						</div>
+						<div class="welcome__img-col">
+							<div class="welcome__img-item">
+								<img src="./img/welcome/img-3.png" alt="img">
+							</div>
+							<div class="welcome__btn anim-btn">
+								<div class="anim-btn__circle"></div>
+								<div class="anim-btn__body">
+									<div class="anim-btn__text">узнать подробнее</div>
+									<div class="anim-btn__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="37" height="32"
+											viewBox="0 0 37 32" fill="none">
+											<path
+												d="M1.00006 15.2476C0.585847 15.2475 0.250034 15.5833 0.25 15.9975C0.249966 16.4117 0.585725 16.7475 0.999939 16.7476L1.00006 15.2476ZM31.5303 16.5304C31.8232 16.2375 31.8232 15.7626 31.5304 15.4697L26.7578 10.6964C26.4649 10.4034 25.99 10.4034 25.6971 10.6963C25.4042 10.9891 25.4042 11.464 25.697 11.7569L29.9393 15.9999L25.6964 20.2422C25.4034 20.5351 25.4034 21.01 25.6963 21.3029C25.9891 21.5958 26.464 21.5958 26.7569 21.303L31.5303 16.5304ZM0.999939 16.7476L30.9999 16.75L31.0001 15.25L1.00006 15.2476L0.999939 16.7476Z"
+												fill="#BB8B7A" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg advantages">
+				<div class="container">
+					<div class="advantages__title title heading brown-text">
+						<div class="heading__row heading__row_left-offset ">совершенно</div>
+						<div class="heading__row heading__row_center">премиально</div>
+					</div>
+					<div class="advantages__list">
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								18 скоростных лифтов
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Роскошное лобби
+								и стойка регистрации
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Библиотека и тихие пространства
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Зарядные станции
+								для электромобилей
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Залы для мероприятий
+								и нетворкинга
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Собственная, охраняемая парковка
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Круглосуточная охрана
+								и контролируемый доступ
+							</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__img">
+								<img src="./img/advantages/img-1.png" alt="img">
+							</div>
+							<div class="advantages__name">
+								Частная парковка для посетителей
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="title heading brown-text">
+						<div class="heading__row heading__row_left-offset ">ГДЕ ЖИЗНЬ</div>
+						<div class="heading__row">ПЕРЕТЕКАЕТ</div>
+						<div class="heading__row heading__row_center">В РОСКОШЬ</div>
+					</div>
+					<div class="col-text">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									В башне Аль-Хабтур, представлены просторные апартаменты с одной, двумя и тремя
+									спальнями с захватывающим видом, оснащенные по последнему слову технологии "Умный
+									дом".
+								</p>
+								<p>
+									Здание landmark tower, оформленное в классическом элегантном стиле и отделанное
+									материалами высочайшего качества, станет одним из самых изысканных мест для жизни в
+									Дубае.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="gallery">
+						<a href="./img/gallery/img-1.png" class="gallery__img" data-fancybox="gallery">
+							<img src="./img/gallery/img-1.png" alt="img">
+						</a>
+						<a href="./img/gallery/img-1.png" class="gallery__img" data-fancybox="gallery">
+							<img src="./img/gallery/img-1.png" alt="img">
+						</a>
+						<a href="./img/gallery/img-1.png" class="gallery__img" data-fancybox="gallery">
+							<img src="./img/gallery/img-1.png" alt="img">
+						</a>
+						<a href="./img/gallery/img-1.png" class="gallery__img" data-fancybox="gallery">
+							<img src="./img/gallery/img-1.png" alt="img">
+						</a>
+						<a href="./img/gallery/img-1.png" class="gallery__img" data-fancybox="gallery">
+							<img src="./img/gallery/img-1.png" alt="img">
+							<div class="gallery__btn">Смотреть все</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="aparts">
+				<div class="container">
+					<div class="title heading brown-text">
+						<div class="heading__row">план </div>
+						<div class="heading__row">апартаментов</div>
+					</div>
+					<div class="col-text">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Потенциальным инвесторам предлагается выбрать вариант недвижимости из широкого
+									спектра апартаментов с 1 – 3 спальнями площадью от 78 кв. м до 219 кв. м. Еще можно
+									купить целый этаж в проекте. Во всех резиденциях будут балкон и полностью
+									укомплектованная кухня. Из панорамных окон можно будет любоваться видами на Burj
+									Khalifa, небоскребы Business Bay и локации в Jumeirah.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="plan">
+						<div class="plan__slider swiper">
+							<div class="plan__wrapper swiper-wrapper">
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+								<a href="./img/plan/img-1.png" class="plan__slide swiper-slide"
+									data-fancybox="plan-slider">
+									<img src="./img/plan/img-1.png" alt="img">
+								</a>
+							</div>
+							<div class="plan__navigation slider-navigation">
+								<div class="plan__prev slider-prev round-btn"
+									style="--imgUrl:url(../img/icons/slider-arrow.svg)"></div>
+								<div class="plan__next slider-next round-btn"
+									style="--imgUrl:url(../img/icons/slider-arrow.svg)"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg pb-0" id="advantages">
+				<div class="container">
+					<div class="title heading brown-text">
+						<div class="heading__row">Ключевые</div>
+						<div class="heading__row heading__row_left-offset ">Преимущества</div>
+					</div>
+					<div class="col-text">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Грандиозный проект Al Habtoor Tower станет частью Al Habtoor City в Business Bay.
+									Этот район считается одним из самых престижных и развитых в эмирате. Здесь одна из
+									самых развитых транспортных систем в Дубае. В 10 минутах ходьбы от комплекса
+									находится остановка автобуса и причал водного транспорта. Ближайшая станция метро
+									располагается в 5 минутах езды или 20 минутах ходьбы.
+								</p>
+								<p>
+									Рядом с комплексом Al Habtoor Tower функционирует множество развлекательных
+									заведений, ресторанов и кафе. Приятно провести вечер можно в Sauce Diner, Thalassery
+									Palace, Le Patio, Sidra и других ресторанах в радиусе 5–10 минут езды от проекта.
+								</p>
+								<p>
+									Дети смогут посещать одно из множества учебных заведений, расположенных недалеко от
+									небоскреба. За медицинской помощью можно обратиться в: Slim With Cosmina,Midline Bay
+									Medical, Emirates Hospital Clinics – Business Bay. Дорога до них займет 5–10 минут
+									езды от комплекса.
+								</p>
+							</div>
+						</div>
+						<div class="col-text__video">
+							<video src="./video/video-1.mp4" autoplay muted loop playsinline></video>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg">
+				<div class="container">
+					<div class="title  heading heading_with-img brown-text">
+						<div class="heading__row">Padel court</div>
+						<div class="heading__img">
+							<img src="./img/heading/img-1.png" alt="img">
+						</div>
+					</div>
+					<div class="col-text col-text_center">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Потренируйтесь на одном из двух ультрасовременных кортов для игры в падель.
+									Идеальные для игроков всех уровней корты с видом на горизонт Дубая и доступом к
+									главному тренажерному залу.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_left">
+						<img src="./img/wide-img/img-2.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg">
+				<div class="container">
+					<div class="title  heading  brown-text">
+						<div class="heading__row heading__row_right-offset">современный</div>
+						<div class="heading__row ">тренажерный зал</div>
+					</div>
+					<div class="col-text">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Современный зал с великолепным видом на ландшафтный бассейн. Свободная планировка
+									разделена на специальные зоны. Полностью оборудованные раздевалки со шкафчиками.
+									Прямой доступ с террасы у бассейна, жилых башен и парковки.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_right">
+						<img src="./img/wide-img/img-3.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg spa pb-0">
+				<div class="container">
+					<div class="spa__wrapper">
+						<div class="spa__title title heading  brown-text">
+							<div class="heading__row ">sauna </div>
+							<div class="heading__row ">and spa</div>
+						</div>
+						<div class="spa__img">
+							<img src="./img/spa/img-1.png" alt="img">
+						</div>
+						<div class="spa__img">
+							<img src="./img/spa/img-2.png" alt="img">
+						</div>
+						<div class="spa__text col-text">
+							<div class="col-text__wrapper">
+								<div class="col-text__content content">
+									<p>
+										Расслабьтесь в безмятежном оазисе, от омолаживающего массажа до детоксикации
+										сауны, в спа-центре есть все необходимое, чтобы освежить разум, тело и душу.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="title  heading heading_with-img brown-text">
+						<div class="heading__row">KIDS CENTRE</div>
+						<div class="heading__img">
+							<img src="./img/heading/img-2.png" alt="img">
+						</div>
+					</div>
+					<div class="col-text col-text_center">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Детский центр обеспечивает безопасную и веселую среду для детей, где они могут
+									играть, учиться и заводить новых друзей. Благодаря широкому спектру увлекательных
+									занятий, от декоративно-прикладного искусства до игр и головоломок, дети получат
+									массу удовольствия, развивая свои творческие способности и воображение.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_left">
+						<img src="./img/wide-img/img-4.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="title heading brown-text">
+						<div class="heading__row">sport cafe</div>
+					</div>
+					<div class="col-text col-text_center">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Смотрите все происходящее на большом экране, наслаждаясь вкусной едой и напитками.
+									Благодаря оживленной атмосфере и широкому выбору меню это идеальное место для
+									общения с друзьями и семьей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_separate wide-img_right">
+						<img src="./img/wide-img/img-5.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg mt-0">
+				<div class="container">
+					<div class="title  heading heading_with-img brown-text">
+						<div class="heading__row">sky </div>
+						<div class="heading__row">restaurant</div>
+						<div class="heading__img">
+							<img src="./img/heading/img-3.png" alt="img">
+						</div>
+					</div>
+					<div class="col-text col-text_center">
+						<div class="col-text__wrapper">
+							<div class="col-text__content content">
+								<p>
+									Поужинайте в облаках в роскошном ресторане расположенном на 70-м этаже.
+									Наслаждайтесь потрясающим панорамным видом на горизонт Дубая и изысканными блюдами,
+									приготовленными шеф-поварами мирового уровня.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="wide-img wide-img_left">
+						<img src="./img/wide-img/img-6.png" alt="img">
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg" id="location">
+				<div class="container">
+					<div class="title  heading brown-text">
+						<div class="heading__row heading__row_center">расположение</div>
+					</div>
+					<div class="contact">
+						<div class="contact__list">
+							<div class="contact__item">
+								<div class="contact__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+										fill="none">
+										<g clip-path="url(#clip0_205_9571)">
+											<path
+												d="M20.0002 3.33301C13.5585 3.33301 8.3335 8.55801 8.3335 14.9997C8.3335 23.7497 20.0002 36.6663 20.0002 36.6663C20.0002 36.6663 31.6668 23.7497 31.6668 14.9997C31.6668 8.55801 26.4418 3.33301 20.0002 3.33301ZM20.0002 19.1663C17.7002 19.1663 15.8335 17.2997 15.8335 14.9997C15.8335 12.6997 17.7002 10.833 20.0002 10.833C22.3002 10.833 24.1668 12.6997 24.1668 14.9997C24.1668 17.2997 22.3002 19.1663 20.0002 19.1663Z"
+												fill="#DBA693" />
+										</g>
+										<defs>
+											<clipPath id="clip0_205_9571">
+												<rect width="40" height="40" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="contact__text">
+									Al Habtoor Sales Center, <br>
+									Al Habtoor Ci6y
+								</div>
+							</div>
+							<div class="contact__item">
+								<div class="contact__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+										fill="none">
+										<g clip-path="url(#clip0_205_9571)">
+											<path
+												d="M20.0002 3.33301C13.5585 3.33301 8.3335 8.55801 8.3335 14.9997C8.3335 23.7497 20.0002 36.6663 20.0002 36.6663C20.0002 36.6663 31.6668 23.7497 31.6668 14.9997C31.6668 8.55801 26.4418 3.33301 20.0002 3.33301ZM20.0002 19.1663C17.7002 19.1663 15.8335 17.2997 15.8335 14.9997C15.8335 12.6997 17.7002 10.833 20.0002 10.833C22.3002 10.833 24.1668 12.6997 24.1668 14.9997C24.1668 17.2997 22.3002 19.1663 20.0002 19.1663Z"
+												fill="#DBA693" />
+										</g>
+										<defs>
+											<clipPath id="clip0_205_9571">
+												<rect width="40" height="40" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="contact__text">
+									Office #1802, 18th Floor, Marina Plaza, Dubai Marina, Dubai UEA
+								</div>
+							</div>
+							<a href="tel:+97145841087" class="contact__item">
+								<div class="contact__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+										fill="none">
+										<g clip-path="url(#clip0_205_9577)">
+											<path
+												d="M11.0417 17.9917C13.4417 22.7083 17.3 26.5667 22.025 28.9667L25.6917 25.2917C26.15 24.8333 26.8083 24.7 27.3833 24.8833C29.25 25.5 31.2583 25.8333 33.3333 25.8333C34.2583 25.8333 35 26.575 35 27.5V33.3333C35 34.2583 34.2583 35 33.3333 35C17.6833 35 5 22.3167 5 6.66667C5 5.74167 5.75 5 6.66667 5H12.5C13.425 5 14.1667 5.74167 14.1667 6.66667C14.1667 8.74167 14.5 10.75 15.1167 12.6167C15.3 13.1917 15.1667 13.85 14.7083 14.3083L11.0417 17.9917Z"
+												fill="#DBA693" />
+										</g>
+										<defs>
+											<clipPath id="clip0_205_9577">
+												<rect width="40" height="40" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="contact__text">
+									+971 4584 1087
+								</div>
+							</a>
+						</div>
+						<div class="contact__map" id="map"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section black-bg payment" id="payment">
+				<div class="container">
+					<div class="payment__title title  heading brown-text">
+						<div class="heading__row heading__row_center">план оплаты</div>
+					</div>
+					<div class="payment__wrapper">
+						<div class="payment__row">
+							<div class="payment__item"
+								style="background: linear-gradient(225deg, rgba(0, 0, 0, 0.90) 15.94%, rgba(0, 0, 0, 0.00) 84.99%), #DBA693;">
+								<div class="payment__title title brown-text">60%</div>
+								<div class="payment__desc small-text">во время строительства</div>
+							</div>
+							<div class="payment__item"
+								style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.90) 16.94%, rgba(0, 0, 0, 0.00) 84.8%), #DBA693;">
+								<div class="payment__title title brown-text">40%</div>
+								<div class="payment__desc small-text">при сдачи в эксплуатацию</div>
+							</div>
+						</div>
+						<div class="payment__row">
+							<div class="payment__item"
+								style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 1.71%, rgba(0, 0, 0, 0.00) 97.33%), #DBA693;">
+								<div class="payment__title subtitle  brown-text">10% + 4%</div>
+								<div class="payment__desc small-text">при бронировании</div>
+							</div>
+						</div>
+					</div>
+					<div class="payment__btn anim-btn">
+						<div class="anim-btn__circle"></div>
+						<div class="anim-btn__body">
+							<div class="anim-btn__text">получить план оплаты</div>
+							<div class="anim-btn__arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="37" height="32" viewBox="0 0 37 32"
+									fill="none">
+									<path
+										d="M1.00006 15.2476C0.585847 15.2475 0.250034 15.5833 0.25 15.9975C0.249966 16.4117 0.585725 16.7475 0.999939 16.7476L1.00006 15.2476ZM31.5303 16.5304C31.8232 16.2375 31.8232 15.7626 31.5304 15.4697L26.7578 10.6964C26.4649 10.4034 25.99 10.4034 25.6971 10.6963C25.4042 10.9891 25.4042 11.464 25.697 11.7569L29.9393 15.9999L25.6964 20.2422C25.4034 20.5351 25.4034 21.01 25.6963 21.3029C25.9891 21.5958 26.464 21.5958 26.7569 21.303L31.5303 16.5304ZM0.999939 16.7476L30.9999 16.75L31.0001 15.25L1.00006 15.2476L0.999939 16.7476Z"
+										fill="#BB8B7A" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<div class="title  heading brown-text">
+						<div class="heading__row heading__row_center">Оставить</div>
+						<div class="heading__row heading__row_center">заявку</div>
+					</div>
+					<form class="form">
+						<div class="form__inputs">
+							<input type="text" class="form__imput input" placeholder="Ваше имя" required>
+							<input type="tel" class=" form__imput input" placeholder="Ваш телефон" required>
+						</div>
+						<label class="checkbox small-text brown-text">
+							<input class="checkbox__input" type="checkbox" checked="checked" required>
+							<span class="checkbox__checkmark"></span>
+							<div class="checkbox__text">
+								Принимаю условия обработки персональных данных
+							</div>
+						</label>
+						<label class="form__submit">
+							<input type="submit">
+							<div class="anim-btn">
+								<div class="anim-btn__circle"></div>
+								<div class="anim-btn__body">
+									<div class="anim-btn__text">отправить заявку</div>
+									<div class="anim-btn__arrow">
+										<svg xmlns="http://www.w3.org/2000/svg" width="37" height="32"
+											viewBox="0 0 37 32" fill="none">
+											<path
+												d="M1.00006 15.2476C0.585847 15.2475 0.250034 15.5833 0.25 15.9975C0.249966 16.4117 0.585725 16.7475 0.999939 16.7476L1.00006 15.2476ZM31.5303 16.5304C31.8232 16.2375 31.8232 15.7626 31.5304 15.4697L26.7578 10.6964C26.4649 10.4034 25.99 10.4034 25.6971 10.6963C25.4042 10.9891 25.4042 11.464 25.697 11.7569L29.9393 15.9999L25.6964 20.2422C25.4034 20.5351 25.4034 21.01 25.6963 21.3029C25.9891 21.5958 26.464 21.5958 26.7569 21.303L31.5303 16.5304ZM0.999939 16.7476L30.9999 16.75L31.0001 15.25L1.00006 15.2476L0.999939 16.7476Z"
+												fill="#BB8B7A" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</label>
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer black-bg">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__logo">
+						<img src="./img/logo.svg" alt="img">
+					</div>
+					<nav class="footer__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#description" class="nav__link nav__link_lvl1 anchor">О
+									башне</a>
+							</li>
+							<li class="nav__item"><a href="#aparts"
+									class="nav__link nav__link_lvl1 anchor">Апартаменты</a>
+							</li>
+							<li class="nav__item"><a href="#advantages"
+									class="nav__link nav__link_lvl1 anchor">преимущества</a>
+							</li>
+							<li class="nav__item"><a href="#location"
+									class="nav__link nav__link_lvl1 anchor">расположение</a>
+							</li>
+							<li class="nav__item"><a href="#payment" class="nav__link nav__link_lvl1 anchor">Оплата</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__social social">
+						<a href="" class="social__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M0 16.1709C0 25.0075 7.16344 32.1709 16 32.1709C24.8366 32.1709 32 25.0075 32 16.1709C32 7.33434 24.8366 0.170898 16 0.170898C7.16344 0.170898 0 7.33434 0 16.1709ZM26.0417 15.5591C26.0396 20.8036 21.7733 25.071 16.5276 25.0731H16.5237C14.9314 25.0725 13.3668 24.673 11.9772 23.9151L6.93359 25.2381L8.28334 20.308C7.45075 18.8651 7.01265 17.2284 7.01336 15.5516C7.01545 10.3059 11.2835 6.03809 16.5276 6.03809C19.0727 6.03918 21.4615 7.03 23.2577 8.82836C25.054 10.6266 26.0427 13.017 26.0417 15.5591Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M9.21735 22.9763L12.2103 22.1912L12.499 22.3626C13.7131 23.083 15.1049 23.4643 16.5239 23.4648H16.5271C20.8856 23.4648 24.433 19.9174 24.4347 15.5571C24.4355 13.4441 23.6138 11.4573 22.1208 9.96259C20.6278 8.46786 18.6423 7.64429 16.5302 7.64355C12.1683 7.64355 8.62087 11.1907 8.61914 15.5506C8.61853 17.0448 9.0366 18.5 9.82818 19.759L10.0162 20.0582L9.21735 22.9763ZM20.9953 17.6068C21.1611 17.6869 21.2731 17.741 21.3209 17.8208C21.3803 17.9199 21.3803 18.3959 21.1823 18.9513C20.9841 19.5066 20.0344 20.0134 19.5776 20.0816C19.1681 20.1428 18.6498 20.1684 18.0803 19.9874C17.735 19.8779 17.2923 19.7316 16.7251 19.4866C14.4965 18.5243 12.9904 16.3643 12.7057 15.9561C12.6858 15.9275 12.6718 15.9075 12.6641 15.8971L12.6621 15.8945C12.5363 15.7267 11.6934 14.6019 11.6934 13.4379C11.6934 12.3429 12.2313 11.7689 12.4788 11.5047C12.4958 11.4866 12.5114 11.47 12.5254 11.4547C12.7433 11.2167 13.0008 11.1572 13.1593 11.1572C13.3178 11.1572 13.4764 11.1587 13.6149 11.1656C13.632 11.1665 13.6498 11.1664 13.6682 11.1663C13.8067 11.1655 13.9794 11.1645 14.1498 11.5737C14.2153 11.7312 14.3113 11.9647 14.4124 12.211C14.617 12.709 14.843 13.2592 14.8828 13.3389C14.9422 13.4579 14.9818 13.5966 14.9026 13.7554C14.8907 13.7792 14.8797 13.8016 14.8692 13.8231C14.8096 13.9446 14.7659 14.034 14.6649 14.1519C14.6251 14.1983 14.5841 14.2483 14.543 14.2983C14.4612 14.3979 14.3795 14.4975 14.3083 14.5684C14.1892 14.6869 14.0654 14.8156 14.204 15.0536C14.3427 15.2916 14.8198 16.07 15.5265 16.7004C16.2862 17.378 16.9465 17.6644 17.2811 17.8096C17.3465 17.8379 17.3994 17.8609 17.4383 17.8803C17.6759 17.9993 17.8146 17.9794 17.9533 17.8208C18.0919 17.6622 18.5475 17.1266 18.706 16.8887C18.8644 16.6508 19.023 16.6904 19.2408 16.7697C19.4588 16.8491 20.6276 17.4241 20.8653 17.5431C20.9117 17.5664 20.9551 17.5873 20.9953 17.6068Z"
+									fill="white" />
+							</svg>
+						</a>
+						<a href="" class="social__link">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M32 16.1709C32 25.0075 24.8366 32.1709 16 32.1709C7.16344 32.1709 0 25.0075 0 16.1709C0 7.33434 7.16344 0.170898 16 0.170898C24.8366 0.170898 32 7.33434 32 16.1709ZM10.7152 14.7061C9.11246 15.4059 7.46561 16.125 5.95973 16.9544L5.95962 16.9546C5.1733 17.5303 6.21848 17.9375 7.19893 18.3194C7.3548 18.3802 7.50904 18.4403 7.65402 18.5003C7.77467 18.5374 7.89736 18.5765 8.02169 18.6161C9.11213 18.9635 10.3281 19.3509 11.3867 18.7681C13.1257 17.7691 14.7669 16.6142 16.4068 15.4601C16.9441 15.082 17.4812 14.704 18.0216 14.3316C18.0469 14.3154 18.0755 14.2969 18.1067 14.2766C18.5671 13.9782 19.6025 13.3071 19.2195 14.2318C18.3139 15.2222 17.3438 16.099 16.3685 16.9804C15.7112 17.5745 15.0515 18.1708 14.4075 18.8054C13.8466 19.2612 13.2642 20.1777 13.8922 20.8158C15.3388 21.8285 16.808 22.8167 18.2764 23.8043C18.7542 24.1256 19.2319 24.447 19.7088 24.769C20.5169 25.4142 21.7799 24.8924 21.9576 23.8841C22.0366 23.4202 22.1159 22.9564 22.1953 22.4925C22.6337 19.9294 23.0722 17.3655 23.4596 14.7941C23.5122 14.3908 23.5719 13.9874 23.6316 13.5839C23.7764 12.6058 23.9213 11.6265 23.9665 10.6432C23.8499 9.66189 22.66 9.87765 21.9979 10.0983C18.5944 11.3934 15.2249 12.7844 11.8688 14.2C11.4886 14.3685 11.1032 14.5367 10.7152 14.7061Z"
+									fill="white" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom small-text">
+					<a href="" class=" footer__policy">Политика <br> конфидецнциальности</a>
+					<a href="https://ra-studio.ru/" target="_blank" class="footer__dev">
+						<span>
+							cайт от <br>
+							Ra- Studio
+						</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+							<g opacity="0.8" clip-path="url(#clip0_205_9394)">
+								<path opacity="0.7"
+									d="M12.0333 0.34754C12.275 0.308064 12.5197 0.316373 12.7637 0.312585C12.8412 0.311852 12.9212 0.31529 12.9937 0.345694C12.8957 0.37113 12.7956 0.391665 12.7038 0.434992C12.5471 0.5064 12.3754 0.537568 12.2182 0.608272C12.0689 0.673248 11.9264 0.751948 11.7774 0.81654C11.5809 0.917268 11.3702 0.988708 11.1826 1.10577C10.7479 1.32317 10.343 1.59148 9.92419 1.83509C9.78494 1.93996 9.6394 2.03613 9.49037 2.12696C9.18307 2.34395 8.88551 2.57393 8.57671 2.78901C8.31153 3.00944 8.02896 3.20895 7.76959 3.43661C7.57195 3.58219 7.40326 3.76003 7.20911 3.90905C6.7324 4.3252 6.2738 4.76148 5.8311 5.21224C5.51184 5.55692 5.15172 5.8606 4.82557 6.19844C4.5936 6.42 4.38319 6.66132 4.16861 6.89812C4.1678 6.89284 4.16626 6.88252 4.16549 6.87724C4.34496 6.66132 4.48471 6.41696 4.64379 6.18628C5.1081 5.52992 5.58445 4.88048 6.10864 4.26892C6.20667 4.1686 6.29472 4.05952 6.37763 3.94703C6.46568 3.82615 6.58532 3.73271 6.67759 3.61562C6.86209 3.3914 7.08291 3.20099 7.27856 2.98664C7.49476 2.7822 7.70399 2.57011 7.93244 2.37856C8.39103 1.98634 8.85964 1.60208 9.38075 1.29124C9.75206 1.04229 10.1597 0.85226 10.5681 0.669876C10.6584 0.650836 10.7398 0.603752 10.8298 0.582836C11.222 0.469948 11.6203 0.349864 12.0333 0.34754ZM23.3817 4.57448C23.4308 4.58096 23.4558 4.6258 23.496 4.6494C24.1472 5.09672 24.7922 5.55504 25.4005 6.059C25.5228 6.16728 25.6487 6.27256 25.7846 6.36528C25.9178 6.4736 26.0316 6.60396 26.1683 6.70924C26.3049 6.81416 26.4207 6.94184 26.5458 7.05964C26.9773 7.45872 27.3741 7.89312 27.7512 8.34268C27.9424 8.58668 28.1442 8.82272 28.314 9.08228C28.5221 9.41788 28.749 9.74436 28.9131 10.1042C29.1347 10.55 29.3049 11.0225 29.4126 11.5074C29.4326 11.5511 29.4041 11.6199 29.4531 11.6484C29.526 11.9517 29.5635 12.2618 29.6052 12.57C29.6168 12.7969 29.6152 13.0245 29.6299 13.2514C29.3578 12.1949 28.8641 11.2076 28.3009 10.2742C28.0056 9.81048 27.7073 9.3476 27.3641 8.91696C26.9256 8.29292 26.4218 7.71676 25.9216 7.1406C25.4183 6.58648 24.896 6.04876 24.3444 5.54096C24.1032 5.30724 23.8808 5.05448 23.6318 4.8284C23.5427 4.74936 23.4624 4.66152 23.3817 4.57448ZM0.210938 16.7134C0.224453 16.7749 0.229853 16.8384 0.252228 16.8984C0.32443 17.0603 0.35492 17.2363 0.424017 17.3994C0.517816 17.727 0.669109 18.0336 0.804199 18.3457C1.13465 19.0453 1.52411 19.7165 1.95641 20.3596C2.11314 20.5591 2.23086 20.7852 2.40382 20.973C2.8014 21.5404 3.24605 22.0744 3.69882 22.5996C4.28399 23.2746 4.91087 23.9142 5.56669 24.523C5.80369 24.7579 6.02683 25.0072 6.27538 25.231C6.34483 25.2937 6.40742 25.3637 6.47107 25.4325C6.42048 25.4283 6.39737 25.3759 6.35606 25.3565C5.62264 24.8533 4.89891 24.333 4.22456 23.7546C4.04046 23.6322 3.88875 23.4733 3.7243 23.3281C3.52396 23.1765 3.35876 22.9865 3.17194 22.8197C2.72302 22.3853 2.30113 21.9223 1.91784 21.4306C1.63796 21.1006 1.41563 20.7293 1.18674 20.3648C0.923092 19.902 0.698821 19.4148 0.547921 18.9043C0.476493 18.6968 0.449108 18.4783 0.381563 18.27C0.317866 17.9827 0.281586 17.6901 0.245663 17.3986C0.246051 17.1694 0.224453 16.9418 0.210938 16.7134ZM25.2187 23.6154C25.3746 23.4615 25.5055 23.2848 25.6703 23.1396C25.6726 23.1932 25.6051 23.2031 25.5904 23.2494C24.9721 24.192 24.3015 25.1041 23.5566 25.9536C23.4157 26.1588 23.2231 26.321 23.0675 26.5149C22.6576 26.9371 22.2477 27.3612 21.7922 27.7371C21.5687 27.9355 21.3267 28.1115 21.0955 28.3007C20.4894 28.7317 19.8487 29.1258 19.1454 29.3831C18.7756 29.5412 18.3784 29.6343 17.977 29.662C17.7616 29.7111 17.5384 29.6887 17.3192 29.7024C17.1189 29.7354 16.9174 29.6758 16.7147 29.7058C16.9058 29.6488 17.1027 29.6085 17.2825 29.5203C17.5589 29.4162 17.8322 29.3044 18.0997 29.1798C18.4459 29.005 18.8007 28.8453 19.138 28.6538C19.4793 28.4322 19.8425 28.2437 20.1691 28.0012C20.4165 27.8678 20.618 27.6714 20.8549 27.5235C22.0566 26.6471 23.1868 25.675 24.2089 24.599C24.549 24.2752 24.8914 23.9526 25.2187 23.6154Z"
+									fill="white" />
+								<path opacity="0.5"
+									d="M14.4953 0.0338831C14.8527 -0.0325895 15.219 0.0115032 15.5757 0.0574736C16.0046 0.114491 16.4319 0.20605 16.8418 0.345935C17.2004 0.443224 17.5524 0.570916 17.8836 0.737384C18.2893 0.901976 18.6691 1.12008 19.0593 1.3158C19.1582 1.38304 19.2655 1.43627 19.3697 1.49478C19.6032 1.66316 19.8634 1.79048 20.0953 1.96111C20.4806 2.20364 20.8349 2.4898 21.2089 2.74825C21.7347 3.15794 22.2539 3.57674 22.7545 4.01572C22.9579 4.2038 23.1656 4.38776 23.3736 4.57092C23.4544 4.65796 23.5346 4.74576 23.6238 4.82484C23.8727 5.05096 24.0951 5.30364 24.3364 5.5374C24.8879 6.04516 25.4102 6.58292 25.9136 7.13708C26.4138 7.71324 26.9175 8.28936 27.356 8.91344C27.6992 9.344 27.9975 9.80688 28.2929 10.2706C28.856 11.204 29.3497 12.1914 29.6218 13.2479C29.7014 13.6139 29.7925 13.9795 29.8063 14.3554C29.8507 14.6568 29.8288 14.9619 29.8349 15.2656C29.7982 16.0147 29.6577 16.7619 29.3949 17.468C29.1864 18.0776 28.8904 18.6534 28.5831 19.2197C28.3939 19.5697 28.1747 19.9022 27.9617 20.2382C27.8308 20.4157 27.7092 20.5993 27.5872 20.7824C27.2908 21.1404 27.0446 21.5368 26.7345 21.8842C26.3925 22.3144 26.0251 22.7234 25.6622 23.1361C25.4974 23.2813 25.3666 23.458 25.2107 23.6119C24.8833 23.949 24.5409 24.2717 24.2008 24.5954C23.1787 25.6714 22.0485 26.6436 20.8469 27.52C20.6099 27.6678 20.4084 27.8643 20.161 27.9977C19.8345 28.2402 19.4712 28.4286 19.13 28.6503C18.7926 28.8418 18.4379 29.0014 18.0917 29.1762C17.8241 29.3009 17.5509 29.4126 17.2745 29.5168C17.0946 29.605 16.8977 29.6452 16.7067 29.7022C16.3492 29.8117 15.9791 29.879 15.6108 29.9458C15.5217 29.9606 15.4309 29.9557 15.3414 29.966C14.9191 30.045 14.4911 29.9682 14.0711 29.9181C13.6851 29.8516 13.3037 29.763 12.9324 29.6384C12.6475 29.5624 12.3812 29.4316 12.1021 29.3382C11.9646 29.2583 11.8125 29.2078 11.6686 29.1409C11.2563 28.9346 10.8437 28.727 10.4477 28.4918C10.2292 28.3341 9.98408 28.2162 9.76755 28.0566C9.52747 27.9015 9.29197 27.7404 9.06697 27.5648C8.68253 27.3018 8.32078 27.0084 7.95377 26.7222C7.76538 26.5516 7.55574 26.4053 7.37165 26.2301C7.05746 25.9754 6.77027 25.6915 6.46297 25.429C6.39936 25.3602 6.33677 25.2902 6.26728 25.2275C6.01873 25.0036 5.79564 24.7544 5.55859 24.5195C4.90285 23.9106 4.27593 23.271 3.69075 22.596C3.23801 22.0708 2.79329 21.5368 2.39571 20.9694C2.22279 20.7816 2.10506 20.5555 1.94831 20.356C1.51604 19.713 1.12658 19.0418 0.796155 18.3421C0.661066 18.0301 0.509777 17.7234 0.415946 17.3958C0.346847 17.2327 0.316323 17.0568 0.244187 16.8949C0.221747 16.8348 0.216411 16.7713 0.202831 16.7098C0.112135 16.3176 0.0434582 15.9189 0.022215 15.5168C-0.0160036 15.2952 0.0110588 15.0703 0.000970621 14.8471C-0.0059488 14.7449 0.0264501 14.6457 0.0248658 14.5439C0.0233461 14.1468 0.111359 13.7568 0.190092 13.3692C0.254566 13.0556 0.369222 12.7561 0.469974 12.4528C0.662976 11.9139 0.916212 11.3974 1.19296 10.8958C1.35469 10.5811 1.54035 10.2797 1.73565 9.98444C1.85845 9.76356 2.02284 9.569 2.15719 9.35504C2.28112 9.15248 2.45207 8.983 2.58063 8.78348C2.93342 8.2996 3.32292 7.8428 3.71241 7.38756C3.86445 7.22556 3.99297 7.042 4.16047 6.89456C4.37518 6.65776 4.58554 6.41644 4.81751 6.19488C5.14362 5.85704 5.50378 5.55336 5.82304 5.20864C6.26578 4.75792 6.72434 4.32164 7.20101 3.90547C7.3952 3.75648 7.56389 3.57861 7.76153 3.43306C8.02091 3.2054 8.30347 3.00586 8.56865 2.7855C8.87741 2.57038 9.17505 2.3404 9.48227 2.12341C9.6313 2.03262 9.7768 1.93641 9.91614 1.83154C10.335 1.5879 10.7399 1.31962 11.1745 1.10222C11.3621 0.985128 11.5729 0.913756 11.7694 0.813028C11.9184 0.748368 12.0608 0.669672 12.2102 0.60476C12.3673 0.53402 12.539 0.502852 12.6958 0.431416C12.7612 0.400532 12.8308 0.381241 12.9008 0.363508H12.9064C12.936 0.354658 12.9591 0.349693 12.9856 0.342116C13.0121 0.336608 13.04 0.328458 13.0656 0.321581C13.0788 0.317666 13.0856 0.316138 13.0983 0.312222L13.1093 0.308497C13.1519 0.29328 13.1918 0.28201 13.2373 0.267142C13.3489 0.245208 13.4576 0.206687 13.5673 0.177176C13.8757 0.122068 14.1814 0.0517748 14.4953 0.0338831ZM7.3365 9.20988C7.19838 9.23984 7.05705 9.30336 6.97759 9.42384C6.85715 9.59788 6.83586 9.81604 6.83205 10.0212C6.83128 13.0111 6.83205 16.001 6.83161 18.9908C6.83355 19.1227 6.81738 19.2614 6.87487 19.3854C6.93312 19.4568 7.03082 19.483 7.12074 19.4834C7.50677 19.4861 7.89312 19.4838 8.27951 19.4845C8.36599 19.4819 8.46324 19.4876 8.53703 19.434C8.60064 19.3656 8.59026 19.2653 8.59832 19.1797C8.59991 17.8522 8.59836 16.5243 8.59918 15.1968C8.955 15.182 9.31204 15.1949 9.66835 15.1903C10.0926 15.1968 10.5249 15.1622 10.9406 15.2644C11.2011 15.3268 11.4571 15.4507 11.625 15.662C11.845 15.9322 11.962 16.2667 12.0488 16.5976C12.2646 17.4612 12.4823 18.3243 12.6965 19.1881C12.7177 19.2728 12.7513 19.3595 12.8204 19.4181C12.9274 19.4853 13.059 19.4857 13.1817 19.4845C13.5947 19.4822 14.0082 19.4887 14.4212 19.4815C14.5651 19.4678 14.5937 19.2888 14.5644 19.1759C14.3174 18.2007 14.0637 17.227 13.814 16.2522C13.7187 15.8668 13.5816 15.4845 13.3527 15.155C13.1836 14.911 12.9258 14.7484 12.6637 14.6165L12.6618 14.5716C12.7633 14.5146 12.8721 14.4709 12.9698 14.4067C13.5511 14.0434 13.9464 13.4219 14.0672 12.7584C14.1683 12.2043 14.1374 11.6228 13.9584 11.0873C13.7707 10.5343 13.4017 10.0402 12.9092 9.71384C12.3677 9.35312 11.708 9.18856 11.0587 9.18516C9.91346 9.18516 8.76823 9.18516 7.62292 9.18516C7.5268 9.18516 7.43031 9.18856 7.3365 9.20988ZM18.8405 9.214C18.6869 9.25204 18.5321 9.32616 18.441 9.45876C18.3317 9.61536 18.2807 9.80164 18.2198 9.97984C17.2065 13.0465 16.1933 16.1134 15.18 19.1805C15.1345 19.288 15.1607 19.4545 15.297 19.4788C15.7367 19.4918 16.1771 19.4811 16.6171 19.4845C16.7348 19.4834 16.8715 19.4959 16.9641 19.4082C17.0614 19.304 17.0815 19.1574 17.127 19.0285C17.3166 18.4349 17.4937 17.837 17.6906 17.2456C18.8891 17.2407 20.088 17.2407 21.2866 17.2456C21.4996 17.8998 21.6965 18.5591 21.9034 19.2155C21.93 19.2964 21.964 19.3812 22.0354 19.4351C22.1119 19.48 22.2041 19.4827 22.2909 19.4845C22.7283 19.4845 23.166 19.4845 23.6033 19.4842C23.6662 19.483 23.7392 19.4868 23.7855 19.4363C23.8519 19.3671 23.8353 19.2607 23.8102 19.1782C22.7827 16.0834 21.7555 12.9883 20.7284 9.89392C20.6497 9.67428 20.5639 9.43256 20.3597 9.29616C20.0896 9.14828 19.7696 9.19276 19.4735 9.18516C19.2624 9.19124 19.0478 9.16652 18.8405 9.214ZM8.61726 10.7836C9.31516 10.7794 10.013 10.7836 10.711 10.7818C10.9429 10.7791 11.1784 10.7936 11.4034 10.8551C11.7736 10.9577 12.0921 11.229 12.2345 11.5826C12.3889 11.9805 12.4016 12.4372 12.2464 12.8367C12.1268 13.1293 11.9122 13.3962 11.6184 13.5329C11.3254 13.6736 10.9939 13.704 10.6723 13.7082C9.9872 13.7066 9.30207 13.7092 8.61685 13.707C8.61268 12.7326 8.61146 11.7577 8.61726 10.7836ZM19.4384 11.1649C19.4535 11.166 19.4839 11.1683 19.499 11.1694C19.709 11.885 19.9081 12.6037 20.1166 13.3197C20.3544 14.1205 20.5979 14.9198 20.8326 15.7212C19.9275 15.7224 19.0219 15.7224 18.1167 15.7212C18.3174 15.011 18.5321 14.3045 18.7378 13.5956C18.9775 12.7869 19.198 11.9728 19.4384 11.1649Z"
+									fill="white" />
+								<path
+									d="M7.33763 9.2114C7.43144 9.19008 7.52793 9.18672 7.62405 9.18672C8.76932 9.18672 9.91455 9.18672 11.0598 9.18672C11.7091 9.19008 12.3688 9.35464 12.9103 9.71536C13.4029 10.0418 13.7719 10.5359 13.9595 11.0888C14.1385 11.6243 14.1694 12.2058 14.0683 12.76C13.9475 13.4235 13.5522 14.0448 12.9709 14.4082C12.8732 14.4724 12.7644 14.5161 12.6629 14.5732L12.6648 14.618C12.9269 14.7499 13.1848 14.9126 13.3538 15.1565C13.5827 15.486 13.7198 15.8684 13.8151 16.2538C14.0648 17.2286 14.3185 18.2023 14.5655 19.1774C14.5948 19.2903 14.5663 19.4693 14.4223 19.483C14.0093 19.4902 13.5958 19.4838 13.1828 19.4861C13.06 19.4872 12.9285 19.4868 12.8215 19.4196C12.7524 19.3611 12.7188 19.2744 12.6977 19.1897C12.4834 18.3258 12.2657 17.4627 12.0499 16.5992C11.9631 16.2682 11.8461 15.9337 11.6261 15.6635C11.4582 15.4522 11.2022 15.3283 10.9417 15.266C10.526 15.1637 10.0937 15.1984 9.66944 15.1919C9.31317 15.1965 8.95609 15.1835 8.60026 15.1983C8.59945 16.5258 8.60099 17.8538 8.59945 19.1813C8.59135 19.2668 8.60176 19.3671 8.53808 19.4355C8.46437 19.4891 8.36712 19.4834 8.2806 19.4861C7.89425 19.4853 7.50786 19.4876 7.12187 19.485C7.03195 19.4846 6.93425 19.4583 6.87595 19.3869C6.81847 19.263 6.83468 19.1243 6.83274 18.9924C6.8331 16.0025 6.83237 13.0127 6.8331 10.0228C6.83695 9.8176 6.8582 9.5994 6.97868 9.42536C7.05818 9.30492 7.19951 9.2414 7.33763 9.2114ZM8.61839 10.7852C8.61259 11.7592 8.61376 12.7341 8.61798 13.7086C9.30312 13.7108 9.98829 13.7082 10.6734 13.7097C10.995 13.7055 11.3265 13.6751 11.6195 13.5344C11.9133 13.3976 12.1279 13.1308 12.2475 12.8382C12.4027 12.4388 12.39 11.982 12.2356 11.584C12.0932 11.2306 11.7747 10.9592 11.4045 10.8566C11.1795 10.7951 10.944 10.7806 10.7121 10.7833C10.0142 10.7852 9.31629 10.781 8.61839 10.7852ZM18.8416 9.21556C19.0489 9.16804 19.2635 9.19276 19.4747 9.18672C19.7707 9.19428 20.0907 9.14984 20.3609 9.29764C20.565 9.43408 20.6508 9.6758 20.7295 9.89544C21.7566 12.9899 22.7838 16.085 23.8113 19.1798C23.8364 19.2622 23.853 19.3686 23.7867 19.4378C23.7403 19.4884 23.6674 19.4846 23.6044 19.4857C23.1671 19.4861 22.7294 19.4861 22.292 19.4861C22.2052 19.4842 22.1129 19.4815 22.0365 19.4367C21.9651 19.3827 21.9311 19.298 21.9045 19.217C21.6976 18.5606 21.5007 17.9013 21.2876 17.2472C20.0891 17.2422 18.8902 17.2422 17.6917 17.2472C17.4949 17.8385 17.3177 18.4364 17.1281 19.03C17.0826 19.1588 17.0625 19.3056 16.9652 19.4097C16.8726 19.4975 16.7359 19.485 16.6182 19.4861C16.1782 19.4826 15.7378 19.4933 15.2981 19.4804C15.1619 19.456 15.1356 19.2896 15.1811 19.182C16.1944 16.115 17.2076 13.048 18.2209 9.9814C18.2819 9.80312 18.3328 9.61688 18.4421 9.46032C18.5331 9.32768 18.688 9.25356 18.8416 9.21556ZM19.4395 11.1664C19.199 11.9744 18.9786 12.7884 18.7389 13.5972C18.5331 14.306 18.3186 15.0125 18.1178 15.7228C19.023 15.724 19.9285 15.724 20.8337 15.7228C20.599 14.9213 20.3555 14.122 20.1177 13.3212C19.9093 12.6052 19.7101 11.8866 19.5001 11.1709C19.4851 11.1698 19.4545 11.1676 19.4395 11.1664Z"
+									fill="white" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.7695 2.82622C18.0727 2.84643 18.3594 2.95788 18.6378 3.06883C18.9724 3.20369 19.2982 3.36612 19.5997 3.56404C19.8688 3.71688 20.1262 3.89296 20.3583 4.09606C20.6512 4.31306 20.9116 4.56798 21.1853 4.80694C21.2508 4.88174 21.3262 4.94698 21.398 5.01582C21.5508 5.2003 21.7339 5.35706 21.885 5.54298C22.1447 5.81874 22.37 6.12342 22.6172 6.4097C22.9548 6.8497 23.285 7.2957 23.596 7.75414C23.7204 7.9483 23.8489 8.13998 23.978 8.3311C24.0247 8.41814 24.0708 8.50574 24.126 8.58814C24.279 8.82242 24.4048 9.0727 24.5499 9.31154C24.8874 9.83618 25.1948 10.379 25.4834 10.9311C25.7648 11.5003 26.0491 12.0703 26.2703 12.6655C26.4558 13.0846 26.5981 13.5205 26.7379 13.9565C26.9939 14.8276 27.1822 15.7279 27.1766 16.6383C27.1628 16.9506 27.1584 17.265 27.0894 17.5717C27.061 17.8245 26.978 18.0667 26.9182 18.3135C26.7286 18.9114 26.4555 19.4863 26.0924 20.0027C25.7937 20.4524 25.4314 20.8566 25.0622 21.2507C24.8345 21.4945 24.5863 21.718 24.3424 21.9455C24.1987 22.0619 24.0612 22.1852 23.9236 22.308C23.6075 22.5361 23.3238 22.8055 22.9991 23.0221C22.6308 23.2992 22.2465 23.5537 21.865 23.8123C21.7008 23.8955 21.5573 24.0113 21.3984 24.1034C21.0618 24.3082 20.7161 24.4982 20.3721 24.6895C19.3162 25.3478 18.1951 25.8998 17.0366 26.3596C16.8135 26.4301 16.6087 26.5472 16.3801 26.6038C16.0644 26.7323 15.7306 26.8094 15.4074 26.918C15.0938 27.003 14.773 27.0586 14.4558 27.1283C14.2129 27.1737 13.9682 27.2075 13.7225 27.2345C13.5583 27.2685 13.3906 27.2603 13.2239 27.2669C12.9116 27.2814 12.598 27.2592 12.2861 27.2371C12.2109 27.2305 12.1386 27.2078 12.064 27.1976C11.7058 27.1741 11.3761 27.0234 11.0473 26.896C10.7495 26.7623 10.4601 26.6118 10.1865 26.4342C9.97246 26.3138 9.78509 26.153 9.57946 26.0197C9.48537 25.9268 9.37319 25.8544 9.27111 25.7705C8.9819 25.5184 8.69264 25.2653 8.42272 24.9931C8.27982 24.8205 8.10679 24.6745 7.96583 24.5007C7.80484 24.3256 7.64888 24.1466 7.50448 23.9581C7.24988 23.666 7.02006 23.3539 6.78444 23.0466C6.66857 22.8697 6.53037 22.7081 6.41896 22.5283C6.2193 22.2575 6.04777 21.9685 5.85541 21.6927C5.81868 21.6239 5.783 21.5544 5.74023 21.4894C5.58707 21.2569 5.45998 21.0093 5.31849 20.7703C4.91836 20.1424 4.5481 19.4957 4.21915 18.8289C3.9653 18.3107 3.71979 17.787 3.51951 17.2461C3.41983 17.0585 3.37291 16.8513 3.28878 16.6576C3.0766 16.0483 2.90507 15.4251 2.78731 14.7912C2.74473 14.511 2.68788 14.2318 2.68197 13.9475C2.66095 13.8014 2.67379 13.6529 2.65006 13.5071C2.64475 13.4539 2.654 13.4014 2.65613 13.3489C2.66655 13.0131 2.69613 12.6766 2.76477 12.3472C2.7812 12.1601 2.85111 11.9839 2.89059 11.8014C2.90682 11.7173 2.95419 11.6438 2.97462 11.5613C3.05817 11.2399 3.21257 10.9429 3.35894 10.6458C3.47799 10.4056 3.63462 10.1873 3.7808 9.96294C4.05185 9.56726 4.3668 9.20214 4.69761 8.8539C4.89553 8.63298 5.10995 8.42778 5.33086 8.2295C5.47729 8.07638 5.65169 7.9531 5.80595 7.80798C5.94938 7.66982 6.12379 7.56822 6.27026 7.4335C6.65876 7.11538 7.07114 6.82674 7.48315 6.5393C7.64061 6.43982 7.78372 6.31806 7.95059 6.2335C8.17469 6.08654 8.39625 5.93498 8.6311 5.8039C8.96682 5.5983 9.3228 5.4273 9.65442 5.21474C10.1086 4.94202 10.5724 4.68418 11.0466 4.44646C11.2354 4.36614 11.4097 4.2573 11.6005 4.18054C11.8588 4.05018 12.1298 3.94734 12.3912 3.82407C12.6867 3.71408 12.9764 3.58979 13.2711 3.47792C13.4109 3.43539 13.5491 3.38773 13.6841 3.33176C14.0747 3.22152 14.4593 3.08844 14.857 3.00262C15.0337 2.94678 15.2193 2.9327 15.3996 2.89196C15.5339 2.8705 15.6658 2.83637 15.8004 2.81478C15.9425 2.79014 16.088 2.80046 16.2299 2.77518C16.2894 2.76375 16.3499 2.76258 16.4102 2.7627L16.4147 2.76385C16.4406 2.76283 16.4603 2.7636 16.4834 2.76296C16.5059 2.76401 16.5302 2.76318 16.5524 2.76292C16.5639 2.76248 16.5696 2.76264 16.5808 2.76213L16.5905 2.7614C16.6282 2.7579 16.6629 2.75704 16.7028 2.75442C16.7977 2.75977 16.8937 2.75115 16.9888 2.75C17.2499 2.76929 17.512 2.77572 17.7695 2.82622Z"
+									stroke="white" stroke-width="1.2" stroke-miterlimit="22.9256" />
+							</g>
+							<defs>
+								<clipPath id="clip0_205_9394">
+									<rect width="30" height="30" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="popup popup_form" id="popup-form">
+		<div class="popup__wrapper">
+			<div class="subtitle heading brown-text">
+				<div class="heading__row heading__row_center">Оставить</div>
+				<div class="heading__row heading__row_center">заявку</div>
+			</div>
+			<form class=" form">
+				<div class="form__inputs">
+					<input type="text" class="form__imput input" placeholder="Ваше имя" required>
+					<input type="tel" class=" form__imput input" placeholder="Ваш телефон" required>
+				</div>
+				<label class="checkbox small-text brown-text">
+					<input class="checkbox__input" type="checkbox" checked="checked" required>
+					<span class="checkbox__checkmark"></span>
+					<div class="checkbox__text">
+						Принимаю условия обработки персональных данных
+					</div>
+				</label>
+				<label class="form__submit">
+					<input type="submit">
+					<div class="anim-btn">
+						<div class="anim-btn__circle"></div>
+						<div class="anim-btn__body">
+							<div class="anim-btn__text">отправить заявку</div>
+							<div class="anim-btn__arrow">
+								<svg xmlns="http://www.w3.org/2000/svg" width="37" height="32" viewBox="0 0 37 32"
+									fill="none">
+									<path
+										d="M1.00006 15.2476C0.585847 15.2475 0.250034 15.5833 0.25 15.9975C0.249966 16.4117 0.585725 16.7475 0.999939 16.7476L1.00006 15.2476ZM31.5303 16.5304C31.8232 16.2375 31.8232 15.7626 31.5304 15.4697L26.7578 10.6964C26.4649 10.4034 25.99 10.4034 25.6971 10.6963C25.4042 10.9891 25.4042 11.464 25.697 11.7569L29.9393 15.9999L25.6964 20.2422C25.4034 20.5351 25.4034 21.01 25.6963 21.3029C25.9891 21.5958 26.464 21.5958 26.7569 21.303L31.5303 16.5304ZM0.999939 16.7476L30.9999 16.75L31.0001 15.25L1.00006 15.2476L0.999939 16.7476Z"
+										fill="#BB8B7A" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</label>
+			</form>
+		</div>
+	</div>
+
+	<div class="popup popup_response" id="popup-response">
+		<div class="popup__wrapper brown-text">
+			<div class="large-text popup__title">Ваша заявка успешно отправлена</div>
+			<div>Наш менеджер перезвонит вам в ближайшее время!</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
