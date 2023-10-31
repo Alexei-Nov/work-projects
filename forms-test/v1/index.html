@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="./style/vanailla-calendar.css">
+	<link rel="stylesheet" href="./style/fonts.css">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="./js/vanilla-calendar.js"></script>
+	<script src="./js/script.js"></script>
+
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="body-wrapper">
+		<form class="form">
+			<div class="form__title">Новая задача</div>
+			<div class="form__inputs">
+
+				<div class="form__input input">
+					<div class="input__label">
+						Название
+					</div>
+					<div class="input__wrapper">
+						<div class="input__placeholder">Название задачи</div>
+						<input class="input__field" type="text" maxlength="113" required name="Название">
+						<div class="input__reset">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path d="M6 6L12 12M18 18L12 12M12 12L18 6M12 12L6 18" stroke="#8593AC"
+									stroke-width="1.3" stroke-linecap="round" />
+							</svg>
+						</div>
+					</div>
+					<div class="input__bottom">
+						<div class="input__state">Заполните поле</div>
+						<div class="input__count"></div>
+					</div>
+				</div>
+
+				<div class="form__input input input_with-autocomplete">
+					<div class="input__label">
+						Исполнитель
+					</div>
+					<div class="input__wrapper">
+						<div class="input__placeholder">Введите имя</div>
+						<input class="input__field" type="text" name="Исполнитель">
+						<div class="input__reset">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path d="M6 6L12 12M18 18L12 12M12 12L18 6M12 12L6 18" stroke="#8593AC"
+									stroke-width="1.3" stroke-linecap="round" />
+							</svg>
+						</div>
+						<div class="input__autocomplete-list input__autocomplete-list_hide"></div>
+					</div>
+					<div class="input__bottom">
+						<div class="input__state">Заполните поле</div>
+						<div class="input__count"></div>
+					</div>
+				</div>
+
+				<div class="form__input input input_with-calendar">
+					<div class="input__label">
+						Дедлайн
+					</div>
+					<div class="input__wrapper">
+						<input type="text" class="input__field" placeholder="Укажите дедлайн" name="Дедлайн">
+						<div class="input__placeholder">Укажите дедлайн</div>
+						<div class="input__calender-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+								fill="none">
+								<path d="M10 8L10 6" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M18 8L18 6" stroke="#838690" stroke-width="1.5" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<rect x="6" y="7" width="16" height="15" rx="2" stroke="#838690" stroke-width="1.3"
+									stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M18 13L10 13" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M15 17L10 17" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="input__caret">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 9L12 15L5 9" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="input__calendar vanilla-calendar"></div>
+
+						<div class="input__select-list">
+							<div class="input__select-item">
+								<div class="input__select-text">Сегодня</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-text">Завтра</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-text">До конца этой недели</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-text">До конца следующей недели</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-text">До конца этого месяца</div>
+							</div>
+						</div>
+					</div>
+					<div class="input__bottom">
+						<div class="input__state">Заполните поле</div>
+						<div class="input__count"></div>
+					</div>
+				</div>
+
+				<div class="form__input input input_select">
+					<div class="input__label">
+						Приоритет
+					</div>
+					<div class="input__wrapper">
+						<div class="input__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path d="M5 10H19" stroke="#8593AC" stroke-width="1.3" stroke-linecap="round" />
+								<path d="M5 14H19" stroke="#8593AC" stroke-width="1.3" stroke-linecap="round" />
+							</svg>
+						</div>
+						<input type="text" class="input__field" value="Стандартный" name="Приоритет">
+						<div class="input__caret">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 9L12 15L5 9" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="input__select-list">
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M5 10H19" stroke="#8593AC" stroke-width="1.3" stroke-linecap="round" />
+										<path d="M5 14H19" stroke="#8593AC" stroke-width="1.3" stroke-linecap="round" />
+									</svg>
+								</div>
+								<div class="input__select-text">Стандартный </div>
+							</div>
+
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 14L12 9L5 14" stroke="#8593AC" stroke-width="1.3"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="input__select-text">Высокий</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path d="M19 17L12 12L5 17" stroke="#8593AC" stroke-width="1.3"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M19 12L12 7L5 12" stroke="#8593AC" stroke-width="1.3"
+											stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="input__select-text">Критичный</div>
+							</div>
+						</div>
+					</div>
+					<div class="input__bottom">
+						<div class="input__state">Заполните поле</div>
+						<div class="input__count"></div>
+					</div>
+				</div>
+
+				<div class="form__input input input_select">
+					<div class="input__label">
+						Флаг
+					</div>
+					<div class="input__wrapper">
+						<div class="input__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M18 5.29203C18 4.02555 17.0448 3 15.8652 3C13.6848 3 10.3152 3 8.1348 3C6.9552 3 6 4.02555 6 5.29203C6 8.82349 6 15.6171 6 19.7116C6 20.245 6.3072 20.7243 6.7716 20.915C7.2372 21.1057 7.7628 20.9691 8.0952 20.571C9.2868 19.1396 10.6896 17.457 11.4468 16.5474C11.5872 16.3786 11.7888 16.2819 12 16.2819C12.2112 16.2819 12.4128 16.3786 12.5532 16.5474C13.3104 17.457 14.7132 19.1396 15.9048 20.571C16.2372 20.9691 16.7628 21.1057 17.2284 20.915C17.6928 20.7243 18 20.245 18 19.7116C18 15.6171 18 8.82349 18 5.29203Z"
+									fill="#8593AC" />
+							</svg>
+						</div>
+						<input type="text" class="input__field" name="Флаг" placeholder="Не выбран">
+						<div class="input__caret">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 9L12 15L5 9" stroke="#838690" stroke-width="1.3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+						<div class="input__select-list">
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 5.29203C18 4.02555 17.0448 3 15.8652 3C13.6848 3 10.3152 3 8.1348 3C6.9552 3 6 4.02555 6 5.29203C6 8.82349 6 15.6171 6 19.7116C6 20.245 6.3072 20.7243 6.7716 20.915C7.2372 21.1057 7.7628 20.9691 8.0952 20.571C9.2868 19.1396 10.6896 17.457 11.4468 16.5474C11.5872 16.3786 11.7888 16.2819 12 16.2819C12.2112 16.2819 12.4128 16.3786 12.5532 16.5474C13.3104 17.457 14.7132 19.1396 15.9048 20.571C16.2372 20.9691 16.7628 21.1057 17.2284 20.915C17.6928 20.7243 18 20.245 18 19.7116C18 15.6171 18 8.82349 18 5.29203Z"
+											fill="#735CE6" />
+									</svg>
+								</div>
+								<div class="input__select-text">Нейтральная задача</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 5.29203C18 4.02555 17.0448 3 15.8652 3C13.6848 3 10.3152 3 8.1348 3C6.9552 3 6 4.02555 6 5.29203C6 8.82349 6 15.6171 6 19.7116C6 20.245 6.3072 20.7243 6.7716 20.915C7.2372 21.1057 7.7628 20.9691 8.0952 20.571C9.2868 19.1396 10.6896 17.457 11.4468 16.5474C11.5872 16.3786 11.7888 16.2819 12 16.2819C12.2112 16.2819 12.4128 16.3786 12.5532 16.5474C13.3104 17.457 14.7132 19.1396 15.9048 20.571C16.2372 20.9691 16.7628 21.1057 17.2284 20.915C17.6928 20.7243 18 20.245 18 19.7116C18 15.6171 18 8.82349 18 5.29203Z"
+											fill="#40D295" />
+									</svg>
+								</div>
+								<div class="input__select-text">Не очень важно</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 5.29203C18 4.02555 17.0448 3 15.8652 3C13.6848 3 10.3152 3 8.1348 3C6.9552 3 6 4.02555 6 5.29203C6 8.82349 6 15.6171 6 19.7116C6 20.245 6.3072 20.7243 6.7716 20.915C7.2372 21.1057 7.7628 20.9691 8.0952 20.571C9.2868 19.1396 10.6896 17.457 11.4468 16.5474C11.5872 16.3786 11.7888 16.2819 12 16.2819C12.2112 16.2819 12.4128 16.3786 12.5532 16.5474C13.3104 17.457 14.7132 19.1396 15.9048 20.571C16.2372 20.9691 16.7628 21.1057 17.2284 20.915C17.6928 20.7243 18 20.245 18 19.7116C18 15.6171 18 8.82349 18 5.29203Z"
+											fill="#F87A52" />
+									</svg>
+								</div>
+								<div class="input__select-text">Важно</div>
+							</div>
+							<div class="input__select-item">
+								<div class="input__select-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 5.29203C18 4.02555 17.0448 3 15.8652 3C13.6848 3 10.3152 3 8.1348 3C6.9552 3 6 4.02555 6 5.29203C6 8.82349 6 15.6171 6 19.7116C6 20.245 6.3072 20.7243 6.7716 20.915C7.2372 21.1057 7.7628 20.9691 8.0952 20.571C9.2868 19.1396 10.6896 17.457 11.4468 16.5474C11.5872 16.3786 11.7888 16.2819 12 16.2819C12.2112 16.2819 12.4128 16.3786 12.5532 16.5474C13.3104 17.457 14.7132 19.1396 15.9048 20.571C16.2372 20.9691 16.7628 21.1057 17.2284 20.915C17.6928 20.7243 18 20.245 18 19.7116C18 15.6171 18 8.82349 18 5.29203Z"
+											fill="#E73030" />
+									</svg>
+								</div>
+								<div class="input__select-text">Очень важно</div>
+							</div>
+						</div>
+					</div>
+					<div class="input__bottom">
+						<div class="input__state">Заполните поле</div>
+						<div class="input__count"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="form__controls">
+				<input type="submit" class="btn" value="Создать">
+				<div class="form__reset btn btn_gray">Отменить</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="popup" id="popup">
+		<div class="popup__wrapper">
+			<div class="popup__title">Задача №1938 создана</div>
+			<div class="popup__img">
+				<img src="./img/popup.png" alt="img">
+			</div>
+			<div class="popup__text">Хорошего дня!</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
